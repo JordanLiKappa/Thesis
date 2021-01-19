@@ -6,6 +6,7 @@
 \usepackage{graphicx} % takes care of graphic including machinery
 \usepackage[margin=1in,letterpaper]{geometry} % decreases margins
 \usepackage{ANA-FTAG-2020-08-PAPER-defs}
+\usepackage{atlasmisc}
 \usepackage[style=numeric]{biblatex}
 \addbibresource{ANA-FTAG-2020-08-PAPER.bib}
 \addbibresource{bib/ATLAS.bib}
@@ -46,7 +47,7 @@
 \begin{document}
 
 
-\title{Search for di-Higgs in $bb\tau\tau$ final state using proton-proton collision at $\sqrt{s}$ = 13 TeV data with the ATLAS detector}%Fake Factors Calculation and Implementation in H$\rightarrow$ bb$\tau^+\tau^-$ analysis with MC16a/MC16d in Release 21 with the ATLAS detector
+\title{Search for di-Higgs in $bb\tau\tau$ final state using proton-proton collision at $\sqrt{s}$ = 13 \TeV\ data with the ATLAS detector}%Fake Factors Calculation and Implementation in H$\rightarrow$ bb$\tau^+\tau^-$ analysis with MC16a/MC16d in Release 21 with the ATLAS detector
 \author{ Zhiyuan Li}
 \date{\today}
 \maketitle
@@ -269,21 +270,126 @@ data-taking period and the \pt\ threshold.
 All detector subsystems were required to be operational
 during data taking and to fulfil data quality requirements.  
 
-The $t\bar{t}$ samples and the single top-quark in the Wt 
-and s-channel samples are generated with the {\tt Powheg-Box} v2 \cite{powheg} 
-generator. Electroweak t-channel single top-quark events are generated 
-using the {\tt Powheg-Box} v1 generator. The parton shower, fragmentation, 
-and the underlying event are simulated using {\tt Pythia} 6.428\cite{pythia} 
-with the CTEQ6L1 PDF sets and the corresponding Perugia 2012 tune (P2012)\cite{perugia}. 
-The top-quark mass is set to 172.5 GeV. The {\tt EvtGen} v1.2.0 program \cite{evtgen} 
-is used to model the properties of the bottom and charm hadron decays. 
-The $t\bar{t}$ production cross-section is calculated at NNLO+NNLL 
-(next-to-next-to-leading-logarithm)\cite{NNLO}. For single-top processes, 
-the generator NLO cross-sections are used. Events containing $W$ or $Z$ 
-bosons with associated jets are simulated using {\tt Sherpa} 2.2.1\cite{sherpa}. 
-All $W$/$Z$+jets events are normalised to the predicted cross-sections using 
-NNLO calculations. All samples are passed through the full GEANT4\cite{GEANT4} 
-simulation of the ATLAS detector and are reconstructed with the same software as used for data.
+% The $t\bar{t}$ samples and the single top-quark in the Wt 
+% and s-channel samples are generated with the {\tt Powheg-Box} v2 \cite{powheg} 
+% generator. Electroweak t-channel single top-quark events are generated 
+% using the {\tt Powheg-Box} v1 generator. The parton shower, fragmentation, 
+% and the underlying event are simulated using {\tt Pythia} 6.428\cite{pythia} 
+% with the CTEQ6L1 PDF sets and the corresponding Perugia 2012 tune (P2012)\cite{perugia}. 
+% The top-quark mass is set to 172.5 GeV. The {\tt EvtGen} v1.2.0 program \cite{evtgen} 
+% is used to model the properties of the bottom and charm hadron decays. 
+% The $t\bar{t}$ production cross-section is calculated at NNLO+NNLL 
+% (next-to-next-to-leading-logarithm)\cite{NNLO}. For single-top processes, 
+% the generator NLO cross-sections are used. Events containing $W$ or $Z$ 
+% bosons with associated jets are simulated using {\tt Sherpa} 2.2.1\cite{sherpa}. 
+% All $W$/$Z$+jets events are normalised to the predicted cross-sections using 
+% NNLO calculations. All samples are passed through the full GEANT4\cite{GEANT4} 
+% simulation of the ATLAS detector and are reconstructed with the same software as used for data.
+
+
+
+Dedicated Monte Carlo  simulated samples (MC)  are used to model SM
+processes and to estimate the expected signal yields.  All samples were 
+produced using the ATLAS simulation infrastructure~\cite{SOFT-2010-01}
+and $\GEANT4$~\cite{Agostinelli:2002hh}. A subset of samples use a faster 
+simulation based on a parameterisation of the calorimeter response and 
+$\GEANT4$ for the other detector systems~\cite{SOFT-2010-01}. %\cite{ATL-PHYS-PUB-2010-013}.
+The simulated events are reconstructed with the same algorithms as
+used for data, and contain a realistic modelling of pile-up
+interactions. The pile-up profiles in the simulation match those of each dataset
+between 2015 and 2018, and are obtained by overlaying minimum-bias events,
+simulated using the soft QCD processes of
+{\PYTHIA}~8~\cite{Sjostrand:2014zea} using the NNPDF2.3LO set of
+PDFs~\cite{Ball:2012cx} and a set of tuned
+parameters called the A3 tune~\cite{ATL-PHYS-PUB-2016-017}.
+
+The events that are used in this study originate mostly due to \
+ttbar\ production. This process is modelled using the
+\powhegbox~v2~\cite{Frixione:2007nw,Nason:2004rx,Frixione:2007vw,Alioli:2010xd}
+generator at NLO with the \nnpdfnlo % ~\cite{Ball:2014uwa}
+parton distribution function (PDF) set
+and the \hdamp\ parameter\footnote{The
+  \hdamp\ parameter is a resummation damping factor and one of the
+  parameters that controls the matching of \powheg matrix elements to
+  the parton shower and thus effectively regulates the
+  high-\pt\ radiation against which the \ttbar\ system recoils.} set
+to 1.5~\mtop~\cite{ATL-PHYS-PUB-2016-020}.  The events were interfaced
+to {\PYTHIA}~8.230 to model the parton shower,
+hadronisation, and underlying event, with parameters set according
+to the A14 tune and using the \nnpdftwo set of PDFs.
+The decays of bottom and charm hadrons were performed by \evtgen~v1.6.0~\cite{EvtGen}.
+
+
+%%% single top
+In addition to \ttbar\ production, there are some minor backgrounds
+that contribute to the final event sample that is used for the calibration.
+These backgrounds consist mostly of single-top and diboson production, 
+the production of \ttbar\ in association with a vector boson
+and the production of a vector boson in association with jets.
+The details
+of the modeling of these samples are given in the following.
+
+Single-top $s$-channel production is modelled using the \powhegbox~v2 % \cite{Alioli:2009je,Nason:2004rx,Frixione:2007vw,Alioli:2010xd}
+generator at NLO in QCD in the five-flavour scheme with the \nnpdfnlo~\cite{Ball:2014uwa} parton distribution function~(PDF) set.
+%The events are interfaced with \pythia.230 % ~\cite{Sjostrand:2014zea} 
+%using the A14 tune % ~\cite{ATL-PHYS-PUB-2014-021}
+%and the \nnpdftwo PDF set.
+%
+The associated production of top quarks with $W$ bosons ($tW$) is
+modelled using the
+\powhegbox~v2~\cite{Re:2010bp,Nason:2004rx,Frixione:2007vw,Alioli:2010xd}
+generator at NLO in QCD using the five-flavour scheme and the
+\nnpdfnlo set of PDFs~\cite{Ball:2014uwa}.
+The diagram removal scheme~\cite{Frixione:2008yi} is used to
+remove interference and overlap with \ttbar\ production. 
+The events for both single-top $s$-channel and $tW$ production 
+are interfaced to \pythia.230%~\cite{Sjostrand:2014zea} 
+using the A14 tune%~\cite{ATL-PHYS-PUB-2014-021} 
+and the \nnpdftwo set of PDFs. %~\cite{Ball:2012cx}.
+
+The production of $Z+$jets and $W$+jets is simulated with the
+\sherpa~v2.2.1~\cite{Bothmann:2019yzt}
+generator using next-to-leading order (NLO) matrix elements (ME) for up to two partons, and leading order (LO) matrix elements
+for up to four partons calculated with the Comix~\cite{Gleisberg:2008fv}
+and \openloops~\cite{Buccioni:2019sur,Cascioli:2011va,Denner:2016kdg} libraries. They
+are matched with the \sherpa parton shower~\cite{Schumann:2007mg} using the MEPS@NLO
+prescription~\cite{Hoeche:2011fd,Hoeche:2012yf,Catani:2001cc,Hoeche:2009rj}
+using the set of tuned parameters developed by the \sherpa authors.
+The \nnpdfnnlo set of PDFs~\cite{Ball:2014uwa} is used and the samples
+are normalised to a next-to-next-to-leading order (NNLO)
+prediction~\cite{Anastasiou:2003ds}.
+
+Samples of diboson final states ($VV$) are simulated with the
+\sherpa~v2.2.1 or v2.2.2~\cite{Bothmann:2019yzt} generator depending on the process,
+%~\footnote{This is an admixture of 2.2.1 and above versions, so the version should be kept generic to avoid confusions. As an alternative, the sentence can be modified indicating that samples are simulated with the \sherpa~v2.2.1 or v2.2.2 depending on the process.} 
+including off-shell effects and Higgs-boson contributions, where appropriate.
+Fully leptonic final states and semileptonic final states, where one boson
+decays leptonically and the other hadronically, are generated using
+matrix elements at NLO accuracy in QCD for up to one additional parton
+and at LO accuracy for up to three additional parton
+emissions. Samples for the loop-induced processes $gg \to VV$ are
+generated using LO-accurate matrix elements for up to one
+additional parton emission for both cases of fully leptonic and
+semileptonic final states. The matrix element calculations are matched
+and merged with the \sherpa parton shower based on Catani-Seymour
+dipole factorisation~\cite{Gleisberg:2008fv,Schumann:2007mg} using the MEPS@NLO
+prescription~\cite{Hoeche:2011fd,Hoeche:2012yf,Catani:2001cc,Hoeche:2009rj}.
+The virtual QCD correction are provided by the
+\openloops library~\cite{Buccioni:2019sur,Cascioli:2011va,Denner:2016kdg}. The
+\nnpdfnnlo set of PDFs is used, %~\cite{Ball:2014uwa}, 
+along with the dedicated set of tuned parton-shower parameters developed by the
+\sherpa authors.
+
+The production of \ttbar\ in assosiation with a vector boson 
+is modelled using the
+\mgamc~v2.3.3~\cite{Alwall:2014hca} generator at NLO with the
+\nnpdfnlo~\cite{Ball:2014uwa} parton distribution function~(PDF).
+The events are interfaced to \pythia.210~\cite{Sjostrand:2014zea}~
+using the A14 tune~\cite{ATL-PHYS-PUB-2014-021} and the
+\nnpdftwo~\cite{Ball:2014uwa} PDF set. The decays of bottom and charm
+hadrons are simulated using the \evtgen\ v1.2.0 program~\cite{Lange:2001uf}.
+
+
 
 \subsection{Kinematic Likelihood Fitter}
 \label{KLFitter}
@@ -509,7 +615,6 @@ within the systematic uncertainties.
 	events with exactly 4 jets, combining with the low \pt\ selection.}
 	\label{tab:yields_standard}
 	\end{table}
- \end{table}
 
 
  \begin{figure}%[htb]
