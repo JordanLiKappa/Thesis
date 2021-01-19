@@ -13,6 +13,7 @@
 \addbibresource{bib/PubNotes.bib}
 \addbibresource{bib/ConfNotes.bib}
 \addbibresource{bib/ATLAS-SUSY.bib}
+\addbibresource{bib/*}
 \usepackage[final]{hyperref} % adds hyper links inside the generated pdf file
 \usepackage[T1]{fontenc}
 \usepackage{setspace}
@@ -325,6 +326,7 @@ assigned as the decay products of the $W$ boson are referred to as
 $W$-jets and the remaining two jets are referred to as top-jets.
 
 \subsubsection{Maximising likelihood}
+\label{maximise likelihood}
 Taking only four jets in the event limits the total number of possible 
 jet orderings (permutations) in the event. In the semi-leptonic channel, 
 four jets can be permuted a total number of times equal to 4! = 24. 
@@ -472,6 +474,11 @@ given in Table \ref{tab:yields_standard}, an example of
 the \pt\ distributions before any tagging or fitting and 
 after the standard selection is shown in Figure \ref{fig:kinematic_distributions_standard}. 
 More plots can be found in Appendix, Figure \ref{fig:standard_selection}.
+The meaning of each legend in the plots are described in Section \ref{maximise likelihood}. 
+The yellow band in the lower pad shows the overall systematics uncertainties combining the 
+experimental uncertainties and the \ttbar\ modelling uncertainties, as described in 
+Section \ref{systematic uncertainties.} The data/MC ratio shows good agreement 
+within the systematic uncertainties. 
 
 \begin{table}[!b]
 	\centering
@@ -641,7 +648,8 @@ and statistics for the calibration.
 The yields of the data/MC are given in Table \ref{tab:yields_combined}, 
 an example of the \pt\ distributions before any tagging or fitting and 
 after the standard selection is shown in Figure \ref{fig:kinematic_distributions_combined}. More plots 
-can be found in Appendix, Figure \ref{fig:combined_selection} TODO: include the plots in appendix.
+can be found in Appendix, Figure \ref{fig:jets_PFlow,fig:angles_PFlow,fig:mass_PFlow,
+fig:jets_VRJets, fig:angles_VRJets, fig:mass_VRJets, fig:combined_selection}.
 \begin{table}[!b]
 	\centering
 	\small
@@ -680,12 +688,12 @@ can be found in Appendix, Figure \ref{fig:combined_selection} TODO: include the 
 		\subfigure[]{\includegraphics[width=0.45\textwidth]{figs_support/plots_def/DataMC_h_tjet_J1_pt_all_2.pdf}}\\
 		\caption{Data versus simulation for various variables used in the analysis for 
 		particle flow jets in the left column and for track jets in the right column.}
-		\label{fig:kinematic_distributions_highpT}
+		\label{fig:kinematic_distributions_combined}
 \end{figure}
 		
 
 \subsection{Systematic uncertainties}
-
+\label{systematic uncertainties}
 The systematic uncertainties considered and propagated in this calibration 
 can be broadly categorised into experimental systematics and modelling uncertainties. 
 Supporting material for this section can be found in the appendix, Tab.\ref{tab:systematics}.
@@ -723,7 +731,39 @@ from {\tt POWHEG} interfaced either to {\tt PYTHIA8} or {\tt HERWIG++}. Finally,
 modelling of initial and final state radiation is assessed with two alternative {\tt POWHEG+PYTHIA8} 
 samples. The samples include one with an increase in radiation which has the re-normalisation and 
 factorisation scales decreased by a factor of two and the \textit{hdamp} parameter doubled, while 
-the sample with a decrease in radiation has the scales increased by a factor of two.
+the sample with a decrease in radiation has the scales increased by a factor of two. The comparison of 
+the nominal \ttbar\ and the systematics is shown in Table \ref{tab:modelling_syst}.
+
+\begin{table}[!b]
+	\centering
+	\small
+	\setlength\tabcolsep{5pt} 
+	\begin{tabular}{|l | ll | ll |}
+	\hline
+	% & \multicolumn{2}{c|}{Particle flow jets} & \multicolumn{2}{c|}{Track jets} \\
+	% \hline
+	% Data          &    385378.0                  &        &   302308.0              &     \\  
+	% Ttbar         &    383517.0 $\pm$      229.4 &        &   302690.5 $\pm$      203.9 &   \\
+	% Other         &     12424.0 $\pm$      123.8 &        &     8566.8 $\pm$      104.1 &   \\
+	% Data/MC       &    0.973 $\pm$ 0.002         &        &  0.971 $\pm$ 0.002  &           \\
+	% \hline
+	\multicolumn{5}{|c|}{Comparison of \ttbar\ with systematic samples}\\
+	\hline
+	TtbarAF2       &   386261.9 $\pm$ 254.5  &  0.716\% & 304858.1 $\pm$ 226.1 &  0.716\%\\
+	DATA/MC(AF2)   &   0.967 $\pm$ 0.002     &      & 0.965 $\pm$ 0.002 &      \\              
+	TtbarRadHi     &   377129.7 $\pm$   224.0  & -1.665\% &  297963.8 $\pm$   200.3  & -1.562\%\\     
+	DATA/MC(RADHI) & 0.989 $\pm$ 0.002         &      & 0.986 $\pm$ 0.002   &  \\       
+	TtbarPH        &   331961.5 $\pm$   217.0  & -13.443\%&  259942.3 $\pm$      193.4  & -14.123\%\\ 
+	DATA/MC(PH)    & 1.119 $\pm$ 0.002         &       & 1.126 $\pm$ 0.002     &\\                
+	\hline
+	\end{tabular}
+	\vspace{0.2cm}
+	\caption{Comparison of the  number of events in data and in 
+	simulation considering particle flow jets and track jets for an inclusive
+	selection.}
+	\label{tab:modelling_syst}
+	\end{table}
+
 
 \subsubsection{Under-estimation of $t\bar{t}$ + Heavy flavour background }
 The $b$-jets are rarely found in the two $W$ decay jets. There are two main sources of 
@@ -732,11 +772,19 @@ source is when the $t\bar{t}$ plus a gluon process is selected, and the gluon is
 into a pair a $b$ quarks. If we require no $c$-jet in either top-decay jets or $W$-jets, 
 the only main source of the $b$-jets in the $W$-jets is the $t\bar{t}$ + heavy flavour 
 process. It's shown in for the both PFlow and VR-Track jets collections, this process is 
-underestimated by the MC by about 30\%, as shown in Table \ref{tab:3byields1}, 
-\ref{tab:3byields2} and Figure \ref{fig:3bplots}. A precise measurement in another 
-analysis shows that this factor is 1.25 \cite{ttbar+HF SF}. Therefore a 1.25 $\pm$ 0.25 
-scale factor is applied to all events with 3 truth $b$ jets, and all results shown in the 
-following have this scale factor implemented. 
+underestimated by the MC by about 30\%, as shown in Table \ref{tab:3byields1, tab:3byields2} 
+and Figure \ref{fig:3bplots}. For this reason, events in the simulation
+in which the top-jets and at least one of the $W$-jets are \bjets, are
+scaled by $1.25 \pm 0.25$, where the value is measured in reference\cite{TOPQ-2017-12}.
+Hence a 1.25 $\pm$ 0.25 scale factor is applied to all events with 3 truth $b$ jets, 
+and all results shown in this chapter have this scale factor implemented. 
+The full difference between the simulation before applying this scale factor and 
+after is taken as a systematic error. All the plots in this chapter have the 
+uncertainty due to the scale factor implemented. 
+
+
+
+
 \begin{table}[]
     \centering
     \begin{tabular}{c|c}
@@ -745,7 +793,9 @@ following have this scale factor implemented.
          Other & 82.7 $\pm$ 5.5 \\
          Data/MC & 1.341 $\pm$ 0.037 \\
     \end{tabular}
-    \caption{Yields of the 2018 data/MC, combining the standard and te high $p_T$ selection with at least 1 PFlow $W$ jet with DL1r > 8 to reject most of the light and $c$ jets.}
+	\caption{Yields of the 2018 data/MC, combining the standard and the 
+	high $p_T$ selection with at least 1 PFlow $W$ jet with DL1r > 8 to 
+	reject most of the light and $c$ jets.}
     \label{tab:3byields1}
 \end{table}
 
@@ -757,7 +807,9 @@ following have this scale factor implemented.
          Other & 69.1 $\pm$ 4.5 \\
          Data/MC & 1.319 $\pm$ 0.040 \\
     \end{tabular}
-    \caption{Yields of the 2018 data/MC, combining the standard and te high $p_T$ selection with at least 1 VR-Track $W$ jet with DL1r > 8 to reject most of the light and $c$ jets.}
+	\caption{Yields of the 2018 data/MC, combining the standard 
+	and te high $p_T$ selection with at least 1 VR-Track $W$ jet with 
+	DL1r > 8 to reject most of the light and $c$ jets.}
     \label{tab:3byields2}
 \end{table}
 
@@ -767,7 +819,9 @@ following have this scale factor implemented.
 \centering
 \includegraphics[width=1\textwidth]{3bplots/3bplots.png}
 \end{minipage}
-    \caption{The DL1r score distribution of the leading VR-Track jet, requiring at least 1 VR-Track jets have DL1r > 8 to reject most of the light and the $c$ jets, with $t\bar{t}$ modelling and stats uncertainties. }
+	\caption{The DL1r score distribution of the leading VR-Track jet, 
+	requiring at least 1 VR-Track jets have DL1r > 8 to reject most of 
+	the light and the $c$ jets, with $t\bar{t}$ modelling and stats uncertainties. }
     \label{fig:3bplots}
 \end{figure}
 
@@ -777,243 +831,113 @@ following have this scale factor implemented.
 
 
 \subsubsection{Overview}
-Four rounds of calibrations have been carried out, containing different jet collections, Monte Carlo samples, analysis framework and $b$-jet identification algorithm. In the latest round, the calibration includes the EMPFlow jet and VR-Track jet collection, and MV2c10, DL1 and DL1r taggers. Each calibration is carried out with all supported jet collections and taggers, with the full data set collected from 2015 to 2018 in the ATLAS detector. The low-$p_T$ selection and the standard selection are carried out for all four calibrations, while the high-$p_T$ selection is only implemented in the latest calibration. 
+Four rounds of calibrations have been carried out, containing different 
+jet collections, Monte Carlo samples, analysis framework 
+and $b$-jet identification algorithm. In the latest round, 
+the calibration includes the EMPFlow jet and VR-Track jet collection, 
+and MV2c10, DL1 and DL1r taggers. Each calibration is carried out 
+with all supported jet collections and taggers, with the full data 
+set collected from 2015 to 2018 in the ATLAS detector. The low-$p_T$ 
+selection and the standard selection are carried out for all four 
+calibrations, while the high-$p_T$ selection is only implemented 
+in the latest calibration. 
 
 \subsubsection{Kinematic distributions}
-The kinematic distributions of the MC and the data of the latest calibration (October 2020) are shwon in Figure \ref{fig:taggers_PFlow}, \ref{fig:jets_PFlow}, \ref{fig:angles_PFlow}, \ref{fig:mass_PFlow} for the PFlow jets and Figure \ref{fig:taggers_VRJets}, \ref{fig:jets_VRJets}, \ref{fig:angles_VRJets}, \ref{fig:mass_VRJets} for the VR-Track jets, combining the standard selection and the highest $p_T$ selection. 
-
+The kinematic distributions of the MC and the data of the latest calibration 
+(October 2020) are shwon in Figure \ref{fig:taggers_PFlow} for the PFlow jets and 
+Figure \ref{fig:taggers_VRJets} for the VR-Track jets, 
+combining the standard selection and the highest $p_T$ selection. 
+%%%%%%%TODO: edit this%%%%%%%%
+In these figure, the data events are compared against the simulation.
+The majority of the events come from \ttbar\ production. There is only
+a very small fraction of events, which is denoted as ``non \ttbar''
+on the figure, which comes from other processes like $W$ or $Z$ production
+in association with jets or single-top production. The simulated \ttbar\
+events are split according to the origin of $W$-jets. The notation
+``\ttbar, ll'' denotes that both $W$-jets are light flavour jets.
+Similarly, ``\ttbar, cl'' (``\ttbar, bl'') 
+indicates that one of the $W$-jets is a \cjet\ (\bjet)
+whereas the other is a light flavour jet. $W$-jets with origin
+other than what is discussed above fall into the 
+category denoted by ``\ttbar, other''. This category includes
+events in which at least one of the $W$-jets comes from a
+hadronically decaying $\tau$-lepton. 
 \begin{figure}[H]
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J0_DL1.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J0_DL1r.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J1_DL1.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J1_DL1r.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J0_MV2c10.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J1_MV2c10.png}
-\end{minipage}
-\caption{Distributions of the DL1, DL1r and MV2c10 taggers output of the combination of the standard selection and the high-$p_T$ selection, before fitting or tagging with full uncertainties.} \label{fig:taggers_PFlow}
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J0_DL1.png}
+	\end{minipage}\hfill
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J0_DL1r.png}
+	\end{minipage}\hfill
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J1_DL1.png}
+	\end{minipage}\hfill
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J1_DL1r.png}
+	\end{minipage}\hfill
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J0_MV2c10.png}
+	\end{minipage}\hfill
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J1_MV2c10.png}
+	\end{minipage}
+	\caption{Distributions of the DL1, DL1r and MV2c10 
+	taggers output of the combination 
+	of the standard selection and the high-$p_T$ selection, 
+	before fitting or tagging with full uncertainties.} \label{fig:taggers_PFlow}
 \end{figure}
 
-
-\begin{figure}
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J0_pt.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J1_pt.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J0_eta.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J1_eta.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_LLR.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_MET.png}
-\end{minipage}
-\caption{Distributions of the leading and sub-leading jets from W decay, KLFitter output and the transverse missing transverse energy of the combination of the standard selection and the high-$p_T$ selection, before fitting or tagging with full uncertainties.} \label{fig:jets_PFlow}
-\end{figure}
-
-
-
-
-\begin{figure}
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRbb.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRqq.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRbhadq1.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRblepq1.png} 
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRWhadbhad.png} 
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRWhadblep.png} 
-\end{minipage}
-\caption{Distributions of angle related variables of the combination of the standard selection and the high-$p_T$ selection, before fitting or tagging with full uncertainties.} \label{fig:angles_PFlow}
-\end{figure}
-
-
-\begin{figure}
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_Mbb.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_mjj.png}
-\end{minipage}
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_mjjj.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_Htjj.png}
-\end{minipage}\hfill
-\caption{Distributions of mass related variables of the combination of the standard selection and the high-$p_T$ selection, before fitting or tagging with stat-only uncertainties.} \label{fig:mass_PFlow}
-\end{figure}
-
-\newpage
 \begin{figure}[h]
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J0_DL1.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J0_DL1r.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J1_DL1.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J1_DL1r.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J0_MV2c10.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J1_MV2c10.png}
-\end{minipage}
-\caption{Distributions of the DL1, DL1r and MV2c10 taggers output of the combination of the standard selection and the high-$p_T$ selection, before fitting or tagging with full uncertainties.} \label{fig:taggers_VRJets}
-\end{figure}
-
-
-\begin{figure}
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J0_pt.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J1_pt.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J0_eta.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J1_eta.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_LLR.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_MET.png}
-\end{minipage}
-\caption{Distributions of the leading and sub-leading jets from W decay, KLFitter output and the transverse missing transverse energy of the combination of the standard selection and the high-$p_T$ selection, before fitting or tagging with full uncertainties.} \label{fig:jets_VRJets}
-\end{figure}
-
-
-
-
-\begin{figure}
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRbb.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRqq.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRbhadq1.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRblepq1.png} 
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRWhadbhad.png} 
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRWhadblep.png} 
-\end{minipage}
-\caption{Distributions of angle related variables of the combination of the standard selection and the high-$p_T$ selection, before fitting or tagging with full uncertainties.} \label{fig:angles_VRJets}
-\end{figure}
-
-
-\begin{figure}
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_Mbb.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_mjj.png}
-\end{minipage}
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_mjjj.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_Htjj.png}
-\end{minipage}
-\caption{Distributions of mass related variables of the combination of the standard selection and the high-$p_T$ selection, before fitting or tagging with stat-only uncertainties.} \label{fig:mass_VRJets}
-\end{figure}
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J0_DL1.png}
+	\end{minipage}\hfill
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J0_DL1r.png}
+	\end{minipage}\hfill
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J1_DL1.png}
+	\end{minipage}\hfill
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J1_DL1r.png}
+	\end{minipage}\hfill
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J0_MV2c10.png}
+	\end{minipage}\hfill
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J1_MV2c10.png}
+	\end{minipage}
+	\caption{Distributions of the DL1, DL1r and MV2c10 taggers output of 
+	the combination of the standard selection and the high-$p_T$ selection, 
+	before fitting or tagging with full uncertainties.} \label{fig:taggers_VRJets}
+	\end{figure}	
 
 \subsubsection{Efficiencies and Scale Factors}
 
 %The Monte Carlo simulation demonstrates good agreement in different kinematic variables with data. 
-The Dl1 and DL1r $c$-jet efficiencies and scale factors with systematics uncertainties are calculated with 4 different fixed cut working points: 60\%, 70\%, 77\%, and 85\%, for the p4060 derivation, in December 2020. The results are shown in Figure \ref{fig:Dec_eff_PFlow}, \ref{fig:Dec_eff_VRJets}, \ref{fig:Dec_SF_PFlow}, \ref{fig:Dec_SF_VRJets}, for the charm jets mistagging efficiency and scale factors for the PFlow jet collections and the VR Track jets collections. These results combine the standard selection and the high $p_T$ selection, and a 1.25 $\pm$ 0.25 scale factor is applied on events with 3 true $b$ jets. The $c$-jets efficiencies and the scale factors are similar between the DL1 and DL1r as expected. 
+The Dl1 and DL1r $c$-jet efficiencies and scale factors with systematics 
+uncertainties are calculated with 4 different fixed cut working points: 
+60\%, 70\%, 77\%, and 85\%, for the p4060 derivation, in December 2020. 
+The results are shown in Figure \ref{fig:Dec_eff_PFlow}, \ref{fig:Dec_eff_VRJets}, 
+\ref{fig:Dec_SF_PFlow}, \ref{fig:Dec_SF_VRJets}, for the charm jets mistagging efficiency 
+and scale factors for the PFlow jet collections and the VR Track jets collections. 
+These results combine the standard selection and the high $p_T$ selection, 
+and a 1.25 $\pm$ 0.25 scale factor is applied on events with 3 true $b$ jets. 
+The $c$-jets efficiencies and the scale factors are similar between the DL1 and DL1r as expected. 
 
-% of the combination of the standard and the high-$p_T$ selection are calculated using the p3970 derivation with stat-only uncertainties, as shown in Figure \ref{fig:March_highpT_eff}, \ref{fig:March_highpT}. This result was not included in the official release due to time constraints, however, it will be included in the next round of calibration. The $c$-jet efficiencies and the scale factors are shown in the following: The calibration results of December 2019 are shown in the similar manner in the appendix, Figure \ref{fig:Dec}
 
-%As the recommended tagger and jet collection is now DL1r and EMPFlow jet, in this report only r
- % are shown Fig\ref{fig:March_eff}, \ref{fig:March}. The efficiencies and scale factors
- % Results of the lastest calibration, March 2020 of p3970 in the form of DL1
-
-% Efficiencies plots 
-
+%%% Efficiencies plots %%%
 \begin{figure}[H]
 \begin{minipage}[b]{.45\textwidth}
 \centering
@@ -1031,7 +955,8 @@ The Dl1 and DL1r $c$-jet efficiencies and scale factors with systematics uncerta
 \centering
 \includegraphics[width=1\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff85.png}
 \end{minipage}
-\caption{Charm-jet efficiencies of PFlow jets collection of derivation p4060 in December 2020, given for 4 different working points.} \label{fig:Dec_eff_PFlow}
+\caption{Charm-jet efficiencies of PFlow jets collection of derivation 
+p4060 in December 2020, given for 4 different working points.} \label{fig:Dec_eff_PFlow}
 \end{figure}
 
 \begin{figure}[H]
@@ -1051,7 +976,8 @@ The Dl1 and DL1r $c$-jet efficiencies and scale factors with systematics uncerta
 \centering
 \includegraphics[width=1\textwidth]{SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff85.png}
 \end{minipage}
-\caption{Charm-jet efficiencies of VR-Track jets collection of derivation p4060 in December 2020, given for 4 different working points.} \label{fig:Dec_eff_VRJets}
+\caption{Charm-jet efficiencies of VR-Track jets collection of derivation 
+p4060 in December 2020, given for 4 different working points.} \label{fig:Dec_eff_VRJets}
 \end{figure}
 
 % SF plots
@@ -1073,7 +999,8 @@ The Dl1 and DL1r $c$-jet efficiencies and scale factors with systematics uncerta
 \centering
 \includegraphics[width=1\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF85.png}
 \end{minipage}
-\caption{Charm-jet scale factors of PFlow jets collection of derivation p4060 in December 2020, given for 4 different working points.} \label{fig:Dec_SF_PFlow}
+\caption{Charm-jet scale factors of PFlow jets collection of derivation 
+p4060 in December 2020, given for 4 different working points.} \label{fig:Dec_SF_PFlow}
 \end{figure}
 
 \begin{figure}[H]
@@ -1093,7 +1020,8 @@ The Dl1 and DL1r $c$-jet efficiencies and scale factors with systematics uncerta
 \centering
 \includegraphics[width=1\textwidth]{SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF85.png}
 \end{minipage}
-\caption{Charm-jet scale factors of VR-Track jets collection of derivation p4060 in December 2020, given for 4 different working points.} \label{fig:Dec_SF_VRJets}
+\caption{Charm-jet scale factors of VR-Track jets collection of derivation 
+p4060 in December 2020, given for 4 different working points.} \label{fig:Dec_SF_VRJets}
 \end{figure}
 
 
@@ -1139,7 +1067,8 @@ The Dl1 and DL1r $c$-jet efficiencies and scale factors with systematics uncerta
 \centering
 \includegraphics[width=1\textwidth]{March_highpT/eff85.png}
 \end{minipage}
-\caption{Charm-jet efficiencies of calibration of derivation p3970 in March 2020, combining the standard and the high-$p_{T}$ selection, given for  4 different working points.} \label{fig:March_highpT_eff}
+\caption{Charm-jet efficiencies of calibration of derivation p3970 in March 2020, combining the standard 
+and the high-$p_{T}$ selection, given for  4 different working points.} \label{fig:March_highpT_eff}
 \end{figure}
 
 
@@ -1192,48 +1121,16 @@ In terms of statistical gain, taking the 60\% working point scale factor with 20
 \printbibliography
 % \begin{thebibliography}{99}
 
-% \bibitem{HIGG-2018-04} ATLAS Collaboration,\textit{Observation of $H\rightarrow bb$ decays andV Hproduction with the ATLAS detector},Phys. Lett. B786(2018) 59, \href{http://arxiv.org/abs/1808.08238}{arXiv:1808.08238 [hep-ex]}.
-% \bibitem{HIGG-2018-13} ATLAS Collaboration,\textit{Observation of Higgs boson production in association with a top quark pairat the LHC with the ATLAS detector}, Phys. Lett. B784(2018) 173, \href{http://arxiv.org/abs/1806.00425}{arXiv:1806.00425 [hep-ex]}.
-% \bibitem{PERF-2012-04} ATLAS Collaboration, \textit{Performance of $b$-jet identification in the ATLAS experiment}, JINST11(2016) P04008, \href{http://arxiv.org/abs/1512.01094}{arXiv:1512.01094 [hep-ex]}.
-% \bibitem{PERF-2016-05} ATLAS Collaboration,\textit{Measurements of $b$-jet tagging efficiency with the ATLAS detector using $t\bar{t}$ events at$\sqrt{s}$=13TeV}, JHEP08(2018) 089, \href{http://arxiv.org/abs/1805.01845}{arXiv:1805.01845 [hep-ex]}.
-%  \bibitem{SUSY-2014-08} ATLAS Collaboration, \textit{Measurements of Higgs boson properties in the diphoton decay channel with 36 fb−1 of pp collision data at s√=13 TeV with the ATLAS detector}, CERN-PH-EP-2015-214, 2015, \small{arXiv:}\href{http://arxiv.org/abs/arXiv:1508.06608} {1508.06608}.\normalsize
-%  \bibitem{FTAG-2018-01} ATLAS Collaboration, \textit{measurement with $t\bar{t}$ events in pp collisions at $\sqrt{s}$ =13 TeV}, Eur. Phys. J. C 79, 970 (2019), \href{https://arxiv.org/abs/1907.05120}{arXiv:1907.05120}. 
-% \bibitem{ATLAS-CONF-2018-006} ATLAS Collaboration, \textit{Calibration of light-flavour b-jet mistagging rates using ATLAS proton-proton collision data at \sqrt{s}=13TeV}, ATLAS-CONF-2018-006, \href{https://cds.cern.ch/record/2314418}{url:https://cds.cern.ch/record/2314418}
-%  \bibitem{ATLAS-CONF-2018-043h} \textit{Combination of searches for Higgs boson pairs in $p\bar{p}$ collisions at 13 TeV with the ATLAS experiment}, ATLAS-CONF-2018-043, 2018, \href{https://cds.cern.ch/record/2638212?ln=en}{https://cds.cern.ch/record/2638212?ln=en}
 % \bibitem{Interpreting Higgs result}, Dean Carmi, et al., \textit{Interpreting LHC Higgs Results from Natural New Physics Perspective}, \href{https://arxiv.org/abs/1202.3144}{arXiv:1202.3144}[hep-ph]. 
-% \bibitem{ATLAS-CONF-2018-045} ATLAS Collaboration,\textit{Calibration of the ATLASb-tagging algorithm int ̄tsemileptonic events},ATLAS-CONF-2018-045, 2018,\href{http://cds.cern.ch/record/2638455}{url:https://cds.cern.ch/record/2638455}
-% \bibitem{ATLAS-CONF-2018-006}ATLAS Collaboration, \textit{Calibration of light-flavour $b$-jet mistagging rates using ATLAS proton-proton collision data at $\sqrt{s}=13$~TeV}, ATLAS-CONF-2018-006, \small{url:} \href{https://cds.cern.ch/record/2314418}{https://cds.cern.ch/record/2314418}\normalsize
 % \bibitem{cjet} ATLAS Collaboration, \textit{Measurement of $c$-jet tagging efficiency in $t\bar{t}$ events using a likelihood approach}, Feb 2017, \small{CDS: }\href{https://cds.cern.ch/record/2243764?ln=en}{ATL-COM-PHYS-2017-073}.\normalsize
 % \bibitem{PDG}M. Tanabashiet al.(Particle Data Group), \textit{Review of Particle Physics}, Phys. Rev. D98, 030001 (2018), \href{https://link.aps.org/doi/10.1103/PhysRevD.98.030001}{doi:10.1103/PhysRevD.98.030001}.
 % \bibitem{tagging} ATLAS collaboration, \textit{B Tagging in ATLAS and CMS}, Sep 2017, \small{arXiv:}\href{https://arxiv.org/abs/1709.01290}{1709.01290}\normalsize
-% \bibitem{ATL-PHYS-PUB-2017-013}ATLAS Collaboration, \textit{Optimisation and performance studies of the ATLAS b-tagging algorithms for the 2017-18 LHC run}, \small{CDS:}\href{https://cds.cern.ch/record/2273281}{ATL-PHYS-PUB-2017-013}\normalsize
-% \bibitem{FTAG-2018-01}ATLAS Collaboration, \textit{ATLAS $b$-jet identification performance and efficiency measurement with $t\bar{t}$ events in $pp$ collisions at $\sqrt{s}=13$ TeV,} Jan 2020,\small{arXiv:}\href{https://arxiv.org/abs/1907.05120}{1907.05120}\normalsize
-% \bibitem{ATL-PHYS-PUB-2017-003} ATLAS Collaboration, \textit{FTAG-2018-01 of Jets Containing b-Hadrons with Recurrent Neural Networks at the ATLAS Experiment,} Jul 2017,\small{CDS: }\href{https://cds.cern.ch/record/2255226/files/ATL-PHYS-PUB-2017-003.pdf}{ATL-PHYS-PUB-2017-003}.\normalsize
 
 
 
 % \bibitem{CKM1}G. Abbiendi et al., \textit{A Measurement of the rate of charm production in $W$ decays}, 1022 Phys. Lett. B490 (2000) 71, \small{arXiv: }\href{https://arxiv.org/abs/hep-ex/0009020}{hep-ex/0009020}.\normalsize
 % \bibitem{CKM2}K. A. Olive 1023 et al., \textit{Review of Particle Physics}, \href{https://iopscience.iop.org/article/10.1088/1674-1137/38/9/090001}{Chin. Phys. C38 (2014) 090001}.\normalsize
 % \bibitem{ttbar+HF SF}ATLAS collaboration, \textit{Measurement of the Higgs boson decaying to $b$-quarks produced in association with a top-quark pair in $pp$ collisions at $\sqrt{s}$=13 TeV with the ATLAS detector}, \href{http://cdsweb.cern.ch/record/2743685/files/ATLAS-CONF-2020-058.pdf}{ATLAS-CONF-2020-058}.
-
-
-
-% \bibitem{ERDMANN201418}J Erdmann et al., \textit{A likelihood-based reconstruction algorithm for top-quark pairs and the KLFitter framework,} \small{DOI: }\href{https://doi.org/10.1016/j.nima.2014.02.029}{10.1016}.\normalsize
-% \bibitem{DAPR-2010-01}ATLAS Collaboration, \texit{Luminosity determination in \(pp\) collisions at \(\sqrt{s} = 7\,\text{TeV}\) using the ATLAS detector at the LHC}, Eur. Phys. J. C, 2011, DOI:\href{https://link.springer.com/article/10.1140/epjc/s10052-011-1630-5}{10.1140/epjc/s10052-011-1630-5}.
-% \bibitem{DAPR-2011-01}ATLAS Collaboration, \texit{Improved luminosity determination in \(pp\) collisions at \(\sqrt{s} = 7\,\text{TeV}\) using the ATLAS detector at the LHC}, Eur. Phys. J. C, 2013, DOI:\href{https://link.springer.com/article/10.1140/epjc/s10052-011-1630-5}{10.1140/epjc/s10052-013-2518-3}. 
-% \bibitem{DAPR-2013-01}ATLAS Collaboration, \texit{Luminosity determination in \(pp\) collisions at \(\sqrt{s} = 8\,\text{TeV}\) using the ATLAS detector at the LHC}, Eur. Phys. J. C, 2016, DOI:\href{https://dspace.ankara.edu.tr/xmlui/handle/20.500.12575/67072}{10.1140/epjc/s10052-016-4466-1}. 
-% \bibitem{LUCID2} G. Avoni and others,\texit{The new LUCID-2 detector for luminosity measurement and monitoring in ATLAS}, JINST, 2018, doi:\href{https://iopscience.iop.org/article/10.1088/1748-0221/13/07/P07017}{10.1088/1748-0221/13/07/P07017}.
-% \bibitem{Aad:2020uyd} ATLAS Collaboration, \texit{Performance of the ATLAS muon triggers in Run 2}, CERN-EP-2020-031, 2020, DOI:\href{http://eprints.gla.ac.uk/225988/}{10.1088/1748-0221/15/09/p09015}.
-% \bibitem{TRIG-2018-05}ATLAS Collaboration, \texit{Performance of electron and photon triggers in ATLAS during LHC Run~2}, Eur. Phys. J. C, 2020, \href{https://link.springer.com/article/10.1140/epjc/s10052-019-7500-2}{DOI:10.1140/epjc/s10052-019-7500-2}.
-% \bibitem{powheg}S. Alioli, P. Nason, C. Oleari and E. Re, \textit{A general framework for implementing NLO calculations in shower Monte Carlo programs: the POWHEG BOX}, JHEP 06 (2010) 043, \small{arXiv:} \href{https://arxiv.org/abs/1002.2581}{1002.2581 [hep-ph]}.\normalsize
-% \bibitem{evtgen} D. J. Lange, \textit{The EvtGen particle decay simulation package}, \href{https://www.sciencedirect.com/science/article/pii/S0168900201000894?via\%3Dihub}{Nucl. Instrum. Meth. A 462 (2001) 152}.\normalsize
-% \bibitem{pythia}T. Sjöstrand, S. Mrenna and P. Skands, \textit{PYTHIA 6.4 physics and manual}, JHEP 05 (2006) 026, \small{arXiv: }\href{https://arxiv.org/abs/hep-ph/0603175}{hep-ph/0603175}.\normalsize
-% \bibitem{perugia}P. Skands, \textit{Tuning Monte Carlo generators: The Perugia tunes}, Phys. Rev. D 82 (2010) 074018, \small{arXiv: }\href{https://arxiv.org/abs/1005.3457}{1005.3457 [hep-ph]}.\normalsize
-% \bibitem{NNLO}M. Czakon, M. L. Mangano, A. Mitov and J. Rojo, \textit{Constraints on the gluon PDF from top quark pair production at hadron colliders}, JHEP 07 (2013) 167, \small{arXiv:} \href{https://arxiv.org/abs/1303.7215}{1303.7215 [hep-ph]}.\normalsize
-% \bibitem{sherpa}T. Gleisberg et al., \textit{Event generation with SHERPA 1.1}, JHEP 02 (2009) 007, \small{arXiv:} \href{https://arxiv.org/abs/0811.4622}{0811.4622 [hep-ph]}.\normalsize
-% \bibitem{GEANT4}S. Agostinelli et al., \textit{GEANT4 - a simulation toolkit},\href{https://www.sciencedirect.com/science/article/pii/S0168900203013688?via\%3Dihub}{ Nucl. Instrum. Meth. A 506 (2003) 250}.\normalsize
-
-
 % \bibitem{ATL-PHYS-PUB-2017-0132016}Optimisation of the ATLAS b-tagging performance for the 2016 LHC Run, (2016),url: https://cds.cern.ch/record/2160731.
 
 
@@ -1245,7 +1142,7 @@ In terms of statistical gain, taking the 60\% working point scale factor with 20
 \subsection{Appendix}
 \newpage
 \newpage
-
+\section{Addition plots for the standard selection}
 \begin{figure}[h]
 \begin{minipage}[b]{.45\textwidth}
 \centering
@@ -1263,10 +1160,6 @@ In terms of statistical gain, taking the 60\% working point scale factor with 20
 \centering
 \includegraphics[width=1\textwidth]{Distribution_March/DataMC_J0_pt.png}
 \end{minipage}\hfill
-% \begin{minipage}[b]{.45\textwidth}
-% \centering
-% \includegraphics[width=1\textwidth]{Distribution_March/DataMC_LLR.png}
-% \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
 \includegraphics[width=1\textwidth]{Distribution_March/DataMC_Mbb.png}
@@ -1283,7 +1176,9 @@ In terms of statistical gain, taking the 60\% working point scale factor with 20
 % \centering
 % \includegraphics[width=1\textwidth]{Distribution_March/DataMC_dRJJ.png}
 % \end{minipage}\hfill
-\caption{Standard selection: various kinematic distributions of the standard selection before fitting or tagging with systematics. The top two plots are the distributions of the DL1 and Dl1r score distributions of the leading jet.} \label{fig:standard_selection}
+\caption{Standard selection: various kinematic distributions of the standard 
+selection before fitting or tagging with systematics. The top two plots are 
+the distributions of the DL1 and Dl1r score distributions of the leading jet.} \label{fig:standard_selection}
 \end{figure}
 
 \begin{figure}[H]
@@ -1303,7 +1198,10 @@ In terms of statistical gain, taking the 60\% working point scale factor with 20
 \centering
 \includegraphics[width=1\textwidth]{Distribution_March/DataMC_J1_pt.png}
 \end{minipage}
-\caption{Selection for low-$p_T$ extension: kinematic distributions of the sub-leading $W$ decay jet before fitting or tagging with systematics. The top two plots are distributions of the DL1 and Dl1r score of the sub-leading jet.} \label{fig:lowpT_selection}
+\caption{Selection for low-$p_T$ extension: kinematic distributions of the 
+sub-leading $W$ decay jet before fitting or tagging with systematics. 
+The top two plots are distributions of the DL1 and Dl1r score of the 
+sub-leading jet.} \label{fig:lowpT_selection}
 \end{figure}
 
 
@@ -1324,27 +1222,17 @@ In terms of statistical gain, taking the 60\% working point scale factor with 20
 \centering
 \includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_J0_pt.png}
 \end{minipage}\hfill
-% \begin{minipage}[b]{.45\textwidth}
-% \centering
-% \includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_LLR.png}
-% \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
 \includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_Mbb.png}
 \end{minipage}\hfill
-% \begin{minipage}[b]{.45\textwidth}
-% \centering
-% \includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_MET.png}
-% \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
 \includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_mjj.png}
 \end{minipage}
-% \begin{minipage}[b]{.45\textwidth}
-% \centering
-% \includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_dRJJ.png}
-% \end{minipage}\hfill
-\caption{Various kinematic distributions of the combination of the standard selection and the high-$p_T$ selection, before fitting or tagging with stat-only uncertainties.} \label{fig:highpT_selection}
+\caption{Various kinematic distributions of the combination of the 
+standard selection and the high-$p_T$ selection, before fitting or 
+tagging with stat-only uncertainties.} \label{fig:highpT_selection}
 \end{figure}
 
 
@@ -1358,6 +1246,183 @@ In terms of statistical gain, taking the 60\% working point scale factor with 20
 \includegraphics[width=1\textwidth]{Dec.png}
 \caption{Calibration result of derivation p3970 in December 2019, given for  4 different working points.}\label{fig:Dec}
 \end{figure}
+
+
+
+
+
+	
+	\begin{figure}
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J0_eta.png}
+	\end{minipage}\hfill
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J1_eta.png}
+	\end{minipage}\hfill
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_LLR.png}
+	\end{minipage}\hfill
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_MET.png}
+	\end{minipage}
+	\caption{Distributions of the leading and sub-leading jets from W decay, KLFitter output and the 
+	transverse missing transverse energy of the combination of the standard selection and the 
+	high-$p_T$ selection, before fitting or tagging with full uncertainties.} \label{fig:jets_PFlow}
+	\end{figure}
+	
+	
+	
+	
+	\begin{figure}
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRbb.png}
+	\end{minipage}\hfill
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRqq.png}
+	\end{minipage}\hfill
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRbhadq1.png}
+	\end{minipage}\hfill
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRblepq1.png} 
+	\end{minipage}\hfill
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRWhadbhad.png} 
+	\end{minipage}\hfill
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRWhadblep.png} 
+	\end{minipage}
+	\caption{Distributions of angle related variables of the combination of the standard 
+	selection and the high-$p_T$ selection, before fitting or 
+	tagging with full uncertainties.} \label{fig:angles_PFlow}
+	\end{figure}
+	
+	
+	\begin{figure}
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_Mbb.png}
+	\end{minipage}\hfill
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_mjj.png}
+	\end{minipage}
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_mjjj.png}
+	\end{minipage}\hfill
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_Htjj.png}
+	\end{minipage}\hfill
+	\caption{Distributions of mass related variables of the combination 
+	of the standard selection and the 
+	high-$p_T$ selection, before fitting or 
+	tagging with stat-only uncertainties.} \label{fig:mass_PFlow}
+	\end{figure}
+	
+	
+	
+	
+	\begin{figure}
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J0_eta.png}
+	\end{minipage}\hfill
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J1_eta.png}
+	\end{minipage}\hfill
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_LLR.png}
+	\end{minipage}\hfill
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_MET.png}
+	\end{minipage}
+	\caption{Distributions of the leading and sub-leading jets 
+	from W decay, KLFitter output and the transverse missing transverse 
+	energy of the combination of the standard selection and the 
+	high-$p_T$ selection, before fitting or tagging with 
+	full uncertainties.} \label{fig:jets_VRJets}
+	\end{figure}
+	
+	
+	
+	
+	\begin{figure}
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRbb.png}
+	\end{minipage}\hfill
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRqq.png}
+	\end{minipage}\hfill
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRbhadq1.png}
+	\end{minipage}\hfill
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRblepq1.png} 
+	\end{minipage}\hfill
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRWhadbhad.png} 
+	\end{minipage}\hfill
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRWhadblep.png} 
+	\end{minipage}
+	\caption{Distributions of angle related variables of the combination 
+	of the standard selection and the high-$p_T$ 
+	selection, before fitting or tagging with full uncertainties.} \label{fig:angles_VRJets}
+	\end{figure}
+	
+	
+	\begin{figure}
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_Mbb.png}
+	\end{minipage}\hfill
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_mjj.png}
+	\end{minipage}
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_mjjj.png}
+	\end{minipage}\hfill
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_Htjj.png}
+	\end{minipage}
+	\caption{Distributions of mass related variables of the combination 
+	of the standard selection and the high-$p_T$ selection, 
+	before fitting or tagging with stat-only uncertainties.} \label{fig:mass_VRJets}
+	\end{figure}
+	
+
+
+
+
+
+
+
+
+
 \begin{table}[h]
 \begin{centering}
 \begin{tabular}{p{25em}}
