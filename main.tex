@@ -1,12 +1,11 @@
-
-
 \documentclass[letterpaper,12pt]{article}
 \usepackage{tabularx} % extra features for tabular environment
 \usepackage{amsmath}  % improve math presentation
 \usepackage{graphicx} % takes care of graphic including machinery
 \usepackage[margin=1in,letterpaper]{geometry} % decreases margins
+\usepackage{xspace}
 \usepackage{ANA-FTAG-2020-08-PAPER-defs}
-\usepackage{atlasmisc}
+
 \usepackage[style=numeric]{biblatex}
 \addbibresource{ANA-FTAG-2020-08-PAPER.bib}
 \addbibresource{bib/ATLAS.bib}
@@ -54,7 +53,7 @@
 \begin{figure}[htp]
 \begin{minipage}[b]{.5\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{logo.png}
+\includegraphics[width=1\textwidth]{logo.eps}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \vspace{3em}
@@ -155,7 +154,7 @@ the DL1 tagger can be further separated into two taggers: DL1 and DL1r,
 %Their high mass also leads to decay products with a larger transverse momentum relative to the jet axis with respect to the ones typically found in jets from light partons. Finally, heavy hadrons have a sizable branching ratio for semileptonic decays, hence the presence of soft leptons in the produced jets provides another tool for heavy jet identification. %The general strategy is to start with simple algorithms that exploits a particular property of b jets and progressively add more information to build moresophisticated algorithms. %The output of these algorithms consists in a discriminant value for each jet. Operating points are then defined as thresholds on the discriminant, designed to provide a determined efficiency for identifying b jets.
 % Low-level $b$-taggingalgorithms fall into two broad categories. A first approach, implemented in the IP2D and IP3D algorithms \cite{ATL-PHYS-PUB-2017-013}, or RNNIP \cite{ATL-PHYS-PUB-2017-003} is inclusive and based on exploiting the large impact parameters of the tracks originating from the $b$-hadron decay. The second approach explicitly reconstructs displaced vertices. To maximise the $b$-tagging performance, low-level algorithm results are combined using multivariate classifiers. To this end, two high-level tagging algorithms have been developed. The first one,MV2\cite{ATL-PHYS-PUB-2017-013}, is based on a boosted decisiontree (BDT) discriminant, while the second one,DL1, is based on a deep feed-forward neural network(NN). These two algorithms are presented in fig .
 \begin{figure}
-\includegraphics[width=1\textwidth]{MV2_DL1.png}
+\includegraphics[width=1\textwidth]{MV2_DL1.eps}
 \caption{Performance of MV2c10 and DL1 tagger\cite{FTAG-2018-01}.}\label{fig:MV2_DL1}
 \end{figure}
 
@@ -214,7 +213,7 @@ efficiency (more details in Section \ref{charm mistagging}).
 \centering
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{feynman.png}
+\includegraphics[width=1\textwidth]{feynman.eps}
 \end{minipage}
 \caption{Feynman diagram of the semi-leptonic $t\bar{t}$ events.}
 \label{fig:feynman}
@@ -513,19 +512,19 @@ hadronically decaying $\tau$-lepton.
 
 % \begin{minipage}[b]{.45\textwidth}
 % \centering
-% \includegraphics[width=1\textwidth]{b_purity/_stats_bjets_purityp_Tjet0GeV.png}
+% \includegraphics[width=1\textwidth]{b_purity/_stats_bjets_purityp_Tjet0GeV.eps}
 % \footnotesize (a) Comparing the leading jet $b$-jet purity distribution 
 % between the standard selection and the high $p_T$ selection.\label{fig:b_after_leading}
 % \end{minipage}\hfill
 % \begin{minipage}[b]{.45\textwidth}
 % \centering
-% \includegraphics[width=1\textwidth]{b_purity/_stats_bjets_purityp_Tjet1GeV.png}
+% \includegraphics[width=1\textwidth]{b_purity/_stats_bjets_purityp_Tjet1GeV.eps}
 % \footnotesize (b) Comparing the sub-leading jet $b$-jet 
 % purity distribution between the standard selection and the high $p_T$ selection.\label{fig:b_after_subleading}
 % \end{minipage}\hfill
 % \begin{minipage}[b]{.45\textwidth}
 % \centering
-% \includegraphics[width=1\textwidth]{b_purity/tagged_stats_bjets_purityp_Tjet0GeV.png}
+% \includegraphics[width=1\textwidth]{b_purity/tagged_stats_bjets_purityp_Tjet0GeV.eps}
 % \label{b_tagged_leading}
 % \footnotesize (c) Comparing the leading jet $b$-jet purity distribution 
 % between the standard selection and the high $p_T$ selection after 
@@ -533,7 +532,7 @@ hadronically decaying $\tau$-lepton.
 % \end{minipage}\hfill
 % \begin{minipage}[b]{.45\textwidth}
 % \centering
-% \includegraphics[width=1\textwidth]{b_purity/tagged_stats_bjets_purityp_Tjet1GeV.png}
+% \includegraphics[width=1\textwidth]{b_purity/tagged_stats_bjets_purityp_Tjet1GeV.eps}
 % \label{b_tagged_subleading}
 % \footnotesize (d) Comparing the sub-leading jet $b$-jet purity 
 % distribution between the standard selection and the high $p_T$ 
@@ -619,10 +618,10 @@ within the systematic uncertainties.
 
  \begin{figure}%[htb]
 	\centering
-	\subfigure[]{\includegraphics[width=0.45\textwidth]{figs_support/plots_withoutHighpT/DataMC_h_J0_pt.pdf}}
-	\subfigure[]{\includegraphics[width=0.45\textwidth]{figs_support/plots_withoutHighpT/DataMC_h_J0_pttrackjet.pdf}}\\
-	\subfigure[]{\includegraphics[width=0.45\textwidth]{figs_support/plots_withoutHighpT/DataMC_h_J1_pt.pdf}}
-	\subfigure[]{\includegraphics[width=0.45\textwidth]{figs_support/plots_withoutHighpT/DataMC_h_J1_pttrackjet.pdf}}\\
+	\includegraphics[width=0.45\textwidth]{figs_support/plots_withoutHighpT/DataMC_h_J0_pt.pdf}
+	\includegraphics[width=0.45\textwidth]{figs_support/plots_withoutHighpT/DataMC_h_J0_pttrackjet.pdf}\\
+	\includegraphics[width=0.45\textwidth]{figs_support/plots_withoutHighpT/DataMC_h_J1_pt.pdf}
+	\includegraphics[width=0.45\textwidth]{figs_support/plots_withoutHighpT/DataMC_h_J1_pttrackjet.pdf}\\
 	\caption{Data versus simulation for various variables used in the analysis for 
 	particle flow jets in the left column and for track jets in the right column.}
 	\label{fig:kinematic_distributions_standard}
@@ -686,10 +685,10 @@ can be found in Appendix, Figure \ref{fig:highpT_selection}.
 
 \begin{figure}%[htb]
 		\centering
-		\subfigure[]{\includegraphics[width=0.45\textwidth]{figs_support/plots_hm/DataMC_h_J0_pt_all_2.pdf}}
-		\subfigure[]{\includegraphics[width=0.45\textwidth]{figs_support/plots_hm/DataMC_h_tjet_J0_pt_all_2.pdf}}\\
-		\subfigure[]{\includegraphics[width=0.45\textwidth]{figs_support/plots_hm/DataMC_h_J1_pt_all_2.pdf}}
-		\subfigure[]{\includegraphics[width=0.45\textwidth]{figs_support/plots_hm/DataMC_h_tjet_J1_pt_all_2.pdf}}\\
+		\includegraphics[width=0.45\textwidth]{figs_support/plots_hm/DataMC_h_J0_pt_all_2.pdf}
+		\includegraphics[width=0.45\textwidth]{figs_support/plots_hm/DataMC_h_tjet_J0_pt_all_2.pdf}\\
+		\includegraphics[width=0.45\textwidth]{figs_support/plots_hm/DataMC_h_J1_pt_all_2.pdf}
+		\includegraphics[width=0.45\textwidth]{figs_support/plots_hm/DataMC_h_tjet_J1_pt_all_2.pdf}\\
 		\caption{Data versus simulation for various variables used in the analysis for 
 		particle flow jets in the left column and for track jets in the right column.}
 		\label{fig:kinematic_distributions_highpT}
@@ -716,27 +715,27 @@ purity and relatively high gain in statistics.
 \begin{figure}
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{stat_gains/statsgain_0GeV.png}
+\includegraphics[width=1\textwidth]{stat_gains/statsgain_0GeV.eps}
 \footnotesize (a) Gain in stats and the $c$-jet purity with cut value 0 GeV.
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{stat_gains/statsgain_40GeV.png}
+\includegraphics[width=1\textwidth]{stat_gains/statsgain_40GeV.eps}
 \footnotesize (b) Gain in stats and the $c$-jet purity with cut value 40 GeV.
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{stat_gains/statsgain_70GeV.png}
+\includegraphics[width=1\textwidth]{stat_gains/statsgain_70GeV.eps}
 \footnotesize (c) Gain in stats and the $c$-jet purity with cut value 70 GeV.
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{stat_gains/statsgain_90GeV.png}
+\includegraphics[width=1\textwidth]{stat_gains/statsgain_90GeV.eps}
 \footnotesize (c) Gain in stats and the $c$-jet purity with cut value 90 GeV.
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{stat_gains/statsgain_140GeV.png}
+\includegraphics[width=1\textwidth]{stat_gains/statsgain_140GeV.eps}
 \footnotesize (d) Gain in stats and the $c$-jet purity with cut value 140 GeV.
 \end{minipage}\hfill
 
@@ -787,10 +786,10 @@ fig:jets_VRJets, fig:angles_VRJets, fig:mass_VRJets, fig:combined_selection}.
 
 \begin{figure}%[htb]
 		\centering
-		\subfigure[]{\includegraphics[width=0.45\textwidth]{figs_support/plots_def/DataMC_h_J0_pt_all_2.pdf}}
-		\subfigure[]{\includegraphics[width=0.45\textwidth]{figs_support/plots_def/DataMC_h_tjet_J0_pt_all_2.pdf}}\\
-		\subfigure[]{\includegraphics[width=0.45\textwidth]{figs_support/plots_def/DataMC_h_J1_pt_all_2.pdf}}
-		\subfigure[]{\includegraphics[width=0.45\textwidth]{figs_support/plots_def/DataMC_h_tjet_J1_pt_all_2.pdf}}\\
+		\includegraphics[width=0.45\textwidth]{figs_support/plots_def/DataMC_h_J0_pt_all.pdf}
+		\includegraphics[width=0.45\textwidth]{figs_support/plots_def/DataMC_h_tjet_J0_pt_all.pdf}\\
+		\includegraphics[width=0.45\textwidth]{figs_support/plots_def/DataMC_h_J1_pt_all.pdf}
+		\includegraphics[width=0.45\textwidth]{figs_support/plots_def/DataMC_h_tjet_J1_pt_all.pdf}\\
 		\caption{Data versus simulation for various variables used in the analysis for 
 		particle flow jets in the left column and for track jets in the right column.}
 		\label{fig:kinematic_distributions_combined}
@@ -922,7 +921,7 @@ uncertainty due to the scale factor implemented.
     \centering
     \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{3bplots/3bplots.png}
+\includegraphics[width=1\textwidth]{3bplots/3bplots.eps}
 \end{minipage}
 	\caption{The DL1r score distribution of the leading VR-Track jet, 
 	requiring at least 1 VR-Track jets have DL1r > 8 to reject most of 
@@ -970,27 +969,27 @@ hadronically decaying $\tau$-lepton.
 \begin{figure}[H]
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J0_DL1.png}
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J0_DL1.eps}
 	\end{minipage}\hfill
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J0_DL1r.png}
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J0_DL1r.eps}
 	\end{minipage}\hfill
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J1_DL1.png}
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J1_DL1.eps}
 	\end{minipage}\hfill
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J1_DL1r.png}
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J1_DL1r.eps}
 	\end{minipage}\hfill
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J0_MV2c10.png}
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J0_MV2c10.eps}
 	\end{minipage}\hfill
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J1_MV2c10.png}
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J1_MV2c10.eps}
 	\end{minipage}
 	\caption{Distributions of the DL1, DL1r and MV2c10 
 	taggers output of the combination 
@@ -1001,27 +1000,27 @@ hadronically decaying $\tau$-lepton.
 \begin{figure}[h]
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J0_DL1.png}
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J0_DL1.eps}
 	\end{minipage}\hfill
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J0_DL1r.png}
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J0_DL1r.eps}
 	\end{minipage}\hfill
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J1_DL1.png}
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J1_DL1.eps}
 	\end{minipage}\hfill
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J1_DL1r.png}
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J1_DL1r.eps}
 	\end{minipage}\hfill
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J0_MV2c10.png}
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J0_MV2c10.eps}
 	\end{minipage}\hfill
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J1_MV2c10.png}
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J1_MV2c10.eps}
 	\end{minipage}
 	\caption{Distributions of the DL1, DL1r and MV2c10 taggers output of 
 	the combination of the standard selection and the high-$p_T$ selection, 
@@ -1046,19 +1045,19 @@ The $c$-jets efficiencies and the scale factors are similar between the DL1 and 
 \begin{figure}[H]
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff60.png}
+\includegraphics[width=1\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff60.eps}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff70.png}
+\includegraphics[width=1\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff70.eps}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff77.png}
+\includegraphics[width=1\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff77.eps}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff85.png}
+\includegraphics[width=1\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff85.eps}
 \end{minipage}
 \caption{Charm-jet efficiencies of PFlow jets collection of derivation 
 p4060 in December 2020, given for 4 different working points.} \label{fig:Dec_eff_PFlow}
@@ -1067,19 +1066,19 @@ p4060 in December 2020, given for 4 different working points.} \label{fig:Dec_ef
 \begin{figure}[H]
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff60.png}
+\includegraphics[width=1\textwidth]{SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff60.eps}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff70.png}
+\includegraphics[width=1\textwidth]{SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff70.eps}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff77.png}
+\includegraphics[width=1\textwidth]{SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff77.eps}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff85.png}
+\includegraphics[width=1\textwidth]{SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff85.eps}
 \end{minipage}
 \caption{Charm-jet efficiencies of VR-Track jets collection of derivation 
 p4060 in December 2020, given for 4 different working points.} \label{fig:Dec_eff_VRJets}
@@ -1090,19 +1089,19 @@ p4060 in December 2020, given for 4 different working points.} \label{fig:Dec_ef
 \begin{figure}[H]
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF60.png}
+\includegraphics[width=1\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF60.eps}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF70.png}
+\includegraphics[width=1\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF70.eps}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF77.png}
+\includegraphics[width=1\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF77.eps}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF85.png}
+\includegraphics[width=1\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF85.eps}
 \end{minipage}
 \caption{Charm-jet scale factors of PFlow jets collection of derivation 
 p4060 in December 2020, given for 4 different working points.} \label{fig:Dec_SF_PFlow}
@@ -1111,19 +1110,19 @@ p4060 in December 2020, given for 4 different working points.} \label{fig:Dec_SF
 \begin{figure}[H]
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF60.png}
+\includegraphics[width=1\textwidth]{SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF60.eps}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF70.png}
+\includegraphics[width=1\textwidth]{SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF70.eps}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF77.png}
+\includegraphics[width=1\textwidth]{SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF77.eps}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF85.png}
+\includegraphics[width=1\textwidth]{SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF85.eps}
 \end{minipage}
 \caption{Charm-jet scale factors of VR-Track jets collection of derivation 
 p4060 in December 2020, given for 4 different working points.} \label{fig:Dec_SF_VRJets}
@@ -1136,19 +1135,19 @@ p4060 in December 2020, given for 4 different working points.} \label{fig:Dec_SF
 \begin{figure}[H]
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF60.png}
+\includegraphics[width=1\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF60.eps}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF70.png}
+\includegraphics[width=1\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF70.eps}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF77.png}
+\includegraphics[width=1\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF77.eps}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF85.png}
+\includegraphics[width=1\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF85.eps}
 \end{minipage}
 \caption{Scale factors of calibration of derivation p3970 in March 2020, given for  4 different working points.} \label{fig:March}
 \end{figure}
@@ -1158,19 +1157,19 @@ p4060 in December 2020, given for 4 different working points.} \label{fig:Dec_SF
 \begin{figure}[H]
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{March_highpT/eff60.png}
+\includegraphics[width=1\textwidth]{March_highpT/eff60.eps}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{March_highpT/eff70.png}
+\includegraphics[width=1\textwidth]{March_highpT/eff70.eps}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{March_highpT/eff77.png}
+\includegraphics[width=1\textwidth]{March_highpT/eff77.eps}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{March_highpT/eff85.png}
+\includegraphics[width=1\textwidth]{March_highpT/eff85.eps}
 \end{minipage}
 \caption{Charm-jet efficiencies of calibration of derivation p3970 in March 2020, combining the standard 
 and the high-$p_{T}$ selection, given for  4 different working points.} \label{fig:March_highpT_eff}
@@ -1180,19 +1179,19 @@ and the high-$p_{T}$ selection, given for  4 different working points.} \label{f
 \begin{figure}[H]
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{March_highpT/SF60.png}
+\includegraphics[width=1\textwidth]{March_highpT/SF60.eps}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{March_highpT/SF70.png}
+\includegraphics[width=1\textwidth]{March_highpT/SF70.eps}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{March_highpT/SF77.png}
+\includegraphics[width=1\textwidth]{March_highpT/SF77.eps}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{March_highpT/SF85.png}
+\includegraphics[width=1\textwidth]{March_highpT/SF85.eps}
 \end{minipage}
 \caption{Scale factors of calibration of derivation p3970 in March 2020, combining the standard and the high-$p_{T}$ selection, given for  4 different working points.} \label{fig:March_highpT}
 \end{figure}
@@ -1251,35 +1250,35 @@ In terms of statistical gain, taking the 60\% working point scale factor with 20
 \begin{figure}[h]
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{Distribution_March/DataMC_J0_DL1.png}
+\includegraphics[width=1\textwidth]{Distribution_March/DataMC_J0_DL1.eps}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{Distribution_March/DataMC_J0_DL1r.png}
+\includegraphics[width=1\textwidth]{Distribution_March/DataMC_J0_DL1r.eps}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{Distribution_March/DataMC_J0_eta.png}
+\includegraphics[width=1\textwidth]{Distribution_March/DataMC_J0_eta.eps}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{Distribution_March/DataMC_J0_pt.png}
+\includegraphics[width=1\textwidth]{Distribution_March/DataMC_J0_pt.eps}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{Distribution_March/DataMC_Mbb.png}
+\includegraphics[width=1\textwidth]{Distribution_March/DataMC_Mbb.eps}
 \end{minipage}\hfill
 % \begin{minipage}[b]{.45\textwidth}
 % \centering
-% \includegraphics[width=1\textwidth]{Distribution_March/DataMC_MET.png}
+% \includegraphics[width=1\textwidth]{Distribution_March/DataMC_MET.eps}
 % \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{Distribution_March/DataMC_mjj.png}
+\includegraphics[width=1\textwidth]{Distribution_March/DataMC_mjj.eps}
 \end{minipage}
 % \begin{minipage}[b]{.45\textwidth}
 % \centering
-% \includegraphics[width=1\textwidth]{Distribution_March/DataMC_dRJJ.png}
+% \includegraphics[width=1\textwidth]{Distribution_March/DataMC_dRJJ.eps}
 % \end{minipage}\hfill
 \caption{Standard selection: various kinematic distributions of the standard 
 selection before fitting or tagging with systematics. The top two plots are 
@@ -1289,19 +1288,19 @@ the distributions of the DL1 and Dl1r score distributions of the leading jet.} \
 \begin{figure}[H]
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{Distribution_March/DataMC_J1_DL1.png}
+\includegraphics[width=1\textwidth]{Distribution_March/DataMC_J1_DL1.eps}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{Distribution_March/DataMC_J1_DL1r.png}
+\includegraphics[width=1\textwidth]{Distribution_March/DataMC_J1_DL1r.eps}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{Distribution_March/DataMC_J1_eta.png}
+\includegraphics[width=1\textwidth]{Distribution_March/DataMC_J1_eta.eps}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{Distribution_March/DataMC_J1_pt.png}
+\includegraphics[width=1\textwidth]{Distribution_March/DataMC_J1_pt.eps}
 \end{minipage}
 \caption{Selection for low-$p_T$ extension: kinematic distributions of the 
 sub-leading $W$ decay jet before fitting or tagging with systematics. 
@@ -1313,27 +1312,27 @@ sub-leading jet.} \label{fig:lowpT_selection}
 \begin{figure}[H]
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_J0_DL1.png}
+\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_J0_DL1.eps}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_J0_DL1r.png}
+\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_J0_DL1r.eps}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_J0_eta.png}
+\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_J0_eta.eps}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_J0_pt.png}
+\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_J0_pt.eps}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_Mbb.png}
+\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_Mbb.eps}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_mjj.png}
+\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_mjj.eps}
 \end{minipage}
 \caption{Various kinematic distributions of the combination of the 
 standard selection and the high-$p_T$ selection, before fitting or 
@@ -1343,12 +1342,12 @@ tagging with stat-only uncertainties.} \label{fig:highpT_selection}
 
 
 \begin{figure}
-\includegraphics[width=1\textwidth]{Dec_eff.png}
+\includegraphics[width=1\textwidth]{Dec_eff.eps}
 \caption{Calibration of derivation p3970 in December 2019, given for  4 different working points.}\label{fig:Dec_eff}
 \end{figure}
 
 \begin{figure}
-\includegraphics[width=1\textwidth]{Dec.png}
+\includegraphics[width=1\textwidth]{Dec.eps}
 \caption{Calibration result of derivation p3970 in December 2019, given for  4 different working points.}\label{fig:Dec}
 \end{figure}
 
@@ -1360,19 +1359,19 @@ tagging with stat-only uncertainties.} \label{fig:highpT_selection}
 	\begin{figure}
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J0_eta.png}
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J0_eta.eps}
 	\end{minipage}\hfill
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J1_eta.png}
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J1_eta.eps}
 	\end{minipage}\hfill
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_LLR.png}
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_LLR.eps}
 	\end{minipage}\hfill
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_MET.png}
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_MET.eps}
 	\end{minipage}
 	\caption{Distributions of the leading and sub-leading jets from W decay, KLFitter output and the 
 	transverse missing transverse energy of the combination of the standard selection and the 
@@ -1385,27 +1384,27 @@ tagging with stat-only uncertainties.} \label{fig:highpT_selection}
 	\begin{figure}
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRbb.png}
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRbb.eps}
 	\end{minipage}\hfill
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRqq.png}
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRqq.eps}
 	\end{minipage}\hfill
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRbhadq1.png}
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRbhadq1.eps}
 	\end{minipage}\hfill
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRblepq1.png} 
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRblepq1.eps} 
 	\end{minipage}\hfill
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRWhadbhad.png} 
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRWhadbhad.eps} 
 	\end{minipage}\hfill
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRWhadblep.png} 
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRWhadblep.eps} 
 	\end{minipage}
 	\caption{Distributions of angle related variables of the combination of the standard 
 	selection and the high-$p_T$ selection, before fitting or 
@@ -1416,19 +1415,19 @@ tagging with stat-only uncertainties.} \label{fig:highpT_selection}
 	\begin{figure}
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_Mbb.png}
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_Mbb.eps}
 	\end{minipage}\hfill
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_mjj.png}
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_mjj.eps}
 	\end{minipage}
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_mjjj.png}
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_mjjj.eps}
 	\end{minipage}\hfill
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_Htjj.png}
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_Htjj.eps}
 	\end{minipage}\hfill
 	\caption{Distributions of mass related variables of the combination 
 	of the standard selection and the 
@@ -1442,19 +1441,19 @@ tagging with stat-only uncertainties.} \label{fig:highpT_selection}
 	\begin{figure}
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J0_eta.png}
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J0_eta.eps}
 	\end{minipage}\hfill
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J1_eta.png}
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J1_eta.eps}
 	\end{minipage}\hfill
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_LLR.png}
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_LLR.eps}
 	\end{minipage}\hfill
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_MET.png}
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_MET.eps}
 	\end{minipage}
 	\caption{Distributions of the leading and sub-leading jets 
 	from W decay, KLFitter output and the transverse missing transverse 
@@ -1469,27 +1468,27 @@ tagging with stat-only uncertainties.} \label{fig:highpT_selection}
 	\begin{figure}
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRbb.png}
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRbb.eps}
 	\end{minipage}\hfill
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRqq.png}
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRqq.eps}
 	\end{minipage}\hfill
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRbhadq1.png}
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRbhadq1.eps}
 	\end{minipage}\hfill
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRblepq1.png} 
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRblepq1.eps} 
 	\end{minipage}\hfill
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRWhadbhad.png} 
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRWhadbhad.eps} 
 	\end{minipage}\hfill
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRWhadblep.png} 
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRWhadblep.eps} 
 	\end{minipage}
 	\caption{Distributions of angle related variables of the combination 
 	of the standard selection and the high-$p_T$ 
@@ -1500,19 +1499,19 @@ tagging with stat-only uncertainties.} \label{fig:highpT_selection}
 	\begin{figure}
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_Mbb.png}
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_Mbb.eps}
 	\end{minipage}\hfill
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_mjj.png}
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_mjj.eps}
 	\end{minipage}
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_mjjj.png}
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_mjjj.eps}
 	\end{minipage}\hfill
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_Htjj.png}
+	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_Htjj.eps}
 	\end{minipage}
 	\caption{Distributions of mass related variables of the combination 
 	of the standard selection and the high-$p_T$ selection, 
