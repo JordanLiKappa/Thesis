@@ -6,7 +6,7 @@
 \usepackage{xspace}
 \usepackage{ANA-FTAG-2020-08-PAPER-defs}
 
-\usepackage[style=numeric]{biblatex}
+\usepackage[style=numeric, sorting=none]{biblatex}
 \addbibresource{ANA-FTAG-2020-08-PAPER.bib}
 \addbibresource{bib/ATLAS.bib}
 \addbibresource{bib/ATLAS-useful.bib}
@@ -154,7 +154,7 @@ the DL1 tagger can be further separated into two taggers: DL1 and DL1r,
 %Their high mass also leads to decay products with a larger transverse momentum relative to the jet axis with respect to the ones typically found in jets from light partons. Finally, heavy hadrons have a sizable branching ratio for semileptonic decays, hence the presence of soft leptons in the produced jets provides another tool for heavy jet identification. %The general strategy is to start with simple algorithms that exploits a particular property of b jets and progressively add more information to build moresophisticated algorithms. %The output of these algorithms consists in a discriminant value for each jet. Operating points are then defined as thresholds on the discriminant, designed to provide a determined efficiency for identifying b jets.
 % Low-level $b$-taggingalgorithms fall into two broad categories. A first approach, implemented in the IP2D and IP3D algorithms \cite{ATL-PHYS-PUB-2017-013}, or RNNIP \cite{ATL-PHYS-PUB-2017-003} is inclusive and based on exploiting the large impact parameters of the tracks originating from the $b$-hadron decay. The second approach explicitly reconstructs displaced vertices. To maximise the $b$-tagging performance, low-level algorithm results are combined using multivariate classifiers. To this end, two high-level tagging algorithms have been developed. The first one,MV2\cite{ATL-PHYS-PUB-2017-013}, is based on a boosted decisiontree (BDT) discriminant, while the second one,DL1, is based on a deep feed-forward neural network(NN). These two algorithms are presented in fig .
 \begin{figure}
-\includegraphics[width=1\textwidth]{MV2_DL1.eps}
+\includegraphics[width=1\textwidth]{MV2_DL1.png}
 \caption{Performance of MV2c10 and DL1 tagger\cite{FTAG-2018-01}.}\label{fig:MV2_DL1}
 \end{figure}
 
@@ -213,7 +213,7 @@ efficiency (more details in Section \ref{charm mistagging}).
 \centering
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{feynman.eps}
+\includegraphics[width=1\textwidth]{feynman.png}
 \end{minipage}
 \caption{Feynman diagram of the semi-leptonic $t\bar{t}$ events.}
 \label{fig:feynman}
@@ -715,27 +715,27 @@ purity and relatively high gain in statistics.
 \begin{figure}
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{stat_gains/statsgain_0GeV.eps}
+\includegraphics[width=1\textwidth]{stat_gains/statsgain_0GeV.png}
 \footnotesize (a) Gain in stats and the $c$-jet purity with cut value 0 GeV.
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{stat_gains/statsgain_40GeV.eps}
+\includegraphics[width=1\textwidth]{stat_gains/statsgain_40GeV.png}
 \footnotesize (b) Gain in stats and the $c$-jet purity with cut value 40 GeV.
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{stat_gains/statsgain_70GeV.eps}
+\includegraphics[width=1\textwidth]{stat_gains/statsgain_70GeV.png}
 \footnotesize (c) Gain in stats and the $c$-jet purity with cut value 70 GeV.
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{stat_gains/statsgain_90GeV.eps}
+\includegraphics[width=1\textwidth]{stat_gains/statsgain_90GeV.png}
 \footnotesize (c) Gain in stats and the $c$-jet purity with cut value 90 GeV.
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{stat_gains/statsgain_140GeV.eps}
+\includegraphics[width=1\textwidth]{stat_gains/statsgain_140GeV.png}
 \footnotesize (d) Gain in stats and the $c$-jet purity with cut value 140 GeV.
 \end{minipage}\hfill
 
@@ -921,7 +921,7 @@ uncertainty due to the scale factor implemented.
     \centering
     \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{3bplots/3bplots.eps}
+\includegraphics[width=1\textwidth]{3bplots/3bplots.png}
 \end{minipage}
 	\caption{The DL1r score distribution of the leading VR-Track jet, 
 	requiring at least 1 VR-Track jets have DL1r > 8 to reject most of 
@@ -1250,35 +1250,35 @@ In terms of statistical gain, taking the 60\% working point scale factor with 20
 \begin{figure}[h]
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{Distribution_March/DataMC_J0_DL1.eps}
+\includegraphics[width=1\textwidth]{Distribution_March/DataMC_J0_DL1.png}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{Distribution_March/DataMC_J0_DL1r.eps}
+\includegraphics[width=1\textwidth]{Distribution_March/DataMC_J0_DL1r.png}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{Distribution_March/DataMC_J0_eta.eps}
+\includegraphics[width=1\textwidth]{Distribution_March/DataMC_J0_eta.png}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{Distribution_March/DataMC_J0_pt.eps}
+\includegraphics[width=1\textwidth]{Distribution_March/DataMC_J0_pt.png}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{Distribution_March/DataMC_Mbb.eps}
+\includegraphics[width=1\textwidth]{Distribution_March/DataMC_Mbb.png}
 \end{minipage}\hfill
 % \begin{minipage}[b]{.45\textwidth}
 % \centering
-% \includegraphics[width=1\textwidth]{Distribution_March/DataMC_MET.eps}
+% \includegraphics[width=1\textwidth]{Distribution_March/DataMC_MET.png}
 % \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{Distribution_March/DataMC_mjj.eps}
+\includegraphics[width=1\textwidth]{Distribution_March/DataMC_mjj.png}
 \end{minipage}
 % \begin{minipage}[b]{.45\textwidth}
 % \centering
-% \includegraphics[width=1\textwidth]{Distribution_March/DataMC_dRJJ.eps}
+% \includegraphics[width=1\textwidth]{Distribution_March/DataMC_dRJJ.png}
 % \end{minipage}\hfill
 \caption{Standard selection: various kinematic distributions of the standard 
 selection before fitting or tagging with systematics. The top two plots are 
@@ -1288,19 +1288,19 @@ the distributions of the DL1 and Dl1r score distributions of the leading jet.} \
 \begin{figure}[H]
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{Distribution_March/DataMC_J1_DL1.eps}
+\includegraphics[width=1\textwidth]{Distribution_March/DataMC_J1_DL1.png}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{Distribution_March/DataMC_J1_DL1r.eps}
+\includegraphics[width=1\textwidth]{Distribution_March/DataMC_J1_DL1r.png}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{Distribution_March/DataMC_J1_eta.eps}
+\includegraphics[width=1\textwidth]{Distribution_March/DataMC_J1_eta.png}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{Distribution_March/DataMC_J1_pt.eps}
+\includegraphics[width=1\textwidth]{Distribution_March/DataMC_J1_pt.png}
 \end{minipage}
 \caption{Selection for low-$p_T$ extension: kinematic distributions of the 
 sub-leading $W$ decay jet before fitting or tagging with systematics. 
@@ -1312,27 +1312,27 @@ sub-leading jet.} \label{fig:lowpT_selection}
 \begin{figure}[H]
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_J0_DL1.eps}
+\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_J0_DL1.png}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_J0_DL1r.eps}
+\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_J0_DL1r.png}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_J0_eta.eps}
+\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_J0_eta.png}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_J0_pt.eps}
+\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_J0_pt.png}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_Mbb.eps}
+\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_Mbb.png}
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_mjj.eps}
+\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_mjj.png}
 \end{minipage}
 \caption{Various kinematic distributions of the combination of the 
 standard selection and the high-$p_T$ selection, before fitting or 
@@ -1342,12 +1342,12 @@ tagging with stat-only uncertainties.} \label{fig:highpT_selection}
 
 
 \begin{figure}
-\includegraphics[width=1\textwidth]{Dec_eff.eps}
+\includegraphics[width=1\textwidth]{Dec_eff.png}
 \caption{Calibration of derivation p3970 in December 2019, given for  4 different working points.}\label{fig:Dec_eff}
 \end{figure}
 
 \begin{figure}
-\includegraphics[width=1\textwidth]{Dec.eps}
+\includegraphics[width=1\textwidth]{Dec.png}
 \caption{Calibration result of derivation p3970 in December 2019, given for  4 different working points.}\label{fig:Dec}
 \end{figure}
 
@@ -1428,7 +1428,7 @@ tagging with stat-only uncertainties.} \label{fig:highpT_selection}
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
 	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_Htjj.eps}
-	\end{minipage}\hfill
+	\end{minipage}
 	\caption{Distributions of mass related variables of the combination 
 	of the standard selection and the 
 	high-$p_T$ selection, before fitting or 
@@ -1455,6 +1455,7 @@ tagging with stat-only uncertainties.} \label{fig:highpT_selection}
 	\centering
 	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_MET.eps}
 	\end{minipage}
+	
 	\caption{Distributions of the leading and sub-leading jets 
 	from W decay, KLFitter output and the transverse missing transverse 
 	energy of the combination of the standard selection and the 
