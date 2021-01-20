@@ -1,0 +1,43 @@
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'main.blg'
+[143] biber-MSWIN32:340> INFO - === 
+[209] Biber.pm:415> INFO - Reading 'main.bcf'
+[388] Biber.pm:952> INFO - Found 52 citekeys in bib section 0
+[405] Biber.pm:4340> INFO - Processing section 0
+[419] Biber.pm:4531> INFO - Looking for bibtex format file 'ANA-FTAG-2020-08-PAPER.bib' for section 0
+[513] bibtex.pm:1689> INFO - LaTeX decoding ...
+[540] bibtex.pm:1494> INFO - Found BibTeX data source 'ANA-FTAG-2020-08-PAPER.bib'
+[606] Biber.pm:4531> INFO - Looking for bibtex format file 'bib/ATLAS.bib' for section 0
+[740] bibtex.pm:1689> INFO - LaTeX decoding ...
+[2610] bibtex.pm:1494> INFO - Found BibTeX data source 'bib/ATLAS.bib'
+[2727] Biber.pm:4531> INFO - Looking for bibtex format file 'bib/ATLAS-useful.bib' for section 0
+[2833] bibtex.pm:1689> INFO - LaTeX decoding ...
+[3129] bibtex.pm:1494> INFO - Found BibTeX data source 'bib/ATLAS-useful.bib'
+[3134] Utils.pm:395> WARN - Duplicate entry key: 'Nason:2004rx' in file 'bib/ATLAS-useful.bib', skipping ...
+[3134] Utils.pm:395> WARN - Duplicate entry key: 'Frixione:2007vw' in file 'bib/ATLAS-useful.bib', skipping ...
+[3134] Utils.pm:395> WARN - Duplicate entry key: 'Alioli:2010xd' in file 'bib/ATLAS-useful.bib', skipping ...
+[3136] Utils.pm:395> WARN - Duplicate entry key: 'Frixione:2007nw' in file 'bib/ATLAS-useful.bib', skipping ...
+[3247] Biber.pm:4531> INFO - Looking for bibtex format file 'bib/PubNotes.bib' for section 0
+[3355] bibtex.pm:1689> INFO - LaTeX decoding ...
+[3651] bibtex.pm:1494> INFO - Found BibTeX data source 'bib/PubNotes.bib'
+[3690] Biber.pm:4531> INFO - Looking for bibtex format file 'bib/ConfNotes.bib' for section 0
+[3814] bibtex.pm:1689> INFO - LaTeX decoding ...
+[4854] bibtex.pm:1494> INFO - Found BibTeX data source 'bib/ConfNotes.bib'
+[4944] Biber.pm:4531> INFO - Looking for bibtex format file 'bib/ATLAS-SUSY.bib' for section 0
+[5055] bibtex.pm:1689> INFO - LaTeX decoding ...
+[5211] bibtex.pm:1494> INFO - Found BibTeX data source 'bib/ATLAS-SUSY.bib'
+[5223] Utils.pm:395> WARN - I didn't find a database entry for 'Interpreting Higgs result' (section 0)
+[5223] Utils.pm:395> WARN - I didn't find a database entry for 'PERF-2012-04 ttbar' (section 0)
+[5223] Utils.pm:395> WARN - I didn't find a database entry for 'b-jet identification semi ttbar' (section 0)
+[5223] Utils.pm:395> WARN - I didn't find a database entry for 'cjet' (section 0)
+[5223] Utils.pm:395> WARN - I didn't find a database entry for 'tagging' (section 0)
+[5223] Utils.pm:395> WARN - I didn't find a database entry for 'CKM1' (section 0)
+[5223] Utils.pm:395> WARN - I didn't find a database entry for 'CKM2' (section 0)
+[5223] Utils.pm:395> WARN - I didn't find a database entry for 'PDG' (section 0)
+[5264] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[5264] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[5264] Biber.pm:4168> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[5264] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[5301] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[5328] bbl.pm:757> INFO - Output to main.bbl
+[5332] Biber.pm:128> INFO - WARNINGS: 12
