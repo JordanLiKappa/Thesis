@@ -42,8 +42,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.6.2}Kinematic distributions}{18}{subsubsection.2.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.6.3}Efficiencies and Scale Factors}{19}{subsubsection.2.6.3}%
+\contentsline {subsubsection}{\numberline {2.6.3}Efficiencies and Scale Factors}{20}{subsubsection.2.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {.1}Appendix}{29}{subsection.Alph0.1}%
+\contentsline {section}{\numberline {A}Addition plots for kinematic variables}{30}{appendix.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}Addition plots for the standard selection}{30}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}Standard selection}{30}{subsection.A.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.2}Low \ensuremath {p_{\mathrm T}}\ selection}{31}{subsection.A.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.3}Combined selection}{32}{subsection.A.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B}Plots for previous calibrations}{38}{appendix.B}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {C}Experimental uncertainties}{41}{appendix.C}%

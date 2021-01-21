@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.1.19)  21 JAN 2021 13:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.1.19)  21 JAN 2021 14:00
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -608,12 +608,12 @@ LaTeX Info: Redefining \nameref on input line 45.
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
-<logo.png, id=96, 446.66875pt x 113.42375pt>
+<logo.png, id=112, 446.66875pt x 113.42375pt>
 File: logo.png Graphic file (type png)
 <use logo.png>
 Package pdftex.def Info: logo.png  used on input line 55.
 (pdftex.def)             Requested size: 234.8775pt x 59.64354pt.
-<ATLAS-Logo-Ref-RGB-H_1.jpg, id=97, 476.982pt x 192.72pt>
+<ATLAS-Logo-Ref-RGB-H_1.jpg, id=113, 476.982pt x 192.72pt>
 File: ATLAS-Logo-Ref-RGB-H_1.jpg Graphic file (type jpg)
 <use ATLAS-Logo-Ref-RGB-H_1.jpg>
 Package pdftex.def Info: ATLAS-Logo-Ref-RGB-H_1.jpg  used on input line 60.
@@ -627,7 +627,7 @@ Package pdftex.def Info: ATLAS-Logo-Ref-RGB-H_1.jpg  used on input line 60.
 
 No file main.ind.
 [2] [3]
-<MV2_DL1.png, id=167, 1034.36438pt x 453.19313pt>
+<MV2_DL1.png, id=189, 1034.36438pt x 453.19313pt>
 File: MV2_DL1.png Graphic file (type png)
 <use MV2_DL1.png>
 Package pdftex.def Info: MV2_DL1.png  used on input line 156.
@@ -637,147 +637,141 @@ Package pdftex.def Info: MV2_DL1.png  used on input line 156.
                                                   
 l.173 
        <./MV2_DL1.png>]
-
-LaTeX Warning: Reference `charm_mistagging' on page 5 undefined on input line 209.
-
-<feynman.png, id=186, 268.00125pt x 182.18062pt>
+<feynman.png, id=208, 268.00125pt x 182.18062pt>
 File: feynman.png Graphic file (type png)
 <use feynman.png>
 Package pdftex.def Info: feynman.png  used on input line 215.
 (pdftex.def)             Requested size: 211.38832pt x 143.69592pt.
-[5pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
+ [5pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.248 
+l.249 
        <./feynman.png>] [6]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 308.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 309.
  (c:/texlive/2020/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ) [7] [8]
-<prefit/DataMC_h_LLR_all_3bunc.pdf, id=320, 569.12625pt x 408.52625pt>
+<prefit/DataMC_h_LLR_all_3bunc.pdf, id=342, 569.12625pt x 408.52625pt>
 File: prefit/DataMC_h_LLR_all_3bunc.pdf Graphic file (type pdf)
 <use prefit/DataMC_h_LLR_all_3bunc.pdf>
-Package pdftex.def Info: prefit/DataMC_h_LLR_all_3bunc.pdf  used on input line 474.
+Package pdftex.def Info: prefit/DataMC_h_LLR_all_3bunc.pdf  used on input line 475.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
  [9pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.566 \[
+l.567 \[
          m_T = \sqrt{2 p_T^\ell \MET (1-\cos\Delta\phi)} > 40~\GeV,\] <./prefit/DataMC_h_LLR_all_3bunc.pdf, page is rotated 90 degrees>]
-<figs_support/plots_withoutHighpT/DataMC_h_J0_pt.pdf, id=376, 569.12625pt x 408.52625pt>
+<figs_support/plots_withoutHighpT/DataMC_h_J0_pt.pdf, id=397, 569.12625pt x 408.52625pt>
 File: figs_support/plots_withoutHighpT/DataMC_h_J0_pt.pdf Graphic file (type pdf)
 <use figs_support/plots_withoutHighpT/DataMC_h_J0_pt.pdf>
-Package pdftex.def Info: figs_support/plots_withoutHighpT/DataMC_h_J0_pt.pdf  used on input line 616.
+Package pdftex.def Info: figs_support/plots_withoutHighpT/DataMC_h_J0_pt.pdf  used on input line 617.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
-<figs_support/plots_withoutHighpT/DataMC_h_J0_pttrackjet.pdf, id=377, 569.12625pt x 408.52625pt>
+<figs_support/plots_withoutHighpT/DataMC_h_J0_pttrackjet.pdf, id=398, 569.12625pt x 408.52625pt>
 File: figs_support/plots_withoutHighpT/DataMC_h_J0_pttrackjet.pdf Graphic file (type pdf)
 <use figs_support/plots_withoutHighpT/DataMC_h_J0_pttrackjet.pdf>
-Package pdftex.def Info: figs_support/plots_withoutHighpT/DataMC_h_J0_pttrackjet.pdf  used on input line 617.
+Package pdftex.def Info: figs_support/plots_withoutHighpT/DataMC_h_J0_pttrackjet.pdf  used on input line 618.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
-<figs_support/plots_withoutHighpT/DataMC_h_J1_pt.pdf, id=378, 569.12625pt x 408.52625pt>
+<figs_support/plots_withoutHighpT/DataMC_h_J1_pt.pdf, id=399, 569.12625pt x 408.52625pt>
 File: figs_support/plots_withoutHighpT/DataMC_h_J1_pt.pdf Graphic file (type pdf)
 <use figs_support/plots_withoutHighpT/DataMC_h_J1_pt.pdf>
-Package pdftex.def Info: figs_support/plots_withoutHighpT/DataMC_h_J1_pt.pdf  used on input line 618.
+Package pdftex.def Info: figs_support/plots_withoutHighpT/DataMC_h_J1_pt.pdf  used on input line 619.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
-<figs_support/plots_withoutHighpT/DataMC_h_J1_pttrackjet.pdf, id=379, 569.12625pt x 408.52625pt>
+<figs_support/plots_withoutHighpT/DataMC_h_J1_pttrackjet.pdf, id=400, 569.12625pt x 408.52625pt>
 File: figs_support/plots_withoutHighpT/DataMC_h_J1_pttrackjet.pdf Graphic file (type pdf)
 <use figs_support/plots_withoutHighpT/DataMC_h_J1_pttrackjet.pdf>
-Package pdftex.def Info: figs_support/plots_withoutHighpT/DataMC_h_J1_pttrackjet.pdf  used on input line 619.
+Package pdftex.def Info: figs_support/plots_withoutHighpT/DataMC_h_J1_pttrackjet.pdf  used on input line 620.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 626.
+(hyperref)                removing `math shift' on input line 627.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 626.
+(hyperref)                removing `subscript' on input line 627.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 626.
+(hyperref)                removing `math shift' on input line 627.
 
 [10pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.634 
+l.635 
       ] [11pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.634 
+l.635 
        <./figs_support/plots_withoutHighpT/DataMC_h_J0_pt.pdf, page is rotated 90 degrees> <./figs_support/plots_withoutHighpT/DataMC_h_J0_pttrackjet.pdf, page is rotated 90 degrees> <./figs_support/plots_withoutHighpT/DataMC_h_J1_pt.pdf, page is rotated 90 degrees> <./figs_support/plots_withoutHighpT/DataMC_h_J1_pttrackjet.pdf, page is rotated 90 degrees>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 637.
+(hyperref)                removing `math shift' on input line 638.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 637.
+(hyperref)                removing `subscript' on input line 638.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 637.
+(hyperref)                removing `math shift' on input line 638.
 
-<figs_support/plots_hm/DataMC_h_J0_pt_all_2.pdf, id=572, 569.12625pt x 408.52625pt>
+<figs_support/plots_hm/DataMC_h_J0_pt_all_2.pdf, id=593, 569.12625pt x 408.52625pt>
 File: figs_support/plots_hm/DataMC_h_J0_pt_all_2.pdf Graphic file (type pdf)
 <use figs_support/plots_hm/DataMC_h_J0_pt_all_2.pdf>
-Package pdftex.def Info: figs_support/plots_hm/DataMC_h_J0_pt_all_2.pdf  used on input line 674.
+Package pdftex.def Info: figs_support/plots_hm/DataMC_h_J0_pt_all_2.pdf  used on input line 675.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
-<figs_support/plots_hm/DataMC_h_tjet_J0_pt_all_2.pdf, id=573, 569.12625pt x 408.52625pt>
+<figs_support/plots_hm/DataMC_h_tjet_J0_pt_all_2.pdf, id=594, 569.12625pt x 408.52625pt>
 File: figs_support/plots_hm/DataMC_h_tjet_J0_pt_all_2.pdf Graphic file (type pdf)
 <use figs_support/plots_hm/DataMC_h_tjet_J0_pt_all_2.pdf>
-Package pdftex.def Info: figs_support/plots_hm/DataMC_h_tjet_J0_pt_all_2.pdf  used on input line 675.
+Package pdftex.def Info: figs_support/plots_hm/DataMC_h_tjet_J0_pt_all_2.pdf  used on input line 676.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
-<figs_support/plots_hm/DataMC_h_J1_pt_all_2.pdf, id=574, 569.12625pt x 408.52625pt>
+<figs_support/plots_hm/DataMC_h_J1_pt_all_2.pdf, id=595, 569.12625pt x 408.52625pt>
 File: figs_support/plots_hm/DataMC_h_J1_pt_all_2.pdf Graphic file (type pdf)
 <use figs_support/plots_hm/DataMC_h_J1_pt_all_2.pdf>
-Package pdftex.def Info: figs_support/plots_hm/DataMC_h_J1_pt_all_2.pdf  used on input line 676.
+Package pdftex.def Info: figs_support/plots_hm/DataMC_h_J1_pt_all_2.pdf  used on input line 677.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
-<figs_support/plots_hm/DataMC_h_tjet_J1_pt_all_2.pdf, id=575, 569.12625pt x 408.52625pt>
+<figs_support/plots_hm/DataMC_h_tjet_J1_pt_all_2.pdf, id=596, 569.12625pt x 408.52625pt>
 File: figs_support/plots_hm/DataMC_h_tjet_J1_pt_all_2.pdf Graphic file (type pdf)
 <use figs_support/plots_hm/DataMC_h_tjet_J1_pt_all_2.pdf>
-Package pdftex.def Info: figs_support/plots_hm/DataMC_h_tjet_J1_pt_all_2.pdf  used on input line 677.
+Package pdftex.def Info: figs_support/plots_hm/DataMC_h_tjet_J1_pt_all_2.pdf  used on input line 678.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
 
-LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 691.
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 692.
 
 
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 691.
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 692.
 
 
-LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 693.
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 694.
 
 
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 693.
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 694.
 
-<stat_gains/statsgain_0GeV.png, id=577, 901.3675pt x 576.1525pt>
+<stat_gains/statsgain_0GeV.png, id=598, 901.3675pt x 576.1525pt>
 File: stat_gains/statsgain_0GeV.png Graphic file (type png)
 <use stat_gains/statsgain_0GeV.png>
-Package pdftex.def Info: stat_gains/statsgain_0GeV.png  used on input line 704.
+Package pdftex.def Info: stat_gains/statsgain_0GeV.png  used on input line 705.
 (pdftex.def)             Requested size: 211.38832pt x 135.11452pt.
-<stat_gains/statsgain_40GeV.png, id=578, 901.3675pt x 576.1525pt>
+<stat_gains/statsgain_40GeV.png, id=599, 901.3675pt x 576.1525pt>
 File: stat_gains/statsgain_40GeV.png Graphic file (type png)
 <use stat_gains/statsgain_40GeV.png>
-Package pdftex.def Info: stat_gains/statsgain_40GeV.png  used on input line 709.
+Package pdftex.def Info: stat_gains/statsgain_40GeV.png  used on input line 710.
 (pdftex.def)             Requested size: 211.38832pt x 135.11452pt.
-<stat_gains/statsgain_70GeV.png, id=579, 901.3675pt x 576.1525pt>
+<stat_gains/statsgain_70GeV.png, id=600, 901.3675pt x 576.1525pt>
 File: stat_gains/statsgain_70GeV.png Graphic file (type png)
 <use stat_gains/statsgain_70GeV.png>
-Package pdftex.def Info: stat_gains/statsgain_70GeV.png  used on input line 714.
+Package pdftex.def Info: stat_gains/statsgain_70GeV.png  used on input line 715.
 (pdftex.def)             Requested size: 211.38832pt x 135.11452pt.
-<stat_gains/statsgain_90GeV.png, id=580, 901.3675pt x 576.1525pt>
+<stat_gains/statsgain_90GeV.png, id=601, 901.3675pt x 576.1525pt>
 File: stat_gains/statsgain_90GeV.png Graphic file (type png)
 <use stat_gains/statsgain_90GeV.png>
-Package pdftex.def Info: stat_gains/statsgain_90GeV.png  used on input line 719.
+Package pdftex.def Info: stat_gains/statsgain_90GeV.png  used on input line 720.
 (pdftex.def)             Requested size: 211.38832pt x 135.11452pt.
-<stat_gains/statsgain_140GeV.png, id=581, 901.3675pt x 576.1525pt>
+<stat_gains/statsgain_140GeV.png, id=602, 901.3675pt x 576.1525pt>
 File: stat_gains/statsgain_140GeV.png Graphic file (type png)
 <use stat_gains/statsgain_140GeV.png>
-Package pdftex.def Info: stat_gains/statsgain_140GeV.png  used on input line 724.
+Package pdftex.def Info: stat_gains/statsgain_140GeV.png  used on input line 725.
 (pdftex.def)             Requested size: 211.38832pt x 135.11452pt.
-
-LaTeX Warning: Reference `fig:jets_PFlow,fig:angles_PFlow,fig:mass_PFlow, fig:jets_VRJets, fig:angles_VRJets, fig:mass_VRJets, fig:combined_selection' on page 12 undefined on input line 742.
-
 [12pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
@@ -791,22 +785,22 @@ l.764
                                                   
 l.764 
        <./stat_gains/statsgain_0GeV.png> <./stat_gains/statsgain_40GeV.png> <./stat_gains/statsgain_70GeV.png> <./stat_gains/statsgain_90GeV.png> <./stat_gains/statsgain_140GeV.png>]
-<figs_support/plots_def/DataMC_h_J0_pt_all.pdf, id=778, 569.12625pt x 408.52625pt>
+<figs_support/plots_def/DataMC_h_J0_pt_all.pdf, id=802, 569.12625pt x 408.52625pt>
 File: figs_support/plots_def/DataMC_h_J0_pt_all.pdf Graphic file (type pdf)
 <use figs_support/plots_def/DataMC_h_J0_pt_all.pdf>
 Package pdftex.def Info: figs_support/plots_def/DataMC_h_J0_pt_all.pdf  used on input line 767.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
-<figs_support/plots_def/DataMC_h_tjet_J0_pt_all.pdf, id=779, 569.12625pt x 408.52625pt>
+<figs_support/plots_def/DataMC_h_tjet_J0_pt_all.pdf, id=803, 569.12625pt x 408.52625pt>
 File: figs_support/plots_def/DataMC_h_tjet_J0_pt_all.pdf Graphic file (type pdf)
 <use figs_support/plots_def/DataMC_h_tjet_J0_pt_all.pdf>
 Package pdftex.def Info: figs_support/plots_def/DataMC_h_tjet_J0_pt_all.pdf  used on input line 768.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
-<figs_support/plots_def/DataMC_h_J1_pt_all.pdf, id=780, 569.12625pt x 408.52625pt>
+<figs_support/plots_def/DataMC_h_J1_pt_all.pdf, id=804, 569.12625pt x 408.52625pt>
 File: figs_support/plots_def/DataMC_h_J1_pt_all.pdf Graphic file (type pdf)
 <use figs_support/plots_def/DataMC_h_J1_pt_all.pdf>
 Package pdftex.def Info: figs_support/plots_def/DataMC_h_J1_pt_all.pdf  used on input line 769.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
-<figs_support/plots_def/DataMC_h_tjet_J1_pt_all.pdf, id=781, 569.12625pt x 408.52625pt>
+<figs_support/plots_def/DataMC_h_tjet_J1_pt_all.pdf, id=805, 569.12625pt x 408.52625pt>
 File: figs_support/plots_def/DataMC_h_tjet_J1_pt_all.pdf Graphic file (type pdf)
 <use figs_support/plots_def/DataMC_h_tjet_J1_pt_all.pdf>
 Package pdftex.def Info: figs_support/plots_def/DataMC_h_tjet_J1_pt_all.pdf  used on input line 770.
@@ -831,21 +825,21 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 [16]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 865.
+               Default added (so using `tbp') on input line 868.
 
-<3bplots/3bplots.png, id=972, 798.985pt x 574.145pt>
+<3bplots/3bplots.png, id=997, 798.985pt x 574.145pt>
 File: 3bplots/3bplots.png Graphic file (type png)
 <use 3bplots/3bplots.png>
-Package pdftex.def Info: 3bplots/3bplots.png  used on input line 888.
+Package pdftex.def Info: 3bplots/3bplots.png  used on input line 891.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
 [17pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.912 
+l.915 
       pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.912 
+l.915 
        <./3bplots/3bplots.png>]
 Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J0_DL1.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
@@ -854,12 +848,12 @@ Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTP
 (epstopdf)                    date: 2021-01-19 22:46:36
 (epstopdf)                    size: 14649 bytes
 (epstopdf)             Command: <epstopdf --outfile=Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J0_DL1-eps-converted-to.pdf Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J0_DL1.eps>
-(epstopdf)             \includegraphics on input line 931.
+(epstopdf)             \includegraphics on input line 934.
 Package epstopdf Info: Output file is already uptodate.
-<Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J0_DL1-eps-converted-to.pdf, id=983, 569.12625pt x 363.3575pt>
+<Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J0_DL1-eps-converted-to.pdf, id=1009, 569.12625pt x 363.3575pt>
 File: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J0_DL1-eps-converted-to.pdf Graphic file (type pdf)
 <use Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J0_DL1-eps-converted-to.pdf>
-Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J0_DL1-eps-converted-to.pdf  used on input line 931.
+Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J0_DL1-eps-converted-to.pdf  used on input line 934.
 (pdftex.def)             Requested size: 211.38832pt x 134.96133pt.
 Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J0_DL1r.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
@@ -868,12 +862,12 @@ Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTP
 (epstopdf)                    date: 2021-01-19 22:46:39
 (epstopdf)                    size: 14535 bytes
 (epstopdf)             Command: <epstopdf --outfile=Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J0_DL1r-eps-converted-to.pdf Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J0_DL1r.eps>
-(epstopdf)             \includegraphics on input line 935.
+(epstopdf)             \includegraphics on input line 938.
 Package epstopdf Info: Output file is already uptodate.
-<Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J0_DL1r-eps-converted-to.pdf, id=984, 569.12625pt x 363.3575pt>
+<Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J0_DL1r-eps-converted-to.pdf, id=1010, 569.12625pt x 363.3575pt>
 File: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J0_DL1r-eps-converted-to.pdf Graphic file (type pdf)
 <use Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J0_DL1r-eps-converted-to.pdf>
-Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J0_DL1r-eps-converted-to.pdf  used on input line 935.
+Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J0_DL1r-eps-converted-to.pdf  used on input line 938.
 (pdftex.def)             Requested size: 211.38832pt x 134.96133pt.
 Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J1_DL1.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
@@ -882,12 +876,12 @@ Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTP
 (epstopdf)                    date: 2021-01-19 22:46:41
 (epstopdf)                    size: 14654 bytes
 (epstopdf)             Command: <epstopdf --outfile=Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J1_DL1-eps-converted-to.pdf Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J1_DL1.eps>
-(epstopdf)             \includegraphics on input line 939.
+(epstopdf)             \includegraphics on input line 942.
 Package epstopdf Info: Output file is already uptodate.
-<Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J1_DL1-eps-converted-to.pdf, id=985, 569.12625pt x 363.3575pt>
+<Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J1_DL1-eps-converted-to.pdf, id=1011, 569.12625pt x 363.3575pt>
 File: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J1_DL1-eps-converted-to.pdf Graphic file (type pdf)
 <use Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J1_DL1-eps-converted-to.pdf>
-Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J1_DL1-eps-converted-to.pdf  used on input line 939.
+Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J1_DL1-eps-converted-to.pdf  used on input line 942.
 (pdftex.def)             Requested size: 211.38832pt x 134.96133pt.
 Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J1_DL1r.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
@@ -896,12 +890,12 @@ Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTP
 (epstopdf)                    date: 2021-01-19 22:46:43
 (epstopdf)                    size: 14581 bytes
 (epstopdf)             Command: <epstopdf --outfile=Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J1_DL1r-eps-converted-to.pdf Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J1_DL1r.eps>
-(epstopdf)             \includegraphics on input line 943.
+(epstopdf)             \includegraphics on input line 946.
 Package epstopdf Info: Output file is already uptodate.
-<Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J1_DL1r-eps-converted-to.pdf, id=986, 569.12625pt x 363.3575pt>
+<Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J1_DL1r-eps-converted-to.pdf, id=1012, 569.12625pt x 363.3575pt>
 File: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J1_DL1r-eps-converted-to.pdf Graphic file (type pdf)
 <use Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J1_DL1r-eps-converted-to.pdf>
-Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J1_DL1r-eps-converted-to.pdf  used on input line 943.
+Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J1_DL1r-eps-converted-to.pdf  used on input line 946.
 (pdftex.def)             Requested size: 211.38832pt x 134.96133pt.
 Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J0_MV2c10.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
@@ -910,12 +904,12 @@ Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTP
 (epstopdf)                    date: 2021-01-19 22:46:45
 (epstopdf)                    size: 15070 bytes
 (epstopdf)             Command: <epstopdf --outfile=Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J0_MV2c10-eps-converted-to.pdf Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J0_MV2c10.eps>
-(epstopdf)             \includegraphics on input line 947.
+(epstopdf)             \includegraphics on input line 950.
 Package epstopdf Info: Output file is already uptodate.
-<Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J0_MV2c10-eps-converted-to.pdf, id=987, 569.12625pt x 363.3575pt>
+<Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J0_MV2c10-eps-converted-to.pdf, id=1013, 569.12625pt x 363.3575pt>
 File: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J0_MV2c10-eps-converted-to.pdf Graphic file (type pdf)
 <use Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J0_MV2c10-eps-converted-to.pdf>
-Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J0_MV2c10-eps-converted-to.pdf  used on input line 947.
+Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J0_MV2c10-eps-converted-to.pdf  used on input line 950.
 (pdftex.def)             Requested size: 211.38832pt x 134.96133pt.
 Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J1_MV2c10.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
@@ -924,18 +918,22 @@ Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTP
 (epstopdf)                    date: 2021-01-19 22:46:47
 (epstopdf)                    size: 15055 bytes
 (epstopdf)             Command: <epstopdf --outfile=Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J1_MV2c10-eps-converted-to.pdf Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J1_MV2c10.eps>
-(epstopdf)             \includegraphics on input line 951.
+(epstopdf)             \includegraphics on input line 954.
 Package epstopdf Info: Output file is already uptodate.
-<Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J1_MV2c10-eps-converted-to.pdf, id=988, 569.12625pt x 363.3575pt>
+<Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J1_MV2c10-eps-converted-to.pdf, id=1014, 569.12625pt x 363.3575pt>
 File: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J1_MV2c10-eps-converted-to.pdf Graphic file (type pdf)
 <use Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J1_MV2c10-eps-converted-to.pdf>
-Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J1_MV2c10-eps-converted-to.pdf  used on input line 951.
+Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J1_MV2c10-eps-converted-to.pdf  used on input line 954.
 (pdftex.def)             Requested size: 211.38832pt x 134.96133pt.
  [18pdfTeX warning (ext4): destination with the same identifier (name{table.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.958 
-      ]
+l.961 \newpage
+              ] [19pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.961 \newpage
+               <./Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J0_DL1-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J0_DL1r-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J1_DL1-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J1_DL1r-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J0_MV2c10-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J1_MV2c10-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J0_DL1.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
 (epstopdf)                    size: 30162 bytes
@@ -943,12 +941,12 @@ Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTV
 (epstopdf)                    date: 2021-01-19 22:46:49
 (epstopdf)                    size: 14676 bytes
 (epstopdf)             Command: <epstopdf --outfile=Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J0_DL1-eps-converted-to.pdf Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J0_DL1.eps>
-(epstopdf)             \includegraphics on input line 962.
+(epstopdf)             \includegraphics on input line 965.
 Package epstopdf Info: Output file is already uptodate.
-<Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J0_DL1-eps-converted-to.pdf, id=995, 569.12625pt x 363.3575pt>
+<Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J0_DL1-eps-converted-to.pdf, id=1086, 569.12625pt x 363.3575pt>
 File: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J0_DL1-eps-converted-to.pdf Graphic file (type pdf)
 <use Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J0_DL1-eps-converted-to.pdf>
-Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J0_DL1-eps-converted-to.pdf  used on input line 962.
+Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J0_DL1-eps-converted-to.pdf  used on input line 965.
 (pdftex.def)             Requested size: 211.38832pt x 134.96133pt.
 Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J0_DL1r.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
@@ -957,12 +955,12 @@ Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTV
 (epstopdf)                    date: 2021-01-19 22:46:51
 (epstopdf)                    size: 14632 bytes
 (epstopdf)             Command: <epstopdf --outfile=Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J0_DL1r-eps-converted-to.pdf Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J0_DL1r.eps>
-(epstopdf)             \includegraphics on input line 966.
+(epstopdf)             \includegraphics on input line 969.
 Package epstopdf Info: Output file is already uptodate.
-<Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J0_DL1r-eps-converted-to.pdf, id=996, 569.12625pt x 363.3575pt>
+<Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J0_DL1r-eps-converted-to.pdf, id=1087, 569.12625pt x 363.3575pt>
 File: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J0_DL1r-eps-converted-to.pdf Graphic file (type pdf)
 <use Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J0_DL1r-eps-converted-to.pdf>
-Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J0_DL1r-eps-converted-to.pdf  used on input line 966.
+Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J0_DL1r-eps-converted-to.pdf  used on input line 969.
 (pdftex.def)             Requested size: 211.38832pt x 134.96133pt.
 Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J1_DL1.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
@@ -971,12 +969,12 @@ Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTV
 (epstopdf)                    date: 2021-01-19 22:46:53
 (epstopdf)                    size: 14656 bytes
 (epstopdf)             Command: <epstopdf --outfile=Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J1_DL1-eps-converted-to.pdf Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J1_DL1.eps>
-(epstopdf)             \includegraphics on input line 970.
+(epstopdf)             \includegraphics on input line 973.
 Package epstopdf Info: Output file is already uptodate.
-<Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J1_DL1-eps-converted-to.pdf, id=997, 569.12625pt x 363.3575pt>
+<Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J1_DL1-eps-converted-to.pdf, id=1088, 569.12625pt x 363.3575pt>
 File: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J1_DL1-eps-converted-to.pdf Graphic file (type pdf)
 <use Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J1_DL1-eps-converted-to.pdf>
-Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J1_DL1-eps-converted-to.pdf  used on input line 970.
+Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J1_DL1-eps-converted-to.pdf  used on input line 973.
 (pdftex.def)             Requested size: 211.38832pt x 134.96133pt.
 Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J1_DL1r.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
@@ -985,12 +983,12 @@ Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTV
 (epstopdf)                    date: 2021-01-19 22:46:56
 (epstopdf)                    size: 14684 bytes
 (epstopdf)             Command: <epstopdf --outfile=Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J1_DL1r-eps-converted-to.pdf Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J1_DL1r.eps>
-(epstopdf)             \includegraphics on input line 974.
+(epstopdf)             \includegraphics on input line 977.
 Package epstopdf Info: Output file is already uptodate.
-<Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J1_DL1r-eps-converted-to.pdf, id=998, 569.12625pt x 363.3575pt>
+<Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J1_DL1r-eps-converted-to.pdf, id=1089, 569.12625pt x 363.3575pt>
 File: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J1_DL1r-eps-converted-to.pdf Graphic file (type pdf)
 <use Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J1_DL1r-eps-converted-to.pdf>
-Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J1_DL1r-eps-converted-to.pdf  used on input line 974.
+Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J1_DL1r-eps-converted-to.pdf  used on input line 977.
 (pdftex.def)             Requested size: 211.38832pt x 134.96133pt.
 Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J0_MV2c10.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
@@ -999,12 +997,12 @@ Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTV
 (epstopdf)                    date: 2021-01-19 22:46:58
 (epstopdf)                    size: 15073 bytes
 (epstopdf)             Command: <epstopdf --outfile=Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J0_MV2c10-eps-converted-to.pdf Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J0_MV2c10.eps>
-(epstopdf)             \includegraphics on input line 978.
+(epstopdf)             \includegraphics on input line 981.
 Package epstopdf Info: Output file is already uptodate.
-<Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J0_MV2c10-eps-converted-to.pdf, id=999, 569.12625pt x 363.3575pt>
+<Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J0_MV2c10-eps-converted-to.pdf, id=1090, 569.12625pt x 363.3575pt>
 File: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J0_MV2c10-eps-converted-to.pdf Graphic file (type pdf)
 <use Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J0_MV2c10-eps-converted-to.pdf>
-Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J0_MV2c10-eps-converted-to.pdf  used on input line 978.
+Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J0_MV2c10-eps-converted-to.pdf  used on input line 981.
 (pdftex.def)             Requested size: 211.38832pt x 134.96133pt.
 Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J1_MV2c10.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
@@ -1013,22 +1011,18 @@ Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTV
 (epstopdf)                    date: 2021-01-19 22:47:00
 (epstopdf)                    size: 15001 bytes
 (epstopdf)             Command: <epstopdf --outfile=Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J1_MV2c10-eps-converted-to.pdf Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J1_MV2c10.eps>
-(epstopdf)             \includegraphics on input line 982.
+(epstopdf)             \includegraphics on input line 985.
 Package epstopdf Info: Output file is already uptodate.
-<Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J1_MV2c10-eps-converted-to.pdf, id=1000, 569.12625pt x 363.3575pt>
+<Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J1_MV2c10-eps-converted-to.pdf, id=1091, 569.12625pt x 363.3575pt>
 File: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J1_MV2c10-eps-converted-to.pdf Graphic file (type pdf)
 <use Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J1_MV2c10-eps-converted-to.pdf>
-Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J1_MV2c10-eps-converted-to.pdf  used on input line 982.
+Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J1_MV2c10-eps-converted-to.pdf  used on input line 985.
 (pdftex.def)             Requested size: 211.38832pt x 134.96133pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[19pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) has been already used, duplicate ignored
+ [20pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.1013 
-        <./Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J0_DL1-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J0_DL1r-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J1_DL1-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J1_DL1r-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J0_MV2c10-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J1_MV2c10-eps-converted-to.pdf>]
+l.1016 
+        <./Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J0_DL1-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J0_DL1r-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J1_DL1-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J1_DL1r-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J0_MV2c10-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J1_MV2c10-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff60.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
 (epstopdf)                    size: 23934 bytes
@@ -1036,12 +1030,12 @@ Package epstopdf Info: Source file: <SFplots_december/DL1allPFlowDec_DL1rallPFlo
 (epstopdf)                    date: 2021-01-19 22:47:02
 (epstopdf)                    size: 13360 bytes
 (epstopdf)             Command: <epstopdf --outfile=SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff60-eps-converted-to.pdf SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff60.eps>
-(epstopdf)             \includegraphics on input line 1020.
+(epstopdf)             \includegraphics on input line 1023.
 Package epstopdf Info: Output file is already uptodate.
-<SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff60-eps-converted-to.pdf, id=1073, 569.12625pt x 408.52625pt>
+<SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff60-eps-converted-to.pdf, id=1163, 569.12625pt x 408.52625pt>
 File: SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff60-eps-converted-to.pdf Graphic file (type pdf)
 <use SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff60-eps-converted-to.pdf>
-Package pdftex.def Info: SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff60-eps-converted-to.pdf  used on input line 1020.
+Package pdftex.def Info: SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff60-eps-converted-to.pdf  used on input line 1023.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
 Package epstopdf Info: Source file: <SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff70.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
@@ -1050,12 +1044,12 @@ Package epstopdf Info: Source file: <SFplots_december/DL1allPFlowDec_DL1rallPFlo
 (epstopdf)                    date: 2021-01-19 22:47:04
 (epstopdf)                    size: 13249 bytes
 (epstopdf)             Command: <epstopdf --outfile=SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff70-eps-converted-to.pdf SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff70.eps>
-(epstopdf)             \includegraphics on input line 1024.
+(epstopdf)             \includegraphics on input line 1027.
 Package epstopdf Info: Output file is already uptodate.
-<SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff70-eps-converted-to.pdf, id=1074, 569.12625pt x 408.52625pt>
+<SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff70-eps-converted-to.pdf, id=1164, 569.12625pt x 408.52625pt>
 File: SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff70-eps-converted-to.pdf Graphic file (type pdf)
 <use SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff70-eps-converted-to.pdf>
-Package pdftex.def Info: SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff70-eps-converted-to.pdf  used on input line 1024.
+Package pdftex.def Info: SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff70-eps-converted-to.pdf  used on input line 1027.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
 Package epstopdf Info: Source file: <SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff77.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
@@ -1064,12 +1058,12 @@ Package epstopdf Info: Source file: <SFplots_december/DL1allPFlowDec_DL1rallPFlo
 (epstopdf)                    date: 2021-01-19 22:47:07
 (epstopdf)                    size: 13160 bytes
 (epstopdf)             Command: <epstopdf --outfile=SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff77-eps-converted-to.pdf SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff77.eps>
-(epstopdf)             \includegraphics on input line 1028.
+(epstopdf)             \includegraphics on input line 1031.
 Package epstopdf Info: Output file is already uptodate.
-<SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff77-eps-converted-to.pdf, id=1075, 569.12625pt x 408.52625pt>
+<SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff77-eps-converted-to.pdf, id=1165, 569.12625pt x 408.52625pt>
 File: SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff77-eps-converted-to.pdf Graphic file (type pdf)
 <use SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff77-eps-converted-to.pdf>
-Package pdftex.def Info: SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff77-eps-converted-to.pdf  used on input line 1028.
+Package pdftex.def Info: SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff77-eps-converted-to.pdf  used on input line 1031.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
 Package epstopdf Info: Source file: <SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff85.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
@@ -1078,12 +1072,12 @@ Package epstopdf Info: Source file: <SFplots_december/DL1allPFlowDec_DL1rallPFlo
 (epstopdf)                    date: 2021-01-19 22:47:09
 (epstopdf)                    size: 13160 bytes
 (epstopdf)             Command: <epstopdf --outfile=SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff85-eps-converted-to.pdf SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff85.eps>
-(epstopdf)             \includegraphics on input line 1032.
+(epstopdf)             \includegraphics on input line 1035.
 Package epstopdf Info: Output file is already uptodate.
-<SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff85-eps-converted-to.pdf, id=1076, 569.12625pt x 408.52625pt>
+<SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff85-eps-converted-to.pdf, id=1166, 569.12625pt x 408.52625pt>
 File: SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff85-eps-converted-to.pdf Graphic file (type pdf)
 <use SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff85-eps-converted-to.pdf>
-Package pdftex.def Info: SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff85-eps-converted-to.pdf  used on input line 1032.
+Package pdftex.def Info: SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff85-eps-converted-to.pdf  used on input line 1035.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
 Package epstopdf Info: Source file: <SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff60.eps>
 (epstopdf)                    date: 2021-01-17 19:54:47
@@ -1092,12 +1086,12 @@ Package epstopdf Info: Source file: <SFplots_december/DL1allVRJetsDec_DL1rallVRJ
 (epstopdf)                    date: 2021-01-19 22:47:11
 (epstopdf)                    size: 13648 bytes
 (epstopdf)             Command: <epstopdf --outfile=SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff60-eps-converted-to.pdf SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff60.eps>
-(epstopdf)             \includegraphics on input line 1041.
+(epstopdf)             \includegraphics on input line 1044.
 Package epstopdf Info: Output file is already uptodate.
-<SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff60-eps-converted-to.pdf, id=1077, 569.12625pt x 408.52625pt>
+<SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff60-eps-converted-to.pdf, id=1167, 569.12625pt x 408.52625pt>
 File: SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff60-eps-converted-to.pdf Graphic file (type pdf)
 <use SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff60-eps-converted-to.pdf>
-Package pdftex.def Info: SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff60-eps-converted-to.pdf  used on input line 1041.
+Package pdftex.def Info: SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff60-eps-converted-to.pdf  used on input line 1044.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
 Package epstopdf Info: Source file: <SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff70.eps>
 (epstopdf)                    date: 2021-01-17 19:54:47
@@ -1106,12 +1100,12 @@ Package epstopdf Info: Source file: <SFplots_december/DL1allVRJetsDec_DL1rallVRJ
 (epstopdf)                    date: 2021-01-19 22:47:16
 (epstopdf)                    size: 13234 bytes
 (epstopdf)             Command: <epstopdf --outfile=SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff70-eps-converted-to.pdf SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff70.eps>
-(epstopdf)             \includegraphics on input line 1045.
+(epstopdf)             \includegraphics on input line 1048.
 Package epstopdf Info: Output file is already uptodate.
-<SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff70-eps-converted-to.pdf, id=1078, 569.12625pt x 408.52625pt>
+<SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff70-eps-converted-to.pdf, id=1168, 569.12625pt x 408.52625pt>
 File: SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff70-eps-converted-to.pdf Graphic file (type pdf)
 <use SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff70-eps-converted-to.pdf>
-Package pdftex.def Info: SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff70-eps-converted-to.pdf  used on input line 1045.
+Package pdftex.def Info: SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff70-eps-converted-to.pdf  used on input line 1048.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
 Package epstopdf Info: Source file: <SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff77.eps>
 (epstopdf)                    date: 2021-01-17 19:54:47
@@ -1120,12 +1114,12 @@ Package epstopdf Info: Source file: <SFplots_december/DL1allVRJetsDec_DL1rallVRJ
 (epstopdf)                    date: 2021-01-19 22:47:19
 (epstopdf)                    size: 13111 bytes
 (epstopdf)             Command: <epstopdf --outfile=SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff77-eps-converted-to.pdf SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff77.eps>
-(epstopdf)             \includegraphics on input line 1049.
+(epstopdf)             \includegraphics on input line 1052.
 Package epstopdf Info: Output file is already uptodate.
-<SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff77-eps-converted-to.pdf, id=1079, 569.12625pt x 408.52625pt>
+<SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff77-eps-converted-to.pdf, id=1169, 569.12625pt x 408.52625pt>
 File: SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff77-eps-converted-to.pdf Graphic file (type pdf)
 <use SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff77-eps-converted-to.pdf>
-Package pdftex.def Info: SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff77-eps-converted-to.pdf  used on input line 1049.
+Package pdftex.def Info: SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff77-eps-converted-to.pdf  used on input line 1052.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
 Package epstopdf Info: Source file: <SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff85.eps>
 (epstopdf)                    date: 2021-01-17 19:54:47
@@ -1134,17 +1128,17 @@ Package epstopdf Info: Source file: <SFplots_december/DL1allVRJetsDec_DL1rallVRJ
 (epstopdf)                    date: 2021-01-19 22:47:22
 (epstopdf)                    size: 12974 bytes
 (epstopdf)             Command: <epstopdf --outfile=SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff85-eps-converted-to.pdf SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff85.eps>
-(epstopdf)             \includegraphics on input line 1053.
+(epstopdf)             \includegraphics on input line 1056.
 Package epstopdf Info: Output file is already uptodate.
-<SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff85-eps-converted-to.pdf, id=1080, 569.12625pt x 408.52625pt>
+<SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff85-eps-converted-to.pdf, id=1170, 569.12625pt x 408.52625pt>
 File: SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff85-eps-converted-to.pdf Graphic file (type pdf)
 <use SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff85-eps-converted-to.pdf>
-Package pdftex.def Info: SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff85-eps-converted-to.pdf  used on input line 1053.
+Package pdftex.def Info: SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff85-eps-converted-to.pdf  used on input line 1056.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
- [20pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) has been already used, duplicate ignored
+ [21pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.1058 
+l.1061 
         <./SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff60-eps-converted-to.pdf> <./SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff70-eps-converted-to.pdf> <./SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff77-eps-converted-to.pdf> <./SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff85-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF60.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
@@ -1153,12 +1147,12 @@ Package epstopdf Info: Source file: <SFplots_december/DL1allPFlowDec_DL1rallPFlo
 (epstopdf)                    date: 2021-01-19 22:47:24
 (epstopdf)                    size: 13527 bytes
 (epstopdf)             Command: <epstopdf --outfile=SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF60-eps-converted-to.pdf SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF60.eps>
-(epstopdf)             \includegraphics on input line 1064.
+(epstopdf)             \includegraphics on input line 1067.
 Package epstopdf Info: Output file is already uptodate.
-<SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF60-eps-converted-to.pdf, id=1115, 569.12625pt x 408.52625pt>
+<SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF60-eps-converted-to.pdf, id=1205, 569.12625pt x 408.52625pt>
 File: SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF60-eps-converted-to.pdf Graphic file (type pdf)
 <use SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF60-eps-converted-to.pdf>
-Package pdftex.def Info: SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF60-eps-converted-to.pdf  used on input line 1064.
+Package pdftex.def Info: SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF60-eps-converted-to.pdf  used on input line 1067.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
 Package epstopdf Info: Source file: <SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF70.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
@@ -1167,12 +1161,12 @@ Package epstopdf Info: Source file: <SFplots_december/DL1allPFlowDec_DL1rallPFlo
 (epstopdf)                    date: 2021-01-19 22:47:27
 (epstopdf)                    size: 13121 bytes
 (epstopdf)             Command: <epstopdf --outfile=SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF70-eps-converted-to.pdf SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF70.eps>
-(epstopdf)             \includegraphics on input line 1068.
+(epstopdf)             \includegraphics on input line 1071.
 Package epstopdf Info: Output file is already uptodate.
-<SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF70-eps-converted-to.pdf, id=1116, 569.12625pt x 408.52625pt>
+<SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF70-eps-converted-to.pdf, id=1206, 569.12625pt x 408.52625pt>
 File: SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF70-eps-converted-to.pdf Graphic file (type pdf)
 <use SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF70-eps-converted-to.pdf>
-Package pdftex.def Info: SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF70-eps-converted-to.pdf  used on input line 1068.
+Package pdftex.def Info: SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF70-eps-converted-to.pdf  used on input line 1071.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
 Package epstopdf Info: Source file: <SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF77.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
@@ -1181,12 +1175,12 @@ Package epstopdf Info: Source file: <SFplots_december/DL1allPFlowDec_DL1rallPFlo
 (epstopdf)                    date: 2021-01-19 22:47:30
 (epstopdf)                    size: 12822 bytes
 (epstopdf)             Command: <epstopdf --outfile=SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF77-eps-converted-to.pdf SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF77.eps>
-(epstopdf)             \includegraphics on input line 1072.
+(epstopdf)             \includegraphics on input line 1075.
 Package epstopdf Info: Output file is already uptodate.
-<SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF77-eps-converted-to.pdf, id=1117, 569.12625pt x 408.52625pt>
+<SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF77-eps-converted-to.pdf, id=1207, 569.12625pt x 408.52625pt>
 File: SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF77-eps-converted-to.pdf Graphic file (type pdf)
 <use SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF77-eps-converted-to.pdf>
-Package pdftex.def Info: SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF77-eps-converted-to.pdf  used on input line 1072.
+Package pdftex.def Info: SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF77-eps-converted-to.pdf  used on input line 1075.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
 Package epstopdf Info: Source file: <SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF85.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
@@ -1195,17 +1189,17 @@ Package epstopdf Info: Source file: <SFplots_december/DL1allPFlowDec_DL1rallPFlo
 (epstopdf)                    date: 2021-01-19 22:47:32
 (epstopdf)                    size: 12792 bytes
 (epstopdf)             Command: <epstopdf --outfile=SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF85-eps-converted-to.pdf SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF85.eps>
-(epstopdf)             \includegraphics on input line 1076.
+(epstopdf)             \includegraphics on input line 1079.
 Package epstopdf Info: Output file is already uptodate.
-<SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF85-eps-converted-to.pdf, id=1118, 569.12625pt x 408.52625pt>
+<SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF85-eps-converted-to.pdf, id=1208, 569.12625pt x 408.52625pt>
 File: SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF85-eps-converted-to.pdf Graphic file (type pdf)
 <use SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF85-eps-converted-to.pdf>
-Package pdftex.def Info: SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF85-eps-converted-to.pdf  used on input line 1076.
+Package pdftex.def Info: SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF85-eps-converted-to.pdf  used on input line 1079.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
- [21pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) has been already used, duplicate ignored
+ [22pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.1081 
+l.1084 
         <./SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff60-eps-converted-to.pdf> <./SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff70-eps-converted-to.pdf> <./SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff77-eps-converted-to.pdf> <./SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff85-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF60.eps>
 (epstopdf)                    date: 2021-01-17 19:54:47
@@ -1214,12 +1208,12 @@ Package epstopdf Info: Source file: <SFplots_december/DL1allVRJetsDec_DL1rallVRJ
 (epstopdf)                    date: 2021-01-19 22:47:34
 (epstopdf)                    size: 14358 bytes
 (epstopdf)             Command: <epstopdf --outfile=SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF60-eps-converted-to.pdf SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF60.eps>
-(epstopdf)             \includegraphics on input line 1085.
+(epstopdf)             \includegraphics on input line 1088.
 Package epstopdf Info: Output file is already uptodate.
-<SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF60-eps-converted-to.pdf, id=1151, 569.12625pt x 408.52625pt>
+<SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF60-eps-converted-to.pdf, id=1241, 569.12625pt x 408.52625pt>
 File: SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF60-eps-converted-to.pdf Graphic file (type pdf)
 <use SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF60-eps-converted-to.pdf>
-Package pdftex.def Info: SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF60-eps-converted-to.pdf  used on input line 1085.
+Package pdftex.def Info: SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF60-eps-converted-to.pdf  used on input line 1088.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
 Package epstopdf Info: Source file: <SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF70.eps>
 (epstopdf)                    date: 2021-01-17 19:54:47
@@ -1228,12 +1222,12 @@ Package epstopdf Info: Source file: <SFplots_december/DL1allVRJetsDec_DL1rallVRJ
 (epstopdf)                    date: 2021-01-19 22:47:37
 (epstopdf)                    size: 13295 bytes
 (epstopdf)             Command: <epstopdf --outfile=SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF70-eps-converted-to.pdf SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF70.eps>
-(epstopdf)             \includegraphics on input line 1089.
+(epstopdf)             \includegraphics on input line 1092.
 Package epstopdf Info: Output file is already uptodate.
-<SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF70-eps-converted-to.pdf, id=1152, 569.12625pt x 408.52625pt>
+<SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF70-eps-converted-to.pdf, id=1242, 569.12625pt x 408.52625pt>
 File: SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF70-eps-converted-to.pdf Graphic file (type pdf)
 <use SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF70-eps-converted-to.pdf>
-Package pdftex.def Info: SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF70-eps-converted-to.pdf  used on input line 1089.
+Package pdftex.def Info: SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF70-eps-converted-to.pdf  used on input line 1092.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
 Package epstopdf Info: Source file: <SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF77.eps>
 (epstopdf)                    date: 2021-01-17 19:54:47
@@ -1242,12 +1236,12 @@ Package epstopdf Info: Source file: <SFplots_december/DL1allVRJetsDec_DL1rallVRJ
 (epstopdf)                    date: 2021-01-19 22:47:39
 (epstopdf)                    size: 12865 bytes
 (epstopdf)             Command: <epstopdf --outfile=SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF77-eps-converted-to.pdf SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF77.eps>
-(epstopdf)             \includegraphics on input line 1093.
+(epstopdf)             \includegraphics on input line 1096.
 Package epstopdf Info: Output file is already uptodate.
-<SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF77-eps-converted-to.pdf, id=1153, 569.12625pt x 408.52625pt>
+<SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF77-eps-converted-to.pdf, id=1243, 569.12625pt x 408.52625pt>
 File: SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF77-eps-converted-to.pdf Graphic file (type pdf)
 <use SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF77-eps-converted-to.pdf>
-Package pdftex.def Info: SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF77-eps-converted-to.pdf  used on input line 1093.
+Package pdftex.def Info: SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF77-eps-converted-to.pdf  used on input line 1096.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
 Package epstopdf Info: Source file: <SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF85.eps>
 (epstopdf)                    date: 2021-01-17 19:54:47
@@ -1256,131 +1250,92 @@ Package epstopdf Info: Source file: <SFplots_december/DL1allVRJetsDec_DL1rallVRJ
 (epstopdf)                    date: 2021-01-19 22:47:42
 (epstopdf)                    size: 12581 bytes
 (epstopdf)             Command: <epstopdf --outfile=SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF85-eps-converted-to.pdf SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF85.eps>
-(epstopdf)             \includegraphics on input line 1097.
+(epstopdf)             \includegraphics on input line 1100.
 Package epstopdf Info: Output file is already uptodate.
-<SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF85-eps-converted-to.pdf, id=1154, 569.12625pt x 408.52625pt>
+<SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF85-eps-converted-to.pdf, id=1244, 569.12625pt x 408.52625pt>
 File: SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF85-eps-converted-to.pdf Graphic file (type pdf)
 <use SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF85-eps-converted-to.pdf>
-Package pdftex.def Info: SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF85-eps-converted-to.pdf  used on input line 1097.
+Package pdftex.def Info: SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF85-eps-converted-to.pdf  used on input line 1100.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
- [22pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) has been already used, duplicate ignored
+ [23pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.1102 
-        <./SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF60-eps-converted-to.pdf> <./SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF70-eps-converted-to.pdf> <./SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF77-eps-converted-to.pdf> <./SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF85-eps-converted-to.pdf>] [23pdfTeX warning (ext4): destination with the same identifier (name{figure.14}) has been already used, duplicate ignored
+l.1105 
+        <./SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF60-eps-converted-to.pdf> <./SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF70-eps-converted-to.pdf> <./SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF77-eps-converted-to.pdf> <./SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF85-eps-converted-to.pdf>] [24pdfTeX warning (ext4): destination with the same identifier (name{figure.14}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.1197 \newpage
-                <./SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF60-eps-converted-to.pdf> <./SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF70-eps-converted-to.pdf> <./SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF77-eps-converted-to.pdf> <./SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF85-eps-converted-to.pdf>] [24] [25]
-Overfull \hbox (4.09744pt too wide) in paragraph at lines 1199--1199
+l.1200 \newpage
+                <./SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF60-eps-converted-to.pdf> <./SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF70-eps-converted-to.pdf> <./SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF77-eps-converted-to.pdf> <./SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF85-eps-converted-to.pdf>] [25] [26]
+Overfull \hbox (4.09744pt too wide) in paragraph at lines 1202--1202
 []\T1/cmr/m/n/12 Stefano Frix-ione, Paolo Na-son, and Gio-vanni Ri-dolfi. ``A positive-weight next-to-leading-
  []
 
-[26]
-Overfull \hbox (4.6617pt too wide) in paragraph at lines 1199--1199
+[27]
+Overfull \hbox (4.6617pt too wide) in paragraph at lines 1202--1202
 []\T1/cmr/m/n/12 ATLAS Col-lab-o-ra-tion. ``Mea-sure-ments of in-clu-sive and dif-fer-en-tial fidu-cial cross-sections
  []
 
-[27] [28] [29]
-<Distribution_March/DataMC_J0_DL1.png, id=1352, 798.985pt x 574.145pt>
+[28] [29]
+<Distribution_March/DataMC_J0_DL1.png, id=1437, 798.985pt x 574.145pt>
 File: Distribution_March/DataMC_J0_DL1.png Graphic file (type png)
 <use Distribution_March/DataMC_J0_DL1.png>
 Package pdftex.def Info: Distribution_March/DataMC_J0_DL1.png  used on input line 1209.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<Distribution_March/DataMC_J0_DL1r.png, id=1353, 798.985pt x 574.145pt>
+<Distribution_March/DataMC_J0_DL1r.png, id=1438, 798.985pt x 574.145pt>
 File: Distribution_March/DataMC_J0_DL1r.png Graphic file (type png)
 <use Distribution_March/DataMC_J0_DL1r.png>
 Package pdftex.def Info: Distribution_March/DataMC_J0_DL1r.png  used on input line 1213.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<Distribution_March/DataMC_J0_eta.png, id=1354, 798.985pt x 574.145pt>
+<Distribution_March/DataMC_J0_eta.png, id=1439, 798.985pt x 574.145pt>
 File: Distribution_March/DataMC_J0_eta.png Graphic file (type png)
 <use Distribution_March/DataMC_J0_eta.png>
 Package pdftex.def Info: Distribution_March/DataMC_J0_eta.png  used on input line 1217.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<Distribution_March/DataMC_J0_pt.png, id=1355, 798.985pt x 574.145pt>
+<Distribution_March/DataMC_J0_pt.png, id=1440, 798.985pt x 574.145pt>
 File: Distribution_March/DataMC_J0_pt.png Graphic file (type png)
 <use Distribution_March/DataMC_J0_pt.png>
 Package pdftex.def Info: Distribution_March/DataMC_J0_pt.png  used on input line 1221.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<Distribution_March/DataMC_Mbb.png, id=1356, 798.985pt x 574.145pt>
+<Distribution_March/DataMC_Mbb.png, id=1441, 798.985pt x 574.145pt>
 File: Distribution_March/DataMC_Mbb.png Graphic file (type png)
 <use Distribution_March/DataMC_Mbb.png>
 Package pdftex.def Info: Distribution_March/DataMC_Mbb.png  used on input line 1225.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<Distribution_March/DataMC_mjj.png, id=1357, 798.985pt x 574.145pt>
+<Distribution_March/DataMC_mjj.png, id=1442, 798.985pt x 574.145pt>
 File: Distribution_March/DataMC_mjj.png Graphic file (type png)
 <use Distribution_March/DataMC_mjj.png>
 Package pdftex.def Info: Distribution_March/DataMC_mjj.png  used on input line 1233.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 1245.
 
-<Distribution_March/DataMC_J1_DL1.png, id=1358, 798.985pt x 574.145pt>
+<Distribution_March/DataMC_J1_DL1.png, id=1443, 798.985pt x 574.145pt>
 File: Distribution_March/DataMC_J1_DL1.png Graphic file (type png)
 <use Distribution_March/DataMC_J1_DL1.png>
-Package pdftex.def Info: Distribution_March/DataMC_J1_DL1.png  used on input line 1247.
+Package pdftex.def Info: Distribution_March/DataMC_J1_DL1.png  used on input line 1249.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<Distribution_March/DataMC_J1_DL1r.png, id=1359, 798.985pt x 574.145pt>
+<Distribution_March/DataMC_J1_DL1r.png, id=1444, 798.985pt x 574.145pt>
 File: Distribution_March/DataMC_J1_DL1r.png Graphic file (type png)
 <use Distribution_March/DataMC_J1_DL1r.png>
-Package pdftex.def Info: Distribution_March/DataMC_J1_DL1r.png  used on input line 1251.
+Package pdftex.def Info: Distribution_March/DataMC_J1_DL1r.png  used on input line 1253.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<Distribution_March/DataMC_J1_eta.png, id=1360, 798.985pt x 574.145pt>
+<Distribution_March/DataMC_J1_eta.png, id=1445, 798.985pt x 574.145pt>
 File: Distribution_March/DataMC_J1_eta.png Graphic file (type png)
 <use Distribution_March/DataMC_J1_eta.png>
-Package pdftex.def Info: Distribution_March/DataMC_J1_eta.png  used on input line 1255.
+Package pdftex.def Info: Distribution_March/DataMC_J1_eta.png  used on input line 1257.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<Distribution_March/DataMC_J1_pt.png, id=1361, 798.985pt x 574.145pt>
+<Distribution_March/DataMC_J1_pt.png, id=1446, 798.985pt x 574.145pt>
 File: Distribution_March/DataMC_J1_pt.png Graphic file (type png)
 <use Distribution_March/DataMC_J1_pt.png>
-Package pdftex.def Info: Distribution_March/DataMC_J1_pt.png  used on input line 1259.
+Package pdftex.def Info: Distribution_March/DataMC_J1_pt.png  used on input line 1261.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<Distribution_March_highpT/DataMC_J0_DL1.png, id=1362, 798.985pt x 574.145pt>
-File: Distribution_March_highpT/DataMC_J0_DL1.png Graphic file (type png)
-<use Distribution_March_highpT/DataMC_J0_DL1.png>
-Package pdftex.def Info: Distribution_March_highpT/DataMC_J0_DL1.png  used on input line 1271.
-(pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<Distribution_March_highpT/DataMC_J0_DL1r.png, id=1363, 798.985pt x 574.145pt>
-File: Distribution_March_highpT/DataMC_J0_DL1r.png Graphic file (type png)
-<use Distribution_March_highpT/DataMC_J0_DL1r.png>
-Package pdftex.def Info: Distribution_March_highpT/DataMC_J0_DL1r.png  used on input line 1275.
-(pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<Distribution_March_highpT/DataMC_J0_eta.png, id=1364, 798.985pt x 574.145pt>
-File: Distribution_March_highpT/DataMC_J0_eta.png Graphic file (type png)
-<use Distribution_March_highpT/DataMC_J0_eta.png>
-Package pdftex.def Info: Distribution_March_highpT/DataMC_J0_eta.png  used on input line 1279.
-(pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<Distribution_March_highpT/DataMC_J0_pt.png, id=1365, 798.985pt x 574.145pt>
-File: Distribution_March_highpT/DataMC_J0_pt.png Graphic file (type png)
-<use Distribution_March_highpT/DataMC_J0_pt.png>
-Package pdftex.def Info: Distribution_March_highpT/DataMC_J0_pt.png  used on input line 1283.
-(pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<Distribution_March_highpT/DataMC_Mbb.png, id=1366, 798.985pt x 574.145pt>
-File: Distribution_March_highpT/DataMC_Mbb.png Graphic file (type png)
-<use Distribution_March_highpT/DataMC_Mbb.png>
-Package pdftex.def Info: Distribution_March_highpT/DataMC_Mbb.png  used on input line 1287.
-(pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<Distribution_March_highpT/DataMC_mjj.png, id=1367, 798.985pt x 574.145pt>
-File: Distribution_March_highpT/DataMC_mjj.png Graphic file (type png)
-<use Distribution_March_highpT/DataMC_mjj.png>
-Package pdftex.def Info: Distribution_March_highpT/DataMC_mjj.png  used on input line 1291.
-(pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-[30pdfTeX warning (ext4): destination with the same identifier (name{figure.16}) has been already used, duplicate ignored
+[30pdfTeX warning (ext4): destination with the same identifier (name{figure.15}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.1297 
-        <./Distribution_March/DataMC_J1_DL1.png> <./Distribution_March/DataMC_J1_DL1r.png> <./Distribution_March/DataMC_J1_eta.png> <./Distribution_March/DataMC_J1_pt.png>]
-<Dec_eff.png, id=1372, 962.09438pt x 690.32906pt>
-File: Dec_eff.png Graphic file (type png)
-<use Dec_eff.png>
-Package pdftex.def Info: Dec_eff.png  used on input line 1301.
-(pdftex.def)             Requested size: 469.75502pt x 337.06337pt.
-<Dec.png, id=1373, 959.08313pt x 688.07062pt>
-File: Dec.png Graphic file (type png)
-<use Dec.png>
-Package pdftex.def Info: Dec.png  used on input line 1306.
-(pdftex.def)             Requested size: 469.75502pt x 337.01056pt.
+l.1268 
+        <./Distribution_March/DataMC_J0_DL1.png> <./Distribution_March/DataMC_J0_DL1r.png> <./Distribution_March/DataMC_J0_eta.png> <./Distribution_March/DataMC_J0_pt.png> <./Distribution_March/DataMC_Mbb.png> <./Distribution_March/DataMC_mjj.png>]
 Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J0_eta.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
 (epstopdf)                    size: 34115 bytes
@@ -1388,12 +1343,12 @@ Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTP
 (epstopdf)                    date: 2021-01-19 22:47:45
 (epstopdf)                    size: 16191 bytes
 (epstopdf)             Command: <epstopdf --outfile=Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J0_eta-eps-converted-to.pdf Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J0_eta.eps>
-(epstopdf)             \includegraphics on input line 1318.
+(epstopdf)             \includegraphics on input line 1273.
 Package epstopdf Info: Output file is already uptodate.
-<Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J0_eta-eps-converted-to.pdf, id=1374, 569.12625pt x 363.3575pt>
+<Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J0_eta-eps-converted-to.pdf, id=1451, 569.12625pt x 363.3575pt>
 File: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J0_eta-eps-converted-to.pdf Graphic file (type pdf)
 <use Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J0_eta-eps-converted-to.pdf>
-Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J0_eta-eps-converted-to.pdf  used on input line 1318.
+Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J0_eta-eps-converted-to.pdf  used on input line 1273.
 (pdftex.def)             Requested size: 211.38832pt x 134.96133pt.
 Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J1_eta.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
@@ -1402,12 +1357,12 @@ Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTP
 (epstopdf)                    date: 2021-01-19 22:47:47
 (epstopdf)                    size: 16187 bytes
 (epstopdf)             Command: <epstopdf --outfile=Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J1_eta-eps-converted-to.pdf Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J1_eta.eps>
-(epstopdf)             \includegraphics on input line 1322.
+(epstopdf)             \includegraphics on input line 1277.
 Package epstopdf Info: Output file is already uptodate.
-<Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J1_eta-eps-converted-to.pdf, id=1375, 569.12625pt x 363.3575pt>
+<Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J1_eta-eps-converted-to.pdf, id=1452, 569.12625pt x 363.3575pt>
 File: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J1_eta-eps-converted-to.pdf Graphic file (type pdf)
 <use Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J1_eta-eps-converted-to.pdf>
-Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J1_eta-eps-converted-to.pdf  used on input line 1322.
+Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J1_eta-eps-converted-to.pdf  used on input line 1277.
 (pdftex.def)             Requested size: 211.38832pt x 134.96133pt.
 Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_LLR.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
@@ -1416,12 +1371,12 @@ Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTP
 (epstopdf)                    date: 2021-01-19 22:47:50
 (epstopdf)                    size: 15060 bytes
 (epstopdf)             Command: <epstopdf --outfile=Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_LLR-eps-converted-to.pdf Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_LLR.eps>
-(epstopdf)             \includegraphics on input line 1326.
+(epstopdf)             \includegraphics on input line 1281.
 Package epstopdf Info: Output file is already uptodate.
-<Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_LLR-eps-converted-to.pdf, id=1376, 569.12625pt x 363.3575pt>
+<Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_LLR-eps-converted-to.pdf, id=1453, 569.12625pt x 363.3575pt>
 File: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_LLR-eps-converted-to.pdf Graphic file (type pdf)
 <use Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_LLR-eps-converted-to.pdf>
-Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_LLR-eps-converted-to.pdf  used on input line 1326.
+Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_LLR-eps-converted-to.pdf  used on input line 1281.
 (pdftex.def)             Requested size: 211.38832pt x 134.96133pt.
 Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_MET.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
@@ -1430,13 +1385,22 @@ Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTP
 (epstopdf)                    date: 2021-01-19 22:47:52
 (epstopdf)                    size: 13716 bytes
 (epstopdf)             Command: <epstopdf --outfile=Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_MET-eps-converted-to.pdf Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_MET.eps>
-(epstopdf)             \includegraphics on input line 1330.
+(epstopdf)             \includegraphics on input line 1285.
 Package epstopdf Info: Output file is already uptodate.
-<Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_MET-eps-converted-to.pdf, id=1377, 569.12625pt x 363.3575pt>
+<Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_MET-eps-converted-to.pdf, id=1454, 569.12625pt x 363.3575pt>
 File: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_MET-eps-converted-to.pdf Graphic file (type pdf)
 <use Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_MET-eps-converted-to.pdf>
-Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_MET-eps-converted-to.pdf  used on input line 1330.
+Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_MET-eps-converted-to.pdf  used on input line 1285.
 (pdftex.def)             Requested size: 211.38832pt x 134.96133pt.
+ [31pdfTeX warning (ext4): destination with the same identifier (name{figure.16}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.1291 	
+         <./Distribution_March/DataMC_J1_DL1.png> <./Distribution_March/DataMC_J1_DL1r.png> <./Distribution_March/DataMC_J1_eta.png> <./Distribution_March/DataMC_J1_pt.png>] [32pdfTeX warning (ext4): destination with the same identifier (name{figure.17}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.1294 	\newpage
+                 <./Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J0_eta-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J1_eta-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_LLR-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_MET-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRbb.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
 (epstopdf)                    size: 29304 bytes
@@ -1444,12 +1408,12 @@ Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTP
 (epstopdf)                    date: 2021-01-19 22:47:54
 (epstopdf)                    size: 14082 bytes
 (epstopdf)             Command: <epstopdf --outfile=Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRbb-eps-converted-to.pdf Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRbb.eps>
-(epstopdf)             \includegraphics on input line 1343.
+(epstopdf)             \includegraphics on input line 1298.
 Package epstopdf Info: Output file is already uptodate.
-<Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRbb-eps-converted-to.pdf, id=1378, 569.12625pt x 363.3575pt>
+<Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRbb-eps-converted-to.pdf, id=1501, 569.12625pt x 363.3575pt>
 File: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRbb-eps-converted-to.pdf Graphic file (type pdf)
 <use Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRbb-eps-converted-to.pdf>
-Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRbb-eps-converted-to.pdf  used on input line 1343.
+Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRbb-eps-converted-to.pdf  used on input line 1298.
 (pdftex.def)             Requested size: 211.38832pt x 134.96133pt.
 Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRqq.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
@@ -1458,12 +1422,12 @@ Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTP
 (epstopdf)                    date: 2021-01-19 22:47:57
 (epstopdf)                    size: 14206 bytes
 (epstopdf)             Command: <epstopdf --outfile=Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRqq-eps-converted-to.pdf Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRqq.eps>
-(epstopdf)             \includegraphics on input line 1347.
+(epstopdf)             \includegraphics on input line 1302.
 Package epstopdf Info: Output file is already uptodate.
-<Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRqq-eps-converted-to.pdf, id=1379, 569.12625pt x 363.3575pt>
+<Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRqq-eps-converted-to.pdf, id=1502, 569.12625pt x 363.3575pt>
 File: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRqq-eps-converted-to.pdf Graphic file (type pdf)
 <use Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRqq-eps-converted-to.pdf>
-Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRqq-eps-converted-to.pdf  used on input line 1347.
+Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRqq-eps-converted-to.pdf  used on input line 1302.
 (pdftex.def)             Requested size: 211.38832pt x 134.96133pt.
 Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRbhadq1.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
@@ -1472,12 +1436,12 @@ Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTP
 (epstopdf)                    date: 2021-01-19 22:47:59
 (epstopdf)                    size: 14272 bytes
 (epstopdf)             Command: <epstopdf --outfile=Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRbhadq1-eps-converted-to.pdf Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRbhadq1.eps>
-(epstopdf)             \includegraphics on input line 1351.
+(epstopdf)             \includegraphics on input line 1306.
 Package epstopdf Info: Output file is already uptodate.
-<Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRbhadq1-eps-converted-to.pdf, id=1380, 569.12625pt x 363.3575pt>
+<Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRbhadq1-eps-converted-to.pdf, id=1503, 569.12625pt x 363.3575pt>
 File: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRbhadq1-eps-converted-to.pdf Graphic file (type pdf)
 <use Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRbhadq1-eps-converted-to.pdf>
-Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRbhadq1-eps-converted-to.pdf  used on input line 1351.
+Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRbhadq1-eps-converted-to.pdf  used on input line 1306.
 (pdftex.def)             Requested size: 211.38832pt x 134.96133pt.
 Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRblepq1.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
@@ -1486,12 +1450,12 @@ Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTP
 (epstopdf)                    date: 2021-01-19 22:48:02
 (epstopdf)                    size: 14317 bytes
 (epstopdf)             Command: <epstopdf --outfile=Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRblepq1-eps-converted-to.pdf Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRblepq1.eps>
-(epstopdf)             \includegraphics on input line 1355.
+(epstopdf)             \includegraphics on input line 1310.
 Package epstopdf Info: Output file is already uptodate.
-<Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRblepq1-eps-converted-to.pdf, id=1381, 569.12625pt x 363.3575pt>
+<Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRblepq1-eps-converted-to.pdf, id=1504, 569.12625pt x 363.3575pt>
 File: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRblepq1-eps-converted-to.pdf Graphic file (type pdf)
 <use Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRblepq1-eps-converted-to.pdf>
-Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRblepq1-eps-converted-to.pdf  used on input line 1355.
+Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRblepq1-eps-converted-to.pdf  used on input line 1310.
 (pdftex.def)             Requested size: 211.38832pt x 134.96133pt.
 Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRWhadbhad.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
@@ -1500,12 +1464,12 @@ Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTP
 (epstopdf)                    date: 2021-01-19 22:48:04
 (epstopdf)                    size: 14725 bytes
 (epstopdf)             Command: <epstopdf --outfile=Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRWhadbhad-eps-converted-to.pdf Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRWhadbhad.eps>
-(epstopdf)             \includegraphics on input line 1359.
+(epstopdf)             \includegraphics on input line 1314.
 Package epstopdf Info: Output file is already uptodate.
-<Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRWhadbhad-eps-converted-to.pdf, id=1382, 569.12625pt x 363.3575pt>
+<Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRWhadbhad-eps-converted-to.pdf, id=1505, 569.12625pt x 363.3575pt>
 File: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRWhadbhad-eps-converted-to.pdf Graphic file (type pdf)
 <use Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRWhadbhad-eps-converted-to.pdf>
-Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRWhadbhad-eps-converted-to.pdf  used on input line 1359.
+Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRWhadbhad-eps-converted-to.pdf  used on input line 1314.
 (pdftex.def)             Requested size: 211.38832pt x 134.96133pt.
 Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRWhadblep.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
@@ -1514,13 +1478,18 @@ Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTP
 (epstopdf)                    date: 2021-01-19 22:48:07
 (epstopdf)                    size: 14517 bytes
 (epstopdf)             Command: <epstopdf --outfile=Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRWhadblep-eps-converted-to.pdf Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRWhadblep.eps>
-(epstopdf)             \includegraphics on input line 1363.
+(epstopdf)             \includegraphics on input line 1318.
 Package epstopdf Info: Output file is already uptodate.
-<Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRWhadblep-eps-converted-to.pdf, id=1383, 569.12625pt x 363.3575pt>
+<Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRWhadblep-eps-converted-to.pdf, id=1506, 569.12625pt x 363.3575pt>
 File: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRWhadblep-eps-converted-to.pdf Graphic file (type pdf)
 <use Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRWhadblep-eps-converted-to.pdf>
-Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRWhadblep-eps-converted-to.pdf  used on input line 1363.
+Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRWhadblep-eps-converted-to.pdf  used on input line 1318.
 (pdftex.def)             Requested size: 211.38832pt x 134.96133pt.
+ [33pdfTeX warning (ext4): destination with the same identifier (name{figure.18}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.1325 	\newpage
+                 <./Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRbb-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRqq-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRbhadq1-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRblepq1-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRWhadbhad-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRWhadblep-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_Mbb.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
 (epstopdf)                    size: 30767 bytes
@@ -1528,12 +1497,12 @@ Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTP
 (epstopdf)                    date: 2021-01-19 22:48:09
 (epstopdf)                    size: 14091 bytes
 (epstopdf)             Command: <epstopdf --outfile=Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_Mbb-eps-converted-to.pdf Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_Mbb.eps>
-(epstopdf)             \includegraphics on input line 1374.
+(epstopdf)             \includegraphics on input line 1329.
 Package epstopdf Info: Output file is already uptodate.
-<Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_Mbb-eps-converted-to.pdf, id=1384, 569.12625pt x 363.3575pt>
+<Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_Mbb-eps-converted-to.pdf, id=1572, 569.12625pt x 363.3575pt>
 File: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_Mbb-eps-converted-to.pdf Graphic file (type pdf)
 <use Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_Mbb-eps-converted-to.pdf>
-Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_Mbb-eps-converted-to.pdf  used on input line 1374.
+Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_Mbb-eps-converted-to.pdf  used on input line 1329.
 (pdftex.def)             Requested size: 211.38832pt x 134.96133pt.
 Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_mjj.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
@@ -1542,12 +1511,12 @@ Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTP
 (epstopdf)                    date: 2021-01-19 22:48:12
 (epstopdf)                    size: 13583 bytes
 (epstopdf)             Command: <epstopdf --outfile=Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_mjj-eps-converted-to.pdf Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_mjj.eps>
-(epstopdf)             \includegraphics on input line 1378.
+(epstopdf)             \includegraphics on input line 1333.
 Package epstopdf Info: Output file is already uptodate.
-<Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_mjj-eps-converted-to.pdf, id=1385, 569.12625pt x 363.3575pt>
+<Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_mjj-eps-converted-to.pdf, id=1573, 569.12625pt x 363.3575pt>
 File: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_mjj-eps-converted-to.pdf Graphic file (type pdf)
 <use Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_mjj-eps-converted-to.pdf>
-Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_mjj-eps-converted-to.pdf  used on input line 1378.
+Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_mjj-eps-converted-to.pdf  used on input line 1333.
 (pdftex.def)             Requested size: 211.38832pt x 134.96133pt.
 Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_mjjj.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
@@ -1556,12 +1525,12 @@ Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTP
 (epstopdf)                    date: 2021-01-19 22:48:14
 (epstopdf)                    size: 13933 bytes
 (epstopdf)             Command: <epstopdf --outfile=Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_mjjj-eps-converted-to.pdf Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_mjjj.eps>
-(epstopdf)             \includegraphics on input line 1382.
+(epstopdf)             \includegraphics on input line 1337.
 Package epstopdf Info: Output file is already uptodate.
-<Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_mjjj-eps-converted-to.pdf, id=1386, 569.12625pt x 363.3575pt>
+<Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_mjjj-eps-converted-to.pdf, id=1574, 569.12625pt x 363.3575pt>
 File: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_mjjj-eps-converted-to.pdf Graphic file (type pdf)
 <use Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_mjjj-eps-converted-to.pdf>
-Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_mjjj-eps-converted-to.pdf  used on input line 1382.
+Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_mjjj-eps-converted-to.pdf  used on input line 1337.
 (pdftex.def)             Requested size: 211.38832pt x 134.96133pt.
 Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_Htjj.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
@@ -1570,13 +1539,18 @@ Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTP
 (epstopdf)                    date: 2021-01-19 22:48:17
 (epstopdf)                    size: 14197 bytes
 (epstopdf)             Command: <epstopdf --outfile=Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_Htjj-eps-converted-to.pdf Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_Htjj.eps>
-(epstopdf)             \includegraphics on input line 1386.
+(epstopdf)             \includegraphics on input line 1341.
 Package epstopdf Info: Output file is already uptodate.
-<Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_Htjj-eps-converted-to.pdf, id=1387, 569.12625pt x 363.3575pt>
+<Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_Htjj-eps-converted-to.pdf, id=1575, 569.12625pt x 363.3575pt>
 File: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_Htjj-eps-converted-to.pdf Graphic file (type pdf)
 <use Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_Htjj-eps-converted-to.pdf>
-Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_Htjj-eps-converted-to.pdf  used on input line 1386.
+Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_Htjj-eps-converted-to.pdf  used on input line 1341.
 (pdftex.def)             Requested size: 211.38832pt x 134.96133pt.
+ [34pdfTeX warning (ext4): destination with the same identifier (name{figure.19}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.1351 	\newpage
+                	 <./Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_Mbb-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_mjj-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_mjjj-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_Htjj-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J0_eta.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
 (epstopdf)                    size: 35952 bytes
@@ -1584,12 +1558,12 @@ Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTV
 (epstopdf)                    date: 2021-01-19 22:48:19
 (epstopdf)                    size: 16485 bytes
 (epstopdf)             Command: <epstopdf --outfile=Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J0_eta-eps-converted-to.pdf Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J0_eta.eps>
-(epstopdf)             \includegraphics on input line 1400.
+(epstopdf)             \includegraphics on input line 1355.
 Package epstopdf Info: Output file is already uptodate.
-<Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J0_eta-eps-converted-to.pdf, id=1388, 569.12625pt x 363.3575pt>
+<Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J0_eta-eps-converted-to.pdf, id=1605, 569.12625pt x 363.3575pt>
 File: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J0_eta-eps-converted-to.pdf Graphic file (type pdf)
 <use Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J0_eta-eps-converted-to.pdf>
-Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J0_eta-eps-converted-to.pdf  used on input line 1400.
+Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J0_eta-eps-converted-to.pdf  used on input line 1355.
 (pdftex.def)             Requested size: 211.38832pt x 134.96133pt.
 Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J1_eta.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
@@ -1598,12 +1572,12 @@ Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTV
 (epstopdf)                    date: 2021-01-19 22:48:22
 (epstopdf)                    size: 16484 bytes
 (epstopdf)             Command: <epstopdf --outfile=Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J1_eta-eps-converted-to.pdf Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J1_eta.eps>
-(epstopdf)             \includegraphics on input line 1404.
+(epstopdf)             \includegraphics on input line 1359.
 Package epstopdf Info: Output file is already uptodate.
-<Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J1_eta-eps-converted-to.pdf, id=1389, 569.12625pt x 363.3575pt>
+<Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J1_eta-eps-converted-to.pdf, id=1606, 569.12625pt x 363.3575pt>
 File: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J1_eta-eps-converted-to.pdf Graphic file (type pdf)
 <use Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J1_eta-eps-converted-to.pdf>
-Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J1_eta-eps-converted-to.pdf  used on input line 1404.
+Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J1_eta-eps-converted-to.pdf  used on input line 1359.
 (pdftex.def)             Requested size: 211.38832pt x 134.96133pt.
 Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_LLR.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
@@ -1612,12 +1586,12 @@ Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTV
 (epstopdf)                    date: 2021-01-19 22:48:24
 (epstopdf)                    size: 14995 bytes
 (epstopdf)             Command: <epstopdf --outfile=Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_LLR-eps-converted-to.pdf Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_LLR.eps>
-(epstopdf)             \includegraphics on input line 1408.
+(epstopdf)             \includegraphics on input line 1363.
 Package epstopdf Info: Output file is already uptodate.
-<Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_LLR-eps-converted-to.pdf, id=1390, 569.12625pt x 363.3575pt>
+<Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_LLR-eps-converted-to.pdf, id=1607, 569.12625pt x 363.3575pt>
 File: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_LLR-eps-converted-to.pdf Graphic file (type pdf)
 <use Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_LLR-eps-converted-to.pdf>
-Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_LLR-eps-converted-to.pdf  used on input line 1408.
+Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_LLR-eps-converted-to.pdf  used on input line 1363.
 (pdftex.def)             Requested size: 211.38832pt x 134.96133pt.
 Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_MET.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
@@ -1626,13 +1600,18 @@ Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTV
 (epstopdf)                    date: 2021-01-19 22:48:27
 (epstopdf)                    size: 13590 bytes
 (epstopdf)             Command: <epstopdf --outfile=Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_MET-eps-converted-to.pdf Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_MET.eps>
-(epstopdf)             \includegraphics on input line 1412.
+(epstopdf)             \includegraphics on input line 1367.
 Package epstopdf Info: Output file is already uptodate.
-<Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_MET-eps-converted-to.pdf, id=1391, 569.12625pt x 363.3575pt>
+<Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_MET-eps-converted-to.pdf, id=1608, 569.12625pt x 363.3575pt>
 File: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_MET-eps-converted-to.pdf Graphic file (type pdf)
 <use Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_MET-eps-converted-to.pdf>
-Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_MET-eps-converted-to.pdf  used on input line 1412.
+Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_MET-eps-converted-to.pdf  used on input line 1367.
 (pdftex.def)             Requested size: 211.38832pt x 134.96133pt.
+ [35pdfTeX warning (ext4): destination with the same identifier (name{figure.20}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.1379 	\newpage
+                 <./Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J0_eta-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J1_eta-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_LLR-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_MET-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRbb.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
 (epstopdf)                    size: 31017 bytes
@@ -1640,12 +1619,12 @@ Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTV
 (epstopdf)                    date: 2021-01-19 22:48:29
 (epstopdf)                    size: 14347 bytes
 (epstopdf)             Command: <epstopdf --outfile=Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRbb-eps-converted-to.pdf Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRbb.eps>
-(epstopdf)             \includegraphics on input line 1428.
+(epstopdf)             \includegraphics on input line 1383.
 Package epstopdf Info: Output file is already uptodate.
-<Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRbb-eps-converted-to.pdf, id=1392, 569.12625pt x 363.3575pt>
+<Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRbb-eps-converted-to.pdf, id=1651, 569.12625pt x 363.3575pt>
 File: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRbb-eps-converted-to.pdf Graphic file (type pdf)
 <use Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRbb-eps-converted-to.pdf>
-Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRbb-eps-converted-to.pdf  used on input line 1428.
+Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRbb-eps-converted-to.pdf  used on input line 1383.
 (pdftex.def)             Requested size: 211.38832pt x 134.96133pt.
 Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRqq.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
@@ -1654,12 +1633,12 @@ Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTV
 (epstopdf)                    date: 2021-01-19 22:48:32
 (epstopdf)                    size: 14115 bytes
 (epstopdf)             Command: <epstopdf --outfile=Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRqq-eps-converted-to.pdf Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRqq.eps>
-(epstopdf)             \includegraphics on input line 1432.
+(epstopdf)             \includegraphics on input line 1387.
 Package epstopdf Info: Output file is already uptodate.
-<Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRqq-eps-converted-to.pdf, id=1393, 569.12625pt x 363.3575pt>
+<Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRqq-eps-converted-to.pdf, id=1652, 569.12625pt x 363.3575pt>
 File: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRqq-eps-converted-to.pdf Graphic file (type pdf)
 <use Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRqq-eps-converted-to.pdf>
-Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRqq-eps-converted-to.pdf  used on input line 1432.
+Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRqq-eps-converted-to.pdf  used on input line 1387.
 (pdftex.def)             Requested size: 211.38832pt x 134.96133pt.
 Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRbhadq1.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
@@ -1668,12 +1647,12 @@ Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTV
 (epstopdf)                    date: 2021-01-19 22:48:34
 (epstopdf)                    size: 14393 bytes
 (epstopdf)             Command: <epstopdf --outfile=Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRbhadq1-eps-converted-to.pdf Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRbhadq1.eps>
-(epstopdf)             \includegraphics on input line 1436.
+(epstopdf)             \includegraphics on input line 1391.
 Package epstopdf Info: Output file is already uptodate.
-<Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRbhadq1-eps-converted-to.pdf, id=1394, 569.12625pt x 363.3575pt>
+<Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRbhadq1-eps-converted-to.pdf, id=1653, 569.12625pt x 363.3575pt>
 File: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRbhadq1-eps-converted-to.pdf Graphic file (type pdf)
 <use Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRbhadq1-eps-converted-to.pdf>
-Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRbhadq1-eps-converted-to.pdf  used on input line 1436.
+Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRbhadq1-eps-converted-to.pdf  used on input line 1391.
 (pdftex.def)             Requested size: 211.38832pt x 134.96133pt.
 Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRblepq1.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
@@ -1682,12 +1661,12 @@ Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTV
 (epstopdf)                    date: 2021-01-19 22:48:36
 (epstopdf)                    size: 14231 bytes
 (epstopdf)             Command: <epstopdf --outfile=Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRblepq1-eps-converted-to.pdf Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRblepq1.eps>
-(epstopdf)             \includegraphics on input line 1440.
+(epstopdf)             \includegraphics on input line 1395.
 Package epstopdf Info: Output file is already uptodate.
-<Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRblepq1-eps-converted-to.pdf, id=1395, 569.12625pt x 363.3575pt>
+<Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRblepq1-eps-converted-to.pdf, id=1654, 569.12625pt x 363.3575pt>
 File: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRblepq1-eps-converted-to.pdf Graphic file (type pdf)
 <use Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRblepq1-eps-converted-to.pdf>
-Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRblepq1-eps-converted-to.pdf  used on input line 1440.
+Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRblepq1-eps-converted-to.pdf  used on input line 1395.
 (pdftex.def)             Requested size: 211.38832pt x 134.96133pt.
 Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRWhadbhad.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
@@ -1696,12 +1675,12 @@ Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTV
 (epstopdf)                    date: 2021-01-19 22:48:39
 (epstopdf)                    size: 14538 bytes
 (epstopdf)             Command: <epstopdf --outfile=Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRWhadbhad-eps-converted-to.pdf Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRWhadbhad.eps>
-(epstopdf)             \includegraphics on input line 1444.
+(epstopdf)             \includegraphics on input line 1399.
 Package epstopdf Info: Output file is already uptodate.
-<Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRWhadbhad-eps-converted-to.pdf, id=1396, 569.12625pt x 363.3575pt>
+<Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRWhadbhad-eps-converted-to.pdf, id=1655, 569.12625pt x 363.3575pt>
 File: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRWhadbhad-eps-converted-to.pdf Graphic file (type pdf)
 <use Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRWhadbhad-eps-converted-to.pdf>
-Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRWhadbhad-eps-converted-to.pdf  used on input line 1444.
+Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRWhadbhad-eps-converted-to.pdf  used on input line 1399.
 (pdftex.def)             Requested size: 211.38832pt x 134.96133pt.
 Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRWhadblep.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
@@ -1710,13 +1689,18 @@ Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTV
 (epstopdf)                    date: 2021-01-19 22:48:41
 (epstopdf)                    size: 14401 bytes
 (epstopdf)             Command: <epstopdf --outfile=Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRWhadblep-eps-converted-to.pdf Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRWhadblep.eps>
-(epstopdf)             \includegraphics on input line 1448.
+(epstopdf)             \includegraphics on input line 1403.
 Package epstopdf Info: Output file is already uptodate.
-<Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRWhadblep-eps-converted-to.pdf, id=1397, 569.12625pt x 363.3575pt>
+<Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRWhadblep-eps-converted-to.pdf, id=1656, 569.12625pt x 363.3575pt>
 File: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRWhadblep-eps-converted-to.pdf Graphic file (type pdf)
 <use Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRWhadblep-eps-converted-to.pdf>
-Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRWhadblep-eps-converted-to.pdf  used on input line 1448.
+Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRWhadblep-eps-converted-to.pdf  used on input line 1403.
 (pdftex.def)             Requested size: 211.38832pt x 134.96133pt.
+ [36pdfTeX warning (ext4): destination with the same identifier (name{figure.21}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.1410 	\newpage
+                 <./Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRbb-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRqq-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRbhadq1-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRblepq1-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRWhadbhad-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRWhadblep-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_Mbb.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
 (epstopdf)                    size: 30047 bytes
@@ -1724,12 +1708,12 @@ Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTV
 (epstopdf)                    date: 2021-01-19 22:48:44
 (epstopdf)                    size: 14071 bytes
 (epstopdf)             Command: <epstopdf --outfile=Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_Mbb-eps-converted-to.pdf Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_Mbb.eps>
-(epstopdf)             \includegraphics on input line 1459.
+(epstopdf)             \includegraphics on input line 1414.
 Package epstopdf Info: Output file is already uptodate.
-<Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_Mbb-eps-converted-to.pdf, id=1398, 569.12625pt x 363.3575pt>
+<Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_Mbb-eps-converted-to.pdf, id=1722, 569.12625pt x 363.3575pt>
 File: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_Mbb-eps-converted-to.pdf Graphic file (type pdf)
 <use Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_Mbb-eps-converted-to.pdf>
-Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_Mbb-eps-converted-to.pdf  used on input line 1459.
+Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_Mbb-eps-converted-to.pdf  used on input line 1414.
 (pdftex.def)             Requested size: 211.38832pt x 134.96133pt.
 Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_mjj.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
@@ -1738,12 +1722,12 @@ Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTV
 (epstopdf)                    date: 2021-01-19 22:48:46
 (epstopdf)                    size: 13310 bytes
 (epstopdf)             Command: <epstopdf --outfile=Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_mjj-eps-converted-to.pdf Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_mjj.eps>
-(epstopdf)             \includegraphics on input line 1463.
+(epstopdf)             \includegraphics on input line 1418.
 Package epstopdf Info: Output file is already uptodate.
-<Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_mjj-eps-converted-to.pdf, id=1399, 569.12625pt x 363.3575pt>
+<Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_mjj-eps-converted-to.pdf, id=1723, 569.12625pt x 363.3575pt>
 File: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_mjj-eps-converted-to.pdf Graphic file (type pdf)
 <use Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_mjj-eps-converted-to.pdf>
-Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_mjj-eps-converted-to.pdf  used on input line 1463.
+Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_mjj-eps-converted-to.pdf  used on input line 1418.
 (pdftex.def)             Requested size: 211.38832pt x 134.96133pt.
 Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_mjjj.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
@@ -1752,12 +1736,12 @@ Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTV
 (epstopdf)                    date: 2021-01-19 22:48:49
 (epstopdf)                    size: 13804 bytes
 (epstopdf)             Command: <epstopdf --outfile=Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_mjjj-eps-converted-to.pdf Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_mjjj.eps>
-(epstopdf)             \includegraphics on input line 1467.
+(epstopdf)             \includegraphics on input line 1422.
 Package epstopdf Info: Output file is already uptodate.
-<Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_mjjj-eps-converted-to.pdf, id=1400, 569.12625pt x 363.3575pt>
+<Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_mjjj-eps-converted-to.pdf, id=1724, 569.12625pt x 363.3575pt>
 File: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_mjjj-eps-converted-to.pdf Graphic file (type pdf)
 <use Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_mjjj-eps-converted-to.pdf>
-Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_mjjj-eps-converted-to.pdf  used on input line 1467.
+Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_mjjj-eps-converted-to.pdf  used on input line 1422.
 (pdftex.def)             Requested size: 211.38832pt x 134.96133pt.
 Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_Htjj.eps>
 (epstopdf)                    date: 2021-01-17 19:54:46
@@ -1766,90 +1750,97 @@ Package epstopdf Info: Source file: <Oct_distributions/pretagNoRwDL1rwithhighpTV
 (epstopdf)                    date: 2021-01-19 22:48:51
 (epstopdf)                    size: 15256 bytes
 (epstopdf)             Command: <epstopdf --outfile=Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_Htjj-eps-converted-to.pdf Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_Htjj.eps>
-(epstopdf)             \includegraphics on input line 1471.
+(epstopdf)             \includegraphics on input line 1426.
 Package epstopdf Info: Output file is already uptodate.
-<Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_Htjj-eps-converted-to.pdf, id=1401, 569.12625pt x 363.3575pt>
+<Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_Htjj-eps-converted-to.pdf, id=1725, 569.12625pt x 363.3575pt>
 File: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_Htjj-eps-converted-to.pdf Graphic file (type pdf)
 <use Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_Htjj-eps-converted-to.pdf>
-Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_Htjj-eps-converted-to.pdf  used on input line 1471.
+Package pdftex.def Info: Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_Htjj-eps-converted-to.pdf  used on input line 1426.
 (pdftex.def)             Requested size: 211.38832pt x 134.96133pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[31pdfTeX warning (ext4): destination with the same identifier (name{figure.17}) has been already used, duplicate ignored
+<Distribution_March_highpT/DataMC_J0_DL1.png, id=1726, 798.985pt x 574.145pt>
+File: Distribution_March_highpT/DataMC_J0_DL1.png Graphic file (type png)
+<use Distribution_March_highpT/DataMC_J0_DL1.png>
+Package pdftex.def Info: Distribution_March_highpT/DataMC_J0_DL1.png  used on input line 1441.
+(pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
+<Distribution_March_highpT/DataMC_J0_DL1r.png, id=1727, 798.985pt x 574.145pt>
+File: Distribution_March_highpT/DataMC_J0_DL1r.png Graphic file (type png)
+<use Distribution_March_highpT/DataMC_J0_DL1r.png>
+Package pdftex.def Info: Distribution_March_highpT/DataMC_J0_DL1r.png  used on input line 1445.
+(pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
+<Distribution_March_highpT/DataMC_J0_eta.png, id=1728, 798.985pt x 574.145pt>
+File: Distribution_March_highpT/DataMC_J0_eta.png Graphic file (type png)
+<use Distribution_March_highpT/DataMC_J0_eta.png>
+Package pdftex.def Info: Distribution_March_highpT/DataMC_J0_eta.png  used on input line 1449.
+(pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
+<Distribution_March_highpT/DataMC_J0_pt.png, id=1729, 798.985pt x 574.145pt>
+File: Distribution_March_highpT/DataMC_J0_pt.png Graphic file (type png)
+<use Distribution_March_highpT/DataMC_J0_pt.png>
+Package pdftex.def Info: Distribution_March_highpT/DataMC_J0_pt.png  used on input line 1453.
+(pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
+<Distribution_March_highpT/DataMC_Mbb.png, id=1730, 798.985pt x 574.145pt>
+File: Distribution_March_highpT/DataMC_Mbb.png Graphic file (type png)
+<use Distribution_March_highpT/DataMC_Mbb.png>
+Package pdftex.def Info: Distribution_March_highpT/DataMC_Mbb.png  used on input line 1457.
+(pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
+<Distribution_March_highpT/DataMC_mjj.png, id=1731, 798.985pt x 574.145pt>
+File: Distribution_March_highpT/DataMC_mjj.png Graphic file (type png)
+<use Distribution_March_highpT/DataMC_mjj.png>
+Package pdftex.def Info: Distribution_March_highpT/DataMC_mjj.png  used on input line 1461.
+(pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
+ [37pdfTeX warning (ext4): destination with the same identifier (name{figure.22}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.1558 \end{document}
-                      <./Distribution_March_highpT/DataMC_J0_DL1.png> <./Distribution_March_highpT/DataMC_J0_DL1r.png> <./Distribution_March_highpT/DataMC_J0_eta.png> <./Distribution_March_highpT/DataMC_J0_pt.png> <./Distribution_March_highpT/DataMC_Mbb.png> <./Distribution_March_highpT/DataMC_mjj.png>] [32pdfTeX warning (ext4): destination with the same identifier (name{table.6}) has been already used, duplicate ignored
+l.1467 
+        <./Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_Mbb-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_mjj-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_mjjj-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_Htjj-eps-converted-to.pdf>] [38pdfTeX warning (ext4): destination with the same identifier (name{figure.23}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.1558 \end{document}
-                     ] [33pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) has been already used, duplicate ignored
+l.1468 \newpage
+                <./Distribution_March_highpT/DataMC_J0_DL1.png> <./Distribution_March_highpT/DataMC_J0_DL1r.png> <./Distribution_March_highpT/DataMC_J0_eta.png> <./Distribution_March_highpT/DataMC_J0_pt.png> <./Distribution_March_highpT/DataMC_Mbb.png> <./Distribution_March_highpT/DataMC_mjj.png>]
+<Dec_eff.png, id=1769, 962.09438pt x 690.32906pt>
+File: Dec_eff.png Graphic file (type png)
+<use Dec_eff.png>
+Package pdftex.def Info: Dec_eff.png  used on input line 1470.
+(pdftex.def)             Requested size: 469.75502pt x 337.06337pt.
+ [39pdfTeX warning (ext4): destination with the same identifier (name{figure.24}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.1558 \end{document}
-                      <./Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J0_DL1-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J0_DL1r-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J1_DL1-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J1_DL1r-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J0_MV2c10-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J1_MV2c10-eps-converted-to.pdf>] [34pdfTeX warning (ext4): destination with the same identifier (name{figure.15}) has been already used, duplicate ignored
+l.1473 \newpage
+                <./Dec_eff.png>]
+<Dec.png, id=1776, 959.08313pt x 688.07062pt>
+File: Dec.png Graphic file (type png)
+<use Dec.png>
+Package pdftex.def Info: Dec.png  used on input line 1475.
+(pdftex.def)             Requested size: 469.75502pt x 337.01056pt.
+ [40pdfTeX warning (ext4): destination with the same identifier (name{figure.25}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.1558 \end{document}
-                      <./Distribution_March/DataMC_J0_DL1.png> <./Distribution_March/DataMC_J0_DL1r.png> <./Distribution_March/DataMC_J0_eta.png> <./Distribution_March/DataMC_J0_pt.png> <./Distribution_March/DataMC_Mbb.png> <./Distribution_March/DataMC_mjj.png>] [35pdfTeX warning (ext4): destination with the same identifier (name{figure.18}) has been already used, duplicate ignored
+l.1482 \newpage
+                <./Dec.png>] [41pdfTeX warning (ext4): destination with the same identifier (name{table.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.1558 \end{document}
-                      <./Dec_eff.png>] [36pdfTeX warning (ext4): destination with the same identifier (name{figure.19}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1558 \end{document}
-                      <./Dec.png>] [37pdfTeX warning (ext4): destination with the same identifier (name{figure.20}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1558 \end{document}
-                      <./Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J0_eta-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J1_eta-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_LLR-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_MET-eps-converted-to.pdf>] [38pdfTeX warning (ext4): destination with the same identifier (name{figure.21}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1558 \end{document}
-                      <./Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRbb-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRqq-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRbhadq1-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRblepq1-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRWhadbhad-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRWhadblep-eps-converted-to.pdf>] [39pdfTeX warning (ext4): destination with the same identifier (name{figure.22}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1558 \end{document}
-                     pdfTeX warning (ext4): destination with the same identifier (name{figure.23}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1558 \end{document}
-                      <./Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_Mbb-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_mjj-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_mjjj-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_Htjj-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J0_eta-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J1_eta-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_LLR-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_MET-eps-converted-to.pdf>] [40pdfTeX warning (ext4): destination with the same identifier (name{figure.24}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1558 \end{document}
-                      <./Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRbb-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRqq-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRbhadq1-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRblepq1-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRWhadbhad-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRWhadblep-eps-converted-to.pdf>] [41pdfTeX warning (ext4): destination with the same identifier (name{figure.25}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1558 \end{document}
-                      <./Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_Mbb-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_mjj-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_mjjj-eps-converted-to.pdf> <./Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_Htjj-eps-converted-to.pdf>] (./main.aux)
-
-LaTeX Warning: There were undefined references.
-
+l.1565 \end{document}
+                     ] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0D0E8934E8BFD28D470C5BE4713DFF98;1726.
+(rerunfilecheck)             Checksum: CF183055760D2DBD0DA13F50D4456576;1997.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 15308 strings out of 479304
- 291893 string characters out of 5871219
- 1005003 words of memory out of 5000000
- 32058 multiletter control sequences out of 15000+600000
- 428122 words of font info for 81 fonts, out of 8000000 for 9000
+ 15317 strings out of 479304
+ 291890 string characters out of 5871219
+ 1003073 words of memory out of 5000000
+ 32063 multiletter control sequences out of 15000+600000
+ 428469 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,12n,74p,1186b,1352s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 {c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on main.pdf (41 pages, 2559131 bytes).
+Output written on main.pdf (41 pages, 2562482 bytes).
 PDF statistics:
- 1886 PDF objects out of 2073 (max. 8388607)
- 1233 compressed objects within 13 object streams
- 150 named destinations out of 1000 (max. 500000)
- 670 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1910 PDF objects out of 2073 (max. 8388607)
+ 1257 compressed objects within 13 object streams
+ 154 named destinations out of 1000 (max. 500000)
+ 702 words of extra memory for PDF output out of 10000 (max. 10000000)
 

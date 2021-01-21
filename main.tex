@@ -206,7 +206,7 @@ circled in blue, decays hadronically to quarks, and the other $W$ boson,
 decays leptonically to either electron or muon and the corresponding neutrinos, 
 circled in purple and green. The lepton in the final state is used for 
 triggering, and a combined likelihood fit is used to extract the $c$ mis-tagging 
-efficiency (more details in Section \ref{charm_mistagging}). 
+efficiency (more details in Section \ref{sec:Introduction}). 
 
 \begin{figure}[H]
 \centering
@@ -220,6 +220,7 @@ efficiency (more details in Section \ref{charm_mistagging}).
 \section{Charm mis-tagging calibration}
 \label{charm mistagging}
 \subsection{Introduction}
+\label{sec:Introduction}
 %As Shown in Fig \ref{fig:feynman}, the calibration uses the semi-leptonic $t\bar{t}$ events, which one $W$ boson from top decays leptonically to a charged lepton and neutrino and one $W$ decays hadronically and dominantly to a charm and a strange quark, among other pairs.
 As determined by the CKM matrix\cite{CKM1}\cite{CKM2}, the $W$ boson decay to light-quark pair or 
 light quark $c$ quark pair dominantly, and very rarely decay to pairs containing $b$-quarks. 
@@ -738,8 +739,7 @@ and statistics for the calibration.
 The yields of the data/MC are given in Table \ref{tab:yields_combined}, 
 an example of the \pt\ distributions before any tagging or fitting and 
 after the standard selection is shown in Figure \ref{fig:kinematic_distributions_combined}. More plots 
-can be found in Appendix, Figure \ref{fig:jets_PFlow,fig:angles_PFlow,fig:mass_PFlow,
-fig:jets_VRJets, fig:angles_VRJets, fig:mass_VRJets, fig:combined_selection}.
+can be found in Appendix, Figure \ref{fig:jets_PFlow}-\ref{fig:mass_VRJets}.
 \begin{table}[!b]
 	\centering
 	\small
@@ -850,7 +850,10 @@ into a pair a $b$ quarks. If we require no $c$-jet in either top-decay jets or $
 the only main source of the $b$-jets in the $W$-jets is the $t\bar{t}$ + heavy flavour 
 process. It's shown in for the both PFlow and VR-Track jets collections, this process is 
 underestimated by the MC by about 30\%, as shown in Table \ref{tab:3byields1} 
-and Figure \ref{fig:3bplots}. For this reason, events in the simulation
+and Figure \ref{fig:3bplots}, where in the figure a clear overshoot is present in the data
+compared with the simulation. The $W$ jets are dominated by \bjet\ light-jet pairs due to the tight
+DL1r requirement.
+For this reason, events in the simulation
 in which the top-jets and at least one of the $W$-jets are \bjets, are
 scaled by $1.25 \pm 0.25$, where the value is measured in reference\cite{TOPQ-2017-12}.
 Hence a 1.25 $\pm$ 0.25 scale factor is applied to all events with 3 truth $b$ jets, 
@@ -955,8 +958,8 @@ starts to become more important.
 	of the standard selection and the high-$p_T$ selection, 
 	before fitting or tagging with full uncertainties.} \label{fig:taggers_PFlow}
 \end{figure}
-
-\begin{figure}[h]
+\newpage
+\begin{figure}[H]
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
 	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J0_DL1.eps}
@@ -1196,14 +1199,11 @@ In terms of statistical gain, taking the 60\% working point scale factor with 20
 
 \newpage
 \printbibliography
-\newpage
-
 \appendix
-\subsection{Appendix}
 \newpage
-\newpage
-\section{Addition plots for the standard selection}
-\begin{figure}[h]
+\section{Addition plots for kinematic variables}
+\subsection{Standard selection}
+\begin{figure}[H]
 \begin{minipage}[b]{.45\textwidth}
 \centering
 \includegraphics[width=1\textwidth]{Distribution_March/DataMC_J0_DL1.png}
@@ -1241,6 +1241,8 @@ selection before fitting or tagging with systematics. The top two plots are
 the distributions of the DL1 and Dl1r score distributions of the leading jet.} \label{fig:standard_selection}
 \end{figure}
 
+
+\subsection{Low \pt\ selection}
 \begin{figure}[H]
 \begin{minipage}[b]{.45\textwidth}
 \centering
@@ -1264,55 +1266,8 @@ The top two plots are distributions of the DL1 and Dl1r score of the
 sub-leading jet.} \label{fig:lowpT_selection}
 \end{figure}
 
-
+\subsection{Combined selection}
 \begin{figure}[H]
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_J0_DL1.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_J0_DL1r.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_J0_eta.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_J0_pt.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_Mbb.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_mjj.png}
-\end{minipage}
-\caption{Various kinematic distributions of the combination of the 
-standard selection and the high-$p_T$ selection, before fitting or 
-tagging with stat-only uncertainties.} \label{fig:highpT_selection}
-\end{figure}
-
-
-
-\begin{figure}
-\includegraphics[width=1\textwidth]{Dec_eff.png}
-\caption{Calibration of derivation p3970 in December 2019, given for  4 different working points.}\label{fig:Dec_eff}
-\end{figure}
-
-\begin{figure}
-\includegraphics[width=1\textwidth]{Dec.png}
-\caption{Calibration result of derivation p3970 in December 2019, given for  4 different working points.}\label{fig:Dec}
-\end{figure}
-
-
-
-
-
-	
-	\begin{figure}
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
 	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J0_eta.eps}
@@ -1336,8 +1291,8 @@ tagging with stat-only uncertainties.} \label{fig:highpT_selection}
 	
 	
 	
-	
-	\begin{figure}
+	\newpage
+	\begin{figure}[H]
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
 	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRbb.eps}
@@ -1367,8 +1322,8 @@ tagging with stat-only uncertainties.} \label{fig:highpT_selection}
 	tagging with full uncertainties.} \label{fig:angles_PFlow}
 	\end{figure}
 	
-	
-	\begin{figure}
+	\newpage
+	\begin{figure}[H]
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
 	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_Mbb.eps}
@@ -1393,8 +1348,8 @@ tagging with stat-only uncertainties.} \label{fig:highpT_selection}
 	
 	
 	
-	
-	\begin{figure}
+	\newpage	
+	\begin{figure}[H]
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
 	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J0_eta.eps}
@@ -1421,8 +1376,8 @@ tagging with stat-only uncertainties.} \label{fig:highpT_selection}
 	
 	
 	
-	
-	\begin{figure}
+	\newpage
+	\begin{figure}[H]
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
 	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRbb.eps}
@@ -1452,8 +1407,8 @@ tagging with stat-only uncertainties.} \label{fig:highpT_selection}
 	selection, before fitting or tagging with full uncertainties.} \label{fig:angles_VRJets}
 	\end{figure}
 	
-	
-	\begin{figure}
+	\newpage
+	\begin{figure}[H]
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
 	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_Mbb.eps}
@@ -1477,6 +1432,57 @@ tagging with stat-only uncertainties.} \label{fig:highpT_selection}
 	
 
 
+\section{Plots for previous calibrations}
+
+	
+\begin{figure}[H]
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_J0_DL1.png}
+	\end{minipage}\hfill
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_J0_DL1r.png}
+	\end{minipage}\hfill
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_J0_eta.png}
+	\end{minipage}\hfill
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_J0_pt.png}
+	\end{minipage}\hfill
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_Mbb.png}
+	\end{minipage}\hfill
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_mjj.png}
+	\end{minipage}
+	\caption{Various kinematic distributions of the combination of the 
+	standard selection and the high-$p_T$ selection, before fitting or 
+	tagging with stat-only uncertainties.} \label{fig:highpT_selection}
+\end{figure}
+
+\newpage
+\begin{figure}[H]
+\includegraphics[width=1\textwidth]{Dec_eff.png}
+\caption{Calibration of derivation p3970 in December 2019, given for  4 different working points.}\label{fig:Dec_eff}
+\end{figure}
+\newpage
+\begin{figure}[H]
+\includegraphics[width=1\textwidth]{Dec.png}
+\caption{Calibration result of derivation p3970 in December 2019, given for  4 different working points.}\label{fig:Dec}
+\end{figure}
+
+
+
+
+\newpage
+	
+
+\section{Experimental uncertainties}
 
 
 
@@ -1484,7 +1490,8 @@ tagging with stat-only uncertainties.} \label{fig:highpT_selection}
 
 
 
-\begin{table}[h]
+
+\begin{table}[H]
 \begin{centering}
 \begin{tabular}{p{25em}}
 

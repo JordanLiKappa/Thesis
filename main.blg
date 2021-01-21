@@ -1,38 +1,38 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'main.blg'
-[147] biber-MSWIN32:340> INFO - === 
-[210] Biber.pm:415> INFO - Reading 'main.bcf'
-[372] Biber.pm:952> INFO - Found 51 citekeys in bib section 0
-[389] Biber.pm:4340> INFO - Processing section 0
-[403] Biber.pm:4531> INFO - Looking for bibtex format file 'ANA-FTAG-2020-08-PAPER.bib' for section 0
-[500] bibtex.pm:1689> INFO - LaTeX decoding ...
-[545] bibtex.pm:1494> INFO - Found BibTeX data source 'ANA-FTAG-2020-08-PAPER.bib'
-[578] Utils.pm:395> WARN - legacy month field 'apr' in entry 'PERF-2012-04' is not an integer - this will probably not sort properly.
-[585] Utils.pm:395> WARN - legacy month field 'Feb' in entry 'cjet' is not an integer - this will probably not sort properly.
-[601] Utils.pm:395> WARN - legacy month field 'aug' in entry 'CKM2' is not an integer - this will probably not sort properly.
-[832] Utils.pm:395> WARN - legacy month field 'Aug' in entry 'PDG' is not an integer - this will probably not sort properly.
-[873] Biber.pm:4531> INFO - Looking for bibtex format file 'bib/ATLAS.bib' for section 0
-[1013] bibtex.pm:1689> INFO - LaTeX decoding ...
-[2841] bibtex.pm:1494> INFO - Found BibTeX data source 'bib/ATLAS.bib'
-[2865] Utils.pm:395> WARN - Duplicate entry key: 'PERF-2012-04' in file 'bib/ATLAS.bib', skipping ...
-[2961] Biber.pm:4531> INFO - Looking for bibtex format file 'bib/ATLAS-useful.bib' for section 0
-[3067] bibtex.pm:1689> INFO - LaTeX decoding ...
-[3393] bibtex.pm:1494> INFO - Found BibTeX data source 'bib/ATLAS-useful.bib'
-[3398] Utils.pm:395> WARN - Duplicate entry key: 'Nason:2004rx' in file 'bib/ATLAS-useful.bib', skipping ...
-[3398] Utils.pm:395> WARN - Duplicate entry key: 'Frixione:2007vw' in file 'bib/ATLAS-useful.bib', skipping ...
-[3399] Utils.pm:395> WARN - Duplicate entry key: 'Alioli:2010xd' in file 'bib/ATLAS-useful.bib', skipping ...
-[3401] Utils.pm:395> WARN - Duplicate entry key: 'Frixione:2007nw' in file 'bib/ATLAS-useful.bib', skipping ...
-[3522] Biber.pm:4531> INFO - Looking for bibtex format file 'bib/PubNotes.bib' for section 0
-[3638] bibtex.pm:1689> INFO - LaTeX decoding ...
-[3944] bibtex.pm:1494> INFO - Found BibTeX data source 'bib/PubNotes.bib'
-[3958] Utils.pm:395> WARN - Duplicate entry key: 'ATL-PHYS-PUB-2016-012' in file 'bib/PubNotes.bib', skipping ...
-[3981] Biber.pm:4531> INFO - Looking for bibtex format file 'bib/ConfNotes.bib' for section 0
-[4106] bibtex.pm:1689> INFO - LaTeX decoding ...
-[5124] bibtex.pm:1494> INFO - Found BibTeX data source 'bib/ConfNotes.bib'
-[5278] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[5279] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[5279] Biber.pm:4168> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[5279] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
-[5330] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[5583] bbl.pm:757> INFO - Output to main.bbl
-[5587] Biber.pm:128> INFO - WARNINGS: 10
+[150] biber-MSWIN32:340> INFO - === 
+[219] Biber.pm:415> INFO - Reading 'main.bcf'
+[385] Biber.pm:952> INFO - Found 51 citekeys in bib section 0
+[403] Biber.pm:4340> INFO - Processing section 0
+[418] Biber.pm:4531> INFO - Looking for bibtex format file 'ANA-FTAG-2020-08-PAPER.bib' for section 0
+[536] bibtex.pm:1689> INFO - LaTeX decoding ...
+[579] bibtex.pm:1494> INFO - Found BibTeX data source 'ANA-FTAG-2020-08-PAPER.bib'
+[614] Utils.pm:395> WARN - legacy month field 'apr' in entry 'PERF-2012-04' is not an integer - this will probably not sort properly.
+[621] Utils.pm:395> WARN - legacy month field 'Feb' in entry 'cjet' is not an integer - this will probably not sort properly.
+[638] Utils.pm:395> WARN - legacy month field 'aug' in entry 'CKM2' is not an integer - this will probably not sort properly.
+[887] Utils.pm:395> WARN - legacy month field 'Aug' in entry 'PDG' is not an integer - this will probably not sort properly.
+[928] Biber.pm:4531> INFO - Looking for bibtex format file 'bib/ATLAS.bib' for section 0
+[1075] bibtex.pm:1689> INFO - LaTeX decoding ...
+[2929] bibtex.pm:1494> INFO - Found BibTeX data source 'bib/ATLAS.bib'
+[2955] Utils.pm:395> WARN - Duplicate entry key: 'PERF-2012-04' in file 'bib/ATLAS.bib', skipping ...
+[3048] Biber.pm:4531> INFO - Looking for bibtex format file 'bib/ATLAS-useful.bib' for section 0
+[3158] bibtex.pm:1689> INFO - LaTeX decoding ...
+[3445] bibtex.pm:1494> INFO - Found BibTeX data source 'bib/ATLAS-useful.bib'
+[3451] Utils.pm:395> WARN - Duplicate entry key: 'Nason:2004rx' in file 'bib/ATLAS-useful.bib', skipping ...
+[3451] Utils.pm:395> WARN - Duplicate entry key: 'Frixione:2007vw' in file 'bib/ATLAS-useful.bib', skipping ...
+[3451] Utils.pm:395> WARN - Duplicate entry key: 'Alioli:2010xd' in file 'bib/ATLAS-useful.bib', skipping ...
+[3454] Utils.pm:395> WARN - Duplicate entry key: 'Frixione:2007nw' in file 'bib/ATLAS-useful.bib', skipping ...
+[3565] Biber.pm:4531> INFO - Looking for bibtex format file 'bib/PubNotes.bib' for section 0
+[3671] bibtex.pm:1689> INFO - LaTeX decoding ...
+[3963] bibtex.pm:1494> INFO - Found BibTeX data source 'bib/PubNotes.bib'
+[3977] Utils.pm:395> WARN - Duplicate entry key: 'ATL-PHYS-PUB-2016-012' in file 'bib/PubNotes.bib', skipping ...
+[3999] Biber.pm:4531> INFO - Looking for bibtex format file 'bib/ConfNotes.bib' for section 0
+[4124] bibtex.pm:1689> INFO - LaTeX decoding ...
+[5127] bibtex.pm:1494> INFO - Found BibTeX data source 'bib/ConfNotes.bib'
+[5268] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[5268] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[5268] Biber.pm:4168> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[5268] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[5325] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[5584] bbl.pm:757> INFO - Output to main.bbl
+[5588] Biber.pm:128> INFO - WARNINGS: 10
