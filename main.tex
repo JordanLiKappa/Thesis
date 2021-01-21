@@ -85,7 +85,7 @@ observation of the Higgs boson decay into bottom quarks \parencite{HIGG-2018-04}
 and of its production in association with a top-quark pair \cite{HIGG-2018-13}, 
 and plays a important role in a large number of Standard Model (SM) 
 precision measurements, studies of the Higgs boson properties, and 
-searches for new phenomena\cite{SUSY-2014-08}, \cite{ATLAS-CONF-2018-043} \cite{Interpreting Higgs result}.
+searches for new phenomena\cite{SUSY-2014-08}, \cite{ATLAS-CONF-2018-043} \cite{Interpreting_Higgs_result}.
 
 The ATLAS Collaboration uses various algorithms to identify 
 $b$-jets \cite{PERF-2012-04}, referred to as b-tagging algorithms, 
@@ -119,7 +119,7 @@ in terms of $c$-jet and light-flavour jet rejections, defined as
 description of the detector response and physics modelling effects 
 in Monte Carlo (MC) simulations necessitates the measurement of the 
 performance of the b-tagging algorithms with collision data 
-\cite{PERF-2012-04 ttbar,b-jet identification semi ttbar}. 
+\cite{PERF-2012-04,ATLAS-CONF-2018-045}. 
 In this chapter, the measurement of the $b$-jet tagging efficiency 
 of the high-level b-tagging algorithms used in proton–proton (pp) 
 collision data recorded during Run 2 of the LHC at $\sqrt{s}$ = 13 TeV 
@@ -206,7 +206,7 @@ circled in blue, decays hadronically to quarks, and the other $W$ boson,
 decays leptonically to either electron or muon and the corresponding neutrinos, 
 circled in purple and green. The lepton in the final state is used for 
 triggering, and a combined likelihood fit is used to extract the $c$ mis-tagging 
-efficiency (more details in Section \ref{charm mistagging}). 
+efficiency (more details in Section \ref{charm_mistagging}). 
 
 \begin{figure}[H]
 \centering
@@ -234,7 +234,8 @@ KLFitter\cite{ERDMANN201418}, is used to assign jets to the proper $t\bar{t}$ de
 without using any $b$-tagging information (more details in Section \ref{KLFitter}). 
 The charm-jet efficiency is then extracted by a combinatorial likelihood fit applying to the pair 
 of jets from $W$ decays, where the main floating parameter is the $c$-jet efficiency\cite{cjet}. 
-
+The calibration is given as scale factors in bins of \pt\ for 4 fixed cut working points (WP) 
+that scale the simulation shape to reproduce that of the data.
 It is worth mentioning that my qualification task to become an ATLAS author is to 
 calibrate the rate of a charm jet being mis-identified as a $b$-jet, which is a part 
 of the calibration of the $b$-tagging algorithm. The calibration uses the full Run2 data 
@@ -574,14 +575,18 @@ Due to the requirement on jet $p_T$ and binning strategy, the calibration
 result can be applied to jets with $p_{T}$ between 25 to 200 GeV. 
 The inclusive yields of the standard selection and the low \pt\ selection 
 (defintion in Section \ref{fig:lowpT_selection})of the data/MC are 
-given in Table \ref{tab:yields_standard}, an example of 
+given in Table \ref{tab:yields_standard}, the "other" background 
+indicates background comes from non-\ttbar\ processes like $W$ or $Z$ production
+in association with jets or single-top production. An example of 
 the \pt\ distributions before any tagging or fitting and 
 after the standard selection is shown in Figure \ref{fig:kinematic_distributions_standard}. 
+The leading jet and sub-leading jet refer to the highest \pt\ $W$ jet and the 
+second highest \pt\ jet respectively.
 More plots can be found in Appendix, Figure \ref{fig:standard_selection}.
 The meaning of each legend in the plots are described in Section \ref{maximise likelihood}. 
 The yellow band in the lower pad shows the overall systematics uncertainties combining the 
 experimental uncertainties and the \ttbar\ modelling uncertainties, as described in 
-Section \ref{systematic uncertainties.} The data/MC ratio shows good agreement 
+Section \ref{systematic uncertainties}. The data/MC ratio shows good agreement 
 within the systematic uncertainties. 
 
 \begin{table}[!b]
@@ -593,19 +598,10 @@ within the systematic uncertainties.
 	& \multicolumn{2}{c|}{Particle flow jets} & \multicolumn{2}{c|}{Track jets} \\
 	\hline
 	Data          &    287105.0                  &        &   218351.0                  &     \\  
-	Ttbar         &    292203.7 $\pm$       202.8 &        &   223769.3 $\pm$       177.6 &   \\
+	\ttbar\         &    292203.7 $\pm$       202.8 &        &   223769.3 $\pm$       177.6 &   \\
 	Other         &     10945.7 $\pm$       123.1 &        &     7280.1 $\pm$       103.1 &   \\
 	Data/MC       &     0.947   $\pm$       0.002 &        &    0.945   $\pm$        0.002  &           \\
 	\hline
-	% \multicolumn{5}{|c|}{Comparison of \ttbar\ with systematic samples}\\
-	% \hline
-	% TtbarAF2       & 294528.0 $\pm$  225.3   &  0.795\%   & 225611.0 $\pm$  197.3 &  0.823\%  \\
-	% DATA/MC(AF2)   & 0.940    $\pm$  0.002   &            &    0.938 $\pm$  0.002 &           \\              
-	% TtbarRadHi     & 286717.9 $\pm$  197.8   & -1.877\%   & 219779.4 $\pm$  174.4 &  -1.783\%  \\     
-	% DATA/MC(RADHI) &  0.965   $\pm$  0.002   &            &    0.962 $\pm$  0.002 &             \\       
-	% TtbarPH        & 222493.6 $\pm$  173.7   & -23.857\%  & 167600.2 $\pm$  152.1 &  -25.101\% \\ 
-	% DATA/MC(PH)    & 1.230    $\pm$  0.003   &            &    1.249 $\pm$  0.003 &            \\                
-	% \hline
 	\end{tabular}
 	\vspace{0.2cm}
 	\caption{Prefit comparison of the  number of events in data and in 
@@ -627,7 +623,7 @@ within the systematic uncertainties.
 	\end{figure}
 	
 
-\subsubsection{Selection for low-$p_{T}$ extension}
+\subsubsection{Selection for low-$p_T$ extension}
 In order to extend the calibration in the low-$p_{T}$ region so that the calibration 
 can be applied to jets with $p_{T}$ smaller to 25 GeV, instead of requiring events to 
 have exactly 4 jets, events are required to have exactly 3 jets with $p_{T}$ greater 
@@ -660,20 +656,11 @@ can be found in Appendix, Figure \ref{fig:highpT_selection}.
 	\hline
 	
 	Data    &     98273.0              &   &    120929.0                  &   \\ 
-	Ttbar   &     99432.4 $\pm$  116.4 &   &    117090.1 $\pm$      126.5 &    \\
+	\ttbar\   &     99432.4 $\pm$  116.4 &   &    117090.1 $\pm$      126.5 &    \\
 	Other   &      1841.5 $\pm$   21.2 &   &      2641.2 $\pm$       47.6 &    \\
 	Data/MC &   0.970 $\pm$ 0.003      &   &      1.010 $\pm$ 0.003       &    \\
 	\hline
-	% \multicolumn{5}{|c|}{Comparison of \ttbar\ with systematic samples}\\
-	% \hline
-	% TtbarAF2       &    99325.7 $\pm$   128.7 &  -0.107\%  &   117332.9 $\pm$   140.0 &  0.207\%\\   
-	% DATA/MC(AF2)   &  0.971 $\pm$ 0.003       &            &  1.008 $\pm$ 0.003 &      \\            
-	% TtbarRadHi     &    97805.0 $\pm$   114.3 & -1.637\%   &   115259.7 $\pm$   124.3  & -1.563\%\\  
-	% DATA/MC(RADHI) & 0.986 $\pm$ 0.003        &            & 1.026 $\pm$ 0.003   & \\                
-	% TtbarPH        &    99258.1 $\pm$  118.6  & -0.175\%   &   118412.1 $\pm$      130.1  & 1.129\%\\
-	% DATA/MC(PH)    & 0.972 $\pm$ 0.003        &            & 0.999 $\pm$ 0.003                   & \\
-	  
-	% \hline
+
 	\end{tabular}
 	\vspace{0.2cm}
 	\caption{Prefit comparison of the number of events in data and in 
@@ -762,22 +749,14 @@ fig:jets_VRJets, fig:angles_VRJets, fig:mass_VRJets, fig:combined_selection}.
 	& \multicolumn{2}{c|}{Particle flow jets} & \multicolumn{2}{c|}{Track jets} \\
 	\hline
 	Data          &    385378.0                  &        &   302308.0              &     \\  
-	Ttbar         &    383517.0 $\pm$      229.4 &        &   302690.5 $\pm$      203.9 &   \\
+	\ttbar\         &    383517.0 $\pm$      229.4 &        &   302690.5 $\pm$      203.9 &   \\
 	Other         &     12424.0 $\pm$      123.8 &        &     8566.8 $\pm$      104.1 &   \\
 	Data/MC       &    0.973 $\pm$ 0.002         &        &  0.971 $\pm$ 0.002  &           \\
 	\hline
-	% \multicolumn{5}{|c|}{Comparison of \ttbar\ with systematic samples}\\
-	% \hline
-	% TtbarAF2       &   386261.9 $\pm$ 254.5  &  0.716\% & 304858.1 $\pm$ 226.1 &  0.716\%\\
-	% DATA/MC(AF2)   &   0.967 $\pm$ 0.002     &      & 0.965 $\pm$ 0.002 &      \\              
-	% TtbarRadHi     &   377129.7 $\pm$   224.0  & -1.665\% &  297963.8 $\pm$   200.3  & -1.562\%\\     
-	% DATA/MC(RADHI) & 0.989 $\pm$ 0.002         &      & 0.986 $\pm$ 0.002   &  \\       
-	% TtbarPH        &   331961.5 $\pm$   217.0  & -13.443\%&  259942.3 $\pm$      193.4  & -14.123\%\\ 
-	% DATA/MC(PH)    & 1.119 $\pm$ 0.002         &       & 1.126 $\pm$ 0.002     &\\                
-	% \hline
+
 	\end{tabular}
 	\vspace{0.2cm}
-	\caption{Prefit comparison of the  number of events in data and in 
+	\caption{Prefit comparison of the number of events in data and in 
 	simulation considering particle flow jets and track jets for an inclusive
 	selection.}
 	\label{tab:yields_combined}
@@ -825,17 +804,17 @@ reconstruction efficiency of tracks not associated to any of the reconstructed o
 
 \subsubsection{Modelling uncertainties} Uncertainties on the modelling of the inclusive $t\bar{t}$ 
 background are estimated by replacing the nominal MC sample by alternative MC samples. The nominal 
-sample is also replaced by variations of the matrix element generator, parton shower, and initial 
-and final state radiation. In all cases, MC-to-MC SFs are taken into account. The uncertainty in 
-the choice of NLO matrix element generator is derived by comparing two alternative predictions, 
-{\tt POWHEG} and {\tt aMC@NLO\_MG5}, each of which is showered with {\tt HERWIG++}. An uncertainty 
-due to the choice of parton shower and hadronisation model is derived by comparing the prediction 
-from {\tt POWHEG} interfaced either to {\tt PYTHIA8} or {\tt HERWIG++}. Finally, the uncertainty on 
+sample is also replaced by variations of the parton shower, initial 
+and final state radiation. In all cases, MC-to-MC SFs are taken into account. The dominating modelling
+uncertainty is due to the choice of parton shower and hadronisation model is derived by comparing the prediction 
+from {\tt POWHEG} interfaced either to {\tt PYTHIA8} or {\tt HERWIG++}.The uncertainty on 
 modelling of initial and final state radiation is assessed with two alternative {\tt POWHEG+PYTHIA8} 
 samples. The samples include one with an increase in radiation which has the re-normalisation and 
 factorisation scales decreased by a factor of two and the \textit{hdamp} parameter doubled, while 
 the sample with a decrease in radiation has the scales increased by a factor of two. The comparison of 
-the nominal \ttbar\ and the systematics is shown in Table \ref{tab:modelling_syst}.
+the nominal \ttbar\ and the systematics is shown in Table \ref{tab:modelling_syst}. 
+The uncertainty due to the variations samples being produced by fast simulation is included in the table as 
+\ttbar\ AF2. 
 
 \begin{table}[!b]
 	\centering
@@ -843,21 +822,16 @@ the nominal \ttbar\ and the systematics is shown in Table \ref{tab:modelling_sys
 	\setlength\tabcolsep{5pt} 
 	\begin{tabular}{|l | ll | ll |}
 	\hline
-	% & \multicolumn{2}{c|}{Particle flow jets} & \multicolumn{2}{c|}{Track jets} \\
-	% \hline
-	% Data          &    385378.0                  &        &   302308.0              &     \\  
-	% Ttbar         &    383517.0 $\pm$      229.4 &        &   302690.5 $\pm$      203.9 &   \\
-	% Other         &     12424.0 $\pm$      123.8 &        &     8566.8 $\pm$      104.1 &   \\
-	% Data/MC       &    0.973 $\pm$ 0.002         &        &  0.971 $\pm$ 0.002  &           \\
-	% \hline
+	& \multicolumn{2}{c|}{Particle flow jets} & \multicolumn{2}{c|}{Track jets} \\
+	\hline
 	\multicolumn{5}{|c|}{Comparison of \ttbar\ with systematic samples}\\
 	\hline
-	TtbarAF2       &   386261.9 $\pm$ 254.5  &  0.716\% & 304858.1 $\pm$ 226.1 &  0.716\%\\
+	\ttbar\ AF2       &   386261.9 $\pm$ 254.5  &  0.716\% & 304858.1 $\pm$ 226.1 &  0.716\%\\
 	DATA/MC(AF2)   &   0.967 $\pm$ 0.002     &      & 0.965 $\pm$ 0.002 &      \\              
-	TtbarRadHi     &   377129.7 $\pm$   224.0  & -1.665\% &  297963.8 $\pm$   200.3  & -1.562\%\\     
-	DATA/MC(RADHI) & 0.989 $\pm$ 0.002         &      & 0.986 $\pm$ 0.002   &  \\       
-	TtbarPH        &   331961.5 $\pm$   217.0  & -13.443\%&  259942.3 $\pm$      193.4  & -14.123\%\\ 
-	DATA/MC(PH)    & 1.119 $\pm$ 0.002         &       & 1.126 $\pm$ 0.002     &\\                
+	\ttbar\ ISR     &   377129.7 $\pm$   224.0  & -1.665\% &  297963.8 $\pm$   200.3  & -1.562\%\\     
+	DATA/MC(ISR) & 0.989 $\pm$ 0.002         &      & 0.986 $\pm$ 0.002   &  \\       
+	\ttbar\ \PYTHIA        &   331961.5 $\pm$   217.0  & -13.443\%&  259942.3 $\pm$      193.4  & -14.123\%\\ 
+	DATA/MC(\PYTHIA)    & 1.119 $\pm$ 0.002         &       & 1.126 $\pm$ 0.002     &\\                
 	\hline
 	\end{tabular}
 	\vspace{0.2cm}
@@ -875,7 +849,7 @@ source is when the $t\bar{t}$ plus a gluon process is selected, and the gluon is
 into a pair a $b$ quarks. If we require no $c$-jet in either top-decay jets or $W$-jets, 
 the only main source of the $b$-jets in the $W$-jets is the $t\bar{t}$ + heavy flavour 
 process. It's shown in for the both PFlow and VR-Track jets collections, this process is 
-underestimated by the MC by about 30\%, as shown in Table \ref{tab:3byields1, tab:3byields2} 
+underestimated by the MC by about 30\%, as shown in Table \ref{tab:3byields1} 
 and Figure \ref{fig:3bplots}. For this reason, events in the simulation
 in which the top-jets and at least one of the $W$-jets are \bjets, are
 scaled by $1.25 \pm 0.25$, where the value is measured in reference\cite{TOPQ-2017-12}.
@@ -890,31 +864,22 @@ uncertainty due to the scale factor implemented.
 
 \begin{table}[]
     \centering
-    \begin{tabular}{c|c}
-        Data & 1589.0 \\
-         $t\bar{t}$ & 1102.7 $\pm$ 12.5 \\
-         Other & 82.7 $\pm$ 5.5 \\
-         Data/MC & 1.341 $\pm$ 0.037 \\
+	\begin{tabular}{|l|ll|ll|}
+		\hline
+		& Particle flow jets & Track jets \\
+		\hline
+        Data & 1589.0 &  1336.0 \\
+         $t\bar{t}$ & 1102.7 $\pm$ 12.5  & 943.5 $\pm$ 11.6 \\
+         Other & 82.7 $\pm$ 5.5 &   69.1 $\pm$ 4.5 \\
+		 Data/MC & 1.341 $\pm$ 0.037 &  1.319 $\pm$ 0.040 \\
+		 \hline
     \end{tabular}
-	\caption{Yields of the 2018 data/MC, combining the standard and the 
-	high $p_T$ selection with at least 1 PFlow $W$ jet with DL1r > 8 to 
+	\caption{Yields of the 2018 data/MC of the combined selection, 
+	requiring at least 1 PFlow $W$ jet with DL1r > 8 to 
 	reject most of the light and $c$ jets.}
     \label{tab:3byields1}
 \end{table}
 
-\begin{table}[]
-    \centering
-    \begin{tabular}{c|c}
-        Data & 1336.0 \\
-         $t\bar{t}$ & 943.5 $\pm$ 11.6 \\
-         Other & 69.1 $\pm$ 4.5 \\
-         Data/MC & 1.319 $\pm$ 0.040 \\
-    \end{tabular}
-	\caption{Yields of the 2018 data/MC, combining the standard 
-	and te high $p_T$ selection with at least 1 VR-Track $W$ jet with 
-	DL1r > 8 to reject most of the light and $c$ jets.}
-    \label{tab:3byields2}
-\end{table}
 
 \begin{figure}
     \centering
@@ -950,21 +915,16 @@ The kinematic distributions of the MC and the data of the latest calibration
 (October 2020) are shwon in Figure \ref{fig:taggers_PFlow} for the PFlow jets and 
 Figure \ref{fig:taggers_VRJets} for the VR-Track jets, 
 combining the standard selection and the highest $p_T$ selection. 
-%%%%%%%TODO: edit this%%%%%%%%
 In these figure, the data events are compared against the simulation.
 The majority of the events come from \ttbar\ production. There is only
-a very small fraction of events, which is denoted as ``non \ttbar''
-on the figure, which comes from other processes like $W$ or $Z$ production
-in association with jets or single-top production. The simulated \ttbar\
-events are split according to the origin of $W$-jets. The notation
-``\ttbar, ll'' denotes that both $W$-jets are light flavour jets.
-Similarly, ``\ttbar, cl'' (``\ttbar, bl'') 
-indicates that one of the $W$-jets is a \cjet\ (\bjet)
-whereas the other is a light flavour jet. $W$-jets with origin
-other than what is discussed above fall into the 
-category denoted by ``\ttbar, other''. This category includes
-events in which at least one of the $W$-jets comes from a
-hadronically decaying $\tau$-lepton. 
+a very small fraction of non \ttbar\ events. The $W$ jets pairs are mostly light-jets 
+pairs and \cjet\ light-jet pairs, and a very small fraction of the pairs are the 
+\bjet\ light-jet pairs or pairs containing one or more $\tau$ hadron(s). 
+The yellow band in the lower pad indicates the overall systematics and the 
+black band represents the \ttbar\ modelling systematics, which is dominating 
+in the lower band (DL1 or DL1r < 4) and in the higher band (DL1 or DL1r > 4) the
+uncertainty due to the 1.25 $\pm$ 0.25 scale factor applied to the 3-\bjet\ events 
+starts to become more important. 
 \begin{figure}[H]
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
@@ -1030,14 +990,27 @@ hadronically decaying $\tau$-lepton.
 
 %The Monte Carlo simulation demonstrates good agreement in different kinematic variables with data. 
 The Dl1 and DL1r $c$-jet efficiencies and scale factors with systematics 
-uncertainties are calculated with 4 different fixed cut working points: 
-60\%, 70\%, 77\%, and 85\%, for the p4060 derivation, in December 2020. 
-The results are shown in Figure \ref{fig:Dec_eff_PFlow}, \ref{fig:Dec_eff_VRJets}, 
-\ref{fig:Dec_SF_PFlow}, \ref{fig:Dec_SF_VRJets}, for the charm jets mistagging efficiency 
-and scale factors for the PFlow jet collections and the VR Track jets collections. 
+uncertainties are calculated with 4 fixed cut working points: 
+60\%, 70\%, 77\%, and 85\% for the PFlow and VR track jets collection in the latest derivation 
+in December 2020. The working point corresponds to the efficiency of a true \bjet\ passing 
+the $b$-tagging algorithms. 
+The efficiencies are shown in Figure \ref{fig:Dec_eff_PFlow}, \ref{fig:Dec_eff_VRJets} 
+for the PFlow jet collections and the VR Track jets respectively. 
 These results combine the standard selection and the high $p_T$ selection, 
 and a 1.25 $\pm$ 0.25 scale factor is applied on events with 3 true $b$ jets. 
-The $c$-jets efficiencies and the scale factors are similar between the DL1 and DL1r as expected. 
+In the efficiencies plots, the black line represents the data efficiency and the red and 
+green line represent DL1 and DL1r efficiencies respectively. The overall uncertainties are shown 
+in the red and green band, where the systematics uncertainties dominate 
+in the low \pt\ bins (\pt\ < 150) and the statistical error, represents by the error bar of the 
+markers become more visible in the last bin. The DL1 efficiencies are in good agreement with the 
+data efficiency within the uncertainty band for most of the bins in all WPs, while the DL1r efficiencies 
+show a bigger discrepancy to the data in general. 
+The scale factors are calculated bin by bin as the ratio of the data efficiencies to the tagger efficiencies,
+as shown in \ref{fig:Dec_SF_PFlow}, \ref{fig:Dec_SF_VRJets}. 
+The tighter working points (60\%, 70\%) show larger uncertainties and bigger deviation from 1, while
+the looser working points (77\%, 85\%) have much smaller uncertainty and the simulation is able to 
+recover the data well. 
+
 
 
 %%% Efficiencies plots %%%
@@ -1192,7 +1165,8 @@ and the high-$p_{T}$ selection, given for  4 different working points.} \label{f
 \centering
 \includegraphics[width=1\textwidth]{March_highpT/SF85.eps}
 \end{minipage}
-\caption{Scale factors of calibration of derivation p3970 in March 2020, combining the standard and the high-$p_{T}$ selection, given for  4 different working points.} \label{fig:March_highpT}
+\caption{Scale factors of calibration of derivation p3970 in March 2020, 
+combining the standard and the high-$p_{T}$ selection, given for  4 different working points.} \label{fig:March_highpT}
 \end{figure}
 
 
@@ -1222,23 +1196,6 @@ In terms of statistical gain, taking the 60\% working point scale factor with 20
 
 \newpage
 \printbibliography
-% \begin{thebibliography}{99}
-
-% \bibitem{Interpreting Higgs result}, Dean Carmi, et al., \textit{Interpreting LHC Higgs Results from Natural New Physics Perspective}, \href{https://arxiv.org/abs/1202.3144}{arXiv:1202.3144}[hep-ph]. 
-% \bibitem{cjet} ATLAS Collaboration, \textit{Measurement of $c$-jet tagging efficiency in $t\bar{t}$ events using a likelihood approach}, Feb 2017, \small{CDS: }\href{https://cds.cern.ch/record/2243764?ln=en}{ATL-COM-PHYS-2017-073}.\normalsize
-% \bibitem{PDG}M. Tanabashiet al.(Particle Data Group), \textit{Review of Particle Physics}, Phys. Rev. D98, 030001 (2018), \href{https://link.aps.org/doi/10.1103/PhysRevD.98.030001}{doi:10.1103/PhysRevD.98.030001}.
-% \bibitem{tagging} ATLAS collaboration, \textit{B Tagging in ATLAS and CMS}, Sep 2017, \small{arXiv:}\href{https://arxiv.org/abs/1709.01290}{1709.01290}\normalsize
-
-
-
-% \bibitem{CKM1}G. Abbiendi et al., \textit{A Measurement of the rate of charm production in $W$ decays}, 1022 Phys. Lett. B490 (2000) 71, \small{arXiv: }\href{https://arxiv.org/abs/hep-ex/0009020}{hep-ex/0009020}.\normalsize
-% \bibitem{CKM2}K. A. Olive 1023 et al., \textit{Review of Particle Physics}, \href{https://iopscience.iop.org/article/10.1088/1674-1137/38/9/090001}{Chin. Phys. C38 (2014) 090001}.\normalsize
-% \bibitem{ttbar+HF SF}ATLAS collaboration, \textit{Measurement of the Higgs boson decaying to $b$-quarks produced in association with a top-quark pair in $pp$ collisions at $\sqrt{s}$=13 TeV with the ATLAS detector}, \href{http://cdsweb.cern.ch/record/2743685/files/ATLAS-CONF-2020-058.pdf}{ATLAS-CONF-2020-058}.
-% \bibitem{ATL-PHYS-PUB-2017-0132016}Optimisation of the ATLAS b-tagging performance for the 2016 LHC Run, (2016),url: https://cds.cern.ch/record/2160731.
-
-
-% \end{thebibliography}
- 
 \newpage
 
 \appendix
