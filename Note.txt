@@ -1,0 +1,7 @@
+Things to be included:
+FTAG chpater:
+1.IP2D/3D definition in object reco definition
+2.remove the overlapping samples with the Data/MC section and add extra samples. 
+check if modulo ttV is an extra sample specific to the calibration
+3. VR track jet definition
+

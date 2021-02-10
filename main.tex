@@ -20,11 +20,13 @@
 \usepackage{makeidx}
 \usepackage{titlesec}
 
-\newcommand\bjetineq{\mathop{\mbox{$b$-$\mathit{jet}$}}}
-\newcommand\bjetunder{\mathop{\footnotesize{\mbox{$b$-$\mathit{jet}$}}}\normalsize}
-\newcommand\cjetineq{\mathop{\mbox{$c$-$\mathit{jet}$}}}
-\newcommand\cjetunder{\mathop{\footnotesize{\mbox{$c$-$\mathit{jet}$}}}\normalsize}
+\newcommand\bjetineq{\mathop{\mbox{$b$-$\rm{jet}$}}}
+\newcommand\bjetunder{\mathop{\footnotesize{\mbox{$b$-$\rm{jet}$}}}\normalsize}
+\newcommand\cjetineq{\mathop{\mbox{$c$-$\rm{jet}$}}}
+\newcommand\cjetunder{\mathop{\footnotesize{\mbox{$c$-$\rm{jet}$}}}\normalsize}
 \setcounter{secnumdepth}{4}
+\newcommand{\specialcell}[2][c]{%
+  \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
 
 \titleformat{\paragraph}
 {\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
@@ -45,7 +47,7 @@
 \begin{document}
 
 
-\title{Search for di-Higgs in $bb\tau\tau$ final state using proton-proton collision at $\sqrt{s}$ = 13 \TeV\ data with the ATLAS detector}%Fake Factors Calculation and Implementation in H$\rightarrow$ bb$\tau^+\tau^-$ analysis with MC16a/MC16d in Release 21 with the ATLAS detector
+\title{Search for Higgs boson pair-production in the $bb\tau\tau$ final state using proton-proton collisions at $\sqrt{s}$ = 13 \TeV\ data with the ATLAS detector}%Fake Factors Calculation and Implementation in H$\rightarrow$ bb$\tau^+\tau^-$ analysis with MC16a/MC16d in Release 21 with the ATLAS detector
 \author{ Zhiyuan Li}
 \date{\today}
 \maketitle
@@ -68,34 +70,48 @@
 
 
 \newpage
-\section{Flavour tagging at ALTAS}
-%test
+\section{Introduction}
+\section{Theory and Motivation}
+\subsection{The Standard Model and the Higgs boson}
+\subsection{Beyond the Standard Model}
+\section{The ATLAS experiment at the Large Hadron Collider}
+\subsection{The Large Hadron Collider}
+\subsection{TThe ATLAS Detector}
+\section{Data and Monte Carlo samples}
+\section{Physics Objects Reconstruction}
+\subsection{Track and vertex}
+\subsection{Electron}
+\subsection{Muon}
+\subsection{Jet}
+\subsection{$b$-Jets}
 
 
-\subsection{Flavour tagging}
+\subsubsection{Flavour tagging}
 
 
 The identification of jets containing $b$-hadrons ($b$-jets) 
 against the large background of jets containing $c$-hadrons 
 ($c$-jets) or coming from the hadronization of light ($u$,$d$,$s$) 
 quarks or gluons is of major importance in many areas of the 
-physics programme of the ATLAS experiment at the LHC. It is 
-crucial in the di-Higgs to $bb\tau\tau$ searches, as well as the recent 
-observation of the Higgs boson decay into bottom quarks \parencite{HIGG-2018-04} 
-and of its production in association with a top-quark pair \cite{HIGG-2018-13}, 
-and plays a important role in a large number of Standard Model (SM) 
+physics programme of the ATLAS experiment at the LHC. 
+It is crucial in a large number of Standard Model (SM) 
 precision measurements, studies of the Higgs boson properties, and 
-searches for new phenomena\cite{SUSY-2014-08}, \cite{ATLAS-CONF-2018-043} \cite{Interpreting_Higgs_result}.
+searches for new phenomena \cite{SUSY-2014-08, ATLAS-CONF-2018-043,Interpreting_Higgs_result}.
+It also plays an important role in 
+the di-Higgs to $bb\tau\tau$ searches presenting in Chapter \ref{sec:search for dihiggs}. 
+% as well as the recent 
+% observation of the Higgs boson decay into bottom quarks \cite{HIGG-2018-04} 
+% and of its production in association with a top-quark pair \cite{HIGG-2018-13}. 
+
 
 The ATLAS Collaboration uses various algorithms to identify 
-$b$-jets \cite{PERF-2012-04}, referred to as b-tagging algorithms, 
+$b$-jets \cite{PERF-2012-04}, referred to as \btagging\ algorithms, 
 when analysing data recorded during Run 2 of the LHC. These 
 algorithms exploit the long lifetime, high mass and high decay 
-multiplicity of b-hadrons as well as the properties of the b-quark 
-fragmentation. Given a lifetime of the order of 1.5 ps 
-($<c\tau>$ $\approx$ 450 $\mu m$), measurable b-hadrons have a 
-significant mean flight length,$<l>$=$\beta\gamma c\tau$, in the 
-detector before decaying, generally leading to at least one vertex 
+multiplicity of $b$-hadrons, as well as the properties of the \bquark\  
+fragmentation. Given a lifetime of the order of 1.5 ps, $b$-hadrons have a 
+significant mean flight length ($\langle c\tau \rangle$ $\approx$ 450 $\mu m$), 
+in the detector before decaying, generally leading to at least one vertex 
 displaced from the hard-scatter collision point. The strategy 
 developed by the ATLAS Collaboration is based on a two-stage approach. 
 Firstly, low-level algorithms reconstruct the characteristic features of 
@@ -104,109 +120,154 @@ individual properties of charged-particle tracks, later referred
 to as tracks, associated with a hadronic jet, and a second which 
 combines the tracks to explicitly reconstruct displaced vertices. 
 These algorithms, first introduced during Run 1 \cite{PERF-2012-04}, 
-have been improved and retuned for Run 2. Secondly, in order to 
-maximise the b-tagging performance, the results of the low-level 
-b-tagging algorithms are combined in high-level algorithms 
-consisting of multivariate classifiers. The performance of a 
-b-tagging algorithm is characterised by the probability of 
+have been improved and retuned for Run 2 \cite{FTAG-2018-01}. 
+Secondly, in order to 
+maximise the \btagging\ performance, the results of the low-level 
+\btagging\ algorithms are combined into high-level algorithms 
+via multivariate classifiers. 
+The performance of a 
+\btagging\ algorithm is characterised by the probability of 
 tagging a $b$-jet ($b$-jet tagging efficiency, $\epsilon_b$) and 
 the probability of mistakenly identifying a $c$-jet or a light-flavour 
 jet as a $b$-jet, labelled $\epsilon_c$($\epsilon_l$). 
-
-In this chapter, the performance of the algorithms is quantified 
-in terms of $c$-jet and light-flavour jet rejections, defined as 
-1/$\epsilon_c$ and 1/$\epsilon_l$, respectively. The imperfect 
-description of the detector response and physics modelling effects 
-in Monte Carlo (MC) simulations necessitates the measurement of the 
-performance of the b-tagging algorithms with collision data 
-\cite{PERF-2012-04,ATLAS-CONF-2018-045}. 
-In this chapter, the measurement of the $b$-jet tagging efficiency 
-of the high-level b-tagging algorithms used in proton–proton (pp) 
-collision data recorded during Run 2 of the LHC at $\sqrt{s}$ = 13 TeV 
-is presented. The corresponding measurements for $c$-jets and light-flavour 
-jets, used in the measurement of the $b$-jet tagging efficiency to correct 
-the simulation such that the overall tagging efficiency of $c$-jets and 
-light-flavour jets match that of the data, are described elsewhere 
-\cite{ATLAS-CONF-2018-006}, \cite{cjet}. The production of $t\bar{t}$ 
-pairs at the LHC provides an abundant source of $b$-jets by virtue 
-of the high cross-section and the $t \rightarrow Wb$ branching ratio 
-being close to 100\%. A very pure sample of $t\bar{t}$ events is 
-selected by requiring that both $W$ bosons decay leptonically, 
-referred to as di-leptonic $t\bar{t}$ decays in the following. 
-Similarly a source of $c$-jets can be obtained by requiring that 
-one $W$ boson decay leptonically and the other decay hadronically, 
-referred to as semi-leptonic $t\bar{t}$ decay in the following. 
-
-
-% The identification of the jets originating from the hadronization of heavy-flavour quarks is made possible by the distinctive properties of the heavy hadrons produced in the process. For instance, the large life time of $b$-quarks allows them to travel a measurable distance from the primary interaction point before to decay, giving rise to displaced tracks which can form secondary vertices. The ATLAS Collaboration developed several algorithms to identify (tag) the jets from $b$-quark hadronization based on the properties detailed above. 
-
 The most performant algorithms presently in use in physics 
-analyses at ATLAS are based on multivariate (MV2) combinations 
-of the available information or a deep feed-forward neural 
-network(DL1)\cite{tagging}\cite{ATL-PHYS-PUB-2017-013}, as shown in 
+analyses at ATLAS are based on multivariate combinations 
+of the available information(MV2) or addditionally using a
+deep feed-forward neural network(DL1) \cite{tagging,ATL-PHYS-PUB-2017-013}, as shown in 
 Figure \ref{fig:MV2_DL1}. Depending on the low-level algorithm, 
 the DL1 tagger can be further separated into two taggers: DL1 and DL1r,
  where the DL1 tagger uses traditional track-based impact parameter 
  taggers IP2D and IP3D and DL1r tagger uses a Recurrent Neural Network tagger 
- (RNNIP)\cite{ATL-PHYS-PUB-2017-013}. The DL1r tagger is now the 
- default b-tagging algorithm used for flavour tagging in ATLAS.
+ (RNNIP) \cite{ATL-PHYS-PUB-2017-013}. The DL1r tagger is now the 
+ default \btagging\ algorithm used for flavour tagging in ATLAS.
+ The performance of the algorithms is quantified 
+in terms of $c$-jet (light-jet) rejections, defined as 
+1/$\epsilon_c$ and 1/$\epsilon_l$. 
 %Their high mass also leads to decay products with a larger transverse momentum relative to the jet axis with respect to the ones typically found in jets from light partons. Finally, heavy hadrons have a sizable branching ratio for semileptonic decays, hence the presence of soft leptons in the produced jets provides another tool for heavy jet identification. %The general strategy is to start with simple algorithms that exploits a particular property of b jets and progressively add more information to build moresophisticated algorithms. %The output of these algorithms consists in a discriminant value for each jet. Operating points are then defined as thresholds on the discriminant, designed to provide a determined efficiency for identifying b jets.
 % Low-level $b$-taggingalgorithms fall into two broad categories. A first approach, implemented in the IP2D and IP3D algorithms \cite{ATL-PHYS-PUB-2017-013}, or RNNIP \cite{ATL-PHYS-PUB-2017-003} is inclusive and based on exploiting the large impact parameters of the tracks originating from the $b$-hadron decay. The second approach explicitly reconstructs displaced vertices. To maximise the $b$-tagging performance, low-level algorithm results are combined using multivariate classifiers. To this end, two high-level tagging algorithms have been developed. The first one,MV2\cite{ATL-PHYS-PUB-2017-013}, is based on a boosted decisiontree (BDT) discriminant, while the second one,DL1, is based on a deep feed-forward neural network(NN). These two algorithms are presented in fig .
-\begin{figure}
+\begin{figure}[!h]
 \includegraphics[width=1\textwidth]{MV2_DL1.png}
-\caption{Performance of MV2c10 and DL1 tagger\cite{FTAG-2018-01}.}\label{fig:MV2_DL1}
+\caption{Performance of MV2c10(left) and DL1(right) tagger \cite{FTAG-2018-01}.}\label{fig:MV2_DL1}
 \end{figure}
 
-\subsection{Calibration methods}
-Monte Carlo (MC) simulations are not able to model very well the 
+
+
+
+
+
+% The identification of the jets originating from the hadronization of heavy-flavour quarks is made possible by the distinctive properties of the heavy hadrons produced in the process. For instance, the large life time of $b$-quarks allows them to travel a measurable distance from the primary interaction point before to decay, giving rise to displaced tracks which can form secondary vertices. The ATLAS Collaboration developed several algorithms to identify (tag) the jets from $b$-quark hadronization based on the properties detailed above. 
+
+
+
+
+
+\subsection{Missing transverse energy}
+\subsection{Hadronically decaying $\tau$ lepton}
+
+
+\section{Charm-jet mis-tagging calibration}
+%test
+
+\subsection{Calibration methods for \bjet\ and light-jet}
+
+MC simulations are not able to model very well the 
 performance of the $b$-tagging algorithms in data. For this reason 
-calibration is required, i.e. correcting MC to match the data 
+calibration is required, i.e. correcting MC to recover the data 
 in terms of $b$-tagging efficiency, charm-jet mis-tagging and 
-light-jet mis-tagging rates\cite{FTAG-2018-01}. The calibration is done 
-for all supported working points, which are cuts in the b-tagging 
+light-jet mis-tagging rates \cite{FTAG-2018-01}. The calibration is performed 
+for all supported working points, which are cuts in the \btagging\ 
 algorithm output identifying the tagging efficiencies, and jet 
 collections(TODO: refer back to the object definition chapter). 
 In general, the efficiency is calculated with data and simulations, 
 and scale factors are then calculated to match the efficiency extracted 
-from simulations to the data. More details of the calibrations of 
-different flavour are given in the following subsections.
-
-
+from simulations to the data.
+% The imperfect 
+% description of the detector response and physics modelling effects 
+% in Monte Carlo (MC) simulations necessitates the measurement of the 
+% performance of the \btagging\ algorithms with collision data 
+% \cite{PERF-2012-04,ATLAS-CONF-2018-045}. 
+% The measurement of the $b$-jet tagging efficiency 
+% of the high-level \btagging\ algorithms used in proton–proton (pp) 
+% collision data recorded during Run 2 of the LHC at $\sqrt{s}$ = 13 TeV 
+% is presented. 
+% The corresponding measurements for $c$-jets and light-flavour 
+% jets, used in the measurement of the $b$-jet tagging efficiency to correct 
+% the simulation such that the overall tagging efficiency of $c$-jets and 
+% light-flavour jets match that of the data, are described elsewhere 
+% \cite{ATLAS-CONF-2018-006}, \cite{cjet}. 
+The production of $t\bar{t}$ 
+pairs at the LHC provides an abundant source of $b$-jets by virtue 
+of the high cross-section and the $t \rightarrow Wb$ branching ratio 
+being close to 100\%. A very pure sample of $t\bar{t}$ events can be 
+selected by requiring that both $W$ bosons decay leptonically, 
+referred to as di-leptonic $t\bar{t}$ decays in the following.
 For the \bjet\ calibration, the performance of the $b$ tagging 
 algorithms is evaluated in the simulation and the efficiency 
 with which these algorithms identify jets containing $b$-hadrons 
 is measured in collision data. The measurement uses a likelihood-based 
-method in a di-leptonic (both $W$ bosons from the top decay decay 
-into leptons) $t\bar{t}$ sample of highly enriched in $t\bar{t}$ 
-events. Events with 2 jets and 2 opposite signs leptons are selected 
-from di-leptonic $t\bar{t}$ samples. The data $b$-jet efficiency is 
+method in the di-leptonic $t\bar{t}$ sample, where
+events with exactly 2 jets and 2 opposite signs leptons are selected.  
+The data $b$-jet efficiency is 
 then extracted from a combined likelihood fit, and subsequently 
 compared with that predicted by the simulation. Scale factors are 
-then calculated to match the performance of the algorithms to the data\cite{FTAG-2018-01}.
+then calculated to match the performance of the algorithms to the data \cite{FTAG-2018-01}.
 
-For the light jet mis-tagging calibration, two methods are 
-used to measure the mistagging rate from the data: the negative 
-tag method, which uses a high statistics data sample enriched 
+For the light-jet mis-tagging calibration, two methods are 
+used to measure the mis-tagging rate from the data. The first is the 
+negative tag method, which uses a high statistics data sample enriched 
 in light-jets with the application of a modified algorithm which 
 reverses some of the criteria used in the nominal identification 
-algorithm, and the adjusted Monte Carlo (adjusted-MC) method, which 
+algorithm.
+The second is the adjusted Monte Carlo (adjusted-MC) method, which 
 adjusts the characteristic track observables in the simulation 
 to match the data, and then compares the adjusted simulation to the 
 "standard" simulation. The scale factors are then calculated using 
 the these two methods. The scale factors of the two different methods 
-are in good agreement within the systematics uncertainties\cite{ATLAS-CONF-2018-006}. 
-%The aim of this calibration is to calibrate $b$-jets that have been mis-tagged as light-jets of b-tagging algorithm. As the $b$-tagging algorithm is very efficient in rejecting light-jets, the light-jet fraction is enriched via "flipped" taggers, which negates the sign of track IP parameters before $b$-tagging\cite{ATLAS-CONF-2018-006}. The calibrations of the standard and the 'flipped' tagger are assumed to be equal. The calibration is extracted using the leading $p_T$ jet of Z+jets events using a 2D fit. TODO: cite the light-jet tagging Int note
+are in good agreement within the systematics uncertainties \cite{ATLAS-CONF-2018-006}. 
+%The aim of this calibration is to calibrate $b$-jets that have been mis-tagged as light-jets of \btagging\ algorithm. As the $b$-tagging algorithm is very efficient in rejecting light-jets, the light-jet fraction is enriched via "flipped" taggers, which negates the sign of track IP parameters before $b$-tagging\cite{ATLAS-CONF-2018-006}. The calibrations of the standard and the 'flipped' tagger are assumed to be equal. The calibration is extracted using the leading $p_T$ jet of Z+jets events using a 2D fit. TODO: cite the light-jet tagging Int note
 %light-jet fractions in the $b$-like region are too low,  The Z + jets events are then selected, the secondary vertex mass is fitted to obtain flavour fractions and perform a likelihood fit to extract light-jet mistag rate.
 
-The charm-jet mis-tagging calibration utilises semi-leptonic $t\bar{t}$ 
-events. The events kinematics are shown by the diagram in 
+
+
+\subsection{Calibration method for charm-jet}
+
+
+\label{sec:Introduction}
+It is worth mentioning that the author's qualification task to become an ATLAS author is to 
+calibrate the rate of a charm jet being mis-identified as a $b$-jet, which is a part 
+of the calibration of the $b$-tagging algorithm.
+During the task the calibration range has been extended down to 20 GeV (previously 25 GeV) of
+jet \pt\ and a new selection category has been developed 
+to increase the data statistics of the scale factors in the 
+high-$p_T$ ($p_T^{jet}$ > 70~GeV) region.
+
+As determined by the CKM matrix \cite{CKM1,CKM2}, the $W$ boson decay dominantly to 
+a pair of light-quark ($u$-quark and $d$-quark) or to
+a $s$-quark and a $c$ quark. The $W$ boson decays very rarely to pairs containing a $b$-quark. 
+More specifically, the branching ratio of a $W$ boson decays to the $u$-quark and $d$ quark pair or 
+the $s$-quark and $c$ quark is 33.1\%, and to pairs containing a b quark is only 0.057\% \cite{PDG}. 
+Therefore, $b$-tagged jets from the $W$ decay are most likely 
+to be mis-tagged $c$-jets or light-jets. 
+Furthermore, given the ratio between the DL1 light-jet rejection and the corresponding charm-jet rejection 
+ranges from 10 to 40 (see ref \cite{ATL-PHYS-PUB-2017-013}), the 
+\cjet\ is much more likely to be mis-tagged than the light-jet. 
+This allows for a source of mistagged $c$-jets to be obtained in the \ttbar\ events, 
+requiring that one $W$ boson decay leptonically and the other decay hadronically 
+(referred to as semi-leptonic $t\bar{t}$ decay in the following),
+where the $b$-tagged jets from the $W$ decay are candidates of miss-tagged \cjet.
+Requiring a $W$ boson decaying leptonically 
+reduces the number of combinations of jets of different flavour, 
+and allows triggering with the lepton.
+
+The events kinematics are shown by the diagram in 
 Figure \ref{fig:feynman}, where the $t\bar{t}$ pair decays to a 
-pair of $b$ and $\bar{t}$ quark, circled in red. One of the $W$ boson, 
-circled in blue, decays hadronically to quarks, and the other $W$ boson, 
-decays leptonically to either electron or muon and the corresponding neutrinos, 
-circled in purple and green. The lepton in the final state is used for 
+$b$- and a $\bar{b}$- quark, circled in red. One of the $W$ bosons, 
+circled in blue, decays hadronically to quarks, 
+and the other $W$ boson decays leptonically to either 
+an electron or a muon and the corresponding neutrinos, 
+circled in green and purple, respectively. The lepton in the final state is used for 
 triggering, and a combined likelihood fit is used to extract the $c$ mis-tagging 
-efficiency (more details in Section \ref{sec:Introduction}). 
+efficiency.
 
 \begin{figure}[H]
 \centering
@@ -217,35 +278,16 @@ efficiency (more details in Section \ref{sec:Introduction}).
 \caption{Feynman diagram of the semi-leptonic $t\bar{t}$ events.}
 \label{fig:feynman}
 \end{figure}
-\section{Charm mis-tagging calibration}
-\label{charm mistagging}
-\subsection{Introduction}
-\label{sec:Introduction}
+
 %As Shown in Fig \ref{fig:feynman}, the calibration uses the semi-leptonic $t\bar{t}$ events, which one $W$ boson from top decays leptonically to a charged lepton and neutrino and one $W$ decays hadronically and dominantly to a charm and a strange quark, among other pairs.
-As determined by the CKM matrix\cite{CKM1}\cite{CKM2}, the $W$ boson decay to light-quark pair or 
-light quark $c$ quark pair dominantly, and very rarely decay to pairs containing $b$-quarks. 
-More specifically, the branching ratio of a $W$ boson decays to a pair of light quarks or a light quark 
-and a $c$ quark is 33.7\%, and of pairs containing a b quark is only 0.058\%\cite{PDG}. 
-Therefore, $b$-tagged jets from the $W$ decay are most likely to be mis-tagging of $c$-jets or 
-light-jets. Given the ratio between the DL1 light-jet rejection and the corresponding charm-jet rejection 
-ranges from 10 to 40 (see ref\cite{ATL-PHYS-PUB-2017-013}), the 
-$c$-jet in $c$-jet-light-jet pairs is the most likely source for the 
-$b$-tagged jet. A kinematic likelihood technique, referred to as 
-KLFitter\cite{ERDMANN201418}, is used to assign jets to the proper $t\bar{t}$ decay product 
-without using any $b$-tagging information (more details in Section \ref{KLFitter}). 
-The charm-jet efficiency is then extracted by a combinatorial likelihood fit applying to the pair 
-of jets from $W$ decays, where the main floating parameter is the $c$-jet efficiency\cite{cjet}. 
-The calibration is given as scale factors in bins of \pt\ for 4 fixed cut working points (WP) 
+
+A kinematic likelihood technique, referred to as 
+KLFitter \cite{ERDMANN201418}, is used to assign jets to the proper $t\bar{t}$ decay product 
+(more details in Section \ref{KLFitter}). 
+The charm-jet efficiency is then extracted by applying a combinatorial likelihood fit to the pair 
+of jets from the hadronic $W$ decay, where the main floating parameter is the $c$-jet efficiency. 
+The calibration is given as scale factors in bins of \pt\ for 4 fixed-cut working points (WP) 
 that scale the simulation shape to reproduce that of the data.
-It is worth mentioning that my qualification task to become an ATLAS author is to 
-calibrate the rate of a charm jet being mis-identified as a $b$-jet, which is a part 
-of the calibration of the $b$-tagging algorithm. The calibration uses the full Run2 data 
-of 139 fb$^{-1}$ integrated luminosity collected at $\sqrt{s}$ = 13 TeV by the ATLAS detector. 
-In the task, 4 rounds of calibration has been conducted, each round with different jet collection 
-and b-tagging algorithm. To be concise only the result of the last round is presented in this chapter. 
-During the task the calibration range has been extended down to 20 GeV (which was 25 GeV) and a new 
-selection category has been developed to increase the stats of the scale factors in the 
-high $p_T$ ($p_T$ greater than 70 GeV) region.
 
 \subsection{Data and Monte Carlo samples}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -254,13 +296,13 @@ high $p_T$ ($p_T$ greater than 70 GeV) region.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 The data analysed in this study correspond to 139~fb$^{-1}$~\cite{DAPR-2010-01,DAPR-2011-01,DAPR-2013-01,LUCID2}, 
 of \(pp\) collision data collected by the ATLAS detector between 2015 and 2018
-with a centre-of-mass energy of 13~\TeV\ and a 25\,ns proton bunch
-crossing interval. 
+with a centre-of-mass energy of 13~\TeV. 
 The data sample was collected using a set of single-muon~\cite{Aad:2020uyd} 
 and single-electron triggers~\cite{TRIG-2018-05}. The single-muon triggers 
-had \pt\ thresholds in the range of 20--26~\GeV\ for 
+had \pt\ thresholds in the range 20--26~\GeV\ for 
 isolated muons and 50~\GeV\ for muons without any isolation requirement. 
-The single-electron triggers employed a range of \pt\ thresholds in the range 24--300~\GeV\ 
+The single-electron triggers employed a range of \pt\ thresholds 
+varying between 24--300~\GeV\ 
 and a combination of quality and isolation requirements depending on the 
 data-taking period and the \pt\ threshold.
 %The uncertainty in the combined 2015--2018
@@ -287,9 +329,9 @@ during data taking and to fulfil data quality requirements.
 % simulation of the ATLAS detector and are reconstructed with the same software as used for data.
 
 
-
-Dedicated Monte Carlo  simulated samples (MC)  are used to model SM
-processes and to estimate the expected signal yields.  All samples were 
+TODO: remove the overlap between this section and the Data MC chapter in the thesis
+Dedicated MC are used to model SM processes. 
+All samples were 
 produced using the ATLAS simulation infrastructure~\cite{SOFT-2010-01}
 and $\GEANT4$~\cite{Agostinelli:2002hh}. A subset of samples use a faster 
 simulation based on a parameterisation of the calorimeter response and 
@@ -303,8 +345,8 @@ simulated using the soft QCD processes of
 PDFs~\cite{Ball:2012cx} and a set of tuned
 parameters called the A3 tune~\cite{ATL-PHYS-PUB-2016-017}.
 
-The events that are used in this study originate mostly due to \
-ttbar\ production. This process is modelled using the
+The events that are used in this study originate mostly due to 
+\ttbar\ production. This process is modelled using the
 \powhegbox~v2~\cite{Frixione:2007nw,Nason:2004rx,Frixione:2007vw,Alioli:2010xd}
 generator at NLO with the \nnpdfnlo % ~\cite{Ball:2014uwa}
 parton distribution function (PDF) set
@@ -318,7 +360,16 @@ to {\PYTHIA}~8.230 to model the parton shower,
 hadronisation, and underlying event, with parameters set according
 to the A14 tune and using the \nnpdftwo set of PDFs.
 The decays of bottom and charm hadrons were performed by \evtgen~v1.6.0~\cite{EvtGen}.
-
+ The simulated \ttbar\
+events are split according to the origin of $W$-jets. The notation
+``\ttbar, ll'' denotes that both $W$-jets are light flavour jets.
+Similarly, ``\ttbar, cl'' (``\ttbar, bl'') 
+indicates that one of the $W$-jets is a \cjet\ (\bjet)
+whereas the other is a light flavour jet. $W$-jets with origin
+other than what is discussed above fall into the 
+category denoted by ``\ttbar, other''. This category includes
+events in which at least one of the $W$-jets comes from a
+hadronically decaying $\tau$-lepton. 
 
 %%% single top
 In addition to \ttbar\ production, there are some minor backgrounds
@@ -421,8 +472,8 @@ event \MET\ are used as inputs to a likelihood-based \ttbar\ event
 reconstruction algorithm, which is described in more detail in
 Ref.~\cite{ERDMANN201418}. This algorithm uses a likelihood function
 to assign the four jets to the \ttbar\ decay topology. In particular,
-the algorithm assigns one jet to be \bjet\ from the leptonically
-decaying top-quark ($t\to Wb \to \ell \nu b$) one other to the \bjet\
+the algorithm assigns one jet to be the \bjet\ from the leptonically
+decaying top-quark ($t\to Wb \to \ell \nu b$), another to the \bjet\
 from the hadronically decaying top-quark ($t\to Wb \to qq^\prime b$,
 where $qq^\prime$ are the quarks in which the $W$ boson decays) and
 the remaining two jets to the jets that come from the hadronic $W$
@@ -431,46 +482,9 @@ The following notation will be used: the jets that are
 assigned as the decay products of the $W$ boson are referred to as
 $W$-jets and the remaining two jets are referred to as top-jets.
 
-\subsubsection{Maximising likelihood}
+\subsection{Maximising likelihood}
 \label{maximise likelihood}
-Taking only four jets in the event limits the total number of possible 
-jet orderings (permutations) in the event. In the semi-leptonic channel, 
-four jets can be permuted a total number of times equal to 4! = 24. 
-However, the two jets (from light or $c$-quarks) resulting from the 
-hadronic $W$ decay are kinematically indistinguishable. This reduces 
-the possible number of permutations to 12. Furthermore, no $b$-tagging 
-information is used in the kinematic likelihood to limit the possible number of permutations.
-For every combination of jet ordering the likelihood is maximised over 
-its free parameters, the energy of the four jets, the lepton energy and 
-the three components of the momentum of the neutrino, and provides a 
-value based on how closely the kinematic information from the reconstructed 
-objects for a specific jet ordering resembles the expected kinematic behaviour 
-of the decay of a Standard Model semi-leptonic $t\bar{t}$ event. The likelihood 
-therefore distinguishes the possible permutations on an event-by-event basis. 
-The best permutation, given by the largest log-likelihood value, is adopted 
-as the jet ordering for the event\cite{cjet}. To improve the purity of the 
-selected events further, an additional requirement of log-likelihood > -48 is 
-placed on the output of the likelihood value for the chosen event permutation. 
-An example of the distribution of log-likelihood of the best permutations 
-is shown in Figure \ref{fig:llr}. 
-In this figure, the data events are compared against the simulation.
-The majority of the events come from \ttbar\ production. There is only
-a very small fraction of events, which is denoted as ``non \ttbar''
-on the figure, which comes from other processes like $W$ or $Z$ production
-in association with jets or single-top production. The simulated \ttbar\
-events are split according to the origin of $W$-jets. The notation
-``\ttbar, ll'' denotes that both $W$-jets are light flavour jets.
-Similarly, ``\ttbar, cl'' (``\ttbar, bl'') 
-indicates that one of the $W$-jets is a \cjet\ (\bjet)
-whereas the other is a light flavour jet. $W$-jets with origin
-other than what is discussed above fall into the 
-category denoted by ``\ttbar, other''. This category includes
-events in which at least one of the $W$-jets comes from a
-hadronically decaying $\tau$-lepton. 
-
-
-
-\begin{figure}%[htb]
+\begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.45\textwidth]{prefit/DataMC_h_LLR_all_3bunc.pdf}
 	\caption{Distribution of  the negative logarithm of the likelihood that
@@ -478,7 +492,33 @@ hadronically decaying $\tau$-lepton.
 	\label{fig:llr}
 \end{figure}
 
-
+Taking only four jets in the event limits the total number of possible 
+jet orderings (permutations) in the event. In the semi-leptonic channel, 
+four jets can be permuted a total number of times equal to 4! = 24. 
+However, the two $W$-jets are kinematically indistinguishable. 
+This reduces the possible number of permutations to 12. 
+Furthermore, no $b$-tagging information is used 
+in the kinematic likelihood to limit the possible number of permutations
+as this would bias the result.
+For every combination of jet ordering, 
+the likelihood is maximised over 
+its free parameters, the energy of the four jets, the lepton energy and 
+the three components of the momentum of the neutrino, and provides a 
+value based on how closely the kinematic information from the reconstructed 
+objects for a specific jet ordering resembles the expected kinematic behaviour 
+of the decay of a Standard Model semi-leptonic $t\bar{t}$ event. The likelihood 
+therefore distinguishes the possible permutations on an event-by-event basis. 
+The best permutation, given by the largest log-likelihood value, is adopted 
+as the jet ordering for the event. 
+An additional requirement of log-likelihood > -48 is 
+placed on the output of the likelihood value for the chosen event permutation. 
+An example of the distribution of log-likelihood of the best permutations 
+is shown in Figure \ref{fig:llr}. 
+In this figure, the data events are compared against the simulation.
+The majority of the events come from \ttbar\ production. There is only
+a very small fraction of events, which is denoted as ``non \ttbar''
+on the figure, that come from other processes like $W$ or $Z$ production
+in association with jets or single-top production.
 
 % \subsubsection{KLFitter Jet selection}
 % In the standard selection, only events with exactly 4 jets are selected. 
@@ -489,7 +529,7 @@ hadronically decaying $\tau$-lepton.
 % bins of scale factors (referred to as high-$p_{T}$ selection from now on, more 
 % details can be found in section \ref{high_pt_selection}), events with at least 5 
 % jets can also pass the selection. Therefore how to choose the 4 jets out of the 5 
-% jets and possibly more jets is now a problem. Without using any b-tagging information, 
+% jets and possibly more jets is now a problem. Without using any \btagging\ information, 
 % the best solution in this case would be to simply select the 4 jets with the highest $p_T$. %In the June 2019 Charm calibration and calibrations before that, the 'kBtagPriorityFourJets' selection mode was used, which will select the 4 jets highest $p_T$ while prioritising the $b$-jets. This was not a problem until the high-$p_{T}$ selection was introduced. With this particular mode an anomaly was observed in the $b$-jet purity in the reconstructed $W$ boson decay jets, when comparing the combination of the high-$p_{T}$ selection and the standard selection to the standard selection, as shown in Figure \ref{fig:highpt}(a)(b). 
 % To check the impact of including more then 4 jets in the events, the $b$-jet purity 
 % was checked, which is defined as:
@@ -515,20 +555,20 @@ hadronically decaying $\tau$-lepton.
 % \centering
 % \includegraphics[width=1\textwidth]{b_purity/_stats_bjets_purityp_Tjet0GeV.eps}
 % \footnotesize (a) Comparing the leading jet $b$-jet purity distribution 
-% between the standard selection and the high $p_T$ selection.\label{fig:b_after_leading}
+% between the standard selection and the high-$p_T$ selection.\label{fig:b_after_leading}
 % \end{minipage}\hfill
 % \begin{minipage}[b]{.45\textwidth}
 % \centering
 % \includegraphics[width=1\textwidth]{b_purity/_stats_bjets_purityp_Tjet1GeV.eps}
 % \footnotesize (b) Comparing the sub-leading jet $b$-jet 
-% purity distribution between the standard selection and the high $p_T$ selection.\label{fig:b_after_subleading}
+% purity distribution between the standard selection and the high-$p_T$ selection.\label{fig:b_after_subleading}
 % \end{minipage}\hfill
 % \begin{minipage}[b]{.45\textwidth}
 % \centering
 % \includegraphics[width=1\textwidth]{b_purity/tagged_stats_bjets_purityp_Tjet0GeV.eps}
 % \label{b_tagged_leading}
 % \footnotesize (c) Comparing the leading jet $b$-jet purity distribution 
-% between the standard selection and the high $p_T$ selection after 
+% between the standard selection and the high-$p_T$ selection after 
 % applying $b$-tagging with DL1r tagger at 60\% working point.
 % \end{minipage}\hfill
 % \begin{minipage}[b]{.45\textwidth}
@@ -536,7 +576,7 @@ hadronically decaying $\tau$-lepton.
 % \includegraphics[width=1\textwidth]{b_purity/tagged_stats_bjets_purityp_Tjet1GeV.eps}
 % \label{b_tagged_subleading}
 % \footnotesize (d) Comparing the sub-leading jet $b$-jet purity 
-% distribution between the standard selection and the high $p_T$ 
+% distribution between the standard selection and the high-$p_T$ 
 % selection after applying $b$-tagging with DL1r tagger at 60\% working point.
 % \end{minipage}
 % \caption{Comparison of the $b$-jet purity in leading (the left column) 
@@ -547,344 +587,365 @@ hadronically decaying $\tau$-lepton.
 \subsection{Event selection}
 \label{Event selection}
  % The analysis uses the full available integrated luminosity collected with the ATLAS detector from the all years. This corresponds to a collected luminosity of 139 fb$^{-1}$. The event selection aims to select a sample enriched in $t\bar{t}$ events. The lowest un-prescaled single electron and single-muon triggers are used.
-
-
 \subsubsection{Standard selection}
 \label{standard selection}
-Events are required to contain exactly one trigger-matched 
-lepton with $p_{T}$ above 27 GeV and exactly four jets with 
-$p_{T}$ above 25 GeV. Leptons are required to have $p_{T}$ 
-above 27 GeV in order to avoid the turn-on curve for the 
-single lepton triggers. Events which contain an additional 
-lepton with $p_T$ above 27 GeV are rejected. 
-In addition, events are required 
-to have a minimum of 20 GeV missing transverse momentum, which is 
-assumed to be the result of the neutrino from the leptonically 
-decaying $W$ boson. 
-The events are also required to have $\MET > 20$~\GeV\ and the transverse
-mass $m_T$ between the lepton and the \MET, is
-constrained as follows:
-\[ m_T = \sqrt{2 p_T^\ell \MET (1-\cos\Delta\phi)} > 40~\GeV,\]
-where $\Delta\phi = \phi(\MET)-\phi(\ell)$ is the azimuthal difference between
-the lepton and \MET.
-For each event, the kinematic likelihood fitter 
-is applied which determines the jet assignment to the various top 
-decay products assumed from the $t\bar{t}$ decay products. 
-A requirement of the log of KLFitter output > -48 is placed 
-on the chosen event permutation. 
-Due to the requirement on jet $p_T$ and binning strategy, the calibration 
-result can be applied to jets with $p_{T}$ between 25 to 200 GeV. 
-The inclusive yields of the standard selection and the low \pt\ selection 
-(defintion in Section \ref{fig:lowpT_selection})of the data/MC are 
-given in Table \ref{tab:yields_standard}, the "other" background 
-indicates background comes from non-\ttbar\ processes like $W$ or $Z$ production
-in association with jets or single-top production. An example of 
-the \pt\ distributions before any tagging or fitting and 
-after the standard selection is shown in Figure \ref{fig:kinematic_distributions_standard}. 
-The leading jet and sub-leading jet refer to the highest \pt\ $W$ jet and the 
-second highest \pt\ jet respectively.
-More plots can be found in Appendix, Figure \ref{fig:standard_selection}.
-The meaning of each legend in the plots are described in Section \ref{maximise likelihood}. 
-The yellow band in the lower pad shows the overall systematics uncertainties combining the 
-experimental uncertainties and the \ttbar\ modelling uncertainties, as described in 
-Section \ref{systematic uncertainties}. The data/MC ratio shows good agreement 
-within the systematic uncertainties. 
-
-\begin{table}[!b]
-	\centering
-	\small
-	\setlength\tabcolsep{5pt} 
-	\begin{tabular}{|l | ll | ll |}
-	\hline
-	& \multicolumn{2}{c|}{Particle flow jets} & \multicolumn{2}{c|}{Track jets} \\
-	\hline
-	Data          &    287105.0                  &        &   218351.0                  &     \\  
-	\ttbar\         &    292203.7 $\pm$       202.8 &        &   223769.3 $\pm$       177.6 &   \\
-	Other         &     10945.7 $\pm$       123.1 &        &     7280.1 $\pm$       103.1 &   \\
-	Data/MC       &     0.947   $\pm$       0.002 &        &    0.945   $\pm$        0.002  &           \\
-	\hline
-	\end{tabular}
-	\vspace{0.2cm}
-	\caption{Prefit comparison of the  number of events in data and in 
-	simulation considering particle flow jets and track jets for 
-	events with exactly 4 jets, combining with the low \pt\ selection.}
-	\label{tab:yields_standard}
-	\end{table}
-
-
- \begin{figure}%[htb]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.45\textwidth]{figs_support/plots_withoutHighpT/DataMC_h_J0_pt.pdf}
 	\includegraphics[width=0.45\textwidth]{figs_support/plots_withoutHighpT/DataMC_h_J0_pttrackjet.pdf}\\
 	\includegraphics[width=0.45\textwidth]{figs_support/plots_withoutHighpT/DataMC_h_J1_pt.pdf}
 	\includegraphics[width=0.45\textwidth]{figs_support/plots_withoutHighpT/DataMC_h_J1_pttrackjet.pdf}\\
-	\caption{Data versus simulation for various variables used in the analysis for 
-	particle flow jets in the left column and for track jets in the right column.}
+	\caption{Standard selection: data versus simulation for various variables used in the analysis for 
+	particle flow jets in the left column and for track jets in the right column, 
+	inclusive of the low-\pt\ selection. 
+	The leading jet and sub-leading jet refer to the highest \pt\ $W$-jet and the 
+	second highest \pt\ jet respectively. The 'non \ttbar' background 
+	indicates background comes from non-\ttbar\ processes like $W$ or $Z$ production
+	in association with jets or single-top production. }
 	\label{fig:kinematic_distributions_standard}
 	\end{figure}
 	
+Events are required to contain exactly one trigger-matched 
+lepton with $p_{T} > 27$~GeV and exactly four jets with 
+$p_{T} > 25$~GeV. Leptons are required to have $p_{T}$ 
+above 27 GeV in order to avoid the turn-on curve for the 
+single lepton triggers. Events which contain an additional 
+lepton with $p_T > 27$~GeV are rejected. 
+The events are also required to have $\MET > 20$~GeV, which is 
+assumed to be the result of the neutrino from the leptonically 
+decaying $W$ boson. The transverse
+mass $m_T$ between the lepton and the \MET, is
+constrained as follows:
+\[ m_T = \sqrt{2 p_T^\ell \MET (1-\cos\Delta\phi)} > 40~\GeV,\]
+where $\Delta\phi = \phi(\MET)-\phi(\ell)$ is the azimuthal difference between
+the lepton and \MET.
+% Due to the requirement on jet $p_T$ and binning strategy, the calibration 
+% result can be applied to jets with $p_{T}$ between 25 to 200 GeV. 
+An example of the \pt\ distributions before any tagging or fitting and 
+after the standard selection is shown in Figure \ref{fig:kinematic_distributions_standard}. 
+More plots can be found in Appendix \ref{sec:appendix_standard_selection}, 
+Figure \ref{fig:standard_selection}.
+The yellow band in the lower pad shows the overall systematics uncertainties combining the 
+experimental uncertainties and the \ttbar\ modelling uncertainties, as described in 
+Section \ref{sec:FTAG_systematics}. The data/MC ratio shows good agreement 
+within the systematic uncertainties. 
 
 \subsubsection{Selection for low-$p_T$ extension}
-In order to extend the calibration in the low-$p_{T}$ region so that the calibration 
-can be applied to jets with $p_{T}$ smaller to 25 GeV, instead of requiring events to 
-have exactly 4 jets, events are required to have exactly 3 jets with $p_{T}$ greater 
-than 25 GeV and exactly 1 jet with $p_{T}$ greater than 20 GeV. Other than that, 
-all other requirements for the selection are the same. The distributions of the sub-leading 
-jet are shown in appendix, Figure \ref{fig:lowpT_selection}. Good agreement between MC and data 
+\label{sec:lowpT_selection}
+The author has developed an othorgonal selection to 
+extend the calibration in the low-$p_{T}$ region so that the calibration 
+can be applied to jets with $\pt\ < 20$~GeV.
+Instead of requiring events to 
+have exactly 4 jets $\pt\ > 25$~GeV, events are required to have exactly 3 jets with $p_{T} > 25$~GeV 
+and exactly 1 jet with $25$~GeV $> p_{T} > 20$~GeV. Other than that, 
+all other requirements for the selection are the same. 
+This additional cut provides candidates for the $W$-jet that is used 
+for calibration in the $20-25$~GeV region. 
+The inclusive yields of the standard selection and the low-\pt\ selection 
+of the data/MC are given in Table \ref{tab:yields_standard}.
+The distributions of the sub-leading 
+jet are shown in Appendix \ref{sec:appendix_lowpT_selection}, Figure \ref{fig:lowpT_selection}. 
+Good agreement between MC and data 
 is shown in these distributions, and the $p_{T}$ range of the sub-leading has gone down to 20 GeV. 
 
-
-
-\subsubsection{High $p_T$ selection}
-\label{high_pt_selection}
-Instead of requiring events to have exactly 4 jets, events are required to 
-have at least 5 jets with $p_{T}$ greater than 25 GeV, in which at least 
-1 jet with $p_{T}$ greater than 70 GeV. The choice of cut value is based on 
-study shown in the following section \ref{cutvalue}. Other than that, all 
-other requirements for the selection remaining the same. 
-The yields of the data/MC are given in Table \ref{tab:yields_highpT}, 
-an example of the \pt\ distributions before any tagging or fitting and 
-after the standard selection is shown in Figure \ref{fig:kinematic_distributions_highpT}. More plots 
-can be found in Appendix, Figure \ref{fig:highpT_selection}.
-
-\begin{table}[!b]
+\begin{table}[ht]
 	\centering
 	\small
 	\setlength\tabcolsep{5pt} 
-	\begin{tabular}{|l | ll | ll |}
+	\newcolumntype{C}{ @{}>{${}}c<{{}$}@{} }
+	\begin{tabular}{|r *2{|rCr}| }
 	\hline
-	& \multicolumn{2}{c|}{Particle flow jets} & \multicolumn{2}{c|}{Track jets} \\
+	& \multicolumn{3}{|c|}{Particle flow jets} & \multicolumn{3}{c|}{Track jets} \\
 	\hline
-	
-	Data    &     98273.0              &   &    120929.0                  &   \\ 
-	\ttbar\   &     99432.4 $\pm$  116.4 &   &    117090.1 $\pm$      126.5 &    \\
-	Other   &      1841.5 $\pm$   21.2 &   &      2641.2 $\pm$       47.6 &    \\
-	Data/MC &   0.970 $\pm$ 0.003      &   &      1.010 $\pm$ 0.003       &    \\
+	Data          &     287105       &       &              &   218351  &       &         \\  
+	\ttbar\         &     292200       &\pm& 200          &   223770  &\pm& 180     \\
+	Non \ttbar\         &     10950        &\pm& 120          &   7280    &\pm& 100    \\
+	Data/MC       &     0.947        &\pm& 0.002        &   0.945   &\pm& 0.002 \\
 	\hline
-
 	\end{tabular}
 	\vspace{0.2cm}
-	\caption{Prefit comparison of the number of events in data and in 
-	simulation considering particle flow jets and track jets for the high-\pt\ 
-	selection.}
-	\label{tab:yields_highpT}
-	\end{table}
+	\caption{Standard selection: prefit comparison of the  number of events in data and in 
+	simulation considering particle flow jets and track jets for 
+	events with exactly 4 jets, inclusive of the low-\pt\ selection.}
+	\label{tab:yields_standard}
+\end{table}
 
-\begin{figure}%[htb]
-		\centering
-		\includegraphics[width=0.45\textwidth]{figs_support/plots_hm/DataMC_h_J0_pt_all_2.pdf}
-		\includegraphics[width=0.45\textwidth]{figs_support/plots_hm/DataMC_h_tjet_J0_pt_all_2.pdf}\\
-		\includegraphics[width=0.45\textwidth]{figs_support/plots_hm/DataMC_h_J1_pt_all_2.pdf}
-		\includegraphics[width=0.45\textwidth]{figs_support/plots_hm/DataMC_h_tjet_J1_pt_all_2.pdf}\\
-		\caption{Data versus simulation for various variables used in the analysis for 
-		particle flow jets in the left column and for track jets in the right column.}
-		\label{fig:kinematic_distributions_highpT}
-\end{figure}
-		
 
-\paragraph{Optimisation of high $p_{T}$ cut}
-\label{cutvalue}
-
-In the high-$p_{T}$ selection, the value to define high-p$_{T}$ is 
-chosen to be 70 GeV. A study has been done to investigate the effect 
-on the $c$-jet purity and the potential statistical gain, where the $c$-jet purity is defined as:
+\subsubsection{High-$p_T$ selection}
+\label{high_pt_selection}
+It has been observed that in the previous calibrations, the statistics 
+is relatively low for the high-\pt\ region (e.g. jet $\pt\ > 100$~GeV). 
+Therefore, the author has worked on an othorgonal selection to improve this situation.
+Instead of requiring events to have exactly 4 jets, events are required to 
+have at least 5 jets with $p_{T} > 25$~GeV, in which at least 
+1 jet with $\pt\ > 70$~GeV. Other than that, all 
+other requirements for the selection remaining the same. 
+The choice of cut value $70$~GeV is based on the
+study shown in the following. 
+The effect on the $c$-jet purity and the potential statistical gain is investigated, 
+where the $c$-jet purity is defined as:
 \begin{equation}
-\cjetineq\ purity = \frac{N_{true\ \cjetunder}}{N_{all}},
+\cjetineq\ \rm{purity} = \frac{N_{\rm{true}\ \cjetunder}}{N_{\rm{all}}},
 \end{equation}
-where $N_{true\ \cjetunder}$ stands for the number of events with a 
-true $c$-jet from the $W$ decay, and $N_{all}$ stands for the number of all events. 
+where $N_{\rm{true}\ \cjetunder}$ stands for the number of events with a 
+true $c$-jet from the $W$ decay, and $N_{\rm{all}}$ stands for the number of all events. 
+The ideal situation is the high-\pt\ selection will maximally increase the 
+statistics while mininally decrease the \cjet\ purity, therefore a figure of merit $P^{\rm{Cut}}$
+is defined as:
+\[P^{\rm{Cut}} = \frac{\sum_i{\rm{Gain in stats}^2_i}}{\sum_i{\cjetineq \rm{purity}^2_i }}, \]
+where i stands for the number of bins, and gain in stats stands for increase in 
+statistics.
 The $c$-jet purity and the statistical gain are calculated for 4 different cut 
 values as shown in Figure \ref{fig:cutvalue}, comparing with the cut value of 0. 
-The value of 70 GeV is chosen because of its relatively small effect on the $c$-jet 
-purity and relatively high gain in statistics. 
+The value of $70$~GeV is chosen as it gives the highest value of $P^{\rm{Cut}}$. 
 
 
-\begin{figure}
+\begin{figure}[!h]
 \begin{minipage}[b]{.45\textwidth}
 \centering
 \includegraphics[width=1\textwidth]{stat_gains/statsgain_0GeV.png}
-\footnotesize (a) Gain in stats and the $c$-jet purity with cut value 0 GeV.
+\footnotesize (a) No cut.
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
 \includegraphics[width=1\textwidth]{stat_gains/statsgain_40GeV.png}
-\footnotesize (b) Gain in stats and the $c$-jet purity with cut value 40 GeV.
+\footnotesize (b) $\pt\ > 40$~GeV.
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
 \includegraphics[width=1\textwidth]{stat_gains/statsgain_70GeV.png}
-\footnotesize (c) Gain in stats and the $c$-jet purity with cut value 70 GeV.
+\footnotesize (c) $\pt\ > 70$~GeV.
 \end{minipage}\hfill
 \begin{minipage}[b]{.45\textwidth}
 \centering
 \includegraphics[width=1\textwidth]{stat_gains/statsgain_90GeV.png}
-\footnotesize (c) Gain in stats and the $c$-jet purity with cut value 90 GeV.
+\footnotesize (c) $\pt\ > 90$~GeV.
 \end{minipage}\hfill
+\centering
 \begin{minipage}[b]{.45\textwidth}
 \centering
 \includegraphics[width=1\textwidth]{stat_gains/statsgain_140GeV.png}
-\footnotesize (d) Gain in stats and the $c$-jet purity with cut value 140 GeV.
+\footnotesize (d) $\pt\ > 140$~ GeV.
 \end{minipage}\hfill
 
 \caption{Comparison of different cut values in terms of gain in stats and $c$-jet purity.}
 \label{fig:cutvalue}
 \end{figure}
 
+\begin{table}[ht]
+	\centering
+	\small
+	\setlength\tabcolsep{5pt} 
+	\newcolumntype{C}{ @{}>{${}}c<{{}$}@{} }
+	\begin{tabular}{|r *2{|rCr}| }
+	\hline
+	& \multicolumn{3}{|c|}{Particle flow jets} & \multicolumn{3}{c|}{Track jets} \\
+	\hline
+	
+	Data    &     98273  &           &   &        120929   &              &   \\ 
+	\ttbar\ &    99430 &\pm&  120 &        117090 &\pm&  130     \\
+	Non \ttbar\   &      1842  &\pm&  21 &          2640  &\pm&  50     \\
+	Data/MC &      0.97  &\pm&  0.003   &     1.01  &\pm&  0.003       \\
+	\hline
+
+	\end{tabular}
+	\vspace{0.2cm}
+	\caption{High-\pt\ selection: prefit comparison of the number of events in data and in 
+	simulation considering particle flow jets and track jets.}
+	\label{tab:yields_highpT}
+	\end{table}
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.45\textwidth]{figs_support/plots_hm/DataMC_h_J0_pt_all_2.pdf}
+	\includegraphics[width=0.45\textwidth]{figs_support/plots_hm/DataMC_h_tjet_J0_pt_all_2.pdf}\\
+	\includegraphics[width=0.45\textwidth]{figs_support/plots_hm/DataMC_h_J1_pt_all_2.pdf}
+	\includegraphics[width=0.45\textwidth]{figs_support/plots_hm/DataMC_h_tjet_J1_pt_all_2.pdf}\\
+	\caption{High-\pt\ selection: data versus simulation for various variables used in the analysis for 
+	particle flow jets in the left column and for track jets in the right column.}
+	\label{fig:kinematic_distributions_highpT}
+\end{figure}
+	
+
+The yields of the data/MC are given in Table \ref{tab:yields_highpT}. 
+An example of the \pt\ distributions before any tagging or fitting applying 
+the high-\pt\ selection is shown in Figure \ref{fig:kinematic_distributions_highpT}. 
+More plots can be found in Appendix \ref{sec:appendix_highpT_selection}, 
+Figure \ref{fig:highpT_selection}.
+
+
+
 
 \subsubsection{Combined selection}
 \label{combined_selection}
-As the standard selections, low \pt\ selection and high \pt\ selection are othorgonal 
+As the standard selections, low-\pt\ selection and high-\pt\ selection are othorgonal 
 to each other, all the selections are combined to provide the maximum range 
 and statistics for the calibration. 
 The yields of the data/MC are given in Table \ref{tab:yields_combined}, 
 an example of the \pt\ distributions before any tagging or fitting and 
 after the standard selection is shown in Figure \ref{fig:kinematic_distributions_combined}. More plots 
-can be found in Appendix, Figure \ref{fig:jets_PFlow}-\ref{fig:mass_VRJets}.
-\begin{table}[!b]
+can be found in Appendix \ref{sec:appendix_combined_selection}, Figures \ref{fig:jets_PFlow}-\ref{fig:mass_VRJets}.
+
+\begin{table}[ht]
 	\centering
 	\small
 	\setlength\tabcolsep{5pt} 
-	\begin{tabular}{|l | ll | ll |}
+	\newcolumntype{C}{ @{}>{${}}c<{{}$}@{} }
+	\begin{tabular}{|r *2{|rCr}| }
 	\hline
-	& \multicolumn{2}{c|}{Particle flow jets} & \multicolumn{2}{c|}{Track jets} \\
+	& \multicolumn{3}{|c|}{Particle flow jets} & \multicolumn{3}{c|}{Track jets} \\
 	\hline
-	Data          &    385378.0                  &        &   302308.0              &     \\  
-	\ttbar\         &    383517.0 $\pm$      229.4 &        &   302690.5 $\pm$      203.9 &   \\
-	Other         &     12424.0 $\pm$      123.8 &        &     8566.8 $\pm$      104.1 &   \\
-	Data/MC       &    0.973 $\pm$ 0.002         &        &  0.971 $\pm$ 0.002  &           \\
+	Data          &    385378           &      &        &   302308         &  &     \\  
+	\ttbar\       &      383520   &\pm&  230 &            302690 &\pm&  200   \\
+	Non \ttbar\         &        12420  &\pm&  120 &             8570  &\pm&  100     \\
+	Data/MC       &        0.973  &\pm&  0.002 &           0.971 &\pm&  0.002          \\
 	\hline
 
 	\end{tabular}
 	\vspace{0.2cm}
-	\caption{Prefit comparison of the number of events in data and in 
+	\caption{Combined selection: prefit comparison of the number of events in data and in 
 	simulation considering particle flow jets and track jets for an inclusive
 	selection.}
 	\label{tab:yields_combined}
 	\end{table}
 
-\begin{figure}%[htb]
+\begin{figure}[!h]
 		\centering
 		\includegraphics[width=0.45\textwidth]{figs_support/plots_def/DataMC_h_J0_pt_all.pdf}
 		\includegraphics[width=0.45\textwidth]{figs_support/plots_def/DataMC_h_tjet_J0_pt_all.pdf}\\
 		\includegraphics[width=0.45\textwidth]{figs_support/plots_def/DataMC_h_J1_pt_all.pdf}
 		\includegraphics[width=0.45\textwidth]{figs_support/plots_def/DataMC_h_tjet_J1_pt_all.pdf}\\
-		\caption{Data versus simulation for various variables used in the analysis for 
+		\caption{Combined selection: data versus simulation for various variables used in the analysis for 
 		particle flow jets in the left column and for track jets in the right column.}
 		\label{fig:kinematic_distributions_combined}
 \end{figure}
 		
 
 \subsection{Systematic uncertainties}
-\label{systematic uncertainties}
+\label{sec:FTAG_systematics}
 The systematic uncertainties considered and propagated in this calibration 
-can be broadly categorised into experimental systematics and modelling uncertainties. 
-Supporting material for this section can be found in the appendix, Tab.\ref{tab:systematics}.
+can be broadly categorised into experimental and modelling systematics uncertainties. 
 \subsubsection{Experimental uncertainties}
 
 Experimental uncertainties are related to the detector and estimated using 
 data-driven methos or MC simulations. 
 The electron energy scale and resolution are corrected to 
 provide better agreement between MC predictions and data, uncertainties 
-due the corrections are considered. Uncertainties are taken into account the 
-electron trigger, identification and reconstruction efficiencies, and for 
-uncertainties associated with the isolation requirements. Scaling and smearing 
-corrections are applied to the $p_T$ of simulated muons in order to minimise the differences 
+due the corrections are considered. Uncertainties are taken into account on the 
+electron and muon trigger, identification and reconstruction efficiencies, and for 
+uncertainties associated with the isolation requirements. 
+Scaling and smearing corrections are applied 
+to the $p_T$ of simulated electrons and muons in order to minimise the differences 
 in resolution between data and MC events, and the uncertainties of the corrections are considered. 
-Differences in the identification efficiency and in the efficiency of the trigger selection are 
-also taken into account. The jet energy scale (JES) uncertainty depends on $p_T$ and $\eta$ and 
+The jet energy scale (JES) uncertainty depends on $p_T$ and $\eta$ and 
 takes into account uncertainties due to pile-up effects. Uncertainties on the jet energy resolution (JER) 
 is taken into account. Uncertainties on the energy scale and resolution of 
-the electrons, muons, jets and taus are propagated to the calculation of the $E_T^{miss}$, 
+the electrons, muons, jets and taus are propagated to the calculation of the \MET, 
 which also has additional dedicated uncertainties on the scale, resolution, and 
 reconstruction efficiency of tracks not associated to any of the reconstructed objects,
  along with the modelling of the underlying event. Uncertainties on the $b$-tagging probabilities 
  for $b$- and light-jets are considered both for the tagging jets assigned to the $b$-quark 
- from top decay and for the jets associated to the hadronically decaying $W$ boson.
+ from the top decay and for the jets associated to the hadronically decaying $W$ boson.
+Supporting material for this section can be found in the appendix, Tab.\ref{tab:systematics}.
 %The uncertainty on these corrections is taken into account as a shape-dependent systematic uncertainty in the final fit of the backgrounds and signal models.
 
 \subsubsection{Modelling uncertainties} Uncertainties on the modelling of the inclusive $t\bar{t}$ 
 background are estimated by replacing the nominal MC sample by alternative MC samples. The nominal 
 sample is also replaced by variations of the parton shower, initial 
 and final state radiation. In all cases, MC-to-MC SFs are taken into account. The dominating modelling
-uncertainty is due to the choice of parton shower and hadronisation model is derived by comparing the prediction 
-from {\tt POWHEG} interfaced either to {\tt PYTHIA8} or {\tt HERWIG++}.The uncertainty on 
-modelling of initial and final state radiation is assessed with two alternative {\tt POWHEG+PYTHIA8} 
+uncertainty is due to the choice of parton shower and hadronisation model, which is derived 
+by comparing the prediction from \powheg interfaced either to \pythia or \Herwigpp.The uncertainty on 
+modelling of initial state radiation (ISR) is assessed with two alternative \powhegpythia 
 samples. The samples include one with an increase in radiation which has the re-normalisation and 
 factorisation scales decreased by a factor of two and the \textit{hdamp} parameter doubled, while 
-the sample with a decrease in radiation has the scales increased by a factor of two. The comparison of 
-the nominal \ttbar\ and the systematics is shown in Table \ref{tab:modelling_syst}. 
-The uncertainty due to the variations samples being produced by fast simulation is included in the table as 
-\ttbar\ AF2. 
+the sample with a decrease in radiation has the scales increased by a factor of two. The comparisons of 
+the nominal \ttbar\ sample and the samples with each systematic uncertainty 
+are shown in Table \ref{tab:modelling_syst}. 
 
-\begin{table}[!b]
+
+
+\begin{table}[ht]
 	\centering
 	\small
 	\setlength\tabcolsep{5pt} 
-	\begin{tabular}{|l | ll | ll |}
+	\newcolumntype{C}{ @{}>{${}}c<{{}$}@{} }
+	\begin{tabular}{|r *2{|rCr|r}| }
 	\hline
-	& \multicolumn{2}{c|}{Particle flow jets} & \multicolumn{2}{c|}{Track jets} \\
+	& \multicolumn{4}{|c|}{Particle flow jets} & \multicolumn{4}{c|}{Track jets} \\
 	\hline
-	\multicolumn{5}{|c|}{Comparison of \ttbar\ with systematic samples}\\
+	& \multicolumn{3}{c|}{Yields} & \specialcell{Ratio of \\difference to \\nominal sample} & \multicolumn{3}{c|}{Yields} & \specialcell{Ratio of \\difference to\\ nominal sample} \\
 	\hline
-	\ttbar\ AF2       &   386261.9 $\pm$ 254.5  &  0.716\% & 304858.1 $\pm$ 226.1 &  0.716\%\\
-	DATA/MC(AF2)   &   0.967 $\pm$ 0.002     &      & 0.965 $\pm$ 0.002 &      \\              
-	\ttbar\ ISR     &   377129.7 $\pm$   224.0  & -1.665\% &  297963.8 $\pm$   200.3  & -1.562\%\\     
-	DATA/MC(ISR) & 0.989 $\pm$ 0.002         &      & 0.986 $\pm$ 0.002   &  \\       
-	\ttbar\ \PYTHIA        &   331961.5 $\pm$   217.0  & -13.443\%&  259942.3 $\pm$      193.4  & -14.123\%\\ 
-	DATA/MC(\PYTHIA)    & 1.119 $\pm$ 0.002         &       & 1.126 $\pm$ 0.002     &\\                
+	\ttbar\ Nominal &	 385378  &\pm&  230 &         &   	  302690 &\pm&  200   &  \\
+	Data/MC         &        0.973  &\pm&  0.002 &      &     0.971 &\pm&  0.002 &         \\
+	\hline
+	\ttbar\ AF2     &    386260  &\pm&  250  &  0.716\% &     304860  &\pm&  230  &  0.716\%\\
+	DATA/MC(AF2)    &    0.967  &\pm&  0.002  &          &    0.965  &\pm&  0.002   &      \\              
+	\hline
+	\ttbar\ ISR     &    377130  &\pm&  220  & -1.665\% &     297960  &\pm&  200  & -1.562\%\\     
+	DATA/MC(ISR)    &    0.989  &\pm&  0.002  &          &    0.986  &\pm&  0.002   &  \\       
+	\hline
+	\ttbar\ \Herwig &    331960  &\pm&  220  & -13.443\%&     259940  &\pm&  190  & -14.123\%\\ 
+	DATA/MC(\Herwig)&    1.119  &\pm&  0.002  &          &    1.126  &\pm&  0.002   &\\                
 	\hline
 	\end{tabular}
 	\vspace{0.2cm}
-	\caption{Comparison of the  number of events in data and in 
+	\caption{Comparison of the number of events in data and in 
 	simulation considering particle flow jets and track jets for an inclusive
-	selection.}
+	selection. The uncertainty due to the variations samples being produced 
+	by fast simulation is included in the table as \ttbar\ AF2. }
 	\label{tab:modelling_syst}
 	\end{table}
 
 
-\subsubsection{Under-estimation of $t\bar{t}$ + Heavy flavour background }
-The $b$-jets are rarely found in the two $W$ decay jets. There are two main sources of 
-the $b$-jets, first is a $W$ boson decaying to pair of $b$ and $c$ quark. The other 
-source is when the $t\bar{t}$ plus a gluon process is selected, and the gluon is split 
-into a pair a $b$ quarks. If we require no $c$-jet in either top-decay jets or $W$-jets, 
-the only main source of the $b$-jets in the $W$-jets is the $t\bar{t}$ + heavy flavour 
-process. It's shown in for the both PFlow and VR-Track jets collections, this process is 
-underestimated by the MC by about 30\%, as shown in Table \ref{tab:3byields1} 
-and Figure \ref{fig:3bplots}, where in the figure a clear overshoot is present in the data
-compared with the simulation. The $W$ jets are dominated by \bjet\ light-jet pairs due to the tight
-DL1r requirement.
+\subsection{Under-estimation of $t\bar{t}$ + Heavy flavour background }
+Depsite the fact that the true nature of most of the reconstructed $W$-jets are either 
+\cjets\ or light-jets, there is still a very small amount of them are true \bjets. 
+There are two main sources of these true $b$-jets. The first is a $W$ boson 
+decays to a $b$- and a $c$-quark. The second is 
+when the $t\bar{t}$ plus a gluon process (referred to as \ttbar\ + heavy flavour process)
+is selected, and the gluon is split 
+into a pair a $b$ quarks and one of them is assigned as a $W$-jet. 
+We can exclude the first source by requiring no $c$-jets in the $W$-jets,
+leaving the true $b$-jet in the $W$-jets 
+can only come from the $t\bar{t}$ + heavy flavour 
+process. This process is underestimated by the MC by about 30\% 
+for both the PFlow and VR-Track jets collections, as shown in Table \ref{tab:3byields1} 
+and Figure \ref{fig:3bplots}, where an extra cut requiring at least one $W$-jet with DL1r $> 8$ 
+is added to the combined selection. 
+This cut is to reject most of the true $c$-jets and true light-jet. 
 For this reason, events in the simulation
-in which the top-jets and at least one of the $W$-jets are \bjets, are
-scaled by $1.25 \pm 0.25$, where the value is measured in reference\cite{TOPQ-2017-12}.
-Hence a 1.25 $\pm$ 0.25 scale factor is applied to all events with 3 truth $b$ jets, 
-and all results shown in this chapter have this scale factor implemented. 
-The full difference between the simulation before applying this scale factor and 
-after is taken as a systematic error. All the plots in this chapter have the 
-uncertainty due to the scale factor implemented. 
+in which the top-jets and at least one of the $W$-jets are \bjets (referred to as 3 true \bjets events), 
+are scaled by $1.25 \pm 0.25$, where the value is measured in Ref. \cite{TOPQ-2017-12}.
+All results shown in this chapter have this scale factor implemented, 
+and the full difference between the simulation before applying this scale factor and 
+after is taken as a systematic uncertainty. This uncertainty has been added in quadrature 
+to the systematic uncertainties described in section \ref{sec:FTAG_systematics} 
+in all the plots in this chapter.
 
 
 
 
-\begin{table}[]
+\begin{table}[ht]
     \centering
-	\begin{tabular}{|l|ll|ll|}
+	\newcolumntype{C}{ @{}>{${}}c<{{}$}@{} }
+	\begin{tabular}{|r *2{|rCr}| }
 		\hline
-		& Particle flow jets & Track jets \\
+		& \multicolumn{3}{|c|}{Particle flow jets} & \multicolumn{3}{c|}{Track jets} \\
 		\hline
-        Data & 1589.0 &  1336.0 \\
-         $t\bar{t}$ & 1102.7 $\pm$ 12.5  & 943.5 $\pm$ 11.6 \\
-         Other & 82.7 $\pm$ 5.5 &   69.1 $\pm$ 4.5 \\
-		 Data/MC & 1.341 $\pm$ 0.037 &  1.319 $\pm$ 0.040 \\
+        Data & 1589& & & 1336  & & \\
+         $t\bar{t}$ & 1100  &\pm&  13	& 940  &\pm&  12\\
+         Non \ttbar\ 		& 83  &\pm&  6		& 69  &\pm&  5  \\
+		 Data/MC 	& 1.34  &\pm&  0.04 & 1.32  &\pm&  0.04 \\
 		 \hline
     \end{tabular}
 	\caption{Yields of the 2018 data/MC of the combined selection, 
-	requiring at least 1 PFlow $W$ jet with DL1r > 8 to 
-	reject most of the light and $c$ jets.}
+	requiring at least 1 PFlow or track $W$-jet with DL1r > 8 to 
+	reject most of the light- and $c$-jets.}
     \label{tab:3byields1}
 \end{table}
 
 
-\begin{figure}
+\begin{figure}[!h]
     \centering
     \begin{minipage}[b]{.45\textwidth}
 \centering
@@ -892,7 +953,7 @@ uncertainty due to the scale factor implemented.
 \end{minipage}
 	\caption{The DL1r score distribution of the leading VR-Track jet, 
 	requiring at least 1 VR-Track jets have DL1r > 8 to reject most of 
-	the light and the $c$ jets, with $t\bar{t}$ modelling and stats uncertainties. }
+	the light and the $c$ jets, with $t\bar{t}$ modelling and statistical uncertainties. }
     \label{fig:3bplots}
 \end{figure}
 
@@ -904,30 +965,29 @@ uncertainty due to the scale factor implemented.
 \subsubsection{Overview}
 Four rounds of calibrations have been carried out, containing different 
 jet collections, Monte Carlo samples, analysis framework 
-and $b$-jet identification algorithm. In the latest round, 
+and $b$-jet identification algorithm. 
+In the latest round, 
 the calibration includes the EMPFlow jet and VR-Track jet collection, 
-and MV2c10, DL1 and DL1r taggers. Each calibration is carried out 
-with all supported jet collections and taggers, with the full data 
-set collected from 2015 to 2018 in the ATLAS detector. The low-$p_T$ 
+and MV2c10, DL1 and DL1r taggers. The low-$p_T$ 
 selection and the standard selection are carried out for all four 
 calibrations, while the high-$p_T$ selection is only implemented 
 in the latest calibration. 
 
 \subsubsection{Kinematic distributions}
 The kinematic distributions of the MC and the data of the latest calibration 
-(October 2020) are shwon in Figure \ref{fig:taggers_PFlow} for the PFlow jets and 
+(October 2020) are shown in Figure \ref{fig:taggers_PFlow} for the PFlow jets and 
 Figure \ref{fig:taggers_VRJets} for the VR-Track jets, 
-combining the standard selection and the highest $p_T$ selection. 
+combining the standard selection, low \pt\ and the high-$p_T$ selection. 
 In these figure, the data events are compared against the simulation.
 The majority of the events come from \ttbar\ production. There is only
-a very small fraction of non \ttbar\ events. The $W$ jets pairs are mostly light-jets 
-pairs and \cjet\ light-jet pairs, and a very small fraction of the pairs are the 
+a very small fraction of non \ttbar\ events. The $W$-jets pairs are mostly light-jets 
+pairs and \cjet\ light-jet pairs, and a very small fraction of the pairs are 
 \bjet\ light-jet pairs or pairs containing one or more $\tau$ hadron(s). 
-The yellow band in the lower pad indicates the overall systematics and the 
-black band represents the \ttbar\ modelling systematics, which is dominating 
-in the lower band (DL1 or DL1r < 4) and in the higher band (DL1 or DL1r > 4) the
-uncertainty due to the 1.25 $\pm$ 0.25 scale factor applied to the 3-\bjet\ events 
-starts to become more important. 
+The yellow band in the lower pad indicates the overall systematics uncertainties
+and the black band represents the \ttbar\ modelling systematics uncertainty, 
+which dominates at low \btagging\ discriminant (DL1 or DL1r < 4). 
+At high \btagging\ discriminant (DL1 or DL1r > 4), the
+uncertainty due to the $1.25 \pm 0.25$ scale factor becomes more important. 
 \begin{figure}[H]
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
@@ -996,19 +1056,19 @@ The Dl1 and DL1r $c$-jet efficiencies and scale factors with systematics
 uncertainties are calculated with 4 fixed cut working points: 
 60\%, 70\%, 77\%, and 85\% for the PFlow and VR track jets collection in the latest derivation 
 in December 2020. The working point corresponds to the efficiency of a true \bjet\ passing 
-the $b$-tagging algorithms. 
-The efficiencies are shown in Figure \ref{fig:Dec_eff_PFlow}, \ref{fig:Dec_eff_VRJets} 
+the $b$-tagging algorithms for \ttbar\ events. 
+The efficiencies are shown in Figure \ref{fig:Dec_eff_PFlow} and \ref{fig:Dec_eff_VRJets} 
 for the PFlow jet collections and the VR Track jets respectively. 
-These results combine the standard selection and the high $p_T$ selection, 
-and a 1.25 $\pm$ 0.25 scale factor is applied on events with 3 true $b$ jets. 
+These results combine the standard selection and the high-$p_T$ selection, 
+and a $1.25 \pm 0.25$ scale factor is applied on events with 3 true $b$-jets. 
 In the efficiencies plots, the black line represents the data efficiency and the red and 
 green line represent DL1 and DL1r efficiencies respectively. The overall uncertainties are shown 
 in the red and green band, where the systematics uncertainties dominate 
-in the low \pt\ bins (\pt\ < 150) and the statistical error, represents by the error bar of the 
-markers become more visible in the last bin. The DL1 efficiencies are in good agreement with the 
+in the low-\pt\ bins (\pt\ < 150) and the statistical error, represented by the error bars on the 
+markers, become more visible in the last bin. The DL1 efficiencies are in good agreement with the 
 data efficiency within the uncertainty band for most of the bins in all WPs, while the DL1r efficiencies 
 show a bigger discrepancy to the data in general. 
-The scale factors are calculated bin by bin as the ratio of the data efficiencies to the tagger efficiencies,
+The scale factors are calculated bin-by-bin as the ratio of the data efficiencies to the tagger efficiencies,
 as shown in \ref{fig:Dec_SF_PFlow}, \ref{fig:Dec_SF_VRJets}. 
 The tighter working points (60\%, 70\%) show larger uncertainties and bigger deviation from 1, while
 the looser working points (77\%, 85\%) have much smaller uncertainty and the simulation is able to 
@@ -1034,8 +1094,8 @@ recover the data well.
 \centering
 \includegraphics[width=1\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff85.eps}
 \end{minipage}
-\caption{Charm-jet efficiencies of PFlow jets collection of derivation 
-p4060 in December 2020, given for 4 different working points.} \label{fig:Dec_eff_PFlow}
+\caption{Charm-jet efficiencies of the PFlow jets collection 
+given for 4 different working points.} \label{fig:Dec_eff_PFlow}
 \end{figure}
 
 \begin{figure}[H]
@@ -1055,8 +1115,8 @@ p4060 in December 2020, given for 4 different working points.} \label{fig:Dec_ef
 \centering
 \includegraphics[width=1\textwidth]{SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff85.eps}
 \end{minipage}
-\caption{Charm-jet efficiencies of VR-Track jets collection of derivation 
-p4060 in December 2020, given for 4 different working points.} \label{fig:Dec_eff_VRJets}
+\caption{Charm-jet efficiencies of VR-Track jets collection of 
+given for 4 different working points.} \label{fig:Dec_eff_VRJets}
 \end{figure}
 
 % SF plots
@@ -1078,8 +1138,8 @@ p4060 in December 2020, given for 4 different working points.} \label{fig:Dec_ef
 \centering
 \includegraphics[width=1\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF85.eps}
 \end{minipage}
-\caption{Charm-jet scale factors of PFlow jets collection of derivation 
-p4060 in December 2020, given for 4 different working points.} \label{fig:Dec_SF_PFlow}
+\caption{Charm-jet scale factors of the PFlow jets collection of 
+given for 4 different working points.} \label{fig:Dec_SF_PFlow}
 \end{figure}
 
 \begin{figure}[H]
@@ -1099,85 +1159,20 @@ p4060 in December 2020, given for 4 different working points.} \label{fig:Dec_SF
 \centering
 \includegraphics[width=1\textwidth]{SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF85.eps}
 \end{minipage}
-\caption{Charm-jet scale factors of VR-Track jets collection of derivation 
-p4060 in December 2020, given for 4 different working points.} \label{fig:Dec_SF_VRJets}
+\caption{Charm-jet scale factors of VR-Track jets collection 
+given for 4 different working points.} \label{fig:Dec_SF_VRJets}
 \end{figure}
 
 
 % maybe not neccessary to include the pseudocontinuous plots 
 
 \iffalse
-\begin{figure}[H]
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF60.eps}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF70.eps}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF77.eps}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF85.eps}
-\end{minipage}
-\caption{Scale factors of calibration of derivation p3970 in March 2020, given for  4 different working points.} \label{fig:March}
-\end{figure}
-
-
-
-\begin{figure}[H]
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{March_highpT/eff60.eps}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{March_highpT/eff70.eps}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{March_highpT/eff77.eps}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{March_highpT/eff85.eps}
-\end{minipage}
-\caption{Charm-jet efficiencies of calibration of derivation p3970 in March 2020, combining the standard 
-and the high-$p_{T}$ selection, given for  4 different working points.} \label{fig:March_highpT_eff}
-\end{figure}
-
-
-\begin{figure}[H]
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{March_highpT/SF60.eps}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{March_highpT/SF70.eps}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{March_highpT/SF77.eps}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{March_highpT/SF85.eps}
-\end{minipage}
-\caption{Scale factors of calibration of derivation p3970 in March 2020, 
-combining the standard and the high-$p_{T}$ selection, given for  4 different working points.} \label{fig:March_highpT}
-\end{figure}
-
 
 
 In terms of statistical gain, taking the 60\% working point scale factor with 2018 data as an example, the error is reduced as expected. In the last bin of the $p_{T}$ distribution of scale factors, the error is reduced by 55\%, which suggests the success of high-$p_{T}$ selection method. The percentage reduction of error of each bin is given in Tab.\ref{tab:limit}:
 
 
- \begin{table}[h]
+ \begin{table}[ht]
  \begin{centering}
  \begin{tabular}{|p{2.5em}||p{2.5em}|p{2.5em}|p{5em}||p{2.5em}|p{2.5em}|p{5em}||p{5em}|}
           \hline
@@ -1198,11 +1193,37 @@ In terms of statistical gain, taking the 60\% working point scale factor with 20
 \fi
 
 \newpage
+
+
+
+
+\section{Search for Higgs boson pair production in the \bbtt\ channel}
+\label{sec:search for dihiggs}
+\subsection{Data and Monte Carlo samples}
+\subsection{Trigger and event selection}
+\subsection{Background estimation}
+\subsection{Multivariate analysis}
+\subsection{Systematic uncertainties}
+\subsection{Results}
+
+
+
+
+\section{Summary}
+
+
+
+
+
+
+
 \printbibliography
 \appendix
 \newpage
-\section{Addition plots for kinematic variables}
-\subsection{Standard selection}
+\section{Supplementary material for ATLAS flavour tagging}
+\subsection{Additional plots for kinematic variables}
+\subsubsection{Standard selection}
+\label{sec:appendix_standard_selection}
 \begin{figure}[H]
 \begin{minipage}[b]{.45\textwidth}
 \centering
@@ -1242,7 +1263,8 @@ the distributions of the DL1 and Dl1r score distributions of the leading jet.} \
 \end{figure}
 
 
-\subsection{Low \pt\ selection}
+\subsubsection{Low-\pt\ selection}
+\label{sec:appendix_lowpT_selection}
 \begin{figure}[H]
 \begin{minipage}[b]{.45\textwidth}
 \centering
@@ -1266,7 +1288,40 @@ The top two plots are distributions of the DL1 and Dl1r score of the
 sub-leading jet.} \label{fig:lowpT_selection}
 \end{figure}
 
-\subsection{Combined selection}
+\subsection{High-\pt\ selection}
+\label{sec:appendix_highpT_selection}
+\begin{figure}[H]
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_J0_DL1.png}
+	\end{minipage}\hfill
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_J0_DL1r.png}
+	\end{minipage}\hfill
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_J0_eta.png}
+	\end{minipage}\hfill
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_J0_pt.png}
+	\end{minipage}\hfill
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_Mbb.png}
+	\end{minipage}\hfill
+	\begin{minipage}[b]{.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_mjj.png}
+	\end{minipage}
+	\caption{Various kinematic distributions of the combination of the 
+	standard selection and the high-$p_T$ selection, before fitting or 
+	tagging with stat-only uncertainties.} \label{fig:highpT_selection}
+\end{figure}
+
+\subsubsection{Combined selection}
+\label{sec:appendix_combined_selection}
 \begin{figure}[H]
 	\begin{minipage}[b]{.45\textwidth}
 	\centering
@@ -1432,38 +1487,9 @@ sub-leading jet.} \label{fig:lowpT_selection}
 	
 
 
-\section{Plots for previous calibrations}
+\subsection{Plots for previous calibrations}
 
-	
-\begin{figure}[H]
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_J0_DL1.png}
-	\end{minipage}\hfill
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_J0_DL1r.png}
-	\end{minipage}\hfill
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_J0_eta.png}
-	\end{minipage}\hfill
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_J0_pt.png}
-	\end{minipage}\hfill
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_Mbb.png}
-	\end{minipage}\hfill
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_mjj.png}
-	\end{minipage}
-	\caption{Various kinematic distributions of the combination of the 
-	standard selection and the high-$p_T$ selection, before fitting or 
-	tagging with stat-only uncertainties.} \label{fig:highpT_selection}
-\end{figure}
+
 
 \newpage
 \begin{figure}[H]
@@ -1482,7 +1508,7 @@ sub-leading jet.} \label{fig:lowpT_selection}
 \newpage
 	
 
-\section{Experimental uncertainties}
+\subsection{Experimental uncertainties}
 
 
 

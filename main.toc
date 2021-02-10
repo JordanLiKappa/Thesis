@@ -1,57 +1,105 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Flavour tagging at ALTAS}{3}{section.1}%
+\contentsline {section}{\numberline {1}Introduction}{4}{section.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1}Flavour tagging}{3}{subsection.1.1}%
+\contentsline {section}{\numberline {2}Theory and Motivation}{4}{section.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2}Calibration methods}{4}{subsection.1.2}%
+\contentsline {subsection}{\numberline {2.1}The Standard Model and the Higgs boson}{4}{subsection.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Charm mis-tagging calibration}{6}{section.2}%
+\contentsline {subsection}{\numberline {2.2}Beyond the Standard Model}{4}{subsection.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1}Introduction}{6}{subsection.2.1}%
+\contentsline {section}{\numberline {3}The ATLAS experiment at the Large Hadron Collider}{4}{section.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}Data and Monte Carlo samples}{6}{subsection.2.2}%
+\contentsline {subsection}{\numberline {3.1}The Large Hadron Collider}{4}{subsection.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3}Kinematic Likelihood Fitter}{8}{subsection.2.3}%
+\contentsline {subsection}{\numberline {3.2}TThe ATLAS Detector}{4}{subsection.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.1}Maximising likelihood}{8}{subsubsection.2.3.1}%
+\contentsline {section}{\numberline {4}Data and Monte Carlo samples}{4}{section.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4}Event selection}{9}{subsection.2.4}%
+\contentsline {section}{\numberline {5}Physics Objects Reconstruction}{4}{section.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.4.1}Standard selection}{9}{subsubsection.2.4.1}%
+\contentsline {subsection}{\numberline {5.1}Track and vertex}{4}{subsection.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.4.2}Selection for low-$p_T$ extension}{10}{subsubsection.2.4.2}%
+\contentsline {subsection}{\numberline {5.2}Electron}{4}{subsection.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.4.3}High $p_T$ selection}{12}{subsubsection.2.4.3}%
+\contentsline {subsection}{\numberline {5.3}Muon}{4}{subsection.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {2.4.3.1}Optimisation of high $p_{T}$ cut}{12}{paragraph.2.4.3.1}%
+\contentsline {subsection}{\numberline {5.4}Jet}{4}{subsection.5.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.4.4}Combined selection}{12}{subsubsection.2.4.4}%
+\contentsline {subsection}{\numberline {5.5}$b$-Jets}{4}{subsection.5.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5}Systematic uncertainties}{15}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {5.5.1}Flavour tagging}{4}{subsubsection.5.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.5.1}Experimental uncertainties}{16}{subsubsection.2.5.1}%
+\contentsline {subsection}{\numberline {5.6}Missing transverse energy}{6}{subsection.5.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.5.2}Modelling uncertainties}{16}{subsubsection.2.5.2}%
+\contentsline {subsection}{\numberline {5.7}Hadronically decaying $\tau $ lepton}{6}{subsection.5.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.5.3}Under-estimation of $t\bar {t}$ + Heavy flavour background }{16}{subsubsection.2.5.3}%
+\contentsline {section}{\numberline {6}Charm-jet mis-tagging calibration}{6}{section.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6}Results}{18}{subsection.2.6}%
+\contentsline {subsection}{\numberline {6.1}Calibration methods for $b$-jet\ and light-jet}{6}{subsection.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.6.1}Overview}{18}{subsubsection.2.6.1}%
+\contentsline {subsection}{\numberline {6.2}Calibration method for charm-jet}{7}{subsection.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.6.2}Kinematic distributions}{18}{subsubsection.2.6.2}%
+\contentsline {subsection}{\numberline {6.3}Data and Monte Carlo samples}{8}{subsection.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.6.3}Efficiencies and Scale Factors}{20}{subsubsection.2.6.3}%
+\contentsline {subsection}{\numberline {6.4}Kinematic Likelihood Fitter}{10}{subsection.6.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}Addition plots for kinematic variables}{30}{appendix.A}%
+\contentsline {subsection}{\numberline {6.5}Maximising likelihood}{10}{subsection.6.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.1}Standard selection}{30}{subsection.A.1}%
+\contentsline {subsection}{\numberline {6.6}Event selection}{12}{subsection.6.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2}Low \ensuremath {p_{\mathrm T}}\ selection}{31}{subsection.A.2}%
+\contentsline {subsubsection}{\numberline {6.6.1}Standard selection}{12}{subsubsection.6.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.3}Combined selection}{32}{subsection.A.3}%
+\contentsline {subsubsection}{\numberline {6.6.2}Selection for low-$p_T$ extension}{13}{subsubsection.6.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B}Plots for previous calibrations}{38}{appendix.B}%
+\contentsline {subsubsection}{\numberline {6.6.3}High-$p_T$ selection}{13}{subsubsection.6.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C}Experimental uncertainties}{41}{appendix.C}%
+\contentsline {subsubsection}{\numberline {6.6.4}Combined selection}{14}{subsubsection.6.6.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.7}Systematic uncertainties}{14}{subsection.6.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.7.1}Experimental uncertainties}{15}{subsubsection.6.7.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.7.2}Modelling uncertainties}{16}{subsubsection.6.7.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.8}Under-estimation of $t\bar {t}$ + Heavy flavour background }{18}{subsection.6.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.9}Results}{18}{subsection.6.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.9.1}Overview}{18}{subsubsection.6.9.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.9.2}Kinematic distributions}{19}{subsubsection.6.9.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.9.3}Efficiencies and Scale Factors}{21}{subsubsection.6.9.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}Search for Higgs boson pair production in the $b\bar {b}\tau \bar {\tau }$\ channel}{26}{section.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.1}Data and Monte Carlo samples}{26}{subsection.7.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.2}Trigger and event selection}{26}{subsection.7.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.3}Background estimation}{26}{subsection.7.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.4}Multivariate analysis}{26}{subsection.7.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.5}Systematic uncertainties}{26}{subsection.7.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.6}Results}{26}{subsection.7.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8}Summary}{26}{section.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A}Supplementary material for ATLAS flavour tagging}{31}{appendix.A}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.1}Additional plots for kinematic variables}{31}{subsection.A.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {A.1.1}Standard selection}{31}{subsubsection.A.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {A.1.2}Low-\ensuremath {p_{\mathrm T}}\ selection}{32}{subsubsection.A.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.2}High-\ensuremath {p_{\mathrm T}}\ selection}{33}{subsection.A.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {A.2.1}Combined selection}{34}{subsubsection.A.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.3}Plots for previous calibrations}{39}{subsection.A.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.4}Experimental uncertainties}{42}{subsection.A.4}%
