@@ -52,15 +52,11 @@
 \date{\today}
 \maketitle
 \begin{figure}[htp]
-\begin{minipage}[b]{.5\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{logo.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
+\includegraphics[width=.5\textwidth]{logo.png}
 \vspace{3em}
 \centering
-\includegraphics[width=1\textwidth]{ATLAS-Logo-Ref-RGB-H_1.jpg}
-\end{minipage}
+\includegraphics[width=.45\textwidth]{ATLAS-Logo-Ref-RGB-H_1.jpg}
 \end{figure}
 \newpage
 
@@ -240,6 +236,7 @@ During the task the calibration range has been extended down to 20 GeV (previous
 jet \pt\ and a new selection category has been developed 
 to increase the data statistics of the scale factors in the 
 high-$p_T$ ($p_T^{jet}$ > 70~GeV) region.
+The calibration is performed on the PFlow jets and VR-Track jets (TODO: refer back to definition in Object reconstruction section). 
 
 As determined by the CKM matrix \cite{CKM1,CKM2}, the $W$ boson decay dominantly to 
 a pair of light-quark ($u$-quark and $d$-quark) or to
@@ -271,10 +268,7 @@ efficiency.
 
 \begin{figure}[H]
 \centering
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{feynman.png}
-\end{minipage}
+\includegraphics[width=.45\textwidth]{feynman.png}
 \caption{Feynman diagram of the semi-leptonic $t\bar{t}$ events.}
 \label{fig:feynman}
 \end{figure}
@@ -524,10 +518,10 @@ in association with jets or single-top production.
 % In the standard selection, only events with exactly 4 jets are selected. 
 % Therefore, there is no room for wrong choice of choosing 4 jets out of 4 jets, 
 % which will then be the input for the KLFitter tool (More details can be found 
-% in section \ref{standard selection}). However, this becomes a problem when the 
+% in Section \ref{standard selection}). However, this becomes a problem when the 
 % 4 jets requirement is lifted. In the selection for reducing errors in high-$p_{T}$ 
 % bins of scale factors (referred to as high-$p_{T}$ selection from now on, more 
-% details can be found in section \ref{high_pt_selection}), events with at least 5 
+% details can be found in Section \ref{high_pt_selection}), events with at least 5 
 % jets can also pass the selection. Therefore how to choose the 4 jets out of the 5 
 % jets and possibly more jets is now a problem. Without using any \btagging\ information, 
 % the best solution in this case would be to simply select the 4 jets with the highest $p_T$. %In the June 2019 Charm calibration and calibrations before that, the 'kBtagPriorityFourJets' selection mode was used, which will select the 4 jets highest $p_T$ while prioritising the $b$-jets. This was not a problem until the high-$p_{T}$ selection was introduced. With this particular mode an anomaly was observed in the $b$-jet purity in the reconstructed $W$ boson decay jets, when comparing the combination of the high-$p_{T}$ selection and the standard selection to the standard selection, as shown in Figure \ref{fig:highpt}(a)(b). 
@@ -551,34 +545,18 @@ in association with jets or single-top production.
 % \begin{figure}[H]
 % \centering
 
-% \begin{minipage}[b]{.45\textwidth}
-% \centering
-% \includegraphics[width=1\textwidth]{b_purity/_stats_bjets_purityp_Tjet0GeV.eps}
-% \footnotesize (a) Comparing the leading jet $b$-jet purity distribution 
+% \includegraphics[width=.45\textwidth]{b_purity/_stats_bjets_purityp_Tjet0GeV.eps
 % between the standard selection and the high-$p_T$ selection.\label{fig:b_after_leading}
-% \end{minipage}\hfill
-% \begin{minipage}[b]{.45\textwidth}
-% \centering
-% \includegraphics[width=1\textwidth]{b_purity/_stats_bjets_purityp_Tjet1GeV.eps}
-% \footnotesize (b) Comparing the sub-leading jet $b$-jet 
+% \includegraphics[width=.45\textwidth]{b_purity/_stats_bjets_purityp_Tjet1GeV.eps
 % purity distribution between the standard selection and the high-$p_T$ selection.\label{fig:b_after_subleading}
-% \end{minipage}\hfill
-% \begin{minipage}[b]{.45\textwidth}
-% \centering
-% \includegraphics[width=1\textwidth]{b_purity/tagged_stats_bjets_purityp_Tjet0GeV.eps}
-% \label{b_tagged_leading}
+% \includegraphics[width=.45\textwidth]{b_purity/tagged_stats_bjets_purityp_Tjet0GeV.eps
 % \footnotesize (c) Comparing the leading jet $b$-jet purity distribution 
 % between the standard selection and the high-$p_T$ selection after 
 % applying $b$-tagging with DL1r tagger at 60\% working point.
-% \end{minipage}\hfill
-% \begin{minipage}[b]{.45\textwidth}
-% \centering
-% \includegraphics[width=1\textwidth]{b_purity/tagged_stats_bjets_purityp_Tjet1GeV.eps}
-% \label{b_tagged_subleading}
+% \includegraphics[width=.45\textwidth]{b_purity/tagged_stats_bjets_purityp_Tjet1GeV.eps
 % \footnotesize (d) Comparing the sub-leading jet $b$-jet purity 
 % distribution between the standard selection and the high-$p_T$ 
 % selection after applying $b$-tagging with DL1r tagger at 60\% working point.
-% \end{minipage}
 % \caption{Comparison of the $b$-jet purity in leading (the left column) 
 % and sub-leading (the right column) jet $p_{T}$ distribution.}
 % \label{fig:highpt}
@@ -589,22 +567,44 @@ in association with jets or single-top production.
  % The analysis uses the full available integrated luminosity collected with the ATLAS detector from the all years. This corresponds to a collected luminosity of 139 fb$^{-1}$. The event selection aims to select a sample enriched in $t\bar{t}$ events. The lowest un-prescaled single electron and single-muon triggers are used.
 \subsubsection{Standard selection}
 \label{standard selection}
+
+\begin{table}[ht]
+	\centering
+	\small
+	\setlength\tabcolsep{5pt} 
+	\newcolumntype{C}{ @{}>{${}}c<{{}$}@{} }
+	\begin{tabular}{|r *2{|rCr}| }
+	\hline
+	& \multicolumn{3}{|c|}{PFlow jets} & \multicolumn{3}{c|}{Track jets} \\
+	\hline
+	Data          &     227118       &   &              &   218351  &       &         \\  
+	\ttbar\       &     235670       &\pm& 200          &   223770  &\pm& 180     \\
+	Non \ttbar\   &     7610         &\pm& 120          &   7280    &\pm& 100    \\
+	Data/MC       &     0.934        &\pm& 0.002        &   0.945   &\pm& 0.002 \\
+	\hline
+	\end{tabular}
+	\vspace{0.2cm}
+	\caption{Standard selection: prefit comparison of the  number of events in data and in 
+	simulation considering PFlow jets and VR-Track jets for 
+	events with exactly 4 jets.}
+	\label{tab:yields_standard}
+\end{table}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.45\textwidth]{figs_support/plots_withoutHighpT/DataMC_h_J0_pt.pdf}
-	\includegraphics[width=0.45\textwidth]{figs_support/plots_withoutHighpT/DataMC_h_J0_pttrackjet.pdf}\\
-	\includegraphics[width=0.45\textwidth]{figs_support/plots_withoutHighpT/DataMC_h_J1_pt.pdf}
-	\includegraphics[width=0.45\textwidth]{figs_support/plots_withoutHighpT/DataMC_h_J1_pttrackjet.pdf}\\
+	\includegraphics[width=0.45\textwidth]{FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_J0_pt.pdf}
+	\includegraphics[width=0.45\textwidth]{FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_J0_pttrackjet.pdf}\\
+	\includegraphics[width=0.45\textwidth]{FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_J1_pt.pdf}
+	\includegraphics[width=0.45\textwidth]{FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_J1_pttrackjet.pdf}\\
 	\caption{Standard selection: data versus simulation for various variables used in the analysis for 
-	particle flow jets in the left column and for track jets in the right column, 
-	inclusive of the low-\pt\ selection. 
+	PFlow jets in the left column and for VR-Track jets in the right column, 
+	inclusive of the low-\pt\ selection, described in Section \ref{sec:lowpT_selection}. 
 	The leading jet and sub-leading jet refer to the highest \pt\ $W$-jet and the 
 	second highest \pt\ jet respectively. The 'non \ttbar' background 
 	indicates background comes from non-\ttbar\ processes like $W$ or $Z$ production
 	in association with jets or single-top production. }
 	\label{fig:kinematic_distributions_standard}
-	\end{figure}
-	
+\end{figure}
+
 Events are required to contain exactly one trigger-matched 
 lepton with $p_{T} > 27$~GeV and exactly four jets with 
 $p_{T} > 25$~GeV. Leptons are required to have $p_{T}$ 
@@ -621,10 +621,11 @@ where $\Delta\phi = \phi(\MET)-\phi(\ell)$ is the azimuthal difference between
 the lepton and \MET.
 % Due to the requirement on jet $p_T$ and binning strategy, the calibration 
 % result can be applied to jets with $p_{T}$ between 25 to 200 GeV. 
-An example of the \pt\ distributions before any tagging or fitting and 
+The yields of the data/MC are given in Table \ref{tab:yields_standard}.
+An example of the \pt\ distributions
+before any tagging or fitting and 
 after the standard selection is shown in Figure \ref{fig:kinematic_distributions_standard}. 
-More plots can be found in Appendix \ref{sec:appendix_standard_selection}, 
-Figure \ref{fig:standard_selection}.
+More plots can be found in Appendix \ref{sec:appendix_standard_selection}.
 The yellow band in the lower pad shows the overall systematics uncertainties combining the 
 experimental uncertainties and the \ttbar\ modelling uncertainties, as described in 
 Section \ref{sec:FTAG_systematics}. The data/MC ratio shows good agreement 
@@ -634,41 +635,58 @@ within the systematic uncertainties.
 \label{sec:lowpT_selection}
 The author has developed an othorgonal selection to 
 extend the calibration in the low-$p_{T}$ region so that the calibration 
-can be applied to jets with $\pt\ < 20$~GeV.
+can be applied to PFlow jets with $20< \pt\ < 25$~GeV.
+N.B. the \pt\ threshold of the VR-Track jets is $10$~GeV 
+therefore the low-\pt\ selection is not needed. 
 Instead of requiring events to 
 have exactly 4 jets $\pt\ > 25$~GeV, events are required to have exactly 3 jets with $p_{T} > 25$~GeV 
 and exactly 1 jet with $25$~GeV $> p_{T} > 20$~GeV. Other than that, 
 all other requirements for the selection are the same. 
-This additional cut provides candidates for the $W$-jet that is used 
+This additional cut provides candidates for the PFlow $W$-jet that is used 
 for calibration in the $20-25$~GeV region. 
-The inclusive yields of the standard selection and the low-\pt\ selection 
-of the data/MC are given in Table \ref{tab:yields_standard}.
+The inclusive yields of the low-\pt\ selection 
+of the data/MC are given in Table \ref{tab:yields_lowpT}.
 The distributions of the sub-leading 
 jet are shown in Appendix \ref{sec:appendix_lowpT_selection}, Figure \ref{fig:lowpT_selection}. 
 Good agreement between MC and data 
 is shown in these distributions, and the $p_{T}$ range of the sub-leading has gone down to 20 GeV. 
+
 
 \begin{table}[ht]
 	\centering
 	\small
 	\setlength\tabcolsep{5pt} 
 	\newcolumntype{C}{ @{}>{${}}c<{{}$}@{} }
-	\begin{tabular}{|r *2{|rCr}| }
+	\begin{tabular}{|r *1{|rCr}| }
 	\hline
-	& \multicolumn{3}{|c|}{Particle flow jets} & \multicolumn{3}{c|}{Track jets} \\
+	& \multicolumn{3}{|c|}{PFlow jets} \\
 	\hline
-	Data          &     287105       &       &              &   218351  &       &         \\  
-	\ttbar\         &     292200       &\pm& 200          &   223770  &\pm& 180     \\
-	Non \ttbar\         &     10950        &\pm& 120          &   7280    &\pm& 100    \\
-	Data/MC       &     0.947        &\pm& 0.002        &   0.945   &\pm& 0.002 \\
+	Data          &     59987       &   &                      \\  
+	\ttbar\       &     56530       &\pm&     90        		 \\
+	Non \ttbar\   &     3340        &\pm&     60    		 \\
+	Data/MC       &     1.002       &\pm&  0.004      			 \\
 	\hline
 	\end{tabular}
 	\vspace{0.2cm}
-	\caption{Standard selection: prefit comparison of the  number of events in data and in 
-	simulation considering particle flow jets and track jets for 
-	events with exactly 4 jets, inclusive of the low-\pt\ selection.}
-	\label{tab:yields_standard}
+	\caption{Low-\pt\ selection: prefit comparison of the  number of events in data and in 
+	simulation considering PFlow jets and VR-Track jets for 
+	events with exactly 3 jets with $\pt\ > 25$~GeV and one jet with $20 < \pt\ < 25$~GeV.}
+	\label{tab:yields_lowpT}
 \end{table}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.45\textwidth]{FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_J0_pt.pdf}
+	\includegraphics[width=0.45\textwidth]{FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_J1_pt.pdf}\\
+	\caption{Low-\pt\ selection: data versus simulation for various variables used in the analysis for 
+	PFlow jets in the left column and for VR-Track jets in the right column, 
+	inclusive of the low-\pt\ selection, described in Section \ref{sec:lowpT_selection}. 
+	The leading jet and sub-leading jet refer to the highest \pt\ $W$-jet and the 
+	second highest \pt\ jet respectively. The 'non \ttbar' background 
+	indicates background comes from non-\ttbar\ processes like $W$ or $Z$ production
+	in association with jets or single-top production. }
+	\label{fig:kinematic_distributions_standard}
+\end{figure}
 
 
 \subsubsection{High-$p_T$ selection}
@@ -701,32 +719,12 @@ The value of $70$~GeV is chosen as it gives the highest value of $P^{\rm{Cut}}$.
 
 
 \begin{figure}[!h]
-\begin{minipage}[b]{.45\textwidth}
+\includegraphics[width=.45\textwidth]{stat_gains/statsgain_0GeV.png}
+\includegraphics[width=.45\textwidth]{stat_gains/statsgain_40GeV.png}
+\includegraphics[width=.45\textwidth]{stat_gains/statsgain_70GeV.png}
+\includegraphics[width=.45\textwidth]{stat_gains/statsgain_90GeV.png}
 \centering
-\includegraphics[width=1\textwidth]{stat_gains/statsgain_0GeV.png}
-\footnotesize (a) No cut.
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{stat_gains/statsgain_40GeV.png}
-\footnotesize (b) $\pt\ > 40$~GeV.
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{stat_gains/statsgain_70GeV.png}
-\footnotesize (c) $\pt\ > 70$~GeV.
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{stat_gains/statsgain_90GeV.png}
-\footnotesize (c) $\pt\ > 90$~GeV.
-\end{minipage}\hfill
-\centering
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{stat_gains/statsgain_140GeV.png}
-\footnotesize (d) $\pt\ > 140$~ GeV.
-\end{minipage}\hfill
+\includegraphics[width=.45\textwidth]{stat_gains/statsgain_140GeV.png}
 
 \caption{Comparison of different cut values in terms of gain in stats and $c$-jet purity.}
 \label{fig:cutvalue}
@@ -739,30 +737,30 @@ The value of $70$~GeV is chosen as it gives the highest value of $P^{\rm{Cut}}$.
 	\newcolumntype{C}{ @{}>{${}}c<{{}$}@{} }
 	\begin{tabular}{|r *2{|rCr}| }
 	\hline
-	& \multicolumn{3}{|c|}{Particle flow jets} & \multicolumn{3}{c|}{Track jets} \\
+	& \multicolumn{3}{|c|}{PFlow jets} & \multicolumn{3}{c|}{Track jets} \\
 	\hline
 	
-	Data    &     98273  &           &   &        120929   &              &   \\ 
-	\ttbar\ &    99430 &\pm&  120 &        117090 &\pm&  130     \\
-	Non \ttbar\   &      1842  &\pm&  21 &          2640  &\pm&  50     \\
-	Data/MC &      0.97  &\pm&  0.003   &     1.01  &\pm&  0.003       \\
+	Data    &     98273  &           &   &        83957   &              &   \\ 
+	\ttbar\ &    99430 &\pm&  120 &        87476 &\pm&  110     \\
+	Non \ttbar\   &      1842  &\pm&  21 &          1570  &\pm&  20     \\
+	Data/MC &      0.97  &\pm&  0.003   &     0.94  &\pm&  0.003       \\
 	\hline
 
 	\end{tabular}
 	\vspace{0.2cm}
 	\caption{High-\pt\ selection: prefit comparison of the number of events in data and in 
-	simulation considering particle flow jets and track jets.}
+	simulation considering PFlow jets and VR-Track jets.}
 	\label{tab:yields_highpT}
 	\end{table}
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width=0.45\textwidth]{figs_support/plots_hm/DataMC_h_J0_pt_all_2.pdf}
-	\includegraphics[width=0.45\textwidth]{figs_support/plots_hm/DataMC_h_tjet_J0_pt_all_2.pdf}\\
-	\includegraphics[width=0.45\textwidth]{figs_support/plots_hm/DataMC_h_J1_pt_all_2.pdf}
-	\includegraphics[width=0.45\textwidth]{figs_support/plots_hm/DataMC_h_tjet_J1_pt_all_2.pdf}\\
+	\includegraphics[width=0.45\textwidth]{FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_J0_pt.pdf}
+	\includegraphics[width=0.45\textwidth]{FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_J0_pttrackjet.pdf}\\
+	\includegraphics[width=0.45\textwidth]{FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_J1_pt.pdf}
+	\includegraphics[width=0.45\textwidth]{FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_J1_pttrackjet.pdf}\\
 	\caption{High-\pt\ selection: data versus simulation for various variables used in the analysis for 
-	particle flow jets in the left column and for track jets in the right column.}
+	PFlow jets in the left column and for VR-Track jets in the right column.}
 	\label{fig:kinematic_distributions_highpT}
 \end{figure}
 	
@@ -770,8 +768,7 @@ The value of $70$~GeV is chosen as it gives the highest value of $P^{\rm{Cut}}$.
 The yields of the data/MC are given in Table \ref{tab:yields_highpT}. 
 An example of the \pt\ distributions before any tagging or fitting applying 
 the high-\pt\ selection is shown in Figure \ref{fig:kinematic_distributions_highpT}. 
-More plots can be found in Appendix \ref{sec:appendix_highpT_selection}, 
-Figure \ref{fig:highpT_selection}.
+More plots can be found in Appendix \ref{sec:appendix_highpT_selection}.
 
 
 
@@ -784,7 +781,7 @@ and statistics for the calibration.
 The yields of the data/MC are given in Table \ref{tab:yields_combined}, 
 an example of the \pt\ distributions before any tagging or fitting and 
 after the standard selection is shown in Figure \ref{fig:kinematic_distributions_combined}. More plots 
-can be found in Appendix \ref{sec:appendix_combined_selection}, Figures \ref{fig:jets_PFlow}-\ref{fig:mass_VRJets}.
+can be found in Appendix \ref{sec:appendix_combined_selection}.
 
 \begin{table}[ht]
 	\centering
@@ -793,7 +790,7 @@ can be found in Appendix \ref{sec:appendix_combined_selection}, Figures \ref{fig
 	\newcolumntype{C}{ @{}>{${}}c<{{}$}@{} }
 	\begin{tabular}{|r *2{|rCr}| }
 	\hline
-	& \multicolumn{3}{|c|}{Particle flow jets} & \multicolumn{3}{c|}{Track jets} \\
+	& \multicolumn{3}{|c|}{PFlow jets} & \multicolumn{3}{c|}{Track jets} \\
 	\hline
 	Data          &    385378           &      &        &   302308         &  &     \\  
 	\ttbar\       &      383520   &\pm&  230 &            302690 &\pm&  200   \\
@@ -804,19 +801,19 @@ can be found in Appendix \ref{sec:appendix_combined_selection}, Figures \ref{fig
 	\end{tabular}
 	\vspace{0.2cm}
 	\caption{Combined selection: prefit comparison of the number of events in data and in 
-	simulation considering particle flow jets and track jets for an inclusive
+	simulation considering PFlow jets and VR-Track jets for an inclusive
 	selection.}
 	\label{tab:yields_combined}
 	\end{table}
 
 \begin{figure}[!h]
 		\centering
-		\includegraphics[width=0.45\textwidth]{figs_support/plots_def/DataMC_h_J0_pt_all.pdf}
-		\includegraphics[width=0.45\textwidth]{figs_support/plots_def/DataMC_h_tjet_J0_pt_all.pdf}\\
-		\includegraphics[width=0.45\textwidth]{figs_support/plots_def/DataMC_h_J1_pt_all.pdf}
-		\includegraphics[width=0.45\textwidth]{figs_support/plots_def/DataMC_h_tjet_J1_pt_all.pdf}\\
+		\includegraphics[width=0.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_pt.pdf}
+		\includegraphics[width=0.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_pttrackjet.pdf}\\
+		\includegraphics[width=0.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_pt.pdf}
+		\includegraphics[width=0.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_pttrackjet.pdf}\\
 		\caption{Combined selection: data versus simulation for various variables used in the analysis for 
-		particle flow jets in the left column and for track jets in the right column.}
+		PFlow jets in the left column and for VR-Track jets in the right column.}
 		\label{fig:kinematic_distributions_combined}
 \end{figure}
 		
@@ -871,7 +868,7 @@ are shown in Table \ref{tab:modelling_syst}.
 	\newcolumntype{C}{ @{}>{${}}c<{{}$}@{} }
 	\begin{tabular}{|r *2{|rCr|r}| }
 	\hline
-	& \multicolumn{4}{|c|}{Particle flow jets} & \multicolumn{4}{c|}{Track jets} \\
+	& \multicolumn{4}{|c|}{PFlow jets} & \multicolumn{4}{c|}{Track jets} \\
 	\hline
 	& \multicolumn{3}{c|}{Yields} & \specialcell{Ratio of \\difference to \\nominal sample} & \multicolumn{3}{c|}{Yields} & \specialcell{Ratio of \\difference to\\ nominal sample} \\
 	\hline
@@ -890,7 +887,7 @@ are shown in Table \ref{tab:modelling_syst}.
 	\end{tabular}
 	\vspace{0.2cm}
 	\caption{Comparison of the number of events in data and in 
-	simulation considering particle flow jets and track jets for an inclusive
+	simulation considering PFlow jets and VR-Track jets for an inclusive
 	selection. The uncertainty due to the variations samples being produced 
 	by fast simulation is included in the table as \ttbar\ AF2. }
 	\label{tab:modelling_syst}
@@ -919,7 +916,7 @@ are scaled by $1.25 \pm 0.25$, where the value is measured in Ref. \cite{TOPQ-20
 All results shown in this chapter have this scale factor implemented, 
 and the full difference between the simulation before applying this scale factor and 
 after is taken as a systematic uncertainty. This uncertainty has been added in quadrature 
-to the systematic uncertainties described in section \ref{sec:FTAG_systematics} 
+to the systematic uncertainties described in Section \ref{sec:FTAG_systematics} 
 in all the plots in this chapter.
 
 
@@ -930,7 +927,7 @@ in all the plots in this chapter.
 	\newcolumntype{C}{ @{}>{${}}c<{{}$}@{} }
 	\begin{tabular}{|r *2{|rCr}| }
 		\hline
-		& \multicolumn{3}{|c|}{Particle flow jets} & \multicolumn{3}{c|}{Track jets} \\
+		& \multicolumn{3}{|c|}{PFlow jets} & \multicolumn{3}{c|}{Track jets} \\
 		\hline
         Data & 1589& & & 1336  & & \\
          $t\bar{t}$ & 1100  &\pm&  13	& 940  &\pm&  12\\
@@ -947,10 +944,7 @@ in all the plots in this chapter.
 
 \begin{figure}[!h]
     \centering
-    \begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{3bplots/3bplots.png}
-\end{minipage}
+\includegraphics[width=.45\textwidth]{3bplots/3bplots.png}
 	\caption{The DL1r score distribution of the leading VR-Track jet, 
 	requiring at least 1 VR-Track jets have DL1r > 8 to reject most of 
 	the light and the $c$ jets, with $t\bar{t}$ modelling and statistical uncertainties. }
@@ -989,76 +983,39 @@ which dominates at low \btagging\ discriminant (DL1 or DL1r < 4).
 At high \btagging\ discriminant (DL1 or DL1r > 4), the
 uncertainty due to the $1.25 \pm 0.25$ scale factor becomes more important. 
 \begin{figure}[H]
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J0_DL1.eps}
-	\end{minipage}\hfill
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J0_DL1r.eps}
-	\end{minipage}\hfill
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J1_DL1.eps}
-	\end{minipage}\hfill
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC__J1_DL1r.eps}
-	\end{minipage}\hfill
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J0_MV2c10.eps}
-	\end{minipage}\hfill
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J1_MV2c10.eps}
-	\end{minipage}
-	\caption{Distributions of the DL1, DL1r and MV2c10 
-	taggers output of the combination 
-	of the standard selection and the high-$p_T$ selection, 
+	\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_DL1_log.png}
+	\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_DL1r_log.png}\\
+	\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_DL1_log.png}
+	\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_DL1r_log.png}\\
+	\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_MV2c10_log.png}
+	\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_MV2c10_log.png}\\
+	\caption{PFlow jets: distributions of the DL1, DL1r and MV2c10 
+	taggers output of the combined selection, 
 	before fitting or tagging with full uncertainties.} \label{fig:taggers_PFlow}
 \end{figure}
 \newpage
 \begin{figure}[H]
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J0_DL1.eps}
-	\end{minipage}\hfill
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J0_DL1r.eps}
-	\end{minipage}\hfill
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J1_DL1.eps}
-	\end{minipage}\hfill
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC__J1_DL1r.eps}
-	\end{minipage}\hfill
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J0_MV2c10.eps}
-	\end{minipage}\hfill
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J1_MV2c10.eps}
-	\end{minipage}
-	\caption{Distributions of the DL1, DL1r and MV2c10 taggers output of 
-	the combination of the standard selection and the high-$p_T$ selection, 
+	\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_DL1trackjet_log.png}
+	\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_DL1rtrackjet_log.png}\\
+	\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_DL1trackjet_log.png}
+	\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_DL1rtrackjet_log.png}\\
+	\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_MV2c10_Fulltrackjet_log.png}
+	\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_MV2c10_Fulltrackjet_log.png}\\
+	\caption{VR-Track jets: distributions of the DL1, DL1r and MV2c10 taggers output of 
+	the combined selection, 
 	before fitting or tagging with full uncertainties.} \label{fig:taggers_VRJets}
-	\end{figure}	
+\end{figure}	
 
 \subsubsection{Efficiencies and Scale Factors}
 
 %The Monte Carlo simulation demonstrates good agreement in different kinematic variables with data. 
 The Dl1 and DL1r $c$-jet efficiencies and scale factors with systematics 
 uncertainties are calculated with 4 fixed cut working points: 
-60\%, 70\%, 77\%, and 85\% for the PFlow and VR track jets collection in the latest derivation 
+60\%, 70\%, 77\%, and 85\% for the PFlow and VR VR-Track jets collection in the latest derivation 
 in December 2020. The working point corresponds to the efficiency of a true \bjet\ passing 
 the $b$-tagging algorithms for \ttbar\ events. 
 The efficiencies are shown in Figure \ref{fig:Dec_eff_PFlow} and \ref{fig:Dec_eff_VRJets} 
-for the PFlow jet collections and the VR Track jets respectively. 
+for the PFlow jet collections and the VR-Track jets respectively. 
 These results combine the standard selection and the high-$p_T$ selection, 
 and a $1.25 \pm 0.25$ scale factor is applied on events with 3 true $b$-jets. 
 In the efficiencies plots, the black line represents the data efficiency and the red and 
@@ -1078,43 +1035,19 @@ recover the data well.
 
 %%% Efficiencies plots %%%
 \begin{figure}[H]
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff60.eps}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff70.eps}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff77.eps}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff85.eps}
-\end{minipage}
+\includegraphics[width=.45\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff60.eps}
+\includegraphics[width=.45\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff70.eps}\\
+\includegraphics[width=.45\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff77.eps}
+\includegraphics[width=.45\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/eff85.eps}\\
 \caption{Charm-jet efficiencies of the PFlow jets collection 
 given for 4 different working points.} \label{fig:Dec_eff_PFlow}
 \end{figure}
 
 \begin{figure}[H]
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff60.eps}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff70.eps}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff77.eps}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff85.eps}
-\end{minipage}
+\includegraphics[width=.45\textwidth]{SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff60.eps}
+\includegraphics[width=.45\textwidth]{SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff70.eps}\\
+\includegraphics[width=.45\textwidth]{SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff77.eps}
+\includegraphics[width=.45\textwidth]{SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/eff85.eps}\\
 \caption{Charm-jet efficiencies of VR-Track jets collection of 
 given for 4 different working points.} \label{fig:Dec_eff_VRJets}
 \end{figure}
@@ -1122,43 +1055,19 @@ given for 4 different working points.} \label{fig:Dec_eff_VRJets}
 % SF plots
 
 \begin{figure}[H]
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF60.eps}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF70.eps}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF77.eps}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF85.eps}
-\end{minipage}
+\includegraphics[width=.45\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF60.eps}
+\includegraphics[width=.45\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF70.eps}\\
+\includegraphics[width=.45\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF77.eps}
+\includegraphics[width=.45\textwidth]{SFplots_december/DL1allPFlowDec_DL1rallPFlowDec/SF85.eps}\\
 \caption{Charm-jet scale factors of the PFlow jets collection of 
 given for 4 different working points.} \label{fig:Dec_SF_PFlow}
 \end{figure}
 
 \begin{figure}[H]
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF60.eps}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF70.eps}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF77.eps}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF85.eps}
-\end{minipage}
+\includegraphics[width=.45\textwidth]{SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF60.eps}
+\includegraphics[width=.45\textwidth]{SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF70.eps}\\
+\includegraphics[width=.45\textwidth]{SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF77.eps}
+\includegraphics[width=.45\textwidth]{SFplots_december/DL1allVRJetsDec_DL1rallVRJetsDec/SF85.eps}\\
 \caption{Charm-jet scale factors of VR-Track jets collection 
 given for 4 different working points.} \label{fig:Dec_SF_VRJets}
 \end{figure}
@@ -1218,274 +1127,294 @@ In terms of statistical gain, taking the 60\% working point scale factor with 20
 
 
 \printbibliography
+
+
 \appendix
 \newpage
-\section{Supplementary material for ATLAS flavour tagging}
+
+
+\section{Supplementary material for \cjet\ calibration}
 \subsection{Additional plots for kinematic variables}
 \subsubsection{Standard selection}
+
 \label{sec:appendix_standard_selection}
+\newpage	
 \begin{figure}[H]
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Distribution_March/DataMC_J0_DL1.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Distribution_March/DataMC_J0_DL1r.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Distribution_March/DataMC_J0_eta.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Distribution_March/DataMC_J0_pt.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Distribution_March/DataMC_Mbb.png}
-\end{minipage}\hfill
-% \begin{minipage}[b]{.45\textwidth}
-% \centering
-% \includegraphics[width=1\textwidth]{Distribution_March/DataMC_MET.png}
-% \end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Distribution_March/DataMC_mjj.png}
-\end{minipage}
-% \begin{minipage}[b]{.45\textwidth}
-% \centering
-% \includegraphics[width=1\textwidth]{Distribution_March/DataMC_dRJJ.png}
-% \end{minipage}\hfill
-\caption{Standard selection: various kinematic distributions of the standard 
-selection before fitting or tagging with systematics. The top two plots are 
-the distributions of the DL1 and Dl1r score distributions of the leading jet.} \label{fig:standard_selection}
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_J0_eta.png}
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_J1_eta.png}\\
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_LLR.png}
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_MET.png}\\
+
+\caption{PFlow jets: distributions of the leading and sub-leading jets 
+from W decay, KLFitter output and the transverse missing transverse 
+energy of the standard selection, before fitting or tagging with 
+full uncertainties.} \label{fig:standard_jets_VRJets}
+\end{figure}
+
+\newpage
+\begin{figure}[H]
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRbb.png}
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRqq.png}\\
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRbhadq1.png}
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRblepq1.png} \\
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRWhadbhad.png} 
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRWhadblep.png} \\
+\caption{PFlow jets: distributions of angle related variables of the combination of the standard selection,
+ before fitting or 
+tagging with full uncertainties.} \label{fig:standard_angles_PFlow}
+\end{figure}
+
+\newpage
+\begin{figure}[H]
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_Mbb.png}
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_mjj.png}\\
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_mjjj.png}
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_Htjj.png}\\
+\caption{PFlow jets: distributions of mass related variables of the standard selection, 
+before fitting or 
+tagging with stat-only uncertainties.} \label{fig:standard_mass_PFlow}
+\end{figure}
+
+
+
+\newpage	
+\begin{figure}[H]
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_J0_etatrackjet.png}
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_J1_etatrackjet.png}\\
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_LLRtrackjet.png}
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_METtrackjet.png}\\
+
+\caption{VR-Track jets: distributions of the leading and sub-leading jets 
+from W decay, KLFitter output and the transverse missing transverse 
+energy of the standard selection, before fitting or tagging with 
+full uncertainties.} \label{fig:standard_jets_VRJets}
+\end{figure}
+
+
+
+\newpage
+\begin{figure}[H]
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRbbtrackjet.png}
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRqqtrackjet.png}\\
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRbhadq1trackjet.png}
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRblepq1trackjet.png} \\
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRWhadbhadtrackjet.png} 
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRWhadbleptrackjet.png} \\
+\caption{VR-Track jets: distributions of angle related variables of the combination 
+of the standard selection, before fitting or tagging with full uncertainties.} \label{fig:standard_angles_VRJets}
+\end{figure}
+
+\newpage
+\begin{figure}[H]
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_Mbbtrackjet.png}
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_mjjtrackjet.png}\\
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_mjjjtrackjet.png}
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_Htjjtrackjet.png}\\
+\caption{VR-Track jets: distributions of mass related variables of the standard selection, 
+before fitting or tagging with stat-only uncertainties.} \label{fig:standard_mass_VRJets}
 \end{figure}
 
 
 \subsubsection{Low-\pt\ selection}
 \label{sec:appendix_lowpT_selection}
+\newpage	
 \begin{figure}[H]
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Distribution_March/DataMC_J1_DL1.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Distribution_March/DataMC_J1_DL1r.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Distribution_March/DataMC_J1_eta.png}
-\end{minipage}\hfill
-\begin{minipage}[b]{.45\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{Distribution_March/DataMC_J1_pt.png}
-\end{minipage}
-\caption{Selection for low-$p_T$ extension: kinematic distributions of the 
-sub-leading $W$ decay jet before fitting or tagging with systematics. 
-The top two plots are distributions of the DL1 and Dl1r score of the 
-sub-leading jet.} \label{fig:lowpT_selection}
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_J0_eta.png}
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_J1_eta.png}\\
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_LLR.png}
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_MET.png}\\
+
+\caption{PFlow jets: distributions of the leading and sub-leading jets 
+from W decay, KLFitter output and the transverse missing transverse 
+energy of the low-\pt\ selection, before fitting or tagging with 
+full uncertainties.} \label{fig:lowpT_jets_VRJets}
+\end{figure}
+
+\newpage
+\begin{figure}[H]
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRbb.png}
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRqq.png}\\
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRbhadq1.png}
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRblepq1.png} \\
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRWhadbhad.png} 
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRWhadblep.png} \\
+\caption{PFlow jets: distributions of angle related variables of the combination of the low-\pt\ selection,
+ before fitting or 
+tagging with full uncertainties.} \label{fig:lowpT_angles_PFlow}
+\end{figure}
+
+\newpage
+\begin{figure}[H]
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_Mbb.png}
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_mjj.png}\\
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_mjjj.png}
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_Htjj.png}\\
+\caption{PFlow jets: distributions of mass related variables of the low-\pt\ selection, 
+before fitting or 
+tagging with stat-only uncertainties.} \label{fig:lowpT_mass_PFlow}
 \end{figure}
 
 \subsection{High-\pt\ selection}
 \label{sec:appendix_highpT_selection}
+\newpage	
 \begin{figure}[H]
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_J0_DL1.png}
-	\end{minipage}\hfill
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_J0_DL1r.png}
-	\end{minipage}\hfill
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_J0_eta.png}
-	\end{minipage}\hfill
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_J0_pt.png}
-	\end{minipage}\hfill
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_Mbb.png}
-	\end{minipage}\hfill
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Distribution_March_highpT/DataMC_mjj.png}
-	\end{minipage}
-	\caption{Various kinematic distributions of the combination of the 
-	standard selection and the high-$p_T$ selection, before fitting or 
-	tagging with stat-only uncertainties.} \label{fig:highpT_selection}
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_J0_eta.png}
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_J1_eta.png}\\
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_LLR.png}
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_MET.png}\\
+
+\caption{PFlow jets: distributions of the leading and sub-leading jets 
+from W decay, KLFitter output and the transverse missing transverse 
+energy of the high-\pt\ selection, before fitting or tagging with 
+full uncertainties.} \label{fig:highpT_jets_VRJets}
 \end{figure}
 
-\subsubsection{Combined selection}
-\label{sec:appendix_combined_selection}
+\newpage
 \begin{figure}[H]
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J0_eta.eps}
-	\end{minipage}\hfill
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_J1_eta.eps}
-	\end{minipage}\hfill
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_LLR.eps}
-	\end{minipage}\hfill
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_MET.eps}
-	\end{minipage}
-	\caption{Distributions of the leading and sub-leading jets from W decay, KLFitter output and the 
-	transverse missing transverse energy of the combination of the standard selection and the 
-	high-$p_T$ selection, before fitting or tagging with full uncertainties.} \label{fig:jets_PFlow}
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRbb.png}
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRqq.png}\\
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRbhadq1.png}
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRblepq1.png} \\
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRWhadbhad.png} 
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRWhadblep.png} \\
+\caption{PFlow jets: distributions of angle related variables of the combination of the high-\pt\ selection,
+ before fitting or 
+tagging with full uncertainties.} \label{fig:highpT_angles_PFlow}
+\end{figure}
+
+\newpage
+\begin{figure}[H]
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_Mbb.png}
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_mjj.png}\\
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_mjjj.png}
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_Htjj.png}\\
+\caption{PFlow jets: distributions of mass related variables of the high-\pt\ selection, 
+before fitting or 
+tagging with stat-only uncertainties.} \label{fig:highpT_mass_PFlow}
+\end{figure}
+
+
+
+\newpage	
+\begin{figure}[H]
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_J0_etatrackjet.png}
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_J1_etatrackjet.png}\\
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_LLRtrackjet.png}
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_METtrackjet.png}\\
+
+\caption{VR-Track jets: distributions of the leading and sub-leading jets 
+from W decay, KLFitter output and the transverse missing transverse 
+energy of the high-\pt\ selection, before fitting or tagging with 
+full uncertainties.} \label{fig:highpT_jets_VRJets}
+\end{figure}
+
+
+
+\newpage
+\begin{figure}[H]
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRbbtrackjet.png}
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRqqtrackjet.png}\\
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRbhadq1trackjet.png}
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRblepq1trackjet.png} \\
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRWhadbhadtrackjet.png} 
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRWhadbleptrackjet.png} \\
+\caption{VR-Track jets: distributions of angle related variables of the combination 
+of the high-\pt\ selection, before fitting or tagging with full uncertainties.} \label{fig:highpT_angles_VRJets}
+\end{figure}
+
+\newpage
+\begin{figure}[H]
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_Mbbtrackjet.png}
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_mjjtrackjet.png}\\
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_mjjjtrackjet.png}
+\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_Htjjtrackjet.png}\\
+\caption{VR-Track jets: distributions of mass related variables of the high-\pt\ selection, 
+before fitting or tagging with stat-only uncertainties.} \label{fig:highpT_mass_VRJets}
+\end{figure}
+
+
+	
+
+	\newpage
+	\subsection{Combined selection}
+	\label{sec:appendix_combined_selection}
+	\newpage	
+	\begin{figure}[H]
+	\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_eta.png}
+	\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_eta.png}\\
+	\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_LLR.png}
+	\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_MET.png}\\
+	
+	\caption{PFlow jets: distributions of the leading and sub-leading jets 
+	from W decay, KLFitter output and the transverse missing transverse 
+	energy of the combined selection, before fitting or tagging with 
+	full uncertainties.} \label{fig:combined_jets_VRJets}
 	\end{figure}
-	
-	
 	
 	\newpage
 	\begin{figure}[H]
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRbb.eps}
-	\end{minipage}\hfill
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRqq.eps}
-	\end{minipage}\hfill
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRbhadq1.eps}
-	\end{minipage}\hfill
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRblepq1.eps} 
-	\end{minipage}\hfill
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRWhadbhad.eps} 
-	\end{minipage}\hfill
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_dRWhadblep.eps} 
-	\end{minipage}
-	\caption{Distributions of angle related variables of the combination of the standard 
-	selection and the high-$p_T$ selection, before fitting or 
-	tagging with full uncertainties.} \label{fig:angles_PFlow}
+	\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRbb.png}
+	\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRqq.png}\\
+	\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRbhadq1.png}
+	\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRblepq1.png} \\
+	\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRWhadbhad.png} 
+	\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRWhadblep.png} \\
+	\caption{PFlow jets: distributions of angle related variables of the combination of the combined selection,
+	 before fitting or 
+	tagging with full uncertainties.} \label{fig:combined_angles_PFlow}
 	\end{figure}
 	
 	\newpage
 	\begin{figure}[H]
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_Mbb.eps}
-	\end{minipage}\hfill
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_mjj.eps}
-	\end{minipage}
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_mjjj.eps}
-	\end{minipage}\hfill
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTPFlow_scaledall/DataMC_Htjj.eps}
-	\end{minipage}
-	\caption{Distributions of mass related variables of the combination 
-	of the standard selection and the 
-	high-$p_T$ selection, before fitting or 
-	tagging with stat-only uncertainties.} \label{fig:mass_PFlow}
+	\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_Mbb.png}
+	\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_mjj.png}\\
+	\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_mjjj.png}
+	\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_Htjj.png}\\
+	\caption{PFlow jets: distributions of mass related variables of the combined selection, 
+	before fitting or 
+	tagging with stat-only uncertainties.} \label{fig:combined_mass_PFlow}
 	\end{figure}
 	
 	
 	
 	\newpage	
 	\begin{figure}[H]
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J0_eta.eps}
-	\end{minipage}\hfill
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_J1_eta.eps}
-	\end{minipage}\hfill
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_LLR.eps}
-	\end{minipage}\hfill
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_MET.eps}
-	\end{minipage}
+	\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_etatrackjet.png}
+	\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_etatrackjet.png}\\
+	\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_LLRtrackjet.png}
+	\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_METtrackjet.png}\\
 	
-	\caption{Distributions of the leading and sub-leading jets 
+	\caption{VR-Track jets: distributions of the leading and sub-leading jets 
 	from W decay, KLFitter output and the transverse missing transverse 
-	energy of the combination of the standard selection and the 
-	high-$p_T$ selection, before fitting or tagging with 
-	full uncertainties.} \label{fig:jets_VRJets}
+	energy of the combined selection, before fitting or tagging with 
+	full uncertainties.} \label{fig:combined_jets_VRJets}
 	\end{figure}
 	
 	
 	
 	\newpage
 	\begin{figure}[H]
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRbb.eps}
-	\end{minipage}\hfill
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRqq.eps}
-	\end{minipage}\hfill
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRbhadq1.eps}
-	\end{minipage}\hfill
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRblepq1.eps} 
-	\end{minipage}\hfill
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRWhadbhad.eps} 
-	\end{minipage}\hfill
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_dRWhadblep.eps} 
-	\end{minipage}
-	\caption{Distributions of angle related variables of the combination 
-	of the standard selection and the high-$p_T$ 
-	selection, before fitting or tagging with full uncertainties.} \label{fig:angles_VRJets}
+	\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRbbtrackjet.png}
+	\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRqqtrackjet.png}\\
+	\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRbhadq1trackjet.png}
+	\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRblepq1trackjet.png} \\
+	\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRWhadbhadtrackjet.png} 
+	\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRWhadbleptrackjet.png} \\
+	\caption{VR-Track jets: distributions of angle related variables of the combination 
+	of the combined selection, before fitting or tagging with full uncertainties.} \label{fig:combined_angles_VRJets}
 	\end{figure}
 	
 	\newpage
 	\begin{figure}[H]
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_Mbb.eps}
-	\end{minipage}\hfill
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_mjj.eps}
-	\end{minipage}
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_mjjj.eps}
-	\end{minipage}\hfill
-	\begin{minipage}[b]{.45\textwidth}
-	\centering
-	\includegraphics[width=1\textwidth]{Oct_distributions/pretagNoRwDL1rwithhighpTVRJets_scaledall/DataMC_Htjj.eps}
-	\end{minipage}
-	\caption{Distributions of mass related variables of the combination 
-	of the standard selection and the high-$p_T$ selection, 
-	before fitting or tagging with stat-only uncertainties.} \label{fig:mass_VRJets}
+	\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_Mbbtrackjet.png}
+	\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_mjjtrackjet.png}\\
+	\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_mjjjtrackjet.png}
+	\includegraphics[width=.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_Htjjtrackjet.png}\\
+	\caption{VR-Track jets: distributions of mass related variables of the combined selection, 
+	before fitting or tagging with stat-only uncertainties.} \label{fig:combined_mass_VRJets}
 	\end{figure}
 	
-
+	
 
 \subsection{Plots for previous calibrations}
 
