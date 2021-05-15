@@ -2357,7 +2357,87 @@
     <bcf:citekey order="4">FTAG-2018-01</bcf:citekey>
     <bcf:citekey order="5">tagging</bcf:citekey>
     <bcf:citekey order="5">ATL-PHYS-PUB-2017-013</bcf:citekey>
-    <bcf:citekey order="6">ATL-PHYS-PUB-2017-013</bcf:citekey>
-    <bcf:citekey order="7">FTAG-2018-01</bcf:citekey>
+    <bcf:citekey order="6">ATL-PHYS-PUB-2016-012</bcf:citekey>
+    <bcf:citekey order="7">ATL-PHYS-PUB-2017-013</bcf:citekey>
     <bcf:citekey order="8">FTAG-2018-01</bcf:citekey>
-    <bc
+    <bcf:citekey order="9">FTAG-2018-01</bcf:citekey>
+    <bcf:citekey order="10">FTAG-2018-01</bcf:citekey>
+    <bcf:citekey order="11">FTAG-2018-01</bcf:citekey>
+    <bcf:citekey order="12">ATLAS-CONF-2018-006</bcf:citekey>
+    <bcf:citekey order="13">CKM1</bcf:citekey>
+    <bcf:citekey order="13">CKM2</bcf:citekey>
+    <bcf:citekey order="14">PDG</bcf:citekey>
+    <bcf:citekey order="15">ERDMANN201418</bcf:citekey>
+    <bcf:citekey order="16">DAPR-2010-01</bcf:citekey>
+    <bcf:citekey order="16">DAPR-2011-01</bcf:citekey>
+    <bcf:citekey order="16">DAPR-2013-01</bcf:citekey>
+    <bcf:citekey order="16">LUCID2</bcf:citekey>
+    <bcf:citekey order="17">Aad:2020uyd</bcf:citekey>
+    <bcf:citekey order="18">TRIG-2018-05</bcf:citekey>
+    <bcf:citekey order="19">SOFT-2010-01</bcf:citekey>
+    <bcf:citekey order="20">Agostinelli:2002hh</bcf:citekey>
+    <bcf:citekey order="21">SOFT-2010-01</bcf:citekey>
+    <bcf:citekey order="22">Sjostrand:2014zea</bcf:citekey>
+    <bcf:citekey order="23">Ball:2012cx</bcf:citekey>
+    <bcf:citekey order="24">ATL-PHYS-PUB-2016-017</bcf:citekey>
+    <bcf:citekey order="25">Frixione:2007nw</bcf:citekey>
+    <bcf:citekey order="25">Nason:2004rx</bcf:citekey>
+    <bcf:citekey order="25">Frixione:2007vw</bcf:citekey>
+    <bcf:citekey order="25">Alioli:2010xd</bcf:citekey>
+    <bcf:citekey order="26">ATL-PHYS-PUB-2016-020</bcf:citekey>
+    <bcf:citekey order="27">EvtGen</bcf:citekey>
+    <bcf:citekey order="28">Ball:2014uwa</bcf:citekey>
+    <bcf:citekey order="29">Re:2010bp</bcf:citekey>
+    <bcf:citekey order="29">Nason:2004rx</bcf:citekey>
+    <bcf:citekey order="29">Frixione:2007vw</bcf:citekey>
+    <bcf:citekey order="29">Alioli:2010xd</bcf:citekey>
+    <bcf:citekey order="30">Ball:2014uwa</bcf:citekey>
+    <bcf:citekey order="31">Frixione:2008yi</bcf:citekey>
+    <bcf:citekey order="32">Bothmann:2019yzt</bcf:citekey>
+    <bcf:citekey order="33">Gleisberg:2008fv</bcf:citekey>
+    <bcf:citekey order="34">Buccioni:2019sur</bcf:citekey>
+    <bcf:citekey order="34">Cascioli:2011va</bcf:citekey>
+    <bcf:citekey order="34">Denner:2016kdg</bcf:citekey>
+    <bcf:citekey order="35">Schumann:2007mg</bcf:citekey>
+    <bcf:citekey order="36">Hoeche:2011fd</bcf:citekey>
+    <bcf:citekey order="36">Hoeche:2012yf</bcf:citekey>
+    <bcf:citekey order="36">Catani:2001cc</bcf:citekey>
+    <bcf:citekey order="36">Hoeche:2009rj</bcf:citekey>
+    <bcf:citekey order="37">Ball:2014uwa</bcf:citekey>
+    <bcf:citekey order="38">Anastasiou:2003ds</bcf:citekey>
+    <bcf:citekey order="39">Bothmann:2019yzt</bcf:citekey>
+    <bcf:citekey order="40">Gleisberg:2008fv</bcf:citekey>
+    <bcf:citekey order="40">Schumann:2007mg</bcf:citekey>
+    <bcf:citekey order="41">Hoeche:2011fd</bcf:citekey>
+    <bcf:citekey order="41">Hoeche:2012yf</bcf:citekey>
+    <bcf:citekey order="41">Catani:2001cc</bcf:citekey>
+    <bcf:citekey order="41">Hoeche:2009rj</bcf:citekey>
+    <bcf:citekey order="42">Buccioni:2019sur</bcf:citekey>
+    <bcf:citekey order="42">Cascioli:2011va</bcf:citekey>
+    <bcf:citekey order="42">Denner:2016kdg</bcf:citekey>
+    <bcf:citekey order="43">Alwall:2014hca</bcf:citekey>
+    <bcf:citekey order="44">Ball:2014uwa</bcf:citekey>
+    <bcf:citekey order="45">Sjostrand:2014zea</bcf:citekey>
+    <bcf:citekey order="46">ATL-PHYS-PUB-2014-021</bcf:citekey>
+    <bcf:citekey order="47">Ball:2014uwa</bcf:citekey>
+    <bcf:citekey order="48">Lange:2001uf</bcf:citekey>
+    <bcf:citekey order="49">ERDMANN201418</bcf:citekey>
+    <bcf:citekey order="50">TOPQ-2017-12</bcf:citekey>
+  </bcf:section>
+  <!-- SORTING TEMPLATES -->
+  <bcf:sortingtemplate name="none">
+    <bcf:sort order="1">
+      <bcf:sortitem order="1">citeorder</bcf:sortitem>
+    </bcf:sort>
+  </bcf:sortingtemplate>
+  <!-- DATALISTS -->
+  <bcf:datalist section="0"
+                name="none/global//global/global"
+                type="entry"
+                sortingtemplatename="none"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
+</bcf:controlfile>

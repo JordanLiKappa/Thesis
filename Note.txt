@@ -1,7 +1,8 @@
 Things to be included:
 FTAG chpater:
+0. clarify fixed cut
+0. Scale factos are repeated in the calibration method and result section. Remove the repeated part
 1.IP2D/3D definition in object reco definition
 2.remove the overlapping samples with the Data/MC section and add extra samples. 
 check if modulo ttV is an extra sample specific to the calibration
 3. PFlow and VR track jet definition in object reco definition
-
