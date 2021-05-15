@@ -11,19 +11,19 @@
 \BOOKMARK [2][-]{subsection.5.2}{Electron}{section.5}% 11
 \BOOKMARK [2][-]{subsection.5.3}{Muon}{section.5}% 12
 \BOOKMARK [2][-]{subsection.5.4}{Jet}{section.5}% 13
-\BOOKMARK [2][-]{subsection.5.5}{b-Jets}{section.5}% 14
+\BOOKMARK [2][-]{subsection.5.5}{b jets}{section.5}% 14
 \BOOKMARK [3][-]{subsubsection.5.5.1}{Flavour tagging}{subsection.5.5}% 15
 \BOOKMARK [2][-]{subsection.5.6}{Missing transverse energy}{section.5}% 16
 \BOOKMARK [2][-]{subsection.5.7}{Hadronically decaying \040lepton}{section.5}% 17
 \BOOKMARK [1][-]{section.6}{Charm jet mis-tagging calibration}{}% 18
-\BOOKMARK [2][-]{subsection.6.1}{Calibration methods for b jet and light-jet}{section.6}% 19
+\BOOKMARK [2][-]{subsection.6.1}{Calibration methods for b jet and light jet}{section.6}% 19
 \BOOKMARK [2][-]{subsection.6.2}{Calibration method for charm jet}{section.6}% 20
 \BOOKMARK [2][-]{subsection.6.3}{Data and Monte Carlo samples}{section.6}% 21
 \BOOKMARK [2][-]{subsection.6.4}{Kinematic Likelihood Fitter}{section.6}% 22
 \BOOKMARK [2][-]{subsection.6.5}{Maximising likelihood}{section.6}% 23
 \BOOKMARK [2][-]{subsection.6.6}{Event selection}{section.6}% 24
 \BOOKMARK [3][-]{subsubsection.6.6.1}{Standard selection}{subsection.6.6}% 25
-\BOOKMARK [3][-]{subsubsection.6.6.2}{Selection for low-pT extension}{subsection.6.6}% 26
+\BOOKMARK [3][-]{subsubsection.6.6.2}{Low-pT selection}{subsection.6.6}% 26
 \BOOKMARK [3][-]{subsubsection.6.6.3}{High-pT selection}{subsection.6.6}% 27
 \BOOKMARK [3][-]{subsubsection.6.6.4}{Combined selection}{subsection.6.6}% 28
 \BOOKMARK [2][-]{subsection.6.7}{Systematic uncertainties}{section.6}% 29
@@ -32,7 +32,7 @@
 \BOOKMARK [2][-]{subsection.6.8}{Under-estimation of t + Heavy flavour background }{section.6}% 32
 \BOOKMARK [2][-]{subsection.6.9}{Results}{section.6}% 33
 \BOOKMARK [3][-]{subsubsection.6.9.1}{Overview}{subsection.6.9}% 34
-\BOOKMARK [3][-]{subsubsection.6.9.2}{Kinematic distributions}{subsection.6.9}% 35
+\BOOKMARK [3][-]{subsubsection.6.9.2}{b-tagging algorithms output distribution}{subsection.6.9}% 35
 \BOOKMARK [3][-]{subsubsection.6.9.3}{Efficiencies and Scale Factors}{subsection.6.9}% 36
 \BOOKMARK [1][-]{section.7}{Search for Higgs boson pair production in the b channel}{}% 37
 \BOOKMARK [2][-]{subsection.7.1}{Data and Monte Carlo samples}{section.7}% 38

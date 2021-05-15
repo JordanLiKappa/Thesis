@@ -26,7 +26,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.4}Jet}{4}{subsection.5.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5}$b$-Jets}{4}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.5}$b$ jets}{4}{subsection.5.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {5.5.1}Flavour tagging}{4}{subsubsection.5.5.1}%
 \defcounter {refsection}{0}\relax 
@@ -36,39 +36,39 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6}Charm jet mis-tagging calibration}{6}{section.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1}Calibration methods for $b$ jet\ and light-jet}{6}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.1}Calibration methods for $b$ jet\ and light jet}{7}{subsection.6.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.2}Calibration method for charm jet}{7}{subsection.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3}Data and Monte Carlo samples}{9}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.3}Data and Monte Carlo samples}{10}{subsection.6.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.4}Kinematic Likelihood Fitter}{11}{subsection.6.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.5}Maximising likelihood}{11}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.5}Maximising likelihood}{12}{subsection.6.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.6}Event selection}{13}{subsection.6.6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {6.6.1}Standard selection}{13}{subsubsection.6.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.6.2}Selection for low-$p_T$ extension}{14}{subsubsection.6.6.2}%
+\contentsline {subsubsection}{\numberline {6.6.2}Low-\ensuremath {p_{\mathrm T}}\ selection}{14}{subsubsection.6.6.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {6.6.3}High-$p_T$ selection}{15}{subsubsection.6.6.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {6.6.4}Combined selection}{16}{subsubsection.6.6.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.7}Systematic uncertainties}{16}{subsection.6.7}%
+\contentsline {subsection}{\numberline {6.7}Systematic uncertainties}{17}{subsection.6.7}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {6.7.1}Experimental uncertainties}{17}{subsubsection.6.7.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {6.7.2}Modelling uncertainties}{19}{subsubsection.6.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.8}Under-estimation of $t\bar {t}$ + Heavy flavour background }{19}{subsection.6.8}%
+\contentsline {subsection}{\numberline {6.8}Under-estimation of $t\bar {t}$ + Heavy flavour background }{20}{subsection.6.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.9}Results}{21}{subsection.6.9}%
+\contentsline {subsection}{\numberline {6.9}Results}{20}{subsection.6.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.9.1}Overview}{21}{subsubsection.6.9.1}%
+\contentsline {subsubsection}{\numberline {6.9.1}Overview}{20}{subsubsection.6.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.9.2}Kinematic distributions}{21}{subsubsection.6.9.2}%
+\contentsline {subsubsection}{\numberline {6.9.2}$b$-tagging\ algorithms output distribution}{21}{subsubsection.6.9.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {6.9.3}Efficiencies and Scale Factors}{24}{subsubsection.6.9.3}%
 \defcounter {refsection}{0}\relax 
