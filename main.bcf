@@ -2257,4 +2257,220 @@
         <bcf:field>title</bcf:field>
       </bcf:constraint>
     </bcf:constraints>
-    <bcf:constra
+    <bcf:constraints>
+      <bcf:entrytype>online</bcf:entrytype>
+      <bcf:constraint type="mandatory">
+        <bcf:field>title</bcf:field>
+        <bcf:fieldor>
+          <bcf:field>url</bcf:field>
+          <bcf:field>doi</bcf:field>
+          <bcf:field>eprint</bcf:field>
+        </bcf:fieldor>
+      </bcf:constraint>
+    </bcf:constraints>
+    <bcf:constraints>
+      <bcf:entrytype>patent</bcf:entrytype>
+      <bcf:constraint type="mandatory">
+        <bcf:field>author</bcf:field>
+        <bcf:field>title</bcf:field>
+        <bcf:field>number</bcf:field>
+      </bcf:constraint>
+    </bcf:constraints>
+    <bcf:constraints>
+      <bcf:entrytype>periodical</bcf:entrytype>
+      <bcf:constraint type="mandatory">
+        <bcf:field>editor</bcf:field>
+        <bcf:field>title</bcf:field>
+      </bcf:constraint>
+    </bcf:constraints>
+    <bcf:constraints>
+      <bcf:entrytype>proceedings</bcf:entrytype>
+      <bcf:entrytype>mvproceedings</bcf:entrytype>
+      <bcf:constraint type="mandatory">
+        <bcf:field>title</bcf:field>
+      </bcf:constraint>
+    </bcf:constraints>
+    <bcf:constraints>
+      <bcf:entrytype>inproceedings</bcf:entrytype>
+      <bcf:constraint type="mandatory">
+        <bcf:field>author</bcf:field>
+        <bcf:field>title</bcf:field>
+        <bcf:field>booktitle</bcf:field>
+      </bcf:constraint>
+    </bcf:constraints>
+    <bcf:constraints>
+      <bcf:entrytype>report</bcf:entrytype>
+      <bcf:constraint type="mandatory">
+        <bcf:field>author</bcf:field>
+        <bcf:field>title</bcf:field>
+        <bcf:field>type</bcf:field>
+        <bcf:field>institution</bcf:field>
+      </bcf:constraint>
+    </bcf:constraints>
+    <bcf:constraints>
+      <bcf:entrytype>thesis</bcf:entrytype>
+      <bcf:constraint type="mandatory">
+        <bcf:field>author</bcf:field>
+        <bcf:field>title</bcf:field>
+        <bcf:field>type</bcf:field>
+        <bcf:field>institution</bcf:field>
+      </bcf:constraint>
+    </bcf:constraints>
+    <bcf:constraints>
+      <bcf:entrytype>unpublished</bcf:entrytype>
+      <bcf:constraint type="mandatory">
+        <bcf:field>author</bcf:field>
+        <bcf:field>title</bcf:field>
+      </bcf:constraint>
+    </bcf:constraints>
+    <bcf:constraints>
+      <bcf:constraint type="data" datatype="isbn">
+        <bcf:field>isbn</bcf:field>
+      </bcf:constraint>
+      <bcf:constraint type="data" datatype="issn">
+        <bcf:field>issn</bcf:field>
+      </bcf:constraint>
+      <bcf:constraint type="data" datatype="ismn">
+        <bcf:field>ismn</bcf:field>
+      </bcf:constraint>
+      <bcf:constraint type="data" datatype="pattern" pattern="(?:sf|sm|sn|pf|pm|pn|pp)">
+        <bcf:field>gender</bcf:field>
+      </bcf:constraint>
+    </bcf:constraints>
+  </bcf:datamodel>
+  <!-- CITATION DATA -->
+  <!-- SECTION 0 -->
+  <bcf:bibdata section="0">
+    <bcf:datasource type="file" datatype="bibtex" glob="false">ANA-FTAG-2020-08-PAPER.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex" glob="false">Detector.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex" glob="false">bib/ATLAS.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex" glob="false">bib/ATLAS-useful.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex" glob="false">bib/PubNotes.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex" glob="false">bib/ConfNotes.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex" glob="false">bib/ATLAS-SUSY.bib</bcf:datasource>
+  </bcf:bibdata>
+  <bcf:section number="0">
+    <bcf:citekey order="1">Evans:2008zzb</bcf:citekey>
+    <bcf:citekey order="2">PERF-2007-01</bcf:citekey>
+    <bcf:citekey order="3">CMS-2008xjf</bcf:citekey>
+    <bcf:citekey order="4">ALICE-2008ngc</bcf:citekey>
+    <bcf:citekey order="5">LHCb-2008vvz</bcf:citekey>
+    <bcf:citekey order="6">rossi2003lhc</bcf:citekey>
+    <bcf:citekey order="7">rossi2003lhc</bcf:citekey>
+    <bcf:citekey order="8">rossi2003lhc</bcf:citekey>
+    <bcf:citekey order="9">Blewett:1971zzb</bcf:citekey>
+    <bcf:citekey order="10">lebrun2009report</bcf:citekey>
+    <bcf:citekey order="11">alemany2013operation</bcf:citekey>
+    <bcf:citekey order="12">HIGG-2012-27</bcf:citekey>
+    <bcf:citekey order="13">HIGG-2012-28</bcf:citekey>
+    <bcf:citekey order="14">bordry2013first</bcf:citekey>
+    <bcf:citekey order="15">LHC-Run2-Operation</bcf:citekey>
+    <bcf:citekey order="16">aad2020atlas</bcf:citekey>
+    <bcf:citekey order="17">PERF-2007-01</bcf:citekey>
+    <bcf:citekey order="18">PERF-2007-01</bcf:citekey>
+    <bcf:citekey order="19">ATLAS-TDR-06</bcf:citekey>
+    <bcf:citekey order="20">ATLAS-TDR-04</bcf:citekey>
+    <bcf:citekey order="21">ATLAS-TDR-11</bcf:citekey>
+    <bcf:citekey order="22">ATLAS-TDR-19</bcf:citekey>
+    <bcf:citekey order="24">ATLAS-TDR-04</bcf:citekey>
+    <bcf:citekey order="25">ATLAS-TDR-01</bcf:citekey>
+    <bcf:citekey order="26">ATLAS-TDR-02</bcf:citekey>
+    <bcf:citekey order="27">ATLAS-TDR-03</bcf:citekey>
+    <bcf:citekey order="28">ATLAS-TDR-11</bcf:citekey>
+    <bcf:citekey order="29">ATLAS-TDR-12</bcf:citekey>
+    <bcf:citekey order="30">ATLAS-TDR-16</bcf:citekey>
+    <bcf:citekey order="31">Blair:2007qn</bcf:citekey>
+    <bcf:citekey order="32">SUSY-2014-08</bcf:citekey>
+    <bcf:citekey order="32">ATLAS-CONF-2018-043</bcf:citekey>
+    <bcf:citekey order="32">Interpreting_Higgs_result</bcf:citekey>
+    <bcf:citekey order="33">PERF-2012-04</bcf:citekey>
+    <bcf:citekey order="34">PERF-2012-04</bcf:citekey>
+    <bcf:citekey order="35">FTAG-2018-01</bcf:citekey>
+    <bcf:citekey order="36">tagging</bcf:citekey>
+    <bcf:citekey order="36">ATL-PHYS-PUB-2017-013</bcf:citekey>
+    <bcf:citekey order="37">ATL-PHYS-PUB-2016-012</bcf:citekey>
+    <bcf:citekey order="38">ATL-PHYS-PUB-2017-013</bcf:citekey>
+    <bcf:citekey order="39">FTAG-2018-01</bcf:citekey>
+    <bcf:citekey order="40">FTAG-2018-01</bcf:citekey>
+    <bcf:citekey order="41">FTAG-2018-01</bcf:citekey>
+    <bcf:citekey order="42">FTAG-2018-01</bcf:citekey>
+    <bcf:citekey order="43">FTAG-2018-01</bcf:citekey>
+    <bcf:citekey order="44">FTAG-2018-01</bcf:citekey>
+    <bcf:citekey order="45">ATLAS-CONF-2018-006</bcf:citekey>
+    <bcf:citekey order="46">CKM1</bcf:citekey>
+    <bcf:citekey order="46">CKM2</bcf:citekey>
+    <bcf:citekey order="47">PDG</bcf:citekey>
+    <bcf:citekey order="48">ERDMANN201418</bcf:citekey>
+    <bcf:citekey order="49">DAPR-2010-01</bcf:citekey>
+    <bcf:citekey order="49">DAPR-2011-01</bcf:citekey>
+    <bcf:citekey order="49">DAPR-2013-01</bcf:citekey>
+    <bcf:citekey order="49">LUCID2</bcf:citekey>
+    <bcf:citekey order="50">Aad:2020uyd</bcf:citekey>
+    <bcf:citekey order="51">TRIG-2018-05</bcf:citekey>
+    <bcf:citekey order="52">SOFT-2010-01</bcf:citekey>
+    <bcf:citekey order="53">Agostinelli:2002hh</bcf:citekey>
+    <bcf:citekey order="54">SOFT-2010-01</bcf:citekey>
+    <bcf:citekey order="55">Sjostrand:2014zea</bcf:citekey>
+    <bcf:citekey order="56">Ball:2012cx</bcf:citekey>
+    <bcf:citekey order="57">ATL-PHYS-PUB-2016-017</bcf:citekey>
+    <bcf:citekey order="58">Frixione:2007nw</bcf:citekey>
+    <bcf:citekey order="58">Nason:2004rx</bcf:citekey>
+    <bcf:citekey order="58">Frixione:2007vw</bcf:citekey>
+    <bcf:citekey order="58">Alioli:2010xd</bcf:citekey>
+    <bcf:citekey order="59">ATL-PHYS-PUB-2016-020</bcf:citekey>
+    <bcf:citekey order="60">EvtGen</bcf:citekey>
+    <bcf:citekey order="61">Ball:2014uwa</bcf:citekey>
+    <bcf:citekey order="62">Re:2010bp</bcf:citekey>
+    <bcf:citekey order="62">Nason:2004rx</bcf:citekey>
+    <bcf:citekey order="62">Frixione:2007vw</bcf:citekey>
+    <bcf:citekey order="62">Alioli:2010xd</bcf:citekey>
+    <bcf:citekey order="63">Ball:2014uwa</bcf:citekey>
+    <bcf:citekey order="64">Frixione:2008yi</bcf:citekey>
+    <bcf:citekey order="65">Bothmann:2019yzt</bcf:citekey>
+    <bcf:citekey order="66">Gleisberg:2008fv</bcf:citekey>
+    <bcf:citekey order="67">Buccioni:2019sur</bcf:citekey>
+    <bcf:citekey order="67">Cascioli:2011va</bcf:citekey>
+    <bcf:citekey order="67">Denner:2016kdg</bcf:citekey>
+    <bcf:citekey order="68">Schumann:2007mg</bcf:citekey>
+    <bcf:citekey order="69">Hoeche:2011fd</bcf:citekey>
+    <bcf:citekey order="69">Hoeche:2012yf</bcf:citekey>
+    <bcf:citekey order="69">Catani:2001cc</bcf:citekey>
+    <bcf:citekey order="69">Hoeche:2009rj</bcf:citekey>
+    <bcf:citekey order="70">Ball:2014uwa</bcf:citekey>
+    <bcf:citekey order="71">Anastasiou:2003ds</bcf:citekey>
+    <bcf:citekey order="72">Bothmann:2019yzt</bcf:citekey>
+    <bcf:citekey order="73">Gleisberg:2008fv</bcf:citekey>
+    <bcf:citekey order="73">Schumann:2007mg</bcf:citekey>
+    <bcf:citekey order="74">Hoeche:2011fd</bcf:citekey>
+    <bcf:citekey order="74">Hoeche:2012yf</bcf:citekey>
+    <bcf:citekey order="74">Catani:2001cc</bcf:citekey>
+    <bcf:citekey order="74">Hoeche:2009rj</bcf:citekey>
+    <bcf:citekey order="75">Buccioni:2019sur</bcf:citekey>
+    <bcf:citekey order="75">Cascioli:2011va</bcf:citekey>
+    <bcf:citekey order="75">Denner:2016kdg</bcf:citekey>
+    <bcf:citekey order="76">Alwall:2014hca</bcf:citekey>
+    <bcf:citekey order="77">Ball:2014uwa</bcf:citekey>
+    <bcf:citekey order="78">Sjostrand:2014zea</bcf:citekey>
+    <bcf:citekey order="79">ATL-PHYS-PUB-2014-021</bcf:citekey>
+    <bcf:citekey order="80">Ball:2014uwa</bcf:citekey>
+    <bcf:citekey order="81">Lange:2001uf</bcf:citekey>
+    <bcf:citekey order="82">ERDMANN201418</bcf:citekey>
+    <bcf:citekey order="83">TOPQ-2017-12</bcf:citekey>
+  </bcf:section>
+  <!-- SORTING TEMPLATES -->
+  <bcf:sortingtemplate name="none">
+    <bcf:sort order="1">
+      <bcf:sortitem order="1">citeorder</bcf:sortitem>
+    </bcf:sort>
+  </bcf:sortingtemplate>
+  <!-- DATALISTS -->
+  <bcf:datalist section="0"
+                name="none/global//global/global"
+                type="entry"
+                sortingtemplatename="none"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
+</bcf:controlfile>

@@ -41,7 +41,7 @@
   >
 ]>
 <requests version="1.0">
-  <internal package="biblatex" priority="9" active="0">
+  <internal package="biblatex" priority="9" active="1">
     <generic>latex</generic>
     <provides type="dynamic">
       <file>main.bcf</file>
@@ -80,6 +80,7 @@
     </requires>
     <requires type="editable">
       <file>ANA-FTAG-2020-08-PAPER.bib</file>
+      <file>Detector.bib</file>
       <file>bib/ATLAS.bib</file>
       <file>bib/ATLAS-useful.bib</file>
       <file>bib/PubNotes.bib</file>

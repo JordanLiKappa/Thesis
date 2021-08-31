@@ -7,6 +7,7 @@
 \usepackage{ANA-FTAG-2020-08-PAPER-defs}
 \usepackage[style=numeric, sorting=none]{biblatex}
 \addbibresource{ANA-FTAG-2020-08-PAPER.bib}
+\addbibresource{Detector.bib}
 \addbibresource{bib/ATLAS.bib}
 \addbibresource{bib/ATLAS-useful.bib}
 \addbibresource{bib/PubNotes.bib}
@@ -19,7 +20,7 @@
 \usepackage{float}
 \usepackage{makeidx}
 \usepackage{titlesec}
-
+\usepackage{multirow}
 \newcommand\bjetineq{\mathop{\mbox{$b$ $\rm{jet}$}}}
 \newcommand\bjetunder{\mathop{\footnotesize{\mbox{$b$ $\rm{jet}$}}}\normalsize}
 \newcommand\cjetineq{\mathop{\mbox{$c$ $\rm{jet}$}}}
@@ -73,13 +74,13 @@
 \section{The ATLAS experiment at the Large Hadron Collider}
 \subsection{The Large Hadron Collider}
 
-The Large Hadron Collider [cite{Evans:2008zzb}] is the world's 
+The Large Hadron Collider~\cite{Evans:2008zzb} is the world's 
 largest and most powerful particle accelerator. 
 It started in 2008 and remains its crucial role in the many 
 accelerators at CERN and in the world.
 The main body of the collider consists of a ring tunnel of 
-perimeter of 26.7 km, with 
-superconducting magnets along the tunnel to keep the 
+perimeter of 26.7 km, lies beneath the France-Switzerland near
+Geneva,with superconducting magnets along the tunnel to keep the 
 particle beam in direction
  and a large number of accelerating structures to boost the 
  beam to the desired energy.
@@ -88,7 +89,7 @@ Inside the tunnel, two beams of particles travelling at close
 to the speed of light 
 in opposite direction are made to collide. 
 These two beams are kept in separate beam pipes,
-cooled to $-271.3^\circ C$ ($1.9K$) with liquid 
+cooled to $-271.3^\circ C$ ($1.9\ K$) with liquid 
 helium distributed by dedicated system, 
  and ultra-high vacuum, a vacuum thinner than 
 interstellar void, matianed for 48 km of low-temperature 
@@ -105,15 +106,15 @@ are located at the CERN Control Centre.
 From here, the beams inside the LHC are made to collide 
 at four locations around the accelerator ring, 
 corresponding to the positions of four particle 
-detectors – ATLAS (A Toroidal LHC ApparatuS) [cite{PERF-2007-01}], 
-CMS [S08004] (Compact Muon Solenoid), ALICE (A Large Ion Collider Experiment) [S08002] 
-and LHCb (b stands for beauty) [S08005].
+detectors – ATLAS (A Toroidal LHC ApparatuS)~\cite{PERF-2007-01}, 
+CMS~\cite{CMS-2008xjf} (Compact Muon Solenoid), ALICE (A Large Ion Collider Experiment) 
+\cite{ALICE-2008ngc} and LHCb (b stands for beauty)~\cite{LHCb-2008vvz}.
 
 
 	\subsubsection{Design and performance}
 
 	The LHC is a two-ring-superconducting-hadron accelerator and collider
-	installed in the existing 26.7 km tunnel that was 
+	installed in the existing tunnel that was 
 	constructed between 1984 and 1989 
 	for the CERN LEP machine. The LEP tunnel has 
 	eight straight sections and eight arcs 
@@ -134,10 +135,10 @@ and LHCb (b stands for beauty) [S08005].
 	section, the vacuum is achieved by use of 
 	non-evaporable getter (NEG) that absorbs residue gas particles 
 	when heated. More residue is absorbed by ion pumper. 
-
-	Being a proton-proton (pp) collider, there are advantages 
+	
+	The proton-proton collider has advantages 
 	and disadvantages compared to a
-	proton-anti-proton collider and an electron-positron collider. 
+	proton-anti-proton collider or an electron-positron collider. 
 	Two rings are needed to accommodate the two 
 	counter-rotation beams, unlike particle-antiparticle 
 	colliders that can have both beams sharing the same 
@@ -145,6 +146,7 @@ and LHCb (b stands for beauty) [S08005].
 	However it would not be possible to to 
 	achieve such high luminosity using
 	anti-proton beams. 
+	
 	In principle, the mass of the proton is much larger than 
 	the mass of the electron, the
 	synchrotron radiation losses will be much smaller, and 
@@ -152,48 +154,50 @@ and LHCb (b stands for beauty) [S08005].
 	compensate the losses (as designed in the LEP) can be reduced. 
 	However these sections are kept 
 	as the LEP has as a cost-effective solution. 
-	The tunnel in the arcs has a finished internal diameter of 3.7 m, 
-	due to the technical difficulties to install 
-	two separate rings in such small space,
-	LHC adopted the twin-bore magnet design, 
-	as shown in Figure \ref{fig:double-bore-magnet}.
-	It was proposed by John Blewett at the Brookhaven 
-	laboratory in 1971 first for
-	cost consideration [J.P. Blewett, 200GeV intersecting storage accelerators,Proceedings of the8thInternationalConference on High-Energy Accelerators, CERN, Geneva Switzerland (1971)],
-	but in the case of the LHC the overriding reason for adopting this solution
-	is the lack of space in the tunnel. 
-
-	\begin{figure}[]
+	The tunnel in the arcs has a finished internal diameter of 3.7~m. 
+		
+	\begin{figure}[bht]
 		\begin{centering}	
-		\includegraphics[width=.4\textwidth]{Detector_plots/LHC-double-bore-magnet.jpg}
-		\caption{ Double-bore magnet configuration of the LHC superconducting magnets.[THE LHC SUPERCONDUCTING MAGNETSL. Rossi, Accelerator Technology Division, CERN, Geneva, Switzerland]
-			}
+		\includegraphics[width=.7\textwidth]{Detector_plots/LHC-double-bore-magnet.jpg}
+		\caption{ Double-bore magnet configuration of the LHC 
+		superconducting magnets~\cite{rossi2003lhc}.}
 		\label{fig:double-bore-magnet}
 		\end{centering}
 	\end{figure}
+
+	Due to the technical difficulties to install 
+	two separate rings in such small space,
+	LHC adopted the twin-bore magnet design~\cite{rossi2003lhc}, 
+	as shown in Figure~\ref{fig:double-bore-magnet}.
+	It was proposed by John Blewett at the Brookhaven 
+	laboratory in 1971 first for
+	cost consideration~\cite{Blewett:1971zzb},
+	but in the case of the LHC the overriding reason for adopting this solution
+	is the lack of space in the tunnel. 
 
 	The aim of the LHC is to reveal the physics beyond
 	the Standard Model with centre of mass 
 	collision energies of up to 14 TeV.
 	The number of events per second generated in the LHC collisionsis given by:
 	\[
-		N_{event} = L\sigma_{event}\],
-
+		N_{event} = L\sigma_{event},\]
 	where $\sigma_event$ is the cross section 
 	for the event under study and $L$ the machine luminosity. 
 	The machine luminosity depends on the beam parameters 
 	and can be written for a Gaussian beam distribution as:
 	\[
-	L = \frac{N_b^2 n_b f_{rev} \gamma_r}{4\pi \epsilon_n \beta*} F	
-	\],
+	L = \frac{N_b^2 n_b f_{rev} \gamma_r}{4\pi \epsilon_n \beta*} F,
+	\]
 
-	where$N_b$is the number of particles per bunch,
-	$n_b$the number of bunches per beam,
-	$f_rev$ the revolution frequency, 
-	$\gamma_r$ the relativistic gamma factor, 
-	$\epsilon_r$ the normalized transverse beam emittance, $\beta*$ the beta function at the collision point which
-	describes the size of the beam, and	$F$ the geometric luminosity reduction factor due to the 
-	crossing angle at the interaction point (IP).
+	where $N_b$ refers to the number of particles per bunch,
+	$n_b$ number of bunches per beam,
+	$f_{rev}$ revolution frequency, 
+	$\gamma_r$ relativistic gamma factor, 
+	$\epsilon_r$ normalized transverse beam emittance, 
+	$\beta*$~beta function at the collision point which
+	describes the size of the beam, 
+	and	$F$ refers to the geometric luminosity reduction factor due to the 
+	crossing angle at the interaction point~(IP).
 
 	The two high luminosity experiments, ATLAS and CMS are
 	both aiming at a peak luminosity of $L$ = $10^{34}cm^2s^1$ for proton operation.
@@ -202,21 +206,10 @@ and LHCb (b stands for beauty) [S08005].
 	and the dedicated ion experiment, ALICE, is aiming at apeak luminosity of
 	$L$ = $10^{27}cm^2s^1$ for nominal lead-lead ion operation.
 
-	To reach such high energies, a series of acceleration is required for the beams before
-	entering the LHC ring. The protons are supplied by the injector chain 
-	Linac2 — Proton Synchrotron Booster (PSB) — Proton Synchrotron (PS) — Super Proton Synchrotron (SPS), 
-	as shown in Figure \ref{fig:accelerator_complex}, 
-	reaching an energy of 450 GeV when leaving the SPS. 
-	Each proton beam contains 2808 "bunches" of approximately 1.15 $\times$ 10$^11$ protons, arranded in 
-	"trains" of bunches with 72 bunches each "carriage". Inside the "carriage", each beam has
-	a spacing of 24.95 ns and between each "carriage" there is a gap of ~ 320 ns. The beams are also 
-	required to have well defined transverse and longitudinal emittance. 
 
-
-
-	\begin{figure}[]
+	\begin{figure}[bht]
 		\begin{centering}	
-		\includegraphics[width=.8\textwidth]{Detector_plots/accelerator_complex.png}
+		\includegraphics[width=.75\textwidth]{Detector_plots/accelerator_complex_smaller.png}
 		\caption{The LHC is the last ring (dark blue line) in a complex chain of 
 		particle accelerators. The smaller machines are used in a chain to help boost 
 		the particles to their final energies and provide beams to a whole set of smaller experiments.
@@ -224,27 +217,40 @@ and LHCb (b stands for beauty) [S08005].
 		\label{fig:accelerator_complex}
 		\end{centering}
 	\end{figure}
+	The proton beams are designed to carry energy of the order of a few TeV.
+	To reach such high energy, a series of acceleration is required for the beams before
+	entering the LHC ring. The protons are supplied by the injector chain 
+	Linac2 — Proton Synchrotron Booster (PSB) — Proton Synchrotron (PS) — Super Proton Synchrotron (SPS), 
+	as shown in Figure~\ref{fig:accelerator_complex}, 
+	reaching an energy of 450 GeV when leaving the SPS. 
+	Each proton beam contains 2808 ``bunches'' of approximately 
+	$1.15 \times 10^{11}$ protons, arranged in 
+	``trains'' of bunches with 72 bunches each ``carriage''. 
+	Inside the ``carriage'', each beam has a spacing of 24.95 ns and between each 
+	``carriage'' there is a gap of \~ 320 ns. 
+	The beams are required to have well defined transverse and longitudinal emittance. 
 
 
 	\subsubsection{Runs and results}
+	\label{sec:runs and results}
 	Following the downtime after an incident in one of the main dipole circuits 
-	during the first commissioning in 2008 [3],
+	during the first commissioning in 2008~\cite{lebrun2009report},
 	the operation restarted at lower beam energy to minimize the risk. 
-	Therefore, the first proton run (2010-2013) [4–6] was
+	Therefore, the first proton run (2010-2013)~\cite{alemany2013operation} was
 	carried out at 3.5–4 TeV (centre of mass energy 7-8 TeV). Furthermore, a bunch spacing
 	of 50 ns was used instead of the nominal 25 ns. 
 	This implied fewer bunches with larger intensity and hence a 
 	high peak luminosity (0.8 $\times$ 10$^{34}$ cm$^{-2}$s$^{-1}$ still smaller than
 	the nominal 10$^{34}$ cm$^{-2}$s$^{-1}$ luminosity) but larger than nominal pileup. 
-	Run 1 resulted in about 30 \fb of proton data and important physics results,
-	most notably the discovery of the Higgs boson [7,8].
+	Run 1 resulted in about 30~\fb of proton data and important physics results,
+	most notably the discovery of the Higgs boson~\cite{HIGG-2012-27},~\cite{HIGG-2012-28}.
 	Run 1 was followed by a long shutdown (LS1, 2013–2014)
-	with a large number of consolidation and upgrade activities [9]. 	
+	with a large number of consolidation and upgrade activities~\cite{bordry2013first}. 	
 	The bus-bar splices between the superconducting magnets were improved, 
 	in order to make sure that the LHC could operate at higher energy 
 	without risk of repeating the 2008 incident. 
 
-	\begin{figure}[]
+	\begin{figure}[bht]
 		\begin{centering}	
 		\includegraphics[width=.4\textwidth]{Detector_plots/Run2_lumi.png}
 		\caption{Cumulative luminosity versus time delivered to 
@@ -255,24 +261,37 @@ and LHCb (b stands for beauty) [S08005].
 		\label{fig:Run2_lumi}
 		\end{centering}
 	\end{figure}
-
+	
 	Run 2 (2016-2018) was carried out
-	at 6.5 TeV (center of mass energy 13 TeV) [cite the correct run  2 paper]. 
-	As shown in Figure \ref{fig:Run2_lumi}, out of the 156 \fb of data LHC has delivered, the ATLAS detector has recorded 
-	147 \fb and \lumi of data is certified to be good quality data.
+	at 6.5 TeV (center of mass energy 13 TeV)~\cite{LHC-Run2-Operation}. 
+	As shown in Figure~\ref{fig:Run2_lumi}, out of the 156~\fb 
+	of data LHC has delivered, the ATLAS detector has recorded 
+	147~\fb and \lumi of data is certified to be good quality data.
 	The delivered luminosity accounts for the luminosity delivered from the start of 
 	stable beams until the LHC requests ATLAS to put the detector in a 
 	safe standby mode to allow a beam dump or beam studies. 
 	The recorded luminosity is slightly smaller than the delivered luminosity, due 
-	to the inefficiency of the Data Acquisition (DAQ) and the so called "warm start": 
+	to the inefficiency of the Data Acquisition (DAQ) and the so called ``warm start'': 
 	when the stable beam flag is raised, 
 	the tracking detectors undergo a ramp of the high-voltage and, 
-	for the pixel system, turning on the preamplifiers. 
+	for the pixel system, turning on the pre-amplifiers. 
 	More details of the ATLAS detector can be found in the following sections. 
 	The recorded data is checked carefully to exclude possible hardware or software  issues. 
 	This is achieved by monitoring detector-level quantities 
 	and reconstructed collision event characteristics at key stages of the data processing chain.
-	This procedure led to high efficiency of good quality data: 95.6\%.	[cite  JINST 15 (2020) P04003,  arXiv:1911.04632]
+	This procedure led to high efficiency of good quality data: 95.6\%~\cite{aad2020atlas}.	
+
+	\begin{figure}[bht]
+		\begin{centering}	
+		\includegraphics[width=.4\textwidth]{Detector_plots/Run2_pileup.png}
+		\caption{ Shown is the luminosity-weighted distribution of the mean number of 
+		interactions per crossing for the Run 2 data. All data recorded by ATLAS during 
+		stable beams is shown, and the integrated luminosity and 
+		the mean mu value are given in the figure. 
+			}
+		\label{fig:Run2_pileup}
+		\end{centering}
+	\end{figure}
 
 	In this thesis the \lumi data recorded by the ATLAS detector of Run 2 is used.
 	The nominal bunch spacing of 25 ns was used, with slightly less bunches (2500) each beam.
@@ -286,32 +305,34 @@ and LHCb (b stands for beauty) [S08005].
 	An important parameter for the LHC experiments is the pileup, 
 	which is determined by the luminosity per bunch, and is a measure of 
 	the number of inelastic pp interactions that occur per bunch crossing. 
-	Higher pileup gives more luminosity (for a fixed number ofbunches) 
+
+	Higher pileup gives more luminosity (for a fixed number of bunches) 
 	but makes physics analysis more difficult due to the signals in the detector 
 	from the additional interactions. The distribution of the recorded luminosity over
-	the pileup is shown in Figure \ref{fig:Run2_pileup}. It's a challenging task for the 
+	the pileup is shown in Figure~\ref{fig:Run2_pileup}. It's a challenging task for the 
 	trigger and reconstruction algorithms to achieve robustness under such high pileup 
 	condition.
 
-	\begin{figure}[]
+	\begin{figure}[bht]
 		\begin{centering}	
-		\includegraphics[width=.4\textwidth]{Detector_plots/LHC-longterm-schedule.png}
-		\caption{Longer term LHC schedule, last updated: June 2021.% [source: https://lhc-commissioning.web.cern.ch/schedule/LHC-long-term.htm]
+		\includegraphics[width=.8\textwidth]{Detector_plots/LHC-longterm-schedule.png}
+		\caption{Longer term LHC operation schedule.% [source: https://lhc-commissioning.web.cern.ch/schedule/LHC-long-term.htm]
 			}
 		\label{fig:LHC-longterm-schedule}
 		\end{centering}
 	\end{figure}
-	\begin{figure}[]
-		\begin{centering}	
-		\includegraphics[width=.4\textwidth]{Detector_plots/LHC-longterm-schedule.png}
-		\caption{Longer term LHC schedule %[source:project HL-LHC, https://project-hl-lhc-industry.web.cern.ch/content/project-schedule ]
+	
+	\begin{figure}[bht]
+		\begin{centering}
+		\includegraphics[width=.65\textwidth]{Detector_plots/LHC-schedule-lumi.jpg}
+		\caption{LHC operation schedule and luminosity targets.  %[source:project HL-LHC, https://project-hl-lhc-industry.web.cern.ch/content/project-schedule ]
 			}
 		\label{fig:LHC-schedule-lumi}
 		\end{centering}
 	\end{figure}
-	The LHC operation and shutdown schedule is shown in Figure 
-	\ref{fig:LHC-longterm-schedule}
-	and Figure \ref{fig:LHC-schedule-lumi}.
+	The LHC operation and shutdown schedule is shown 
+	in Figure~\ref{fig:LHC-longterm-schedule}
+	and Figure~\ref{fig:LHC-schedule-lumi}.
 	The operation of CERN’s accelerators is subject to scheduled shutdowns 
 	to allow important repair and upgrade work to take place. 
 	The present shutdown, LS2, is devoted to preparations for Run 3 of the LHC, 
@@ -320,41 +341,31 @@ and LHCb (b stands for beauty) [S08005].
 	the successor to the LHC, which will begin operation at the end of 2027,
 	and eventually generate 10 times the integrated luminosity to
 	all Run 1, 2, 3 combined!
-	Due to the COVID-19 pandemic, 
-	the schedule has had to be modified. The new schedule for LS2 
-	anticipates that the first test beams will circulate in the LHC 
+	
+	The LS2 schedule has had to be modified due to the COVID-19 pandemic, 
+	which the new schedule anticipates that the first test beams will 
+	circulate in the LHC 
 	at the end of September 2021, four months later than the date 
-	planned before the COVID-19 crisis. 
-	To give the LHC’s main experiments – ATLAS, CMS, ALICE and LHCb – 
-	time to prepare their own upgrade, 
+	planned before the COVID-19 crisis, 
+	to give the LHC’s main experiments – ATLAS, CMS, ALICE and LHCb – 
+	time to prepare their own upgrade. 
 	Run 3 of the LHC will begin at the start of March 2022.
-	No changes have been made to the schedule beyond 2022.
+	% No changes have been made to the schedule beyond 2022.
 	The third long shutdown (LS3) will begin at the 
 	start of 2025 and end in mid-2027. 
 	This is when the equipment for the HL-LHC and 
 	its experiments will be installed. 
 	
 
-	\begin{figure}[]
-		\begin{centering}	
-		\includegraphics[width=.4\textwidth]{Detector_plots/Run2_pileup.png}
-		\caption{ Shown is the luminosity-weighted distribution of the mean number of 
-		interactions per crossing for the Run 2 data. All data recorded by ATLAS during 
-		stable beams is shown, and the integrated luminosity and 
-		the mean mu value are given in the figure. 
-			}
-		\label{fig:Run2_pileup}
-		\end{centering}
-	\end{figure}
 
 
 
 
 \subsection{The ATLAS Detector}
 
-\begin{figure}[]
+\begin{figure}[bht]
 	\begin{centering}	
-	\includegraphics[width=.4\textwidth]{Detector_plots/Cut-away-view-of-the-ATLAS-detector.png}
+	\includegraphics[width=.65\textwidth]{Detector_plots/Cut-away-view-of-the-ATLAS-detector.png}
 	\caption{Cut-away view of the ATLAS detector. 
 	The dimensions of the detector are 25 m in
 	height and 44 m in length. The overall weight 
@@ -364,13 +375,13 @@ and LHCb (b stands for beauty) [S08005].
 	\end{centering}
 \end{figure}
 
-ATLAS (A Toroidal LHC ApparatuS) is one of the 
+ATLAS is one of the 
 two general purpose detectors built for probing proton-proton 
 collision. This detector represents the work of a large collaboration 
 of several thousand physicists, engineers, technicians,
 and students over a period of fifteen years of dedicated 
 design, development, fabrication, and installation.
-A overall layout of the detector is shown in Figure \ref{fig:ATLAS_cut_away}.
+A overall layout of the detector is shown in Figure~\ref{fig:ATLAS_cut_away}.
 
 The high interaction rates, radiation doses, particle 
 multiplicities and energies, as well as the
@@ -379,6 +390,34 @@ standards on the design of the ATLAS detector.
 Therefore the ATLAS detector is designed to fufiled the following 
 requirements:
 
+\begin{table}[thb]
+	\centering
+	\small
+	\setlength\tabcolsep{5pt} 
+	\begin{tabular}{|c|c|c|c| }
+	\hline
+	\multirow{2}{*}{Detector component}&\multirow{2}{*}{Required resolution} & \multicolumn{2}{c|}{$\eta$ coverage} \\ \cline{3-4}
+	
+	  & & Measurement &  Trigger\\ 
+	 \hline
+	Tracking         &    $\sigma_{p_T}/p_T = 0.05\%p_T\bigoplus 1\% $        &  $\pm 2.5$  & None \\  
+	\hline
+	EM calorimetry      &  $\sigma_E/E = 10\%/E\bigoplus 0.7\% $       & $\pm 3.2$ &  $\pm 2.5$\\
+	\hline
+	Hadronic calorimetry (jets)   &        & &      \\
+	\hline
+	barrel and end-cap &  $\sigma_E/E = 50\%/E\bigoplus 3\% $       & $\pm 3.2$ &  $\pm 3.2$\\
+	forward   &  $\sigma_E/E = 100\%/E\bigoplus 10\% $       & $ 3.1 < |\eta | < 4.9 $ &  $3.1 < |\eta | < 4.9 $\\
+	\hline
+	Muon spectrometer  &    $\sigma_{p_T}/p_T = 10\%$ at \pt $=\ 1$ TeV        &  $\pm 2.7$  & $\pm 2.4$ \\  
+	\hline
+	\end{tabular}
+	\vspace{0.2cm}
+	\caption{General performance goals of the ATLAS detector. Note that, for high-\pt\ muons,
+	the muon-spectrometer performance is independent of the inner-detector system. The units for E
+	and \pt\ are in GeV \cite{PERF-2007-01}.}
+	\label{tab:ATLAS_performance}
+\end{table}
 
 
 
@@ -394,7 +433,7 @@ detector.
 
 \item
 Due to the geometry of the detector, to collect most of the 
-collision data,large acceptance in pseudorapidity(which will be defined
+collision data, large acceptance in pseudorapidity (which will be defined
 in the next subsection: \ref{sec:detector coordinate}) 
 with almost full azimuthal angle coverage is required.
 
@@ -419,13 +458,13 @@ required to observe secondary vertices.
 Good muon identification and momentum resolution 
 over a wide range of momenta and the ability 
 to determine unambiguously the charge of high 
-\pt muons are fundamental requirements.
+\pt\ muons are fundamental requirements.
 
 
 \item
 
-Triggering with high efficiency on \pt
-objects with sufficient background rejection, is a 
+Triggering with high efficiency on \pt\  
+objects with sufficient background rejection is a 
 prerequisite to achieve an acceptable trigger rate 
 for most physics processes of interest.
 \end{itemize}
@@ -434,45 +473,10 @@ for most physics processes of interest.
 The main performance goals of the detector are 
 listed in Table \ref{tab:ATLAS_performance}. 
 
-\begin{table}[]
-	\centering
-	\small
-	\setlength\tabcolsep{5pt} 
-	\begin{tabular}{|c|c|c|c| }
-	\hline
-	 Detector component & Required resolution& \multicolumn{2}{c|}{$\eta$ coverage} \\
-	& & Measurement &  Trigger\\ 
-	 \hline
-	Tracking         &    $\sigma_{p_T}/p_T = 0.05\%p_T\bigoplus 1\% $        &  $\pm 2.5$  & None \\  
-	\hline
-	EM calorimetry      &  $\sigma_E/E = 10\%/E\bigoplus 0.7\% $       & $\pm 3.2$ &  $\pm 2.5$\\
-	\hline
-	Hadronic calorimetry (jets)   &        & &      \\
-	barrel and end-cap &  $\sigma_E/E = 50\%/E\bigoplus 3\% $       & $\pm 3.2$ &  $\pm 3.2$\\
-	forward   &  $\sigma_E/E = 100\%/E\bigoplus 10\% $       & $ 3.1 < |\eta | < 4.9 $ &  $3.1 < |\eta | < 4.9 $\\
-	\hline
-	Muon spectrometer  &    $\sigma_{p_T}/p_T = 10\%$ at \pt $=\ 1$ TeV        &  $\pm 2.7$  & $\pm 2.4$ \\  
-	\hline
-	\end{tabular}
-	\vspace{0.2cm}
-	\caption{General performance goals of the ATLAS detector. Note that, for high-\pt muons,
-	the muon-spectrometer performance is independent of the inner-detector system. The units for E
-	and \pt are in GeV [cite: 2008 JINST 3 S08003].}
-	\label{tab:ATLAS_performance}
-\end{table}
 
-	\subsubsection{Coordinate system}
+\subsubsection{Coordinate system}
 	\label{sec:detector coordinate}
 
-	\begin{figure}[]
-		\begin{centering}	
-		\includegraphics[width=.4\textwidth]{Detector_plots/ATLAS coordinate system.png}
-		\caption{Illustration of the coordinate systems 
-		used at the ATLAS experiment in the geographical context of the LHC.
-			}
-		\label{fig:ATLAS_coordinate_system}
-		\end{centering}
-	\end{figure}
 
 
 	The ATLAS coordinate system is a right-handed Cartesian system
@@ -483,21 +487,32 @@ listed in Table \ref{tab:ATLAS_performance}.
 	The positive x-axis is defined as pointing from 
 	the interaction point to the centre of the
 	LHC ring and the positive y-axis is defined as 
-	pointing upwards, as shown in Figure \ref{fig:ATLAS_coordinate_system}. 
+	pointing upwards, as shown in Figure~\ref{fig:ATLAS_coordinate_system}. 
+
+	\begin{figure}[bht]
+		\begin{centering}	
+		\includegraphics[width=.55\textwidth]{Detector_plots/ATLAS coordinate system.png}
+		\caption{Illustration of the coordinate systems 
+		used at the ATLAS experiment in the geographical context of the LHC.
+			}
+		\label{fig:ATLAS_coordinate_system}
+		\end{centering}
+	\end{figure}
+
 	The azimuthal angle $\phi$ 
-	is measuredas usual around the beam axis, and 
+	is measured as usual around the beam axis, and 
 	the polar angle $\theta$ is the angle from the beam axis.  
 	In high energy physics, it's more common to use the 
 	pseudorapidity instead of the
 	polar angle $\theta$, defined as:
 
-	\[ \eta = -ln\ tan(\theta/2) \].
+	\[ \eta = -ln\ tan(\theta/2). \]
 
 	In the case of highly relativistic particles
 	(which is the comman case in high energy physics), 
 	the pseudorapidity approaches the rapidity, 
 
-	\[ y=1/2ln[(E+p_z)/(E-p_z)] \],
+	\[ y=1/2ln[(E+p_z)/(E-p_z)], \]
 
 	with E the energy of the particle, m its mass 
 	and $p_z$ the momentum along the z axis.
@@ -516,37 +531,39 @@ listed in Table \ref{tab:ATLAS_performance}.
 	along the z axis, especially when the direction of 
 	the particles are close to the beam pipe. 
 	While the pseudorapidity is determined only by
-	the polar angle, which much easier and faster 
+	the polar angle, which is much easier and faster 
 	to compute. 
 
 	The transverse momentum \pt, the transverse energy
-	$E_T$, and the missing transverse energy $E_miss^T$ (or MET) 
+	$E_T$, and the missing transverse energy $E_{miss}^T$ (MET) 
 	are defined in the x-y plane unless stated otherwise.  
 	The distance $\Delta R$ in the pseudorapidity-azimuthal angle 
 	space is defined as:
 
-	\[\Delta R = \sqrt{\Delta \eta^2+\Delta\phi^2}\].
+	\[\Delta R = \sqrt{\Delta \eta^2+\Delta\phi^2}.\]
 
 \subsubsection{Magnets}
+
+
+	ATLAS has a unique hybrid system of four large superconducting 
+	magnets~\cite{ATLAS-TDR-06}. This magnetic system is 22 m in diameter and 26 m in length, 
+	with a stored energy of 1.6 GJ.
+	Figure~\ref{fig:ATLAS_cut_away} shows the general layout, 
+	the four main layers of detetors and the four superconducting 
+	magnets which provide the magnetic
+	field over a volume of approximately 12000 $m^3$.
 	
-	\begin{figure}[]
+	\begin{figure}[bht]
 		\begin{centering}	
-		\includegraphics[width=.4\textwidth]{Detector_plots/ATLAS magnets.png}
+		\includegraphics[width=.36\textwidth]{Detector_plots/ATLAS magnets.png}
 		\caption{Geometry of magnet windings and
 		tile calorimeter steel.	}
 		\label{fig:ATLAS_magnets}
 		\end{centering}
 	\end{figure}
 
-	ATLAS has a unique hybrid system of four large superconducting 
-	magnets. This magnetic system is 22 m in diameter and 26 m in length, 
-	with a stored energy of 1.6 GJ.
-	Figure \ref{fig:ATLAS_cut_away} shows the general layout, 
-	the four main layers of detetors and the four superconducting 
-	magnets which provide the magnetic
-	field over a volume of approximately 12000 $m^3$.
 	The spatial arrangement of the coil windings is shown in 
-	Figure \ref{fig:ATLAS_magnets}. 
+	Figure~\ref{fig:ATLAS_magnets}. 
 	The ATLAS magnet system consists of two parts:
 	\begin{itemize}
 		\item a solenoid, which is aligned on the beam axis and 
@@ -570,25 +587,23 @@ listed in Table \ref{tab:ATLAS_performance}.
 	Therefore in the ATLAS magnetic system, tracks in the inner detector
 	is bended in the $\phi$ direction, while in the muon spectrometer 
 	in the $\theta$ direction.
-	
-	
-\subsubsection{Inner detector}
 
-			
-	\begin{figure}[]
-		\begin{centering}	
-		\includegraphics[width=.4\textwidth]{Detector_plots/Inner detector.png}
-		\caption{Cut-away view of the inner detector.}
-		\label{fig:inner_detector}
-		\end{centering}
-	\end{figure}
-	The innder detector consists of three parts: the pixel detector and
-	the insertable B-Layer (IBL),
-	the silicon micro strip tracker (SCT), the transition radiation
-	tracker (TRT). 
-	Figure \ref{fig:inner_detector} shows a 
+
+\subsubsection{Inner detector}	
+	The innder detector~\cite{ATLAS-TDR-04} consists of three parts: the pixel detector~\cite{ATLAS-TDR-11}
+	and	the insertable B-Layer (IBL)~\cite{ATLAS-TDR-19} (as one part),
+	the silicon micro strip tracker (SCT)~\cite{}{ATLAS-TDR-04}, the transition radiation
+	tracker (TRT)~\cite{ATLAS-TDR-04}. 
+	Figure~\ref{fig:inner_detector} shows a 
 	charge track traverses the sensors and structural
 	elements. 
+	\begin{figure}[bht]
+		\begin{centering}	
+		\includegraphics[width=.55\textwidth]{Detector_plots/Inner detector.png}
+		\caption{Cut-away view of the inner detector.}
+		\label{fig:inner_detector}
+	\end{centering}
+	\end{figure}
 	The track traverses successively the beryllium
 	beam-pipe, the four cylindrical silicon-pixel layers 
 	with individual 
@@ -597,7 +612,8 @@ listed in Table \ref{tab:ATLAS_performance}.
 	and approximately 36 axial straws of 4 $mm$ diameter 
 	contained in the barrel TRT
 	modules within their support structure.
-
+	\begin{itemize}
+		\item \textbf{Pixel detector and IBL}\\
 	The silicon pixel detector is the closest ATLAS 
 	component to the collision. It is composed of layers of
 	silicon pixels and designed to have a very 
@@ -605,47 +621,47 @@ listed in Table \ref{tab:ATLAS_performance}.
 	and secondary interaction vertices. 
 	The detector layers are formed of silicon sensor modules and 
 	in total there are approximately 92 million pixels 
-	(consequently, readout channels) in the system.
+	(consequently, 92 million readout channels) in the system.
 	It consists of three cylindrical layers in the 
 	barrel region, positioned at the radial distances of 
-	50.5, 88.5 and 122.5mm 
+	50.5, 88.5 and 122.5 mm 
 	and on disks perpendicular to the beams in the end-caps at the
-	longitudinal distances of 49.5, 58.0 and 65.0mm. 
+	longitudinal distances of 49.5, 58.0 and 65.0 mm. 
 	% The B-layer, placed at a distance of 50.5mm, plays 
 	% an important role in detecting secondary vertices 
 	% for the identification of jets coming from 
 	% b-quark hadronisation (\bjets). 
 	In 2014, during the first LHC long shutdown, a fourth pixel 
 	layer was installed inside the existing detector, 
-	the insertable B-Layer (IBL) at a radius of 33mm 
-	from the beam axis [cite: ATLAS Insertable B-Layer Technical Design Report].
+	the insertable B-Layer (IBL) at a radius of 33 mm 
+	from the beam axis.
 	The new pixel layer provides an 
 	additional space point very close to the interaction point, 
 	which significantly improves the identification of jets coming from 
 	b-quark hadronisation (\bjets). 
-
+	\item \textbf{SCT} \\
 	The next constituent of the inner detector is the SCT, 
 	which consists of four layers of strips located axially on the 
-	beam direction in the barrel region and placed along the
-	R-direction in the end-cap region. 
+	beam direction in the barrel region and placed along the 
+	\mbox{R-direction} in the end-cap region. 
 	Each layer of strip is glued back to back with an angle of
 	40 mrad. The spatial resolution of the sensor is 
-	$\sigma_\phi = 17\mu m$ in the bending direction ($R-\phi$)
-	and $\sigma_\phi = 580\mu m$ in the z (barrel) and R (end-cap) direction. 
-
+	$\sigma_\phi = 17\ \mu m$ in the bending direction ($R-\phi$)
+	and $\sigma_\phi = 580\ \mu m$ in the z (barrel) and R (end-cap) direction. 
+	\item \textbf{TRT} \\
 	The most external part of the inner detector is the TRT. 
 	It is a straw drift tube tracker, with additional electron identification
 	capabilities from transition radiation. It consists of
-	modules of 4mm diameter straws, filled with a mixture of gas of
+	modules of 4 mm diameter straws, filled with a mixture of gas of
 	70\% Xe, 27\% CO2 and 3\% O2 immersed in a polypropylene radiator.
 	Up to 73 straw layers of straws are interleaved with fibres in the barrel
 	and 160 starw planes are interleaved with foils in the end-cap. 
-	All charged tracks with \pt $> 0.5$ GeV and $|\eta| < 2.0$ will traverse 
+	All charged tracks with \pt\ $> 0.5$ GeV and $|\eta| < 2.0$ will traverse 
 	at least 36 straws, except in the
 	barrel-end-cap transition region ($0.8 < |\eta|< 1.0$), 
 	where this number decreases to a minimum of 22 crossed straw.
 	The TRT measures the track position only in the bending direction
-	($R-\phi$), with a spatial resolution of $\sigma_\phi = 130 \mu m$.
+	($R-\phi$), with a spatial resolution of $\sigma_\phi = 130\ \mu m$.
 	The TRT contributes significantly to the pattern recognition and 
 	momentum reconstruction, depsite the low resolution compared to the 
 	silicon tracker and the lack of a measurement along the z axis. 
@@ -656,22 +672,24 @@ listed in Table \ref{tab:ATLAS_performance}.
 	the material. These photons are then absorbed by the Xenon gas mixture, which
 	the intensity depends on gamma factor of the traversing particle. 
 	This information can then be exploited for eletron/pion discrimination.
+	\end{itemize}
 
-\subsubsection{Calorimeter system}
+	\subsubsection{Calorimeter system}
 
 
 
-	\begin{figure}[]
+	\begin{figure}[bht]
 		\begin{centering}	
-		\includegraphics[width=.4\textwidth]{Detector_plots/calo.png}
+		\includegraphics[width=.6\textwidth]{Detector_plots/calo.png}
 		\caption{Cut-away view of the ATLAS calorimeter system.}
 		\label{fig:calo}
 		\end{centering}
 	\end{figure}
 
-	The ATLAS calorimeters are sampling calorimeters, meaning
+	The ATLAS calorimeters~\cite{ATLAS-TDR-01}
+	are sampling calorimeters, meaning
 	different material are used for the absorber and the active part.
-	A cut-away view of the calorimeters is shown in figure \ref{fig:calo}.
+	A cut-away view of the calorimeters is shown in Figure~\ref{fig:calo}.
 	These calorimeters cover the range $|\eta|$< 4.9, using 
 	different techniques suited to the widely varying requirements 
 	of the physics processes of interest and of the radiation environment
@@ -685,22 +703,22 @@ listed in Table \ref{tab:ATLAS_performance}.
 	calorimeter to avoid punch-through into the muon system. 
 	The calorimeter depth is hence an important design consideration. 
 	The total thickness of the EM calorimeter is greater than
-	22 radiation lengths ($X0$) in the barrel and greater than 
-	24 $X0$ in the end-caps. The approximate 9.7 interaction 
-	lengths ($\lambda$ ) of active calorimeter in 
-	the barrel (10 $\lambda$ in the end-caps) are adequate to 
+	22 radiation lengths ($X_0$) in the barrel and greater than 
+	24 $X_0$ in the end-caps. The approximate 9.7 interaction 
+	lengths ($\lambda$) of active calorimeter in 
+	the barrel ( $10\ \lambda$ in the end-caps) are adequate to 
 	provide good resolution for high-energy jets. The total thickness, 
-	including 1.3 $\lambda$ from the outer support, is 11 $\lambda$
+	including $1.3\ \lambda$ from the outer support, is $11\ \lambda$
 	at $\eta$ = 0 and has been shown both by measurements and simulations 
 	to be sufficient to reduce punch-through well below the irreducible 
 	level of prompt or decay muons. Together with the large
-	$\eta$-coverage, this thickness will also ensure a good $E_{miss}^T$ 
+	\mbox{$\eta$-coverage}, this thickness will also ensure a good $E_{miss}^T$ 
 	measurement.
 
 	\begin{itemize}
-		\item \paragraph{LAr electromagnetic calorimeter} 
+		\item \textbf{LAr electromagnetic calorimeter} \\
 		The EM calorimeter is a 
-		lead-Liquid argon (lead-LAr) detector with accordion-shaped kapton electrodes and lead 
+		lead-Liquid argon (lead-LAr) detector~\cite{ATLAS-TDR-02} with accordion-shaped kapton electrodes and lead 
 		absorber plates over its full coverage. The accordion geometry provides 
 		complete $\phi$ symmetry without azimuthal cracks. The lead thickness in 
 		the absorber plates has been optimised as a function of $\eta$ in terms of EM calorimeter
@@ -718,25 +736,29 @@ listed in Table \ref{tab:ATLAS_performance}.
 		Each end-cap calorimeter is mechanically divided into two coaxial wheels: 
 		an outer wheel covering the region $1.375 < |\eta|< 2.5$, and an inner wheel 
 		covering the region $2.5 < |\eta|< 3.2$.
-		Over the region devoted to precision physics ($|\eta|< 2.5$), the
-		EM calorimeter is segmented in three sections in depth. 
-		For the end-cap inner wheel, the calorimeter is segmented 
-		in two sections in depth and has a coarser lateral granularity than for the rest of
-		the acceptance.
-		% In the region of $|\eta|< 1.8$, a presampler detector is used to correct for the energy lost by
-		% electrons and photons upstream of the calorimeter. The presampler consists of an active LAr layer
-		% of thickness 1.1 cm (0.5 cm) in the barrel (end-cap) region.
+		
+		The calorimeter has three layers along the transverse direction:
+		a pre-sampler with very high granularity in $\eta$, in order to 
+		reconstruct the neutral pions decaying to two photons and particles 
+		which already starts showering in the inner detector. 
+		The pre-sampler is followed by longer towers of relatively 
+		high granularity, which is the major part of detecting EM showers, 
+		and reponsible for measuring the $\eta$ and $\phi$ coordinates of 
+		the particles. The last layer detects showers generated from 
+		particles other than electrons or photons that start showering 
+		inside the EM calorimeter before leaving it.
 
-		\item \paragraph{Tile calorimeter}
-		The tile calorimeter is placed directly outside the EM calorimeter envelope. 
+		\item \textbf{Tile calorimeter} \\
+		The tile calorimeter~\cite{ATLAS-TDR-03} is placed directly outside the EM calorimeter envelope. 
 		Its	barrel covers the region $|\eta|< 1.0$, and its two extended barrels 
 		the range $0.8 < |\eta|< 1.7$. It is a
 		sampling calorimeter using steel as the absorber and scintillating tiles 
 		as the active material. The	barrel and extended barrels are divided azimuthally 
-		into 64 modules. Radially, the tile calorimeter
-		extends from an inner radius of 2.28 m to an outer radius of 4.25 m. 
+		into 64 modules. 
+		% Radially, the tile calorimeter
+		% extends from an inner radius of 2.28 m to an outer radius of 4.25 m. 
 		It is segmented in depth in three
-		layers, approximately 1.5, 4.1 and 1.8 interaction lengths ($\lambda$ ) 
+		layers, approximately 1.5, 4.1 and 1.8 $\lambda$ 
 		thick for the barrel and 1.5, 2.6, and
 		3.3 $\lambda$ for the extended barrel. 
 		The total detector thickness at the outer edge of the tile-instrumented
@@ -745,11 +767,10 @@ listed in Table \ref{tab:ATLAS_performance}.
 		% fibres into two separate photomultiplier tubes. 
 		% In $\eta$, the readout cells built by grouping fibres into
 		% the photomultipliers are pseudo-projective towards the interaction region.
-		\item \paragraph{LAr hadronic end-cap calorimeter}
+		\item  \textbf{LAr hadronic end-cap calorimeter} \\
 		The Hadronic End-cap Calorimeter (HEC) consists of two
 		independent wheels per end-cap, located directly behind the end-cap 
-		electromagnetic calorimeter
-		and sharing the same LAr cryostats. 
+		electromagnetic calorimeter and sharing the same LAr cryostats. 
 		The HEC covers the range of $1.5< |\eta|< 3.2$, 
 		slightly overlapping with the forward calorimeter which 
 		will be described in the following paragraph 
@@ -757,44 +778,151 @@ listed in Table \ref{tab:ATLAS_performance}.
 		This overlap is to reduce the drop in material 
 		density at the transition between
 		the different calorimeters.
-		Each wheel is built from 32
-		identical wedge-shaped modules, assembled with fixtures at the periphery 
-		and at the central bore.
-		Each wheel is divided into two segments in depth, for a total of four 
-		layers per end-cap. The wheels
-		closest to the interaction point are built from 25 mm parallel copper plates, 
-		while those further away
-		use 50 mm copper plates (for all wheels the first plate is half-thickness). 
-		The outer radius of the
-		copper plates is 2.03 m, while the inner radius is 0.475 m 
-		(except in the overlap region with the
-		forward calorimeter where this radius becomes 0.372 m). 
-		The copper plates are interleaved with
-		8.5 mm LAr gaps, providing the active medium for this sampling calorimeter.
-		\item \paragraph{LAr forward calorimeter}
-		The Forward Calorimeter (FCal) is integrated into the end-cap cryostats, 
-		as this provides clear benefits in terms of uniformity of the calorimetric 
-		coverage as well as reduced radiation background levels in the muon spectrometer. 
-		In order to reduce the amount of neutron albedo in the inner detector cavity, 
-		the front face of the FCal is recessed by about 1.2 m with respect to the EM calorimeter 
-		front face. This severely limits the depth of the calorimeter
-		and therefore calls for a high-density design. The FCal is approximately 
-		10 interaction lengths deep, and consists of three modules in each end-cap: 
+		% Each wheel is built from 32
+		% identical wedge-shaped modules, assembled with fixtures at the periphery 
+		% and at the central bore.
+		% Each wheel is divided into two segments in depth, for a total of four 
+		% layers per end-cap. The wheels
+		% closest to the interaction point are built from 25 mm parallel copper plates, 
+		% while those further away
+		% use 50 mm copper plates (for all wheels the first plate is half-thickness). 
+		% The outer radius of the
+		% copper plates is 2.03 m, while the inner radius is 0.475 m 
+		% (except in the overlap region with the
+		% forward calorimeter where this radius becomes 0.372 m). 
+		% The copper plates are interleaved with
+		% 8.5 mm LAr gaps, providing the active medium for this sampling calorimeter.
+		\item  \textbf{LAr forward calorimeter}\\
+		The Forward Calorimeter (FCal) covers $3.1 < |\eta| < 4.9 $ and
+		%  is integrated into the end-cap cryostats, 
+		% as this provides clear benefits in terms of uniformity of the calorimetric 
+		% coverage as well as reduced radiation background levels in the muon spectrometer. 
+		% In order to reduce the amount of neutron albedo in the inner detector cavity, 
+		% the front face of the FCal is recessed by about 1.2 m with respect to the EM calorimeter 
+		% front face. This severely limits the depth of the calorimeter
+		% and therefore calls for a high-density design. The FCal 
+		is approximately 10 interaction lengths deep. 
+		It consists of three modules in each end-cap: 
 		the first, made of copper, is optimised for	electromagnetic measurements, 
 		while the other two, made of tungsten, measure predominantly the
-		energy of hadronic interactions. Each module consists of a metal matrix, 
-		with regularly spaced longitudinal channels filled with the electrode structure 
-		consisting of concentric rods and tubes	parallel to the beam axis. 
-		The LAr in the gap between the rod and the tube is the sensitive medium.
-		This geometry allows for excellent control of the gaps, which are as small 
-		as 0.25 mm in the first
-		section, in order to avoid problems due to ion buildup. 
+		energy of hadronic interactions. 
+		Due to high particle fluxes and
+		energies in the forward region, the calorimeter must contain 
+		relatively long showers in the small volume
+		allowed by design constraints, and thus must be very dense.
+		% Each module consists of a metal matrix, 
+		% with regularly spaced longitudinal channels filled with the electrode structure 
+		% consisting of concentric rods and tubes	parallel to the beam axis. 
+		% The LAr in the gap between the rod and the tube is the sensitive medium.
+		% This geometry allows for excellent control of the gaps, which are as small 
+		% as 0.25 mm in the first
+		% section, in order to avoid problems due to ion buildup. 
 
 	\end{itemize}
 
-
-
+	\subsubsection{Muon Spectrometer}
 	
+	\begin{figure}[bht]
+		\begin{centering}	
+		\includegraphics[width=.6\textwidth]{Detector_plots/Muon.png}
+		\caption{Cut-away view of the ATLAS muon spectrometer system.}
+		\label{fig:MS}
+		\end{centering}
+	\end{figure}
+	
+	
+	The muon spectrometer (MS)~\cite{ATLAS-TDR-11} is the 
+	outermost and largest detector of ATLAS. 
+	The cut-away view of the MS is illustrated in Figure~\ref{fig:MS}.
+	It fully covers the	calorimeter system and occupies a large part of the ATLAS cavern. 
+	It is based on the magnetic deflection of muon tracks in the 
+	large superconducting air-core toroid magnets, instrumented with
+	separate trigger and high-precision tracking chambers. 
+	Over the range $|\eta|< 1.4$, magnetic bending is provided by the large 
+	barrel toroid. For $1.6 < |\eta|< 2.7$, muon tracks are bent by two smaller
+	end-cap magnets inserted into both ends of the barrel toroid. 
+	Over $1.4 < |\eta|< 1.6$, usually referred to as the transition region, 
+	magnetic deflection is provided by a combination of barrel and end-cap
+	fields. The configuration of magnets provides a field mostly orthogonal 
+	to the muon trajectories, hence minimising the degradation of 
+	resolution due to multiple scattering. 
+	% The anticipated high level of 
+	% particle flux has had a major impact on the choice and design of the spectrometer 
+	% instrumentation, affecting performance parameters such as rate capability, granularity, ageing
+	% properties, and radiation hardness.
+	% In the barrel region, tracks are measured in chambers arranged in three cylindrical layers
+	% around the beam axis; in the transition and end-cap regions, the chambers are installed in planes
+	% perpendicular to the beam, also in three layers.
+
+
+	The MS measures momentum of muons tracks depends on the momentum 
+	of the tracks. 
+	The resolution is typically 2–3\% over most of the kinematic range
+	apart from very high momenta, where it increases to about 10\% at \pt\ = 1 TeV.  
+	The MS consists of four subsystems which rely on four different gas detector
+	technologies. Two of them, the resistive plate chambers (RPC) in the barrel region 
+	and the thin gap chambers (TGC) in the end-cap region, provide trigger signals, 
+	while the other two, the monitored drift tubes (MDT) and the cathode strip 
+	chambers (CSC) provide the momentum measurement. The MDT chambers provide high 
+	precision measurements in the bending direction over most of the detector
+	acceptance while the CSC are used in the forward region where the particle flux 
+	is too high for the MDT	chambers. The muon chambers are arranged in the barrel 
+	($|\eta| < 1.05$) in three cylindrical layers around the beam axis, 
+	while in the end-cap regions ($1.05 < |\eta| < 2.7$) they are placed in three wheels.
+
+	\subsubsection{Trigger system}
+	\begin{figure}[bht]
+		\begin{centering}	
+		\includegraphics[width=.97\textwidth]{Detector_plots/summary xs.png}
+		\caption{Plot showing the production cross-sections of the most dominant
+		background processes at the LHC.}
+		\label{fig:summary production Xs}
+		\end{centering}
+	\end{figure}
+	As mentioned in section \ref{sec:runs and results}, the spacing of each bunch
+	is 25 ns. This translates to a frequency of 40 MHz of bunch crossing. It
+	will be difficult and not meaningful to keep all these events, which includes
+	a lot of ``uninteresting'' physics events. Figure~\ref{fig:summary production Xs} 
+	shows a summary of the most dominant background processes production cross-sections.
+	Many of these processes produce high multiplicity of jets and are not of experimental
+	interest. Therefore, it's necessary to adopts a trigger system that make fast decisions
+	whether to save the event or not.
+	The ATLAS trigger system consists of two consecutive parts: the Level 1 trigger
+	\cite{ATLAS-TDR-12}, followed by the Level 2 and the event filter, 
+	which together form the High Level Trigger (HLT)
+	\cite{ATLAS-TDR-16}.
+	
+	The L1 trigger searches for signatures from high-\pt\ muons, electrons/photons, jets, and 
+	\mbox{$\tau$-leptons} decaying into hadrons. It also selects events with large MET
+	and large total transverse energy. The L1 trigger uses reduced-granularity information from a
+	subset of detectors: the RPC and TGC for high-\pt\ muons, and all the calorimeter 
+	sub-systems for electromagnetic clusters, jets, $\tau$-leptons, $E_{miss}^T$ ,
+	and large total transverse energy.
+	As a result, the L1 trigger reduces the event rate from 40 MHz to a maximum of 100 kHz.
+	The decision is made by Central Trigger	Processor (CTP), 
+	which operates on signals from dedicated hardware in the calorimeter
+	and muon detector systems. The decision time, at under 2.5 $\mu s$, is faster than the ID
+	can process events so ID information is omitted.
+	For each data-taking period, the L1	trigger is loaded with a trigger menu, 
+	a list of up to 256 criteria used to determine
+	whether an event is accepted. The trigger menus are designed to accomodate a broad
+	physics programme, with high acceptance for both BSM searches and SM precision
+	measurements.
+
+	The L1 trigger also uses detector information with reduced granularity to identify Regions
+	of Interest (RoI)~\cite{Blair:2007qn} in $\phi$ and $\eta$.
+	The L2 selection is seeded by the RoI information provided by the L1 trigger over a dedicated
+	data path. L2 selections use, at full granularity and precision, all the available detector 
+	data within the RoI’s.
+	The L2 menus are designed to reduce the
+	trigger rate to approximately 3.5 kHz, with an event processing time of about 40 ms,
+	averaged over all events. The final stage of the event selection is carried out by 
+	the event filter, which reduces the event rate to roughly 200 Hz. 
+	The selections are implemented using offline analysis procedures
+	within an average event processing time of the order of four seconds.
+	
+
+
 \section{Data and Monte Carlo samples}
 \section{Physics Objects Reconstruction}
 \subsection{Track and vertex}
@@ -814,16 +942,16 @@ quarks or gluons is of major importance in many areas of the
 physics programme of the ATLAS experiment at the LHC. 
 It is crucial in a large number of Standard Model (SM) 
 precision measurements, studies of the Higgs boson properties, and 
-searches for new phenomena \cite{SUSY-2014-08, ATLAS-CONF-2018-043,Interpreting_Higgs_result}.
+searches for new phenomena~\cite{SUSY-2014-08, ATLAS-CONF-2018-043,Interpreting_Higgs_result}.
 It also plays an important role in 
 the $HH \to bb\tau\tau$ searches presenting in Chapter \ref{sec:search for dihiggs}. 
 % as well as the recent 
-% observation of the Higgs boson decay into bottom quarks \cite{HIGG-2018-04} 
-% and of its production in association with a top-quark pair \cite{HIGG-2018-13}. 
+% observation of the Higgs boson decay into bottom quarks~\cite{HIGG-2018-04} 
+% and of its production in association with a top-quark pair~\cite{HIGG-2018-13}. 
 
 
 The ATLAS Collaboration uses various algorithms to identify 
-\bjets \cite{PERF-2012-04}, referred to as \btagging\ algorithms, 
+\bjets~\cite{PERF-2012-04}, referred to as \btagging\ algorithms, 
 when analysing data recorded during Run 2 of the LHC. These 
 algorithms exploit the long lifetime, high mass and high decay 
 multiplicity of $b$-hadrons, as well as the properties of the \bquark\  
@@ -847,8 +975,8 @@ the \bjets via two complementary approaches, one that uses the
 individual properties of charged-particle tracks, later referred 
 to as tracks, associated with a hadronic jet, and a second which 
 combines the tracks to explicitly reconstruct displaced vertices. 
-These algorithms, first introduced during Run 1 \cite{PERF-2012-04}, 
-have been improved and retuned for Run 2 \cite{FTAG-2018-01}. 
+These algorithms, first introduced during Run 1~\cite{PERF-2012-04}, 
+have been improved and retuned for Run 2~\cite{FTAG-2018-01}. 
 Secondly, in order to 
 maximise the \btagging\ performance, the results of the low-level 
 \btagging\ algorithms are combined into high-level algorithms 
@@ -858,8 +986,8 @@ via multivariate classifiers.
 The most performant algorithms presently in use in physics 
 analyses at ATLAS are based on multivariate combinations 
 of the available information (MV2) or additionally using a
-deep feed-forward neural network (DL1) \cite{tagging,ATL-PHYS-PUB-2017-013}, 
-as shown in Figure \ref{fig:b-tagging-performance}, where the performance
+deep feed-forward neural network (DL1)~\cite{tagging,ATL-PHYS-PUB-2017-013}, 
+as shown in Figure~\ref{fig:b-tagging-performance}, where the performance
 is characterised by the probability of 
 tagging a \bjet\ (\bjet\ tagging efficiency, 
 $\epsilon_b$) and the probability of mistakenly identifying 
@@ -871,21 +999,21 @@ in the \ttbar\ simulated events are shown in Figure~\ref{fig:b-tagging-score}.
 Depending on the low-level algorithm, 
 the DL1 tagger can be further separated into two taggers: DL1 and DL1r,
  where the DL1 tagger uses traditional track-based impact parameter 
- taggers IP2D and IP3D \cite{ATL-PHYS-PUB-2016-012} 
+ taggers IP2D and IP3D~\cite{ATL-PHYS-PUB-2016-012} 
  and the DL1r tagger uses a Recurrent Neural Network Impact Parameter tagger 
- (RNNIP) \cite{ATL-PHYS-PUB-2017-013}. The DL1r tagger is now the 
+ (RNNIP)~\cite{ATL-PHYS-PUB-2017-013}. The DL1r tagger is now the 
  default \btagging\ algorithm used for flavour tagging in ATLAS.
  The performance of the algorithms is quantified 
 in terms of \cjet\ (light jet) rejections, defined as 
 1/$\epsilon_c$ and 1/$\epsilon_l$. 
 %Their high mass also leads to decay products with a larger transverse momentum relative to the jet axis with respect to the ones typically found in jets from light partons. Finally, heavy hadrons have a sizable branching ratio for semileptonic decays, hence the presence of soft leptons in the produced jets provides another tool for heavy jet identification. %The general strategy is to start with simple algorithms that exploits a particular property of b jets and progressively add more information to build moresophisticated algorithms. %The output of these algorithms consists in a discriminant value for each jet. Operating points are then defined as thresholds on the discriminant, designed to provide a determined efficiency for identifying b jets.
-% Low-level $b$-taggingalgorithms fall into two broad categories. A first approach, implemented in the IP2D and IP3D algorithms \cite{ATL-PHYS-PUB-2017-013}, or RNNIP \cite{ATL-PHYS-PUB-2017-003} is inclusive and based on exploiting the large impact parameters of the tracks originating from the $b$-hadron decay. The second approach explicitly reconstructs displaced vertices. To maximise the $b$-tagging performance, low-level algorithm results are combined using multivariate classifiers. To this end, two high-level tagging algorithms have been developed. The first one,MV2\cite{ATL-PHYS-PUB-2017-013}, is based on a boosted decisiontree (BDT) discriminant, while the second one,DL1, is based on a deep feed-forward neural network(NN). These two algorithms are presented in fig .
+% Low-level $b$-taggingalgorithms fall into two broad categories. A first approach, implemented in the IP2D and IP3D algorithms~\cite{ATL-PHYS-PUB-2017-013}, or RNNIP~\cite{ATL-PHYS-PUB-2017-003} is inclusive and based on exploiting the large impact parameters of the tracks originating from the $b$-hadron decay. The second approach explicitly reconstructs displaced vertices. To maximise the $b$-tagging performance, low-level algorithm results are combined using multivariate classifiers. To this end, two high-level tagging algorithms have been developed. The first one,MV2\cite{ATL-PHYS-PUB-2017-013}, is based on a boosted decisiontree (BDT) discriminant, while the second one,DL1, is based on a deep feed-forward neural network(NN). These two algorithms are presented in fig .
 \begin{figure}[!h]
 	\includegraphics[width=1\textwidth]{FTAG_plots/b-tagging-perfermance.png}
 	\caption{The light-flavour jet (left) and \cjet\ (right) rejections versus 
 	the \bjet\ tagging efficiency for the IP3D, SV1, JetFitter, MV2 and
 	DL1 b-tagging algorithms evaluated on the \ttbar\ events
-	 \cite{FTAG-2018-01}.}\label{fig:b-tagging-performance}
+	~\cite{FTAG-2018-01}.}\label{fig:b-tagging-performance}
 \end{figure}
 
 
@@ -895,7 +1023,7 @@ in terms of \cjet\ (light jet) rejections, defined as
 	the \bjets\ in the MV2 (left) and
 	DL1 (right) b-tagging algorithms output distribution 
 	evaluated on the \ttbar\ events
-	 \cite{FTAG-2018-01}.}\label{fig:b-tagging-score}
+	~\cite{FTAG-2018-01}.}\label{fig:b-tagging-score}
 \end{figure}
 
 
@@ -915,7 +1043,7 @@ MC simulations are not able to model exactly the
 performance of the $b$-tagging algorithms in data. For this reason 
 calibration is required, i.e.\ correcting MC to recover the data 
 in terms of $b$-tagging efficiency, charm jet mis-tagging and 
-light jet mis-tagging rates \cite{FTAG-2018-01}. The calibration is performed 
+light jet mis-tagging rates~\cite{FTAG-2018-01}. The calibration is performed 
 for all supported jet collections(TODO: refer back to the object definition chapter)
 and working points, which are cuts in the \btagging\ 
 algorithm output identifying the different tagging efficiencies 
@@ -933,7 +1061,7 @@ from simulations to the data.
 % description of the detector response and physics modelling effects 
 % in Monte Carlo (MC) simulations necessitates the measurement of the 
 % performance of the \btagging\ algorithms with collision data 
-% \cite{PERF-2012-04,ATLAS-CONF-2018-045}. 
+%~\cite{PERF-2012-04,ATLAS-CONF-2018-045}. 
 % The measurement of the \bjet\ tagging efficiency 
 % of the high-level \btagging\ algorithms used in proton–proton (pp) 
 % collision data recorded during Run 2 of the LHC at $\sqrt{s}$ = 13 TeV 
@@ -942,7 +1070,7 @@ from simulations to the data.
 % jets, used in the measurement of the \bjet\ tagging efficiency to correct 
 % the simulation such that the overall tagging efficiency of \cjets\ and 
 % light-flavour jets match that of the data, are described elsewhere 
-% \cite{ATLAS-CONF-2018-006}, \cite{cjet}. 
+%~\cite{ATLAS-CONF-2018-006},~\cite{cjet}. 
 The production of $t\bar{t}$ 
 pairs at the LHC provides an abundant source of \bjets by virtue 
 of the high cross-section and the $t \rightarrow Wb$ branching ratio 
@@ -958,10 +1086,10 @@ events with exactly 2 jets and 2 opposite-sign leptons are selected.
 The data \bjet\ efficiency is 
 then extracted from a combined likelihood fit, and subsequently 
 compared with that predicted by the simulation. Scale factors are 
-then calculated to emulate the performance of the algorithms to the data \cite{FTAG-2018-01}.
+then calculated to emulate the performance of the algorithms to the data~\cite{FTAG-2018-01}.
 
 For the light jet mis-tagging calibration, two methods are 
-used to measure the mis-tagging rate from the data \cite{ATLAS-CONF-2018-006}. 
+used to measure the mis-tagging rate from the data~\cite{ATLAS-CONF-2018-006}. 
 The first is the negative tag method, which uses a high statistics data sample enriched 
 in light jets with the application of a modified algorithm which 
 reverses some of the criteria used in the nominal identification 
@@ -969,10 +1097,10 @@ algorithm.
 The second is the adjusted Monte Carlo (adjusted-MC) method, which 
 adjusts the characteristic track observables in the simulation 
 to im the data, and then compares the adjusted simulation to the 
-"standard" simulation. The scale factors are then calculated using 
+``standard'' simulation. The scale factors are then calculated using 
 the these two methods. The scale factors of the two different methods 
 are in good agreement within the systematic uncertainties. 
-%The aim of this calibration is to calibrate \bjets that have been mis-tagged as light jets of \btagging\ algorithm. As the $b$-tagging algorithm is very efficient in rejecting light jets, the light jet fraction is enriched via "flipped" taggers, which negates the sign of track IP parameters before $b$-tagging\cite{ATLAS-CONF-2018-006}. The calibrations of the standard and the 'flipped' tagger are assumed to be equal. The calibration is extracted using the leading $p_T$ jet of Z+jets events using a 2D fit. TODO: cite the light jet tagging Int note
+%The aim of this calibration is to calibrate \bjets that have been mis-tagged as light jets of \btagging\ algorithm. As the $b$-tagging algorithm is very efficient in rejecting light jets, the light jet fraction is enriched via ``flipped'' taggers, which negates the sign of track IP parameters before $b$-tagging\cite{ATLAS-CONF-2018-006}. The calibrations of the standard and the 'flipped' tagger are assumed to be equal. The calibration is extracted using the leading $p_T$ jet of Z+jets events using a 2D fit. TODO: cite the light jet tagging Int note
 %light jet fractions in the $b$-like region are too low,  The Z + jets events are then selected, the secondary vertex mass is fitted to obtain flavour fractions and perform a likelihood fit to extract light jet mistag rate.
 
 
@@ -989,11 +1117,11 @@ to increase the data statistics of the scale factors in the
 high-$p_T$ ($p_T^{jet}$ > 70~GeV) region.
 The calibration is performed on the PFlow jets and the VR-Track jets (TODO: refer back to definition in Object reconstruction section). 
 
-As determined by the CKM matrix \cite{CKM1,CKM2}, the $W$ boson decays dominantly to 
+As determined by the CKM matrix~\cite{CKM1,CKM2}, the $W$ boson decays dominantly to 
 a pair of light quarks ($u$ quark and $d$ quark) or to
 a $s$ quark and a \cquark. The $W$ boson decays very rarely to pairs containing a \bquark. 
 More specifically, the branching ratio of a $W$ boson decays to a $u$ quark and $d$ quark pair or 
-a $s$ quark and $c$ quark pair is 33.1\%, and to pairs containing a $b$ quark is only 0.057\% \cite{PDG}. 
+a $s$ quark and $c$ quark pair is 33.1\%, and to pairs containing a $b$ quark is only 0.057\%~\cite{PDG}. 
 Therefore, $b$-tagged jets from the $W$ decay are most likely 
 to be mis-tagged \cjets or light jets. 
 
@@ -1009,7 +1137,7 @@ reduces the number of combinations of jets of different flavour,
 and allows triggering with the lepton.
 
 The events kinematics are shown by the diagram in 
-Figure \ref{fig:feynman}, where the \ttbar\ pair decays to a 
+Figure~\ref{fig:feynman}, where the \ttbar\ pair decays to a 
 $b$ and a $\bar{b}$ quark, circled in red. One of the $W$ bosons, 
 circled in blue, decays hadronically to quarks, 
 and the other $W$ boson decays leptonically to either 
@@ -1030,7 +1158,7 @@ $W$ jets and the remaining two jets are referred to as top-jets.
 %As Shown in Fig \ref{fig:feynman}, the calibration uses the semi-leptonic $t\bar{t}$ events, which one $W$ boson from top decays leptonically to a charged lepton and neutrino and one $W$ decays hadronically and dominantly to a charm and a strange quark, among other pairs.
 
 A kinematic likelihood technique, referred to as 
-KLFitter \cite{ERDMANN201418}, is used to assign jets to the proper $t\bar{t}$ decay product 
+KLFitter~\cite{ERDMANN201418}, is used to assign jets to the proper $t\bar{t}$ decay product 
 (more details in Section \ref{KLFitter}). 
 The following notation will be used: the jets that are
 assigned as the decay products of the $W$ boson are referred to as
@@ -1045,12 +1173,12 @@ for the VR-Track jets; and for four tagging intervals with the boundaries of 85\
 
 The choice of the bin boundaries ensures enough statistics for each bin and 
 hence relatively flat statistical uncertainty, 
-given the underlying charm-jet \pt\ spectrum as shown in Figure \ref{fig:kinematic_distributions_combined}.
+given the underlying charm-jet \pt\ spectrum as shown in Figure~\ref{fig:kinematic_distributions_combined}.
 The boundaries for the VR-Track jets are lower than for PFlow jets, 
 since the track jets miss the neutral particles the
 reconstructed energy is significantly below the true jet energy.
 
-The main method described in the chapter is for the "fixed-cut" calibration
+The main method described in the chapter is for the ``fixed-cut'' calibration
 where the efficiency is defined as the fraction of \bjets passing the tagger.
 Jets are said to be tagged (untagged) at particular working point
 if they have DL1r scores greater (less) than the DL1r score of that working point.
@@ -1071,10 +1199,10 @@ The other main floating parameter is $p(i,j)$ that is the normalisation factor s
 data. 
 The $N^{t}_{\mathrm{data}}(i,j)$ is the number of data events with a tagged \wjet\ in the \pt\ bin labelled i
 and the other (untagged) \wjet\ in the \pt\ bin labelled j. Similarly the $N^{t}_{C}(i,j)$ is the number of MC events 
-with a tagged \wjet\, while the tagged \wjet\ is indeed a \cjet\, which can be seen as "signal". 
+with a tagged \wjet\, while the tagged \wjet\ is indeed a \cjet\, which can be seen as ``signal''. 
 In contrast the $N^{t}_{J}(i,j)$ is the number of events with neither the tagged \wjet\ nor the top jets 
 are \cjets\; and the $N^{t}_{X}(i,j,k)$ is the number of events with one of the top jets is a \cjet\. 
-These two types of events can be seen as "background". The later case is slightly more complicated, as the 
+These two types of events can be seen as ``background''. The later case is slightly more complicated, as the 
 \cjet\ lies in a different \pt\ bin to the tagged jet, denoted as $k$, and it only depends on the 
 $c^4(k)$ (which is the scale factor of the 4th working point i.e. 60\% ) as the top jets
 are tagged at 60\% working point. 
@@ -1126,15 +1254,15 @@ All detector subsystems were required to be operational
 during data taking and to fulfil data quality requirements.  
 
 % The $t\bar{t}$ samples and the single top-quark in the Wt 
-% and s-channel samples are generated with the {\tt Powheg-Box} v2 \cite{powheg} 
+% and s-channel samples are generated with the {\tt Powheg-Box} v2~\cite{powheg} 
 % generator. Electroweak t-channel single top-quark events are generated 
 % using the {\tt Powheg-Box} v1 generator. The parton shower, fragmentation, 
 % and the underlying event are simulated using {\tt Pythia} 6.428\cite{pythia} 
-% with the CTEQ6L1 PDF sets and the corresponding Perugia 2012 tune (P2012)\cite{perugia}. 
-% The top-quark mass is set to 172.5 GeV. The {\tt EvtGen} v1.2.0 program \cite{evtgen} 
+% with the CTEQ6L1 PDF sets and the corresponding Perugia 2012 tune (P2012)~\cite{perugia}. 
+% The top-quark mass is set to 172.5 GeV. The {\tt EvtGen} v1.2.0 program~\cite{evtgen} 
 % is used to model the properties of the bottom and charm hadron decays. 
 % The $t\bar{t}$ production cross-section is calculated at NNLO+NNLL 
-% (next-to-next-to-leading-logarithm)\cite{NNLO}. For single-top processes, 
+% (next-to-next-to-leading-logarithm)~\cite{NNLO}. For single-top processes, 
 % the generator NLO cross-sections are used. Events containing $W$ or $Z$ 
 % bosons with associated jets are simulated using {\tt Sherpa} 2.2.1\cite{sherpa}. 
 % All $W$/$Z$+jets events are normalised to the predicted cross-sections using 
@@ -1192,7 +1320,7 @@ and the production of a vector boson in association with jets.
 The details
 of the modeling of these samples are given in the following.
 
-Single-top $s$-channel production is modelled using the \powhegbox~v2 % \cite{Alioli:2009je,Nason:2004rx,Frixione:2007vw,Alioli:2010xd}
+Single-top $s$-channel production is modelled using the \powhegbox~v2 %~\cite{Alioli:2009je,Nason:2004rx,Frixione:2007vw,Alioli:2010xd}
 generator at NLO in QCD in the five-flavour scheme with the \nnpdfnlo~\cite{Ball:2014uwa} parton distribution function~(PDF) set.
 %The events are interfaced with \pythia.230 % ~\cite{Sjostrand:2014zea} 
 %using the A14 tune % ~\cite{ATL-PHYS-PUB-2014-021}
@@ -1272,7 +1400,7 @@ hadrons are simulated using the \evtgen\ v1.2.0 program~\cite{Lange:2001uf}.
 % quarks in the final state of the decay process. In the semi-leptonic 
 % decay of the $t\bar{t}$ system, the resulting tree level situation 
 % contains two $b$ quarks from the top quark decays, and two light or 
-% charm quarks from the $W$ boson decay (Figure \ref{fig:feynman}). 
+% charm quarks from the $W$ boson decay (Figure~\ref{fig:feynman}). 
 % A likelihood is used to properly assign these four jets to the true 
 % decay quarks. The leading order scenario is assumed, giving rise to four jets 
 % in the final $t\bar{t}$ decay topology, two of which are \bjets. Three 
@@ -1325,7 +1453,7 @@ as the jet ordering for the event.
 An additional requirement of log-likelihood > -48 is 
 placed on the output of the likelihood value for the chosen event permutation. 
 An example of the distribution of log-likelihood of the best permutations 
-is shown in Figure \ref{fig:llr}. 
+is shown in Figure~\ref{fig:llr}. 
 In this figure, the data events are compared against the simulation.
 The majority of the events come from \ttbar\ production. There is only
 a very small fraction of events, which is denoted as ``non \ttbar''
@@ -1397,7 +1525,7 @@ the lepton and \MET.
 The yields of the data and the MC are given in Table \ref{tab:yields_standard}.
 An example of the \pt\ distributions
 before any tagging or fitting and 
-after the standard selection is shown in Figure \ref{fig:kinematic_distributions_standard}. 
+after the standard selection is shown in Figure~\ref{fig:kinematic_distributions_standard}. 
 More plots can be found in Appendix \ref{sec:appendix_standard_selection}.
 The yellow band in the lower pad shows the overall systematic uncertainties, combining the 
 experimental uncertainties and the \ttbar\ modelling uncertainties, as described in 
@@ -1419,7 +1547,7 @@ This additional cut provides candidates for the PFlow $W$ jet that is used
 for calibration in the $20-25$~GeV region. 
 The inclusive yields of the low-\pt\ selection 
 of the data and the MC are given in Table \ref{tab:yields_lowpT}, and
-the \pt\ distributions of the $W$ jets are shown in Figure \ref{fig:kinematic_distributions_lowpT}.
+the \pt\ distributions of the $W$ jets are shown in Figure~\ref{fig:kinematic_distributions_lowpT}.
 More plots of the kinematic distributions
 are shown in Appendix \ref{sec:appendix_lowpT_selection}. 
 Good agreement between MC and data 
@@ -1485,10 +1613,10 @@ The ideal situation is the high-\pt\ selection will maximally increase the
 statistics while mininally decreasing the \cjet\ purity, therefore a figure of merit $P^{\rm{Cut}}$
 is defined as:
 \[P^{\rm{Cut}} = \frac{\sum_i{\rm{Gain\ in\ stats}^2_i}}{\sum_i{\cjetineq \rm{purity}^2_i }}, \]
-where i stands for the number of bins. The "Gain in stats" stands for increase in 
-statistics and it's summed over all bins in Figure \ref{fig:cutvalue}.
+where i stands for the number of bins. The ``Gain in stats'' stands for increase in 
+statistics and it's summed over all bins in Figure~\ref{fig:cutvalue}.
 The \cjet\ purity and the statistical gain are calculated for 4 different cut 
-values as shown in Figure \ref{fig:cutvalue}, comparing with the cut value of 0. 
+values as shown in Figure~\ref{fig:cutvalue}, comparing with the cut value of 0. 
 The value of $70$~GeV is chosen as it gives the highest value of $P^{\rm{Cut}}$. 
 
 
@@ -1558,7 +1686,7 @@ The value of $70$~GeV is chosen as it gives the highest value of $P^{\rm{Cut}}$.
 
 The yields of the data and the MC are given in Table \ref{tab:yields_highpT}. 
 An example of the \pt\ distributions before any tagging or fitting, applying 
-the high-\pt\ selection is shown in Figure \ref{fig:kinematic_distributions_highpT}. 
+the high-\pt\ selection is shown in Figure~\ref{fig:kinematic_distributions_highpT}. 
 In general the event statistics improve about 80\% in region with \pt\ > 70 GeV as desired.
 More plots can be found in Appendix \ref{sec:appendix_highpT_selection}.
 
@@ -1572,7 +1700,7 @@ to each other, all the selections are combined to provide the maximum range
 and statistics for the calibration. 
 The yields of the data and the MC are given in Table \ref{tab:yields_combined}, 
 an example of the \pt\ distributions before any tagging or fitting and 
-after the combined selection is shown in Figure \ref{fig:kinematic_distributions_combined}. More plots 
+after the combined selection is shown in Figure~\ref{fig:kinematic_distributions_combined}. More plots 
 can be found in Appendix \ref{sec:appendix_combined_selection}.
 
 \begin{table}[ht]
@@ -1707,9 +1835,9 @@ meaning the true \bjet\ in the $W$ jets
 can only come from the $t\bar{t}$ + heavy flavour 
 process. This process is underestimated by the MC by about 30\% 
 for both the PFlow and VR-Track jets collections, as shown in Table \ref{tab:3byields1} 
-and Figure \ref{fig:3bplots}, where an extra cut requiring at least one $W$ jet with DL1r $> 8$ 
+and Figure~\ref{fig:3bplots}, where an extra cut requiring at least one $W$ jet with DL1r $> 8$ 
 is added to the combined selection to reject most of the true \cjets and true light jet. 
-A more thorough study is done in Ref. \cite{TOPQ-2017-12}, where the mis-modelling 
+A more thorough study is done in Ref.~\cite{TOPQ-2017-12}, where the mis-modelling 
 factor is measured to be $1.25 \pm 0.25$, which is also consistent with the $30\%$ 
 mismodelling observed in the previous study. 
 Therefore, events in the simulation
@@ -1771,8 +1899,8 @@ in the latest calibration.
 \subsubsection{\btagging\ algorithms output distribution}
 The distributions of the \btagging\ algorithm' output of 
 the MC and the data of the latest calibration 
-(December 2020) are shown in Figure \ref{fig:taggers_PFlow} for the PFlow jets and 
-Figure \ref{fig:taggers_VRJets} for the VR-Track jets, 
+(December 2020) are shown in Figure~\ref{fig:taggers_PFlow} for the PFlow jets and 
+Figure~\ref{fig:taggers_VRJets} for the VR-Track jets, 
 combining the standard selection, low \pt\ and the high-$p_T$ selection. 
 In these figure, the data events are compared against the simulation.
 The majority of the events come from \ttbar\ production. There is only
@@ -1838,7 +1966,7 @@ uncertainties are calculated with four fixed cut working points
 for the PFlow and VR VR-Track jets collection in the latest derivation 
 in December 2020.
 
-The \cjet\ mis-tagging efficiencies are shown in Figure \ref{fig:Dec_eff_PFlow_DL1}-\ref{fig:Dec_eff_VRJets_DL1r} 
+The \cjet\ mis-tagging efficiencies are shown in Figure~\ref{fig:Dec_eff_PFlow_DL1}-\ref{fig:Dec_eff_VRJets_DL1r} 
 for the PFlow jet collections and the VR-Track jets with the DL1 and the DL1r tagger. 
 For PFlow jets, these results combine the standard selection, low\pt\ selection and the high-$p_T$ selection 
 and for the VR-Track jets they combine the standard selection and the high-$p_T$ selection. 
@@ -1846,7 +1974,7 @@ and for the VR-Track jets they combine the standard selection and the high-$p_T$
 The $1.25 \pm 0.25$ scale factor is applied on events with 3 true \bjets. 
 The overall uncertainties are shown 
 in the red band. 
-The scale factors are shown in Figure \ref{fig:Dec_SF_PFlow_DL1}-\ref{fig:Dec_SF_VRJets_DL1r} for the PFlow jets
+The scale factors are shown in Figure~\ref{fig:Dec_SF_PFlow_DL1}-\ref{fig:Dec_SF_VRJets_DL1r} for the PFlow jets
 and the VR-Track jets with the DL1 and DL1r tagger. 
 The tighter working points (60\%, 70\%) show larger uncertainties and bigger deviation from 1, while
 the looser working points (77\%, 85\%) have much smaller uncertainty and the simulation is able to 

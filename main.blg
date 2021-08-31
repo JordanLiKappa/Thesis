@@ -1,0 +1,46 @@
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'main.blg'
+[163] biber-MSWIN32:340> INFO - === 
+[239] Biber.pm:415> INFO - Reading 'main.bcf'
+[420] Biber.pm:952> INFO - Found 72 citekeys in bib section 0
+[438] Biber.pm:4340> INFO - Processing section 0
+[453] Biber.pm:4531> INFO - Looking for bibtex format file 'ANA-FTAG-2020-08-PAPER.bib' for section 0
+[558] bibtex.pm:1689> INFO - LaTeX decoding ...
+[611] bibtex.pm:1494> INFO - Found BibTeX data source 'ANA-FTAG-2020-08-PAPER.bib'
+[612] Utils.pm:395> WARN - Duplicate entry key: 'PDG' in file 'ANA-FTAG-2020-08-PAPER.bib', skipping ...
+[646] Utils.pm:395> WARN - legacy month field 'Jul' in entry 'Interpreting_Higgs_result' is not an integer - this will probably not sort properly.
+[648] Utils.pm:395> WARN - legacy month field 'Apr' in entry 'PERF-2012-04' is not an integer - this will probably not sort properly.
+[655] Utils.pm:395> WARN - legacy month field 'Jun' in entry 'ATL-PHYS-PUB-2016-012' is not an integer - this will probably not sort properly.
+[678] Utils.pm:395> WARN - legacy month field 'Sep' in entry 'CKM1' is not an integer - this will probably not sort properly.
+[679] Utils.pm:395> WARN - legacy month field 'aug' in entry 'CKM2' is not an integer - this will probably not sort properly.
+[908] Utils.pm:395> WARN - legacy month field 'Aug' in entry 'PDG' is not an integer - this will probably not sort properly.
+[949] Biber.pm:4531> INFO - Looking for bibtex format file 'Detector.bib' for section 0
+[1050] bibtex.pm:1689> INFO - LaTeX decoding ...
+[1070] bibtex.pm:1494> INFO - Found BibTeX data source 'Detector.bib'
+[1119] Utils.pm:395> WARN - legacy month field 'Mar' in entry 'LHC-Run2-Operation' is not an integer - this will probably not sort properly.
+[1145] Biber.pm:4531> INFO - Looking for bibtex format file 'bib/ATLAS.bib' for section 0
+[1296] bibtex.pm:1689> INFO - LaTeX decoding ...
+[3551] bibtex.pm:1494> INFO - Found BibTeX data source 'bib/ATLAS.bib'
+[3552] Utils.pm:395> WARN - Duplicate entry key: 'PERF-2007-01' in file 'bib/ATLAS.bib', skipping ...
+[3578] Utils.pm:395> WARN - Duplicate entry key: 'PERF-2012-04' in file 'bib/ATLAS.bib', skipping ...
+[3698] Biber.pm:4531> INFO - Looking for bibtex format file 'bib/ATLAS-useful.bib' for section 0
+[3832] bibtex.pm:1689> INFO - LaTeX decoding ...
+[4175] bibtex.pm:1494> INFO - Found BibTeX data source 'bib/ATLAS-useful.bib'
+[4180] Utils.pm:395> WARN - Duplicate entry key: 'Nason:2004rx' in file 'bib/ATLAS-useful.bib', skipping ...
+[4181] Utils.pm:395> WARN - Duplicate entry key: 'Frixione:2007vw' in file 'bib/ATLAS-useful.bib', skipping ...
+[4181] Utils.pm:395> WARN - Duplicate entry key: 'Alioli:2010xd' in file 'bib/ATLAS-useful.bib', skipping ...
+[4183] Utils.pm:395> WARN - Duplicate entry key: 'Frixione:2007nw' in file 'bib/ATLAS-useful.bib', skipping ...
+[4303] Biber.pm:4531> INFO - Looking for bibtex format file 'bib/PubNotes.bib' for section 0
+[4426] bibtex.pm:1689> INFO - LaTeX decoding ...
+[4782] bibtex.pm:1494> INFO - Found BibTeX data source 'bib/PubNotes.bib'
+[4796] Utils.pm:395> WARN - Duplicate entry key: 'ATL-PHYS-PUB-2016-012' in file 'bib/PubNotes.bib', skipping ...
+[4819] Biber.pm:4531> INFO - Looking for bibtex format file 'bib/ConfNotes.bib' for section 0
+[4954] bibtex.pm:1689> INFO - LaTeX decoding ...
+[6067] bibtex.pm:1494> INFO - Found BibTeX data source 'bib/ConfNotes.bib'
+[6231] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[6232] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[6232] Biber.pm:4168> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[6232] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[6304] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[6575] bbl.pm:757> INFO - Output to main.bbl
+[6576] Biber.pm:128> INFO - WARNINGS: 15
