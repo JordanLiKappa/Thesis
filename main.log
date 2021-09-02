@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.1.19)  30 AUG 2021 18:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.1.19)  2 SEP 2021 21:52
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -498,7 +498,7 @@ Package: multirow 2021/01/02 v2.6 Span multiple rows of a table
 \bigstrutjot=\dimen181
 )
 \@float@every@figure=\toks27
-Package hyperref Info: Option `colorlinks' set `true' on input line 43.
+Package hyperref Info: Option `colorlinks' set `true' on input line 44.
 \@indexfile=\write4
 \openout4 = `main.idx'.
 
@@ -510,25 +510,25 @@ Writing index file main.idx
 File: l3backend-pdftex.def 2021-01-09 L3 backend support: PDF output (pdfTeX)
 \l__kernel_color_stack_int=\count411
 \l__pdf_internal_box=\box54
-) (./main.aux)
+) (./main.aux (./Detector.aux) (./Reconstruction.aux) (./FTAG.aux) (./AUX/FTAG.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
  (c:/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count412
@@ -613,8 +613,8 @@ Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 48.
-Package biblatex Info: Reference segment=0 on input line 48.
+Package biblatex Info: Reference section=0 on input line 49.
+Package biblatex Info: Reference segment=0 on input line 49.
  (c:/texlive/2020/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2020/02/24 v1.2b Standard LaTeX Color (DPC)
  (c:/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -622,7 +622,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-Package hyperref Info: Link coloring ON on input line 48.
+Package hyperref Info: Link coloring ON on input line 49.
  (c:/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (c:/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
@@ -632,9 +632,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count418
 )
-LaTeX Info: Redefining \ref on input line 48.
-LaTeX Info: Redefining \pageref on input line 48.
-LaTeX Info: Redefining \nameref on input line 48.
+LaTeX Info: Redefining \ref on input line 49.
+LaTeX Info: Redefining \pageref on input line 49.
+LaTeX Info: Redefining \nameref on input line 49.
  (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
@@ -658,418 +658,452 @@ Package pdftex.def Info: ATLAS-Logo-Ref-RGB-H_1.jpg  used on input line 60.
 
 No file main.ind.
 [3] [4]
-<Detector_plots/LHC-double-bore-magnet.jpg, id=343, 650.43pt x 524.71031pt>
+\openout2 = `Detector.aux'.
+
+ (./Detector.tex [5
+
+]
+<Detector_plots/LHC-double-bore-magnet.jpg, id=347, 650.43pt x 524.71031pt>
 File: Detector_plots/LHC-double-bore-magnet.jpg Graphic file (type jpg)
 <use Detector_plots/LHC-double-bore-magnet.jpg>
-Package pdftex.def Info: Detector_plots/LHC-double-bore-magnet.jpg  used on input line 161.
+Package pdftex.def Info: Detector_plots/LHC-double-bore-magnet.jpg  used on input line 88.
 (pdftex.def)             Requested size: 328.82707pt x 265.27684pt.
- [5 <./Detector_plots/LHC-double-bore-magnet.jpg>]
-<Detector_plots/accelerator_complex_smaller.png, id=355, 523.2348pt x 464.937pt>
+ [6 <./Detector_plots/LHC-double-bore-magnet.jpg>]
+<Detector_plots/accelerator_complex_smaller.png, id=360, 523.2348pt x 464.937pt>
 File: Detector_plots/accelerator_complex_smaller.png Graphic file (type png)
 <use Detector_plots/accelerator_complex_smaller.png>
-Package pdftex.def Info: Detector_plots/accelerator_complex_smaller.png  used on input line 212.
+Package pdftex.def Info: Detector_plots/accelerator_complex_smaller.png  used on input line 139.
 (pdftex.def)             Requested size: 352.31625pt x 313.06693pt.
- [6]
-<Detector_plots/Run2_lumi.png, id=371, 520.94624pt x 414.04688pt>
+ [7 <./Detector_plots/accelerator_complex_smaller.png>]
+<Detector_plots/Run2_lumi.png, id=375, 520.94624pt x 414.04688pt>
 File: Detector_plots/Run2_lumi.png Graphic file (type png)
 <use Detector_plots/Run2_lumi.png>
-Package pdftex.def Info: Detector_plots/Run2_lumi.png  used on input line 255.
+Package pdftex.def Info: Detector_plots/Run2_lumi.png  used on input line 182.
 (pdftex.def)             Requested size: 187.89914pt x 149.34105pt.
- [7 <./Detector_plots/accelerator_complex_smaller.png>]
-<Detector_plots/Run2_pileup.png, id=386, 798.985pt x 574.145pt>
+ [8 <./Detector_plots/Run2_lumi.png>]
+<Detector_plots/Run2_pileup.png, id=390, 798.985pt x 574.145pt>
 File: Detector_plots/Run2_pileup.png Graphic file (type png)
 <use Detector_plots/Run2_pileup.png>
-Package pdftex.def Info: Detector_plots/Run2_pileup.png  used on input line 286.
+Package pdftex.def Info: Detector_plots/Run2_pileup.png  used on input line 213.
 (pdftex.def)             Requested size: 187.89914pt x 135.02046pt.
- [8 <./Detector_plots/Run2_lumi.png> <./Detector_plots/Run2_pileup.png>]
-<Detector_plots/LHC-longterm-schedule.png, id=394, 1640.1275pt x 674.52pt>
+<Detector_plots/LHC-longterm-schedule.png, id=392, 1640.1275pt x 674.52pt>
 File: Detector_plots/LHC-longterm-schedule.png Graphic file (type png)
 <use Detector_plots/LHC-longterm-schedule.png>
-Package pdftex.def Info: Detector_plots/LHC-longterm-schedule.png  used on input line 318.
+Package pdftex.def Info: Detector_plots/LHC-longterm-schedule.png  used on input line 245.
 (pdftex.def)             Requested size: 375.80544pt x 154.54967pt.
-<Detector_plots/LHC-schedule-lumi.jpg, id=395, 276.5532pt x 155.3805pt>
+<Detector_plots/LHC-schedule-lumi.jpg, id=393, 276.5532pt x 155.3805pt>
 File: Detector_plots/LHC-schedule-lumi.jpg Graphic file (type jpg)
 <use Detector_plots/LHC-schedule-lumi.jpg>
-Package pdftex.def Info: Detector_plots/LHC-schedule-lumi.jpg  used on input line 327.
+Package pdftex.def Info: Detector_plots/LHC-schedule-lumi.jpg  used on input line 254.
 (pdftex.def)             Requested size: 305.33789pt x 171.56393pt.
- [9 <./Detector_plots/LHC-longterm-schedule.png> <./Detector_plots/LHC-schedule-lumi.jpg>]
-<Detector_plots/Cut-away-view-of-the-ATLAS-detector.png, id=405, 1059.96pt x 632.3625pt>
+ [9 <./Detector_plots/Run2_pileup.png>]
+<Detector_plots/Cut-away-view-of-the-ATLAS-detector.png, id=402, 1059.96pt x 632.3625pt>
 File: Detector_plots/Cut-away-view-of-the-ATLAS-detector.png Graphic file (type png)
 <use Detector_plots/Cut-away-view-of-the-ATLAS-detector.png>
-Package pdftex.def Info: Detector_plots/Cut-away-view-of-the-ATLAS-detector.png  used on input line 368.
+Package pdftex.def Info: Detector_plots/Cut-away-view-of-the-ATLAS-detector.png  used on input line 295.
 (pdftex.def)             Requested size: 305.33789pt x 182.16464pt.
- [10 <./Detector_plots/Cut-away-view-of-the-ATLAS-detector.png>]
-<Detector_plots/ATLAS coordinate system.png, id=419, 969.6225pt x 596.98032pt>
+ [10 <./Detector_plots/LHC-longterm-schedule.png> <./Detector_plots/LHC-schedule-lumi.jpg>] [11 <./Detector_plots/Cut-away-view-of-the-ATLAS-detector.png>]
+<Detector_plots/ATLAS coordinate system.png, id=429, 969.6225pt x 596.98032pt>
 File: Detector_plots/ATLAS coordinate system.png Graphic file (type png)
 <use Detector_plots/ATLAS coordinate system.png>
-Package pdftex.def Info: Detector_plots/ATLAS coordinate system.png  used on input line 494.
+Package pdftex.def Info: Detector_plots/ATLAS coordinate system.png  used on input line 421.
 (pdftex.def)             Requested size: 258.36668pt x 159.0735pt.
- [11] [12 <./Detector_plots/ATLAS coordinate system.png>]
-<Detector_plots/ATLAS magnets.png, id=438, 816.04875pt x 733.23938pt>
+ [12]
+<Detector_plots/ATLAS magnets.png, id=437, 816.04875pt x 733.23938pt>
 File: Detector_plots/ATLAS magnets.png Graphic file (type png)
 <use Detector_plots/ATLAS magnets.png>
-Package pdftex.def Info: Detector_plots/ATLAS magnets.png  used on input line 558.
+Package pdftex.def Info: Detector_plots/ATLAS magnets.png  used on input line 485.
 (pdftex.def)             Requested size: 169.11209pt x 151.94853pt.
-<Detector_plots/Inner detector.png, id=445, 693.08937pt x 608.77437pt>
+ [13 <./Detector_plots/ATLAS coordinate system.png>]
+<Detector_plots/Inner detector.png, id=452, 693.08937pt x 608.77437pt>
 File: Detector_plots/Inner detector.png Graphic file (type png)
 <use Detector_plots/Inner detector.png>
-Package pdftex.def Info: Detector_plots/Inner detector.png  used on input line 602.
+Package pdftex.def Info: Detector_plots/Inner detector.png  used on input line 529.
 (pdftex.def)             Requested size: 258.36668pt x 226.9429pt.
- [13 <./Detector_plots/ATLAS magnets.png>] [14 <./Detector_plots/Inner detector.png>]
-<Detector_plots/calo.png, id=462, 1056.94875pt x 645.16031pt>
+ [14 <./Detector_plots/ATLAS magnets.png>] [15 <./Detector_plots/Inner detector.png>]
+<Detector_plots/calo.png, id=466, 1056.94875pt x 645.16031pt>
 File: Detector_plots/calo.png Graphic file (type png)
 <use Detector_plots/calo.png>
-Package pdftex.def Info: Detector_plots/calo.png  used on input line 683.
+Package pdftex.def Info: Detector_plots/calo.png  used on input line 610.
 (pdftex.def)             Requested size: 281.85587pt x 172.03969pt.
- [15 <./Detector_plots/calo.png>] [16]
-<Detector_plots/Muon.png, id=480, 834.11626pt x 603.0028pt>
+ [16 <./Detector_plots/calo.png>] [17]
+<Detector_plots/Muon.png, id=484, 834.11626pt x 603.0028pt>
 File: Detector_plots/Muon.png Graphic file (type png)
 <use Detector_plots/Muon.png>
-Package pdftex.def Info: Detector_plots/Muon.png  used on input line 827.
+Package pdftex.def Info: Detector_plots/Muon.png  used on input line 754.
 (pdftex.def)             Requested size: 281.85587pt x 203.75769pt.
- [17 <./Detector_plots/Muon.png>]
-<Detector_plots/summary xs.png, id=489, 4554.01375pt x 3416.765pt>
+ [18 <./Detector_plots/Muon.png>]
+<Detector_plots/summary xs.png, id=494, 4554.01375pt x 3416.765pt>
 File: Detector_plots/summary xs.png Graphic file (type png)
 <use Detector_plots/summary xs.png>
-Package pdftex.def Info: Detector_plots/summary xs.png  used on input line 876.
+Package pdftex.def Info: Detector_plots/summary xs.png  used on input line 803.
 (pdftex.def)             Requested size: 455.66293pt x 341.85292pt.
- [18] [19 <./Detector_plots/summary xs.png>]
+ [19 <./Detector_plots/summary xs.png>]) [20] [21
+
+
+]
+\openout2 = `Reconstruction.aux'.
+
+ (./Reconstruction.tex
+<Reconstruction_plots/track.png, id=518, 628.59843pt x 626.34pt>
+File: Reconstruction_plots/track.png Graphic file (type png)
+<use Reconstruction_plots/track.png>
+Package pdftex.def Info: Reconstruction_plots/track.png  used on input line 5.
+(pdftex.def)             Requested size: 375.80544pt x 374.44977pt.
+ [22
+
+ <./Reconstruction_plots/track.png>]
+<Reconstruction_plots/electron.jpg, id=533, 2038.61626pt x 1040.88875pt>
+File: Reconstruction_plots/electron.jpg Graphic file (type jpg)
+<use Reconstruction_plots/electron.jpg>
+Package pdftex.def Info: Reconstruction_plots/electron.jpg  used on input line 72.
+(pdftex.def)             Requested size: 375.80544pt x 191.87845pt.
+) [23] [24 <./Reconstruction_plots/electron.jpg>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 932.
+(hyperref)                removing `math shift' on input line 76.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 932.
+(hyperref)                removing `math shift' on input line 76.
 
+[25
+
+
+]
+\openout2 = `FTAG.aux'.
+
+ (./FTAG.tex
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 963.
+               Default added (so using `tbp') on input line 30.
 
-<FTAG_plots/B-tagging_diagram.png, id=516, 903.375pt x 924.45375pt>
+<FTAG_plots/B-tagging_diagram.png, id=558, 903.375pt x 924.45375pt>
 File: FTAG_plots/B-tagging_diagram.png Graphic file (type png)
 <use FTAG_plots/B-tagging_diagram.png>
-Package pdftex.def Info: FTAG_plots/B-tagging_diagram.png  used on input line 965.
+Package pdftex.def Info: FTAG_plots/B-tagging_diagram.png  used on input line 32.
 (pdftex.def)             Requested size: 187.89914pt x 192.27902pt.
-[20]
-<FTAG_plots/b-tagging-perfermance.png, id=535, 1252.68pt x 705.38531pt>
+<FTAG_plots/b-tagging-perfermance.png, id=567, 1252.68pt x 705.38531pt>
 File: FTAG_plots/b-tagging-perfermance.png Graphic file (type png)
 <use FTAG_plots/b-tagging-perfermance.png>
-Package pdftex.def Info: FTAG_plots/b-tagging-perfermance.png  used on input line 1012.
+Package pdftex.def Info: FTAG_plots/b-tagging-perfermance.png  used on input line 79.
 (pdftex.def)             Requested size: 469.75502pt x 264.51884pt.
+[26
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<FTAG_plots/b-tagging-score.png, id=538, 1272.25313pt x 572.1375pt>
+ <./FTAG_plots/B-tagging_diagram.png>]
+<FTAG_plots/b-tagging-score.png, id=581, 1272.25313pt x 572.1375pt>
 File: FTAG_plots/b-tagging-score.png Graphic file (type png)
 <use FTAG_plots/b-tagging-score.png>
-Package pdftex.def Info: FTAG_plots/b-tagging-score.png  used on input line 1021.
+Package pdftex.def Info: FTAG_plots/b-tagging-score.png  used on input line 88.
 (pdftex.def)             Requested size: 469.75502pt x 211.24232pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1037.
+(hyperref)                removing `math shift' on input line 104.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\tau' on input line 1037.
+(hyperref)                removing `\tau' on input line 104.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1037.
+(hyperref)                removing `math shift' on input line 104.
 
-[21 <./FTAG_plots/B-tagging_diagram.png>] [22 <./FTAG_plots/b-tagging-perfermance.png> <./FTAG_plots/b-tagging-score.png>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1054.
-
+[27 <./FTAG_plots/b-tagging-perfermance.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1054.
+(hyperref)                removing `math shift' on input line 121.
 
-[23]
-<FTAG_plots/feynman.png, id=572, 268.00125pt x 182.18062pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 121.
+
+[28 <./FTAG_plots/b-tagging-score.png>] [29]
+<FTAG_plots/feynman.png, id=615, 268.00125pt x 182.18062pt>
 File: FTAG_plots/feynman.png Graphic file (type png)
 <use FTAG_plots/feynman.png>
-Package pdftex.def Info: FTAG_plots/feynman.png  used on input line 1153.
+Package pdftex.def Info: FTAG_plots/feynman.png  used on input line 220.
 (pdftex.def)             Requested size: 211.38832pt x 143.69592pt.
- [24 <./FTAG_plots/feynman.png>]
-Overfull \hbox (32.91685pt too wide) in alignment at lines 1189--1191
+
+Overfull \hbox (32.91685pt too wide) in alignment at lines 256--258
  [][][] []
  []
 
-[25]
-Overfull \hbox (13.85881pt too wide) in paragraph at lines 1274--1287
-[]\T1/cmr/m/n/12 All sam-ples were pro-duced us-ing the AT-LAS sim-u-la-tion in-fras-truc-ture [[][]44[][]] and $[]\OT1/cmr/m/n/12 4$ \T1/cmr/m/n/12 [[][]45[][]].
+[30 <./FTAG_plots/feynman.png>]
+Overfull \hbox (13.85881pt too wide) in paragraph at lines 341--354
+[]\T1/cmr/m/n/12 All sam-ples were pro-duced us-ing the AT-LAS sim-u-la-tion in-fras-truc-ture [[][]48[][]] and $[]\OT1/cmr/m/n/12 4$ \T1/cmr/m/n/12 [[][]49[][]].
  []
 
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1291.
-(c:/texlive/2020/texmf-dist/tex/latex/base/t1cmtt.fd
+[31]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 358.
+ (c:/texlive/2020/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [26] [27]
-<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_LLR.png, id=697, 798.985pt x 574.145pt>
+) [32]
+<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_LLR.png, id=731, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_LLR.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_LLR.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_LLR.png  used on input line 1429.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_LLR.png  used on input line 496.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_J0_pt.pdf, id=699, 569.12625pt x 408.52625pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[33]
+<FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_J0_pt.pdf, id=741, 569.12625pt x 408.52625pt>
 File: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_J0_pt.pdf Graphic file (type pdf)
 <use FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_J0_pt.pdf>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_J0_pt.pdf  used on input line 1494.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_J0_pt.pdf  used on input line 561.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
-<FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_J0_pttrackjet.pdf, id=700, 569.12625pt x 408.52625pt>
+<FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_J0_pttrackjet.pdf, id=742, 569.12625pt x 408.52625pt>
 File: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_J0_pttrackjet.pdf Graphic file (type pdf)
 <use FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_J0_pttrackjet.pdf>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_J0_pttrackjet.pdf  used on input line 1495.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_J0_pttrackjet.pdf  used on input line 562.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
-<FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_J1_pt.pdf, id=701, 569.12625pt x 408.52625pt>
+<FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_J1_pt.pdf, id=743, 569.12625pt x 408.52625pt>
 File: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_J1_pt.pdf Graphic file (type pdf)
 <use FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_J1_pt.pdf>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_J1_pt.pdf  used on input line 1496.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_J1_pt.pdf  used on input line 563.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
-<FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_J1_pttrackjet.pdf, id=702, 569.12625pt x 408.52625pt>
+<FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_J1_pttrackjet.pdf, id=744, 569.12625pt x 408.52625pt>
 File: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_J1_pttrackjet.pdf Graphic file (type pdf)
 <use FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_J1_pttrackjet.pdf>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_J1_pttrackjet.pdf  used on input line 1497.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_J1_pttrackjet.pdf  used on input line 564.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
- [28 <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_LLR.png>] [29 <./FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_J0_pt.pdf, page is rotated 90 degrees> <./FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_J0_pttrackjet.pdf, page is rotated 90 degrees> <./FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_J1_pt.pdf, page is rotated 90 degrees> <./FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_J1_pttrackjet.pdf, page is rotated 90 degrees>]
+ [34 <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_LLR.png>] [35 <./FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_J0_pt.pdf, page is rotated 90 degrees> <./FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_J0_pttrackjet.pdf, page is rotated 90 degrees> <./FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_J1_pt.pdf, page is rotated 90 degrees> <./FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_J1_pttrackjet.pdf, page is rotated 90 degrees>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 1535.
+(hyperref)                removing `subscript' on input line 602.
 
-<FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_J0_pt.pdf, id=894, 569.12625pt x 408.52625pt>
+<FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_J0_pt.pdf, id=936, 569.12625pt x 408.52625pt>
 File: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_J0_pt.pdf Graphic file (type pdf)
 <use FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_J0_pt.pdf>
-Package pdftex.def Info: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_J0_pt.pdf  used on input line 1584.
+Package pdftex.def Info: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_J0_pt.pdf  used on input line 651.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
-<FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_J1_pt.pdf, id=895, 569.12625pt x 408.52625pt>
+<FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_J1_pt.pdf, id=937, 569.12625pt x 408.52625pt>
 File: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_J1_pt.pdf Graphic file (type pdf)
 <use FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_J1_pt.pdf>
-Package pdftex.def Info: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_J1_pt.pdf  used on input line 1585.
+Package pdftex.def Info: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_J1_pt.pdf  used on input line 652.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
-[30]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1592.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 1592.
+(hyperref)                removing `math shift' on input line 659.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1592.
+(hyperref)                removing `subscript' on input line 659.
 
 
-LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 1608.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 659.
+
+[36 <./FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_J0_pt.pdf, page is rotated 90 degrees> <./FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_J1_pt.pdf, page is rotated 90 degrees>]
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 675.
 
 
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 1608.
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 675.
 
 
-LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 1610.
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 677.
 
 
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 1610.
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 677.
 
-<FTAG_plots/stat_gains/statsgain_0GeV.png, id=904, 901.3675pt x 576.1525pt>
+<FTAG_plots/stat_gains/statsgain_0GeV.png, id=1032, 901.3675pt x 576.1525pt>
 File: FTAG_plots/stat_gains/statsgain_0GeV.png Graphic file (type png)
 <use FTAG_plots/stat_gains/statsgain_0GeV.png>
-Package pdftex.def Info: FTAG_plots/stat_gains/statsgain_0GeV.png  used on input line 1626.
+Package pdftex.def Info: FTAG_plots/stat_gains/statsgain_0GeV.png  used on input line 693.
 (pdftex.def)             Requested size: 178.5092pt x 114.10315pt.
-<FTAG_plots/stat_gains/statsgain_40GeV.png, id=905, 901.3675pt x 576.1525pt>
+<FTAG_plots/stat_gains/statsgain_40GeV.png, id=1033, 901.3675pt x 576.1525pt>
 File: FTAG_plots/stat_gains/statsgain_40GeV.png Graphic file (type png)
 <use FTAG_plots/stat_gains/statsgain_40GeV.png>
-Package pdftex.def Info: FTAG_plots/stat_gains/statsgain_40GeV.png  used on input line 1630.
+Package pdftex.def Info: FTAG_plots/stat_gains/statsgain_40GeV.png  used on input line 697.
 (pdftex.def)             Requested size: 178.5092pt x 114.10315pt.
-<FTAG_plots/stat_gains/statsgain_70GeV.png, id=906, 901.3675pt x 576.1525pt>
+<FTAG_plots/stat_gains/statsgain_70GeV.png, id=1034, 901.3675pt x 576.1525pt>
 File: FTAG_plots/stat_gains/statsgain_70GeV.png Graphic file (type png)
 <use FTAG_plots/stat_gains/statsgain_70GeV.png>
-Package pdftex.def Info: FTAG_plots/stat_gains/statsgain_70GeV.png  used on input line 1634.
+Package pdftex.def Info: FTAG_plots/stat_gains/statsgain_70GeV.png  used on input line 701.
 (pdftex.def)             Requested size: 178.5092pt x 114.10315pt.
-<FTAG_plots/stat_gains/statsgain_90GeV.png, id=907, 901.3675pt x 576.1525pt>
+<FTAG_plots/stat_gains/statsgain_90GeV.png, id=1035, 901.3675pt x 576.1525pt>
 File: FTAG_plots/stat_gains/statsgain_90GeV.png Graphic file (type png)
 <use FTAG_plots/stat_gains/statsgain_90GeV.png>
-Package pdftex.def Info: FTAG_plots/stat_gains/statsgain_90GeV.png  used on input line 1638.
+Package pdftex.def Info: FTAG_plots/stat_gains/statsgain_90GeV.png  used on input line 705.
 (pdftex.def)             Requested size: 178.5092pt x 114.10315pt.
-<FTAG_plots/stat_gains/statsgain_140GeV.png, id=908, 901.3675pt x 576.1525pt>
+<FTAG_plots/stat_gains/statsgain_140GeV.png, id=1036, 901.3675pt x 576.1525pt>
 File: FTAG_plots/stat_gains/statsgain_140GeV.png Graphic file (type png)
 <use FTAG_plots/stat_gains/statsgain_140GeV.png>
-Package pdftex.def Info: FTAG_plots/stat_gains/statsgain_140GeV.png  used on input line 1643.
+Package pdftex.def Info: FTAG_plots/stat_gains/statsgain_140GeV.png  used on input line 710.
 (pdftex.def)             Requested size: 178.5092pt x 114.10315pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_J0_pt.pdf, id=909, 569.12625pt x 408.52625pt>
+<FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_J0_pt.pdf, id=1037, 569.12625pt x 408.52625pt>
 File: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_J0_pt.pdf Graphic file (type pdf)
 <use FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_J0_pt.pdf>
-Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_J0_pt.pdf  used on input line 1677.
+Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_J0_pt.pdf  used on input line 744.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
-<FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_J0_pttrackjet.pdf, id=910, 569.12625pt x 408.52625pt>
+<FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_J0_pttrackjet.pdf, id=1038, 569.12625pt x 408.52625pt>
 File: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_J0_pttrackjet.pdf Graphic file (type pdf)
 <use FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_J0_pttrackjet.pdf>
-Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_J0_pttrackjet.pdf  used on input line 1678.
+Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_J0_pttrackjet.pdf  used on input line 745.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
-<FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_J1_pt.pdf, id=911, 569.12625pt x 408.52625pt>
+<FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_J1_pt.pdf, id=1039, 569.12625pt x 408.52625pt>
 File: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_J1_pt.pdf Graphic file (type pdf)
 <use FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_J1_pt.pdf>
-Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_J1_pt.pdf  used on input line 1679.
+Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_J1_pt.pdf  used on input line 746.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
-<FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_J1_pttrackjet.pdf, id=912, 569.12625pt x 408.52625pt>
+<FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_J1_pttrackjet.pdf, id=1040, 569.12625pt x 408.52625pt>
 File: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_J1_pttrackjet.pdf Graphic file (type pdf)
 <use FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_J1_pttrackjet.pdf>
-Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_J1_pttrackjet.pdf  used on input line 1680.
+Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_J1_pttrackjet.pdf  used on input line 747.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[31 <./FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_J0_pt.pdf, page is rotated 90 degrees> <./FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_J1_pt.pdf, page is rotated 90 degrees>]
-<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_pt.pdf, id=1014, 569.12625pt x 408.52625pt>
+[37]
+<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_pt.pdf, id=1057, 569.12625pt x 408.52625pt>
 File: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_pt.pdf Graphic file (type pdf)
 <use FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_pt.pdf>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_pt.pdf  used on input line 1731.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_pt.pdf  used on input line 798.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
-<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_pttrackjet.pdf, id=1015, 569.12625pt x 408.52625pt>
+<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_pttrackjet.pdf, id=1058, 569.12625pt x 408.52625pt>
 File: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_pttrackjet.pdf Graphic file (type pdf)
 <use FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_pttrackjet.pdf>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_pttrackjet.pdf  used on input line 1732.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_pttrackjet.pdf  used on input line 799.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
-<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_pt.pdf, id=1016, 569.12625pt x 408.52625pt>
+<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_pt.pdf, id=1059, 569.12625pt x 408.52625pt>
 File: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_pt.pdf Graphic file (type pdf)
 <use FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_pt.pdf>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_pt.pdf  used on input line 1733.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_pt.pdf  used on input line 800.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
-<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_pttrackjet.pdf, id=1017, 569.12625pt x 408.52625pt>
+<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_pttrackjet.pdf, id=1060, 569.12625pt x 408.52625pt>
 File: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_pttrackjet.pdf Graphic file (type pdf)
 <use FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_pttrackjet.pdf>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_pttrackjet.pdf  used on input line 1734.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_pttrackjet.pdf  used on input line 801.
 (pdftex.def)             Requested size: 211.38832pt x 151.7383pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[32 <./FTAG_plots/stat_gains/statsgain_0GeV.png> <./FTAG_plots/stat_gains/statsgain_40GeV.png> <./FTAG_plots/stat_gains/statsgain_70GeV.png> <./FTAG_plots/stat_gains/statsgain_90GeV.png> <./FTAG_plots/stat_gains/statsgain_140GeV.png>] [33 <./FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_J0_pt.pdf, page is rotated 90 degrees> <./FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_J0_pttrackjet.pdf, page is rotated 90 degrees> <./FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_J1_pt.pdf, page is rotated 90 degrees> <./FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_J1_pttrackjet.pdf, page is rotated 90 degrees>] [34 <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_pt.pdf, page is rotated 90 degrees> <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_pttrackjet.pdf, page is rotated 90 degrees> <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_pt.pdf, page is rotated 90 degrees> <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_pttrackjet.pdf, page is rotated 90 degrees>]
+[38 <./FTAG_plots/stat_gains/statsgain_0GeV.png> <./FTAG_plots/stat_gains/statsgain_40GeV.png> <./FTAG_plots/stat_gains/statsgain_70GeV.png> <./FTAG_plots/stat_gains/statsgain_90GeV.png> <./FTAG_plots/stat_gains/statsgain_140GeV.png>] [39 <./FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_J0_pt.pdf, page is rotated 90 degrees> <./FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_J0_pttrackjet.pdf, page is rotated 90 degrees> <./FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_J1_pt.pdf, page is rotated 90 degrees> <./FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_J1_pttrackjet.pdf, page is rotated 90 degrees>] [40 <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_pt.pdf, page is rotated 90 degrees> <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_pttrackjet.pdf, page is rotated 90 degrees> <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_pt.pdf, page is rotated 90 degrees> <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_pttrackjet.pdf, page is rotated 90 degrees>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1824.
+(hyperref)                removing `math shift' on input line 891.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1824.
+(hyperref)                removing `math shift' on input line 891.
 
-[35]
-<FTAG_plots/3bplots/3bplots.png, id=1395, 798.985pt x 574.145pt>
+[41]
+<FTAG_plots/3bplots/3bplots.png, id=1440, 798.985pt x 574.145pt>
 File: FTAG_plots/3bplots/3bplots.png Graphic file (type png)
 <use FTAG_plots/3bplots/3bplots.png>
-Package pdftex.def Info: FTAG_plots/3bplots/3bplots.png  used on input line 1876.
+Package pdftex.def Info: FTAG_plots/3bplots/3bplots.png  used on input line 943.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 966.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1899.
+(hyperref)                removing `math shift' on input line 966.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1899.
-
-<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_DL1_log.png, id=1398, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_DL1_log.png, id=1443, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_DL1_log.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_DL1_log.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_DL1_log.png  used on input line 1919.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_DL1_log.png  used on input line 986.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_DL1_log.png, id=1399, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_DL1_log.png, id=1444, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_DL1_log.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_DL1_log.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_DL1_log.png  used on input line 1920.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_DL1_log.png  used on input line 987.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1919--1921
+Underfull \hbox (badness 10000) in paragraph at lines 986--988
 
  []
 
-<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_DL1r_log.png, id=1400, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_DL1r_log.png, id=1445, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_DL1r_log.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_DL1r_log.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_DL1r_log.png  used on input line 1924.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_DL1r_log.png  used on input line 991.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_DL1r_log.png, id=1401, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_DL1r_log.png, id=1446, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_DL1r_log.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_DL1r_log.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_DL1r_log.png  used on input line 1925.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_DL1r_log.png  used on input line 992.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1924--1926
+Underfull \hbox (badness 10000) in paragraph at lines 991--993
 
  []
 
-<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_MV2c10_log.png, id=1402, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_MV2c10_log.png, id=1447, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_MV2c10_log.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_MV2c10_log.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_MV2c10_log.png  used on input line 1929.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_MV2c10_log.png  used on input line 996.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_MV2c10_log.png, id=1403, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_MV2c10_log.png, id=1448, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_MV2c10_log.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_MV2c10_log.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_MV2c10_log.png  used on input line 1930.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_MV2c10_log.png  used on input line 997.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1929--1931
+Underfull \hbox (badness 10000) in paragraph at lines 996--998
 
  []
 
-[36] [37 <./FTAG_plots/3bplots/3bplots.png>] [38 <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_DL1_log.png> <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_DL1_log.png> <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_DL1r_log.png> <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_DL1r_log.png> <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_MV2c10_log.png> <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_MV2c10_log.png>]
-<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_DL1trackjet_log.png, id=1425, 798.985pt x 574.145pt>
+[42 <./FTAG_plots/3bplots/3bplots.png>] [43] [44 <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_DL1_log.png> <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_DL1_log.png> <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_DL1r_log.png> <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_DL1r_log.png> <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_MV2c10_log.png> <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_MV2c10_log.png>]
+<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_DL1trackjet_log.png, id=1468, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_DL1trackjet_log.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_DL1trackjet_log.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_DL1trackjet_log.png  used on input line 1941.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_DL1trackjet_log.png  used on input line 1008.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_DL1trackjet_log.png, id=1426, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_DL1trackjet_log.png, id=1469, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_DL1trackjet_log.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_DL1trackjet_log.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_DL1trackjet_log.png  used on input line 1942.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_DL1trackjet_log.png  used on input line 1009.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1941--1943
+Underfull \hbox (badness 10000) in paragraph at lines 1008--1010
 
  []
 
-<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_DL1rtrackjet_log.png, id=1427, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_DL1rtrackjet_log.png, id=1470, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_DL1rtrackjet_log.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_DL1rtrackjet_log.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_DL1rtrackjet_log.png  used on input line 1946.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_DL1rtrackjet_log.png  used on input line 1013.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_DL1rtrackjet_log.png, id=1428, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_DL1rtrackjet_log.png, id=1471, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_DL1rtrackjet_log.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_DL1rtrackjet_log.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_DL1rtrackjet_log.png  used on input line 1947.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_DL1rtrackjet_log.png  used on input line 1014.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1946--1948
+Underfull \hbox (badness 10000) in paragraph at lines 1013--1015
 
  []
 
-<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_MV2c10_Fulltrackjet_log.png, id=1429, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_MV2c10_Fulltrackjet_log.png, id=1472, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_MV2c10_Fulltrackjet_log.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_MV2c10_Fulltrackjet_log.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_MV2c10_Fulltrackjet_log.png  used on input line 1951.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_MV2c10_Fulltrackjet_log.png  used on input line 1018.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_MV2c10_Fulltrackjet_log.png, id=1430, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_MV2c10_Fulltrackjet_log.png, id=1473, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_MV2c10_Fulltrackjet_log.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_MV2c10_Fulltrackjet_log.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_MV2c10_Fulltrackjet_log.png  used on input line 1952.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_MV2c10_Fulltrackjet_log.png  used on input line 1019.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1951--1953
+Underfull \hbox (badness 10000) in paragraph at lines 1018--1020
 
  []
 
-[39 <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_DL1trackjet_log.png> <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_DL1trackjet_log.png> <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_DL1rtrackjet_log.png> <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_DL1rtrackjet_log.png> <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_MV2c10_Fulltrackjet_log.png> <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_MV2c10_Fulltrackjet_log.png>] [40]
+[45 <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_DL1trackjet_log.png> <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_DL1trackjet_log.png> <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_DL1rtrackjet_log.png> <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_DL1rtrackjet_log.png> <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_MV2c10_Fulltrackjet_log.png> <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_MV2c10_Fulltrackjet_log.png>] [46]
 Package epstopdf Info: Source file: <FTAG_plots/DL1allPFlowDec/eff60.eps>
 (epstopdf)                    date: 2021-04-20 17:49:04
 (epstopdf)                    size: 18370 bytes
@@ -1077,12 +1111,12 @@ Package epstopdf Info: Source file: <FTAG_plots/DL1allPFlowDec/eff60.eps>
 (epstopdf)                    date: 2021-05-15 17:01:25
 (epstopdf)                    size: 11521 bytes
 (epstopdf)             Command: <epstopdf --outfile=FTAG_plots/DL1allPFlowDec/eff60-eps-converted-to.pdf FTAG_plots/DL1allPFlowDec/eff60.eps>
-(epstopdf)             \includegraphics on input line 2023.
+(epstopdf)             \includegraphics on input line 1090.
 Package epstopdf Info: Output file is already uptodate.
-<FTAG_plots/DL1allPFlowDec/eff60-eps-converted-to.pdf, id=1454, 569.12625pt x 408.52625pt>
+<FTAG_plots/DL1allPFlowDec/eff60-eps-converted-to.pdf, id=1497, 569.12625pt x 408.52625pt>
 File: FTAG_plots/DL1allPFlowDec/eff60-eps-converted-to.pdf Graphic file (type pdf)
 <use FTAG_plots/DL1allPFlowDec/eff60-eps-converted-to.pdf>
-Package pdftex.def Info: FTAG_plots/DL1allPFlowDec/eff60-eps-converted-to.pdf  used on input line 2023.
+Package pdftex.def Info: FTAG_plots/DL1allPFlowDec/eff60-eps-converted-to.pdf  used on input line 1090.
 (pdftex.def)             Requested size: 164.41711pt x 118.02075pt.
 Package epstopdf Info: Source file: <FTAG_plots/DL1allPFlowDec/eff70.eps>
 (epstopdf)                    date: 2021-04-20 17:49:04
@@ -1091,12 +1125,12 @@ Package epstopdf Info: Source file: <FTAG_plots/DL1allPFlowDec/eff70.eps>
 (epstopdf)                    date: 2021-05-15 17:01:26
 (epstopdf)                    size: 11717 bytes
 (epstopdf)             Command: <epstopdf --outfile=FTAG_plots/DL1allPFlowDec/eff70-eps-converted-to.pdf FTAG_plots/DL1allPFlowDec/eff70.eps>
-(epstopdf)             \includegraphics on input line 2027.
+(epstopdf)             \includegraphics on input line 1094.
 Package epstopdf Info: Output file is already uptodate.
-<FTAG_plots/DL1allPFlowDec/eff70-eps-converted-to.pdf, id=1455, 569.12625pt x 408.52625pt>
+<FTAG_plots/DL1allPFlowDec/eff70-eps-converted-to.pdf, id=1498, 569.12625pt x 408.52625pt>
 File: FTAG_plots/DL1allPFlowDec/eff70-eps-converted-to.pdf Graphic file (type pdf)
 <use FTAG_plots/DL1allPFlowDec/eff70-eps-converted-to.pdf>
-Package pdftex.def Info: FTAG_plots/DL1allPFlowDec/eff70-eps-converted-to.pdf  used on input line 2027.
+Package pdftex.def Info: FTAG_plots/DL1allPFlowDec/eff70-eps-converted-to.pdf  used on input line 1094.
 (pdftex.def)             Requested size: 164.41711pt x 118.02075pt.
 Package epstopdf Info: Source file: <FTAG_plots/DL1allPFlowDec/eff77.eps>
 (epstopdf)                    date: 2021-04-20 17:49:04
@@ -1105,12 +1139,12 @@ Package epstopdf Info: Source file: <FTAG_plots/DL1allPFlowDec/eff77.eps>
 (epstopdf)                    date: 2021-05-15 17:01:27
 (epstopdf)                    size: 11630 bytes
 (epstopdf)             Command: <epstopdf --outfile=FTAG_plots/DL1allPFlowDec/eff77-eps-converted-to.pdf FTAG_plots/DL1allPFlowDec/eff77.eps>
-(epstopdf)             \includegraphics on input line 2031.
+(epstopdf)             \includegraphics on input line 1098.
 Package epstopdf Info: Output file is already uptodate.
-<FTAG_plots/DL1allPFlowDec/eff77-eps-converted-to.pdf, id=1456, 569.12625pt x 408.52625pt>
+<FTAG_plots/DL1allPFlowDec/eff77-eps-converted-to.pdf, id=1499, 569.12625pt x 408.52625pt>
 File: FTAG_plots/DL1allPFlowDec/eff77-eps-converted-to.pdf Graphic file (type pdf)
 <use FTAG_plots/DL1allPFlowDec/eff77-eps-converted-to.pdf>
-Package pdftex.def Info: FTAG_plots/DL1allPFlowDec/eff77-eps-converted-to.pdf  used on input line 2031.
+Package pdftex.def Info: FTAG_plots/DL1allPFlowDec/eff77-eps-converted-to.pdf  used on input line 1098.
 (pdftex.def)             Requested size: 164.41711pt x 118.02075pt.
 Package epstopdf Info: Source file: <FTAG_plots/DL1allPFlowDec/eff85.eps>
 (epstopdf)                    date: 2021-04-20 17:49:04
@@ -1119,12 +1153,12 @@ Package epstopdf Info: Source file: <FTAG_plots/DL1allPFlowDec/eff85.eps>
 (epstopdf)                    date: 2021-05-15 17:01:29
 (epstopdf)                    size: 11657 bytes
 (epstopdf)             Command: <epstopdf --outfile=FTAG_plots/DL1allPFlowDec/eff85-eps-converted-to.pdf FTAG_plots/DL1allPFlowDec/eff85.eps>
-(epstopdf)             \includegraphics on input line 2035.
+(epstopdf)             \includegraphics on input line 1102.
 Package epstopdf Info: Output file is already uptodate.
-<FTAG_plots/DL1allPFlowDec/eff85-eps-converted-to.pdf, id=1457, 569.12625pt x 408.52625pt>
+<FTAG_plots/DL1allPFlowDec/eff85-eps-converted-to.pdf, id=1500, 569.12625pt x 408.52625pt>
 File: FTAG_plots/DL1allPFlowDec/eff85-eps-converted-to.pdf Graphic file (type pdf)
 <use FTAG_plots/DL1allPFlowDec/eff85-eps-converted-to.pdf>
-Package pdftex.def Info: FTAG_plots/DL1allPFlowDec/eff85-eps-converted-to.pdf  used on input line 2035.
+Package pdftex.def Info: FTAG_plots/DL1allPFlowDec/eff85-eps-converted-to.pdf  used on input line 1102.
 (pdftex.def)             Requested size: 164.41711pt x 118.02075pt.
 Package epstopdf Info: Source file: <FTAG_plots/DL1rallPFlowDec/eff60.eps>
 (epstopdf)                    date: 2021-04-20 17:49:05
@@ -1133,12 +1167,12 @@ Package epstopdf Info: Source file: <FTAG_plots/DL1rallPFlowDec/eff60.eps>
 (epstopdf)                    date: 2021-05-15 17:01:30
 (epstopdf)                    size: 11568 bytes
 (epstopdf)             Command: <epstopdf --outfile=FTAG_plots/DL1rallPFlowDec/eff60-eps-converted-to.pdf FTAG_plots/DL1rallPFlowDec/eff60.eps>
-(epstopdf)             \includegraphics on input line 2045.
+(epstopdf)             \includegraphics on input line 1112.
 Package epstopdf Info: Output file is already uptodate.
-<FTAG_plots/DL1rallPFlowDec/eff60-eps-converted-to.pdf, id=1458, 569.12625pt x 408.52625pt>
+<FTAG_plots/DL1rallPFlowDec/eff60-eps-converted-to.pdf, id=1501, 569.12625pt x 408.52625pt>
 File: FTAG_plots/DL1rallPFlowDec/eff60-eps-converted-to.pdf Graphic file (type pdf)
 <use FTAG_plots/DL1rallPFlowDec/eff60-eps-converted-to.pdf>
-Package pdftex.def Info: FTAG_plots/DL1rallPFlowDec/eff60-eps-converted-to.pdf  used on input line 2045.
+Package pdftex.def Info: FTAG_plots/DL1rallPFlowDec/eff60-eps-converted-to.pdf  used on input line 1112.
 (pdftex.def)             Requested size: 164.41711pt x 118.02075pt.
 Package epstopdf Info: Source file: <FTAG_plots/DL1rallPFlowDec/eff70.eps>
 (epstopdf)                    date: 2021-04-20 17:49:05
@@ -1147,12 +1181,12 @@ Package epstopdf Info: Source file: <FTAG_plots/DL1rallPFlowDec/eff70.eps>
 (epstopdf)                    date: 2021-05-15 17:01:32
 (epstopdf)                    size: 11801 bytes
 (epstopdf)             Command: <epstopdf --outfile=FTAG_plots/DL1rallPFlowDec/eff70-eps-converted-to.pdf FTAG_plots/DL1rallPFlowDec/eff70.eps>
-(epstopdf)             \includegraphics on input line 2049.
+(epstopdf)             \includegraphics on input line 1116.
 Package epstopdf Info: Output file is already uptodate.
-<FTAG_plots/DL1rallPFlowDec/eff70-eps-converted-to.pdf, id=1459, 569.12625pt x 408.52625pt>
+<FTAG_plots/DL1rallPFlowDec/eff70-eps-converted-to.pdf, id=1502, 569.12625pt x 408.52625pt>
 File: FTAG_plots/DL1rallPFlowDec/eff70-eps-converted-to.pdf Graphic file (type pdf)
 <use FTAG_plots/DL1rallPFlowDec/eff70-eps-converted-to.pdf>
-Package pdftex.def Info: FTAG_plots/DL1rallPFlowDec/eff70-eps-converted-to.pdf  used on input line 2049.
+Package pdftex.def Info: FTAG_plots/DL1rallPFlowDec/eff70-eps-converted-to.pdf  used on input line 1116.
 (pdftex.def)             Requested size: 164.41711pt x 118.02075pt.
 Package epstopdf Info: Source file: <FTAG_plots/DL1rallPFlowDec/eff77.eps>
 (epstopdf)                    date: 2021-04-20 17:49:05
@@ -1161,12 +1195,12 @@ Package epstopdf Info: Source file: <FTAG_plots/DL1rallPFlowDec/eff77.eps>
 (epstopdf)                    date: 2021-05-15 17:01:33
 (epstopdf)                    size: 11671 bytes
 (epstopdf)             Command: <epstopdf --outfile=FTAG_plots/DL1rallPFlowDec/eff77-eps-converted-to.pdf FTAG_plots/DL1rallPFlowDec/eff77.eps>
-(epstopdf)             \includegraphics on input line 2053.
+(epstopdf)             \includegraphics on input line 1120.
 Package epstopdf Info: Output file is already uptodate.
-<FTAG_plots/DL1rallPFlowDec/eff77-eps-converted-to.pdf, id=1460, 569.12625pt x 408.52625pt>
+<FTAG_plots/DL1rallPFlowDec/eff77-eps-converted-to.pdf, id=1503, 569.12625pt x 408.52625pt>
 File: FTAG_plots/DL1rallPFlowDec/eff77-eps-converted-to.pdf Graphic file (type pdf)
 <use FTAG_plots/DL1rallPFlowDec/eff77-eps-converted-to.pdf>
-Package pdftex.def Info: FTAG_plots/DL1rallPFlowDec/eff77-eps-converted-to.pdf  used on input line 2053.
+Package pdftex.def Info: FTAG_plots/DL1rallPFlowDec/eff77-eps-converted-to.pdf  used on input line 1120.
 (pdftex.def)             Requested size: 164.41711pt x 118.02075pt.
 Package epstopdf Info: Source file: <FTAG_plots/DL1rallPFlowDec/eff85.eps>
 (epstopdf)                    date: 2021-04-20 17:49:05
@@ -1175,14 +1209,14 @@ Package epstopdf Info: Source file: <FTAG_plots/DL1rallPFlowDec/eff85.eps>
 (epstopdf)                    date: 2021-05-15 17:01:35
 (epstopdf)                    size: 11711 bytes
 (epstopdf)             Command: <epstopdf --outfile=FTAG_plots/DL1rallPFlowDec/eff85-eps-converted-to.pdf FTAG_plots/DL1rallPFlowDec/eff85.eps>
-(epstopdf)             \includegraphics on input line 2057.
+(epstopdf)             \includegraphics on input line 1124.
 Package epstopdf Info: Output file is already uptodate.
-<FTAG_plots/DL1rallPFlowDec/eff85-eps-converted-to.pdf, id=1461, 569.12625pt x 408.52625pt>
+<FTAG_plots/DL1rallPFlowDec/eff85-eps-converted-to.pdf, id=1504, 569.12625pt x 408.52625pt>
 File: FTAG_plots/DL1rallPFlowDec/eff85-eps-converted-to.pdf Graphic file (type pdf)
 <use FTAG_plots/DL1rallPFlowDec/eff85-eps-converted-to.pdf>
-Package pdftex.def Info: FTAG_plots/DL1rallPFlowDec/eff85-eps-converted-to.pdf  used on input line 2057.
+Package pdftex.def Info: FTAG_plots/DL1rallPFlowDec/eff85-eps-converted-to.pdf  used on input line 1124.
 (pdftex.def)             Requested size: 164.41711pt x 118.02075pt.
- [41 <./FTAG_plots/DL1allPFlowDec/eff60-eps-converted-to.pdf> <./FTAG_plots/DL1allPFlowDec/eff70-eps-converted-to.pdf> <./FTAG_plots/DL1allPFlowDec/eff77-eps-converted-to.pdf> <./FTAG_plots/DL1allPFlowDec/eff85-eps-converted-to.pdf> <./FTAG_plots/DL1rallPFlowDec/eff60-eps-converted-to.pdf> <./FTAG_plots/DL1rallPFlowDec/eff70-eps-converted-to.pdf> <./FTAG_plots/DL1rallPFlowDec/eff77-eps-converted-to.pdf> <./FTAG_plots/DL1rallPFlowDec/eff85-eps-converted-to.pdf>]
+ [47 <./FTAG_plots/DL1allPFlowDec/eff60-eps-converted-to.pdf> <./FTAG_plots/DL1allPFlowDec/eff70-eps-converted-to.pdf> <./FTAG_plots/DL1allPFlowDec/eff77-eps-converted-to.pdf> <./FTAG_plots/DL1allPFlowDec/eff85-eps-converted-to.pdf> <./FTAG_plots/DL1rallPFlowDec/eff60-eps-converted-to.pdf> <./FTAG_plots/DL1rallPFlowDec/eff70-eps-converted-to.pdf> <./FTAG_plots/DL1rallPFlowDec/eff77-eps-converted-to.pdf> <./FTAG_plots/DL1rallPFlowDec/eff85-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <FTAG_plots/DL1allVRJetsDec/eff60.eps>
 (epstopdf)                    date: 2021-04-20 17:49:04
 (epstopdf)                    size: 18895 bytes
@@ -1190,12 +1224,12 @@ Package epstopdf Info: Source file: <FTAG_plots/DL1allVRJetsDec/eff60.eps>
 (epstopdf)                    date: 2021-05-15 17:01:37
 (epstopdf)                    size: 11783 bytes
 (epstopdf)             Command: <epstopdf --outfile=FTAG_plots/DL1allVRJetsDec/eff60-eps-converted-to.pdf FTAG_plots/DL1allVRJetsDec/eff60.eps>
-(epstopdf)             \includegraphics on input line 2069.
+(epstopdf)             \includegraphics on input line 1136.
 Package epstopdf Info: Output file is already uptodate.
-<FTAG_plots/DL1allVRJetsDec/eff60-eps-converted-to.pdf, id=1532, 569.12625pt x 408.52625pt>
+<FTAG_plots/DL1allVRJetsDec/eff60-eps-converted-to.pdf, id=1574, 569.12625pt x 408.52625pt>
 File: FTAG_plots/DL1allVRJetsDec/eff60-eps-converted-to.pdf Graphic file (type pdf)
 <use FTAG_plots/DL1allVRJetsDec/eff60-eps-converted-to.pdf>
-Package pdftex.def Info: FTAG_plots/DL1allVRJetsDec/eff60-eps-converted-to.pdf  used on input line 2069.
+Package pdftex.def Info: FTAG_plots/DL1allVRJetsDec/eff60-eps-converted-to.pdf  used on input line 1136.
 (pdftex.def)             Requested size: 164.41711pt x 118.02075pt.
 Package epstopdf Info: Source file: <FTAG_plots/DL1allVRJetsDec/eff70.eps>
 (epstopdf)                    date: 2021-04-20 17:49:04
@@ -1204,12 +1238,12 @@ Package epstopdf Info: Source file: <FTAG_plots/DL1allVRJetsDec/eff70.eps>
 (epstopdf)                    date: 2021-05-15 17:01:38
 (epstopdf)                    size: 11932 bytes
 (epstopdf)             Command: <epstopdf --outfile=FTAG_plots/DL1allVRJetsDec/eff70-eps-converted-to.pdf FTAG_plots/DL1allVRJetsDec/eff70.eps>
-(epstopdf)             \includegraphics on input line 2073.
+(epstopdf)             \includegraphics on input line 1140.
 Package epstopdf Info: Output file is already uptodate.
-<FTAG_plots/DL1allVRJetsDec/eff70-eps-converted-to.pdf, id=1533, 569.12625pt x 408.52625pt>
+<FTAG_plots/DL1allVRJetsDec/eff70-eps-converted-to.pdf, id=1575, 569.12625pt x 408.52625pt>
 File: FTAG_plots/DL1allVRJetsDec/eff70-eps-converted-to.pdf Graphic file (type pdf)
 <use FTAG_plots/DL1allVRJetsDec/eff70-eps-converted-to.pdf>
-Package pdftex.def Info: FTAG_plots/DL1allVRJetsDec/eff70-eps-converted-to.pdf  used on input line 2073.
+Package pdftex.def Info: FTAG_plots/DL1allVRJetsDec/eff70-eps-converted-to.pdf  used on input line 1140.
 (pdftex.def)             Requested size: 164.41711pt x 118.02075pt.
 Package epstopdf Info: Source file: <FTAG_plots/DL1allVRJetsDec/eff77.eps>
 (epstopdf)                    date: 2021-04-20 17:49:04
@@ -1218,12 +1252,12 @@ Package epstopdf Info: Source file: <FTAG_plots/DL1allVRJetsDec/eff77.eps>
 (epstopdf)                    date: 2021-05-15 17:01:40
 (epstopdf)                    size: 11891 bytes
 (epstopdf)             Command: <epstopdf --outfile=FTAG_plots/DL1allVRJetsDec/eff77-eps-converted-to.pdf FTAG_plots/DL1allVRJetsDec/eff77.eps>
-(epstopdf)             \includegraphics on input line 2077.
+(epstopdf)             \includegraphics on input line 1144.
 Package epstopdf Info: Output file is already uptodate.
-<FTAG_plots/DL1allVRJetsDec/eff77-eps-converted-to.pdf, id=1534, 569.12625pt x 408.52625pt>
+<FTAG_plots/DL1allVRJetsDec/eff77-eps-converted-to.pdf, id=1576, 569.12625pt x 408.52625pt>
 File: FTAG_plots/DL1allVRJetsDec/eff77-eps-converted-to.pdf Graphic file (type pdf)
 <use FTAG_plots/DL1allVRJetsDec/eff77-eps-converted-to.pdf>
-Package pdftex.def Info: FTAG_plots/DL1allVRJetsDec/eff77-eps-converted-to.pdf  used on input line 2077.
+Package pdftex.def Info: FTAG_plots/DL1allVRJetsDec/eff77-eps-converted-to.pdf  used on input line 1144.
 (pdftex.def)             Requested size: 164.41711pt x 118.02075pt.
 Package epstopdf Info: Source file: <FTAG_plots/DL1allVRJetsDec/eff85.eps>
 (epstopdf)                    date: 2021-04-20 17:49:04
@@ -1232,12 +1266,12 @@ Package epstopdf Info: Source file: <FTAG_plots/DL1allVRJetsDec/eff85.eps>
 (epstopdf)                    date: 2021-05-15 17:01:41
 (epstopdf)                    size: 11812 bytes
 (epstopdf)             Command: <epstopdf --outfile=FTAG_plots/DL1allVRJetsDec/eff85-eps-converted-to.pdf FTAG_plots/DL1allVRJetsDec/eff85.eps>
-(epstopdf)             \includegraphics on input line 2081.
+(epstopdf)             \includegraphics on input line 1148.
 Package epstopdf Info: Output file is already uptodate.
-<FTAG_plots/DL1allVRJetsDec/eff85-eps-converted-to.pdf, id=1535, 569.12625pt x 408.52625pt>
+<FTAG_plots/DL1allVRJetsDec/eff85-eps-converted-to.pdf, id=1577, 569.12625pt x 408.52625pt>
 File: FTAG_plots/DL1allVRJetsDec/eff85-eps-converted-to.pdf Graphic file (type pdf)
 <use FTAG_plots/DL1allVRJetsDec/eff85-eps-converted-to.pdf>
-Package pdftex.def Info: FTAG_plots/DL1allVRJetsDec/eff85-eps-converted-to.pdf  used on input line 2081.
+Package pdftex.def Info: FTAG_plots/DL1allVRJetsDec/eff85-eps-converted-to.pdf  used on input line 1148.
 (pdftex.def)             Requested size: 164.41711pt x 118.02075pt.
 Package epstopdf Info: Source file: <FTAG_plots/DL1rallVRJetsDec/eff60.eps>
 (epstopdf)                    date: 2021-04-20 17:49:05
@@ -1246,12 +1280,12 @@ Package epstopdf Info: Source file: <FTAG_plots/DL1rallVRJetsDec/eff60.eps>
 (epstopdf)                    date: 2021-05-15 17:01:42
 (epstopdf)                    size: 11823 bytes
 (epstopdf)             Command: <epstopdf --outfile=FTAG_plots/DL1rallVRJetsDec/eff60-eps-converted-to.pdf FTAG_plots/DL1rallVRJetsDec/eff60.eps>
-(epstopdf)             \includegraphics on input line 2091.
+(epstopdf)             \includegraphics on input line 1158.
 Package epstopdf Info: Output file is already uptodate.
-<FTAG_plots/DL1rallVRJetsDec/eff60-eps-converted-to.pdf, id=1536, 569.12625pt x 408.52625pt>
+<FTAG_plots/DL1rallVRJetsDec/eff60-eps-converted-to.pdf, id=1578, 569.12625pt x 408.52625pt>
 File: FTAG_plots/DL1rallVRJetsDec/eff60-eps-converted-to.pdf Graphic file (type pdf)
 <use FTAG_plots/DL1rallVRJetsDec/eff60-eps-converted-to.pdf>
-Package pdftex.def Info: FTAG_plots/DL1rallVRJetsDec/eff60-eps-converted-to.pdf  used on input line 2091.
+Package pdftex.def Info: FTAG_plots/DL1rallVRJetsDec/eff60-eps-converted-to.pdf  used on input line 1158.
 (pdftex.def)             Requested size: 164.41711pt x 118.02075pt.
 Package epstopdf Info: Source file: <FTAG_plots/DL1rallVRJetsDec/eff70.eps>
 (epstopdf)                    date: 2021-04-20 17:49:05
@@ -1260,12 +1294,12 @@ Package epstopdf Info: Source file: <FTAG_plots/DL1rallVRJetsDec/eff70.eps>
 (epstopdf)                    date: 2021-05-15 17:01:44
 (epstopdf)                    size: 11902 bytes
 (epstopdf)             Command: <epstopdf --outfile=FTAG_plots/DL1rallVRJetsDec/eff70-eps-converted-to.pdf FTAG_plots/DL1rallVRJetsDec/eff70.eps>
-(epstopdf)             \includegraphics on input line 2095.
+(epstopdf)             \includegraphics on input line 1162.
 Package epstopdf Info: Output file is already uptodate.
-<FTAG_plots/DL1rallVRJetsDec/eff70-eps-converted-to.pdf, id=1537, 569.12625pt x 408.52625pt>
+<FTAG_plots/DL1rallVRJetsDec/eff70-eps-converted-to.pdf, id=1579, 569.12625pt x 408.52625pt>
 File: FTAG_plots/DL1rallVRJetsDec/eff70-eps-converted-to.pdf Graphic file (type pdf)
 <use FTAG_plots/DL1rallVRJetsDec/eff70-eps-converted-to.pdf>
-Package pdftex.def Info: FTAG_plots/DL1rallVRJetsDec/eff70-eps-converted-to.pdf  used on input line 2095.
+Package pdftex.def Info: FTAG_plots/DL1rallVRJetsDec/eff70-eps-converted-to.pdf  used on input line 1162.
 (pdftex.def)             Requested size: 164.41711pt x 118.02075pt.
 Package epstopdf Info: Source file: <FTAG_plots/DL1rallVRJetsDec/eff77.eps>
 (epstopdf)                    date: 2021-04-20 17:49:05
@@ -1274,12 +1308,12 @@ Package epstopdf Info: Source file: <FTAG_plots/DL1rallVRJetsDec/eff77.eps>
 (epstopdf)                    date: 2021-05-15 17:01:45
 (epstopdf)                    size: 11951 bytes
 (epstopdf)             Command: <epstopdf --outfile=FTAG_plots/DL1rallVRJetsDec/eff77-eps-converted-to.pdf FTAG_plots/DL1rallVRJetsDec/eff77.eps>
-(epstopdf)             \includegraphics on input line 2099.
+(epstopdf)             \includegraphics on input line 1166.
 Package epstopdf Info: Output file is already uptodate.
-<FTAG_plots/DL1rallVRJetsDec/eff77-eps-converted-to.pdf, id=1538, 569.12625pt x 408.52625pt>
+<FTAG_plots/DL1rallVRJetsDec/eff77-eps-converted-to.pdf, id=1580, 569.12625pt x 408.52625pt>
 File: FTAG_plots/DL1rallVRJetsDec/eff77-eps-converted-to.pdf Graphic file (type pdf)
 <use FTAG_plots/DL1rallVRJetsDec/eff77-eps-converted-to.pdf>
-Package pdftex.def Info: FTAG_plots/DL1rallVRJetsDec/eff77-eps-converted-to.pdf  used on input line 2099.
+Package pdftex.def Info: FTAG_plots/DL1rallVRJetsDec/eff77-eps-converted-to.pdf  used on input line 1166.
 (pdftex.def)             Requested size: 164.41711pt x 118.02075pt.
 Package epstopdf Info: Source file: <FTAG_plots/DL1rallVRJetsDec/eff85.eps>
 (epstopdf)                    date: 2021-04-20 17:49:05
@@ -1288,14 +1322,14 @@ Package epstopdf Info: Source file: <FTAG_plots/DL1rallVRJetsDec/eff85.eps>
 (epstopdf)                    date: 2021-05-15 17:01:46
 (epstopdf)                    size: 11817 bytes
 (epstopdf)             Command: <epstopdf --outfile=FTAG_plots/DL1rallVRJetsDec/eff85-eps-converted-to.pdf FTAG_plots/DL1rallVRJetsDec/eff85.eps>
-(epstopdf)             \includegraphics on input line 2103.
+(epstopdf)             \includegraphics on input line 1170.
 Package epstopdf Info: Output file is already uptodate.
-<FTAG_plots/DL1rallVRJetsDec/eff85-eps-converted-to.pdf, id=1539, 569.12625pt x 408.52625pt>
+<FTAG_plots/DL1rallVRJetsDec/eff85-eps-converted-to.pdf, id=1581, 569.12625pt x 408.52625pt>
 File: FTAG_plots/DL1rallVRJetsDec/eff85-eps-converted-to.pdf Graphic file (type pdf)
 <use FTAG_plots/DL1rallVRJetsDec/eff85-eps-converted-to.pdf>
-Package pdftex.def Info: FTAG_plots/DL1rallVRJetsDec/eff85-eps-converted-to.pdf  used on input line 2103.
+Package pdftex.def Info: FTAG_plots/DL1rallVRJetsDec/eff85-eps-converted-to.pdf  used on input line 1170.
 (pdftex.def)             Requested size: 164.41711pt x 118.02075pt.
- [42 <./FTAG_plots/DL1allVRJetsDec/eff60-eps-converted-to.pdf> <./FTAG_plots/DL1allVRJetsDec/eff70-eps-converted-to.pdf> <./FTAG_plots/DL1allVRJetsDec/eff77-eps-converted-to.pdf> <./FTAG_plots/DL1allVRJetsDec/eff85-eps-converted-to.pdf> <./FTAG_plots/DL1rallVRJetsDec/eff60-eps-converted-to.pdf> <./FTAG_plots/DL1rallVRJetsDec/eff70-eps-converted-to.pdf> <./FTAG_plots/DL1rallVRJetsDec/eff77-eps-converted-to.pdf> <./FTAG_plots/DL1rallVRJetsDec/eff85-eps-converted-to.pdf>]
+ [48 <./FTAG_plots/DL1allVRJetsDec/eff60-eps-converted-to.pdf> <./FTAG_plots/DL1allVRJetsDec/eff70-eps-converted-to.pdf> <./FTAG_plots/DL1allVRJetsDec/eff77-eps-converted-to.pdf> <./FTAG_plots/DL1allVRJetsDec/eff85-eps-converted-to.pdf> <./FTAG_plots/DL1rallVRJetsDec/eff60-eps-converted-to.pdf> <./FTAG_plots/DL1rallVRJetsDec/eff70-eps-converted-to.pdf> <./FTAG_plots/DL1rallVRJetsDec/eff77-eps-converted-to.pdf> <./FTAG_plots/DL1rallVRJetsDec/eff85-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <FTAG_plots/DL1allPFlowDec/SF60.eps>
 (epstopdf)                    date: 2021-04-20 17:49:04
 (epstopdf)                    size: 19886 bytes
@@ -1303,12 +1337,12 @@ Package epstopdf Info: Source file: <FTAG_plots/DL1allPFlowDec/SF60.eps>
 (epstopdf)                    date: 2021-05-15 17:01:48
 (epstopdf)                    size: 11873 bytes
 (epstopdf)             Command: <epstopdf --outfile=FTAG_plots/DL1allPFlowDec/SF60-eps-converted-to.pdf FTAG_plots/DL1allPFlowDec/SF60.eps>
-(epstopdf)             \includegraphics on input line 2115.
+(epstopdf)             \includegraphics on input line 1182.
 Package epstopdf Info: Output file is already uptodate.
-<FTAG_plots/DL1allPFlowDec/SF60-eps-converted-to.pdf, id=1610, 569.12625pt x 408.52625pt>
+<FTAG_plots/DL1allPFlowDec/SF60-eps-converted-to.pdf, id=1652, 569.12625pt x 408.52625pt>
 File: FTAG_plots/DL1allPFlowDec/SF60-eps-converted-to.pdf Graphic file (type pdf)
 <use FTAG_plots/DL1allPFlowDec/SF60-eps-converted-to.pdf>
-Package pdftex.def Info: FTAG_plots/DL1allPFlowDec/SF60-eps-converted-to.pdf  used on input line 2115.
+Package pdftex.def Info: FTAG_plots/DL1allPFlowDec/SF60-eps-converted-to.pdf  used on input line 1182.
 (pdftex.def)             Requested size: 164.41711pt x 118.02075pt.
 Package epstopdf Info: Source file: <FTAG_plots/DL1allPFlowDec/SF70.eps>
 (epstopdf)                    date: 2021-04-20 17:49:04
@@ -1317,12 +1351,12 @@ Package epstopdf Info: Source file: <FTAG_plots/DL1allPFlowDec/SF70.eps>
 (epstopdf)                    date: 2021-05-15 17:01:49
 (epstopdf)                    size: 11538 bytes
 (epstopdf)             Command: <epstopdf --outfile=FTAG_plots/DL1allPFlowDec/SF70-eps-converted-to.pdf FTAG_plots/DL1allPFlowDec/SF70.eps>
-(epstopdf)             \includegraphics on input line 2119.
+(epstopdf)             \includegraphics on input line 1186.
 Package epstopdf Info: Output file is already uptodate.
-<FTAG_plots/DL1allPFlowDec/SF70-eps-converted-to.pdf, id=1611, 569.12625pt x 408.52625pt>
+<FTAG_plots/DL1allPFlowDec/SF70-eps-converted-to.pdf, id=1653, 569.12625pt x 408.52625pt>
 File: FTAG_plots/DL1allPFlowDec/SF70-eps-converted-to.pdf Graphic file (type pdf)
 <use FTAG_plots/DL1allPFlowDec/SF70-eps-converted-to.pdf>
-Package pdftex.def Info: FTAG_plots/DL1allPFlowDec/SF70-eps-converted-to.pdf  used on input line 2119.
+Package pdftex.def Info: FTAG_plots/DL1allPFlowDec/SF70-eps-converted-to.pdf  used on input line 1186.
 (pdftex.def)             Requested size: 164.41711pt x 118.02075pt.
 Package epstopdf Info: Source file: <FTAG_plots/DL1allPFlowDec/SF77.eps>
 (epstopdf)                    date: 2021-04-20 17:49:04
@@ -1331,12 +1365,12 @@ Package epstopdf Info: Source file: <FTAG_plots/DL1allPFlowDec/SF77.eps>
 (epstopdf)                    date: 2021-05-15 17:01:50
 (epstopdf)                    size: 11413 bytes
 (epstopdf)             Command: <epstopdf --outfile=FTAG_plots/DL1allPFlowDec/SF77-eps-converted-to.pdf FTAG_plots/DL1allPFlowDec/SF77.eps>
-(epstopdf)             \includegraphics on input line 2123.
+(epstopdf)             \includegraphics on input line 1190.
 Package epstopdf Info: Output file is already uptodate.
-<FTAG_plots/DL1allPFlowDec/SF77-eps-converted-to.pdf, id=1612, 569.12625pt x 408.52625pt>
+<FTAG_plots/DL1allPFlowDec/SF77-eps-converted-to.pdf, id=1654, 569.12625pt x 408.52625pt>
 File: FTAG_plots/DL1allPFlowDec/SF77-eps-converted-to.pdf Graphic file (type pdf)
 <use FTAG_plots/DL1allPFlowDec/SF77-eps-converted-to.pdf>
-Package pdftex.def Info: FTAG_plots/DL1allPFlowDec/SF77-eps-converted-to.pdf  used on input line 2123.
+Package pdftex.def Info: FTAG_plots/DL1allPFlowDec/SF77-eps-converted-to.pdf  used on input line 1190.
 (pdftex.def)             Requested size: 164.41711pt x 118.02075pt.
 Package epstopdf Info: Source file: <FTAG_plots/DL1allPFlowDec/SF85.eps>
 (epstopdf)                    date: 2021-04-20 17:49:04
@@ -1345,12 +1379,12 @@ Package epstopdf Info: Source file: <FTAG_plots/DL1allPFlowDec/SF85.eps>
 (epstopdf)                    date: 2021-05-15 17:01:52
 (epstopdf)                    size: 11412 bytes
 (epstopdf)             Command: <epstopdf --outfile=FTAG_plots/DL1allPFlowDec/SF85-eps-converted-to.pdf FTAG_plots/DL1allPFlowDec/SF85.eps>
-(epstopdf)             \includegraphics on input line 2127.
+(epstopdf)             \includegraphics on input line 1194.
 Package epstopdf Info: Output file is already uptodate.
-<FTAG_plots/DL1allPFlowDec/SF85-eps-converted-to.pdf, id=1613, 569.12625pt x 408.52625pt>
+<FTAG_plots/DL1allPFlowDec/SF85-eps-converted-to.pdf, id=1655, 569.12625pt x 408.52625pt>
 File: FTAG_plots/DL1allPFlowDec/SF85-eps-converted-to.pdf Graphic file (type pdf)
 <use FTAG_plots/DL1allPFlowDec/SF85-eps-converted-to.pdf>
-Package pdftex.def Info: FTAG_plots/DL1allPFlowDec/SF85-eps-converted-to.pdf  used on input line 2127.
+Package pdftex.def Info: FTAG_plots/DL1allPFlowDec/SF85-eps-converted-to.pdf  used on input line 1194.
 (pdftex.def)             Requested size: 164.41711pt x 118.02075pt.
 Package epstopdf Info: Source file: <FTAG_plots/DL1rallPFlowDec/SF60.eps>
 (epstopdf)                    date: 2021-04-20 17:49:05
@@ -1359,12 +1393,12 @@ Package epstopdf Info: Source file: <FTAG_plots/DL1rallPFlowDec/SF60.eps>
 (epstopdf)                    date: 2021-05-15 17:01:53
 (epstopdf)                    size: 11942 bytes
 (epstopdf)             Command: <epstopdf --outfile=FTAG_plots/DL1rallPFlowDec/SF60-eps-converted-to.pdf FTAG_plots/DL1rallPFlowDec/SF60.eps>
-(epstopdf)             \includegraphics on input line 2138.
+(epstopdf)             \includegraphics on input line 1205.
 Package epstopdf Info: Output file is already uptodate.
-<FTAG_plots/DL1rallPFlowDec/SF60-eps-converted-to.pdf, id=1614, 569.12625pt x 408.52625pt>
+<FTAG_plots/DL1rallPFlowDec/SF60-eps-converted-to.pdf, id=1656, 569.12625pt x 408.52625pt>
 File: FTAG_plots/DL1rallPFlowDec/SF60-eps-converted-to.pdf Graphic file (type pdf)
 <use FTAG_plots/DL1rallPFlowDec/SF60-eps-converted-to.pdf>
-Package pdftex.def Info: FTAG_plots/DL1rallPFlowDec/SF60-eps-converted-to.pdf  used on input line 2138.
+Package pdftex.def Info: FTAG_plots/DL1rallPFlowDec/SF60-eps-converted-to.pdf  used on input line 1205.
 (pdftex.def)             Requested size: 164.41711pt x 118.02075pt.
 Package epstopdf Info: Source file: <FTAG_plots/DL1rallPFlowDec/SF70.eps>
 (epstopdf)                    date: 2021-04-20 17:49:05
@@ -1373,12 +1407,12 @@ Package epstopdf Info: Source file: <FTAG_plots/DL1rallPFlowDec/SF70.eps>
 (epstopdf)                    date: 2021-05-15 17:01:54
 (epstopdf)                    size: 11562 bytes
 (epstopdf)             Command: <epstopdf --outfile=FTAG_plots/DL1rallPFlowDec/SF70-eps-converted-to.pdf FTAG_plots/DL1rallPFlowDec/SF70.eps>
-(epstopdf)             \includegraphics on input line 2142.
+(epstopdf)             \includegraphics on input line 1209.
 Package epstopdf Info: Output file is already uptodate.
-<FTAG_plots/DL1rallPFlowDec/SF70-eps-converted-to.pdf, id=1615, 569.12625pt x 408.52625pt>
+<FTAG_plots/DL1rallPFlowDec/SF70-eps-converted-to.pdf, id=1657, 569.12625pt x 408.52625pt>
 File: FTAG_plots/DL1rallPFlowDec/SF70-eps-converted-to.pdf Graphic file (type pdf)
 <use FTAG_plots/DL1rallPFlowDec/SF70-eps-converted-to.pdf>
-Package pdftex.def Info: FTAG_plots/DL1rallPFlowDec/SF70-eps-converted-to.pdf  used on input line 2142.
+Package pdftex.def Info: FTAG_plots/DL1rallPFlowDec/SF70-eps-converted-to.pdf  used on input line 1209.
 (pdftex.def)             Requested size: 164.41711pt x 118.02075pt.
 Package epstopdf Info: Source file: <FTAG_plots/DL1rallPFlowDec/SF77.eps>
 (epstopdf)                    date: 2021-04-20 17:49:05
@@ -1387,12 +1421,12 @@ Package epstopdf Info: Source file: <FTAG_plots/DL1rallPFlowDec/SF77.eps>
 (epstopdf)                    date: 2021-05-15 17:01:55
 (epstopdf)                    size: 11417 bytes
 (epstopdf)             Command: <epstopdf --outfile=FTAG_plots/DL1rallPFlowDec/SF77-eps-converted-to.pdf FTAG_plots/DL1rallPFlowDec/SF77.eps>
-(epstopdf)             \includegraphics on input line 2146.
+(epstopdf)             \includegraphics on input line 1213.
 Package epstopdf Info: Output file is already uptodate.
-<FTAG_plots/DL1rallPFlowDec/SF77-eps-converted-to.pdf, id=1616, 569.12625pt x 408.52625pt>
+<FTAG_plots/DL1rallPFlowDec/SF77-eps-converted-to.pdf, id=1658, 569.12625pt x 408.52625pt>
 File: FTAG_plots/DL1rallPFlowDec/SF77-eps-converted-to.pdf Graphic file (type pdf)
 <use FTAG_plots/DL1rallPFlowDec/SF77-eps-converted-to.pdf>
-Package pdftex.def Info: FTAG_plots/DL1rallPFlowDec/SF77-eps-converted-to.pdf  used on input line 2146.
+Package pdftex.def Info: FTAG_plots/DL1rallPFlowDec/SF77-eps-converted-to.pdf  used on input line 1213.
 (pdftex.def)             Requested size: 164.41711pt x 118.02075pt.
 Package epstopdf Info: Source file: <FTAG_plots/DL1rallPFlowDec/SF85.eps>
 (epstopdf)                    date: 2021-04-20 17:49:05
@@ -1401,14 +1435,14 @@ Package epstopdf Info: Source file: <FTAG_plots/DL1rallPFlowDec/SF85.eps>
 (epstopdf)                    date: 2021-05-15 17:01:56
 (epstopdf)                    size: 11368 bytes
 (epstopdf)             Command: <epstopdf --outfile=FTAG_plots/DL1rallPFlowDec/SF85-eps-converted-to.pdf FTAG_plots/DL1rallPFlowDec/SF85.eps>
-(epstopdf)             \includegraphics on input line 2150.
+(epstopdf)             \includegraphics on input line 1217.
 Package epstopdf Info: Output file is already uptodate.
-<FTAG_plots/DL1rallPFlowDec/SF85-eps-converted-to.pdf, id=1617, 569.12625pt x 408.52625pt>
+<FTAG_plots/DL1rallPFlowDec/SF85-eps-converted-to.pdf, id=1659, 569.12625pt x 408.52625pt>
 File: FTAG_plots/DL1rallPFlowDec/SF85-eps-converted-to.pdf Graphic file (type pdf)
 <use FTAG_plots/DL1rallPFlowDec/SF85-eps-converted-to.pdf>
-Package pdftex.def Info: FTAG_plots/DL1rallPFlowDec/SF85-eps-converted-to.pdf  used on input line 2150.
+Package pdftex.def Info: FTAG_plots/DL1rallPFlowDec/SF85-eps-converted-to.pdf  used on input line 1217.
 (pdftex.def)             Requested size: 164.41711pt x 118.02075pt.
- [43 <./FTAG_plots/DL1allPFlowDec/SF60-eps-converted-to.pdf> <./FTAG_plots/DL1allPFlowDec/SF70-eps-converted-to.pdf> <./FTAG_plots/DL1allPFlowDec/SF77-eps-converted-to.pdf> <./FTAG_plots/DL1allPFlowDec/SF85-eps-converted-to.pdf> <./FTAG_plots/DL1rallPFlowDec/SF60-eps-converted-to.pdf> <./FTAG_plots/DL1rallPFlowDec/SF70-eps-converted-to.pdf> <./FTAG_plots/DL1rallPFlowDec/SF77-eps-converted-to.pdf> <./FTAG_plots/DL1rallPFlowDec/SF85-eps-converted-to.pdf>]
+ [49 <./FTAG_plots/DL1allPFlowDec/SF60-eps-converted-to.pdf> <./FTAG_plots/DL1allPFlowDec/SF70-eps-converted-to.pdf> <./FTAG_plots/DL1allPFlowDec/SF77-eps-converted-to.pdf> <./FTAG_plots/DL1allPFlowDec/SF85-eps-converted-to.pdf> <./FTAG_plots/DL1rallPFlowDec/SF60-eps-converted-to.pdf> <./FTAG_plots/DL1rallPFlowDec/SF70-eps-converted-to.pdf> <./FTAG_plots/DL1rallPFlowDec/SF77-eps-converted-to.pdf> <./FTAG_plots/DL1rallPFlowDec/SF85-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <FTAG_plots/DL1allVRJetsDec/SF60.eps>
 (epstopdf)                    date: 2021-04-20 17:49:04
 (epstopdf)                    size: 21369 bytes
@@ -1416,12 +1450,12 @@ Package epstopdf Info: Source file: <FTAG_plots/DL1allVRJetsDec/SF60.eps>
 (epstopdf)                    date: 2021-05-15 17:01:58
 (epstopdf)                    size: 12381 bytes
 (epstopdf)             Command: <epstopdf --outfile=FTAG_plots/DL1allVRJetsDec/SF60-eps-converted-to.pdf FTAG_plots/DL1allVRJetsDec/SF60.eps>
-(epstopdf)             \includegraphics on input line 2160.
+(epstopdf)             \includegraphics on input line 1227.
 Package epstopdf Info: Output file is already uptodate.
-<FTAG_plots/DL1allVRJetsDec/SF60-eps-converted-to.pdf, id=1688, 569.12625pt x 408.52625pt>
+<FTAG_plots/DL1allVRJetsDec/SF60-eps-converted-to.pdf, id=1730, 569.12625pt x 408.52625pt>
 File: FTAG_plots/DL1allVRJetsDec/SF60-eps-converted-to.pdf Graphic file (type pdf)
 <use FTAG_plots/DL1allVRJetsDec/SF60-eps-converted-to.pdf>
-Package pdftex.def Info: FTAG_plots/DL1allVRJetsDec/SF60-eps-converted-to.pdf  used on input line 2160.
+Package pdftex.def Info: FTAG_plots/DL1allVRJetsDec/SF60-eps-converted-to.pdf  used on input line 1227.
 (pdftex.def)             Requested size: 164.41711pt x 118.02075pt.
 Package epstopdf Info: Source file: <FTAG_plots/DL1allVRJetsDec/SF70.eps>
 (epstopdf)                    date: 2021-04-20 17:49:04
@@ -1430,12 +1464,12 @@ Package epstopdf Info: Source file: <FTAG_plots/DL1allVRJetsDec/SF70.eps>
 (epstopdf)                    date: 2021-05-15 17:01:59
 (epstopdf)                    size: 11821 bytes
 (epstopdf)             Command: <epstopdf --outfile=FTAG_plots/DL1allVRJetsDec/SF70-eps-converted-to.pdf FTAG_plots/DL1allVRJetsDec/SF70.eps>
-(epstopdf)             \includegraphics on input line 2164.
+(epstopdf)             \includegraphics on input line 1231.
 Package epstopdf Info: Output file is already uptodate.
-<FTAG_plots/DL1allVRJetsDec/SF70-eps-converted-to.pdf, id=1689, 569.12625pt x 408.52625pt>
+<FTAG_plots/DL1allVRJetsDec/SF70-eps-converted-to.pdf, id=1731, 569.12625pt x 408.52625pt>
 File: FTAG_plots/DL1allVRJetsDec/SF70-eps-converted-to.pdf Graphic file (type pdf)
 <use FTAG_plots/DL1allVRJetsDec/SF70-eps-converted-to.pdf>
-Package pdftex.def Info: FTAG_plots/DL1allVRJetsDec/SF70-eps-converted-to.pdf  used on input line 2164.
+Package pdftex.def Info: FTAG_plots/DL1allVRJetsDec/SF70-eps-converted-to.pdf  used on input line 1231.
 (pdftex.def)             Requested size: 164.41711pt x 118.02075pt.
 Package epstopdf Info: Source file: <FTAG_plots/DL1allVRJetsDec/SF77.eps>
 (epstopdf)                    date: 2021-04-20 17:49:04
@@ -1444,12 +1478,12 @@ Package epstopdf Info: Source file: <FTAG_plots/DL1allVRJetsDec/SF77.eps>
 (epstopdf)                    date: 2021-05-15 17:02:00
 (epstopdf)                    size: 11640 bytes
 (epstopdf)             Command: <epstopdf --outfile=FTAG_plots/DL1allVRJetsDec/SF77-eps-converted-to.pdf FTAG_plots/DL1allVRJetsDec/SF77.eps>
-(epstopdf)             \includegraphics on input line 2168.
+(epstopdf)             \includegraphics on input line 1235.
 Package epstopdf Info: Output file is already uptodate.
-<FTAG_plots/DL1allVRJetsDec/SF77-eps-converted-to.pdf, id=1690, 569.12625pt x 408.52625pt>
+<FTAG_plots/DL1allVRJetsDec/SF77-eps-converted-to.pdf, id=1732, 569.12625pt x 408.52625pt>
 File: FTAG_plots/DL1allVRJetsDec/SF77-eps-converted-to.pdf Graphic file (type pdf)
 <use FTAG_plots/DL1allVRJetsDec/SF77-eps-converted-to.pdf>
-Package pdftex.def Info: FTAG_plots/DL1allVRJetsDec/SF77-eps-converted-to.pdf  used on input line 2168.
+Package pdftex.def Info: FTAG_plots/DL1allVRJetsDec/SF77-eps-converted-to.pdf  used on input line 1235.
 (pdftex.def)             Requested size: 164.41711pt x 118.02075pt.
 Package epstopdf Info: Source file: <FTAG_plots/DL1allVRJetsDec/SF85.eps>
 (epstopdf)                    date: 2021-04-20 17:49:04
@@ -1458,12 +1492,12 @@ Package epstopdf Info: Source file: <FTAG_plots/DL1allVRJetsDec/SF85.eps>
 (epstopdf)                    date: 2021-05-15 17:02:01
 (epstopdf)                    size: 11529 bytes
 (epstopdf)             Command: <epstopdf --outfile=FTAG_plots/DL1allVRJetsDec/SF85-eps-converted-to.pdf FTAG_plots/DL1allVRJetsDec/SF85.eps>
-(epstopdf)             \includegraphics on input line 2172.
+(epstopdf)             \includegraphics on input line 1239.
 Package epstopdf Info: Output file is already uptodate.
-<FTAG_plots/DL1allVRJetsDec/SF85-eps-converted-to.pdf, id=1691, 569.12625pt x 408.52625pt>
+<FTAG_plots/DL1allVRJetsDec/SF85-eps-converted-to.pdf, id=1733, 569.12625pt x 408.52625pt>
 File: FTAG_plots/DL1allVRJetsDec/SF85-eps-converted-to.pdf Graphic file (type pdf)
 <use FTAG_plots/DL1allVRJetsDec/SF85-eps-converted-to.pdf>
-Package pdftex.def Info: FTAG_plots/DL1allVRJetsDec/SF85-eps-converted-to.pdf  used on input line 2172.
+Package pdftex.def Info: FTAG_plots/DL1allVRJetsDec/SF85-eps-converted-to.pdf  used on input line 1239.
 (pdftex.def)             Requested size: 164.41711pt x 118.02075pt.
 Package epstopdf Info: Source file: <FTAG_plots/DL1rallVRJetsDec/SF60.eps>
 (epstopdf)                    date: 2021-04-20 17:49:05
@@ -1472,12 +1506,12 @@ Package epstopdf Info: Source file: <FTAG_plots/DL1rallVRJetsDec/SF60.eps>
 (epstopdf)                    date: 2021-05-15 17:02:02
 (epstopdf)                    size: 12484 bytes
 (epstopdf)             Command: <epstopdf --outfile=FTAG_plots/DL1rallVRJetsDec/SF60-eps-converted-to.pdf FTAG_plots/DL1rallVRJetsDec/SF60.eps>
-(epstopdf)             \includegraphics on input line 2183.
+(epstopdf)             \includegraphics on input line 1250.
 Package epstopdf Info: Output file is already uptodate.
-<FTAG_plots/DL1rallVRJetsDec/SF60-eps-converted-to.pdf, id=1692, 569.12625pt x 408.52625pt>
+<FTAG_plots/DL1rallVRJetsDec/SF60-eps-converted-to.pdf, id=1734, 569.12625pt x 408.52625pt>
 File: FTAG_plots/DL1rallVRJetsDec/SF60-eps-converted-to.pdf Graphic file (type pdf)
 <use FTAG_plots/DL1rallVRJetsDec/SF60-eps-converted-to.pdf>
-Package pdftex.def Info: FTAG_plots/DL1rallVRJetsDec/SF60-eps-converted-to.pdf  used on input line 2183.
+Package pdftex.def Info: FTAG_plots/DL1rallVRJetsDec/SF60-eps-converted-to.pdf  used on input line 1250.
 (pdftex.def)             Requested size: 164.41711pt x 118.02075pt.
 Package epstopdf Info: Source file: <FTAG_plots/DL1rallVRJetsDec/SF70.eps>
 (epstopdf)                    date: 2021-04-20 17:49:05
@@ -1486,12 +1520,12 @@ Package epstopdf Info: Source file: <FTAG_plots/DL1rallVRJetsDec/SF70.eps>
 (epstopdf)                    date: 2021-05-15 17:02:03
 (epstopdf)                    size: 11834 bytes
 (epstopdf)             Command: <epstopdf --outfile=FTAG_plots/DL1rallVRJetsDec/SF70-eps-converted-to.pdf FTAG_plots/DL1rallVRJetsDec/SF70.eps>
-(epstopdf)             \includegraphics on input line 2187.
+(epstopdf)             \includegraphics on input line 1254.
 Package epstopdf Info: Output file is already uptodate.
-<FTAG_plots/DL1rallVRJetsDec/SF70-eps-converted-to.pdf, id=1693, 569.12625pt x 408.52625pt>
+<FTAG_plots/DL1rallVRJetsDec/SF70-eps-converted-to.pdf, id=1735, 569.12625pt x 408.52625pt>
 File: FTAG_plots/DL1rallVRJetsDec/SF70-eps-converted-to.pdf Graphic file (type pdf)
 <use FTAG_plots/DL1rallVRJetsDec/SF70-eps-converted-to.pdf>
-Package pdftex.def Info: FTAG_plots/DL1rallVRJetsDec/SF70-eps-converted-to.pdf  used on input line 2187.
+Package pdftex.def Info: FTAG_plots/DL1rallVRJetsDec/SF70-eps-converted-to.pdf  used on input line 1254.
 (pdftex.def)             Requested size: 164.41711pt x 118.02075pt.
 Package epstopdf Info: Source file: <FTAG_plots/DL1rallVRJetsDec/SF77.eps>
 (epstopdf)                    date: 2021-04-20 17:49:05
@@ -1500,12 +1534,12 @@ Package epstopdf Info: Source file: <FTAG_plots/DL1rallVRJetsDec/SF77.eps>
 (epstopdf)                    date: 2021-05-15 17:02:04
 (epstopdf)                    size: 11633 bytes
 (epstopdf)             Command: <epstopdf --outfile=FTAG_plots/DL1rallVRJetsDec/SF77-eps-converted-to.pdf FTAG_plots/DL1rallVRJetsDec/SF77.eps>
-(epstopdf)             \includegraphics on input line 2191.
+(epstopdf)             \includegraphics on input line 1258.
 Package epstopdf Info: Output file is already uptodate.
-<FTAG_plots/DL1rallVRJetsDec/SF77-eps-converted-to.pdf, id=1694, 569.12625pt x 408.52625pt>
+<FTAG_plots/DL1rallVRJetsDec/SF77-eps-converted-to.pdf, id=1736, 569.12625pt x 408.52625pt>
 File: FTAG_plots/DL1rallVRJetsDec/SF77-eps-converted-to.pdf Graphic file (type pdf)
 <use FTAG_plots/DL1rallVRJetsDec/SF77-eps-converted-to.pdf>
-Package pdftex.def Info: FTAG_plots/DL1rallVRJetsDec/SF77-eps-converted-to.pdf  used on input line 2191.
+Package pdftex.def Info: FTAG_plots/DL1rallVRJetsDec/SF77-eps-converted-to.pdf  used on input line 1258.
 (pdftex.def)             Requested size: 164.41711pt x 118.02075pt.
 Package epstopdf Info: Source file: <FTAG_plots/DL1rallVRJetsDec/SF85.eps>
 (epstopdf)                    date: 2021-04-20 17:49:05
@@ -1514,674 +1548,682 @@ Package epstopdf Info: Source file: <FTAG_plots/DL1rallVRJetsDec/SF85.eps>
 (epstopdf)                    date: 2021-05-15 17:02:05
 (epstopdf)                    size: 11543 bytes
 (epstopdf)             Command: <epstopdf --outfile=FTAG_plots/DL1rallVRJetsDec/SF85-eps-converted-to.pdf FTAG_plots/DL1rallVRJetsDec/SF85.eps>
-(epstopdf)             \includegraphics on input line 2195.
+(epstopdf)             \includegraphics on input line 1262.
 Package epstopdf Info: Output file is already uptodate.
-<FTAG_plots/DL1rallVRJetsDec/SF85-eps-converted-to.pdf, id=1695, 569.12625pt x 408.52625pt>
+<FTAG_plots/DL1rallVRJetsDec/SF85-eps-converted-to.pdf, id=1737, 569.12625pt x 408.52625pt>
 File: FTAG_plots/DL1rallVRJetsDec/SF85-eps-converted-to.pdf Graphic file (type pdf)
 <use FTAG_plots/DL1rallVRJetsDec/SF85-eps-converted-to.pdf>
-Package pdftex.def Info: FTAG_plots/DL1rallVRJetsDec/SF85-eps-converted-to.pdf  used on input line 2195.
+Package pdftex.def Info: FTAG_plots/DL1rallVRJetsDec/SF85-eps-converted-to.pdf  used on input line 1262.
 (pdftex.def)             Requested size: 164.41711pt x 118.02075pt.
- [44 <./FTAG_plots/DL1allVRJetsDec/SF60-eps-converted-to.pdf> <./FTAG_plots/DL1allVRJetsDec/SF70-eps-converted-to.pdf> <./FTAG_plots/DL1allVRJetsDec/SF77-eps-converted-to.pdf> <./FTAG_plots/DL1allVRJetsDec/SF85-eps-converted-to.pdf> <./FTAG_plots/DL1rallVRJetsDec/SF60-eps-converted-to.pdf> <./FTAG_plots/DL1rallVRJetsDec/SF70-eps-converted-to.pdf> <./FTAG_plots/DL1rallVRJetsDec/SF77-eps-converted-to.pdf> <./FTAG_plots/DL1rallVRJetsDec/SF85-eps-converted-to.pdf>]
+ [50 <./FTAG_plots/DL1allVRJetsDec/SF60-eps-converted-to.pdf> <./FTAG_plots/DL1allVRJetsDec/SF70-eps-converted-to.pdf> <./FTAG_plots/DL1allVRJetsDec/SF77-eps-converted-to.pdf> <./FTAG_plots/DL1allVRJetsDec/SF85-eps-converted-to.pdf> <./FTAG_plots/DL1rallVRJetsDec/SF60-eps-converted-to.pdf> <./FTAG_plots/DL1rallVRJetsDec/SF70-eps-converted-to.pdf> <./FTAG_plots/DL1rallVRJetsDec/SF77-eps-converted-to.pdf> <./FTAG_plots/DL1rallVRJetsDec/SF85-eps-converted-to.pdf>])
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 2235.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\tau' on input line 2235.
+(hyperref)                removing `math shift' on input line 78.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 2235.
+(hyperref)                removing `\tau' on input line 78.
 
-[45] [46]
-Overfull \hbox (3.0831pt too wide) in paragraph at lines 2256--2256
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 78.
+
+[51
+
+
+]
+Overfull \hbox (3.0831pt too wide) in paragraph at lines 89--89
 \T1/cmr/m/n/12 TDR-19; CERN-LHCC-2010-013. 2010. \T1/cmr/m/sc/12 url\T1/cmr/m/n/12 : [][]$\T1/cmtt/m/n/12 https : / / cds . cern . ch / record / 1291633$[][]\T1/cmr/m/n/12 . 
  []
 
-[47] [48]
-Overfull \hbox (4.09744pt too wide) in paragraph at lines 2256--2256
+[52] [53] [54]
+Overfull \hbox (4.09744pt too wide) in paragraph at lines 89--89
 []\T1/cmr/m/n/12 Stefano Frix-ione, Paolo Na-son, and Gio-vanni Ri-dolfi. ``A positive-weight next-to-leading-
  []
 
-[49] [50]
-Overfull \hbox (4.6617pt too wide) in paragraph at lines 2256--2256
+[55] [56]
+Overfull \hbox (4.6617pt too wide) in paragraph at lines 89--89
 []\T1/cmr/m/n/12 ATLAS Col-lab-o-ra-tion. ``Mea-sure-ments of in-clu-sive and dif-fer-en-tial fidu-cial cross-sections
  []
 
-[51]
+[57]
+\openout2 = `AUX/FTAG.aux'.
+
+ (./AUX/FTAG.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 2262.
+(hyperref)                removing `math shift' on input line 2.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 2262.
+(hyperref)                removing `math shift' on input line 2.
 
-[52]
-<FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_J0_eta.png, id=1938, 798.985pt x 574.145pt>
+[58
+
+]
+<FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_J0_eta.png, id=1989, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_J0_eta.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_J0_eta.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_J0_eta.png  used on input line 2269.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_J0_eta.png  used on input line 9.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_J1_eta.png, id=1939, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_J1_eta.png, id=1990, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_J1_eta.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_J1_eta.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_J1_eta.png  used on input line 2270.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_J1_eta.png  used on input line 10.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_LLR.png, id=1940, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_LLR.png, id=1991, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_LLR.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_LLR.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_LLR.png  used on input line 2271.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_LLR.png  used on input line 11.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_MET.png, id=1941, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_MET.png, id=1992, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_MET.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_MET.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_MET.png  used on input line 2272.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_MET.png  used on input line 12.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2269--2273
+Underfull \hbox (badness 10000) in paragraph at lines 9--13
 
  []
 
-[53 <./FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_J0_eta.png> <./FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_J1_eta.png> <./FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_LLR.png> <./FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_MET.png>]
-<FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRbb.png, id=1947, 798.985pt x 574.145pt>
+[59 <./FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_J0_eta.png> <./FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_J1_eta.png> <./FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_LLR.png> <./FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_MET.png>]
+<FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRbb.png, id=1998, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRbb.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRbb.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRbb.png  used on input line 2282.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRbb.png  used on input line 22.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRqq.png, id=1948, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRqq.png, id=1999, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRqq.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRqq.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRqq.png  used on input line 2283.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRqq.png  used on input line 23.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRbhadq1.png, id=1949, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRbhadq1.png, id=2000, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRbhadq1.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRbhadq1.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRbhadq1.png  used on input line 2284.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRbhadq1.png  used on input line 24.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRblepq1.png, id=1950, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRblepq1.png, id=2001, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRblepq1.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRblepq1.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRblepq1.png  used on input line 2285.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRblepq1.png  used on input line 25.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRWhadbhad.png, id=1951, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRWhadbhad.png, id=2002, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRWhadbhad.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRWhadbhad.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRWhadbhad.png  used on input line 2286.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRWhadbhad.png  used on input line 26.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRWhadblep.png, id=1952, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRWhadblep.png, id=2003, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRWhadblep.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRWhadblep.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRWhadblep.png  used on input line 2287.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRWhadblep.png  used on input line 27.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2282--2290
+Underfull \hbox (badness 10000) in paragraph at lines 22--30
 
  []
 
-[54 <./FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRbb.png> <./FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRqq.png> <./FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRbhadq1.png> <./FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRblepq1.png> <./FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRWhadbhad.png> <./FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRWhadblep.png>]
-<FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_Mbb.png, id=1958, 798.985pt x 574.145pt>
+[60 <./FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRbb.png> <./FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRqq.png> <./FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRbhadq1.png> <./FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRblepq1.png> <./FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRWhadbhad.png> <./FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_dRWhadblep.png>]
+<FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_Mbb.png, id=2010, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_Mbb.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_Mbb.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_Mbb.png  used on input line 2295.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_Mbb.png  used on input line 35.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_mjj.png, id=1959, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_mjj.png, id=2011, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_mjj.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_mjj.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_mjj.png  used on input line 2296.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_mjj.png  used on input line 36.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_mjjj.png, id=1960, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_mjjj.png, id=2012, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_mjjj.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_mjjj.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_mjjj.png  used on input line 2297.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_mjjj.png  used on input line 37.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_Htjj.png, id=1961, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_Htjj.png, id=2013, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_Htjj.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_Htjj.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_Htjj.png  used on input line 2298.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_Htjj.png  used on input line 38.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2295--2301
+Underfull \hbox (badness 10000) in paragraph at lines 35--41
 
  []
 
-[55 <./FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_Mbb.png> <./FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_mjj.png> <./FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_mjjj.png> <./FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_Htjj.png>]
-<FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_J0_etatrackjet.png, id=1968, 798.985pt x 574.145pt>
+[61 <./FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_Mbb.png> <./FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_mjj.png> <./FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_mjjj.png> <./FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_Htjj.png>]
+<FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_J0_etatrackjet.png, id=2020, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_J0_etatrackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_J0_etatrackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_J0_etatrackjet.png  used on input line 2308.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_J0_etatrackjet.png  used on input line 48.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_J1_etatrackjet.png, id=1969, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_J1_etatrackjet.png, id=2021, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_J1_etatrackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_J1_etatrackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_J1_etatrackjet.png  used on input line 2309.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_J1_etatrackjet.png  used on input line 49.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_LLRtrackjet.png, id=1970, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_LLRtrackjet.png, id=2022, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_LLRtrackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_LLRtrackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_LLRtrackjet.png  used on input line 2310.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_LLRtrackjet.png  used on input line 50.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_METtrackjet.png, id=1971, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_METtrackjet.png, id=2023, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_METtrackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_METtrackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_METtrackjet.png  used on input line 2311.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_METtrackjet.png  used on input line 51.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2308--2312
+Underfull \hbox (badness 10000) in paragraph at lines 48--52
 
  []
 
-[56 <./FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_J0_etatrackjet.png> <./FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_J1_etatrackjet.png> <./FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_LLRtrackjet.png> <./FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_METtrackjet.png>]
-<FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRbbtrackjet.png, id=1977, 798.985pt x 574.145pt>
+[62 <./FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_J0_etatrackjet.png> <./FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_J1_etatrackjet.png> <./FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_LLRtrackjet.png> <./FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_METtrackjet.png>]
+<FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRbbtrackjet.png, id=2029, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRbbtrackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRbbtrackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRbbtrackjet.png  used on input line 2323.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRbbtrackjet.png  used on input line 63.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRqqtrackjet.png, id=1978, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRqqtrackjet.png, id=2030, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRqqtrackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRqqtrackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRqqtrackjet.png  used on input line 2324.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRqqtrackjet.png  used on input line 64.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRbhadq1trackjet.png, id=1979, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRbhadq1trackjet.png, id=2031, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRbhadq1trackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRbhadq1trackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRbhadq1trackjet.png  used on input line 2325.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRbhadq1trackjet.png  used on input line 65.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRblepq1trackjet.png, id=1980, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRblepq1trackjet.png, id=2032, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRblepq1trackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRblepq1trackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRblepq1trackjet.png  used on input line 2326.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRblepq1trackjet.png  used on input line 66.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRWhadbhadtrackjet.png, id=1981, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRWhadbhadtrackjet.png, id=2033, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRWhadbhadtrackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRWhadbhadtrackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRWhadbhadtrackjet.png  used on input line 2327.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRWhadbhadtrackjet.png  used on input line 67.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRWhadbleptrackjet.png, id=1982, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRWhadbleptrackjet.png, id=2034, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRWhadbleptrackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRWhadbleptrackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRWhadbleptrackjet.png  used on input line 2328.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRWhadbleptrackjet.png  used on input line 68.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2323--2330
+Underfull \hbox (badness 10000) in paragraph at lines 63--70
 
  []
 
-[57 <./FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRbbtrackjet.png> <./FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRqqtrackjet.png> <./FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRbhadq1trackjet.png> <./FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRblepq1trackjet.png> <./FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRWhadbhadtrackjet.png> <./FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRWhadbleptrackjet.png>]
-<FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_Mbbtrackjet.png, id=1988, 798.985pt x 574.145pt>
+[63 <./FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRbbtrackjet.png> <./FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRqqtrackjet.png> <./FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRbhadq1trackjet.png> <./FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRblepq1trackjet.png> <./FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRWhadbhadtrackjet.png> <./FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_dRWhadbleptrackjet.png>]
+<FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_Mbbtrackjet.png, id=2040, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_Mbbtrackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_Mbbtrackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_Mbbtrackjet.png  used on input line 2335.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_Mbbtrackjet.png  used on input line 75.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_mjjtrackjet.png, id=1989, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_mjjtrackjet.png, id=2041, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_mjjtrackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_mjjtrackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_mjjtrackjet.png  used on input line 2336.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_mjjtrackjet.png  used on input line 76.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_mjjjtrackjet.png, id=1990, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_mjjjtrackjet.png, id=2042, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_mjjjtrackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_mjjjtrackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_mjjjtrackjet.png  used on input line 2337.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_mjjjtrackjet.png  used on input line 77.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_Htjjtrackjet.png, id=1991, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_Htjjtrackjet.png, id=2043, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_Htjjtrackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_Htjjtrackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_Htjjtrackjet.png  used on input line 2338.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_Htjjtrackjet.png  used on input line 78.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2335--2340
+Underfull \hbox (badness 10000) in paragraph at lines 75--80
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 2344.
+(hyperref)                removing `subscript' on input line 84.
 
-[58 <./FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_Mbbtrackjet.png> <./FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_mjjtrackjet.png> <./FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_mjjjtrackjet.png> <./FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_Htjjtrackjet.png>]
-<FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_J0_eta.png, id=1997, 798.985pt x 574.145pt>
+[64 <./FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_Mbbtrackjet.png> <./FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_mjjtrackjet.png> <./FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_mjjjtrackjet.png> <./FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_Htjjtrackjet.png>]
+<FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_J0_eta.png, id=2049, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_J0_eta.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_J0_eta.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_J0_eta.png  used on input line 2348.
+Package pdftex.def Info: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_J0_eta.png  used on input line 88.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_J1_eta.png, id=1998, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_J1_eta.png, id=2050, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_J1_eta.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_J1_eta.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_J1_eta.png  used on input line 2349.
+Package pdftex.def Info: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_J1_eta.png  used on input line 89.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_LLR.png, id=1999, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_LLR.png, id=2051, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_LLR.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_LLR.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_LLR.png  used on input line 2350.
+Package pdftex.def Info: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_LLR.png  used on input line 90.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_MET.png, id=2000, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_MET.png, id=2052, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_MET.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_MET.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_MET.png  used on input line 2351.
+Package pdftex.def Info: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_MET.png  used on input line 91.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2348--2352
+Underfull \hbox (badness 10000) in paragraph at lines 88--92
 
  []
 
-[59 <./FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_J0_eta.png> <./FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_J1_eta.png> <./FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_LLR.png> <./FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_MET.png>]
-<FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRbb.png, id=2006, 798.985pt x 574.145pt>
+[65 <./FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_J0_eta.png> <./FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_J1_eta.png> <./FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_LLR.png> <./FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_MET.png>]
+<FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRbb.png, id=2058, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRbb.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRbb.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRbb.png  used on input line 2361.
+Package pdftex.def Info: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRbb.png  used on input line 101.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRqq.png, id=2007, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRqq.png, id=2059, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRqq.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRqq.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRqq.png  used on input line 2362.
+Package pdftex.def Info: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRqq.png  used on input line 102.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRbhadq1.png, id=2008, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRbhadq1.png, id=2060, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRbhadq1.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRbhadq1.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRbhadq1.png  used on input line 2363.
+Package pdftex.def Info: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRbhadq1.png  used on input line 103.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRblepq1.png, id=2009, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRblepq1.png, id=2061, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRblepq1.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRblepq1.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRblepq1.png  used on input line 2364.
+Package pdftex.def Info: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRblepq1.png  used on input line 104.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRWhadbhad.png, id=2010, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRWhadbhad.png, id=2062, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRWhadbhad.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRWhadbhad.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRWhadbhad.png  used on input line 2365.
+Package pdftex.def Info: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRWhadbhad.png  used on input line 105.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRWhadblep.png, id=2011, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRWhadblep.png, id=2063, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRWhadblep.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRWhadblep.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRWhadblep.png  used on input line 2366.
+Package pdftex.def Info: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRWhadblep.png  used on input line 106.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2361--2369
+Underfull \hbox (badness 10000) in paragraph at lines 101--109
 
  []
 
-[60 <./FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRbb.png> <./FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRqq.png> <./FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRbhadq1.png> <./FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRblepq1.png> <./FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRWhadbhad.png> <./FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRWhadblep.png>]
-<FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_Mbb.png, id=2017, 798.985pt x 574.145pt>
+[66 <./FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRbb.png> <./FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRqq.png> <./FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRbhadq1.png> <./FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRblepq1.png> <./FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRWhadbhad.png> <./FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_dRWhadblep.png>]
+<FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_Mbb.png, id=2069, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_Mbb.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_Mbb.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_Mbb.png  used on input line 2374.
+Package pdftex.def Info: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_Mbb.png  used on input line 114.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_mjj.png, id=2018, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_mjj.png, id=2070, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_mjj.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_mjj.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_mjj.png  used on input line 2375.
+Package pdftex.def Info: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_mjj.png  used on input line 115.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_mjjj.png, id=2019, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_mjjj.png, id=2071, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_mjjj.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_mjjj.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_mjjj.png  used on input line 2376.
+Package pdftex.def Info: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_mjjj.png  used on input line 116.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_Htjj.png, id=2020, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_Htjj.png, id=2072, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_Htjj.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_Htjj.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_Htjj.png  used on input line 2377.
+Package pdftex.def Info: FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_Htjj.png  used on input line 117.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2374--2380
+Underfull \hbox (badness 10000) in paragraph at lines 114--120
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 2383.
+(hyperref)                removing `subscript' on input line 123.
 
-[61 <./FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_Mbb.png> <./FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_mjj.png> <./FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_mjjj.png> <./FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_Htjj.png>]
-<FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_J0_eta.png, id=2027, 798.985pt x 574.145pt>
+[67 <./FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_Mbb.png> <./FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_mjj.png> <./FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_mjjj.png> <./FTAG_plots/pretagNoRwLowpTPFlowall/DataMC_h_Htjj.png>]
+<FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_J0_eta.png, id=2079, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_J0_eta.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_J0_eta.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_J0_eta.png  used on input line 2387.
+Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_J0_eta.png  used on input line 127.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_J1_eta.png, id=2028, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_J1_eta.png, id=2080, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_J1_eta.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_J1_eta.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_J1_eta.png  used on input line 2388.
+Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_J1_eta.png  used on input line 128.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_LLR.png, id=2029, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_LLR.png, id=2081, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_LLR.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_LLR.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_LLR.png  used on input line 2389.
+Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_LLR.png  used on input line 129.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_MET.png, id=2030, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_MET.png, id=2082, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_MET.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_MET.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_MET.png  used on input line 2390.
+Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_MET.png  used on input line 130.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2387--2391
+Underfull \hbox (badness 10000) in paragraph at lines 127--131
 
  []
 
-[62 <./FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_J0_eta.png> <./FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_J1_eta.png> <./FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_LLR.png> <./FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_MET.png>]
-<FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRbb.png, id=2036, 798.985pt x 574.145pt>
+[68 <./FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_J0_eta.png> <./FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_J1_eta.png> <./FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_LLR.png> <./FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_MET.png>]
+<FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRbb.png, id=2088, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRbb.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRbb.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRbb.png  used on input line 2400.
+Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRbb.png  used on input line 140.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRqq.png, id=2037, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRqq.png, id=2089, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRqq.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRqq.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRqq.png  used on input line 2401.
+Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRqq.png  used on input line 141.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRbhadq1.png, id=2038, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRbhadq1.png, id=2090, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRbhadq1.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRbhadq1.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRbhadq1.png  used on input line 2402.
+Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRbhadq1.png  used on input line 142.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRblepq1.png, id=2039, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRblepq1.png, id=2091, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRblepq1.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRblepq1.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRblepq1.png  used on input line 2403.
+Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRblepq1.png  used on input line 143.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRWhadbhad.png, id=2040, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRWhadbhad.png, id=2092, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRWhadbhad.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRWhadbhad.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRWhadbhad.png  used on input line 2404.
+Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRWhadbhad.png  used on input line 144.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRWhadblep.png, id=2041, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRWhadblep.png, id=2093, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRWhadblep.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRWhadblep.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRWhadblep.png  used on input line 2405.
+Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRWhadblep.png  used on input line 145.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2400--2408
+Underfull \hbox (badness 10000) in paragraph at lines 140--148
 
  []
 
-[63 <./FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRbb.png> <./FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRqq.png> <./FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRbhadq1.png> <./FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRblepq1.png> <./FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRWhadbhad.png> <./FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRWhadblep.png>]
-<FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_Mbb.png, id=2048, 798.985pt x 574.145pt>
+[69 <./FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRbb.png> <./FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRqq.png> <./FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRbhadq1.png> <./FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRblepq1.png> <./FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRWhadbhad.png> <./FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_dRWhadblep.png>]
+<FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_Mbb.png, id=2099, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_Mbb.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_Mbb.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_Mbb.png  used on input line 2413.
+Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_Mbb.png  used on input line 153.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_mjj.png, id=2049, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_mjj.png, id=2100, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_mjj.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_mjj.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_mjj.png  used on input line 2414.
+Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_mjj.png  used on input line 154.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_mjjj.png, id=2050, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_mjjj.png, id=2101, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_mjjj.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_mjjj.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_mjjj.png  used on input line 2415.
+Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_mjjj.png  used on input line 155.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_Htjj.png, id=2051, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_Htjj.png, id=2102, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_Htjj.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_Htjj.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_Htjj.png  used on input line 2416.
+Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_Htjj.png  used on input line 156.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2413--2419
+Underfull \hbox (badness 10000) in paragraph at lines 153--159
 
  []
 
-[64 <./FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_Mbb.png> <./FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_mjj.png> <./FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_mjjj.png> <./FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_Htjj.png>]
-<FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_J0_etatrackjet.png, id=2057, 798.985pt x 574.145pt>
+[70 <./FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_Mbb.png> <./FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_mjj.png> <./FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_mjjj.png> <./FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_Htjj.png>]
+<FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_J0_etatrackjet.png, id=2108, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_J0_etatrackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_J0_etatrackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_J0_etatrackjet.png  used on input line 2426.
+Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_J0_etatrackjet.png  used on input line 166.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_J1_etatrackjet.png, id=2058, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_J1_etatrackjet.png, id=2109, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_J1_etatrackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_J1_etatrackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_J1_etatrackjet.png  used on input line 2427.
+Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_J1_etatrackjet.png  used on input line 167.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_LLRtrackjet.png, id=2059, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_LLRtrackjet.png, id=2110, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_LLRtrackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_LLRtrackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_LLRtrackjet.png  used on input line 2428.
+Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_LLRtrackjet.png  used on input line 168.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_METtrackjet.png, id=2060, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_METtrackjet.png, id=2111, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_METtrackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_METtrackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_METtrackjet.png  used on input line 2429.
+Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_METtrackjet.png  used on input line 169.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2426--2430
+Underfull \hbox (badness 10000) in paragraph at lines 166--170
 
  []
 
-[65 <./FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_J0_etatrackjet.png> <./FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_J1_etatrackjet.png> <./FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_LLRtrackjet.png> <./FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_METtrackjet.png>]
-<FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRbbtrackjet.png, id=2066, 798.985pt x 574.145pt>
+[71 <./FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_J0_etatrackjet.png> <./FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_J1_etatrackjet.png> <./FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_LLRtrackjet.png> <./FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_METtrackjet.png>]
+<FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRbbtrackjet.png, id=2117, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRbbtrackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRbbtrackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRbbtrackjet.png  used on input line 2441.
+Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRbbtrackjet.png  used on input line 181.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRqqtrackjet.png, id=2067, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRqqtrackjet.png, id=2118, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRqqtrackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRqqtrackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRqqtrackjet.png  used on input line 2442.
+Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRqqtrackjet.png  used on input line 182.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRbhadq1trackjet.png, id=2068, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRbhadq1trackjet.png, id=2119, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRbhadq1trackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRbhadq1trackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRbhadq1trackjet.png  used on input line 2443.
+Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRbhadq1trackjet.png  used on input line 183.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRblepq1trackjet.png, id=2069, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRblepq1trackjet.png, id=2120, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRblepq1trackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRblepq1trackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRblepq1trackjet.png  used on input line 2444.
+Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRblepq1trackjet.png  used on input line 184.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRWhadbhadtrackjet.png, id=2070, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRWhadbhadtrackjet.png, id=2121, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRWhadbhadtrackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRWhadbhadtrackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRWhadbhadtrackjet.png  used on input line 2445.
+Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRWhadbhadtrackjet.png  used on input line 185.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRWhadbleptrackjet.png, id=2071, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRWhadbleptrackjet.png, id=2122, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRWhadbleptrackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRWhadbleptrackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRWhadbleptrackjet.png  used on input line 2446.
+Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRWhadbleptrackjet.png  used on input line 186.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2441--2448
+Underfull \hbox (badness 10000) in paragraph at lines 181--188
 
  []
 
-[66 <./FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRbbtrackjet.png> <./FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRqqtrackjet.png> <./FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRbhadq1trackjet.png> <./FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRblepq1trackjet.png> <./FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRWhadbhadtrackjet.png> <./FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRWhadbleptrackjet.png>]
-<FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_Mbbtrackjet.png, id=2077, 798.985pt x 574.145pt>
+[72 <./FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRbbtrackjet.png> <./FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRqqtrackjet.png> <./FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRbhadq1trackjet.png> <./FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRblepq1trackjet.png> <./FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRWhadbhadtrackjet.png> <./FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_dRWhadbleptrackjet.png>]
+<FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_Mbbtrackjet.png, id=2128, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_Mbbtrackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_Mbbtrackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_Mbbtrackjet.png  used on input line 2453.
+Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_Mbbtrackjet.png  used on input line 193.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_mjjtrackjet.png, id=2078, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_mjjtrackjet.png, id=2129, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_mjjtrackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_mjjtrackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_mjjtrackjet.png  used on input line 2454.
+Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_mjjtrackjet.png  used on input line 194.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_mjjjtrackjet.png, id=2079, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_mjjjtrackjet.png, id=2130, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_mjjjtrackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_mjjjtrackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_mjjjtrackjet.png  used on input line 2455.
+Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_mjjjtrackjet.png  used on input line 195.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_Htjjtrackjet.png, id=2080, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_Htjjtrackjet.png, id=2131, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_Htjjtrackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_Htjjtrackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_Htjjtrackjet.png  used on input line 2456.
+Package pdftex.def Info: FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_Htjjtrackjet.png  used on input line 196.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2453--2458
+Underfull \hbox (badness 10000) in paragraph at lines 193--198
 
  []
 
-[67 <./FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_Mbbtrackjet.png> <./FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_mjjtrackjet.png> <./FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_mjjjtrackjet.png> <./FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_Htjjtrackjet.png>] [68]
-<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_eta.png, id=2091, 798.985pt x 574.145pt>
+[73 <./FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_Mbbtrackjet.png> <./FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_mjjtrackjet.png> <./FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_mjjjtrackjet.png> <./FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_Htjjtrackjet.png>] [74]
+<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_eta.png, id=2142, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_eta.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_eta.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_eta.png  used on input line 2469.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_eta.png  used on input line 209.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_eta.png, id=2092, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_eta.png, id=2143, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_eta.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_eta.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_eta.png  used on input line 2470.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_eta.png  used on input line 210.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
 File: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_LLR.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_LLR.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_LLR.png  used on input line 2471.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_LLR.png  used on input line 211.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_MET.png, id=2093, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_MET.png, id=2144, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_MET.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_MET.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_MET.png  used on input line 2472.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_MET.png  used on input line 212.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2469--2473
+Underfull \hbox (badness 10000) in paragraph at lines 209--213
 
  []
 
-[69 <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_eta.png> <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_eta.png> <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_MET.png>]
-<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRbb.png, id=2099, 798.985pt x 574.145pt>
+[75 <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_eta.png> <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J1_eta.png> <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_MET.png>]
+<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRbb.png, id=2150, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRbb.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRbb.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRbb.png  used on input line 2482.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRbb.png  used on input line 222.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRqq.png, id=2100, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRqq.png, id=2151, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRqq.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRqq.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRqq.png  used on input line 2483.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRqq.png  used on input line 223.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRbhadq1.png, id=2101, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRbhadq1.png, id=2152, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRbhadq1.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRbhadq1.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRbhadq1.png  used on input line 2484.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRbhadq1.png  used on input line 224.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRblepq1.png, id=2102, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRblepq1.png, id=2153, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRblepq1.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRblepq1.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRblepq1.png  used on input line 2485.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRblepq1.png  used on input line 225.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRWhadbhad.png, id=2103, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRWhadbhad.png, id=2154, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRWhadbhad.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRWhadbhad.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRWhadbhad.png  used on input line 2486.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRWhadbhad.png  used on input line 226.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRWhadblep.png, id=2104, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRWhadblep.png, id=2155, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRWhadblep.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRWhadblep.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRWhadblep.png  used on input line 2487.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRWhadblep.png  used on input line 227.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2482--2490
+Underfull \hbox (badness 10000) in paragraph at lines 222--230
 
  []
 
-[70 <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRbb.png> <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRqq.png> <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRbhadq1.png> <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRblepq1.png> <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRWhadbhad.png> <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRWhadblep.png>]
-<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_Mbb.png, id=2110, 798.985pt x 574.145pt>
+[76 <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRbb.png> <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRqq.png> <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRbhadq1.png> <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRblepq1.png> <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRWhadbhad.png> <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_dRWhadblep.png>]
+<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_Mbb.png, id=2161, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_Mbb.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_Mbb.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_Mbb.png  used on input line 2495.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_Mbb.png  used on input line 235.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_mjj.png, id=2111, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_mjj.png, id=2162, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_mjj.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_mjj.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_mjj.png  used on input line 2496.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_mjj.png  used on input line 236.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_mjjj.png, id=2112, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_mjjj.png, id=2163, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_mjjj.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_mjjj.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_mjjj.png  used on input line 2497.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_mjjj.png  used on input line 237.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_Htjj.png, id=2113, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_Htjj.png, id=2164, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_Htjj.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_Htjj.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_Htjj.png  used on input line 2498.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_Htjj.png  used on input line 238.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2495--2501
+Underfull \hbox (badness 10000) in paragraph at lines 235--241
 
  []
 
-[71 <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_Mbb.png> <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_mjj.png> <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_mjjj.png> <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_Htjj.png>]
-<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_etatrackjet.png, id=2119, 798.985pt x 574.145pt>
+[77 <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_Mbb.png> <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_mjj.png> <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_mjjj.png> <./FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_Htjj.png>]
+<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_etatrackjet.png, id=2170, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_etatrackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_etatrackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_etatrackjet.png  used on input line 2508.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_etatrackjet.png  used on input line 248.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_etatrackjet.png, id=2120, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_etatrackjet.png, id=2171, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_etatrackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_etatrackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_etatrackjet.png  used on input line 2509.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_etatrackjet.png  used on input line 249.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_LLRtrackjet.png, id=2121, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_LLRtrackjet.png, id=2172, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_LLRtrackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_LLRtrackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_LLRtrackjet.png  used on input line 2510.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_LLRtrackjet.png  used on input line 250.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_METtrackjet.png, id=2122, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_METtrackjet.png, id=2173, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_METtrackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_METtrackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_METtrackjet.png  used on input line 2511.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_METtrackjet.png  used on input line 251.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2508--2512
+Underfull \hbox (badness 10000) in paragraph at lines 248--252
 
  []
 
-[72 <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_etatrackjet.png> <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_etatrackjet.png> <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_LLRtrackjet.png> <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_METtrackjet.png>]
-<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRbbtrackjet.png, id=2128, 798.985pt x 574.145pt>
+[78 <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_etatrackjet.png> <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J1_etatrackjet.png> <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_LLRtrackjet.png> <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_METtrackjet.png>]
+<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRbbtrackjet.png, id=2179, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRbbtrackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRbbtrackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRbbtrackjet.png  used on input line 2523.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRbbtrackjet.png  used on input line 263.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRqqtrackjet.png, id=2129, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRqqtrackjet.png, id=2180, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRqqtrackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRqqtrackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRqqtrackjet.png  used on input line 2524.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRqqtrackjet.png  used on input line 264.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRbhadq1trackjet.png, id=2130, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRbhadq1trackjet.png, id=2181, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRbhadq1trackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRbhadq1trackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRbhadq1trackjet.png  used on input line 2525.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRbhadq1trackjet.png  used on input line 265.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRblepq1trackjet.png, id=2131, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRblepq1trackjet.png, id=2182, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRblepq1trackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRblepq1trackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRblepq1trackjet.png  used on input line 2526.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRblepq1trackjet.png  used on input line 266.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRWhadbhadtrackjet.png, id=2132, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRWhadbhadtrackjet.png, id=2183, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRWhadbhadtrackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRWhadbhadtrackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRWhadbhadtrackjet.png  used on input line 2527.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRWhadbhadtrackjet.png  used on input line 267.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRWhadbleptrackjet.png, id=2133, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRWhadbleptrackjet.png, id=2184, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRWhadbleptrackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRWhadbleptrackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRWhadbleptrackjet.png  used on input line 2528.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRWhadbleptrackjet.png  used on input line 268.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2523--2530
+Underfull \hbox (badness 10000) in paragraph at lines 263--270
 
  []
 
-[73 <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRbbtrackjet.png> <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRqqtrackjet.png> <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRbhadq1trackjet.png> <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRblepq1trackjet.png> <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRWhadbhadtrackjet.png> <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRWhadbleptrackjet.png>]
-<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_Mbbtrackjet.png, id=2140, 798.985pt x 574.145pt>
+[79 <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRbbtrackjet.png> <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRqqtrackjet.png> <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRbhadq1trackjet.png> <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRblepq1trackjet.png> <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRWhadbhadtrackjet.png> <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_dRWhadbleptrackjet.png>]
+<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_Mbbtrackjet.png, id=2191, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_Mbbtrackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_Mbbtrackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_Mbbtrackjet.png  used on input line 2535.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_Mbbtrackjet.png  used on input line 275.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_mjjtrackjet.png, id=2141, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_mjjtrackjet.png, id=2192, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_mjjtrackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_mjjtrackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_mjjtrackjet.png  used on input line 2536.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_mjjtrackjet.png  used on input line 276.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_mjjjtrackjet.png, id=2142, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_mjjjtrackjet.png, id=2193, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_mjjjtrackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_mjjjtrackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_mjjjtrackjet.png  used on input line 2537.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_mjjjtrackjet.png  used on input line 277.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
-<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_Htjjtrackjet.png, id=2143, 798.985pt x 574.145pt>
+<FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_Htjjtrackjet.png, id=2194, 798.985pt x 574.145pt>
 File: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_Htjjtrackjet.png Graphic file (type png)
 <use FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_Htjjtrackjet.png>
-Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_Htjjtrackjet.png  used on input line 2538.
+Package pdftex.def Info: FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_Htjjtrackjet.png  used on input line 278.
 (pdftex.def)             Requested size: 211.38832pt x 151.90239pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2535--2540
+Underfull \hbox (badness 10000) in paragraph at lines 275--280
 
  []
 
-[74 <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_Mbbtrackjet.png> <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_mjjtrackjet.png> <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_mjjjtrackjet.png> <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_Htjjtrackjet.png>] [75] (./main.aux)
+[80 <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_Mbbtrackjet.png> <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_mjjtrackjet.png> <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_mjjjtrackjet.png> <./FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_Htjjtrackjet.png>]) [81] (./main.aux (./Detector.aux) (./Reconstruction.aux) (./FTAG.aux) (./AUX/FTAG.aux))
 
 LaTeX Warning: There were undefined references.
 
@@ -2198,20 +2240,20 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 17355 strings out of 479304
- 344817 string characters out of 5871219
- 1027984 words of memory out of 5000000
- 33911 multiletter control sequences out of 15000+600000
+ 17436 strings out of 479304
+ 346468 string characters out of 5871219
+ 1040078 words of memory out of 5000000
+ 33949 multiletter control sequences out of 15000+600000
  425110 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,17n,77p,1206b,1495s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,17n,77p,1206b,1498s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 {c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on main.pdf (75 pages, 10847678 bytes).
+Output written on main.pdf (81 pages, 11180709 bytes).
 PDF statistics:
- 2309 PDF objects out of 2487 (max. 8388607)
- 1577 compressed objects within 16 object streams
- 317 named destinations out of 1000 (max. 500000)
- 1378 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2364 PDF objects out of 2487 (max. 8388607)
+ 1620 compressed objects within 17 object streams
+ 329 named destinations out of 1000 (max. 500000)
+ 1388 words of extra memory for PDF output out of 10000 (max. 10000000)
 

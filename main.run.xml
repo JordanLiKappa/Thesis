@@ -81,6 +81,7 @@
     <requires type="editable">
       <file>ANA-FTAG-2020-08-PAPER.bib</file>
       <file>Detector.bib</file>
+      <file>reconstruction.bib</file>
       <file>bib/ATLAS.bib</file>
       <file>bib/ATLAS-useful.bib</file>
       <file>bib/PubNotes.bib</file>
