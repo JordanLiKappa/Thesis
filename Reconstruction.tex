@@ -1,82 +1,122 @@
-\section{Physics Objects Reconstruction}
-\subsection{Track and vertex}
+\chapter{Physics Objects Reconstruction}
+\section{Track and vertex reconstruction}
+
+Track and vertex reconstruction is a starting point of physics objects reconstruction, 
+which make it crucial to understand how tracks and vertices are reconstructed in ATLAS.
+Track reconstruction~\cite{ATLAS-CONF-2012-042,PERF-2015-08} is done 
+mainly with the ``inside-outside'' procedure, complemented by the ``outside-in'' 
+and the reconstructing of TRT-standalone tracks. 
+% As shown in Figure~\ref{fig:electron_recon}, a charged particle traverses
+% the ID. Space points are formed using the ID information.
+
+The inside-out stage starts from assembling clusters from the raw measurements.
+An algorithm called connected component analysis \cite{CCA} 
+groups pixels and strips in a given sensor, 
+where the deposited energy yields a charge above threshold, 
+with a common edge or corner into clusters. 
+It is useful to introduce the several classes of clusters identified 
+by either the ``truth information'' (remove if this is mentioned earlier), 
+only available in simulation and referring to information at MC generator level, 
+or reconstructed quantities in both collision data and MC simulation. 
+Clusters created by charge deposits from one particle
+are called \textit{single-particle} clusters. Clusters created by charge
+deposits from multiple particles are called \textit{merged} clusters.
+These definitions rely on truth information and both cases
+are illustrated in Figure \ref{fig:cluster}. 
+In addition, clusters that are used in multiple reconstructed tracks 
+but are not sufficiently compatible with the properties of a merged cluster
+to be identified as merged by the reconstruction are called \textit{shared} clusters.
+ \begin{figure}[bth]
+    \centering
+    \begin{subfigure}[t]{.38\linewidth}
+        \includegraphics[width=1\textwidth]{Reconstruction_plots/single_cluster.png}
+        \caption{(a)}
+    \end{subfigure}
+    \begin{subfigure}[t]{.38\linewidth}
+        \includegraphics[width=1\textwidth]{Reconstruction_plots/merged_cluster.png}
+        \caption{(b)}
+    \end{subfigure}
+    
+    \caption{Illustration of (a) single-particle pixel clusters on a pixel sensor and (b) 
+    a merged pixel cluster due to very collimated charged particles. 
+    Different colours represent energy deposits from different charged particles 
+    traversing the sensor and the particles trajectories are shown as arrows. 
+    Image taken from \cite{PERF-2015-08}.}
+    \label{fig:cluster}
+\end{figure}
+From clusters, three-dimensional measurements referred to as
+\textit{space points} are created (the yellow points in Figure~\ref{fig:track_recon}). 
+They represent the point where the charged particle 
+traversed the active material of the ID. 
+Each space point equates to one cluster in the pixel detector, while in the SCT, 
+clusters from both sides of a strip layer must be combined to obtain a three-dimensional measurement.
+Once the space points are created, three sets of space points are combined to track seeds 
+(circled in blue in \ref{fig:track_recon}). 
+This approach maximizes the possible number of combinations while still allowing 
+a first crude momentum estimate. The impact parameters of a track seed, 
+with respect to the centre of the interaction region, are estimated by assuming 
+a perfect helical trajectory in a uniform magnetic field.
+A combinatorial Kalman filter~\cite{FRUHWIRTH1987444} is used to 
+build track candidates from the chosen seeds by incorporating additional 
+space points from the remaining layers of the pixel and SCT detectors which 
+are compatible with the preliminary trajectory. 
 \begin{figure}[bht]
     \begin{centering}	
     \includegraphics[width=.8\textwidth]{Reconstruction_plots/track.png}
-    \caption{An example of track reconstruction~\cite{ATLAS-CONF-2010-072}.
+    \caption{An example of track reconstruction. Image take from~\cite{ATLAS-CONF-2010-072}.
         }
     \label{fig:track_recon}
     \end{centering}
 \end{figure}
-Track reconstruction is a starting point of physics objects reconstruction,
-as it is not only used in reconstruction of charged particles but also
-almost every element of reconstruction, such as vertices, pile-up removal,
-missing energy and flavour tagging. 
-Therefore it is crucial to understand how tracks are reconstructed in ATLAS.
-There are 3 stages of reconstruction~\cite{ATLAS-CONF-2012-042}, 
-starting with the ``inside-outside''
-algorithm, then the ``outside-in'' and finally reconstructing the
-TRT-standalone tracks. Figure~\ref{fig:track_recon} shows an illustrative 
-view of elements used in tracks reconstruction.
-% As shown in Figure~\ref{fig:electron_recon}, a charged particle traverses
-% the ID. Space points are formed using the ID information.
-
-The inside-out algorithm starts from assembling clusters from the
-raw measurements, from which three-dimensional measurements referred to as
-space points are created. They represent the point where the charged particle 
-traversed the active material of the ID. 
-In the pixel detector, each cluster 
-equates to one space-point, while in the SCT, clusters from both sides of a strip
-layer must be combined to obtain a three-dimensional measurement.
-Once the space-points are created, three sets of space points are combined to seeds. 
-A combinatorial Kalman filter~\cite{FRUHWIRTH1987444} is used to 
-build track candidates from the chosen seeds by incorporating additional 
-space-points from the remaining layers of the pixel and SCT detectors which 
-are compatible with the preliminary trajectory. 
 A track score is assigned to each track,
 which is computed by the $\chi^2$ of fitting the track, intrinsic resolution, 
-expected clusters multiplicity, number of holes (missing hits) and track \pt\. 
-Ambiguity is solved by selecting the track with the best score.
-The final step of the ``inside-out'' algorithm is to extend the silicon
-tracks into the TRT. The tracks are fitted again to estimate the final track
-parameter (IP, transverse distance from the interaction point) $d_0$, 
+expected clusters multiplicity, number of holes (missing hits) and track \pt. 
+The tracks candidates are processed in descending order of 
+track score. Track candidates fulfilling additional requirement 
+on \pt\, number of holes, number of clusters etc. are fitted;
+fitted tracks which pass through the selection without further modification
+are added to the final track collection; tracks with too many shared clusters 
+(with additional artificial neural network to identify them) are striped down and re-scored, 
+and returned to the ordered list of remaining candidates. 
+Finally, the tracks are extended into the TRT, and by using the full information
+of the three sub-detectors, the tracks are fitted again to estimate the final track
+impact parameter (IP, transverse distance from the interaction point) $d_0$, 
 distance from the interaction point along the $z$ axis $z_0$,
 azimuthal angle $\phi$, polar angle $\theta$ and charge momentum ratio $q/p_T$.
-The ``outside-in'' algorithm starts with searching for tracks with segments 
+The complementary ``outside-in'' algorithm starts with searching for tracks with segments 
 reconstructed in the TRT, and extend the tracks inwards by adding silicon hits. 
+Back-tracking is designed to reconstruct tracks of secondary particles, which are
+produced in the interactions of primary particles.
 Finally, tracks with a TRT segment but no extension into the silicon detectors
-are referred as TRT-standalone tracks. Vertices are
-matched to interactions by calculating the sum of the weights of the tracks in a vertex matched to
-each interaction.
+are referred as TRT-standalone tracks. 
+
+After the tracks are reconstructed, primary vertices reconstruction is done in two steps~\cite{ATLAS-CONF-2010-069}:
+a) the primary vertex finding algorithm, dedicated to associate reconstructed tracks to the vertex candidates, 
+and b) the vertex fitting algorithm, dedicated to reconstruct the vertex position. 
+Vertex seeds are obtained from the $z$-position at the beamline of the reconstructed tracks. 
+An iterative $\chi^2$ fit is made using the seed and nearby tracks. 
+Each track carries a weight which is a measure of its compatibility 
+with the fitted vertex depending on the $\chi^2$ of the fit. 
+Vertices are required to contain at least two tracks, and 
+tracks displaced by more than 7$\sigma$ from the vertex are used to
+seed a new vertex and the procedure is repeated until no additional vertices can be found. 
+This procedure is repeated until no unassociated tracks are left in the event or no
+additional vertex can be found. 
 
 
-Primary vertices are reconstructed using an iterative vertex finding algorithm \cite{ATLAS-CONF-2012-042}.
-Vertex seeds
-are obtained from the z-position at the beamline of the reconstructed tracks. An iterative $\chi^2$ fit
-is made using the seed and nearby tracks. Tracks displaced by more than $7\sigma$ are used to seed a
-new vertex and the procedure is repeated until no additional vertices can be found. The beam spot
-position is used as a constraint. Vertices are required to contain at least two tracks. 
 
-starts from 3-point seeds in the silicon detectors and adds hits moving away from the interaction
-point using a combinatorial Kalman filter (Iterative algorithm that provides best estimate of the
-state based on projection of earlier measurements and current measurement). Ambiguities in the
-track candidates are resolved, and tracks are extended into the TRT. This is the baseline algorithm
-designed for the efficient reconstruction of primary charged particles. In a second stage, a track
-search starts from segments reconstructed in the TRT and extends them inwards by adding silicon
-hits. This back-tracking is mainly designed to reconstruct secondaries. Finally tracks with a TRT
-segment but no extension into the silicon detectors are referred as TRT-standalone tracks.
 
-\subsection{Electron}
+\section{Electron}
 \begin{figure}[bht]
     \begin{centering}	
     \includegraphics[width=.8\textwidth]{Reconstruction_plots/electron.jpg}
     \caption{A schematic illustration of the path of an electron through the detector. The red trajectory shows the
     hypothetical path of an electron, which first traverses the tracking system (pixel detectors, then silicon-strip detectors
     and lastly the TRT) and then enters the electromagnetic calorimeter. The dashed red trajectory indicates the path of a
-    photon produced by the interaction of the electron with the material in the tracking system\cite{PERF-2017-01}.
+    photon produced by the interaction of the electron with the material in the tracking system. Image taken from~\cite{PERF-2017-01}.
         }
     \label{fig:electron_recon}
     \end{centering}
 \end{figure}
-\subsection{Muon}
-\subsection{Jet}
+\section{Muon}
+\section{Jet}
