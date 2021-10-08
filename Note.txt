@@ -7,3 +7,16 @@ FTAG chpater:
 check if modulo ttV is an extra sample specific to the calibration
 3. PFlow and VR track jet definition in object reco definition
 4. refer to the experimental uncertaity in analysis 
+
+Detector chapeter:
+1. add reference to "more details in the parton model section"
+2. check definition of pileup
+
+Reconstruction chapter:
+1. remove truth information if mention earlier
+Kalman filter:
+in its linear form the Kalman filter is the optimal recursive estimator of the state vector of a (discrete) linear dynamic system.
+In such a system the evolution of the state vector is described by a linear transformation plus a random disturbance w, 
+which is the process noise:
+x_k = F_(k-1)x_(k-1) + w_(k-1),
+where F is the propagator from detector k-1 to k

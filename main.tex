@@ -1,8 +1,12 @@
-\documentclass[letterpaper,12pt]{article}
+\documentclass[twoside,11pt]{report}
 \usepackage{tabularx} % extra features for tabular environment
 \usepackage{amsmath}  % improve math presentation
 \usepackage{graphicx, subcaption} % takes care of graphic including machinery
-\usepackage[margin=1in,letterpaper]{geometry} % decreases margins
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\setlength{\headheight}{13.59999pt}
+\usepackage[top=2.5cm, bottom=2.5cm, left=4.0cm, right=2.5cm]{geometry}
+% \usepackage[margin=1in,letterpaper]{geometry} % decreases margins
 \usepackage{xspace}
 \usepackage{ANA-FTAG-2020-08-PAPER-defs}
 \usepackage[style=numeric, sorting=none]{biblatex}
@@ -22,6 +26,7 @@
 \usepackage{makeidx}
 \usepackage{titlesec}
 \usepackage{multirow}
+\usepackage{titling}
 \newcommand\bjetineq{\mathop{\mbox{$b$ $\rm{jet}$}}}
 \newcommand\bjetunder{\mathop{\footnotesize{\mbox{$b$ $\rm{jet}$}}}\normalsize}
 \newcommand\cjetineq{\mathop{\mbox{$c$ $\rm{jet}$}}}
@@ -29,7 +34,7 @@
 \setcounter{secnumdepth}{4}
 \newcommand{\specialcell}[2][c]{%
   \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
-
+\newcommand{\changefont}{\fontsize{9}{11}\selectfont}
 \titleformat{\paragraph}
 {\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
 \titlespacing*{\paragraph}
@@ -46,44 +51,70 @@
 %++++++++++++++++++++++++++++++++++++++++
 \linespread{1.17}
 \makeindex
-\begin{document}
 
-\title{Search for Higgs boson pair-production in the $bb\tau\tau$ final state using proton-proton collisions at $\sqrt{s}$ = 13 \TeV\ data with the ATLAS detector}%Fake Factors Calculation and Implementation in H$\rightarrow$ bb$\tau^+\tau^-$ analysis with MC16a/MC16d in Release 21 with the ATLAS detector
-\author{ Zhiyuan Li}
-\date{\today}
-\maketitle
-\begin{figure}[htp]
-\centering
-\includegraphics[width=.5\textwidth]{logo.png}
-\vspace{3em}
-\centering
-\includegraphics[width=.45\textwidth]{ATLAS-Logo-Ref-RGB-H_1.jpg}
-\end{figure}
-\newpage
+% \pretitle{%
+%   \begin{center}
+% }
+% \posttitle{
+% 	\begin{figure}[htp]
+% 		\centering
+% 		\includegraphics[width=.5\textwidth]{logo.png}
+% 		\vspace{3em}
+% 		\centering
+% 		\includegraphics[width=.45\textwidth]{ATLAS-Logo-Ref-RGB-H_1.jpg}
+% 		\end{figure}
+% 	\end{center}}
+
+\begin{document}
+\pagenumbering{roman}
+\fancyhead{}
+% \title{\Huge Search for Higgs boson pair-production in the $bb\tau\tau$ final state using proton-proton collisions at $\sqrt{s}$ = 13 \TeV\ data with the ATLAS detector}%Fake Factors Calculation and Implementation in H$\rightarrow$ bb$\tau^+\tau^-$ analysis with MC16a/MC16d in Release 21 with the ATLAS detector
+% \author{\Huge Zhiyuan Li}
+% \date{\today}
+% \maketitle
+\begin{titlepage}
+	\centering
+	{\LARGE \textbf{Search for Higgs boson pair-production in the $bb\tau\tau$ final state using proton-proton collisions at $\sqrt{s}$ = 13 \TeV\ data with the ATLAS detector} \par}
+	\vspace{1cm}
+	{\LARGE \textbf{Zhiyuan Li} \par}
+	\vspace{0.2cm}
+	\today
+	\vspace{3cm}
+	\begin{figure}[htp]
+		\centering
+		\includegraphics[width=.5\textwidth]{logo.png}
+		\vspace{3em}
+		\centering
+		\includegraphics[width=.45\textwidth]{ATLAS-Logo-Ref-RGB-H_1.jpg}
+		\end{figure}
+\end{titlepage}
 
 \tableofcontents{}
 \printindex{}
 
 \newpage
-\section{Introduction}
-\section{Theory and Motivation}
-\subsection{The Standard Model and the Higgs boson}
-\subsection{Beyond the Standard Model}
+\pagenumbering{arabic}
+\fancyhead[RO,LE]{\changefont }
+\fancyhead[RE,LO]{\changefont \leftmark}
+\chapter{Introduction}
+\chapter{Theory and Motivation}
+\section{The Standard Model and the Higgs boson}
+\section{Beyond the Standard Model}
 \include{Detector.tex}
-\section{Data and Monte Carlo samples}
+\chapter{Data and Monte Carlo samples}
 \include{Reconstruction.tex}
 
-\subsection{\bjets}
+\section{\bjets}
 \include{FTAG.tex}
-\section{Search for Higgs boson pair production in the \bbtt\ channel}
+\chapter{Search for Higgs boson pair production in the \bbtt\ channel}
 \label{sec:search for dihiggs}
-\subsection{Data and Monte Carlo samples}
-\subsection{Trigger and event selection}
-\subsection{Background estimation}
-\subsection{Multivariate analysis}
-\subsection{Systematic uncertainties}
-\subsection{Results}
-\section{Summary}
+\section{Data and Monte Carlo samples}
+\section{Trigger and event selection}
+\section{Background estimation}
+\section{Multivariate analysis}
+\section{Systematic uncertainties}
+\section{Results}
+\chapter{Summary}
 
 \printbibliography
 \appendix
