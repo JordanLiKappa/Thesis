@@ -1,6 +1,6 @@
 \chapter{Physics Objects Reconstruction}
 \section{Track and vertex reconstruction}
-
+\label{sec:track}
 Track and vertex reconstruction is a starting point of physics objects reconstruction, 
 which make it crucial to understand how tracks and vertices are reconstructed in ATLAS.
 Track reconstruction~\cite{ATLAS-CONF-2012-042,PERF-2015-08} is done 
@@ -107,16 +107,71 @@ additional vertex can be found.
 
 
 \section{Electron}
+
+\subsection{Electron reconstruction}
+An electron can lose a significant amount of its energy through bremsstrahlung when traversing the detector,  
+where the radiated photon can convert into an electron–positron pair which itself can
+interact with the detector material. These positrons, electrons, and photons are usually very
+collimated are normally reconstructed as part of the same electromagnetic cluster. 
+These interactions can occur inside the inner-detector volume or even in the beam pipe, generating multiple tracks
+in the inner detector, or can instead occur downstream of the inner detector, only impacting the shower in
+the calorimeter. Therefore, it is possible to produce and match multiple tracks to the same electromagnetic
+cluster, all originating from the same primary electron.
+
+The reconstruction of electron is based on three fundamental components: 
+a) localised clusters of energy deposits found within the EM calorimeter, 
+b) charged tracks identified in the ID (as described in details in chapter~\ref{sec:track}),
+and c) close matching in $\eta \times \phi$ space of the tracks to the clusters~\cite{PERF-2017-01}.
+Figure~\ref{fig:electron_recon} provides a schematic illustration of the elements that enter into
+the reconstruction and identification of an electron. 
 \begin{figure}[bht]
     \begin{centering}	
     \includegraphics[width=.8\textwidth]{Reconstruction_plots/electron.jpg}
-    \caption{A schematic illustration of the path of an electron through the detector. The red trajectory shows the
-    hypothetical path of an electron, which first traverses the tracking system (pixel detectors, then silicon-strip detectors
-    and lastly the TRT) and then enters the electromagnetic calorimeter. The dashed red trajectory indicates the path of a
-    photon produced by the interaction of the electron with the material in the tracking system. Image taken from~\cite{PERF-2017-01}.
+    \caption{A schematic illustration of the path of an electron through the detector. 
+    The red trajectory shows the 
+    hypothetical path of an electron, which first traverses the tracking system (pixel detectors, then SCT
+    and lastly the TRT) and then enters the electromagnetic calorimeter. 
+    The dashed red trajectory indicates the path of a
+    photon produced by the interaction of the electron with the material in the tracking system. 
+    Image taken from~\cite{PERF-2017-01}.
         }
     \label{fig:electron_recon}
     \end{centering}
 \end{figure}
+
+The reconstruction starts from EM cluster seeding from localised energy deposits 
+using a sliding-window algorithm~\cite{sliding-window}.
+The $\eta \times \phi$ space of the EM is divided into \textit{towers} of 200 $\times$ 256
+elements of size $\Delta\eta \times \Delta\phi$ = 0.025 $\times$ 0.025, consistent with the
+granularity of the second layer of the EM calorimeter. Then algorithm then ``slides'' a rectangular
+window of size 3 $\times$ 5 towers whose summed transverse energy exceeds 2.5 GeV to form a seed-cluster.
+The centre of the seed moves in steps of 0.025 in either $\eta$ or $\phi$ direction to search for localised
+energy deposits; this process is repeated until every element of the calorimeter has been covered.
+To better account for the energy loss of charged particles in material, a subsequentl fitting procedure
+using optimised Gaussian-sum filter \cite{ATLAS-CONF-2012-047} is performed on tracks which are loosely 
+matched to the EM clusters. The matching of the fitted tracks to the candidate calorimeter seed-cluster
+is the final step of electron reconstruction. 
+The matching requires $-0.10 < \Delta\phi = -q \times (\phi_{cluster} - \phi_{track}) < 0.05$, 
+where $q$ is the sign of charge of the particle, $\phi_{cluster}$ and $phi_{track}$ are the 
+$\phi$ coordinates of the cluster barycentre and the poisition of the track extrapolated from the 
+perigee to the second layer of the calorimeter, respectively. 
+If several tracks fulfil the matching criteria, the track considered to
+be the primary electron track is selected using an algorithm that takes into account the distance in $\eta$
+and $\phi$ between the extrapolated tracks and the cluster barycentres (agian, measured in the second layer of the
+calorimeter), 
+the number of hits in the silicon detectors, 
+and the number of hits in the innermost silicon layer; 
+a candidate with an associated track with at least four hits in the silicon layers and no association
+with a vertex from a photon conversion is considered as an electron candidate. 
+However, if the primary candidate track can be matched to a secondary vertex and has no pixel hits, 
+then this object is classified as a photon candidate (likely a conversion). 
+A further classification is performed using the candidate electron’s $E/p$ and \pt, 
+the presence of a pixel hit, and the secondary-vertex information, to determine
+unambiguously whether the object is only to be considered as an electron candidate or if it should be
+ambiguously classified as potentially either a photon candidate or an electron candidate.
+
+
+
+
 \section{Muon}
 \section{Jet}
