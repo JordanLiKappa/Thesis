@@ -20,3 +20,4 @@ In such a system the evolution of the state vector is described by a linear tran
 which is the process noise:
 x_k = F_(k-1)x_(k-1) + w_(k-1),
 where F is the propagator from detector k-1 to k
+2. TODO: Find electron identification and isolation working points for bbtautau and Ftag

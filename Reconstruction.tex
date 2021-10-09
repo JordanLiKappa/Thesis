@@ -171,6 +171,27 @@ unambiguously whether the object is only to be considered as an electron candida
 ambiguously classified as potentially either a photon candidate or an electron candidate.
 
 \subsection{Electron identification}
+Electron built by the reconstruction are not necessarily prompt electrons,
+i.e. electrons coming from the collision of the an event; other objects, 
+for example hadronic jets or non-prompt electrons,
+may produce a signature which is reconstructed as an electron. 
+Therefore, a likelihood technique is employed to select prompt electrons ~\cite{PERF-2017-01}.
+The inputs to the likelihood include measurements from the tracking system, the
+calorimeter system, and quantities that combine both tracking and calorimeter information.
+The main advantages using the likelihood-based method comparing with 
+a selection-criteria-based (so-called ``cut-based'') identification is that
+a prompt electron may fail the cut-based identification because it
+does not satisfy the selection criterion for a single quantity, 
+while in the likelihood-based selection this electron can
+still satisfy the identification criteria, 
+because the likelihood combines the information of all of the discriminating variables.
+The final discriminant produced by the likelihood method is used to define 
+three \textit{working points}, which are cuts in the final discriminant 
+identifying the different identification efficiencies. The working points are
+\textit{Loose}, \textit{Medium} and \textit{Tight}. 
+TODO: Find electron identification and isolation working points for bbtautau and Ftag
+
+\section{Muon}
 
 
 
