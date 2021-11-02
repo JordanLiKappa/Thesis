@@ -4,10 +4,8 @@
 \large
 A jet can be defined as a collimated spray 
 of stable particles arising from the fragmentation
-and hadronisation of a parton(quark or gluon) after a collision.
-Jet reconstruction algorithms are used to combine the calorimetry 
-and tracking information to define jets. 
-The jets provide a link between the observed colourless 
+and hadronisation of a parton (quark or gluon) after a collision.
+Jets provide a link between the observed colourless 
 stable particles and the underlying physics at the partonic
 level. A basic illustration of a collision of two protons,
 the subsequent particle shower and a reconstructed jet is 
@@ -19,7 +17,7 @@ shown in Figure~\ref{fig:jets}.
     \caption{A simple example of an event showing the point of collision, 
     the fragmentation and hadronization of the quarks and gluons and the 
     resulting jet found through the detection of the stable particles. 
-    Image taken from~\cite{atkin2015review}.
+    Image reproduced from~\cite{atkin2015review}.
         }
     \label{fig:jets}
     \end{centering}
@@ -39,35 +37,38 @@ from topo-clusters, referred to \textit{EMTopo jets}.
 % (JES) correction factor [4–7]. For the final Run 1 jet calibration, this correction factor also took into account the tracks
 % associated with the jet, as this was found to greatly improve
 % the jet resolution [4]. 
-An alternative approach called ``\textit{Particle flow}'' (PFlow) was introduced
-in reference~\cite{PERF-2015-09} and it is the default approach for the thesis,
-in which measurements from both the tracker and the calorimeter 
+An alternative approach called ``\textit{Particle flow}'' (PFlow) was done
+in ATLAS, as described in details in reference~\cite{PERF-2015-09}. 
+It is the default approach for the thesis.
+Measurements from both the tracker and the calorimeter 
 are combined to form the signals. 
-The energy deposited in the calorimeter by all the charged particles is removed.
-Jet reconstruction is then performed on topo-clusters
-consisting of the remaining calorimeter energy and 
-tracks which are matched to the hard interaction.
-The main advantages of integrating tracking and calorimetric information 
-into one hadronic reconstruction step is that for 
-low-energy charged particles, the momentum resolution of the tracker is significantly
-better than the energy resolution of the calorimeter (see Table \ref{tab:ATLAS_performance}).
+More specifically, the algorithm matches the reconstructed tracks
+to the candidate leptons and hadrons, in oder to produce a new
+set of clusters called \textit{PFlow clusters} from topo-clusters.
+% The energy deposited in the calorimeter by all the charged particles is removed.
+% Jet reconstruction is then performed on topo-clusters
+% consisting of the remaining calorimeter energy and 
+% tracks which are matched to the hard interaction.
+% The main advantages of integrating tracking and calorimetric information 
+% into one hadronic reconstruction step is that for 
+% low-energy charged particles, the momentum resolution of the tracker is significantly
+% better than the energy resolution of the calorimeter (see Table \ref{tab:ATLAS_performance}).
 % Above $p_T^{track}$ = 100 GeV no track information is used as the PFlow algorithm 
 % becomes equivalent to EMTopo benefitting from excellent
 % calorimeter performance at high energies.
 % In addition, with track reconstructed, one can ascertain whether it is 
 % associated with a vertex. This information can be used to mitigate 
 % in-time pileup signals. 
-
-PFlow jets are reconstructed in ATLAS 
-using the anti-$k_t$~\cite{Cacciari_2008} algorithm~\cite{PERF-2015-09}. 
-The inputs to jet reconstruction are 
-the tracks that are matched to the primary vertex,
-and positive energy topo-clusters which survives the energy subtraction step 
-and matches to the selected tracks. 
+Using the PFlow clusters as inputs, PFlow jets are then reconstructed
+using the anti-$k_t$ algorithm~\cite{Cacciari_2008}. 
+% The inputs to jet reconstruction are 
+% the tracks that are matched to the primary vertex,
+% and positive energy topo-clusters which survives the energy subtraction step 
+% and matches to the selected tracks. 
 The anti-$k_t$ algorithm 
-sequentially combines topo-clusters into larger objects based on the 
+sequentially combines PFlow clusters into larger clusters based on the 
 momentum-weighted distance between clusters. 
-For two objetcs $i$ and $j$ the algorithm defines:
+For two clusters $i$ and $j$ the algorithm defines:
 \[  d_{i,j} = min(p_{T,i}^{2p},p_{T,j}^{2p}) \frac{\Delta R_{i,j}^2}{R^2} \]
 and 
 \[ d_{i,beam} = p_{T,i}^{2p} \]
@@ -112,9 +113,10 @@ and the busy data-taking environment resulting from multiple $pp$
 interactions, and the difference in jet response between
 data and MC simulation.
 In order to calibrate jet energy resolution (JER),
-jet momentum must be measured precisely. A \textit{dijet balance}
-approach is used for this purpose with well-defined dijet system,
-as described in details in reference \cite{JETM-2018-05}.
+jet momentum must be measured precisely. 
+As described in details in reference \cite{JETM-2018-05},
+a \textit{dijet balance} approach is used for this purpose with well-defined dijet system,
+where the two jets are expected to have \pt\ that sum up to 0 precisely.
 Furthermore, jets arised from pileup are suppressed by using the 
 \textit{jet vertex tagger}, which is a multivariate 
 combination of track-based variables developed to separate 

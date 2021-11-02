@@ -42,18 +42,13 @@ take off.
 3. TODO: add reference of validation of swithcing from EMTOPO to PFLow after selection is defined
 4.  TODO: link the RNN 0.01 to the fake factor section
 5. think about why random tau selection is needed
-
+6. check the rejection rate of the BDT for reject electron faking tau
 Important points (from Nikos):  
 5. check what muon is used for bbtautau
-3. less details of track reconstruction
-4. refrase how likelihood method is needed: shower shape, isolation, track and cluster matching
-2. more details for the identification wp
 1. calibration for electron and muons?
-6. refrase how emtopo differ from pflow
-7. contro details of anti-kt algorithm
 8. why RNN tau is better than bdt? 
 9. does anti-tau fit in the object reconstruction? 
-10. add introduction to the start of chapter (use matt's theis)
+
 
 
 Reconstruction: 

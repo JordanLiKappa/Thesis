@@ -1,7 +1,13 @@
-
 \chapter{Physics Objects Reconstruction}
-\section{Track and vertex reconstruction}
 \large
+Particles produced in the $pp$ collisions inside ATLAS can interact with the detector subsystems
+with each type of particle leaving a unique signature.
+Reconstructing and identifying these particles precisely and efficienctly 
+using the information recorded in each sub-detectors is a building stone of physics analysis.
+Therefore, the following chapter outlines the reconstruction procedure of 
+the particles important for the analysis present in this thesis, referred to
+as `physics objects reconstruction'.
+\section{Track and vertex reconstruction}
 \label{sec:track}
 Track and vertex reconstruction is a starting point of physics objects reconstruction, 
 which makes it crucial to understand how they are implemented in ATLAS.
@@ -10,7 +16,8 @@ mainly with the ``inside-outside'' procedure, complemented by the ``outside-in''
 and the reconstructing of TRT-standalone tracks. 
 % As shown in Figure~\ref{fig:electron_recon}, a charged particle traverses
 % the ID. Space points are formed using the ID information.
-The inside-out stage starts from assembling clusters from the raw measurements:
+The inside-out stage starts from assembling the raw measurements
+into \textit{clusters}:
 an algorithm called connected component analysis~\cite{CCA} 
 groups pixels and strips in a given sensor, 
 where the deposited energy yields a charge above threshold, 
