@@ -19,5 +19,60 @@ in its linear form the Kalman filter is the optimal recursive estimator of the s
 In such a system the evolution of the state vector is described by a linear transformation plus a random disturbance w, 
 which is the process noise:
 x_k = F_(k-1)x_(k-1) + w_(k-1),
-where F is the propagator from detector k-1 to k
+Gaussian-sum flter GSF: 
+The GSF method [32] is based on a generalisation of
+the Kalman filter [33] and takes into account the non-linear
+effects related to bremsstrahlung. Within the GSF, experi-
+mental noise is modelled by a sum of Gaussian functions.
+The GSF therefore consists of a number of Kalman filters
+running in parallel, the result of which is that each track
+parameter is approximated by a weighted sum of Gaussian
+functions.where F is the propagator from detector k-1 to k
+
+2. muon is minimaly ionising. For particles with mass much bigger than electron, 
+the energy is lost mostly by ionisation. The rate of lost is a function of beta*gamma. 
+Beyond the maximum, stopping power decreases approximately like 1/v2 with increasing particle velocity v, 
+but after a minimum, it increases again (bremsstrahlung starting to become important).
+The minimum for mu interaction with cupper is around 5 GeV, and after 1 TeV the bremsstrahlung starts to
+take off. 
+  
+
+
 2. TODO: Find electron identification and isolation working points for bbtautau and Ftag
+3. TODO: add reference of validation of swithcing from EMTOPO to PFLow after selection is defined
+4.  TODO: link the RNN 0.01 to the fake factor section
+5. think about why random tau selection is needed
+
+Important points (from Nikos):  
+5. check what muon is used for bbtautau
+3. less details of track reconstruction
+4. refrase how likelihood method is needed: shower shape, isolation, track and cluster matching
+2. more details for the identification wp
+1. calibration for electron and muons?
+6. refrase how emtopo differ from pflow
+7. contro details of anti-kt algorithm
+8. why RNN tau is better than bdt? 
+9. does anti-tau fit in the object reconstruction? 
+10. add introduction to the start of chapter (use matt's theis)
+
+
+Reconstruction: 
+    one week (due 20/10)
+    correction: half a week 
+
+analysis: 
+    5 weeks  (due 1/12)
+    correction: one week
+
+
+Theory and motivation:
+    4 weeks (due 23/1, including vacations)
+    correction: one week
+
+
+
+
+
+Hi Nikos, I have another question on a comment:
+1. what do you mean by "normal jet reconstruction"?
+2. so the instrinsic difference between emtopo and pflow jet is that, the emtopo is based on clusters of EM calorimeter cells, while the pflow is based on clusters of energy-subtracted cells?

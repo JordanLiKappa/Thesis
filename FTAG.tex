@@ -1,111 +1,6 @@
-
-\subsubsection{Flavour tagging}
-\label{sec:Flavour tagging}
-
-The identification of jets containing $b$-hadrons (\bjets) 
-against the large background of jets containing $c$-hadrons 
-(\cjets) or coming from the hadronization of light ($u$,$d$,$s$) 
-quarks or gluons is of major importance in many areas of the 
-physics programme of the ATLAS experiment at the LHC. 
-It is crucial in a large number of Standard Model (SM) 
-precision measurements, studies of the Higgs boson properties, and 
-searches for new phenomena~\cite{SUSY-2014-08, ATLAS-CONF-2018-043,Interpreting_Higgs_result}.
-It also plays an important role in 
-the $HH \to bb\tau\tau$ searches presenting in Chapter \ref{sec:search for dihiggs}. 
-% as well as the recent 
-% observation of the Higgs boson decay into bottom quarks~\cite{HIGG-2018-04} 
-% and of its production in association with a top-quark pair~\cite{HIGG-2018-13}. 
-
-
-The ATLAS Collaboration uses various algorithms to identify 
-\bjets~\cite{PERF-2012-04}, referred to as \btagging\ algorithms, 
-when analysing data recorded during Run 2 of the LHC. These 
-algorithms exploit the long lifetime, high mass and high decay 
-multiplicity of $b$-hadrons, as well as the properties of the \bquark\  
-fragmentation. Given a lifetime of the order of 1.5 ps, $b$-hadrons have a 
-significant mean flight length ($\langle c\tau \rangle$ $\approx$ 450 $\mu m$), 
-in the detector before decaying, generally leading to at least one vertex 
-displaced from the hard-scatter collision point, as illustrated in Figure~\ref{fig:b-jet-decay}.
-
-\begin{figure}[]
-	\begin{centering}	
-	\includegraphics[width=.4\textwidth]{FTAG_plots/B-tagging_diagram.png}
-	\caption{A diagram showning the b hadron decay initiated jets. }
-	\label{fig:b-jet-decay}
-	\end{centering}
-\end{figure}
-
-
-The strategy developed by the ATLAS Collaboration is based on a two-stage approach. 
-Firstly, low-level algorithms reconstruct the characteristic features of 
-the \bjets via two complementary approaches, one that uses the 
-individual properties of charged-particle tracks, later referred 
-to as tracks, associated with a hadronic jet, and a second which 
-combines the tracks to explicitly reconstruct displaced vertices. 
-These algorithms, first introduced during Run 1~\cite{PERF-2012-04}, 
-have been improved and retuned for Run 2~\cite{FTAG-2018-01}. 
-Secondly, in order to 
-maximise the \btagging\ performance, the results of the low-level 
-\btagging\ algorithms are combined into high-level algorithms 
-via multivariate classifiers. 
-
-
-The most performant algorithms presently in use in physics 
-analyses at ATLAS are based on multivariate combinations 
-of the available information (MV2) or additionally using a
-deep feed-forward neural network (DL1)~\cite{tagging,ATL-PHYS-PUB-2017-013}, 
-as shown in Figure~\ref{fig:b-tagging-performance}, where the performance
-is characterised by the probability of 
-tagging a \bjet\ (\bjet\ tagging efficiency, 
-$\epsilon_b$) and the probability of mistakenly identifying 
-a \cjet or a light-flavour jet as a \bjet\, 
-labelled $\epsilon_c$($\epsilon_l$). 
-In addition, the distribution of the output discriminant
-of the MV2 and DL1 tagger for \bjet, \cjet, and light-flavour jets
-in the \ttbar\ simulated events are shown in Figure~\ref{fig:b-tagging-score}.
-Depending on the low-level algorithm, 
-the DL1 tagger can be further separated into two taggers: DL1 and DL1r,
- where the DL1 tagger uses traditional track-based impact parameter 
- taggers IP2D and IP3D~\cite{ATL-PHYS-PUB-2016-012} 
- and the DL1r tagger uses a Recurrent Neural Network Impact Parameter tagger 
- (RNNIP)~\cite{ATL-PHYS-PUB-2017-013}. The DL1r tagger is now the 
- default \btagging\ algorithm used for flavour tagging in ATLAS.
- The performance of the algorithms is quantified 
-in terms of \cjet\ (light jet) rejections, defined as 
-1/$\epsilon_c$ and 1/$\epsilon_l$. 
-%Their high mass also leads to decay products with a larger transverse momentum relative to the jet axis with respect to the ones typically found in jets from light partons. Finally, heavy hadrons have a sizable branching ratio for semileptonic decays, hence the presence of soft leptons in the produced jets provides another tool for heavy jet identification. %The general strategy is to start with simple algorithms that exploits a particular property of b jets and progressively add more information to build moresophisticated algorithms. %The output of these algorithms consists in a discriminant value for each jet. Operating points are then defined as thresholds on the discriminant, designed to provide a determined efficiency for identifying b jets.
-% Low-level $b$-taggingalgorithms fall into two broad categories. A first approach, implemented in the IP2D and IP3D algorithms~\cite{ATL-PHYS-PUB-2017-013}, or RNNIP~\cite{ATL-PHYS-PUB-2017-003} is inclusive and based on exploiting the large impact parameters of the tracks originating from the $b$-hadron decay. The second approach explicitly reconstructs displaced vertices. To maximise the $b$-tagging performance, low-level algorithm results are combined using multivariate classifiers. To this end, two high-level tagging algorithms have been developed. The first one,MV2\cite{ATL-PHYS-PUB-2017-013}, is based on a boosted decisiontree (BDT) discriminant, while the second one,DL1, is based on a deep feed-forward neural network(NN). These two algorithms are presented in fig .
-\begin{figure}[!h]
-	\includegraphics[width=1\textwidth]{FTAG_plots/b-tagging-perfermance.png}
-	\caption{The light-flavour jet (left) and \cjet\ (right) rejections versus 
-	the \bjet\ tagging efficiency for the IP3D, SV1, JetFitter, MV2 and
-	DL1 b-tagging algorithms evaluated on the \ttbar\ events
-	~\cite{FTAG-2018-01}.}\label{fig:b-tagging-performance}
-\end{figure}
-
-
-\begin{figure}[!h]
-	\includegraphics[width=1\textwidth]{FTAG_plots/b-tagging-score.png}
-	\caption{The fraction of light-flavour jets and \cjets\ versus 
-	the \bjets\ in the MV2 (left) and
-	DL1 (right) b-tagging algorithms output distribution 
-	evaluated on the \ttbar\ events
-	~\cite{FTAG-2018-01}.}\label{fig:b-tagging-score}
-\end{figure}
-
-
-% The identification of the jets originating from the hadronization of heavy-flavour quarks is made possible by the distinctive properties of the heavy hadrons produced in the process. For instance, the large life time of $b$ quarks allows them to travel a measurable distance from the primary interaction point before to decay, giving rise to displaced tracks which can form secondary vertices. The ATLAS Collaboration developed several algorithms to identify (tag) the jets from $b$ quark hadronization based on the properties detailed above. 
-
-
-
-
-
-\subsection{Missing transverse energy}
-\subsection{Hadronically decaying $\tau$ lepton}
-
-
-\section{Charm jet mis-tagging calibration}
-%test
+\label{sec:FTAG}
+\section{Calibration methods for \bjet\ and light jet}
+\large
 MC simulations are not able to model exactly the 
 performance of the $b$-tagging algorithms in data. For this reason 
 calibration is required, i.e.\ correcting MC to recover the data 
@@ -117,12 +12,6 @@ algorithm output identifying the different tagging efficiencies
 and corresponding light jet and \cjet rejection rate.
 In general, the efficiency is calculated with data and simulations, 
 and scale factors are then calculated to match the efficiency extracted 
-from simulations to the data.
-\subsection{Calibration methods for \bjet\ and light jet}
-
-
-In general, the efficiency is calculated with data and simulations, 
-and scale factors are then calculated to recover the efficiency extracted 
 from simulations to the data.
 % The imperfect 
 % description of the detector response and physics modelling effects 
@@ -169,12 +58,8 @@ the these two methods. The scale factors of the two different methods
 are in good agreement within the systematic uncertainties. 
 %The aim of this calibration is to calibrate \bjets that have been mis-tagged as light jets of \btagging\ algorithm. As the $b$-tagging algorithm is very efficient in rejecting light jets, the light jet fraction is enriched via ``flipped'' taggers, which negates the sign of track IP parameters before $b$-tagging\cite{ATLAS-CONF-2018-006}. The calibrations of the standard and the 'flipped' tagger are assumed to be equal. The calibration is extracted using the leading $p_T$ jet of Z+jets events using a 2D fit. TODO: cite the light jet tagging Int note
 %light jet fractions in the $b$-like region are too low,  The Z + jets events are then selected, the secondary vertex mass is fitted to obtain flavour fractions and perform a likelihood fit to extract light jet mistag rate.
-
-
-
-\subsection{Calibration method for charm jet}
+\section{Calibration method for \cjet}
 \label{sec:Calibration method for charm jet}
-
 It is worth mentioning that the author's qualification task to become an ATLAS author is to 
 calibrate the rate of a charm jet being mis-identified as a \bjet\, which is a part 
 of the calibration of the $b$-tagging algorithm.
@@ -182,7 +67,8 @@ During the task the calibration range has been extended down to 20~GeV (previous
 jet \pt\ and a new selection category has been developed 
 to increase the data statistics of the scale factors in the 
 high-$p_T$ ($p_T^{jet}$ > 70~GeV) region.
-The calibration is performed on the PFlow jets and the VR-Track jets (TODO: refer back to definition in Object reconstruction section). 
+The calibration is performed on the PFlow jets (as defined in Section~\label{sec:jet})
+and \textit{VR-Track jets} reconstructed using the variable radius jet algorithm~\cite{VRTrackJet}.
 
 As determined by the CKM matrix~\cite{CKM1,CKM2}, the $W$ boson decays dominantly to 
 a pair of light quarks ($u$ quark and $d$ quark) or to
@@ -254,7 +140,10 @@ The events with both \wjet\ are discarded to simplfiy the fit described in the f
 To extract the scale factors of the charm jet mis-tagging, a fit is performed by minimising 
 the $\chi^2$ defined as:
 \begin{eqnarray*}
-\chi^2 = \sum_{t=1}^4 \sum_{i=1}^4  \sum_{j=1}^4 (N^{t}_{\mathrm{data}}(i,j)- p(i,j) [c^{t}(i)N^{t}_{C}(i,j)+N^{t}_{J}(i,j)+\sum_k  c^{4}(k) N^{t}_{X}(i,j,k)])^2/N^{t}_{\mathrm{data}}(i,j)
+\chi^2 = \sum_{t=1}^4 \sum_{i=1}^4  \sum_{j=1}^4 (N^{t}_{\mathrm{data}}(i,j)- p(i,j) [c^{t}(i)N^{t}_{C}(i,j)+N^{t}_{J}(i,j)
+\end{eqnarray*}
+\begin{eqnarray*}
+	+ \sum_k  c^{4}(k) N^{t}_{X}(i,j,k)])^2/N^{t}_{\mathrm{data}}(i,j)
 \end{eqnarray*}
 \begin{eqnarray}
  +  \sum_{i=1}^4 \sum_{j=i}^4 [N^{\mathrm{untag}}_{\mathrm{data}}(i,j)-p(i,j)N^{\mathrm{untag}}_{\mathrm{MC}}(i,j)]^2/N^{\mathrm{untag}}_{\mathrm{data}}(i,j).
@@ -289,15 +178,8 @@ in bins of \pt\ defined in the above text.
 % (20, 40, 65, 140, 250) for the PFLow jets and (10, 20, 40, 65, 140) for the VR-Track jets
 % in units of GeV. 
 
-
-
-
-
-
-
-\subsection{Data and Monte Carlo samples}
+\section{Data and Monte Carlo samples}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \label{sec:samples}
 TODO: remove the overlap between this section and the Data MC chapter in the thesis
 Dedicated MC are used to model SM processes. 
@@ -449,7 +331,7 @@ hadrons are simulated using the \evtgen\ v1.2.0 program~\cite{Lange:2001uf}.
 
 
 
-\subsection{Kinematic Likelihood Fitter}
+\section{Kinematic Likelihood Fitter}
 \label{KLFitter}
 % Top quarks decay to a $W$ boson and a bottom quark in nearly 100\% of all 
 % cases. Consequently, the final state of a top-quark pair is characterised by 
@@ -489,16 +371,8 @@ to avoid bias.
 
 
 
-\subsection{Maximising likelihood}
+\section{Maximising likelihood}
 \label{maximise likelihood}
-\begin{figure}[!h]
-	\centering
-	\includegraphics[width=0.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_LLR.png}
-	\caption{Distribution of  the negative logarithm of the likelihood that
-	is used to reconstruct the \ttbar\ decay.}
-	\label{fig:llr}
-\end{figure}
-
 Taking only four jets in the event limits the total number of possible 
 jet orderings (permutations) in the event. In the semi-leptonic channel, 
 four jets can be permuted a total number of times equal to 4! = 24. 
@@ -517,6 +391,13 @@ of the decay of a Standard Model semi-leptonic $t\bar{t}$ event. The likelihood
 therefore distinguishes the possible permutations on an event-by-event basis. 
 The best permutation, given by the largest log-likelihood value, is adopted 
 as the jet ordering for the event. 
+\begin{figure}[bth]
+	\centering
+	\includegraphics[width=0.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_LLR.png}
+	\caption{Distribution of  the negative logarithm of the likelihood that
+	is used to reconstruct the \ttbar\ decay.}
+	\label{fig:llr}
+\end{figure}
 An additional requirement of log-likelihood > -48 is 
 placed on the output of the likelihood value for the chosen event permutation. 
 An example of the distribution of log-likelihood of the best permutations 
@@ -528,13 +409,26 @@ on the figure, that come from other processes like $W$ or $Z$ production
 in association with jets or single-top production.
 
 
-\subsection{Event selection}
+\section{Event selection}
 \label{Event selection}
  % The analysis uses the full available integrated luminosity collected with the ATLAS detector from the all years. This corresponds to a collected luminosity of 139 fb$^{-1}$. The event selection aims to select a sample enriched in $t\bar{t}$ events. The lowest un-prescaled single electron and single-muon triggers are used.
-\subsubsection{Standard selection}
+\subsection{Standard selection}
 \label{standard selection}
-
-\begin{table}[ht]
+Events are required to contain exactly one trigger-matched 
+lepton with $p_{T} > 27$~GeV and exactly four jets with 
+$p_{T} > 25$~GeV. Leptons are required to have $p_{T}$ 
+above 27~GeV in order to avoid the turn-on curve for the 
+single lepton triggers. Events which contain an additional 
+lepton with $p_T > 27$~GeV are rejected. 
+The events are also required to have $\MET > 20$~GeV, which is 
+assumed to be the result of the neutrino from the leptonically 
+decaying $W$ boson. The transverse
+mass $m_T$ between the lepton and the \MET, is
+constrained as follows:
+\[ m_T = \sqrt{2 p_T^\ell \MET (1-\cos\Delta\phi)} > 40~\GeV,\]
+where $\Delta\phi = \phi(\MET)-\phi(\ell)$ is the azimuthal difference between
+the lepton and \MET.
+\begin{table}[htb]
 	\centering
 	\small
 	\setlength\tabcolsep{5pt} 
@@ -556,7 +450,7 @@ in association with jets or single-top production.
 	events with exactly 4 jets.}
 	\label{tab:yields_standard}
 \end{table}
-\begin{figure}[H]
+\begin{figure}[bth]
 	\centering
 	\includegraphics[width=0.45\textwidth]{FTAG_plots/pretagNoRwwithouthighpTPFlowall/DataMC_h_J0_pt.pdf}
 	\includegraphics[width=0.45\textwidth]{FTAG_plots/pretagNoRwwithouthighpTVRJetsall/DataMC_h_J0_pttrackjet.pdf}\\
@@ -572,21 +466,6 @@ in association with jets or single-top production.
 	different selection) is stats-only. }
 	\label{fig:kinematic_distributions_standard}
 \end{figure}
-
-Events are required to contain exactly one trigger-matched 
-lepton with $p_{T} > 27$~GeV and exactly four jets with 
-$p_{T} > 25$~GeV. Leptons are required to have $p_{T}$ 
-above 27~GeV in order to avoid the turn-on curve for the 
-single lepton triggers. Events which contain an additional 
-lepton with $p_T > 27$~GeV are rejected. 
-The events are also required to have $\MET > 20$~GeV, which is 
-assumed to be the result of the neutrino from the leptonically 
-decaying $W$ boson. The transverse
-mass $m_T$ between the lepton and the \MET, is
-constrained as follows:
-\[ m_T = \sqrt{2 p_T^\ell \MET (1-\cos\Delta\phi)} > 40~\GeV,\]
-where $\Delta\phi = \phi(\MET)-\phi(\ell)$ is the azimuthal difference between
-the lepton and \MET.
 % Due to the requirement on jet $p_T$ and binning strategy, the calibration 
 % result can be applied to jets with $p_{T}$ between 25 to 200~GeV. 
 The yields of the data and the MC are given in Table \ref{tab:yields_standard}.
@@ -599,7 +478,7 @@ experimental uncertainties and the \ttbar\ modelling uncertainties, as described
 Section \ref{sec:FTAG_systematics}. The data/MC ratio shows good agreement 
 within the systematic uncertainties. 
 
-\subsubsection{Low-\pt\ selection}
+\subsection{Low-\pt\ selection}
 \label{sec:lowpT_selection}
 The author has developed an othorgonal selection to 
 extend the calibration in the low-$p_{T}$ region so that the calibration 
@@ -621,7 +500,7 @@ Good agreement between MC and data
 is shown in these distributions, and the $p_{T}$ range of the sub-leading has gone down to 20~GeV. 
 
 
-\begin{table}[ht]
+\begin{table}[bht]
 	\centering
 	\small
 	\setlength\tabcolsep{5pt} 
@@ -656,7 +535,7 @@ is shown in these distributions, and the $p_{T}$ range of the sub-leading has go
 \end{figure}
 
 
-\subsubsection{High-$p_T$ selection}
+\subsection{High-$p_T$ selection}
 \label{high_pt_selection}
 It has been observed that in the previous calibrations that the statistics 
 are relatively low for the high-\pt\ region (e.g.\ jet $\pt\ > 100$~GeV). 
@@ -687,7 +566,7 @@ values as shown in Figure~\ref{fig:cutvalue}, comparing with the cut value of 0.
 The value of $70$~GeV is chosen as it gives the highest value of $P^{\rm{Cut}}$. 
 
 
-\begin{figure}[!h]
+\begin{figure}[bth]
 	\centering
 	\begin{subfigure}[t]{.38\linewidth}
 \includegraphics[width=1\textwidth]{FTAG_plots/stat_gains/statsgain_0GeV.png}
@@ -739,7 +618,7 @@ The value of $70$~GeV is chosen as it gives the highest value of $P^{\rm{Cut}}$.
 	\label{tab:yields_highpT}
 	\end{table}
 
-\begin{figure}[!h]
+\begin{figure}[bth]
 	\centering
 	\includegraphics[width=0.45\textwidth]{FTAG_plots/pretagNoRwnewonlyPFlowall/DataMC_h_J0_pt.pdf}
 	\includegraphics[width=0.45\textwidth]{FTAG_plots/pretagNoRwnewonlyVRJetsall/DataMC_h_J0_pttrackjet.pdf}\\
@@ -760,7 +639,7 @@ More plots can be found in Appendix \ref{sec:appendix_highpT_selection}.
 
 
 
-\subsubsection{Combined selection}
+\subsection{Combined selection}
 \label{combined_selection}
 As the standard selections, low-\pt\ selection and high-\pt\ selection are othorgonal 
 to each other, all the selections are combined to provide the maximum range 
@@ -793,7 +672,7 @@ can be found in Appendix \ref{sec:appendix_combined_selection}.
 	\label{tab:yields_combined}
 	\end{table}
 
-\begin{figure}[!h]
+\begin{figure}[bth]
 		\centering
 		\includegraphics[width=0.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTPFlowall/DataMC_h_J0_pt.pdf}
 		\includegraphics[width=0.45\textwidth]{FTAG_plots/pretagNoRwwithhighpTVRJetsall/DataMC_h_J0_pttrackjet.pdf}\\
@@ -805,11 +684,11 @@ can be found in Appendix \ref{sec:appendix_combined_selection}.
 \end{figure}
 		
 
-\subsection{Systematic uncertainties}
+\section{Systematic uncertainties}
 \label{sec:FTAG_systematics}
 The systematic uncertainties considered and propagated in this calibration 
 can be broadly categorised into experimental and modelling systematic uncertainties. 
-\subsubsection{Experimental uncertainties}
+\subsection{Experimental uncertainties}
 TODO: refer to the analysis Part
 Experimental uncertainties are related to the detector and estimated using 
 data-driven methods or MC simulations. 
@@ -831,7 +710,7 @@ reconstruction efficiency of tracks not associated to any of the reconstructed o
 Supporting material for this section can be found in the appendix, Tab.\ref{tab:systematics}.
 %The uncertainty on these corrections is taken into account as a shape-dependent systematic uncertainty in the final fit of the backgrounds and signal models.
 
-\subsubsection{Modelling uncertainties} 
+\subsection{Modelling uncertainties} 
 The uncertaity due to different choices of the parton shower models is estimated by comparing
 the MC samples generated with nominal parton shower model and with the 
 alternative parton shower model.
@@ -888,7 +767,7 @@ are shown in Table \ref{tab:modelling_syst}.
 	\end{table}
 
 
-\subsection{Under-estimation of $t\bar{t}$ + Heavy flavour background }
+\section{Under-estimation of $t\bar{t}$ + Heavy flavour background }
 Depsite the fact that the true nature of most of the reconstructed $W$ jets are either 
 \cjets\ or light jets, there is still a very small amount of them are true \bjets. 
 
@@ -938,7 +817,7 @@ in all the plots in this chapter.
 \end{table}
 
 
-\begin{figure}[!h]
+\begin{figure}[bth]
     \centering
 \includegraphics[width=.45\textwidth]{FTAG_plots/3bplots/3bplots.png}
 	\caption{The DL1r score distribution of the leading VR-Track jet, 
@@ -948,11 +827,11 @@ in all the plots in this chapter.
 \end{figure}
 
 
-\subsection{Results}
+\section{Results}
 \label{result}
 
 
-\subsubsection{Overview}
+\subsection{Overview}
 Four rounds of calibrations have been carried out, containing different 
 jet collections, Monte Carlo samples, analysis framework 
 and \bjet\ identification algorithm. 
@@ -963,7 +842,7 @@ selection and the standard selection are carried out for all four
 calibrations, while the high-$p_T$ selection is only implemented 
 in the latest calibration. 
 
-\subsubsection{\btagging\ algorithms output distribution}
+\subsection{\btagging\ algorithms output distribution}
 The distributions of the \btagging\ algorithm' output of 
 the MC and the data of the latest calibration 
 (December 2020) are shown in Figure~\ref{fig:taggers_PFlow} for the PFlow jets and 
@@ -1025,8 +904,7 @@ becomes more important.
 	before fitting or tagging with full uncertainties.} \label{fig:taggers_VRJets}
 \end{figure}	
 
-\subsubsection{Efficiencies and Scale Factors}
-
+\subsection{Efficiencies and Scale Factors}
 %The Monte Carlo simulation demonstrates good agreement in different kinematic variables with data. 
 The Dl1 and DL1r \cjet efficiencies and scale factors with systematics 
 uncertainties are calculated with four fixed cut working points 

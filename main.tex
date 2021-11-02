@@ -49,7 +49,7 @@
 }
 
 %++++++++++++++++++++++++++++++++++++++++
-\linespread{1.17}
+\linespread{1.25}
 \makeindex
 
 % \pretitle{%
@@ -96,20 +96,31 @@
 \pagenumbering{arabic}
 \fancyhead[RO,LE]{\changefont }
 \fancyhead[RE,LO]{\changefont \leftmark}
+\large
 \chapter{Introduction}
 \chapter{Theory and Motivation}
 \section{The Standard Model and the Higgs boson}
 \section{Beyond the Standard Model}
+\large
 \include{Detector.tex}
 \chapter{Data and Monte Carlo samples}
-\include{Reconstruction.tex}
-
-\section{\bjets}
+\large
+\include{Reconstruction_track.tex}
+\include{Reconstruction_leptons.tex}
+\include{Reconstruction_jets.tex}
+\include{Reconstruction_MET_tau.tex} 
+\chapter{Charm jet mis-tagging calibration}
 \include{FTAG.tex}
+
+
+
+
+\large
 \chapter{Search for Higgs boson pair production in the \bbtt\ channel}
 \label{sec:search for dihiggs}
 \section{Data and Monte Carlo samples}
 \section{Trigger and event selection}
+\label{sec:event selection}
 \section{Background estimation}
 \section{Multivariate analysis}
 \section{Systematic uncertainties}
@@ -118,5 +129,6 @@
 
 \printbibliography
 \appendix
-\include{AUX/FTAG.tex}
+\include{auxiliary/FTAG.tex}
+
 \end{document}
