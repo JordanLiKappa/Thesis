@@ -1,0 +1,151 @@
+\documentclass[twoside,11pt]{report}
+\usepackage{tabularx} % extra features for tabular environment
+\usepackage{amsmath} % improve math presentation
+\usepackage{graphicx, subcaption} % takes care of graphic including machinery
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\setlength{\headheight}{13.59999pt}
+\usepackage[top=2.5cm, bottom=2.5cm, left=4.0cm, right=2.5cm]{geometry}
+% \usepackage[margin=1in,letterpaper]{geometry} % decreases margins
+\usepackage{xspace}
+\usepackage{siunitx}
+\usepackage{pifont}
+\usepackage{booktabs}
+\usepackage{ANA-FTAG-2020-08-PAPER-defs}
+\usepackage[style=numeric-comp, sorting=none]{biblatex}
+\addbibresource{ANA-FTAG-2020-08-PAPER.bib}
+\addbibresource{Detector/Detector.bib}
+\addbibresource{Reconstruction/Reconstruction.bib}
+\addbibresource{DiHiggs/DiHiggs.bib}
+\addbibresource{bib/ATLAS.bib}
+\addbibresource{bib/DiHiggs_paper.bib}
+\addbibresource{bib/ATLAS-useful.bib}
+\addbibresource{bib/PubNotes.bib}
+\addbibresource{bib/ConfNotes.bib}
+\addbibresource{bib/ATLAS-SUSY.bib}
+\addbibresource{bib/Int_note.bib}
+\usepackage[final]{hyperref} % adds hyper links inside the generated pdf file
+\usepackage[T1]{fontenc}
+\usepackage{setspace}
+\usepackage{float}
+\usepackage{makeidx}
+\usepackage{titlesec}
+\usepackage{multirow}
+\usepackage{titling}
+\newcommand\bjetineq{\mathop{\mbox{$b$ $\rm{jet}$}}}
+\newcommand\bjetunder{\mathop{\footnotesize{\mbox{$b$ $\rm{jet}$}}}\normalsize}
+\newcommand\cjetineq{\mathop{\mbox{$c$ $\rm{jet}$}}}
+\newcommand\cjetunder{\mathop{\footnotesize{\mbox{$c$ $\rm{jet}$}}}\normalsize}
+\setcounter{secnumdepth}{4}
+\newcommand{\specialcell}[2][c]{%
+ \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+\newcommand{\changefont}{\fontsize{9}{11}\selectfont}
+\newcommand{\changefontbig}{\fontsize{12}{14}\selectfont}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\restylefloat*{figure}
+\hypersetup{
+	colorlinks=true, % false: boxed links; true: colored links
+	linkcolor=blue, % color of internal links
+	citecolor=blue, % color of links to bibliography
+	filecolor=magenta, % color of file links
+	urlcolor=blue 
+}
+
+%++++++++++++++++++++++++++++++++++++++++
+\linespread{1.25}
+\makeindex
+
+% \pretitle{%
+% \begin{center}
+% }
+% \posttitle{
+% 	\begin{figure}[htp]
+% 		\centering
+% 		\includegraphics[width=.5\textwidth]{logo.png}
+% 		\vspace{3em}
+% 		\centering
+% 		\includegraphics[width=.45\textwidth]{ATLAS-Logo-Ref-RGB-H_1.jpg}
+% 		\end{figure}
+% 	\end{center}}
+
+\begin{document}
+\pagenumbering{roman}
+\fancyhead{}
+% \title{\Huge Search for Higgs boson pair-production in the $bb\tau\tau$ final state using proton-proton collisions at $\sqrt{s}$ = 13 \TeV\ data with the ATLAS detector}%Fake Factors Calculation and Implementation in H$\rightarrow$ bb$\tau^+\tau^-$ analysis with MC16a/MC16d in Release 21 with the ATLAS detector
+% \author{\Huge Zhiyuan Li}
+% \date{\today}
+% \maketitle
+\begin{titlepage}
+	\centering
+	{\LARGE \textbf{Search for Higgs boson pair-production in the $bb\tau\tau$ final state using proton-proton collisions at $\sqrt{s}$ = 13 \TeV\ data with the ATLAS detector} \par}
+	\vspace{1cm}
+	{\LARGE \textbf{Zhiyuan Li} \par}
+	\vspace{0.2cm}
+	\today
+	\vspace{3cm}
+	\begin{figure}[htp]
+		\centering
+		\includegraphics[width=.5\textwidth]{logo.png}
+		\vspace{3em}
+		\centering
+		\includegraphics[width=.45\textwidth]{ATLAS-Logo-Ref-RGB-H_1.jpg}
+		\end{figure}
+\end{titlepage}
+
+\tableofcontents{}
+\printindex{}
+
+\newpage
+\pagenumbering{arabic}
+\fancyhead[RE]{\changefont \rightmark}
+\fancyhead[LO]{\changefontbig \textbf{\chaptername . \thechapter}}
+\large
+\chapter{Introduction}
+\chapter{Theory and Motivation}
+\section{The Standard Model and the Higgs boson}
+\section{Beyond the Standard Model}
+\large
+\chapter{The ATLAS experiment at the Large Hadron Collider}
+\input{Detector/LHC.tex}
+\input{Detector/ATLAS.tex}
+\chapter{Data and Monte Carlo samples}
+\chapter{Object Reconstruction}
+\input{Reconstruction/track.tex}
+\input{Reconstruction/leptons.tex}
+\input{Reconstruction/jets.tex}
+\input{Reconstruction/MET_tau.tex} 
+\chapter{Charm jet mis-tagging calibration}
+\input{FTAG.tex}
+
+
+
+
+\large
+\chapter{Search for Higgs boson pair production in the \bbttlh channel}
+\label{sec:search for dihiggs}
+due: 15/12
+\input{DiHiggs/intro.tex}
+% \input{DiHiggs/Samples_selection.tex}
+\input{DiHiggs/samples.tex}
+\input{DiHiggs/selection.tex}
+due: 05/11
+% \label{sec:event selection}
+\section{Background estimation}
+\input{DiHiggs/background.tex}
+due 15/11
+\section{Multivariate analysis}
+\section{Systematic uncertainties}
+due 30/11
+\section{Results}
+due 15/12
+
+\chapter{Summary}
+
+\printbibliography
+\appendix
+\include{auxiliary/FTAG.tex}
+
+\end{document}

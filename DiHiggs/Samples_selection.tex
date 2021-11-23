@@ -1,0 +1,178 @@
+
+
+\section{Data and Monte Carlo Simulation}
+\subsection{Data}
+The results presented here are based on proton–proton collision data 
+at a centre-of-mass energy of \sqrts = 13 TeV, 
+collected by the ATLAS detector at the LHC between 2015 and 2018, 
+corresponding to an integrated luminosity of \lumi. 
+Selected data events are required to have all relevant components 
+of the ATLAS detector in good working condition 
+according to the ATLAS Good-Run-List (GRL). 
+In the following, a description of the signal and 
+background Monte Carlo samples is given. 
+Supporting material for this section can be found in appendix B, 
+including the data GRL and the complete signal and background Monte Carlo samples list.
+ 
+ \subsection{Signal Monte Carlo Samples}
+
+
+ The SM non-resonant di-Higgs process via gluon-gluon fusion 
+ was simulated with \POWHEGBOX v2 generator~\cite{Powheg1, Powheg2, Powheg3} 
+ at next-to-leading order (NLO), with full NLO corrections with finite top mass, 
+ using the PDF4LHC~\cite{Butterworth:2015oua} parton distribution function (PDF) set. 
+ Parton showers and hadronization were simulated with \PYTHIA8 version 8.244~\cite{PYTHIA82} 
+ parton shower model, with the A14 set of tuned parameters~\cite{A14tune, ATLAS:2012uec} 
+ and the NNPDF23LO PDF set~\cite{NNPDF23PDFSet}. 
+ The EvtGen v1.6.0 program~\cite{EvtGen} is used to model 
+ the properties of the bottom and charm hadron decays.
+
+ The normalisation of this process in the analysis is set to the SM ggF di-Higgs cross section, $\sigma_{ggF}=\SI{31.05}{fb}$ calculated at NNLO FTApprox~\cite{Grazzini:2018bsd}, times the $bb\tau\tau$ BR, $\sigma_{ggF} \times BR (bb \tau\tau)  = \SI{31.05}{fb} \times 0.0730562561  =  \SI{2.2683967}{fb}$.  
+ 
+ The SM non-resonant di-Higgs process via vector boson fusion (VBF) was generated at leading-order (LO) using \MADGRAPH version 2.7.3~\cite{mg5_lo}, with the NNPDF30NLO~\cite{NNPDF} PDF set. Parton showering and hadronization are performed using \PYTHIA8 version 8.244~\cite{PYTHIA82} with the A14 set of tuned parameters~\cite{A14tune, ATLAS:2012uec} and the NNPDF23LO PDF set~\cite{NNPDF23PDFSet}. The EvtGen  v1.7.0 program~\cite{EvtGen} is used for the bottom and charm hadron decays.
+ 
+ This process is normalised to the SM VBF HH cross section, $\sigma_{VBF}=\SI{1.726}{fb}$ calculated at N3LO QCD~\cite{Dreyer_2018}, times the $bb\tau\tau$ BR, $\sigma_{VBF} \times BR (bb \tau\tau)  = \SI{1.726}{fb} \times 0.0730562561  =  \SI{0.126095098}{fb}$.  
+ 
+ The resonant di-Higgs production process via gluon-gluon fusion, $pp \rightarrow X \rightarrow HH$, was
+ simulated in the extended Higgs sector of Two-Higgs-Doublet Models
+ (2HDM)~\cite{Branco:2011iw} in the narrow width approximation. Simulated
+ resonant di-Higgs samples were produced for 18 mass points (251, 260, 280, 300, 325, 350, 400, 450, 500, 550, 600, 700, 800,
+ 900, 1000, 1200, 1400, 1600 \GeV), with the Standard Model Higgs boson ($H$) mass set to $m_H=125$
+ \GeV. The narrow width scalar model is a gluon-initiated state (ggF) implemented in
+ \MADGRAPH at leading-order (LO)~\cite{mg5_lo} and interfaced to the \Herwig7 version 7.1.0.3~\cite{Herwigpp}
+ parton shower model. The EvtGen v1.6.0 program~\cite{EvtGen} is used to model the properties of the bottom and charm hadron decays. 
+ These BSM resonant samples only include the BSM term (the SM and the SM-BSM interference terms are not included). Thus, the interference between non-resonant SM and BSM resonant is neglected in the analysis as not included in the generated BSM resonant samples (as done in all di-Higgs analyses). The NNPDF23LO parton distribution function (PDF)
+ set~\cite{NNPDF23PDFSet} is used together with the H7.1-Default
+ tune~\cite{Gieseke:2012ft}. The width of the heavy scalar, $X$, is fixed to 10
+ \MeV . The resonant di-Higgs samples were simulated using fast detector
+ simulation relying on a parametrized response of the calorimeters.
+ 
+ The normalisation of these resonant signal samples in the analysis is set to $\sigma \times BR  = \SI{1}{pb} \times BR (bb \tau \tau)  =  0.073056256 \SI{1}{pb}$. This is a dummy cross section of 1 pb agreed to be used in the HH Combination for the resonant signals for which the cross section is arbitrary. This was chosen to make the scaling of the signal easier for the calculation of the cross section limits (with a cross section of 1 pb the limit on the POI, that is mu, is directly giving the limit on the cross section in pb). Cross sections of 1 pb have already been excluded by the 36 \ifb\ HH combination over the full scanned mass range~\cite{HDBS-2018-58}.
+ 
+ 
+ 
+
+
+ \subsection{Background Monte Carlo Samples}
+
+The \ttbar\ production and single top-quarks production in the $Wt$~, $s$~and $t$-channels are simulated using the \POWHEGBOX v2 generator~\cite{Powheg1, Powheg2, Powheg3}. The NNPDF30NLO~\cite{NNPDF} parton distribution function (PDF) set is used. The events are interfaced to \PYTHIA8 version  8.230~\cite{PYTHIA82} for the parton shower and hadronisation with the A14 set of tuned parameters~\cite{A14tune, ATLAS:2012uec} and the NNPDF23LO~\cite{NNPDF23PDFSet} PDF set. The EvtGen v1.6.0 program~\cite{EvtGen} is used to model the properties of the bottom and charm hadron decays. For all top processes, top-quark spin correlations are preserved (for $t$-channel production, top quarks are decayed using MadSpin \cite{MadSpin}). The top-quark mass is set to 172.5 \GeV.  The NLO \ttbar\ production cross section is corrected to the theory prediction calculated at NNLO+NNLL. For single top-quark processes, the cross sections were corrected to the theory predictions calculated at NLO. The \ttbar-$Wt$ interference is handled using the diagram removal scheme.
+ 
+Events containing $W$\ or $Z$\ bosons produced in association with jets are simulated using the \SHERPA version 2.2.1~\cite{Bothmann:2019yzt} generator. The NNPDF30NNLO PDF set~\cite{NNPDF} is used in conjunction with dedicated parton shower tuning developed by the \SHERPA authors.  All $W/Z$ + jets events are normalised to the predicted cross sections using NNLO calculations.
+
+Diboson processes with one of the bosons decaying hadronically and the other leptonically are simulated using the \SHERPA version 2.2.1~\cite{Bothmann:2019yzt} generator. The NNPDF30NNLO PDF set~\cite{NNPDF} is used in conjunction with dedicated parton shower tuning developed by the \SHERPA authors. The generator NLO cross sections are used.
+
+Production of $W$ and $Z$ bosons in association with a top-quark pair, $ttV$, is simulated using \SHERPA version 2.2.1 with multileg NLO merging for the $ttZ$ production and using \SHERPA version 2.2.8 at NLO for the $ttW$ production. The NNPDF30NNLO PDF set~\cite{NNPDF} is used in conjunction with dedicated parton shower tuning developed by the \SHERPA authors. The most accurate NLO generator cross sections are used.
+
+Standard Model single Higgs boson production is included in the analysis as part of the background processes. 
+
+Standard Model Higgs production in association with a top-quark pair, $ttH$, is simulated using the \POWHEGBOX generator~\cite{Powheg1, Powheg2, Powheg3}. The NNPDF30NLO parton distribution function (PDF) set is used. The events are interfaced to \PYTHIA8 version  8.230~\cite{PYTHIA82} for the parton shower and hadronisation with the A14 set of tuned parameters~\cite{A14tune, ATLAS:2012uec} and the NNPDF23LO PDF set~\cite{NNPDF23PDFSet}. The EvtGen program~\cite{EvtGen} is also used. The cross section is set to $ttH$ production NLO calculations~\cite{Hxsec}.
+
+The Higgs boson production in association with a $Z$\ boson, $ZH$, with the Higgs boson decaying to $bb$ or $\tau\tau$, is included in the analysis using three samples. The $qq ZH(Z\rightarrow ll, H\rightarrow bb)$, $gg ZH(Z\rightarrow ll,H\rightarrow bb)$ (where $"l"$ includes all leptons $e,\mu,\tau$) and $qq ZH(Z\rightarrow all, H\rightarrow \tau\tau)$, $gg ZH(Z\rightarrow all, H\rightarrow \tau\tau)$ are simulated using \POWHEGBOX v2. The NNPDF30NLO PDF set~\cite{NNPDF} is used. The events are interfaced with \PYTHIA8 version 8.212 using the AZNLO tune~\cite{AZNLOtune} and the CTEQ6L1 PDF set~\cite{CTEQ6L1}. The EvtGen program~\cite{EvtGen} is also used. The cross section is set to the NNLO(QCD)+NLO(EW) calculations for $qqZH$ and to the NLO+NLL in QCD for $ggZH$. 
+
+The Higgs boson production in association with a $W$\ boson, $WH$, with the Higgs boson decaying to $bb$ or $\tau\tau$, is included in the analysis using four samples. The $W^{\pm}H(W\rightarrow l \nu, H\rightarrow bb)$, $W^{\pm}H(W\rightarrow all,H\rightarrow \tau\tau)$ are simulated using \POWHEGBOX v2. The NNPDF30NLO PDF set~\cite{NNPDF} is used. The events are interfaced with \PYTHIA8 version 8.212 using the AZNLO tune~\cite{AZNLOtune} and the CTEQ6L1 PDF set~\cite{CTEQ6L1}. The EvtGen program~\cite{EvtGen} is also used. The cross section is set to the NNLO(QCD)+NLO(EW) calculations.
+
+The gluon-fusion Higgs boson production with the Higgs boson decaying to $\tau\tau$ is simulated using \POWHEGBOX v2. The NNPDF30NNLO PDF set~\cite{NNPDF} is used. The events are interfaced with \PYTHIA8 version 8.212 using the AZNLO tune~\cite{AZNLOtune} and the CTEQ6L1 PDF set~\cite{CTEQ6L1}. The EvtGen program~\cite{EvtGen} is also used. The cross section is set to the N3LO(QCD)+NLO(EW) calculations~\cite{Hxsec}.
+
+The vector-boson-fusion Higgs boson production with the Higgs boson decaying to $\tau\tau$ is simulated using \POWHEGBOX v2. The NNPDF30NLO PDF set~\cite{NNPDF} is used. The events are interfaced with \PYTHIA8 version 8.212 using the AZNLO tune~\cite{AZNLOtune} and the CTEQ6L1 PDF set~\cite{CTEQ6L1}. The EvtGen program~\cite{EvtGen} is also used. The cross section is set to the NNLO(QCD)+NLO(EW) calculations~\cite{Hxsec}. 
+
+
+
+All MC samples are passed through the full GEANT4~\cite{Geant4,ATLASSIM} simulation of the ATLAS detector and are reconstructed with the same software as used for data.
+
+Additional samples produced with alternative generators and settings are used to estimate systematic uncertainties in the event modelling, as described later in Section~\ref{sec:systs}.
+
+ 
+ 
+ 
+ The Monte Carlo samples used in the analysis are generated as follows:
+
+
+ \begin{itemize}
+    \item Non-resonant di-Higgs samples: The samples are simulated using an effective field theory (EFT) model that 
+    includes finite top mass correction through form factors, assuming a Higgs boson mass of 125.09 GeV and Standard Model 
+    production diagrams. The model is implemented in {\tt MG5\_a}MC@NLO v2.2.2 \cite{Alwall:2014hca} at next-to-leading-order (NLO) and 
+    interfaced to the {\tt Herwig} ++ parton shower and hadronisation model\cite{Bahr:2008pv}. The analytically unknown two-loop integrals 
+    are calculated numerically for the gluon fusion di-higgs production at NLO, including the full top quark mass dependence. 
+    Thus weights were calculated to reweight the $hh$ signal MC samples using the hhTruthWeightTools package\cite{RW}. 
+    \item $t\bar{t}$ and single top-quark samples: The samples are generated with the {\tt Powheg-Box} v2 \cite{Alioli:2010xd} generator, 
+    in the Wt and s-channel. Electroweak t-channel single top-quark events are generated using the {\tt Powheg-Box} v1 generator. 
+    The top-quark mass is set to 172.5 GeV. The {\tt EvtGen} v1.2.0 program \cite{Lange:2001uf} is used to model the properties of 
+    the bottom and charm hadron decays. The $t\bar{t}$ production cross-section is calculated at NNLO+NNLL 
+    (next-to-next-to-leading-logarithm)\cite{NNLO}. For single top processes, the generator NLO cross-sections are used.
+    \item $W$/$Z$+jets samples: Events containing $W$ or $Z$ bosons with associated jets are simulated using {\tt Sherpa} 
+    2.2.1\cite{Gleisberg:2008ta}. All $W$/$Z$+jets events are normalised to the predicted cross-sections using NNLO calculations.
+    \item Dibosons samples: Diboson processes with one of the bosons decaying hadronically and the other leptonically are 
+    simulated using {\tt Sherpa} 2.1.1. They are calculated for up to one ($ZZ$) or zero ($WW$, $WZ$) additional partons at 
+    NLO and up to three additional partons at LO. The generator NLO cross-sections are used\cite{mc}.
+    \item Zh samples: A $Z$ boson associated with a Standard Model Higgs production, decaying to a 
+    $b\bar{b}\tau^+\tau^-$ final state is an irreducible background. 
+    The $qqZh($Z$\rightarrow \tau^+\tau^-, h \rightarrow b\bar{b})$ 
+    and $qqZh($Z$\rightarrow b\bar{b}), h \rightarrow \tau^+\tau^-$ processes 
+    are generated with {\tt Pythia} 8.186\cite{Sjostrand:2006za}. The gluon-fusion 
+    initiated $Zh($Z$\rightarrow\tau^+\tau^-, h\rightarrow b\bar{b})$ process is 
+    generated with {\tt Powheg-Box} v2\cite{NLOpowheg} using the {\tt CT10} PDF sets\cite{Lai:2010vv}. 
+    The parton shower, fragmentation, and the underlying event are simulated using {\tt Pythia} 8.186. 
+    \item $t\bar{t}h$ samples: The production of a top quark pair associated with a Standard Model 
+    Higgs is generated with {\tt MG5\_a}MC@NLO and {\tt Pythia} 8 is used to simulate the parton shower.
+ \end{itemize}
+ 
+The MC samples are generated to simulate the extremely complicated 
+particle interactions, while matching with the detector design and running condition. 
+Different MC samples are produced according to the different years of the data taking of the LHC. 
+The MC samples corresponding to the 2015, 2016 data taking is known as MC16a, and that corresponding to 2017 data taking is known as MC16d.
+
+
+
+\section{Definitions of Variables}
+\label{variables} The variables used in the Boosted Decision Trees (BDTs, defined in section~\ref{7.3}) are defined as follows:
+\begin{itemize}
+    \item $p_{T}$: The component of momentum transverse to the beam line.
+    \item $m_{bb}$: The invariant mass of the di-b-jet system.
+    \item $m_{\tau\tau}^{MMC}$: The invariant mass of the di-tau system, calculated using the Missing Mass Calculator (MMC). Accurate reconstruction of the mass of a resonance decaying to a pair of $\tau$ is challenging because of the presence of multiple neutrinos from decays.  The MMC is a technique  developed to improve the accuracy of reconstructing the invariant mass of the $\tau^+\tau^-$ final state\cite{MMC}.
+    \item $m_{HH}$: The invariant mass of the di-Higgs system ins reconstructed from the di-tau and di-b-jet masses. Scale factors of $m_h/m_{\tau\tau}^{MMC}$ and $m_h/m_{bb}$ (where $m_h$ is the value of the Higgs boson mass used in the simulation, 125 GeV) are applied to the four-momenta of the di-tau and di-b-jet systems, respectively, in order to improve the mass resolution. 
+    \item $E^{miss}_T$: The missing transverse momentum of the event, as defined in section~\ref{MET}.
+    \item $E^{miss}_T\phi$ centrality: This variable quantifies the position in $\phi$ of the $E^{miss}_T$ with respect to the visible decay products of the two taus. It is defined as:
+    \begin{equation} \label{eq:mTWcentrality} 
+E^{miss}_T\phi = \frac{A+B}{\sqrt{A^2+B^2}}, 
+\end{equation}
+where A and B are give by:
+\begin{equation} \label{eq:AB} 
+A = \frac{sin(\phi_{E_T^{miss}}-\phi_{\tau2})}{sin(\phi_{\tau1}-\phi_{\tau2})}, B = \frac{sin(\phi_{\tau1}-\phi_{E_{T}^{miss}})}{sin(\phi_{\tau1}-\phi_{\tau2})}.
+\end{equation}
+
+The $E^{miss}_T\phi$ centrality is equal to: 
+\begin{itemize}
+    \item $\sqrt{2}$ when the $E^{miss}_T$ lies exactly between the two taus; or
+    \item 1 if the $E^{miss}_T$ is perfectly aligned with either of the taus; or 
+    \item < 1 if the $E^{miss}_T$ lies outside of the $\phi$ angular region defined by the taus.
+\end{itemize}
+    \item $m_T^{W}$: The transverse mass between the lepton and the $E^{miss}_T$ is defined as: 
+    \begin{equation} \label{eq:mTW} 
+m_T^W =  \sqrt{2p_T^lE_T^{miss}(1-cos\Delta\phi)} , 
+\end{equation}
+where $p_T^l$ is the transverse momentum of the lepton. Signal events tend to have a lower $m_T^W$ than the $t\bar{t}$ process because the transverse mass of a lepton and neutrino decaying from a $W$ boson in a $t\bar{t}$ event trends to peak at $m^W$ $\approx$ 80 GeV. 
+    \item $\Delta R(\tau,\tau)$: The $\Delta$R between the visible $\tau$ decay products.
+    \item $\Delta R(b,b)$:  The $\Delta$R between the two b-jets.
+    \item $\Delta\phi(H,H)$: The $\Delta\phi$ angle between the two reconstructed 125 GeV Higgs bosons, where the di-tau direction is taken from the MMC fit.
+    \item $\Delta p_T(lep, \tau_{had-vis})$: The difference in $p_T$ between the light lepton and the visible hadronic $\tau$ decay products. This variable exploits the imbalance in $p_T$ in the visible decay products caused by the different number of neutrinos accompanying leptonic and hadronic $\tau$ decays.
+    \item Sub-leading $b$-jet $p_T$.
+\end{itemize}
+
+
+
+\subsection{Boosted Decision Tree}
+\label{7.3}
+The boosted decision tree (BDT) is a multivariant analyser, which uses a decision tree (as a predictive model) to go from observations about an item (represented in the branches) to conclusions about the item's target value (represented in the leaves). Boosted refers to incrementally building an ensemble by training each new instance to emphasise the training instances previously mis-modeled\cite{BDT1}. These can be used for regression-type and classification-type problems are used in the analysis to improve the separation of signals from background processes. Several variables as defined in section~\ref{variables} that provide good discrimination between signal and background are used as inputs to the BDT. BDTs are trained to separate the signal from the expected backgrounds, with the MC samples weighted by their predicted cross-sections. In both channels, events are first required to pass their respective selection criteria and two jets are required to be b-tagged. In the $\tau_{lep}\tau_{had}$ channel the training is performed against the dominant $t\bar{t}$ background only (where the real and fake $\tau$ components are both taken from simulation). The distributions from the background MC samples and the data-driven jets faking $\tau$ lepton background, of the input variables for the BDT are shown in figure~\ref{fig:mc16combined} with the combination of MC16a and MC16d. The distributions plots with MC16a and MC16d separately are shown in the appendix. The jets faking $\tau$ background has been obtained to give better modelling and the calculation is discussed in more details in session~\ref{ff}.
+
+
+
+
+
+
+
+
+
+
+
+
+
