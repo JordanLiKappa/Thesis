@@ -9,6 +9,8 @@
 % \usepackage[margin=1in,letterpaper]{geometry} % decreases margins
 \usepackage{xspace}
 \usepackage{siunitx}
+\usepackage{feynman}
+\usepackage{pdflscape}
 \usepackage{pifont}
 \usepackage{booktabs}
 \usepackage{ANA-FTAG-2020-08-PAPER-defs}
@@ -41,10 +43,38 @@
  \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
 \newcommand{\changefont}{\fontsize{9}{11}\selectfont}
 \newcommand{\changefontbig}{\fontsize{12}{14}\selectfont}
-\titleformat{\paragraph}
-{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
-\titlespacing*{\paragraph}
+\titleclass{\subsubsubsection}{straight}[\subsection]
+
+\newcounter{subsubsubsection}[subsubsection]
+\renewcommand\thesubsubsubsection{\thesubsubsection.\arabic{subsubsubsection}}
+\renewcommand\theparagraph{\thesubsubsubsection.\arabic{paragraph}} % optional; useful if paragraphs are to be numbered
+
+\titleformat{\subsubsubsection}
+  {\normalfont\normalsize\bfseries}{\thesubsubsubsection}{1em}{}
+\titlespacing*{\subsubsubsection}
 {0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\makeatletter
+\renewcommand\paragraph{\@startsection{paragraph}{5}{\z@}%
+  {3.25ex \@plus1ex \@minus.2ex}%
+  {-1em}%
+  {\normalfont\normalsize\bfseries}}
+\renewcommand\subparagraph{\@startsection{subparagraph}{6}{\parindent}%
+  {3.25ex \@plus1ex \@minus .2ex}%
+  {-1em}%
+  {\normalfont\normalsize\bfseries}}
+\def\toclevel@subsubsubsection{4}
+\def\toclevel@paragraph{5}
+\def\toclevel@paragraph{6}
+\def\l@subsubsubsection{\@dottedtocline{4}{7em}{4em}}
+\def\l@paragraph{\@dottedtocline{5}{10em}{5em}}
+\def\l@subparagraph{\@dottedtocline{6}{14em}{6em}}
+\makeatother
+
+
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+
 \restylefloat*{figure}
 \hypersetup{
 	colorlinks=true, % false: boxed links; true: colored links
@@ -111,12 +141,14 @@
 \chapter{The ATLAS experiment at the Large Hadron Collider}
 \input{Detector/LHC.tex}
 \input{Detector/ATLAS.tex}
-\chapter{Data and Monte Carlo samples}
-\chapter{Object Reconstruction}
+% \chapter{Data and Monte Carlo samples}
+\chapter{Physics Object Reconstruction}
 \input{Reconstruction/track.tex}
 \input{Reconstruction/leptons.tex}
 \input{Reconstruction/jets.tex}
 \input{Reconstruction/MET_tau.tex} 
+\chapter{Data and Monte Carlo Simulation}
+\input{DiHiggs/samples.tex}
 \chapter{Charm jet mis-tagging calibration}
 \input{FTAG.tex}
 
@@ -124,22 +156,23 @@
 
 
 \large
-\chapter{Search for Higgs boson pair production in the \bbttlh channel}
+\chapter{Search for Higgs boson pair production in the \bbtt\ channel}
 \label{sec:search for dihiggs}
-due: 15/12
 \input{DiHiggs/intro.tex}
-% \input{DiHiggs/Samples_selection.tex}
-\input{DiHiggs/samples.tex}
+
 \input{DiHiggs/selection.tex}
-due: 05/11
 % \label{sec:event selection}
 \section{Background estimation}
+\label{sec:DiHiggs:backgroundEstimation}
 \input{DiHiggs/background.tex}
-due 15/11
 \section{Multivariate analysis}
 \section{Systematic uncertainties}
+\label{sec:DiHiggs:systematics}
+\section{Statistical analysis}
+\label{sec:DiHiggs:analysis}
 due 30/11
 \section{Results}
+\label{sec:DiHiggs:results}
 due 15/12
 
 \chapter{Summary}

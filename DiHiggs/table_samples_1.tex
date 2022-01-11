@@ -1,59 +1,48 @@
 \newcommand{\hsp}{\hspace*{0.3cm}}% Discuss moving to source with EB
 \begin{table}[tb!]
-\begin{center}{\small
+\begin{center}{\large
 
 
-\resizebox{\textwidth}{!}{\begin{tabular}{llllllll}
+\resizebox{1.5\textwidth}{!}{\begin{tabular}{llllllll}
 \toprule
-\hsp Process & ME generator & ME QCD & ME PDF & PS and & UE model & Cross-section \hspace{2.5cm}\\
-& & & hadronisation & tune & order\\
+\hsp Process & ME generator & ME QCD &  PDF & PS & Tuned parameters & Cross-section \hspace{2.5cm}\\
 \midrule
 \multicolumn{7}{l}{\BF{Signal}} \\
 \hsp non-resonant $gg\to HH$ (ggF)   & \textsc{Powheg-Box~v2} & NLO & \textsc{PDF4LHC15} NLO & \textsc{Pythia~8.244} & A14 & NNLO FTApprox  \\
-%
-\hsp non-resonant $qq\to qqHH$ (VBF)   & \textsc{MadGraph}5\_aMC@NLO & LO & NNPDF3.0NLO & \textsc{Pythia~8.244} & A14 & N3LO(QCD)  \\
-                                       & v2.7.3                      &   &             &                       &     &            \\
-%
-\hsp resonant $gg\to X \to HH$ & \textsc{MadGraph}5\_aMC@NLO & LO & NNPDF2.3LO & \textsc{Herwig~v7.1.3} & H7.1-Default & --  \\
-                               & v2.6.1                      &    &            &                        &              &     \\
-%
-% \hsp scalar LQ pair & \textsc{MadGraph5\_aMC@NLO} & NNPDF3.0NLO &\textsc{Pythia~8.230}~\cite{PYTHIA82} & A14~\cite{ATL-PHYS-PUB-2014-021} & NNLO+NNLL  \\
-%
+\hsp non-resonant $qq\to qqHH$ (VBF)   & \textsc{MadGraph}5\_aMC@NLO v2.7.3  & LO & NNPDF3.0NLO & \textsc{Pythia~8.244} & A14 & N3LO(QCD)  \\
+\hsp resonant $gg\to X \to HH$ & \textsc{MadGraph}5\_aMC@NLO v2.6.1 & LO & NNPDF2.3LO & \textsc{Herwig~v7.1.3} & H7.1-Default & --  \\
 \midrule
 \multicolumn{7}{l}{\BF{Top-quark}} \\
 \hsp $t\bar{t}$  & \textsc{Powheg-Box~v2} & NLO & NNPDF3.0NLO & \textsc{Pythia~8.230} & A14 & NNLO+NNLL \\
-\hsp $t$-channel & \textsc{Powheg-Box~v2} & NLO & NNPDF3.0NLO & \textsc{Pythia~8.230} & A14 & NLO \\
-\hsp $s$-channel & \textsc{Powheg-Box~v2} & NLO & NNPDF3.0NLO & \textsc{Pythia~8.230} & A14 & NLO \\
-\hsp $Wt$        & \textsc{Powheg-Box~v2} & NLO & NNPDF3.0NLO & \textsc{Pythia~8.230} & A14 & NLO \\
-\hsp $t\bar{t}Z$ & \textsc{Sherpa~2.2.1}  & NLO & NNPDF3.0NNLO &  \textsc{Sherpa~2.2.1} & Default & NLO$^{(\ddagger)}$  \\
-\hsp $t\bar{t}W$ & \textsc{Sherpa~2.2.8}  & NLO & NNPDF3.0NNLO &  \textsc{Sherpa~2.2.8} & Default & NLO$^{(\ddagger)}$  \\
-\midrule
-\multicolumn{7}{l}{\BF{Vector boson + jets}} \\
-\hsp $W/Z+$jets & \textsc{Sherpa~2.2.1} & NLO ($\leq 2$ jets) & NNPDF3.0NNLO &  \textsc{Sherpa~2.2.1} & Default & NNLO  \\
-                &                       & LO  (3,4 jets)     &              &                        &                 \\
-%%% \hsp $Z+$jets & \textsc{Sherpa~2.2.1} &   & NNPDF3.0NNLO &  \textsc{Sherpa~2.2.1} & Default & NNLO  \\
-\midrule
-\multicolumn{7}{l}{\BF{Diboson}} \\
-\hsp $WW,WZ,ZZ$ & \textsc{Sherpa~2.2.1} & NLO ($\leq 1$ jet)  & NNPDF3.0NNLO &  \textsc{Sherpa~2.2.1} & Default & NLO$^{(\ddagger)}$  \\
-                &                       & LO (2,3 jets)       &              &                        &         &                     \\
-%\hsp $WW$ & \textsc{Sherpa~2.2.1} &   & NNPDF3.0NNLO &  \textsc{Sherpa~2.2.1} & Default & NLO$^{(\ddagger)}$  \\
-%\hsp $WZ$ & \textsc{Sherpa~2.2.1} &   & NNPDF3.0NNLO &  \textsc{Sherpa~2.2.1} & Default & NLO$^{(\ddagger)}$  \\
-%\hsp $ZZ$ & \textsc{Sherpa~2.2.1} &   & NNPDF3.0NNLO &  \textsc{Sherpa~2.2.1} & Default & NLO$^{(\ddagger)}$  \\
+\hsp single top($t$-, $s$-, $Wt$-channels) & \textsc{Powheg-Box~v2} & NLO & NNPDF3.0NLO & \textsc{Pythia~8.230} & A14 & NLO \\
+% \hsp $s$-channel & \textsc{Powheg-Box~v2} & NLO & NNPDF3.0NLO & \textsc{Pythia~8.230} & A14 & NLO \\
+% \hsp $Wt$        & \textsc{Powheg-Box~v2} & NLO & NNPDF3.0NLO & \textsc{Pythia~8.230} & A14 & NLO \\
+\hsp $t\bar{t}Z$ & \textsc{Sherpa~2.2.1}  & NLO & NNPDF3.0NNLO &  \textsc{Sherpa~2.2.1} & Default & NLO  \\
+\hsp $t\bar{t}W$ & \textsc{Sherpa~2.2.8}  & NLO & NNPDF3.0NNLO &  \textsc{Sherpa~2.2.8} & Default & NLO  \\
 \midrule
 \multicolumn{7}{l}{\BF{Single Higgs boson}} \\
 \hsp ggF         & \textsc{Powheg-Box~v2} & NNLO & NNPDF3.0NLO &  \textsc{Pythia~8.212} & AZNLO & N3LO(QCD)+NLO(EW)  \\
 \hsp VBF         & \textsc{Powheg-Box~v2} & NLO  & NNPDF3.0NLO &  \textsc{Pythia~8.212} & AZNLO & NNLO(QCD)+NLO(EW)  \\
-\hsp $qq\to WH$  & \textsc{Powheg-Box~v2} & NLO  & NNPDF3.0NLO &  \textsc{Pythia~8.212} & AZNLO & NNLO(QCD)+NLO(EW)  \\
-\hsp $qq\to ZH$  & \textsc{Powheg-Box~v2} & NLO  & NNPDF3.0NLO &  \textsc{Pythia~8.212} & AZNLO & NNLO(QCD)+NLO(EW)$^{(\dagger)}$  \\
+\hsp $qq\to WH, ZH$  & \textsc{Powheg-Box~v2} & NLO  & NNPDF3.0NLO &  \textsc{Pythia~8.212} & AZNLO & NNLO(QCD)+NLO(EW)  \\
+% \hsp $qq\to ZH$  & \textsc{Powheg-Box~v2} & NLO  & NNPDF3.0NLO &  \textsc{Pythia~8.212} & AZNLO & NNLO(QCD)+NLO(EW)$^{(\dagger)}$  \\
 \hsp $gg\to ZH$  & \textsc{Powheg-Box~v2} & NLO  & NNPDF3.0NLO &  \textsc{Pythia~8.212} & AZNLO & NLO+NLL \\
 \hsp $t\bar{t}H$ & \textsc{Powheg-Box~v2} & NLO  & NNPDF3.0NLO &  \textsc{Pythia~8.230} & A14   & NLO  \\
+\midrule
+\multicolumn{7}{l}{\BF{Vector boson + jets}} \\
+\hsp $W/Z+$jets & \textsc{Sherpa~2.2.1} & NLO ($\leq 2$ jets), LO  (3,4 jets)  & NNPDF3.0NNLO &  \textsc{Sherpa~2.2.1} & Default & NNLO  \\
+\midrule
+\multicolumn{7}{l}{\BF{Diboson}} \\
+\hsp $WW,WZ,ZZ$ & \textsc{Sherpa~2.2.1} & NLO ($\leq 1$ jet), LO (2,3 jets)   & NNPDF3.0NNLO &  \textsc{Sherpa~2.2.1} & Default & NLO  \\
 \bottomrule
 \end{tabular}}}
 \end{center}
 \caption
 {The generators used for the simulation of the signal and background
-processes. If not specified, the order of the cross-section calculation refers
+processes. The order of the cross-section calculation refers
 to the expansion in the strong coupling constant ($\alpha_\text{S}$).
 The acronyms ME, PS and UE are used for matrix element, parton shower and underlying event, respectively.
+The terms ggF, VBF refer to gluon-gluon fusion and vector-boson fusion respectively. 
+The cross-section of the resonant production is not shown as a dummy cross-section of 1 pb was chosen.
+Reproduced from Ref.~\cite{ATLAS-CONF-2021-030}.
 \protect\label{tab:samples}}
 \end{table}

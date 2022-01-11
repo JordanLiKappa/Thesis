@@ -52,7 +52,14 @@ Important points (from Nikos):
 DiHiggs:
 1. how to explain non res signal is normalised to the SM cross section while the resonant cross section is arbitrary?
 
-
+DiHiggs note:
+1. Fastsim: 
+Almost 80% of the full simulation time is spent simu-
+lating particles traversing the calorimetry, and about 75%
+of the full simulation time is spent simulating electromag-
+netic particles. Fast sim is to remove low energy electro magnetic 
+particles from the calorimeter and replace them
+with pre-simulated showers stored in memory
 
 Reconstruction: 
     one week (due 20/10)

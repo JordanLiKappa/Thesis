@@ -1,19 +1,20 @@
 \large
-\section{Electron}
+\section{Electrons}
 \label{sec:electron}
 When an high energy electron (or positron) enters the detector, 
 it interacts with the detector material primarily via bremsstrahlung. 
 This results in radiation of photons, which subsequently convert into 
-electron–positron pairs which continue to 
+electron–positron pairs that continue to 
 interact with the detector material, 
 leading to a cascade of particles of decreasing energy.
 These cascade particles are usually referred to as electromagnetic \textit{shower}.
-They are very collimated and frequently create neighbouring signals in the calorimeter component. 
+They are very collimated and frequently create 
+neighbouring signals in the calorimeter component. 
 % as part of the same electromagnetic cluster. 
-These interactions can occur inside the inner-detector volume 
+These interactions can occur inside the ID volume 
 or even in the beam pipe, generating multiple tracks
-in the inner detector, or can instead occur downstream 
-of the inner detector, only impacting the shower in
+in the ID, or can instead occur downstream 
+of the ID, only impacting the shower in
 the calorimeter. 
 \subsection{Reconstruction}
 % Therefore, it is possible to produce and match multiple tracks to the same electromagnetic
@@ -33,7 +34,7 @@ the reconstruction and identification of an electron.
     and lastly the TRT) and then enters the electromagnetic calorimeter. 
     The dashed red trajectory indicates the path of a
     photon produced by the interaction of the electron with the material in the tracking system. 
-    Image taken from~\cite{PERF-2017-01}.
+    Image reproduced from Ref.~\cite{PERF-2017-01}.
         }
     \label{fig:electron_recon}
     \end{centering}
@@ -44,19 +45,26 @@ The $\eta \times \phi$ space of the EM is divided into \textit{towers} of 200 $\
 elements of size $\Delta\eta \times \Delta\phi$ = 0.025 $\times$ 0.025, 
 consistent with the granularity of the second layer of the EM calorimeter. 
 Then algorithm then ``slides'' a rectangular window of size 3 $\times$ 5 towers 
-whose summed transverse energy exceeds 2.5 GeV to form a seed-cluster.
-The centre of the seed moves in steps of 0.025 in either $\eta$ or $\phi$ direction 
+whose summed transverse energy exceeds 2.5 GeV and is a local maximum
+to form a seed-cluster.
+The centre of the seed moves in steps of 0.025 in 
+either the $\eta$ or $\phi$ direction 
 to search for localised energy deposits; 
 this process is repeated until every element of the calorimeter has been covered.
 To better account for the energy loss of charged particles in material,
-a subsequentl fitting procedure using optimised Gaussian-sum filter \cite{ATLAS-CONF-2012-047} 
-is performed on tracks which are ``loosely'' matched to the EM clusters, 
-which requires the tracks and clusters to satisfy:
-$|\eta_{cluster} - \eta_{track}|$ < 0.05
+a subsequentl fitting procedure using 
+an optimised Gaussian-sum filter \cite{ATLAS-CONF-2012-047} 
+is performed on tracks which are ``loosely'' matched to the EM clusters.
+This matching requires the tracks and clusters to satisfy:
+\begin{itemize}
+    \item $|\eta_{cluster} - \eta_{track}|$ < 0.05,
+\end{itemize}
 and one of the two requirements:
-$-0.20 < \Delta \phi < 0.05$ 
-or
-$-0.10 < \Delta \phi_{res} < 0.05$,
+\begin{itemize}
+    \item $-0.20 < \Delta \phi < 0.05$, or
+    \item $-0.10 < \Delta \phi_{res} < 0.05$,
+\end{itemize}
+
 where $\Delta\phi \equiv -q \times (\phi_{cluster} - \phi_{track})$ with 
 $q$ being the charge of the particle, and 
 $\phi_{cluster}$, $\phi_{track}$ and $\eta_{cluster}$, $\eta_{track}$ 
@@ -78,7 +86,7 @@ the track considered to be the primary electron track is selected
 using an algorithm that takes into account the distance in $\eta$
 and $\phi$ between the extrapolated tracks and the cluster barycentres 
 (agian, measured in the second layer of the calorimeter), 
-the number of hits in the silicon detectors and in the innermost silicon layer; 
+the number of hits in the silicon detectors and in the ID layer; 
 a candidate with an associated track with at least four hits in the silicon layers and no association
 with a vertex from a photon conversion (photon converting into electron-positron pair) 
 is considered as an electron candidate. 
@@ -94,34 +102,37 @@ ambiguously classified as potentially either a photon candidate or an electron c
 The reconstruction algorithm is very efficient in reconstructing electron,
 however, this is not necessarily what is needed for many ATLAS analysis, where
 they are insterested in prompt electrons. 
-Prompt electrons are electrons coming from the collision of the an event, 
+Prompt electrons are electrons coming from the 
+primary interaction of the event, 
 while non-prompt electrons may come from
 the semileptonic decays of heavy quarks or from photon conversion.
-Other objects such as hadrons can be mis-reconstructed as electron as well.
-It necessitates the identification of prompt electrons, making use of the 
-differences between prompt electrons and non-prompt electrons/mis-reconstructed electrons.
+Other objects such as hadrons can be 
+mis-reconstructed as electrons as well.
+This necessitates the identification of prompt electrons, 
+making use of the differences between prompt electrons 
+and non-prompt electrons/mis-reconstructed electrons.
 A multivariate likelihood technique, taking advantages of the correlations
 among the variables describing the differences,
 is employed to select prompt electrons~\cite{PERF-2017-01}.
-The input to the likelihood includes the differences of: 
+The input variables to the likelihood 
+describe the following characteristics: 
 a) shower shape, b) properties of the track, c) matching
 of the track and clusters.
-In addition, many analysis further require the electron to pass
-some \textit{isolation} requirements.
-Isolation is built exploiting a characteristic signature 
-of the prompt electrons that 
-there is relatively little activity surrounding 
-the prompt electrons, as compared to non-prompt electrons~\cite{EGAM-2018-01}. 
 
 To quantify the performance of the identification, 
-the identification efficiency is measure, which represents the probability of
-a prompt electron being reconstructed as an electron.
+the identification efficiency is measured, 
+which represents the probability of
+a true prompt electron passing the identification requirements.
 Different cuts are applied on the final discriminant
 to define \textit{working points} (WP), which can specify 
 the identification efficiency, as a function of $E_T$ or $\eta$ of the electron. 
-Three WPs, \textit{Loose}, \textit{Medium} and \textit{Tight} are defined, 
-each WP places a different requirement on final discriminant 
-made with a different set of variables. 
+Three WPs, \textit{Loose}, \textit{Medium} and \textit{Tight} are defined.
+Each WP is
+utilising a separate mulitvariate discriminant formed from 
+a different selection of discriminating variables, 
+and applying a different requirement on the resulting discriminant output.
+% places a different requirement on final discriminant 
+% made with a different set of variables. 
 An example of the electron identification efficiency 
 is shown in Figure~\ref{fig:electron_ID}.
 \begin{figure}[bht]
@@ -129,37 +140,52 @@ is shown in Figure~\ref{fig:electron_ID}.
     \includegraphics[width=0.45\textwidth]{Reconstruction/plots/electrond_ID1.png}
     \includegraphics[width=0.45\textwidth]{Reconstruction/plots/electrond_ID2.png}
     \caption{Measured electron identification efficiencies in $Z \rightarrow ee$
-    events for the `Loose' (blue circle), `Medium' (red square), 
-    and `Tight' (black triangle) WPs as a function of $E_T$ (left) and $\eta$ (right). 
+    events for the `Loose' (blue circles), `Medium' (red squares), 
+    and `Tight' (black triangles) WPs as a function of $E_T$ (left) and $\eta$ (right). 
     The vertical uncertainty bars (barely visible because they are small) 
-    represent the statistical (inner bars) and total (outer bars) uncertainties. 
+    represent the statistical (ID) and total (outer bars) uncertainties. 
     For both plots, the bottom panel shows the data-to-simulation
-    ratios. Reproduced from Reference~\cite{PERF-2017-01}.}
+    ratios. Reproduced from Ref.~\cite{PERF-2017-01}.}
     \label{fig:electron_ID}
     \end{centering}
 \end{figure}
-Similary for electron isolation, 
+
+In addition, many analyses further require the electron to pass
+some \textit{isolation} requirements.
+Isolation is built exploiting a characteristic signature 
+of the prompt electrons that 
+there is relatively little activity surrounding 
+the prompt electrons, as compared to non-prompt electrons~\cite{EGAM-2018-01}. 
+For the electron isolation, 
 four WPs: \textit{Gradient}, \textit{HighPtCaloOnly}, \textit{Loose} and \textit{Tight} 
 are defined, each targeting a fixed value of isolation efficiency
 or imposing fixed requirement on the isolation variables. 
 
 In the analysis presented in Chapter~\ref{sec:search for dihiggs} 
-the `Loose' identification WP is used, 
-with additional requirements on the electron \pt\ > 7 GeV and $|\eta|$ < 2.47;
-the electron candidates are also required
-to pass the ‘Loose’ isolation WP which has an efficiency of 99\%. 
+the `Loose' identification WP is used, which, in combination with 
+additional track hit requirements, provides an electron efficiency of 95\%.
+The electron candidates are also required to have \pt\ > 7 GeV and $|\eta|$ < 2.47.
+Further cuts are used to define signal electrons, as defined in 
+section~\ref{sec:DiHiggs:selection}. 
+% with additional requirements on the electron 
+In addition, the electron candidates are required
+to pass the `Loose' isolation WP which has an efficiency of 99\%. 
 The isolation requirement is also 
-inverted to provide control regions for estimating backgrounds.
+inverted to provide control regions for estimating backgrounds, 
+as described in section~\ref{sec:DiHiggs:lephadfake}.
 % , achieving 99\% efficiency 
 % that is constant across the entire \pt\ spectrum.
-In the calibration effort presented in Chapter~\ref{sec:FTAG} 
-the `Medium' identification WP is used, 
-with additional requirements on the electron \pt\ > 27 GeV and $|\eta|$ < 2.47;
-electrons are required to pass the `Gradient' isolation WP,
+In the FTAG calibration effort presented in Chapter~\ref{sec:FTAG} 
+the `Medium' identification WP is used, where the electron efficiency is roughly
+85\%, 
+with additional requirements on the electron \pt\ > 27 GeV and $|\eta|$ < 2.47
+(while unlike requirements in Chapter~\ref{sec:search for dihiggs},
+no further cuts are applied).
+Electrons are required to pass the `Gradient' isolation WP,
 designed to give an efficiency of 90\% at \pt\ = 25 GeV and 99\% at \pt\ = 60 GeV.
-The different requirements in the two chapters 
-is the result of different signal targeted and hence different 
-purity and phase space is needed. 
+% The different requirements in the two chapters 
+% is the result of different signal targeted and hence different 
+% purity and phase space is needed. 
 % The `Loose' WP features variables most useful for discrimination against light-flavour jets. 
 % In the `Medium' and `Tight' regimes, additional variables are added for further rejection 
 % of heavy-flavour jets and photon conversions. 
@@ -190,27 +216,38 @@ purity and phase space is needed.
 
 
 
-\section{Muon}
-\subsection{Reconstruction}
+\section{Muons}
 The characteristic behaviour of a muon in the detector is a particle
 ionising minimally. 
 The muon reconstruction is done taking advantage of this feature, 
-with information from the ID and MS tracking detectors, while
-information from the calorimeters is also used
-for determination of track parameters and to account for cases of
+with information from the ID and MS tracking detectors being combined, 
+while information from the calorimeters is also used
+% for determination of track parameters and  Question: it's the original sentence in the reference, is that true?
+to account for cases of
 large energy loss in the calorimeters, and for MS-independent
-tagging of ID tracks as muon candidates~\cite{CERN-EP-2020-199}.
+tagging of ID tracks as muon candidates in regions of limited MS
+coverage~\cite{CERN-EP-2020-199}.
+On the orther hand, 
+the muon identification is performed by applying 
+quality requirements that suppress background, 
+mainly from pion and kaon decays, that 
+% , while selecting prompt muons with high efficiency.
+muon candidates oftenly leave a distinctive “kink” topology 
+in the reconstructed track, and hence degrade the quality of the track. 
+
+
+\subsection{Reconstruction}
 The muon reconstruction consists of two steps. 
 The first step is to reconstruct the stand-alone track in the MS,
 followed by reconstruction with complete detector information.
-
 The first step of reconstruction starts with the identification 
 of short straight-line local track segments reconstructed 
 from hits in an individual MS \textit{stations} (layers). 
-These segments are then combined into preliminary track candidates, 
+At least two of these segments are then required
+to build preliminary track candidates, 
 with information from precision measurements in the bending plane 
 and measurements of the second coordinate from 
-the MS triggers to create three-dimensional track candidates. 
+the MS trigger detectors to create three-dimensional track candidates. 
 A global $\chi^2$ fit of the muon trajectory 
 through the magnetic field is performed,
 outlier hits are removed and hits along the trajectory that
@@ -229,9 +266,9 @@ types:
 are identified by matching 
 MS tracks to ID tracks and performing a combined track fit 
 based on the ID and MS hits, taking into account the energy loss in the
-calorimeters.
+calorimeters, in the region $|\eta|$ < 2.5.
 \item \textit{Inside out muons} 
-are reconstructed using a complementary
+are reconstructed in the region $|\eta|$ < 2.5 using a complementary
 inside-out algorithm, which extrapolates ID tracks to the MS
 and searches for at least three loosely-aligned MS hits. The
 ID track, the energy loss in the calorimeters and the MS hits
@@ -240,60 +277,50 @@ are then used in a combined track fit.
 % not rely on an independently reconstructed MS track, and
 % therefore recovers some efficiency.
 \item \textit{Muon-spectrometer extrapolated muons} are muons 
-when an MS track cannot be matched to an ID track. Its parameters 
-are extrapolated to the beamline and used to define an
+reconstructed when a MS track cannot be matched to an ID track. 
+Its parameters are extrapolated to the beamline and used to define an
 Muon-spectrometer extrapolated muon. 
 Such muons are used to extend the acceptance
-outside that of the ID, thus fully exploiting the full MS 
+outside that of the ID ($|\eta|$ <2.5), thus exploiting the full MS 
 coverage up to $|\eta|$ = 2.7.
 \item \textit{segment-tagged muons} 
 are identified by requiring that an ID track
 extrapolated to the MS satisfies tight angular matching
-requirements to at least one reconstructed MS segment. 
+requirements to at least one reconstructed MS segment, 
+in the $|\eta|$ < 2.5 region. 
 % A successfully-matched ID track is identified as a muon candidate, 
 % and the muon parameters are taken directly from the
 % ID track fit.
 \item \textit{calorimeter-tagged muons} 
 are identified by extrapolating ID
 tracks through the calorimeters to search for energy deposits
-consistent with a minimum-ionising particle.
+consistent with a minimum-ionising particle, in the region $|\eta|$ < 0.1.
 \end{itemize}
 \subsection{Identification}
-Muon identification is performed by applying quality requirements that suppress background, 
-mainly from pion and kaon decays, while selecting prompt muons with high efficiency.
-Muon candidates originating from in-flight decays of charged hadrons in the ID 
-are often characterized by the presence of a distinctive “kink” topology 
-in the reconstructed track. 
+
 As a consequence, it is expected that the fit quality of the resulting combined track 
 will be poor and that the momentum measured in the ID and MS may not be compatible~\cite{PERF-2015-10}. 
-Therefore, a set of requirements on the
+Therefore, a set of requirements are applied on the
 number of hits in the different ID subdetectors and different
 MS stations, on the track fit properties, 
 and on variables that test the compatibility of the individual measurements 
 in the two detector systems~\cite{CERN-EP-2020-199}.
-A set of WPs are defined for each of the munon types defined in the 
-previous section. 
+A given set of requirements for each of the muon types defined above
+is referred to as working point (WP).
 The main metrics considered for designing the WPs are 
 the selection efficiency and purity in simulation,
 where the prompt muon efficiency of a selection WP 
-represents the probability that a prompt muon traversing the detector 
+represents the probability that a real prompt muon traversing the detector 
 is reconstructed as a muon and satisfies the WP; the purity
 of a selection WP is one minus the hadron misidentification
 rate (the fraction of light hadrons reconstructed as muons 
 and satisfying the WP).
 Three standard selection WPs: \textit{Loose},
 \textit{Medium}, and \textit{Tight} are designed to 
-cover the majority of physics analysis, with 
-two additional WPs, \textit{High-\pt} and \textit{Low-\pt}
-are designed to accommodate the analysis targeting extreme 
+cover the majority of physics analysis, while
+two additional WPs, \textit{High-\pt} and \textit{Low-\pt},
+are designed to accommodate the analyses targeting extreme 
 phase space. 
-In Chapter~\ref{sec:search for dihiggs}, muons are selected
-with \pt\ > 7 GeV and $|\eta|$ < 2.7, and passing the `loose' 
-identification criteria as well as the `pflowLoose\_VarRadIso' 
-isolation criteria~\cite{MuonWP};
-while in Chapter~\ref{sec:FTAG} muons are selected
-with \pt\ > 27 GeV and $|\eta|$ < 2.5, and passing the `medium' 
-identification criteria as well as a track-based isolation criteria.
 An example of the reconstruction and isolation efficiency of muon is 
 shown in Figure~\ref{fig:muon_ID}.
 \begin{figure}[bht]
@@ -308,7 +335,21 @@ shown in Figure~\ref{fig:muon_ID}.
         The statistical uncertainty in the efficiency measurement is smaller than the size of the markers, 
         and thus not displayed. The panel at the bottom shows the ratio of the measured to predicted efficiencies, 
         with statistical and systematic uncertainties.
-    ratios. Reproduced from Reference~\cite{CERN-EP-2020-199}.}
+        Reproduced from Ref.~\cite{CERN-EP-2020-199}.}
     \label{fig:muon_ID}
     \end{centering}
 \end{figure}
+
+In Chapter~\ref{sec:search for dihiggs}, muons are selected
+with \pt\ > 7 GeV and $|\eta|$ < 2.7, and passing the `loose' 
+identification criteria with an efficiency of about 95\%, 
+as well as the `pflowLoose\_VarRadIso' 
+isolation criteria~\cite{MuonWP} with an efficiency of 
+roughly 97\%. 
+(further cuts are applied to define signal muons, 
+as defined in section~\ref{sec:DiHiggs:selection});
+while in Chapter~\ref{sec:FTAG} muons are selected
+with \pt\ > 27 GeV and $|\eta|$ < 2.5, and passing the `medium' 
+identification criteria as well as a track-based isolation criteria, 
+`TightTrackOnly' with an efficiency of around 94\%~\cite{CERN-EP-2020-199} 
+(with no further cuts applied).

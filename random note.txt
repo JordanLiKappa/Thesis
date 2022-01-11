@@ -1,0 +1,73 @@
+random note.txt
+
+Statement: 
+1.1 
+State motivation, reason for choosing the insitute
+
+Curiosity has always been my biggest motivation in studying physics. 
+Despite being the most successful and precise model, the Standard Model leaves 
+a few unanswered mysteries, such as the neutrino mass,
+and the orgin of Dark Matter (DM) etc. 
+These fundamental issues inspier my
+research and I believe the world-leading Uppsala group, 
+with its broad experimental particle physics
+program is the ideal place to carry out this research.
+Among the DM experiments in all different fields, 
+searches for DM particles in detectors
+are one of the most thriving.
+The idea of probing DM candidates in the LHC or the future FCC-ee via 
+long-lived particles has deeply attracted me, 
+and I am greatly interested in exploring
+the most secretive piece of the SM.
+With the ATLAS experiment and the potential FCC-ee, 
+I wish to join the current effort of searches 
+in the dark sector, study and take part in the future
+FCC-ee experiment, and explore open research possibilities. 
+
+2.1
+education
+I have acquired my MPhys. Degree at the University of Oxford in 2018. After that, 
+I started my particle physics Ph.D. research at the University of Liverpool. 
+In the crucial but yet-undiscovered Di-Higgs study, 
+I have played a key role in the searches 
+for the Di-Higgs production via the $b\bar{b}\tau^+\tau^-$ channel,   
+from which I have gained extensive experience dealing 
+with the Higgs boson, top quarks (which is the main background of the analysis), 
+$b$-jets and $\tau$ leptons. 
+I have also taken the major role in the Flavour Tagging calibration, 
+where the calibration results are used by all ATLAS analyses. 
+It equipped me with familiarity with the $b$-tagging algorithm and 
+more experience on dealing with $b$-jets and $c$-jets.
+I believe these experience will help me to 
+quickly get into the dark sector searches,
+as these particles are involved heavily in hunt for the 
+long-lived particles. 
+I have also aquired proficiencies in using the state-of-art multi-variate techniques
+when performing the Di-Higgs searches, where the 
+neural network is the discriminating tool for the non-resonant production, 
+and the use of parametric neural network enables
+fast and stable scan in the large range of resonant mass of the Di-Higgs production. 
+
+To summarise,
+I believe my characteristic will fit smoothly with the position, that
+my research experience provides me the skill sets
+for conducting the dark sector searches and my proficiencies in 
+multi-variate techniques will help to boost my efficiency. 
+ 
+
+
+
+2.2 
+reseach experience
+
+
+reco chapter, important comment from Carl:
+1. improve how the vertex part is described
+2. jet calibration: one step missing
+
+miscellaneous: define what is a hole (search for hole)
+
+dihiggs: 
+Before going on to the results, you may want to potentially 
+outline a bit the strategy i.e. 
+loose preselection, MVA, data-driven bkgs etc.

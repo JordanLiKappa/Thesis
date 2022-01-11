@@ -1,155 +1,274 @@
-\section{Data and Monte Carlo Simulation}
-\subsection{Data samples}
+\label{sec:DiHiggs:samples}
+
+
+
+\section{Simulation of physics processes TODO: move this to theory section }
+\label{sec:Simulation of physics processes}
+
+A precise and reliable theoretical prediction is the key
+to interpret and analyse the data recorded by the ATLAS experiment. 
+It enbales the quantification of agreement between the data and the SM, 
+and test of possible new physics beyond the SM. 
+In this thesis, the signal and background processes are
+simulated by Monte Carlo event generators.
+The full simulation process is comprised of a few consecutive steps:
+starting with the simulation of the hard-scattering process, 
+followed by the simulation 
+of the parton-showering and finally the simulation of 
+the interaction of the particles with the detector and the 
+response of the detector. 
+
+The hard-scattering process happens when two partons which carry
+a fraction of the protons collide inelasticly. 
+The partons can be valence quarks, which are the quarks or anti-quarks
+that determine the quantum numbers of the proton, or gluons 
+which mediate the strong force, or sea quarks which are virtual 
+quark-anti-quark pairs that are created and annihilated promptly. 
+The hard-scatter process is typically characterised by large momentum 
+transfer, 
+and the probability of a parton carrying a given fraction of the total proton
+momentum is described by the \textit{parton distribution function} (PDF).
+In the MC simulation, the hard-scattering process is modelled by the
+\textit{matrix element}, using leading order (LO) or next-to-leading oder (NLO)
+Feynman diagrams. It can also be simulated at next-to-next-to-leading order (NNLO)
+for better theoretical approximation. 
+
+After the hard-scattering process, the parton will undergo the
+showering process where it hadronises or radiates
+further partons.
+This process is simulated by dedicated algorithms. 
+The hadronisation process happens mostly in low-energy regime,
+which is non-perturbative and requires phenomenological modelling
+exploiting specific hadronisation models. 
+On the other hand, the radiation process happens at higher-energy, 
+and it stops when the parton loses enough energy to reach the
+confinement energy-scale.
+The hard-scattering and showering processes of partons are 
+described by the combination of the matrix element generator
+and the parton shower algorithms. 
+
+In addition to the hard-scattering and showering processes,
+interaction can occur prior or after them, as referred to 
+initial state radiation (ISR) or final state radiation (FSR).
+The energy scale of these additional processes are typically a
+few GeV, much smaller compared to the hard-scattering energy scale.
+The radiated gluons or photons, together with other particles originating from
+soft scattering interactions, are described as \textit{underlying event}.
+% and they are characterised by a uniformly distributed underlying
+% activity in the form of hadrons.
+
+In addition, pileup events, as described in section~\ref{sec:LHC:pileup},
+need to be simulated. 
+They are separate collisions and are simulated 
+separately from the hard-scattering
+event. However, in the reconstruction of the event, 
+they cannot be separated from the hard-scattering
+event, therefore they are later overlaid on the hard-scattering
+events.
+
+A variety of MC generator programs were developed. 
+Some of them are called multi-purpose generators and can
+simulate a full-event on their own,
+while some others are dedicated only to hard-scattering or
+parton shower and need to be used combining with other generators. 
+After simulation, 
+simulated events are passed to \textsc{Geant~4}~\cite{Geant4,SOFT-2010-01}, 
+a software package for simulating the interactions of particles with matter. 
+
+Finally, events generators require \textit{tuning} to match data. 
+The tuning parameters are based on phenomenological models and are
+applied on hadronisation simulation and underlying event. 
+
+\section{Data samples}
 \label{sec:DiHiggs:data}
 
-The data used in this search were collected at a centreof-mass energy
-of 13~TeV between 2015 and 2018, using triggers to 
-select events with at least one electron or one muon
-and at least one $\tau_\text{had-vis}$.
-% at least one lepton and one $\tau_\text{had-vis}$,
-% or at least two $\tau_\text{had-vis}$.
-Details about these triggers are discussed in Section~\ref{sec:DiHiggs:triggers}.
+The data used in this search were collected at a 
+centre-of-mass energy
+of 13~TeV between 2015 and 2018.
+For the FTAG calibration presented in Chapter~\ref{sec:FTAG}, 
+the data sample was collected using a set of 
+single-electron~\cite{TRIG-2018-05} and single-muon triggers~\cite{Aad:2020uyd}. 
+Requirements on \pt\ over a range of 24--300~\GeV\ is applied 
+to the single-electron triggers, with additional quality and 
+isolation requirements depending on the \pt\ threshold and the 
+data-taking period.
+While for the single-muon triggers,
+requirements on \pt\ over a range 20--26~\GeV\ are applied on the 
+isolated muons, and a tigher cut of 50~\GeV\ is applied for muons 
+without any isolation requirement. 
+
+For the $HH$ searches presented in Chapter~\ref{sec:search for dihiggs},
+single-lepton triggers and lepton-plus-\tauhad\ triggers are used. 
+Details about these triggers are discussed in Section~\ref{sec:DiHiggs:selection}.
+
 Events are selected for analysis only if they are of good quality and
-if all the relevant detector components are known to be in good operating conditions~\cite{DAPR-2018-01}.
+if all the relevant detector components are known to be in operating conditions~\cite{DAPR-2018-01}.
 The total integrated luminosity of the data, after meeting the good quality criteria,
-is $139.0 \pm 2.4$~fb$^{-1}$~\cite{DAPR-2013-01,ATLAS-Lumi2}.
+is $139.0 \pm 2.4$~fb$^{-1}$~\cite{ATLAS-CONF-2019-021,ATLAS-Lumi2}.
 The recorded events contain an average of 34 simultaneous inelastic $pp$ collisions per bunch-crossing.
 
-\subsection{Simulated event samples}
+
+\section{Simulated event samples}
 \label{sec:DiHiggs:simulation}
-Monte Carlo (MC) simulated events are used 
-to model the SM background production,
-the SM-like non-resonant $HH$ signal production, 
-and the BSM resonant $HH$ signal production.
-They are passed through the full ATLAS detector simulation~\cite{SOFT-2010-01}
-based on \textsc{Geant~4}~\cite{Agostinelli:2002hh}, 
-except for the BSM resonant $HH$ signal samples
-that are passed through a fast simulation, 
-for which the response of the calorimeters is parameterised
-rather than fully simulated.
-The effects of pileup are modelled by overlaying minimum bias events, 
-simulated using the soft quantum chromodynamics (QCD) processes
-of \textsc{Pythia~8.186}~\cite{Sjostrand:2007gs} with the A3~\cite{ATL-PHYS-PUB-2016-017}
-set of tuned parameters and \textsc{NNPDF2.3LO}~\cite{Ball:2012cx} parton distribution functions (PDFs).
-The \textsc{EvtGen~v1.6.0} program~\cite{Lange:2001uf}
-is used to describe the decays of bottom and charm hadrons
-for all samples of simulated events, except for those generated using
-\textsc{Sherpa}~\cite{Bothmann:2019yzt} and the VBF non-resonant $HH$ sample.
-The resulting events were then processed through 
-the same reconstruction programs as the data.
-%%% The Higgs boson mass was fixed to 125~GeV for all simulated samples that contain this particle.
-For all samples containing a SM Higgs boson, 
-its mass was fixed to 125 GeV.
-The same mass value is used for the calculation of the Higgs boson decay branching ratios
-and for the calculation of the single Higgs boson and SM non-resonant $HH$ production
-cross-sections.
-Unless specified, the order of the cross-section calculation
-refers to the expansion in the strong coupling constant ($\alpha_\text{s}$).
+As mentioned in section~\ref{sec:Simulation of physics processes},
+the signal and background processes are modelled by Monte Carlo simulation. 
+No signal sample is defined for the FTAG calibration. 
+The signal targeted in the 
+$HH$ searches
+includes the SM-like non-resonant $HH$ production 
+via ggF and VBF, 
+and the BSM resonant $HH$ production. 
+To simulate these processes, the full 
+ATLAS detector simulation~\cite{SOFT-2010-01} (FS)
+is applied, passing to the \textsc{Geant~4} package. 
+The only exception is the resonant signal samples, 
+where a fast simulation (AF2)~\cite{SOFT-2010-01} is used, 
+that instead of fully simulating the response of the calorimeters,
+it is replaced by pre-simulated shower to save computation time. 
+For unstable hadrons i.e.\ 
+$b$- and $c$-hadrons, the decay process is simulated 
+by the \textsc{EvtGen~v1.6.0} package\cite{Lange:2001uf},
+with the exception of the VBF non-resonant samples 
+and samples generated by \textsc{Sherpa}~\cite{Bothmann:2019yzt}.
+The resulting events were then
+processed through the same reconstruction programs as the data.
+To simulate the pileup effects, 
+minimum bias events are overlaid on the simulation, 
+exploting the \textsc{Pythia~8.186} generator~\cite{Sjostrand:2007gs}
+for soft QCD processes using the A3~tune~\cite{ATL-PHYS-PUB-2016-017}.
+The \textsc{NNPDF2.3LO}~\cite{Ball:2012cx} PDFs are used.
+In addition, the Higgs boson mass was fixed to 125~GeV 
+for all simulated samples that contain this particle.
+The mass of the Higgs boson is assumed to be 125~GeV 
+for all samples containing a SM Higgs boson.
+This value is also used for calculating the 
+single- and pair- production cross-sections 
+of the Higgs boson, as well as the decay branching ratio of
+the Higgs boson. 
+
 A summary of the event samples used for the simulation of the signal and background
 processes is shown in Table~\ref{tab:samples}.
+\begin{landscape}
 \input{DiHiggs/table_samples_1.tex}% Discuss moving to source with EB
-\subsubsection{Simulated signal samples}
-Simulated SM non-resonant $HH$ signal production includes the contributions
-from the ggF and VBF processes.
-%%The simulated ggF events were generated at next-to-leading order (NLO) with
-%%the \textsc{Powheg-Box~v2} generator~\cite{Alioli:2010xd} with full NLO corrections and with finite top-quark mass,
-%%and using the \textsc{PDF4LHC15}~\cite{Butterworth:2015oua} PDF set.
-The simulated ggF events were generated with the \textsc{Powheg-Box~v2} generator~\cite{Alioli:2010xd}
-at next-to-leading order (NLO) with finite top-quark mass,
-and using the \textsc{PDF4LHC15} NLO PDF set~\cite{Butterworth:2015oua}.
-Parton showers and hadronisation were simulated using \textsc{Pythia~8.244}~\cite{Sjostrand:2007gs}
-with the A14 set of tuned parameters~\cite{ATL-PHYS-PUB-2014-021,ATLAS:2012uec} and the \textsc{NNPDF2.3LO} PDF set.
-%%The mass of the Higgs boson was fixed at 125~GeV for this simulated signal sample and other
-%%samples used in the analyses reported here.
-%%%%%%
-%The cross-section of the ggF non-resonant $HH$ production,
-%calculated at next-to-next-to-leading order (NNLO) FTApprox~\cite{Grazzini:2018bsd},
-%is $31.1^{+2.2\%}_{-5.0\%}\text{(scale)}\pm 2.1\%(\alpha_\text{S})\pm 2.1\%\text{(PDF)}\pm 2.6\%(\text{m}_\text{top})$ fb
-%at $\sqrt{s}=13$ TeV and $\text{m}_{H}=125$ GeV.
-The cross-section of the ggF non-resonant $HH$ production 
-calculated at next-to-next-to-leading order (NNLO) FTApprox~\cite{Grazzini:2018bsd} 
-(taking account of the finite top-quark mass) is
-$31.1^{+2.2\%}_{-5.0\%}\text{(scale)}\pm 2.1\%(\alpha_\text{S})\pm 2.1\%\text{(PDF)}\pm 2.6\%(\text{m}_\text{top})$ fb
-at $\sqrt{s}=13$ TeV and $\text{m}_{H}=125$ GeV.
+\end{landscape}
+\subsection{Simulated signal samples}
 
-% The normalisation of this process in the analysis is set to the production cross-section 
-% times the $bb\tau\tau$ BR, 
-% $\sigma_{ggF} \times BR (bb \tau\tau)  = \SI{31.05}{fb} \times 0.0730562561  =  \SI{2.2683967}{fb}$.  
-The VBF non-resonant $HH$ signal production was generated at LO using the
-\textsc{MadGraph}5\_aMC@NLO v2.7.3~\cite{Alwall:2014hca} generator with the 
-\textsc{NNPDF3.0NLO}~\cite{Ball:2014uwa} PDF set.
-Parton showering and hadronisation were performed using \textsc{Pythia~8.244} with the
-A14 set of tuned parameters and the \textsc{NNPDF2.3LO} PDF set.
-The \textsc{EvtGen} v1.7.0 program was used for describing the bottom- and charm-hadron decays.
-%%The cross-section of the VBF non-resonant $HH$ production,
-%%calculated at next-to-next-to-next-to-leading order (N3LO) in QCD~\cite{Dreyer:2018qbw}
-%%in the limit in which there is no partonic exchange between the two protons,
-%%is $1.73^{+0.03\%}_{-0.04\%}\text{(scale)}\pm 2.1\%(\text{PDF}+\alpha_\text{S})$ fb
-%%at $\sqrt{s}=13$ TeV and $\text{m}_{H}=125$ GeV.
+In the $HH$ searches, contributions from both the ggF and VBF to the 
+SM non-resonant $HH$ signal production are included, 
+each simulated with different generators and PDFs.
+The expansion order of Feynman diagrams are also different. 
+While for the resonant $HH$ signal, only the ggF contribution 
+is considered.
+It was simulated for 20 values of the resonance mass, $m_{X}$,
+between 251~GeV and 1600~GeV
+(251, 260, 280, 300, 325, 350, 375,
+ 400, 450, 500, 550, 600, 700, 800, 
+ 900, 1000, 1100, 1200, 1400 and 1600).
+
+The ggF events were generated with 
+the \textsc{Powheg-Box~v2} generator~\cite{Alioli:2010xd}
+at next-to-leading order (NLO) with finite top-quark mass,
+using the \textsc{PDF4LHC15} NLO PDF set~\cite{Butterworth:2015oua}.
+Parton showers and hadronisation were interfaced to 
+\textsc{Pythia~8.244}~\cite{Sjostrand:2007gs}
+with the A14 set of tuned parameters~\cite{ATL-PHYS-PUB-2014-021,ATLAS:2012uec} 
+and the \textsc{NNPDF2.3LO} PDF set.
+
+
+TODO: move this paragraph to theory 
+The cross-section of the ggF non-resonant $HH$ production is
+calculated at next-to-next-to-leading order (NNLO) FTApprox~\cite{Grazzini:2018bsd},
+taking into account the finite top-quark mass assumption. The cross-section is \linebreak
+\mbox{$31.05^{+2.2\%}_{-5.0\%}\text{(scale)}\pm 2.1\%(\alpha_\text{S})\pm 2.1\%\text{(PDF)}\pm 2.6\%(\text{m}_\text{top})$ fb}
+at $\sqrt{s}=13$ TeV and $\text{m}_{H}=125$ GeV~\cite{dihiggs-twiki}.
+The scale uncertainty is due to 
+the finite order of quantum chromodynamics (QCD) calculations,
+the $\alpha_\text{s}$ and PDF terms 
+account for the uncertainties on the strong coupling constant 
+and parton distribution functions respectively, and the 
+$m_\text{top}$ uncertainty is related to the top-quark mass scheme.
+The normalisation of this process is set to the production cross-section 
+times the \bbtautau\ branching ratio (BR), \linebreak
+\mbox{$\sigma_{ggF} \times BR_{\bbtautau}  = \SI{31.05}{fb} \times 0.0730  =  \SI{2.268}{fb}$}.  
+
+
+On the other hand, the VBF events generated using the
+\textsc{MadGraph}5\_aMC@NLO v2.7.3~\cite{Alwall:2014hca} generator at LO 
+with the \textsc{NNPDF3.0NLO}~\cite{Ball:2014uwa} PDF set.
+Parton showering and hadronisation were simulated using \textsc{Pythia~8.244}
+with the A14 tune and the \textsc{NNPDF2.3LO} PDF set.
+To simulate the decays of the $b$- and $c$-hadrons,
+the \textsc{EvtGen} v1.7.0 program was used.
+
+TODO: move this paragraph to theory
 The cross-section of the VBF non-resonant $HH$ production calculated at
 next-to-next-to-next-to-leading order (N3LO) in QCD in the limit 
 in which there is no partonic exchange between the two protons~\cite{Dreyer:2018qbw} is
-$1.73^{+0.03\%}_{-0.04\%}\text{(scale)}\pm 2.1\%(\text{PDF}+\alpha_\text{S})$ fb.
-% This process is normalised to the SM VBF HH cross section, 
-% $\sigma_{VBF}=\SI{1.726}{fb}$ calculated at N3LO QCD~\cite{Dreyer_2018}, 
-% times the $bb\tau\tau$ BR, $\sigma_{VBF} \times BR (bb \tau\tau)  = \SI{1.726}{fb} \times 0.0730562561  =  \SI{0.126095098}{fb}$.  
+$1.726^{+0.03\%}_{-0.04\%}\text{(scale)}\pm 2.1\%(\text{PDF}+\alpha_\text{S})$ fb~\cite{dihiggs-twiki}.
+This process is normalised to the cross-section times the \bbtautau\ branching ratio, \linebreak[2]
+\mbox{$\sigma_{VBF} \times BR_{\bbtautau}  = \SI{1.726}{fb} \times 0.07306  =  \SI{0.1261}{fb}$.}  
 Other non-resonant $HH$ production modes are not considered as their contributions
 to the analysis sensitivity are expected to be negligible.
 
-The BSM resonant $HH$ signal from the ggF production of a heavy spin-0 resonance
-and its decay into a pair of SM Higgs bosons, $X \rightarrow HH$, was simulated with the 
-\textsc{MadGraph}5\_aMC@NLO v2.6.1 generator using the \textsc{NNPDF2.3LO} PDF
-set at LO accuracy in QCD.
-%%%in the extended Higgs sector of 2HDM.
-The simulated events were interfaced to \textsc{Herwig~7.1.3}~\cite{Bahr:2008pv,Bellm:2015jjp}
-to model the parton shower, hadronisation and underlying event, 
+
+
+Finally, the resonant signal  
+of a heavy spin-0 narrow width resonance via ggF production 
+was simulated with the \textsc{MadGraph}5\_aMC@NLO v2.6.1 
+generator using the \textsc{NNPDF2.3LO} PDF
+set at LO.
+The parton shower and hadronisation were simulated to
+\textsc{Herwig~7.1.3}~\cite{Bahr:2008pv,Bellm:2015jjp},
 using the H7.1-Default tune~\cite{Gieseke:2012ft}
 and the \textsc{NNPDF2.3LO} PDF set.
-The resonant $HH$ signal was simulated for 19 values of the resonance mass, $m_{X}$,
-between 251~GeV and 1.6~TeV.
-% The width of the heavy scalar $X$ was fixed to 10~MeV.
-% The normalisation of these resonant signal samples in the analysis is set to 
-% $\sigma \times BR  = \SI{1}{pb} \times BR (bb \tau \tau)  =  0.073056256 \SI{1}{pb}$. 
-A dummy cross section of 1 pb is chosen for these samples 
+
+
+TODO:move this paragraph to theory
+The normalisation of these resonant signal samples in the analysis is set to \linebreak[2]
+\mbox{$\sigma \times BR  = \SI{1}{pb} \times BR (bb \tau \tau)  =  0.07306 \SI{1}{pb}$.} 
+A dummy cross-section of 1 pb is chosen for these samples 
 to make combination with other decay channels easier, 
 and to ease scaling of the signal 
-for the calculation of the cross section limits 
+for the calculation of the cross-section limits 
 (more details in Section \ref{sec:DiHiggs:results}).
-% (with a cross section of 1 pb the limit on the POI, that is mu,
-% is directly giving the limit on the cross section in pb). 
-% Cross sections of 1 pb have already been excluded by the 36 \ifb\ HH combination over the full scanned mass range~\cite{HDBS-2018-58}.
-%%The ATLAS fast detector simulation (REF), which relies on a parameterized response of the calorimeters,
-%%was used to produced these signal samples.
-%%% The cross-section of the BSM resonant $HH$ production is calculated at LO.
-\paragraph{Non-resonant signal reweighting and combination}
-The non-resonant signal is sensitive to the parameter $\kl$ 
+
+\subsection{Non-resonant signal reweighting and combination}
+In the BSM scenarios, the non-resonant di-Higgs production is sensitive 
+to the self-coupling constant and other possible anomalous coupling,
 as described in section~\ref{sec:Theory:kl} 
 (TODO: ref back to theory section about klambda dependence).
+In this thesis, a reweighting method is used to evaluate
+the non-resonant di-Higgs production with a range of possible 
+values of self-coupling modifier, $k_\lambda$, and 7 benchmark models (BM)
+of a set of five HEFT couplings. 
 % represents the deviation of the Higgs boson self-coupling from the SM expected value. 
 % The non-resonant $HH$ signal samples are generated for 
 % only a limited number of $\kappa_\lambda$ points due to heavy computational cost. 
+\paragraph{$k_\lambda$ Reweighting}
 For the \ggH non-resonant $HH$ production, MC samples are generated at \kl=1 and 10, 
 while for \VBFH production, 
 MC samples are generated at \kl=0, 1, 2 and 10. 
 A sample combination technique is used to model the signal hypothesis at different \kl values.
 For the \ggH di-Higgs production, 
-a reweighting method described in ~\cite{ATL-PHYS-PUB-2019-007} 
+a reweighting method described in Ref.~\cite{ATL-PHYS-PUB-2019-007} 
 is used to obtain predictions at different $\kl$ values 
 in the range $\kl \in \left[-30, 30 \right] $ 
 in increments of 0.2 based on a linear combination of 
 % truth level  %% how to define truth level? 
-samples at $\kl=0, 1$ and 20. 
+generator samples at $\kl=0, 1$ and 20. 
 The remaining $\kl = 10$ sample is used to validate the method.
 %  at truth level. 
 For each \kl value, a set of weights $w(m_{HH},\kl)$ is evaluated 
-by dividing the binned $m_{HH}$ distribution of the \kl target sample over the SM distribution. 
-Therefore, weights for any \kl sample can be obtained and they can be used to reweight the SM sample to any \kl value. 
-Then a reweighted distribution at analysis level results from 
-applying the weights to the SM sample after reconstruction and the selection steps. 
-Given the assumption that the kinematic of the \ggH events and their acceptance depend only on $m_{HH}$ variable, 
+by dividing the binned $m_{HH}$ distribution of the \kl target sample 
+by the SM distribution. 
+They can be used to reweight the SM non-resonant sample to any \kl value,
+which is performed at analysis level--after reconstruction and the selection steps
+defined in section~\ref{sec:DiHiggs:selection}. 
+Given the assumption that the kinematic of the \ggH events 
+and their acceptance depend only on $m_{HH}$ variable, 
 using the weights $w(m_{HH},\kl)$ the reweighted sample describes correctly any kinematic distribution of a given target \kl value. 
 Good closure is found between the distributions obtained from \kl generated and reweighted, 
-as shown in section~\ref{sec:DiHiggs:systemmatics}.
+as shown in section~\ref{sec:DiHiggs:systemmatics} TODO: add reference to systematics section.
 % To evaluate the sensitivity of the analyses to \kl, 
 % the SM \ggH sample is processed through the analyses and then it is reweighted to different values of \kl. 
 % The \bbyy analysis considers only the signal yield variation 
@@ -158,140 +277,194 @@ as shown in section~\ref{sec:DiHiggs:systemmatics}.
 % the MVA output shape changes due to the modification of \kl in addition to the signal yield variation. 
 
 For the \VBFH di-Higgs production, the above reweighting procedure is not valid, 
-because the kinematic of the events can not be defined just using a single variable such as $m_{HH}$. 
-Therefore three MC samples with $\kl = 1,2,10$ are used, 
-the events distributions and the multivariate algorithm output 
+because the kinematic of the events can not be defined 
+just using a single variable such as $m_{HH}$. 
+Instead, three fully-reconstructed MC samples with $\kl = 1,2,10$ are used.
+The event distributions and the multivariate algorithm output 
 (more details in section~\ref{sec:DiHiggs:MVA}) 
 for any \kl value are obtained from the linear combination 
-of the events distribution and the multivariate output 
+of the corresponding distributions 
 of the three samples at analysis level. 
-The linear coefficients for combining the three samples defined are defined by the formula 
-(which is also valid to evaluate the VBF cross-section as a function of \kl where all the other couplings are set to SM value):
-%  \begin{equation}
-%     \label{eqn:vbf-linear-comb}
-%     % \begin{split}
-%         \sigma (\kl) =\left(\frac{\kl^{2}}{9} - \frac{4\kl}{3} + \frac{20}{9} \right) \times \sigma (1) + \left(-\frac{\kl^{2}}{8} + \frac{11\kl}{8} - \frac{5}{4} \right) \times \sigma (2) + \left(\frac{\kl^{2}}{72} - \frac{\kl}{24} + \frac{1}{36} \right) \times \sigma (10) 
-%     % \end{split}
-%     \end{equation} 
-% %  More discussion on $\kappa_\lambda$ parameterisation is available in Appendix \ref{app:kl_reweighting}.
-
+As defined in section~TODO: ref back to theory chapter,
+the full cross-section for the VBF $HH$ production involves 
+three diagrams, and expanding the absolute squared of
+the amplitude yileds six terms:
+\[
+\sigma = \kappa^2_V \kappa^2_\lambda a_1 + \kappa_V^4 a_2
++ \kappa_{2V}^2 a_3 + \kappa_V^3 \kappa_\lambda a_4
++ \kappa_V\kappa_\lambda\kappa_{2V} a_5 
++ \kappa_V^2 \kappa_{2V}a_6 . \]
+In the case of \kl scan, this formula is reduced to 
+\[
+\sigma = \kappa^2_\lambda a_1 + \kappa_\lambda a_2 + a_3 .
+\]
+Using the basis of 
+$\kl = 1,2,10$,
+the linear coefficients for combining the 
+three samples defined are then given by:
 \begin{eqnarray*}
     \sigma (\kl) =\left(\frac{\kl^{2}}{9} - \frac{4\kl}{3} + \frac{20}{9} \right) \times \sigma (1) + \left(-\frac{\kl^{2}}{8} + \frac{11\kl}{8} - \frac{5}{4} \right) \times \sigma (2)
 \end{eqnarray*}
-% \begin{eqnarray*}
-    
-% \end{eqnarray*}
 \begin{eqnarray}
       + \left(\frac{\kl^{2}}{72} - \frac{\kl}{24} + \frac{1}{36} \right) \times \sigma (10) 
     \label{eqn:vbf-linear-comb}
 \end{eqnarray}
-%  ggF and VBF kl production
-%  The non-resonant di-Higgs production via ggF process was simulated with full next-to-leading order (NLO) corrections and finite top mass effect for $\kappa_\lambda=1$ and 10 using the \POWHEGBOXV{v2} generator~\cite{Nason:2004rx,Frixione:2007vw, Alioli:2010xd, Campbell:2014kua} and the PDF4LHC15\_nlo\_30\_pdfas~\cite{Butterworth:2015oua} parton distribution function (PDF) set.
-%  Parton showers and hadronization were simulated with \PYTHIAV{8.244}~\cite{Sjostrand:2014zea} using NNPDF23LO with the A14 tune. In addition, in order to evaluate the systematic uncertainties related to parton showers, alternative samples showered with \HERWIGV{v7.1.03}, using the H7.1-Default tune for underlying events and the H7-MMHT2014LO (68cl) tune for parton shower and hadronization, are also generated for the SM and $\kappa_\lambda=10$ case.
  
-%  The non-resonant di-Higgs production via the VBF process was simulated at leading-order (LO) for $\kappa_\lambda=0, 1, 2$ and 10 using \MGMCatNLOV{2.6.0}~\cite{Alwall:2014hca} with the NNPDF~2.3~LO~\cite{Ball:2014uwa} PDF set. 
-%  % The VBF samples have been produced for the various coupling values shown in Table~\ref{tab:vbf-coupling-samples}.
-%  The values of $\kappa_\lambda, \kappa_{2V}$, and $\kappa_V$ are all 1 in the SM.
-%  Parton showers and hadronization were simulated with \PYTHIAV{8.244} using NNPDF23LO with the A14 tune. Alternative samples showered with \HERWIGV{v7} are also generated for $\kappa_\lambda=1$ and 10 for estimation of systematic uncertainties related to parton showers.
- 
- 
-\subsubsection{Simulated background samples}
+\paragraph{HEFT Benchmarks reweighting}
+The reweighting is only applied to the ggF non-resonant production. 
+A similar approach is used: for each BM, a set of weights $w(m_{HH},BM)$ is evaluated 
+by dividing the binned $m_{HH}$ distribution of the BM sample by the SM distribution;
+these weights can then be used to 
+reweight the SM non-resonant sample to any BM signals as 
+defined in section~TODO: ref back to theory chapter. 
+
+TODO: move this paragraph and table to theory
+The assumed coulpings values and the corresponding cross-sections
+of these BMs are shown in Table~\ref{tab:HEFT values}.
+These BM points are defined to represent the different possible characteristic shapes
+in $m_{HH}$ distribution, as described in Ref.~\cite{HEFT-BM}.
+\begin{table}[tb!]
+    \begin{center}{\large    
+    \resizebox{0.6\textwidth}{!}{\begin{tabular}{llllllll}
+    \toprule
+    Benchmark & $c_t$ & $c_{hhh}$ &  $c_{tt}$ & $c_{ggh}$ & $c_{gghh}$ & Cross-sections (fb)\\
+    \midrule
+    SM  &  1  & 1 & 0 & 0 & 0 & 31.05  \\ 
+    BM1 &  0.94 &3.94 &-1/3 &0.5 &1/3 &181.40 \\
+    BM2 &  0.61 &6.84 &1/3 &0.0 &-1/3 &135.24 \\
+    BM3 &  1.05 &2.21 &-1/3 &0.5 &0.5 &108.90 \\
+    BM4 &  0.61 &2.79 &1/3 &-0.5 &1/6 &50.45 \\
+    BM5 &  1.17 &3.95 &-1/3 &1/6 &-0.5 &117.04 \\
+    BM6 &  0.83 &5.68 &1/3 &-0.5 &1/3 &144.91 \\
+    BM7 &  0.94 &-0.10 &1 &1/6 &-1/6 &97.96 \\
+    \midrule
+    \bottomrule
+    \end{tabular}}}
+    \end{center}
+    \caption
+    {The proposed coupling values and the corresponding cross-sections of each BMs. 
+    The physical meaning of each coupling is described in section~\ref{sec:Theory} TODO: add reference to theory section.
+    \label{tab:HEFT values}}
+    \end{table}
+    
+
+
+\subsection{Simulated background samples}
+\label{sec:MC samples}
+The major background processes for the 
+$HH$ searches are the \ttbar, single-top, 
+boson produced in association with jets and jets faking a 
+\tauhad\ (more details in section~\ref{sec:DiHiggs:lephadfake}). 
+Minor background processes include the Drell-Yan processes, 
+processes with dibon final states and single-Higgs processes.
+These background processes, except for the jets faking a 
+\tauhad\ background, are modelled by the full ATLAS 
+detector simulation. 
+For the FTAG calibration, the events used for calibration
+mostly originate from the \ttbar\ processes. Other minor 
+background includes the single-top, diboson,  
+production of \ttbar\ in association with a boson 
+and boson produced in association with jets. 
+Likewise, all processes are passed through the 
+full simulation. The generators, PDFs,
+expansion order and tune used in the $HH$ searches
+and the FTAG calibration for the samples in common 
+are in general identical, unless specified. 
+
 The $t\bar{t}$ production and the single top-quark events 
 in the $Wt$-, $s$- and $t$-channels
-were generated using the \textsc{Powheg-Box v2} generator 
-together with the \textsc{NNPDF3.0NLO} PDF set.
-The simulated events were interfaced to \textsc{Pythia~8.230} 
-for parton shower and hadronisation
-using the A14 set of tuned parameters 
-together with the \textsc{NNPDF2.3LO} PDF set.
-For all these simulated top-quark processes, 
-the top-quark spin correlations are preserved.
-The top-quark mass was set to 172.5~GeV.
-%%%The $t\bar{t}$ production cross-section is corrected to the theory prediction calculated
-%%%at next-to-next-leading order and next-to-next-to-leading-logarithm (NNLO+NNLL)~\cite{Czakon:2011xx}.
-The $t\bar{t}$ production cross-section is calculated
+were simulated by the \textsc{Powheg-Box v2} generator~
+\cite{Frixione:2007nw,Nason:2004rx,Frixione:2007vw,Alioli:2010xd}
+together with the \textsc{NNPDF3.0NLO} PDF set~\cite{Ball:2014uwa}.
+The showering, hadronisation and underlying event 
+are modeled by \textsc{Pythia~8.230},
+with parameters set according to the A14 tune~\cite{ATL-PHYS-PUB-2017-007}
+and using the \textsc{NNPDF2.3LO} PDF set.
+The top-quark mass was set to 172.5~GeV,
+with top-quark spin correlations preserved.
+To achieve the better accuracy, 
+the $t\bar{t}$ production cross-section is calculated
 at next-to-next-to-leading order 
 and next-to-next-to-leading-logarithm 
 (NNLO+NNLL)~\cite{Czakon:2011xx}.
-%%The cross-sections of the single top-quark processes are corrected to the theory prediction
-%%calculated at NLO~\cite{stop_sch_Xsec,stop_tch_Xsec,stop_Wt_Xsec}.
-The cross-sections of the single top-quark processes are calculated at
+While for the single-top process, 
+the cross-sections of are calculated at
 NLO~\cite{stop_sch_Xsec,stop_tch_Xsec,Kidonakis:2010ux}.
-The $t\bar{t}$-$Wt$ interference is handled using the diagram removal scheme.
+The $t\bar{t}$-$Wt$ interference is removed
+using the diagram removal scheme~\cite{Frixione:2008yi}
+(more details in Section~\ref{} TODO: add reference to the systematics for singletop ).
 
-%% Production of a $Z$ ($W$)~boson in association with a $t\bar t$ pair was modelled using \textsc{Sherpa}~2.2.1~(2.2.8)~\cite{sherpa}, with the NNPDF3.0NNLO PDF set and a dedicated parton shower tuning developed by the \textsc{Sherpa} authors.
+The production of bosons in association with jets 
+($W/Z$+jets) are simulated by 
+\textsc{Sherpa}~2.2.1 generator~\cite{Bothmann:2019yzt}
+using the NNPDF3.0NNLO~\cite{Ball:2014uwa} PDF set.
+The tuning used for parton shower is developed by the 
+\textsc{Sherpa} authors. 
+The matrix elements are simulated for up to two partons at
+NLO and up to four partons at LO, calculated with the 
+\textsc{Comix}~\cite{Gleisberg:2008fv} and 
+\textsc{OpenLoops}~\cite{Cascioli:2011va} libraries.
+The samples are normalised to NNLO prediction~\cite{Anastasiou:2003ds}.
 
-Events containing $W$ or $Z$ bosons produced in association with jets,
-diboson ($WW$, $WZ$ and $ZZ$) production processes, 
-and $t\bar tZ$ ($t\bar tW$)
-processes were simulated with the 
-\textsc{Sherpa}~2.2.1~(2.2.8) generator~\cite{Bothmann:2019yzt} 
-using the 
-NNPDF3.0NNLO~\cite{Ball:2014uwa} PDF set
-with dedicated parton shower tuning developed by the \textsc{Sherpa} authors.
-For simulating the $W$/$Z+$jets events 
-the matrix elements were calculated
-for up to two partons at NLO and four partons at LO using the 
-\textsc{OpenLoops}~\cite{Cascioli:2011va}
-and \textsc{Comix}~\cite{Gleisberg:2008fv} matrix-element generators.
-The number of expected $W$/$Z+$jets events 
-is normalised to the NNLO cross-sections~\cite{Catani:2009sm}.
-The diboson production was simulated 
-up to one additional parton at NLO and up to three additional
-partons at LO using the 
-\textsc{OpenLoops} and \textsc{Comix} programs.
-The cross-sections from \textsc{Sherpa} at NLO 
-are used to normalise the diboson
-and the $t\bar tW/Z$ events.
-%%Events containing $W$ or $Z$ bosons with jets were simulated with
-%%\textsc{Sherpa} 2.2.1 generator~\cite{Bothmann:2019yzt} using the NNPDF3.0NNLO PDF set
-%%with dedicated parton shower tuning developed by the \textsc{Sherpa} authors.
-%%The number of expected $W$/$Z+$jets events is rescaled using the NNLO cross-sections~\cite{Catani:2009sm}.
+Similar settings apply to the diboson ($WW$, $WZ$ and $ZZ$) events.
+\textsc{Sherpa}~2.2.1 generator is used to simulate these processes
+for the $HH$ searches, while \textsc{Sherpa}~2.2.1 and \textsc{Sherpa}~2.2.2
+are used for the FTAG calibration depending on the process.
+For both the $HH$ searches and FTAG calirabtion, 
+diboson samples are simulated using
+matrix elements at NLO accuracy in QCD for up to one additional parton
+and at LO accuracy for up to three additional parton emissions.
+The cross-section is calculated at NLO accuracy, while
+the rest of the settings remains the same as the ones for the boson+jets background.
 
-%%Diboson $WW$, $WZ$ and $ZZ$ processes were generated using \textsc{Sherpa} 2.2.1 generator,
-%%which calculates up to one additional parton at NLO and up to three additional partons at LO.
-%%NNPDF3.0NNLO PDF set was used together with dedicated parton shower in \textsc{Sherpa}.
-%%The cross-sections from \textsc{Sherpa} at NLO are used to normalize the events.
+In addition, the events where
+a vector boson is produced in association with \ttbar\
+($t\bar tZ$ and $t\bar tW$) are generated differently
+between the $HH$ searches and the FTAG calibration.
+In the former,
+\textsc{Sherpa}~2.2.1 (2.2.8) is used to simulate the
+$t\bar tZ$ ($t\bar tW$) production at NLO.
+The cross-sections are calculated at NLO accuracy and 
+the rest remains the same as the settings for the boson+jets. 
+While for the FTAG calibration,
+the $t\bar tZ$ and $t\bar tW$ events are modelled using the
+\mgamc~v2.3.3~\cite{Alwall:2014hca} generator at NLO with the
+\nnpdfnlo~\cite{Ball:2014uwa} parton distribution function~(PDF).
+The events are interfaced to \pythia.210~\cite{Sjostrand:2014zea}~
+using the A14 tune~\cite{ATL-PHYS-PUB-2014-021} and the
+\nnpdftwo~\cite{Ball:2014uwa} PDF set. The decays of bottom and charm
+hadrons are simulated using the \evtgen\ v1.2.0 program~\cite{Lange:2001uf}.
 
-The SM single Higgs boson production 
-is considered as part of
-the background in this search, 
-and its production modes were simulated using the
-\textsc{Powheg-Box~v2} generator and the 
-\textsc{NNPDF3.0NLO} PDF set.
-%%The simulated events of the single Higgs boson production, in various processes,
-%%were generated using \textsc{Powheg-Box v2} generator and NNPDF3.0NNLO PDF set.
-%The single Higgs boson production from the gluon--gluon fusion process and vector-boson-fusion process,
-%with the Higgs boson decaying into a pair of $\tau$ leptons were also simulated using
-%\textsc{Powheg-Box v2} generator and NNPDF3.0NNLO PDF set.
-The single Higgs boson production via ggF was simulated at 
-NNLO accuracy in QCD using the
-Powheg NNLOPS program~\cite{Hamilton:2013fea,Hamilton:2015nsa},
-whereas the VBF single Higgs boson production was simulated at 
-NLO accuracy in QCD~\cite{Nason:2009ai}.
-Both productions were interfaced to \textsc{Pythia~8.212} 
-for parton shower and hadronisation
-using the 
-AZNLO tune~\cite{AZNLOtune} together with the 
-\textsc{CTEQ6L1} PDF set~\cite{CTEQ6L1}.
-%%%
-%%%The cross-section of ggF production of single Higgs boson is done at
-%%%N3LO accuracy in QCD and NLO in electroweak (EW) calculations~\cite{deFlorian:2016spz},
-The cross-section of ggF production of single Higgs boson 
-is based on a computation with
-N3LO accuracy in QCD, and 
-NLO in the electroweak (EW)
-expansion~\cite{deFlorian:2016spz,Anastasiou:2016cez,Anastasiou:2015ema,Dulat:2018rbf,Actis:2008ug},
-whereas the 
-VBF single Higgs boson production cross-section 
-is set to the NNLO(QCD)+NLO(EW)
-calculation~\cite{deFlorian:2016spz,Ciccolini:2007jr,Ciccolini:2007ec,Bolzoni:2010xr}.
-%%%
-%Simulated events for $qq \rightarrow WH$, $qq \rightarrow ZH$ and $gg \rightarrow ZH$
-%were generated using \textsc{Powheg-Box v2} generator and NNPDF3.0NNLO PDF set.
-%The events were interfaced to \textsc{Pythia 8.212} for parton shower
-%and hadronisation using the AZNLO tune~\cite{AZNLOtune} together with the
-%\textsc{CTEQ6L1} PDF set~\cite{CTEQ6L1}.
+
+In the $HH$ searches presented in this thesis, 
+the SM single Higgs boson production 
+is considered as part of the background.
+It has played a non-negligible role as a background 
+to the analysis, especially in the non-resonant search.
+This due to the similar kinematics between the 
+single- and double- Higgs production.
+The simulated events of the single Higgs boson production, 
+in various processes, were generated using 
+\textsc{Powheg-Box v2} generator and NNPDF3.0NNLO PDF set.
+
+
+The ggF single Higgs production is interfaced to the 
+Powheg NNLOPS program~\cite{Hamilton:2013fea,Hamilton:2015nsa}
+at NNLO accuracy. 
+The cross-section is calculated at Next-to-Next-to-Next-to-Leading
+order (N3LO) for the QCD processes and NLO for the electroweak expansion
+~\cite{deFlorian:2016spz,Anastasiou:2016cez,Anastasiou:2015ema,Dulat:2018rbf,Actis:2008ug}.
+On the other hand, 
+the VBF single Higgs production events are 
+interfaced to \textsc{Pythia~8.212} using the 
+\textsc{CTEQ6L1} PDF set~\cite{CTEQ6L1},
+together with the AZNLO tune~\cite{AZNLOtune}.
+The cross-section of the VBF process is 
+calculated at NNLO for QCD processes and 
+NLO for electroweak expansion
+~\cite{deFlorian:2016spz,Ciccolini:2007jr,Ciccolini:2007ec,Bolzoni:2010xr}.
+
+
 The $qq \rightarrow WH$, $qq \rightarrow ZH$ and $gg \rightarrow ZH$ simulated events
 were interfaced to \textsc{Pythia~8.212} for parton shower
 and hadronisation using the AZNLO tune together with the
@@ -301,17 +474,29 @@ $qq \rightarrow WH$ and
 $qq \rightarrow ZH$~\cite{Ciccolini:2003jy,Brein:2003wg,Ferrera:2011bk,Brein:2011vx,Ferrera:2013yga,Ferrera:2014lca,Campbell:2016jau},
 and to the next-to-leading order and next-to-leading-logarithm (NLO+NLL) in QCD for
 $gg \rightarrow ZH$~\cite{Altenkamp:2012sx,Hespel:2015zea,ggzhnll,Harlander:2013mla,Brein:2012ne}.
-%%%
-For the Higgs boson production in association with a pair of top-quarks 
-($t\bar{t}H$),
-the simulated events were interfaced to 
-\textsc{Pythia~8.230} for parton shower
-and hadronisation using the 
-A14 set of tuned parameters, and 
-\textsc{NNPDF2.3LO} PDF set.
-The cross-section of $t\bar{t}H$ production is set to 
-NLO calculations~\cite{deFlorian:2016spz}.
-The SM single Higgs boson production plays a more important role as a background
-to the non-resonant $HH$ search than the resonant $HH$ search due to more
-similar kinematics between the SM single Higgs boson production and
-the non-resonant $HH$ production.
+
+
+For processes where single Higgs produced in association with a vector boson, 
+i.e.\ the $qq \rightarrow ZH$, $gg \rightarrow ZH$ and $qq \rightarrow WH$, 
+processes, \textsc{Pythia~8.212} is used to simulate the parton shower
+and hadronisation using the AZNLO tune, together with the 
+\textsc{CTEQ6L1} PDF set.
+For the $qq \rightarrow WH$ and the $qq \rightarrow ZH$ sample, 
+the cross-section is calculated at NNLO for QCD processes and 
+NLO for electroweak expansion
+~\cite{Ciccolini:2003jy,Brein:2003wg,Ferrera:2011bk,Brein:2011vx,
+Ferrera:2013yga,Ferrera:2014lca,Campbell:2016jau}; 
+while for $gg \rightarrow ZH$ the cross-section is calculated 
+at NLO for QCD and next-to-leading lograithmic (NLL) for electroweak expansion
+~\cite{Altenkamp:2012sx,Hespel:2015zea,ggzhnll,Harlander:2013mla,Brein:2012ne}. 
+
+Finally, the simulated events with a single Higgs produced in association with 
+a pair of top-quarks are interfaced to \textsc{Pythia~8.230}.
+The parton shower and hadronisation are set to the 
+A14 tune, using the \textsc{NNPDF2.3LO} PDF set.
+The cross-section is calculated at NLO accuracy~\cite{deFlorian:2016spz}.
+
+In the $HH$ searches and FTAG calibration presented in this thesis, 
+additional samples were produced with alternative generators or settings,
+in order to estimate systematic uncertainties in the event modelling.
+These alternative will be defined once they are introduced in the content. 

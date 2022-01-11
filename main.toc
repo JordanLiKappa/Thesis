@@ -44,130 +44,134 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.6}Trigger system}{22}{subsection.3.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Data and Monte Carlo samples}{23}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Physics Object Reconstruction}{23}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Object Reconstruction}{24}{chapter.5}%
+\contentsline {section}{\numberline {4.1}Track and vertex reconstruction}{23}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Track and vertex reconstruction}{24}{section.5.1}%
+\contentsline {section}{\numberline {4.2}Electrons}{25}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Electron}{26}{section.5.2}%
+\contentsline {subsection}{\numberline {4.2.1}Reconstruction}{25}{subsection.4.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}Reconstruction}{26}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Identification}{27}{subsection.4.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Identification}{28}{subsection.5.2.2}%
+\contentsline {section}{\numberline {4.3}Muons}{29}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Muon}{29}{section.5.3}%
+\contentsline {subsection}{\numberline {4.3.1}Reconstruction}{29}{subsection.4.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.1}Reconstruction}{29}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Identification}{30}{subsection.4.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.2}Identification}{31}{subsection.5.3.2}%
+\contentsline {section}{\numberline {4.4}Jets}{31}{section.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Jet}{31}{section.5.4}%
+\contentsline {subsection}{\numberline {4.4.1}Reconstruction}{31}{subsection.4.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.1}Reconstruction}{31}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Calibration}{33}{subsection.4.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.2}Calibration}{33}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Identification of heavy-quark flavoured jets}{34}{subsection.4.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.3}Identification of heavy quark flavoured jets}{34}{subsection.5.4.3}%
+\contentsline {section}{\numberline {4.5}Hadronically decaying $\tau $ lepton}{36}{section.4.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Hadronically decaying $\tau $ lepton}{35}{section.5.5}%
+\contentsline {subsection}{\numberline {4.5.1}Reconstruction}{36}{subsection.4.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.1}Reconstruction}{36}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Identification}{37}{subsection.4.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.2}Identification}{37}{subsection.5.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Anti--$\tau _{had}$ definition}{38}{subsection.4.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.3}Anti--$\tau _{had}$ definition}{38}{subsection.5.5.3}%
+\contentsline {section}{\numberline {4.6}Missing transverse energy}{39}{section.4.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.5.3.1}Anti--$\tau _{had}$ selection: TODO: should I put this section in here or in analysis chapter?}{39}{subsubsection.5.5.3.1}%
+\contentsline {section}{\numberline {4.7}Overlap removal}{40}{section.4.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.6}Missing transverse energy}{39}{section.5.6}%
+\contentsline {chapter}{\numberline {5}Data and Monte Carlo Simulation}{42}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.7}Overlap removal}{39}{section.5.7}%
+\contentsline {section}{\numberline {5.1}Simulation of physics processes TODO: move this to theory section }{42}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Charm jet mis-tagging calibration}{41}{chapter.6}%
+\contentsline {section}{\numberline {5.2}Data samples}{43}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Calibration methods for $b$ jet\ and light jet}{41}{section.6.1}%
+\contentsline {section}{\numberline {5.3}Simulated event samples}{44}{section.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Calibration method for $c$ jet}{42}{section.6.2}%
+\contentsline {subsection}{\numberline {5.3.1}Simulated signal samples}{46}{subsection.5.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Data and Monte Carlo samples}{44}{section.6.3}%
+\contentsline {subsection}{\numberline {5.3.2}Non-resonant signal reweighting and combination}{47}{subsection.5.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.4}Kinematic Likelihood Fitter}{46}{section.6.4}%
+\contentsline {paragraph}{$k_\lambda $ Reweighting}{47}{section*.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.5}Maximising likelihood}{47}{section.6.5}%
+\contentsline {paragraph}{HEFT Benchmarks reweighting}{48}{section*.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.6}Event selection}{47}{section.6.6}%
+\contentsline {subsection}{\numberline {5.3.3}Simulated background samples}{48}{subsection.5.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.6.1}Standard selection}{47}{subsection.6.6.1}%
+\contentsline {chapter}{\numberline {6}Charm jet mis-tagging calibration}{52}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.6.2}Low-\ensuremath {p_{\mathrm T}}\ selection}{48}{subsection.6.6.2}%
+\contentsline {section}{\numberline {6.1}Calibration methods for $b$-jet\ and light jet}{52}{section.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.6.3}High-$p_T$ selection}{49}{subsection.6.6.3}%
+\contentsline {section}{\numberline {6.2}Calibration method for $c$-jet}{53}{section.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.6.4}Combined selection}{51}{subsection.6.6.4}%
+\contentsline {section}{\numberline {6.3}Alternative Monte Carlo samples}{55}{section.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.7}Systematic uncertainties}{52}{section.6.7}%
+\contentsline {section}{\numberline {6.4}Kinematic Likelihood Fitter}{56}{section.6.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.7.1}Experimental uncertainties}{52}{subsection.6.7.1}%
+\contentsline {section}{\numberline {6.5}Maximising likelihood}{56}{section.6.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.7.2}Modelling uncertainties}{53}{subsection.6.7.2}%
+\contentsline {section}{\numberline {6.6}Event selection}{57}{section.6.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.8}Under-estimation of $t\bar {t}$ + Heavy flavour background }{54}{section.6.8}%
+\contentsline {subsection}{\numberline {6.6.1}Standard selection}{57}{subsection.6.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.9}Results}{55}{section.6.9}%
+\contentsline {subsection}{\numberline {6.6.2}Low-\ensuremath {p_{\mathrm T}}\ selection}{58}{subsection.6.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.9.1}Overview}{55}{subsection.6.9.1}%
+\contentsline {subsection}{\numberline {6.6.3}High-$p_T$ selection}{59}{subsection.6.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.9.2}$b$-tagging\ algorithms output distribution}{56}{subsection.6.9.2}%
+\contentsline {subsection}{\numberline {6.6.4}Combined selection}{60}{subsection.6.6.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.9.3}Efficiencies and Scale Factors}{59}{subsection.6.9.3}%
+\contentsline {section}{\numberline {6.7}Systematic uncertainties}{61}{section.6.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Search for Higgs boson pair production in the \ensuremath {b\bar {b}\tau ^+_{lep}\tau ^-_{had}}channel}{64}{chapter.7}%
+\contentsline {subsection}{\numberline {6.7.1}Experimental uncertainties}{61}{subsection.6.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Data and Monte Carlo Simulation}{65}{section.7.1}%
+\contentsline {subsection}{\numberline {6.7.2}Modelling uncertainties}{63}{subsection.6.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.1}Data samples}{65}{subsection.7.1.1}%
+\contentsline {section}{\numberline {6.8}Under-estimation of $t\bar {t}$ + Heavy flavour background }{64}{section.6.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.2}Simulated event samples}{65}{subsection.7.1.2}%
+\contentsline {section}{\numberline {6.9}Results}{65}{section.6.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.1.2.1}Simulated signal samples}{66}{subsubsection.7.1.2.1}%
+\contentsline {subsection}{\numberline {6.9.1}Overview}{65}{subsection.6.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {7.1.2.1.1}Non-resonant signal reweighting and combination}{67}{paragraph.7.1.2.1.1}%
+\contentsline {subsection}{\numberline {6.9.2}$b$-tagging\ algorithms output distribution}{65}{subsection.6.9.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.1.2.2}Simulated background samples}{68}{subsubsection.7.1.2.2}%
+\contentsline {subsection}{\numberline {6.9.3}Efficiencies and Scale Factors}{69}{subsection.6.9.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Event Selection}{69}{section.7.2}%
+\contentsline {chapter}{\numberline {7}Search for Higgs boson pair production in the \ensuremath {b\bar {b}\tau ^{+}\tau ^{-}}\xspace \ channel}{74}{chapter.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2.1}Trigger selection}{69}{subsection.7.2.1}%
+\contentsline {section}{\numberline {7.1}Trigger and event Selection}{75}{section.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2.2}Event preselection}{70}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.1.1}Event pre-selection}{75}{subsection.7.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2.3}Multivariate signal extraction}{71}{subsection.7.2.3}%
+\contentsline {subsection}{\numberline {7.1.2}Anti--$\tau _{had}$ selection: TODO: should I put this section in here or in analysis chapter?}{78}{subsection.7.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2.4}$Z+\text {HF}$ control region}{74}{subsection.7.2.4}%
+\contentsline {section}{\numberline {7.2}Multivariate signal extraction}{78}{section.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Background estimation}{75}{section.7.3}%
+\contentsline {subsection}{\numberline {7.2.1}$Z+\text {HF}$ control region}{80}{subsection.7.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3.1}Fake-$\tau $ backgrounds in the \ensuremath {\tau _{\mathrm {lep}}\tau _{\mathrm {had}}}\xspace channel}{76}{subsection.7.3.1}%
+\contentsline {section}{\numberline {7.3}Background estimation}{81}{section.7.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.4}Multivariate analysis}{86}{section.7.4}%
+\contentsline {subsection}{\numberline {7.3.1}Fake-$\tau $ backgrounds in the \ensuremath {\tau _{\mathrm {lep}}\tau _{\mathrm {had}}}\xspace channel}{83}{subsection.7.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.5}Systematic uncertainties}{86}{section.7.5}%
+\contentsline {section}{\numberline {7.4}Multivariate analysis}{92}{section.7.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.6}Results}{86}{section.7.6}%
+\contentsline {section}{\numberline {7.5}Systematic uncertainties}{92}{section.7.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Summary}{95}{chapter.8}%
+\contentsline {section}{\numberline {7.6}Statistical analysis}{92}{section.7.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Supplementary material for $c$ jet\ calibration}{109}{appendix.A}%
+\contentsline {section}{\numberline {7.7}Results}{92}{section.7.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Additional plots for kinematic variables}{109}{section.A.1}%
+\contentsline {chapter}{\numberline {8}Summary}{93}{chapter.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.1.1}Standard selection}{109}{subsection.A.1.1}%
+\contentsline {chapter}{\numberline {A}Supplementary material for $c$-jet\ calibration}{107}{appendix.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.1.2}Low-\ensuremath {p_{\mathrm T}}\ selection}{115}{subsection.A.1.2}%
+\contentsline {section}{\numberline {A.1}Additional plots for kinematic variables}{107}{section.A.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}High-\ensuremath {p_{\mathrm T}}\ selection}{118}{section.A.2}%
+\contentsline {subsection}{\numberline {A.1.1}Standard selection}{107}{subsection.A.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}Combined selection}{125}{section.A.3}%
+\contentsline {subsection}{\numberline {A.1.2}Low-\ensuremath {p_{\mathrm T}}\ selection}{113}{subsection.A.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.4}Experimental uncertainties}{132}{section.A.4}%
+\contentsline {section}{\numberline {A.2}High-\ensuremath {p_{\mathrm T}}\ selection}{116}{section.A.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.3}Combined selection}{123}{section.A.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.4}Experimental uncertainties}{130}{section.A.4}%
