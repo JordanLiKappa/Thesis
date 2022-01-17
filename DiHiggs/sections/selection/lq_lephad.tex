@@ -1,0 +1,107 @@
+Event selection is applied to select events compatible with containing a $\ell b\tau_{\mathrm{had}}b+E_{T}^{\mathrm{miss}}$ final state. 
+This selection forms the set of events that are used as input to the MVA analysis.
+Although the basic concept of the event selection is almost same as for the HH analysis, the LQ analysis focuses on higher energy region.
+Therefore, some energy thresholds have been increased with respect to the HH analysis.
+
+First, LQ \lephad channel uses events triggered by SLT (Single Lepton Triggers).
+Events for higher energy region are selected by applying selection on \tauhad \pT, \MET and $s_T$.
+$s_T$ is the scalar sum of \MET, two highest jets \pT, \tauhad \pT and lepton \pT.
+These selections are also helpful to reject multijet background events.
+Events must meet the requirements shown in Table~\ref{tab:lq_lephad_event_selection}.
+
+\begin{table}[!ht]
+  \centering
+  \begin{tabular}{l|c} 
+    \hline\hline
+                                             & Criteria \\ \hline
+    Trigger                                  & Single Lepton Trigger \\
+    Light lepton $p_T$                       & $>$ trigger threshold + 1 GeV \\
+    $N_{\ell}$                               & $=1$ \\
+    $N_{\mathrm{jets}}$                      & $\geq 2$ \\
+    $N_{\mathrm{b-jets}}$                    & $=1$ and $=2$ (DL1r 77\% WP)\\
+    $\tauhad~p_T$                            & $>100$ GeV \\
+    $\tauhad~|\eta|$                         & $<2.3$ \\
+    Leading jet $p_T$                        & $>60$ GeV \\
+    Sub-leading jet $p_T$                    & $>20$ GeV \\
+    $\ell$ and $\tau_{\mathrm{had}}$ charges & Opposite sign\\
+    $s_T$                                    & $> 600$ GeV \\
+    $E_{T}^{\mathrm{miss}}$                  & $> 100$ GeV \\
+    \hline\hline
+  \end{tabular}
+  \caption{Event selection criteria for the LQ \lephad channel.}
+  \label{tab:lq_lephad_event_selection}
+\end{table}
+
+%% Thresholds for transverse momentum of light leptons, transverse momentum of jets, number of jets are the same as for the previous early Run-2 analysis.
+%% For the analysis with the full Run-2 dataset, the following requirements are tuned:
+%% \begin{description}
+%%   \item[$\tau_{\mathrm{had}} p_T$]\mbox{}
+%%     Tighter \pT requirement is used to target a higher energy region.
+%%   \item[$s_T$]\mbox{}
+%%     In the previous paper, the $s_T$ requirement did not used because the target energy region was lower.
+%%     To aim the higher energy region, the threshold is added. Furthermore, this selection is also useful to reject a lot 
+%%     of backgrounds as discussed in Sec~\ref{sec:bkgLQ}.
+%%   \item[$E_T^{\mathrm{miss}}$]\mbox{}
+%%     In the previous paper, this $E_T^{\mathrm{miss}}$ cut did not used because the target energy region was lower.
+%%     To aim the higher energy region, the threshold was added. Furthermore, this selection is also useful to reject a lot of 
+%%     backgrounds as discussed in Sec~\ref{sec:bkgLQ}.
+%% \end{description}
+
+
+The event yields after applying the requirements are shown in Table~\ref{tab:lq_lephad_prefit_event_yields} for backgrounds, signal and data.
+Plots of basic kinematic distributions are shown in~\Cref{fig:lq_lephad_kinvars1},~\ref{fig:lq_lephad_kinvars2}.
+% Although individual kinematic variables do not have enough power to discriminate the signal and background events, a conservative blinding strategy is taken.
+% In bins with $S/\sqrt{N}>0.1$ no data is shown and the grey coloured area is the blinded region in the ratio plot.
+For \pT, \MET and $s_T$, quadratic sum of $S/\sqrt{B}$ is calculated from left to right, and when it exceeds 0.5, data is blinded from that bin.
+Here signal sample of $m_{LQ} = 1100 GeV$ is considered.
+More details about the cut optimisation studies can be found in Appendix~\ref{subsec:appendix_lq_criteria_optimization}.
+
+
+\begin{table}[!htb]
+  \centering
+  \begin{tabular}{c|c}
+    \hline
+    \hline
+    Source        & Yields \\ \hline
+    VH            &     0.7 \\
+    WJets         &     1.4 \\
+    Diboson       &     4.5 \\
+    Zll           &     6.4 \\
+    Z$\tau\tau$   &   122.7 \\
+    single top    &   224.2 \\
+    \ttbar        &  2265.9 \\
+    Fake(\ttbar)  &   165.0 \\
+    Fake(single-top)  &   4.5 \\
+    Fake(others)  &    26.6 \\
+    \hline
+    \hline
+  \end{tabular}
+  \caption{Pre-fit event yields in the LQ \lephad signal region.}
+  \label{tab:lq_lephad_prefit_event_yields}
+\end{table}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.4\textwidth]{figures/selection/lq3/lephad/Kinematics/FinalPlots_TauLH_SR_cluster1_btag77_fullrun2_20210217_BasicKinematics_OS_combined_Jet0Pt_Rebin20.pdf} 
+  \includegraphics[width=0.4\textwidth]{figures/selection/lq3/lephad/Kinematics/FinalPlots_TauLH_SR_cluster1_btag77_fullrun2_20210217_BasicKinematics_OS_combined_Jet1Pt_Rebin20.pdf} \\
+  \includegraphics[width=0.4\textwidth]{figures/selection/lq3/lephad/Kinematics/FinalPlots_TauLH_SR_cluster1_btag77_fullrun2_20210217_BasicKinematics_OS_combined_Jet0Eta_Rebin15.pdf} 
+  \includegraphics[width=0.4\textwidth]{figures/selection/lq3/lephad/Kinematics/FinalPlots_TauLH_SR_cluster1_btag77_fullrun2_20210217_BasicKinematics_OS_combined_Jet1Eta_Rebin15.pdf} \\
+  \includegraphics[width=0.4\textwidth]{figures/selection/lq3/lephad/Kinematics/FinalPlots_TauLH_SR_cluster1_btag77_fullrun2_20210217_BasicKinematics_OS_combined_Tau0Pt_Rebin10.pdf} 
+  \includegraphics[width=0.4\textwidth]{figures/selection/lq3/lephad/Kinematics/FinalPlots_TauLH_SR_cluster1_btag77_fullrun2_20210217_BasicKinematics_OS_combined_Tau0Eta_Rebin15.pdf} \\
+  \caption{Kinematic variable distributions in the signal region. The grey colored band show the blinded region. Here, bins where the quadratic sum of $S/\sqrt{B}$ is greater than 0.2 are blinded for the 1100 GeV signal. $S$ is the number of signal yields , and $\sqrt{B}$ is the square of the number of backgrounds in the bin respectively.}
+  \label{fig:lq_lephad_kinvars1}
+\end{figure}
+
+\FloatBarrier
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.4\textwidth]{figures/selection/lq3/lephad/Kinematics/FinalPlots_TauLH_SR_cluster1_btag77_fullrun2_20210217_BasicKinematics_OS_combined_Lepton0Pt_Rebin10.pdf}
+  \includegraphics[width=0.4\textwidth]{figures/selection/lq3/lephad/Kinematics/FinalPlots_TauLH_SR_cluster1_btag77_fullrun2_20210217_BasicKinematics_OS_combined_Lepton0Eta_Rebin15.pdf} \\
+  \includegraphics[width=0.4\textwidth]{figures/selection/lq3/lephad/Kinematics/FinalPlots_TauLH_SR_cluster1_btag77_fullrun2_20210217_BasicKinematics_OS_combined_sT_Rebin40.pdf} 
+  \includegraphics[width=0.4\textwidth]{figures/selection/lq3/lephad/Kinematics/FinalPlots_TauLH_SR_cluster1_btag77_fullrun2_20210217_BasicKinematics_OS_combined_MET_Rebin10.pdf} \\
+  \caption{Kinematic variable distributions in the signal region. The grey colored band show the blinded region. Here, bins where the quadratic sum of $S/\sqrt{B}$ is greater than 0.2 are blinded for the 1100 GeV signal. $S$ is the number of signal yields , and $\sqrt{B}$ is the square of the number of backgrounds in the bin respectively.}
+  \label{fig:lq_lephad_kinvars2}
+\end{figure}
+
+\FloatBarrier

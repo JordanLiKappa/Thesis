@@ -1,0 +1,23 @@
+The output of a multivariate algorithm is used as the final discriminant for the signal extraction, as described in Section~\ref{sec:fit}.
+
+The di-Higgs non-resonant SM signal is well-defined in its kinematic properties, and so a boosted decision tree (neural network) trained on this signal is used in the \hadhad (\lephad) channel. 
+
+The di-Higgs resonant signal, however, is not a single signal hypothesis, but rather a set of continuous signal hypotheses parameterised by the mass of the heavy resonance which decays to Higgs boson pairs. For these cases, a standard binary classification algorithm is not optimal. A set of single discriminants trained on each of the simulated signal hypotheses would provide good discrimination for the simulated hypotheses, but can not interpolate well between these points. For this reason, and to reduce the number of algorithms that require training, Parametric Neural Networks (PNNs)~\cite{Baldi:2016fzo} are used for the extraction of the resonant signal. PNNs are neural networks which enable optimal signal-to-background classification for signal spectra connected by one or more physics parameters. As this problem is a smoothly-varying learning task, the PNN is not just able to learn how to classify signals at the simulated signal mass training points, but also how to interpolate between them. Tests of these properties are described in Appendix~\ref{sec:appendix_pnn_HH}.
+
+The PNNs used in the analyses described in this note take as an input parameter to specify which signal should be targeted, along side the feature variables, the heavy resonance mass for the di-Higgs analysis.
+%and the leptoquark mass for the leptoquark-pair analysis. 
+During training, the PNNs are trained on all the signals simultaneously, and are provided with the generator-level masses of the signals and a random mass from the distribution of simulated signal masses for the background. The background events are provided with such distribution of simulated signal masses because the background events do not have a well-defined value for the "truth scalar resonance mass" and the "parameter" assigned to background events must be uninformative regarding the signal / background discrimination. This is achieved by randomly assigning a "truth scalar resonance mass" that follows the distribution seen in the signal training events. During implementation, the mass of the targeted signal is given, which results in optimal discrimination for that signal hypothesis. As the ideal neural network output (when trained on the binary cross entropy) is a monotonic function of the signal-to-background density ratio, this means that the PNN will optimally classify the targeted signal events, as specified by the physics input parameter.
+
+For all NN trainings described in the following the input variables are "standardised" by subtracting the median and dividing by the interquartile range (Median / IQR due to better stability w.r.t. outliers compared to Mean / Stddev). The same offsets / scales are applied independently of the source / origin of the event (i.e. data, signal, background etc.).
+
+TMVA~\cite{tmva} is used for the training of the \hadhad-channel
+BDT. The neural networks used by both channels are trained using
+Keras~\cite{keras} and Tensorflow~\cite{tensorflow}.
+
+%\subsection{di-Higgs}
+\input{sections/mva/hh.tex}
+\label{sec:mva_hh}
+
+%\subsection{Leptoquark}
+%\input{sections/mva/lq.tex}
+%\label{sec:mva_lq}

@@ -1,0 +1,209 @@
+This section describes the fit setup for the HH analysis.
+
+As described in Section~\ref{sec:mva}, for the resonant analysis parametric neural networks (PNNs) are trained in the three signal regions with the mass of the resonance as parameter and for the non-resonant analysis an MVA classifier is trained on the SM signal in the three signal regions (BDT in the \hadhad signal region and NN in the two \lephad signal regions).  
+
+For each tested signal hypothesis a binned profile likelihood ratio fit is performed on the MVA output distributions.
+
+The fit is performed simultaneously on the MVA scores in the three signal regions, the \hadhad signal region and the two \lephad signal regions (SLT and LTT), together with the $m_{ll}$ distribution in the Z+heavy flavour control region as summarised in Table~\ref{sec:fit:tab:regions}.
+
+The Parameter Of Interest (POI) is the signal strength $\mu$.  
+
+For the non-resonant SM case,  the $\mu$ is relative to the ggF+VBF input signal cross section of (31.05 + 1. 726 ) fb x BR =  32.776 fb x BR.  Fits considering only ggF signal and neglecting VBF are also performed as a cross check where the $\mu$ is relative to the ggF input signal cross section of 31.05 x BR. 
+
+For the resonant case,  the $\mu$  is relative to the input cross section of 1 pb x BR.
+
+The normalisation of the $t\bar{t}$ background and the normalisation of the $Z+HF$ background are freely floating in the fit and are determined from data. %The $t\bar{t}$ normalisation is constrained in the $Z+HF$ control region and in the low PNN region of the \lephad SLT signal region and the $Z+HF$ normalisation is constrained in the dedicated $Z+HF$ control region. 
+Relative acceptance uncertainties between CR and SRs are applied on these normalisations in the signal regions included in the fit as described in Section~\ref{sec:acceptance_uncertainties_ttbar} and Section~\ref{sec:acceptance_uncertainties_ZHF}.
+
+\begin{table}
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+ & HadHad SR & LepHad SLT SR & LepHad LTT SR & Z+HF CR\\
+\hline
+Resonant fit & PNN score & PNN score & PNN score & $m_{ll}$\\
+\hline
+Non-resonant fit & BDT score & NN score & NN score & $m_{ll}$\\
+\hline
+\end{tabular}
+\caption{Regions enetering the HH fit and fitted observable in each region.}
+\label{sec:fit:tab:regions}
+\end{table}
+
+\subsection{Fit templates}
+
+%Some of the background MC templates suffer from low statistics and the fit would not be able to constrain them separately. For this reason 
+Templates corresponding to similar physical processes are merged into a single template in the fit. The following templates are used:
+
+\begin{itemize}
+\item ttbar= ttbar with real taus
+\item ttbarFake (in HadHad SR)= ttbar with fake taus (data-driven fake-rates)
+\item Fake (in HadHad SR) = multijet tau fakes (data-driven)
+\item Fake (in LepHad SR) = all fake taus (data-driven)
+\item Ztthf = Ztautau+bb,bc,cc
+\item Zhf = Z+bb,bc,cc
+\item Zttlf = Ztautau+bl,cl,l
+\item Zlf = Zlf = Z+bl,cl,l
+\item Wtt = Wtt+jets
+\item W (in LepHad SR)= W+jets 
+\item Diboson = WW, WZ, ZZ
+\item stop = stops, stopt, stopWt
+\item ttH
+\item ggFHtautau
+\item ZHbb
+\item ZHtautau
+\item WHbb
+\item VBFHtautau
+\item ttZ
+\item ttW
+\end{itemize}
+
+\subsection{Binning}
+\label{subsec:binning}
+
+The MVA score distributions are first built with a very fine binning and are then rebinned to build the fit templates. 
+
+In the \hadhad channel the histograms are built with 1000 bins (from 0 to 1 for the PNN and from -1 to 1 for the BDT) and the rebinning is performed using a function that merges bins from the right-hand side (high-PNN-score region) to the left-hand side until the following criteria are satisfied:
+
+\begin{itemize}
+\item the relative uncertainty on the background is less than X multiplied by the fraction of the signal present in the bin, plus an offset of 1\%; 
+\item at least Y expected background events present in the last bin to guarantee the stability of the fit. 
+\end{itemize}
+
+In the case where there is no signal the background uncertainty is 1\%, while a bin containing 100\% of the signal would have a X uncertainty on the background. This provides small enough bins in the high PNN score, where most of the signal is falling, for good sensitivity (but requiring at least Y events). In low PNN bins where fraction of signal is very low the allowed uncertainty is much lower and gives larger bins in the middle where there is low background and small bins in lowest bins where there is a lot of background. In the \hadhad channel of this analysis the chosen values of the parameters X and Y of this binning function are X=0.5 and Y=5.
+
+This function and parameters values were inherited from the previous analysis~\cite{HIGG-2016-16} and were tested again to be the optimal choice, with an optimisation performed to obtain a balance between having the most shape information on the signal-to-background separation given by the MVA score distribution, keeping the uncertainty on the background low enough in order not to degrade the result because of a too large uncertainty and also have a minimum number of expected background events in the last bin to guarantee the stability of the fit and the validity of the asymptotic limit calculation. The optimisation was done by testing different rebinning functions and performing a scan of their parameters, checking the number of bins and number of events in the last bin and performing the statistical analysis for each tested value checking the sensitivity of the analysis and the stability of the fit, as described in Appendix~\ref{subsec:hadhad_binning}. The bin edges used in the \hadhad channel fits are also reported in Appendix~\ref{subsec:hadhad_binning}.
+
+A rebinning procedure is performed also in the \lephad channel, but using different criteria. 
+As a general description, to remap the histograms entering the final fit, consider the function:
+\begin{equation}
+Z(I[k,l]) = Z(z_{s},n_{s}(I[k,l]),N_{s},z_{b},n_{b}(I[k,l]),N_{b}),
+\end{equation}
+where
+\begin{itemize}
+\item $I[k,l]$ is an interval of the histograms, containing the bins between bin $k$ and bin $l$;
+\item $N_{s}$ is the total number of signal events in the histogram;
+\item $N_{b}$ is the total number of background events in the histogram;
+\item $n_{s}(I[k,l])$ is the total number of signal events in the interval $I[k,l]$;
+\item $n_{b}(I[k,l])$ is the total number of background events in the interval $I[k,l]$;
+\item $z_{s}$ and $z_{b}$ are parameters used to tune the algorithm.
+\end{itemize}
+
+Whilst several different possible $Z$ functions exist to transform the MVA output, 
+the binning algorithm used in the \lephad channel is the
+Transformation D (trafo6) function implemented in WSMaker:
+
+\begin{equation}
+Z = z_{s}\frac{n_{s}}{N_{s}} + z_{b}\frac{n_{b}}{N_{b}}.
+\end{equation}
+
+where $z_{s}=10$ and $z_{b}=5$ are adopted here. 
+
+The starting point for the transformation is the 
+PNN/NN output distribution with 990 bins for the (P)NN score $0-0.99$ and 100 bins for for the (P)NN score $0.99-1$. 
+The re-binning is then conducted using the following procedure:
+\begin{enumerate}
+\item Starting from the last bin on the right of the original histogram, increase the range of the interval $I(k, last)$ by adding one after the other, the bins from the right to the left;
+\item Calculate the value of Z at each step;
+\item Once $Z(I[k_{0}, last]) > 1$, rebin all the bins in the interval $I(k_{0}, last)$ into a single bin;
+\item Repeat steps 1-3, starting this time from the last bin on the right, not included in the previous remap (the new last is $k_{0}-1$), until $k_{0}$ in the first bin.
+\end{enumerate}
+
+
+The binning algorithm also requires at least 5
+background events in each bin. 
+Sensitivity improvement can be gained in 
+the \lephad channel using the TrafoD binning scheme, 
+comparing with that using 
+the same procedure as the \hadhad channel.
+More related studies can be seen in Appendix \ref{subsec:lephad_binning}.
+
+
+\subsection{Nuisance parameters}
+\label{subsec:nuisance_parameters}
+
+All sources of systematic uncertainties described in Section~\ref{sec:systs} are considered as nuisance parameters (NP) in the profile likelihood. 
+
+Correlations of NPs across the four regions included in the fit:
+
+\begin{itemize}
+\item All the experimental uncertainties are correlated across the four regions included in the fit;
+\item Cross section and acceptance uncertainties on the MC estimated backgrounds and on signal are also correlated;
+\item Floating \ttbar and Z+HF normalisations are correlated across all the regions included in the fit;
+\item Relative acceptance uncertainties on the normalization of $t\bar{t}$ and Z+HF, which are determined from data in the fit, are correlated with the shape variations from the same source of uncertainty and are correlated between \hadhad and \lephad channels;
+\item the \ttbar PS uncertainty has been decorrelated between different channels due to observed tensions for this NP between different regions in the combined fit;
+%\item \ttbar and Z+HF uncertainties are currently not correlated between \hadhad and \lephad channels (correlation to be studied and implemented);
+\item Uncertainties on the data-driven backgrounds are not correlated (as the sources of fakes are different and the fake backgrounds are estimated with different methods).
+\end{itemize}
+
+The effect of each NP is split in normalisation and shape components:
+
+\begin{itemize}
+\item shape uncertainties, i.e. uncertainties on the shape of the fitted observable, which are induced by either detector or theory systematics;
+\item normalisation uncertainties, which are coming from uncertainties on the calculation of the inclusive cross-section for the MC templates, acceptance uncertainties and relative acceptance uncertainties between pairs of regions.
+\end{itemize} 
+
+The shape uncertainties are included in the form of alternative histograms for the fit templates. Normalisation uncertainties are implemented as either flat (for "floating" templates) or Gaussian priors.
+
+The nuisance parameters undergo a series of treatments before being added to the fit model. These treatments include symmetrization, smoothing and pruning.
+
+Symmetrisation:
+
+\begin{itemize}
+\item One-sided experimental systematics (e.g. jet energy resolution) are symmetrised;
+\item Experimental systematics resulting in same-sided variations are also symmetrised, using the average of up and down variations, (all JET 4-vector systematics and MUON\textunderscore SAGITTA\textunderscore RESBIAS), this is done to fix undercontraints arising from the same-sided variations;
+\item \ttbar ISR variation is symmetrised, using the up variation (most conservative between up and down), to avoid same-sided variation;
+\item \ttbar FSR shape variation is also symmetrised, using the average of up and down variations, to avoid same-sided variation.
+\end{itemize}
+
+
+The systematic variations can also be smoothed in order to avoid the instabilities in the likelihood minimisation which arise from the statistical fluctuations in the templates. Smoothing is applied on:
+
+\begin{itemize}
+\item  4-vector-based CP variations (not on weight CP variations);
+\item \ttbar FRS shape variation, to fix known issues with large statistical fluctuations;
+\item \ttbar ME and PS variations in the \lephad channel to avoid large fluctuations due to parameterisation performed in the MVA fit binning (small bins with low stat at high score).
+\end{itemize}
+
+
+Several algorithms can be used for smoothing. The algorithm that is used by default is based on an iterative rebinning of the systematic variations until a certain number of local extrema is attained. By default two extrema are used, corresponding to systematic variations which are monotonic in the fitted variable. A comparison with alternative smoothing algorithms can be found in \Cref{subsec:appendix_fit_smoothing}.
+
+Lastly, the pruning is applied to all systematics for the purpose of speeding up the fitting process and also reducing instabilities that arise from small systematics that are only introducing noise and have a negligible impact on the analysis sensitivity. Pruning is applied separately on the normalisation and the shape effects of a systematic. The pruning criteria applied are as follows:
+ 
+ \begin{itemize}
+\item the normalisation effect of a systematic is pruned away if the difference between the nominal and systematic yield is less than 0.5\%; 
+\item the shape effect of a systematic is pruned away if the variation between the nominal and the systematic templates is less than 0.5\% in all bins;
+\item normalisation or shape effects of a systematic are pruned away if the variation is one-sided (for example because one side is below the 0.5\% threshold);
+\item the shape systematics having up and down variations on the same side are pruned away based on a $\chi^{2}$ test: if the $\chi^{2}$ value between up and down variation is smaller than the $\chi^{2}$ between nominal and up/down variation (only applied to the smoothed systematics).
+\end{itemize}
+
+Additionally, MC statistical uncertainties are also included as NPs with Poissonian priors. The names of these NPs indicate the SR region and the bin number. 
+
+For example:
+
+\begin{itemize}
+\item HadHad\textunderscore SR\textunderscore MVAScore \textunderscore bin\textunderscore 13: \hadhad channel SR, MVA score bin 13;
+\item LepHad\textunderscore SLT\textunderscore SR\textunderscore MVAScore \textunderscore bin\textunderscore 14: \lephad channel SLT SR, MVA score bin 14;
+\item LepHad\textunderscore LTT\textunderscore SR\textunderscore MVAScore \textunderscore bin\textunderscore 14: \lephad channel LTT SR, MVA score bin 14;
+\end{itemize}
+
+%\begin{itemize}
+%\item T2\textunderscore SpcTauHH\textunderscore L0\textunderscore bin\textunderscore 11: 2 btags (T2), hadhad channel (TauHH and also L0 which stands for 0 leptons),bin 11;
+%\item T2\textunderscore SpcTauLH\textunderscore Y2015\textunderscore LTT0\textunderscore L1\textunderscore bin\textunderscore 14: 2 btags (T2), lephad channel (TauLH and also L1 which stands for 1 lepton), SLT region (LTT=0), bin 14;
+%\item T2\textunderscore SpcTauLH\textunderscore Y2015\textunderscore LTT1\textunderscore L1\textunderscore bin\textunderscore 14: 2 btags (T2), lephad channel (TauLH and also L1 which stands for 1 lepton), LTT region (LTT=1), bin 14.
+%\end{itemize}
+
+\subsection{Blinding strategy}
+
+The analysis was designed blinded. When the analysis was blinded:
+
+\begin{itemize}
+\item The observed values of the POI are blinded. 
+\item The plots of the MVA score distributions are blinded in the most sensitive region. The PNN distributions for the resonant signal are blinded from right to left in the region containing 85\% of the total signal. The MVA score distributions for the SM non-resonant signal are blinded from 0.05 cumulative significance. The cumulative significance is 
+calculated using the $S/\sqrt{B}$ values in \Cref{tab:significance_smbdt_bins_LepHad,tab:significance_smbdt_bins_HadHad}, summing up the $S/\sqrt{B}$ values per bin from left until 0.05 is reached.
+\item The fit is performed using the full signal region. 
+\item The expected limits are calculated with NPs profiled to the data in the full signal region. 
+\item Pulls and rankings of the NPs are not blinded. 
+\end{itemize}
+
+The analysis is now unblinded.

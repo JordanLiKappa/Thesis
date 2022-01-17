@@ -1,0 +1,73 @@
+This section describes the fit setup for the LQ analysis.
+
+As described in~\Cref{sec:mva_lq}, parametric neural networks (PNNs) are trained in both \hadhad and \lephad signal regions for the LQ analysis.  For each tested signal hypothesis a binned profile likelihood ratio fit is performed on the PNN output distributions.
+
+The fit is performed simultaneously on the PNN scores in the two signal regions, together with the $m_{ll}$ distribution in the Z+HF control region as summarized in~\Cref{sec:fit:tab:LQ_regions}.
+
+\begin{table}
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+\hadhad SR & \lephad SR & Z+HF CR\\
+\hline
+PNN score & PNN score & $m_{ll}$\\
+\hline
+\end{tabular}
+\caption{Regions entering the LQ fit and fitted observable in each region.}
+\label{sec:fit:tab:LQ_regions}
+\end{table}
+
+The Parameter Of Interest (POI) is the signal strength $\mu$ (relative to the input signal cross section). The normalisation of the $t\bar{t}$ background and the $Z+HF$ background are freely floating parameters in the fit and are determined from data. Both normalisations are constrained in the dedicated $Z+HF$ control region. Extrapolation uncertainties are applied on these normalisations in the other regions included in the fit, as described in~\Cref{sec:acceptance_uncertainties_ttbar_LQ} and~\Cref{sec:acceptance_uncertainties_ZHF_LQ}.
+
+% \subsection{Fit templates}
+
+Templates corresponding to similar physical processes are merged into a single template in the fit. The following templates are used:
+
+\begin{itemize}
+\item ttbar = ttbar with real taus
+\item ttbarFake = ttbar with fake taus (corrected by the \ttbar scale factor method)
+\item stop = stops, stopt, stopWt
+\item Fake(in HadHad SR) = multijet tau fakes (data-driven)
+\item Ztthf = Ztautau+bb,bc,cc
+\item Zhf = Z+bb,bc,cc
+\item Zttlf = Ztautau+bl,cl,l
+\item Zlf = Zlf = Z+bl,cl,l
+\item Wtt = Wtt+jets
+\item W (in LepHad SR)= W+jets 
+\item Diboson = WW, WZ, ZZ
+\end{itemize}
+
+The binning strategy for LQ channels is similar to the HH analysis, as described in~\Cref{subsec:binning}.
+Binning algorithms have been investigated and Trafo14 with uncertainty 50\% and the minimum number of background events in each bin is 5 has been decided to be used. The study is summarized in~\Cref{subsec:app_LQ_binning}.
+This corresponds to X=0.5, Y=5 case shown in HH section, which is same as HH hadhad analysis.
+
+All sources of systematic uncertainties described in~\Cref{sec:systsLQ} are considered as nuisance parameters (NP) in the profile likelihood. 
+
+\begin{itemize}
+\item All the experimental uncertainties are correlated across the three regions included in the fit;
+\item Cross section and acceptance uncertainties on the MC estimated backgrounds and on signal are also correlated;
+\item Extrapolation uncertainties on the normalization of $t\bar{t}$,and Z+HF wich are determined from data in the fit, are not correlated to allow the normalization to vary in the different regions within the uncertainties (different phase-spaces selected in the different regions);
+\item Theoretical uncertainties on the MVA shapes of $t\bar{t}$, single-top, Z+HF and signal are not correlated;
+\item Uncertainties on the data-driven backgrounds are not correlated (as different sources of fakes and estimated with different methods).
+\end{itemize}
+
+The effect of each NP is split in normalisation and shape components.
+
+\begin{itemize}
+\item shape uncertainties, i.e. uncertainties on the shape of the fitted observable, which are induced by either detector or theory systematics;
+\item normalisation uncertainties, which are coming from uncertainties on the calculation of the inclusive cross-section for the MC templates, acceptance uncertainties and relative acceptance uncertainties between pairs of regions.
+\end{itemize} 
+
+The shape uncertainties are included in the form of alternative histograms for the fit templates.
+Normalisation uncertainties are implemented as either flat (for “floating” templates) or Gaussian priors.
+The nuisance parameters undergo a series of treatments before being added to the fit model.
+These treatments include symmetrization, smoothing and pruning, and these setup is same as HH analysis described in~\Cref{subsec:nuisance_parameters}.
+%%One-sided experimental systematics (e.g. jet energy resolution) are symmetrised. 
+
+The observed values of the POI are blinded. The blinding strategy is that quadratic sum of $S/\sqrt{B}$ is calculated from left to right,
+and when it exceeds 0.5, data is blinded from that bin.
+Here signal sample of $m_{LQ} = 1100$~GeV is considered. For PNN score, 85\% of the right hand side of the plot is blinded.
+The fit is performed using the full signal region. The expected limits are calculated with NPs profiled to the data in the full signal region. 
+Pulls and rankings of the NPs are not blinded. 
+
+%The fit is performed using the full signal region. The expected limits are calculated with NPs profiled to the data in the full signal region. Pulls and rankings of the NPs are not blinded. 

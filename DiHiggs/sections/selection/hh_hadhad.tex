@@ -1,0 +1,212 @@
+Selections are applied to selects events compatible with containing a $bb\tau_{had}\tau_{had}$ final state. This selection forms the signal region containing the set of events that are used for the fit of the MVA discriminant distributions as described in Section~\ref{sec:fit}. 
+
+All events passing the trigger selection must then meet the following requirements (using the object definitions described in Section~\ref{sec:reco}):
+
+\begin{itemize}
+\item At least two jets;
+\item Exactly two $\tau$-leptons passing the `loose' identification criteria;
+\item No electrons or muons in the event;
+\item Exactly two $b$-tagged jets (using DL1r 77\% working point);
+\item Opposite-sign charge between the two $\tau$-leptons;
+\item The invariant mass of the di-$\tau$ system (calculated using the Missing Mass Calculator (MMC) \cite{Elagin:2010aw}),
+  $\mMMC_{\tau\tau}$, must be > 60 $\GeV$;
+\item At least one \bjet with \pT > \SI{45}{\GeV}. %\todo{Chris: maybe we
+  % shoulddrop this selection?}
+\item The subleading \tauhad candidate is required to have $\pT > \SI{25}{\GeV}$
+  (this is due to a $\SI{23}{\GeV}$ requirement in the HIGG4D3 derivation skim)
+\end{itemize}
+
+For STT events one of the two $\tau_{had}$ has to be matched to the object that fired the trigger, for DTT events both $\tau_{had}$ have to be matched to the objects that fired the trigger.
+
+The \pt thresholds applied on the jets and the $\tau$-leptons depend on the trigger applied. The summary of the \pT thresholds applied is as follows:
+\begin{itemize}
+\item STT events: \tauhadvis are required to pass a trigger-dependent
+  \pT threshold as described in
+  \cref{sec:hadhad_trigger_selection}. Only if the event was not
+  selected by the STT relevant for the particular run (even if the
+  event was selected by a di-\tauhad trigger), it is checked whether
+  the event passes the DTT selection (i.e.\ STT events are prioritized
+  over DTT events).
+
+\item DTT events in 2015-2016: The leading jet is required to have \pT >
+  \SI{80}{\GeV} due to the additional jet requirement (J25) at L1 in 2016. This
+  ensures that the L1 trigger is close to its efficiency plateau, minimizing the
+  impact of a mismatch in trigger efficiency in data / MC.
+
+\item DTT events in 2017-2018: Are categorised into two categories depending on
+  the triggers to be checked: %\todo{Chris: need to check treatment of non-L1Topo trigger at the beginning of 2017}
+  \begin{itemize}
+  \item If leading and subleading jet $\pT > \SI{45}{\GeV}$: Event is considered a
+    4J12 event. This cut ensures that the additional jet requirement at L1 (J12)
+    is fulfilled.
+  \item Else if leading jet $\pT > \SI{80}{\GeV}$ and $\dRtautau \leq 2.5$:
+    Event is considered a L1Topo event. The jet \pT and \dRtautau cut ensure
+    that the additional J25 and \dRtautau requirement at L1 are fulfilled.
+  \end{itemize}
+\end{itemize}
+
+Figure~\ref{fig:HadHadPreselectionPtDistributions} shows data/prediction comparison for \tauhad \pt and $\eta$ and $b$-jets \pt pre-fit after applying the $bb\tau_{had}\tau_{had}$ event selection (these distributions are not blinded as the definition of the signal region selection is very loose as to define a pre-selection region and MVAs are then used in this region to separate background and signal). The background estimation and the systematic uncertainties included in these plots are discussed in Section~\ref{sec:bkg} and Section~\ref{sec:systs} respectively. Figures~\ref{fig:HadHadPreselectionPtDistributions2015}-~\ref{fig:HadHadPreselectionPtDistributions2018} show the same distributions split by data-taking period.
+
+Additional plots split by trigger and also in validation regions are given in Appendix~\ref{subsec:appendix_bkg_validation_hadhad}.
+
+%\begin{figure}
+%\centering
+%\subfloat[]
+%   {\includegraphics[width=.45\textwidth]{figures/selection/HadHad_HH/C_2tag2pjet_0ptv_LL_OS_Tau0Pt.pdf}}\quad
+%\subfloat[]
+%   {\includegraphics[width=.45\textwidth]{figures/selection/HadHad_HH/C_2tag2pjet_0ptv_LL_OS_Tau1Pt.pdf}} \quad
+%\subfloat[]
+%   {\includegraphics[width=.45\textwidth]{figures/selection/HadHad_HH/C_2tag2pjet_0ptv_LL_OS_pTB0.pdf}}\quad
+%\subfloat[]
+%   {\includegraphics[width=.45\textwidth]{figures/selection/HadHad_HH/C_2tag2pjet_0ptv_LL_OS_pTB1.pdf}} \quad
+%\caption{Leading and sub-leading $\tau_{had}$ and $b$-jet pre-fit \pt
+%  distributions in the di-Higgs $bb\tau_{had}\tau_{had}$ signal region. The yields for Zttbb, Zttbc and Zttcc are scaled by 1.3. The uncertainty band includes CP uncertainties and $t\bar{t}$ and fake-$\tau_{had}$ backgrounds modelling uncertainties. (Inputs from 2020\_10\_16) (\textcolor{red}{To do: replace with plots from WSMaker including all uncertainties})}
+%\label{fig:HadHadPreselectionPtDistributions}
+%\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=.45\textwidth]{figures/selection/HadHad_HH/Region_BMin0_incJet1_distTau0Pt_J2_Y2015_DLLOS_T2_SpcTauHH_L0_Prefit.pdf}
+\includegraphics[width=.45\textwidth]{figures/selection/HadHad_HH/Region_BMin0_incJet1_distTau1Pt_J2_Y2015_DLLOS_T2_SpcTauHH_L0_Prefit.pdf}\\
+\includegraphics[width=.45\textwidth]{figures/selection/HadHad_HH/Region_BMin0_incJet1_distTau0Eta_J2_Y2015_DLLOS_T2_SpcTauHH_L0_Prefit.pdf}
+\includegraphics[width=.45\textwidth]{figures/selection/HadHad_HH/Region_BMin0_incJet1_distTau1Eta_J2_Y2015_DLLOS_T2_SpcTauHH_L0_Prefit.pdf}\\
+\includegraphics[width=.45\textwidth]{figures/selection/HadHad_HH/Region_BMin0_incJet1_distJet0Pt_J2_Y2015_DLLOS_T2_SpcTauHH_L0_Prefit.pdf}
+\includegraphics[width=.45\textwidth]{figures/selection/HadHad_HH/Region_BMin0_incJet1_distJet1Pt_J2_Y2015_DLLOS_T2_SpcTauHH_L0_Prefit.pdf}
+\caption{Leading and sub-leading $\tau_{had}$ \pt and $\eta$ and $b$-jet \pt pre-fit
+  distributions in the di-Higgs \hadhad signal region. (Inputs from 2021\_01\_15)}
+\label{fig:HadHadPreselectionPtDistributions}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=.45\textwidth]{figures/selection/HadHad_HH/Plots2015/Region_BMin0_incJet1_distTau0Pt_J2_Y2015_DLLOS_T2_SpcTauHH_L0_Prefit.pdf}
+\includegraphics[width=.45\textwidth]{figures/selection/HadHad_HH/Plots2015/Region_BMin0_incJet1_distTau1Pt_J2_Y2015_DLLOS_T2_SpcTauHH_L0_Prefit.pdf}\\
+\includegraphics[width=.45\textwidth]{figures/selection/HadHad_HH/Plots2015/Region_BMin0_incJet1_distTau0Eta_J2_Y2015_DLLOS_T2_SpcTauHH_L0_Prefit.pdf}
+\includegraphics[width=.45\textwidth]{figures/selection/HadHad_HH/Plots2015/Region_BMin0_incJet1_distTau1Eta_J2_Y2015_DLLOS_T2_SpcTauHH_L0_Prefit.pdf}\\
+\includegraphics[width=.45\textwidth]{figures/selection/HadHad_HH/Plots2015/Region_BMin0_incJet1_distJet0Pt_J2_Y2015_DLLOS_T2_SpcTauHH_L0_Prefit.pdf}
+\includegraphics[width=.45\textwidth]{figures/selection/HadHad_HH/Plots2015/Region_BMin0_incJet1_distJet1Pt_J2_Y2015_DLLOS_T2_SpcTauHH_L0_Prefit.pdf}
+\caption{Leading and sub-leading $\tau_{had}$ \pt and $\eta$ and $b$-jet \pt pre-fit
+  distributions in the di-Higgs \hadhad signal region for the 2015-2016 data-taking period. (Inputs from 2021\_01\_15)}
+\label{fig:HadHadPreselectionPtDistributions2015}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=.45\textwidth]{figures/selection/HadHad_HH/Plots2017/Region_BMin0_incJet1_distTau0Pt_J2_Y2015_DLLOS_T2_SpcTauHH_L0_Prefit.pdf}
+\includegraphics[width=.45\textwidth]{figures/selection/HadHad_HH/Plots2017/Region_BMin0_incJet1_distTau1Pt_J2_Y2015_DLLOS_T2_SpcTauHH_L0_Prefit.pdf}\\
+\includegraphics[width=.45\textwidth]{figures/selection/HadHad_HH/Plots2017/Region_BMin0_incJet1_distTau0Eta_J2_Y2015_DLLOS_T2_SpcTauHH_L0_Prefit.pdf}
+\includegraphics[width=.45\textwidth]{figures/selection/HadHad_HH/Plots2017/Region_BMin0_incJet1_distTau1Eta_J2_Y2015_DLLOS_T2_SpcTauHH_L0_Prefit.pdf}\\
+\includegraphics[width=.45\textwidth]{figures/selection/HadHad_HH/Plots2017/Region_BMin0_incJet1_distJet0Pt_J2_Y2015_DLLOS_T2_SpcTauHH_L0_Prefit.pdf}
+\includegraphics[width=.45\textwidth]{figures/selection/HadHad_HH/Plots2017/Region_BMin0_incJet1_distJet1Pt_J2_Y2015_DLLOS_T2_SpcTauHH_L0_Prefit.pdf}
+\caption{Leading and sub-leading $\tau_{had}$ \pt and $\eta$ and $b$-jet \pt pre-fit
+  distributions in the di-Higgs \hadhad signal region for the 2017 data-taking period. (Inputs from 2021\_01\_15)}
+\label{fig:HadHadPreselectionPtDistributions2017}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=.45\textwidth]{figures/selection/HadHad_HH/Plots2018/Region_BMin0_incJet1_distTau0Pt_J2_Y2015_DLLOS_T2_SpcTauHH_L0_Prefit.pdf}
+\includegraphics[width=.45\textwidth]{figures/selection/HadHad_HH/Plots2018/Region_BMin0_incJet1_distTau1Pt_J2_Y2015_DLLOS_T2_SpcTauHH_L0_Prefit.pdf}\\
+\includegraphics[width=.45\textwidth]{figures/selection/HadHad_HH/Plots2018/Region_BMin0_incJet1_distTau0Eta_J2_Y2015_DLLOS_T2_SpcTauHH_L0_Prefit.pdf}
+\includegraphics[width=.45\textwidth]{figures/selection/HadHad_HH/Plots2018/Region_BMin0_incJet1_distTau1Eta_J2_Y2015_DLLOS_T2_SpcTauHH_L0_Prefit.pdf}\\
+\includegraphics[width=.45\textwidth]{figures/selection/HadHad_HH/Plots2018/Region_BMin0_incJet1_distJet0Pt_J2_Y2015_DLLOS_T2_SpcTauHH_L0_Prefit.pdf}
+\includegraphics[width=.45\textwidth]{figures/selection/HadHad_HH/Plots2018/Region_BMin0_incJet1_distJet1Pt_J2_Y2015_DLLOS_T2_SpcTauHH_L0_Prefit.pdf}
+\caption{Leading and sub-leading $\tau_{had}$ \pt and $\eta$ and $b$-jet \pt pre-fit
+  distributions in the di-Higgs \hadhad signal region for the 2018 data-taking period. (Inputs from 2021\_01\_15)}
+\label{fig:HadHadPreselectionPtDistributions2018}
+\end{figure}
+
+Table~\ref{tab:HadHadYields} reports the event yields after applying the $bb\hadhad$ event selection.
+
+Figure~\ref{fig:HadHadPreselectionSignalAcceptance} shows the acceptance times efficiency of the \hadhad channel selection for the di-Higgs resonant signals as a function of the resonance mass. The acceptance times efficiency of the \hadhad channel selection for the non-resonant SM ggF di-Higgs signal is 4.08 \%. For the VBF production of the non-resonant di-Higgs signal, the acceptance times efficiency is 2.26 \%.
+
+Comparison of the acceptance times efficiency in this channel of this new analysis to the old analysis explaining the improvements is given in Appendix~\ref{subsec:appendix_selection_sigacc_hadhad}.
+
+\begin{figure}
+\centering
+\includegraphics[width=.65\textwidth]{figures/selection/HadHad_HH/acc_times_eff}
+\caption{Acceptance times efficiency of the \hadhad channel selection for the di-Higgs resonant signals as a function of the resonance mass.}
+\label{fig:HadHadPreselectionSignalAcceptance}
+\end{figure}
+
+
+\begin{table}[]
+  \centering
+  \scriptsize
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Samplename      & Entries       & Integral      & Error         & Error/Integ. \\
+\hline
+Hhhbbtautau1600 & 6783          & 151.606       & 1.89591       & 0.0125055 \\
+Hhhbbtautau1400 & 10335         & 228.557       & 2.31767       & 0.0101405 \\
+Hhhbbtautau1200 & 16458         & 356.701       & 2.86756       & 0.00803913 \\
+Hhhbbtautau1100 & 34553         & 396.142       & 2.21483       & 0.00559099 \\
+Hhhbbtautau1000 & 39095         & 437.269       & 2.29697       & 0.00525299 \\
+Hhhbbtautau900  & 38406         & 425.43        & 2.25069       & 0.00529038 \\
+Hhhbbtautau800  & 46730         & 393.532       & 1.97188       & 0.00501073 \\
+Hhhbbtautau700  & 42324         & 349.682       & 1.83682       & 0.00525283 \\
+Hhhbbtautau600  & 35859         & 289.018       & 1.64761       & 0.00570073 \\
+Hhhbbtautau550  & 32183         & 254.681       & 1.53096       & 0.00601127 \\
+Hhhbbtautau500  & 28147         & 216.619       & 1.39304       & 0.00643082 \\
+Hhhbbtautau450  & 29693         & 174.027       & 1.03694       & 0.0059585 \\
+Hhhbbtautau400  & 22998         & 128.518       & 0.870567      & 0.0067739 \\
+Hhhbbtautau375  & 19397         & 106.977       & 0.790256      & 0.00738715 \\
+Hhhbbtautau350  & 25720         & 84.6505       & 0.54268       & 0.00641083 \\
+Hhhbbtautau325  & 20369         & 64.58         & 0.465808      & 0.00721288 \\
+Hhhbbtautau300  & 15098         & 45.8639       & 0.383928      & 0.00837103 \\
+Hhhbbtautau280  & 14485         & 33.5209       & 0.286617      & 0.00855039 \\
+Hhhbbtautau260  & 11709         & 25.815        & 0.246017      & 0.00952999 \\
+Hhhbbtautau251  & 12621         & 27.2638       & 0.250045      & 0.00917132 \\
+hhttbbVBFSM     & 37974         & 0.166899      & 0.000882937   & 0.00529025 \\
+hhttbbggFSM     & 111552        & 5.40058       & 0.0193445     & 0.00358194 \\
+\hline
+Fake            & 119664        & 1354.66       & 25.8309       & 0.0190681 \\
+ttbarSFFF       & 1510          & 358.921       & 10.1382       & 0.0282464 \\
+ttbarSFFT       & 5468          & 698.522       & 10.2809       & 0.0147181 \\
+ttbarSFTF       & 9223          & 1433.95       & 16.0457       & 0.0111899 \\
+ttbar           & 22937         & 3580.69       & 24.734        & 0.00690762 \\
+stopWt          & 1828          & 239.007       & 5.85533       & 0.0244986 \\
+stopt           & 138           & 31.4158       & 3.04587       & 0.0969535 \\
+stops           & 58            & 1.66692       & 0.231854      & 0.139092 \\
+Zbb             & 30            & 1.23201       & 0.253941      & 0.20612 \\
+Zbc             & 4             & 0.211169      & 0.129463      & 0.613078 \\
+Zbl             & 0             & 0     & 0     & 0 \\
+Zcc             & 0             & 0     & 0     & 0 \\
+Zcl             & 0             & 0     & 0     & 0 \\
+Zl              & 1             & 0.391639      & 0.391639      & 1 \\
+Zttbb           & 27512         & 1332.46       & 16.4981       & 0.0123817 \\
+Zttbc           & 2375          & 140.201       & 5.80802       & 0.0414263 \\
+Zttbl           & 1544          & 54.8843       & 3.0808        & 0.0561327 \\
+Zttcc           & 719           & 89.8517       & 12.1893       & 0.13566 \\
+Zttcl           & 431           & 30.4873       & 3.82835       & 0.125572 \\
+Zttl            & 195           & 23.8278       & 36.69         & 1.5398 \\
+Wtt             & 457           & 52.269        & 6.50357       & 0.124425 \\
+W               & 12            & 0.864665      & 0.292456      & 0.338231 \\
+VBFHtautau      & 763           & 1.64109       & 0.0622571     & 0.0379364 \\
+ggFHtautau      & 1155          & 14.054        & 0.542865      & 0.0386271 \\
+ZHtautau        & 1729          & 8.01903       & 0.204466      & 0.0254976 \\
+WHtautau        & 48            & 0.410149      & 0.0630599     & 0.153749 \\
+ZHbb            & 62251         & 14.6234       & 0.216057      & 0.0147748 \\
+WHbb            & 218           & 0.164501      & 0.0175373     & 0.106609 \\
+WW              & 10            & 1.91138       & 0.728729      & 0.381258 \\
+WZ              & 373           & 8.8442        & 0.743756      & 0.0840954 \\
+ZZ              & 2382          & 33.2378       & 1.23828       & 0.0372553 \\
+ttW             & 4850          & 13.6032       & 0.299571      & 0.0220222 \\
+ttZ             & 34755         & 32.3468       & 0.482682      & 0.0149221 \\
+ttH             & 25696         & 34.6773       & 0.249151      & 0.00718483 \\
+\hline
+bkg:            & 328336        & 9589.05  &&\\
+data            & 8380          & 8380 && \\
+\hline
+\end{tabular}
+\caption{Pre-fit event yields in the di-Higgs $bb\hadhad$ signal
+  region. Here, Zttjj represents the processes as $Z\rightarrow\tau\tau + jj$,
+whereas Zjj represents  $Z\rightarrow ee/\mu\mu + jj$. The yields for Zttbb, Zttbc and Zttcc are scaled by 1.3. (Inputs from 2021\_06\_17)}
+\label{tab:HadHadYields}
+\end{table}
+
+The cutflows for non-resonant \hadhad SM ggF and VBF signal, as well as for resonant signals at various mass points are shown in Table~\ref{tab:SMHH_hadhad_cutflow} to Table~\ref{tab:X1000_hadhad_cutflow}.
+\input{sections/selection/hh_SMHH_hadhad_cutflow}
+
+
+\FloatBarrier

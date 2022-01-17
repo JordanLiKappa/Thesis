@@ -1,0 +1,98 @@
+The normalisation of the single-top background is derived using the MC cross-section. The normalisaion uncertainties are applied on single-top events in the SR regions in the fit, the \lephad and \hadhad signal region. In each signal region also shape variations are checked and applied where they are found to be relevant as described in the following. All these uncertainties are derived by MC-to-MC comparison, as described in Section~\ref{sec:systematics_backgroundmodelling}, following the \href{https://twiki.cern.ch/twiki/bin/view/AtlasProtected/TopMCSystematicsR21}{\underline{recommendations of the Top modelling group}}.
+
+Uncertainties from the matrix element, parton shower, interference are estimated using the differences between the nominal samples and the corresponding variations samples.  Uncertainties from ISR are estimated using internal weights which are applied to the alternative samples.
+Uncertainties due to PDF, $\alpha_s$, FSR and scales are evaluated using internal alternative weights present in all the single-top nominal samples. 
+The normalization variation uncertainties are evaluated by~\Cref{eq:acceptance_unc} and reported in~\Cref{tab:lq_background_modeling_stop:stop_sys}. %The MC samples to estimate the uncertainties on single-top are summarized in Table~\ref{tab:stop_alternative_samples}.
+
+
+
+%% \begin{table}[]
+%%   \tiny
+%%   \centering
+%%   \begin{tabular}{ccccccccccccccccc} 
+%%     \hline\hline
+%%     \multirow{2}{*}{Precision} & \multirow{2}{*}{Generators} & \multirow{2}{*}{Parameter} & \multicolumn{2}{c}{ME} & \multicolumn{2}{c}{PS} & \multicolumn{2}{c}{ISR(up)} & \multicolumn{2}{c}{ISR(down)} & \multicolumn{2}{c}{FSR(up)} & \multicolumn{2}{c}{FSR(down)} & \multicolumn{2}{c}{PDF+$\alpha_s$} \\ 
+%%      & & & nom & var & nom & var & nom & var & nom & var & nom & var & nom & var & nom & var \\ \hline
+%%     AF2           & \POWHEG   + \PYTHIA 8 & $\mathrm{h_{damp}}$=1.5 &\ding{51}&         &\ding{51}&         &\ding{51}&         &\ding{51}&\ding{51}&\ding{51}&\ding{51}&\ding{51}&\ding{51}&\ding{51}&\ding{51}\\
+%%     FullSim       & \POWHEG   + \PYTHIA 8 & $\mathrm{h_{damp}}$=1.5 &         &         &         &         &         &         &         &         &&&&&&\\
+%%     AF2           & \AMCatNLO + \PYTHIA 8 & $\mathrm{h_{damp}}$=1.5 &         &\ding{51}&         &         &         &         &         &         &&&&&&\\
+%%     AF2           & \AMCatNLO + \HERWIG 7 & $\mathrm{h_{damp}}$=1.5 &         &         &         &\ding{51}&         &         &         &         &&&&&&\\
+%%     AF2           & \AMCatNLO + \PYTHIA 8 & $\mathrm{h_{damp}}$=3.0 &         &         &         &         &         &\ding{51}&         &         &&&&&&\\
+%%     \hline\hline
+%%   \end{tabular}
+%%   \caption{The MC samples to estimate the uncertainties on single-top.}
+%%   \label{tab:stop_alternative_samples}
+%% \end{table}
+
+%% The brief descriptions are summarized here.
+
+%% \begin{description}
+%%   \item[Matrix element]\mbox{}\\
+%%   \item[Parton shower]\mbox{}\\
+%%   \item[Initial State Radiation up/down]\mbox{}\\
+%%   \item[Final State Radiation up/down]\mbox{}\\
+
+  %% \item[Parton Density Function]\mbox{}\\
+    %% PDF uncertainty is estimated by using uncertainty prescriptions for PDF4LHC15\_30 combining CT14, MMHT14, and NNPDF3.0,
+    %% which is a symmetric Hessian PDF set with $N_{eig}=30$ eigenvectors.
+    %% First of all, the following formula is used to compute the PDF uncertainty:
+    %% \begin{equation}
+    %%   \delta^{\mathrm{pdf}}\sigma=\sqrt{\sum_{i=1}^{30}\left( \sigma^k - \sigma^0 \right)^2},
+    %% \end{equation}
+    %% where $\sigma$ is a total inclusive cross-section.
+    %% The $\sigma^0$ is the PDF4LHC15 central value (PDFset=90900) and  $\sigma^k$ are the eigenvectors (PDFset=90901–90930).
+    %% The formula calculates the relative uncertainty w.r.t. the PDF4LHC central value.
+    %% This $\delta$ is applied to nominal PDF sample (NNPDF3.0).
+    %% It is recommended that PDF+$\alpha_s$ uncertainties is determined by computing the PDF uncertainty for the central $\alpha_s$, 
+    %% computing predictions for the upper and lower values of $\alpha_s$, 
+    %% and finally adding results in quadrature.
+    %% Two NNPDF3.0 variations with different $\alpha_s$ available:
+    %% \begin{itemize}
+    %%   \item $\alpha_s$ = 0.117 : PDFset=266000
+    %%   \item $\alpha_s$ = 0.119 : PDFset=265000
+    %% \end{itemize}
+    %% Uncertainty on $\alpha_s$ should be derived as:
+    %% \begin{equation}
+    %%   \delta^{\alpha_s}\sigma=\frac{\sigma(\alpha_s=0.1195)-\sigma(\alpha_s=0.1165)}{2}
+    %% \end{equation}
+    %% and combined with the PDF uncertainty:
+    %% \begin{equation}
+    %%   \delta^{\mathrm{PDF}+\alpha_s}\sigma=\sqrt{(\delta^{\mathrm{pdf}}\sigma)^2+(\delta^{\alpha_s}\sigma)^2}
+    %% \end{equation}
+%% \end{description}
+
+To evaluate the shape uncertainties, the differences of the variation samples and the nominal sample are compared using the PNN score distributions. 
+The variation and the nominal sample are run through the same pre-selection and the same PNN classification. 
+
+%% \paragraph{Uncertainties on single-top in the \lephad channel}\mbox{}\\
+
+The PNN score comparisons of the nominal and alternative samples for the LQ \lephad channel are shown in Appendix~\ref{subsubsec:lq_appendix_systs_stop_lephad}. The results show that the shape differences are found in the ME, 
+PS and ISR uncertainties, while there is no shape difference in the FSR and PDF+$\alpha_s$ uncertainties.
+Thus the ME, PS, ISR up/down and interference sources are taken into account as single-top modelling shape uncertainties.
+%The relative acceptance normalisation uncertainties are shown in Table~\ref{tab:lq_background_modeling_stop:stop_sys}.
+
+%% \paragraph{Uncertainties on single-top in the \hadhad channel}\mbox{}\\
+
+The PNN score comparisons of the nominal and alternative samples for the LQ \hadhad channel are shown in Appendix~\ref{subsubsec:lq_appendix_systs_stop_hadhad}. In the LQ \hadhad channel, the results show that the shape differences 
+are found in the ME, PS, ISR/FSR and interference uncertainties. Thus the ME, PS, ISR up/down, FSR up/down and interference sources 
+are taken into account as modelling shape uncertainties.
+%The relative acceptance normalisation uncertainties are shown in Table~\ref{tab:lq_background_modeling_stop:stop_sys}.
+
+\begin{table}
+  \centering
+  \small
+  \begin{tabular}{c|c|c}
+    \hline\hline
+    Source         & $\sigma_{\mathrm{ACC}}^{\mathrm{nom}}$ in \lephad SR & $\sigma_{\mathrm{ACC}}^{\mathrm{nom}}$ in \hadhad SR \\ \hline
+    ME             &                                                & -0.139            \\
+    PS             &                                                &  0.0971           \\
+    ISR up/down    &                                        &  0.215, -0.140    \\
+    FSR up/down    &                                        &  0.0290, -0.0634  \\
+    Interference   &                                & -0.563            \\
+    PDF+$\alpha_s$ &                                                  & 0.291             \\ \hline
+    Total up/down  &                                        & 0.691, -0.674     \\
+    \hline\hline
+  \end{tabular}
+  \caption{Normalisation acceptance uncertainties on single-top in the LQLQ \lephad and \hadhad channels.}
+  \label{tab:lq_background_modeling_stop:stop_sys}
+\end{table}

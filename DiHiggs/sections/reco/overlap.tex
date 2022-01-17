@@ -1,0 +1,59 @@
+After the event is reconstructed, an overlap-removal procedure is applied to
+resolve ambiguities when a physical object is reconstructed as multiple
+particles in the ATLAS detector. The angular distance $\dRy =
+\sqrt{\Delta y^2 + \Delta \phi^2}$ is used to measure the overlap of two
+reconstructed objects.
+
+Overlaps between most of the detector objects used in the analysis are resolved by using 
+the standard overlap removal tools \verb|AssociationUtils|~\cite{olrAssociationUtils}. This is not
+the case only when resolving overlaps between the reconstructed \tauhadvis, anti-\tauhadvis\ objects and jets,
+where an analysis-specific procedure is used, as will be explained in the following.
+The \verb|AssociationUtils| tool allows for choosing a working point~\cite{olrWorkingPoints} and
+the \textit{Standard} recommended working point is used in the analysis\footnote{The 
+\textit{Heavy-flavor} working point (allowing for $b$-jet-aware overlap-removal procedure)  
+was also tested and it was found, with respect to the \textit{Standard} working point, 
+to give (nearly) identical results in the \hadhad\ (\lephad) channel.}.
+
+The step-by-step procedure that is used to resolve ambiguities in the
+reconstructed objects is summarised in the following:
+\begin{itemize}
+\item $e_1$ - $e_2$: Reject $e_1$ if both electrons share the track and ${\pT}_1
+  < {\pT}_2$
+\item \tauhadvis - $e$: Reject \tauhadvis if $\dRy < 0.2$ and $e$ passes \verb|DFCommonElectronsLHLoose|
+\item \tauhadvis - $\mu$: Reject \tauhadvis if $\dRy < 0.2$:\\
+  Case 1 ($\tauhadvis\ \pT > \SI{50}{\GeV}$): $p_{\text{T}, \mu} > \SI{2}{\GeV}$
+  and combined muon\\
+  Case 2 ($\tauhadvis\ \pT \leq \SI{50}{\GeV}$): $p_{\text{T}, \mu} > \SI{2}{\GeV}$
+  \item $\mu$ - $e$: Reject $\mu$ if calo-muon and shared ID track
+\item $e$ - $\mu$: Reject $e$ if shared ID track
+\item jet - $e$: Reject jet if $\dRy < 0.2$
+\item $e$ - jet: Reject $e$ if $\dRy < 0.4$
+\item jet - $\mu$: Reject jet if $N_\text{track} < 3$ ($p_\text{T,
+  track} > \SI{500}{\MeV}$), and $\dRy < 0.2$
+\item $\mu$ - jet: Reject $\mu$ if $\dRy < 0.4$
+\end{itemize}
+Due to a bug in the PFlow jet reconstruction, an additional OLR step removing
+prompt muons being reconstructed as fake jets is implemented in the official ASG
+OLR tool.
+
+Additionally, an analysis-specific overlap-removal procedure for \tauhadvis,
+anti-\tauhadvis and jets is implemented:
+\begin{itemize}
+\item jet - \tauhadvis: Reject jet if $\dRy < 0.2$
+\item anti-\tauhadvis - jet: Reject anti-\tauhad if jet is \btagged and $\dRy <
+  0.2$
+\item jet - anti-\tauhadvis: Reject jet  if $\dRy < 0.2$
+\end{itemize}
+This establishes the following priority: \tauhadvis > \btagged jet >
+anti-\tauhadvis > un-tagged jet.
+
+Another priority, \btagged jet > \tauhadvis > anti-\tauhadvis > un-tagged jet, was
+investigated as an alternative but found to reduce signal acceptance in the
+2-tag region significantly due to limited \tauhad rejection of the DL1r \btag
+algorithm at the \SI{77}{\percent} working point\footnote{Additionally, the adopted priority
+ensures consistent treatment of electrons, muons and \tauhadvis\ candidates
+with respect to $b$-jets in the signal regions of the analysis, which 
+further allows for using an $\ell\ell bb$ control region, as will be explained.}. 
+With the alternative priority
+the signal acceptance is reduced by about \SI{8}{\percent} (\SI{13}{\percent})
+in $\taulep\tauhad$ ($\tauhad\tauhad$).

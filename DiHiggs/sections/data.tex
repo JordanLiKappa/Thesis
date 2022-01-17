@@ -1,0 +1,72 @@
+The results presented here are based on proton–proton collision data at a centre-of-mass energy of $\sqrt{s}=$13~TeV, collected by the ATLAS detector at the LHC between 2015 and 2018, corresponding to an integrated luminosity of 139~\ifb. Selected data events are required to have all relevant components of the ATLAS detector in good working condition according to the ATLAS Good-Run-List (GRL).
+
+In the following, a description of the signal and background Monte Carlo (MC) samples is given. Supporting material for this section can be found in appendix~\ref{sec:appendix_data}, including the data GRL and the complete signal and background Monte Carlo samples list.
+
+\subsection{Signal Monte Carlo samples}
+
+\subsubsection{di-Higgs}
+
+The SM non-resonant di-Higgs process via gluon-gluon fusion was simulated with \POWHEGBOX v2 generator~\cite{Powheg1, Powheg2, Powheg3} at next-to-leading order (NLO), with full NLO corrections with finite top mass, using the PDF4LHC~\cite{Butterworth:2015oua} parton distribution function (PDF) set. Parton showers and hadronization were simulated with \Herwig7~\cite{Herwigpp} parton shower model. The EvtGen v1.6.0 program~\cite{EvtGen} is used to model the properties of the bottom and charm hadron decays.
+
+The normalisation of this process in the analysis is set to the SM ggF di-Higgs cross section, $\sigma_{ggF}=\SI{31.05}{fb}$ calculated at NNLO FTApprox~\cite{Grazzini:2018bsd}, times the $bb\tau\tau$ BR, $\sigma_{ggF} \times BR (bb \tau\tau)  = \SI{31.05}{fb} \times 0.0730562561  =  \SI{2.2683967}{fb}$.  
+
+The resonant di-Higgs production process via gluon-gluon fusion, $pp \rightarrow X \rightarrow hh$, was
+simulated in the extended Higgs sector of Two-Higgs-Doublet Models
+(2HDM)~\cite{Branco:2011iw} in the narrow width approximation. Simulated
+resonant di-Higgs samples were produced for 15 different mass points of the
+resonance $X$ (251, 260, 280, 300, 325, 350, 400, 450, 500, 550, 600, 700, 800,
+900, 1000 \GeV) for the \lephad decay and for 18 mass points (251, 260, 280, 300, 325, 350, 400, 450, 500, 550, 600, 700, 800,
+900, 1000, 1200, 1400, 1600 \GeV) for the \hadhad decay, with the Standard Model Higgs boson ($h$) mass set to $m_h=125$
+\GeV. The narrow width scalar model is a gluon-initiated state (ggF) implemented in
+\MADGRAPH at leading-order (LO)~\cite{mg5_lo} and interfaced to the \Herwig7 version 7.1.0.3~\cite{Herwigpp}
+parton shower model. The EvtGen v1.6.0 program~\cite{EvtGen} is used to model the properties of the bottom and charm hadron decays. 
+These BSM resonant samples only include the BSM term (the SM and the SM-BSM interference terms are not included). Thus, the interference between non-resonant SM and BSM resonant is neglected in the analysis as not included in the generated BSM resonant samples (as done in all di-Higgs analyses). The NNPDF23LO parton distribution function (PDF)
+set~\cite{NNPDF23PDFSet} is used together with the H7.1-Default
+tune~\cite{Gieseke:2012ft}. The width of the heavy scalar, $X$, is fixed to 10
+\MeV . The resonant di-Higgs samples for resonant masses up to 1 TeV were simulated using fast detector
+simulation relying on a parametrized response of the calorimeters.
+
+The normalisation of these signal samples in the analysis is set to $\sigma \times BR  = \SI{1}{pb} \times BR (bb \tau \tau)  =  0.073056256 \SI{1}{pb}$. 
+
+\subsubsection{Leptoquark}
+Simulated samples of scalar LQ pair are generated with \MGMCatNLO version 2.6.0 at next-to-leading-order (NLO) in QCD interfaced to \PYTHIA8 version 8.230~\cite{PYTHIA64, PYTHIA82} for the parton showering and hadronization, and EvtGen version 1.6.0 program is used for the $b$- and $c$-hadron decays. The PDF set used is NNPDF3.0 NLO~\cite{NNPDF} with the A14~\cite{A14tune} set of tuned underlying-event and parton shower parameters. Matching of the matrix element (ME) with parton showering was performed following the CKKW-L prescription~\cite{CKKW}, with a matching scale set to one quarter of the mass of the leptoquark. All signal cross sections are calculated to approximate next-to-next-to-leading order (NNLO) in the strong coupling constant, adding the resummation of soft gluon emission at next-to-next-to-leading-logarithm accuracy (approximate NNLO+NNLL)~\cite{NNLO1, NNLO2, NNLO3, NNLO4}.
+
+Samples are produced for each leptoquark mass point ranging from 300 GeV to 2000 GeV. The full list of mass points (in GeV) is 300, 400, 500, 600, 700, 800, 850, 900, 950, 1000, 1050, 1100, 1150, 1200, 1250, 1300, 1350, 1400, 1450, 1500, 1550, 1600, 1700, 1800, 1900, 2000. The coupling parameter $\lambda$ is set to 0.3, resulting in the LQ width of about 0.2\% of its mass which ensures that LQs decay promptly~\cite{BUCHMULLER1987442, Belyaev_2005}. $\beta$ is set to 0.5 which enables to produce signal samples of several final states efficienctly (not only for $b\tau b\tau$ final state).
+
+% so that a leptoqaurk decays either into $b\tau$ or $t\nu_\tau$. This makes it possible to investigate the effect of branching ratio as well as to share signal samples with other groups that perform analysis of other channels and enables efficient sample production. The exact relation between the neutral and charged lepton decay widths for third generation leptoquarks are given by
+
+%% \begin{eqnarray}
+%%   \label{eq:LQBR}
+%%   \Gamma(LQ_3^u \rightarrow b\tau) = \frac{(M_{LQ}^2 - M_{b}^2 - M_{\tau}^2) \sqrt{M_{LQ}^4 + M_{b}^4 + M_{\tau}^4 -2(M_{LQ}^2 M_{b}^2 + M_{LQ}^2 M_{\tau}^2 + M_{b}^2 M_{\tau}^2)} 3 \lambda^2 \beta}{48 \pi M_{LQ}^3}.
+%% \end{eqnarray}
+
+%% The limits set is performed in terms for the leptoquark pair production cross section by scaling branching ratio.
+
+% Additonally, signal samples for both up and down-type leptoquark pair-production with $\beta=0.5$ were generated. This allowed us to set lmits on the LQ BR for down-type lepqtoquarks as well as investigate the contitibution of non-$b\tau b\tau$ final states in our signal region. For the up-type leptoquarks as well as investigate the contribution of non-$b\tau b\tau$ final states in our signal region. For the up-type LQ model, the limits set using $\beta = 0.5$ samples show only a moderate improvement compared to the conservative result obtained by scaling the $\beta = 1$ samples down by the relative branching ratio values. The improvement is confined mostly to low leptoquark masses and comes from the contribution of non-$b\tau b\tau$ signal events which are not present in the $\beta = 1$ samples. All distibutions, yield tables, limits and 2D exclusion contours show in the main body of this note have been made with up type $\beta = 1$ signal samples, except for the shown type 2D exclusion contours.
+
+\subsection{Background Monte Carlo samples}
+\label{sec:data_backgrounds}
+
+The \ttbar\ production and single top-quarks production in the $Wt$~, $s$~and $t$-channels are simulated using the \POWHEGBOX v2 generator~\cite{Powheg1, Powheg2, Powheg3}. The NNPDF30NLO~\cite{NNPDF} parton distribution function (PDF) set is used. The events are interfaced to \PYTHIA8 version  8.230~\cite{PYTHIA82} for the parton shower and hadronisation with the A14 set of tuned parameters~\cite{A14tune, ATLAS:2012uec} and the NNPDF23LO~\cite{NNPDF23PDFSet} PDF set. The EvtGen v1.6.0 program~\cite{EvtGen} is used to model the properties of the bottom and charm hadron decays. For all top processes, top-quark spin correlations are preserved (for $t$-channel production, top quarks are decayed using MadSpin \cite{MadSpin}). The top-quark mass is set to 172.5 \GeV.  The NLO \ttbar\ production cross section is corrected to the theory prediction calculated at NNLO+NNLL. For single top-quark processes, the cross sections were corrected to the theory predictions calculated at NLO.
+ 
+Events containing $W$\ or $Z$\ bosons produced in association with jets are simulated using the \SHERPA version 2.2.1~\cite{Bothmann:2019yzt} generator. The NNPDF30NNLO PDF set~\cite{NNPDF} is used in conjunction with dedicated parton shower tuning developed by the \SHERPA authors.  All $W/Z$ + jets events are normalised to the predicted cross sections using NNLO calculations.
+
+Diboson processes with one of the bosons decaying hadronically and the other leptonically are simulated using the \SHERPA version 2.2.1~\cite{Bothmann:2019yzt} generator. The NNPDF30NNLO PDF set~\cite{NNPDF} is used in conjunction with dedicated parton shower tuning developed by the \SHERPA authors. The generator NLO cross sections are used.
+
+Standard Model single Higgs boson production is included in the analysis as part of the background processes. 
+
+Standard Model Higgs production in association with a top-quark pair, $tth$, is simulated using the \POWHEGBOX generator~\cite{Powheg1, Powheg2, Powheg3}. The NNPDF30NLO parton distribution function (PDF) set is used. The events are interfaced to \PYTHIA8 version  8.230~\cite{PYTHIA82} for the parton shower and hadronisation with the A14 set of tuned parameters~\cite{A14tune, ATLAS:2012uec} and the NNPDF23LO PDF set~\cite{NNPDF23PDFSet}. The EvtGen program~\cite{EvtGen} is also used. The cross section is set to $tth$ production NLO calculations~\cite{Hxsec}.
+
+The Higgs boson production in association with a $Z$\ boson, $Zh$, with the Higgs boson decaying to $bb$ or $\tau\tau$, is included in the analysis using three samples. The $qq Zh(Z\rightarrow ll, h\rightarrow bb)$, $gg Zh(Z\rightarrow ll,h\rightarrow bb)$ (where $"l"$ includes all leptons $e,\mu,\tau$) and $qq Zh(Z\rightarrow all, h\rightarrow \tau\tau)$ are simulated using \POWHEGBOX v2. The NNPDF30NLO PDF set~\cite{NNPDF} is used. The events are interfaced with \PYTHIA8 version 8.212 using the AZNLO tune~\cite{AZNLOtune} and the CTEQ6L1 PDF set~\cite{CTEQ6L1}. The EvtGen program~\cite{EvtGen} is also used. The cross section is set to the NNLO(QCD)+NLO(EW) calculations for $qqZh$ and to the NLO+NLL in QCD for $ggZh$. The cross section for the process $qq Zh(Z\rightarrow all, h\rightarrow \tau\tau)$ is set to the total $Zh$ production cross section to account for the missing $ggZh(Z\rightarrow all, h\rightarrow \tau\tau)$ component.
+
+The Higgs boson production in association with a $W$\ boson, $Wh$, with the Higgs boson decaying to $bb$ or $\tau\tau$, is included in the analysis using four samples. The $W^{\pm}h(W\rightarrow l \nu, h\rightarrow bb)$, $W^{\pm}h(W\rightarrow all,h\rightarrow \tau\tau)$ are simulated using \POWHEGBOX v2. The NNPDF30NLO PDF set~\cite{NNPDF} is used. The events are interfaced with \PYTHIA8 version 8.212 using the AZNLO tune~\cite{AZNLOtune} and the CTEQ6L1 PDF set~\cite{CTEQ6L1}. The EvtGen program~\cite{EvtGen} is also used. The cross section is set to the NNLO(QCD)+NLO(EW) calculations.
+
+The gluon-fusion Higgs boson production with the Higgs boson decaying to $\tau\tau$ is simulated using \POWHEGBOX v2. The NNPDF30NNLO PDF set~\cite{NNPDF} is used. The events are interfaced with \PYTHIA8 version 8.212 using the AZNLO tune~\cite{AZNLOtune} and the CTEQ6L1 PDF set~\cite{CTEQ6L1}. The EvtGen program~\cite{EvtGen} is also used. The cross section is set to the N3LO(QCD)+NLO(EW) calculations~\cite{Hxsec}.% times the $h\rightarrow \tau\tau$ decay branching ratio~\cite{Hxsec}.
+
+The vector-boson-fusion Higgs boson production with the Higgs boson decaying to $\tau\tau$ is simulated using \POWHEGBOX v2. The NNPDF30NLO PDF set~\cite{NNPDF} is used. The events are interfaced with \PYTHIA8 version 8.212 using the AZNLO tune~\cite{AZNLOtune} and the CTEQ6L1 PDF set~\cite{CTEQ6L1}. The EvtGen program~\cite{EvtGen} is also used. The cross section is set to the NNLO(QCD)+NLO(EW) calculations~\cite{Hxsec}. %times the $h\rightarrow \tau\tau$ decay branching ratio~\cite{Hxsec}.
+
+%Other SM Higgs boson processes are not included as they have negligible contributions.
+
+All MC samples are passed through the full GEANT4~\cite{Geant4,ATLASSIM} simulation of the ATLAS detector and are reconstructed with the same software as used for data.
+
+Additional samples produced with alternative generators and settings are used to estimate systematic uncertainties in the event modelling, as described later in Section~\ref{sec:systs}.

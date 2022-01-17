@@ -1,0 +1,309 @@
+\paragraph*{Version 0.9}
+
+This version contains all the updates presented at the PAM.
+
+Open item:
+
+\begin{itemize}
+\item Calculate global significance with toys.
+\end{itemize}
+
+\paragraph*{Version 0.8}
+
+This version contains all the updates requested at the HDBS group approval and for the 1st circulation to ATLAS.
+
+Few minor open items:
+
+\begin{itemize}
+\item Include 375 GeV mass point for limit calculation (sample is ready, missing modelling shape systs for the bkg at this mass point);
+\item Update ggF signal cross section uncertainties when new recommendations announced by LHCHH WG;
+\item Calculate global significance with toys.
+\end{itemize}
+
+\paragraph*{Version 0.7}
+
+This version contains the updated results for HDBS group approval.
+
+There are a few small open items to be updated:
+
+\begin{itemize}
+\item Include 375 GeV mass point for resonant limit calculation (when sample is ready);
+\item Add VBF non-resonant signal acceptance uncertainties in the \lephad channel;
+\item Fix bug in PS uncertainty (shape and norm) for the resonant signal in the \lephad channel;
+\item Fix CP syst for the diboson bkg in the \lephad channel;
+\item Update ggF signal cross section uncertainties when new recommendations announced by LHCHH WG.
+\item Add a resonant signal uncertainty to cover the difference between FullSim and AF2 for \tauhad trigger.
+\end{itemize}
+
+\paragraph*{Version 0.6}
+
+This version contains the unblinded results for the individual channel and the combination and addresses
+the CDS comments we received for the unblinding approval.
+
+
+\paragraph*{Version 0.5}
+This version contains the individual fit results for the \lephad and \hadhad channels with all updates relevant for the 
+unblinding approval. The Z+HF inputs are re-done removing the \ttbar reweighing in the Z+HF CR. The \lephad and
+\hadhad fits are repeated with the updated Z+HF CR inputs. The results for \lephad are updated in this version.
+For \hadhad we checked only the SM non-resonant case due to the time constraints and found only minor differences.
+That is discussed at the EB meeting on April 30th. We will update the \hadhad results in v0.6. 
+
+Main updates compared to the previous version of the HH analysis:
+\begin{itemize}
+\item unblinding criteria for the SM MVAs and corresponding plots
+\item updated single top modelling uncertainties
+\item updated \lephad fit results and non-resonant limits
+\item updated \lephad prefit/postfit PNN/NN input variable distributions
+\item added \lephad prefit/postfit PNN/NN distributions in 1-tag region
+\item updated bin edges used for \lephad MVA plots
+\item updated \hadhad close-to-SR plots with new blinding criterion
+\item Z+HF systematic closure plots in the \hadhad channel
+\end{itemize}
+
+\paragraph*{Version 0.4}
+
+This is the version containing the individual fit results for the lephad and hadhad channels with all updates relevant for the unblinding approval. We found that the Z+HF inputs
+are done with the ttbar reweighting, so we need to re-make them and update all results before the unblinding as well (Z+HF CR is used also in the individual fits). 
+
+Main updates compared to the previous version of the HH analysis (status April 24):
+\begin{itemize}
+\item added missing minor systematics for non-resonant HH signal and ZHtatau (lephad+hadhad)
+\item updated top bkg modelling systematics (lephad+hadhad)
+\item updated yield tables for new inputs, yield tables in the 3 last MVA bins (lephad+hadhad)
+\item improved MVA optimisation descriptions (lephad+hadhad)
+\item adding cross check of compatibility of lephad FFs and hadhad SFs for fake bkg
+\item added description of the smoothing cross checks
+\item updated Z+HF CR fit description
+\item adding bkg validation for SR-like or VR regions with a cut on MVA score (hadhad+hadhad)
+\item adding correlation tests 
+\item updated Z+HF syst section
+\item updated fit results (lephad+hadhad)
+\item updated systematics table
+\item updated lephad trigger tables
+\item updated lephad fake plots
+\item extended lephad signal up to 1.6 TeV
+\item updated ttbar fake SFs (adding trigger SFs) for hadhad
+\item addressing STT inefficiency comment (hadhad)
+\item added motivation for hadhad trigger selection
+\end{itemize}
+
+There are still some open items summarised below.
+\begin{itemize}
+\item new Z+HF CR inputs without ttbar reweighting
+\item lephad, hadhad and the combined results with the new inputs
+\item investigate if further unblinding in the SM MVA score possible 
+\end{itemize}
+
+
+%\paragraph*{Version 0.35}
+%
+%This is the intermediate version of the note before the final updates for the unblinding approval.
+%
+% Main updates compared to the previous version on the HH analysis:
+%
+%\begin{itemize}
+%\item updates in the \lephad \ttbar and Z+jets modelling systematics
+%\item added \hadhad overtraining plots
+%\item added the Z+HF CR fit in aux
+%\item added pull comparisons split by NP category
+%\item added single top modelling uncertainties
+%\item added comparison of \ttbar reweighting in \lephad SR and \ttbar modelling uncertainties
+%\item added description of \ttbar fake $\tau$ extrapolation uncertainties for SF method
+%\item \hadhad checks for dublicate events
+%\item non-resonant SM signal cutflows with the Powheg+Pythia8 samples (yield tables still with old samples)
+%\end{itemize}
+%
+%There are still some open items summarised below.
+%
+%\begin{itemize}
+%\item Trigger studies for the \hadhad channel will be added to the appendix.
+%\item switch to the new inputs, which will include
+%\begin{itemize}
+%\item ttV and ggZHtautau background
+%\item Pythia8 non-resonant SM sample as nominal and MVA retraining
+%\item extend the \lephad resonant samples to 1.6 TeV
+%\item Single lepton triggers in the \lephad channel are updated in the analysis framework (msonly and e300\_etcut triggers are removed after checking with experts). The trigger table will be updated accordingly when the event yields are updated. Some small changes are expected in the \lephad event yields due to the updates in the framework.
+%\item fixed technical issue in some CP systematics and removed non-recommended triggers.
+%\end{itemize}
+%\item describe the names of shape parameters
+%\item improvement in \lephad vs 36/fb result
+%\item overtraining plots for \lephad with the fit binning
+%\item \ttbar uncertainty parametrisation closure
+%\item smoothing
+%\item correlation of shape and norm uncertainties
+%\item correlation of relative normalisation uncertainties between the SRs
+%\end{itemize}
+
+%\paragraph*{Version 0.3}
+%
+%This is the third version of the note. 
+%
+%This version is now including the remaining plots and checks requested for the HH analysis from the EB comments on v 0.1 and it is also including an updated description of the HH fit setup and fit results. Comments on v 0.2 and from the last two EB meeting will be addressed in the next version of the note.
+%
+%%This version also includes an updated description of the LQLQ analysis. 
+%
+%Main updates compared to the previous version on the HH analysis:
+%
+%\begin{itemize}
+%\item Updated description of the OLR: the OLR used for the analysis is not performed using
+%b-jet aware jet-electron / jet-muon removal as previously wrongly stated in the note. The ``standard OLR''
+%(recommended by the flavour tagging group) is used instead. However,
+%the jet-\tauhad / anti-\tauhad OLR is still b-jet aware as stated in
+%the note.
+%\item Added in appendix (referenced from selection section) description of acceptance x efficiency improvement compared to previous analysis for the \hadhad channel.
+%\item Added data/prediction plots of \hadhad trigger objects and MVA input variables split by data-taking period.
+%\item Added background estimation validation plots for \hadhad including all systematics and additionally plots of the MVA scores in more validation regions and also split by trigger.
+%\item Switched from $\eta$-inclusive Multijet FFs in \hadhad to two
+%  $\eta$ bins to resolve observed non-closure and mismodelling in the
+%  fake validation region. This change was implemented to improve
+%  agreement in the validation region and is not expected to have a
+%  significant impact on the 2-tag signal region. This change is
+%  implemented in the main body and additional material is collected in
+%  \Cref{app:pseudorapidity_dependence_fake_factors}.
+%\item Updated fit setup section.
+%\item Updated fit results section.
+%\end{itemize}
+%
+%%Main updates compared to the previous version on the LQ analysis:
+%%
+%%\begin{itemize}
+%%\item Event selection, MVA and fit setup section (\Cref{subsec:sellq},~\ref{sec:mva_lq},\ref{sec:fitLQ}) are finalized.
+%%\item Background estimation section is ready except anti-ID ttbar fake SF.
+%%\item Systematics section is ready except uncertainties on multi-jet with \tauhad in the \hadhad channel (\Cref{subsec:LQHadHadmultijet})
+%%      on ttbar fake MC subtraction (related to anti-ID ttbar fake SF)
+%%\item plots are added in results section.
+%%\end{itemize}
+%
+%There are still some open items summarised below.
+%
+%General:
+%
+%\begin{itemize}
+%\item Signal cut-flows will be added soon for all channels.
+%\end{itemize}
+%
+%HH analysis:
+%
+%\begin{itemize}
+%\item Trigger studies for the \hadhad channel will be added to the appendix.
+%\item Add missing small backgrounds (ttV and ggZHtautau).
+%\item Switch to Pythia8 non-resonant SM sample as nominal (and use Herwig one for systematic uncertainty).
+%\item Single lepton triggers in the \lephad channel are updated in the analysis framework (msonly and e300\_etcut triggers are removed after checking with experts). The trigger table will be updated accordingly when the event yields are updated. Some small changes are expected in the \lephad event yields due to the updates in the framework.
+%\item New \lephad channel CxAOD production to fix some issues in the previous one (fix of technical issue in some CP systematics and removed non-recommended triggers).
+%\end{itemize}
+%
+%%LQ analysis:
+%%
+%%\begin{itemize}
+%%\item Finalize anti-ID ttbar fake SF, ttbar fake MC subtraction uncertainty for multijet fake in \hadhad channel.
+%%\item Finalize results section, including investigation.
+%%\end{itemize}
+%%
+%
+%\paragraph*{Version 0.2}
+%
+%This is the second version of the note. Most of the EB comments on v0.1 have been addressed and implemented in this version of the note for the HH analysis. 
+%
+%
+%Main updates compared to the previous version on the HH analysis:
+%
+%\begin{itemize}
+%\item Added more details on the trigger selections.
+%\item Added plots of trigger objects (also split by year for LepHad channel).
+%\item Added uncertainties on the fake-tau background in the HH LepHad channel.
+%\item Added plots of FF CRs for the HH LepHad channel.
+%\item Added plots checking FF eta dependence and a closure check in ttbar CR for the HH LepHad channel.
+%\item Updated ttbar SF method and uncertainties for the HH HadHad channel.
+%\item Finalised ttbar subtraction and uncertainty in the multi-jet estimation for the HadHad channel.
+%\item Added more details on MVAs and overtraining checks.
+%\item Added plots of MVAs in validation regions.
+%\item Added some plots for the multi-jet FF closure checks for the HadHad channel.
+%\end{itemize}
+%
+%
+%%Main updates compared to the previous version on the LQLQ analysis:
+%%
+%%\begin{itemize}
+%%\item The estimation of ttbar with fake taus is fixed to semi-data driven Scale-factor method for both \lephad and \hadhad channels,  briefly described in~\Cref{sec:bkgLQ}.
+%%\item Estimation for multijet fakes in \hadhad channel is changed from previous version and finalized, briefly described in~\Cref{sec:bkgLQ}.
+%%\end{itemize}
+%
+%
+%There are still some open items summarised below.
+%
+%General:
+%
+%\begin{itemize}
+%\item Signal cut-flows will be added soon for all channels.
+%\end{itemize}
+%
+%HH analysis:
+%
+%\begin{itemize}
+%\item Plots of trigger objects split by year and split by trigger for the HadHad channel being produced.
+%\item Trigger checks and studies for the HadHad channel will be added to the appendix.
+%\item More background validation plots for the HadHad channel will be added.
+%\item Fit section and fit results will be updated.
+%\end{itemize}
+%
+%\underline{Notice:} Due to a configuration issue in the
+%CxAODFramework, the OLR used for the analysis is not performed using
+%b-jet aware jet-electron / jet-muon removal. The ``standard OLR''
+%(recommended by the flavour tagging group) is used instead. However,
+%the jet-\tauhad / anti-\tauhad OLR is still b-jet aware as stated in
+%the note. We want to understand the implications of this
+%misconfiguration and as a result have not updated the note concerning
+%this issue. An update will be provided as soon as the impact of this
+%issue understood.
+%
+%%LQLQ analysis:
+%%
+%%\begin{itemize}
+%%\item More details on ttbar fake and multi-jet background estimations will be added in the next version.
+%%\item Other updates as systematics, fits will be added in the next version as well.
+%%\end{itemize}
+%%
+%
+%\paragraph*{Version 0.1}
+%
+%This is the first version of the note.
+%
+%General:
+%
+%\begin{itemize}
+%\item Signal cut-flows will be added soon for all channels.
+%%\item Some appendices about checks done for object reconstruction and identification have not been filled yet, these studies were done in the past to support the choices that were made and they will be filled soon.
+%\end{itemize}
+%
+%HH analysis:
+%
+%\begin{itemize}
+%\item Systematic uncertainties on non-resonant SM signal will be evaluated soon for both channels.
+%\item HadHad channel:
+%\begin{itemize}
+%\item Systematic uncertainty on multi-jet due to ttbar subtraction in the \hadhad channel still being finalised.
+%\item Systematic uncertainties on ttbar fakes with SF method are being finalised (better motivation for the fake bin migrations, looking into the treatment of correlations between fits, and additional cuts to reduce the contribution of dileptonic \ttbar).
+%\item NN vs BDT discriminant for the non-resonant HH \hadhad analysis being studied.
+%\item Checks done on triggers have not been filled yet in the appendix, these studies were done in the past to support the choices that were made and they will be filled soon.
+%\end{itemize}
+%\item LepHad channel:
+%\begin{itemize}
+%\item Missing CP uncertainties in \lephad SRs at the moment, will be included soon.
+%\item Uncertainties on fake tau background in the \lephad channel will be added.
+%\item The missing uncertainties (PS and ME uncertainties) for Single Higgs in the \lephad channel will be added to the relevant table when they are available.
+%\item Plots for systematics rankings will be added for \lephad.
+%\item Checks done for $b$-tagging and tau-ID choice have not been filled yet in the appendix, these studies were done in the past to support the choices that were made and they will be filled soon.
+%\end{itemize}
+%\end{itemize}
+%
+%
+%%LQ analysis:
+%%
+%%\begin{itemize}
+%%  \item Additional materials will be added about the multijet fake in \lephad channel.
+%%  \item Additional materials will be added about the ttbar fake-\tauhad estimation in the \hadhad.
+%%  \item Detector related uncertainties material will be added.
+%%  \item Systematics uncertainties on \ttbar modelling in the \hadhad channel will be added.
+%%  \item Systematics uncertainties on Z+HF modeling in the \lephad channel will be added.
+%%  \item Fit validation plots will be added.
+%%\end{itemize}

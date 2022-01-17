@@ -4350,7 +4350,7 @@
       \verb 1207.1303
       \endverb
     \endentry
-    \entry{ATLAS-CONF-2021-030}{report}{}
+    \entry{dihiggs-conf}{report}{}
       \list{institution}{1}{%
         {CERN}%
       }
@@ -4584,6 +4584,7 @@
       \strng{authorbibnamehash}{96fd73b0c28fff2d9cfd9dc354ac83db}
       \strng{authornamehash}{96fd73b0c28fff2d9cfd9dc354ac83db}
       \strng{authorfullhash}{96fd73b0c28fff2d9cfd9dc354ac83db}
+      \field{extraname}{1}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -6929,7 +6930,33 @@
       \verb 1012.4686
       \endverb
     \endentry
-    \entry{HIGG-2013-32}{article}{}
+    \entry{fttf-twiki}{unpublished}{}
+      \name{author}{1}{}{%
+        {{hash=96fd73b0c28fff2d9cfd9dc354ac83db}{%
+           family={ATLAS},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{96fd73b0c28fff2d9cfd9dc354ac83db}
+      \strng{fullhash}{96fd73b0c28fff2d9cfd9dc354ac83db}
+      \strng{bibnamehash}{96fd73b0c28fff2d9cfd9dc354ac83db}
+      \strng{authorbibnamehash}{96fd73b0c28fff2d9cfd9dc354ac83db}
+      \strng{authornamehash}{96fd73b0c28fff2d9cfd9dc354ac83db}
+      \strng{authorfullhash}{96fd73b0c28fff2d9cfd9dc354ac83db}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{LHC Fake Taus Task Force webpage}}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://twiki.cern.ch/twiki/bin/viewauth/AtlasProtected/FakeTausTaskForce
+      \endverb
+      \verb{url}
+      \verb https://twiki.cern.ch/twiki/bin/viewauth/AtlasProtected/FakeTausTaskForce
+      \endverb
+    \endentry
+    \entry{HDBS-2018-33}{article}{}
       \name{author}{1}{}{%
         {{hash=ebfe6052e5f504e4a3579c49c44afe41}{%
            family={{ATLAS Collaboration}},
@@ -6948,17 +6975,17 @@
       \field{labeltitlesource}{title}
       \field{eprintclass}{hep-ex}
       \field{eprinttype}{arXiv}
-      \field{journaltitle}{JHEP}
-      \field{title}{{Evidence for the Higgs-boson Yukawa coupling to tau leptons with the ATLAS detector}}
-      \field{volume}{04}
-      \field{year}{2015}
-      \field{pages}{117}
+      \field{journaltitle}{Phys. Lett. B}
+      \field{title}{{Search for non-resonant Higgs boson pair production in the \(bb\ell\nu\ell\nu\) final state with the ATLAS detector in \(pp\) collisions at \(\sqrt{s} = 13\,\text{TeV}\)}}
+      \field{volume}{801}
+      \field{year}{2020}
+      \field{pages}{135145}
       \range{pages}{1}
       \verb{doi}
-      \verb 10.1007/JHEP04(2015)117
+      \verb 10.1016/j.physletb.2019.135145
       \endverb
       \verb{eprint}
-      \verb 1501.04943
+      \verb 1908.06765
       \endverb
     \endentry
     \entry{Baldi:2016fzo}{article}{}
@@ -7013,6 +7040,138 @@
       \endverb
       \verb{eprint}
       \verb 1601.07913
+      \endverb
+    \endentry
+    \entry{HIGG-2013-32}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ebfe6052e5f504e4a3579c49c44afe41}{%
+           family={{ATLAS Collaboration}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{ebfe6052e5f504e4a3579c49c44afe41}
+      \strng{fullhash}{ebfe6052e5f504e4a3579c49c44afe41}
+      \strng{bibnamehash}{ebfe6052e5f504e4a3579c49c44afe41}
+      \strng{authorbibnamehash}{ebfe6052e5f504e4a3579c49c44afe41}
+      \strng{authornamehash}{ebfe6052e5f504e4a3579c49c44afe41}
+      \strng{authorfullhash}{ebfe6052e5f504e4a3579c49c44afe41}
+      \field{extraname}{51}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-ex}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{JHEP}
+      \field{title}{{Evidence for the Higgs-boson Yukawa coupling to tau leptons with the ATLAS detector}}
+      \field{volume}{04}
+      \field{year}{2015}
+      \field{pages}{117}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/JHEP04(2015)117
+      \endverb
+      \verb{eprint}
+      \verb 1501.04943
+      \endverb
+    \endentry
+    \entry{keras}{misc}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=14134a39113404b1f80969c9ccc1f71e}{%
+           family={Chollet},
+           familyi={C\bibinitperiod},
+           given={François},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{2f3cf4de7406c8a08275677188d056f8}
+      \strng{fullhash}{2f3cf4de7406c8a08275677188d056f8}
+      \strng{bibnamehash}{2f3cf4de7406c8a08275677188d056f8}
+      \strng{authorbibnamehash}{2f3cf4de7406c8a08275677188d056f8}
+      \strng{authornamehash}{2f3cf4de7406c8a08275677188d056f8}
+      \strng{authorfullhash}{2f3cf4de7406c8a08275677188d056f8}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://keras.io}}
+      \field{title}{Keras}
+      \field{year}{2015}
+    \endentry
+    \entry{tensorflow}{misc}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{note}{Software available from tensorflow.org}
+      \field{title}{{TensorFlow}: Large-Scale Machine Learning on Heterogeneous Systems}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb https://www.tensorflow.org/
+      \endverb
+      \verb{url}
+      \verb https://www.tensorflow.org/
+      \endverb
+    \endentry
+    \entry{Goodfellow-et-al-2016}{book}{}
+      \name{author}{3}{}{%
+        {{hash=5d2585c11210cf1d4512e6e0a03ec315}{%
+           family={Goodfellow},
+           familyi={G\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod}}}%
+        {{hash=40a8e4774982146adc2688546f54efb2}{%
+           family={Bengio},
+           familyi={B\bibinitperiod},
+           given={Yoshua},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=ccec1ccd2e1aa86960eb2e872c6b7020}{%
+           family={Courville},
+           familyi={C\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{fullhash}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{bibnamehash}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{authorbibnamehash}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{authornamehash}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{authorfullhash}{3ae53fe582e8a815b118d26947eaa326}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{http://www.deeplearningbook.org}}
+      \field{title}{Deep Learning}
+      \field{year}{2016}
+    \endentry
+    \entry{ATLAS-CONF-2020-006}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ebfe6052e5f504e4a3579c49c44afe41}{%
+           family={{ATLAS Collaboration}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{ebfe6052e5f504e4a3579c49c44afe41}
+      \strng{fullhash}{ebfe6052e5f504e4a3579c49c44afe41}
+      \strng{bibnamehash}{ebfe6052e5f504e4a3579c49c44afe41}
+      \strng{authorbibnamehash}{ebfe6052e5f504e4a3579c49c44afe41}
+      \strng{authornamehash}{ebfe6052e5f504e4a3579c49c44afe41}
+      \strng{authorfullhash}{ebfe6052e5f504e4a3579c49c44afe41}
+      \field{extraname}{52}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{{ATLAS-CONF-2020-006}}
+      \field{title}{{Measurements of \(WH\) and \(ZH\) production in the \(H \to b\bar{b}\) decay channel in \(pp\) collisions at \(13\,\text{TeV}\) with the ATLAS detector}}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://cds.cern.ch/record/2714885
+      \endverb
+      \verb{url}
+      \verb https://cds.cern.ch/record/2714885
       \endverb
     \endentry
     \entry{b248293eda038742dc8ac0d6649b9084}{article}{skipbib=true,skipbiblist=true,skiplab=true}

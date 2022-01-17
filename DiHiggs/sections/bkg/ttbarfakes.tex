@@ -1,0 +1,96 @@
+In the \hadhad\ channel, the \ttbar\ background with one or two fake-\tauhad\ candidates can be estimated using a semi-data-driven fake-rate ($FR$) method, following the method used in the previous round of this analysis~\cite{HIGG-2016-16}.  
+
+An alternative scale-factor method, described in Section~\ref{sec:ttbarfake_hadhad_sf_method}, has been developed in this round of the analysis and it is currently used for the estimation of the \ttbar\ background with one or two fake-\tauhad\ candidates.
+
+The previously used fake-rate method is described in this appendix.
+
+Fake-rates, per \tauhadvis, as a function of the \tauhadvis\ $p_T$, are measured in a dedicated fake-rate \ttbar\ control region ($FR$ \ttbar\ CR) defined on top of the \lephad\ SLT channel selection. These $FR$s represent probabilities for a quark- or gluon-initiated jet to fake a \tauhad\ candidate in \ttbar\ events and they are applied per selected fake-\tauhad\ to events in a specially-designed template in the \hadhad\ channel, as will be explained in the following.
+
+Supporting material for this section can be found in Appendix~\ref{subsec:appendix_bkg_ttbarfakes}.
+
+\subsubsection{Derivation of the fake-rates in the \lephad\ channel}
+
+The $FR$ \ttbar\ CR is designed to select events passing a selection equivalent to the one applied to define the \lephad\ SLT channel, but without applying any \tauhad-ID requirements\footnote{In this case, there is no lower cut on the \tauhad-ID RNN score. Fake-rates are designed to model correctly the efficiency of the \tauhad-ID in simulated events. Any prior \tauhad-ID requirement when selecting the simulated events to which the $FR$s are applied would prevent the $FR$ method from fulfilling its purpose. As an example, requiring RNN score $ > 0.01$ already rejects around $3/4$ of fake-\tauhad\ candidates.}. Furthermore, events in the $FR$ \ttbar\ CR are required to have exactly two $b$-tagged jets, visible $\tau$-lepton decay products ($e/\mu$ and \tauhadvis) with opposite-sign (OS) electric charges, \mtw$ > 40$~GeV (to eliminate potential contribution from multijet events) and \mbb$ >150$~GeV (to make the $FR$ CR orthogonal to the \lephad\ SLT SR). Additionally, only events with more that 2 jets and \mtw$ < 135$~GeV are considered when measuring the fake-rates in order to increase the ratio of the number of \ttbar\ events with at least one fake-\tauhad\ to the number of \ttbar\ events with two true-\tauhad.
+
+The defined control region has a very similar \tauhad\ origin composition as a function of the \tauhad\ \pT\ to the \hadhad\ \ttbar\ fake-\tauhad\ MC template to which the fake-rates are applied, as can be seen in Appendix~\ref{subsec:appendix_bkg_ttbarfakes}: Figure~\ref{fig:app:ttbarfake_LHvsHHcomposition}.
+
+Given that \tauhad\ triggers are used to select events in the \hadhad\ channel, the online \tauhad-ID requirements are taken into account when deriving fake-rates\footnote{The online \tauhad-ID is usually fully efficient when applied on top of the offline \tauhad-ID for true-\tauhad; however, this is is not the case for fake-\tauhad.}. Hence, two sets of fake-rates are measured
+
+\begin{equation}
+FR        = \frac{N_{\text{data}}(\text{loose trigger-matched }\tauhad) - N_{\text{non-`\ttbar\ with fake-\tauhad' MC}}(\text{loose trigger-matched }\tauhad)}{N_{\text{data}}(\text{all }\tauhad) - N_{\text{non-`\ttbar\ with fake-\tauhad' MC}}(\text{all }\tauhad)}, \label{eq:FRDef}
+\end{equation}
+
+\begin{equation}
+FR^\prime = \frac{N_{\text{data}}(\text{loose }\tauhad) - N_{\text{non-`\ttbar\ with fake-\tauhad' MC}}(\text{loose }\tauhad)}{                                N_{\text{data}}(\text{all }\tauhad) - N_{\text{non-`\ttbar\ with fake-\tauhad' MC}}(\text{all }\tauhad)}, \label{eq:FRPrimeDef}
+\end{equation}
+
+where $FR$ represents a probability for a quark- or gluon-initiated jet to pass \verb|HLT_tauXX|, where \verb|XX| is \verb|25| or \verb|35|, and to satisfy the loose offline RNN \tauhad-ID, while $FR^\prime$ represents a probability for a quark- or gluon-initiated jet to pass solely the loose offline RNN \tauhad-ID. The number ($N$) of simulated non-`\ttbar\ events with fake-\tauhad' are subtracted\footnote{There is no clear indication of the presence of multijet background in this \ttbar-enriched $FR$ CR and thus multijet is not taken into account in the subtraction. The potential missing multijet contribution was however taken into account by introducing a down-variation in the normalisation of the obtained distributions after the subtraction when estimating systematic uncertainties.} from the number of data events in both the numerator and the denominator when deriving the fake-rates. 
+
+The fake-rates represented by Equation~\eqref{eq:FRDef} are measured separately for
+
+\begin{itemize}
+\item \verb|HLT_tauXX_medium1_tracktwo| (2015 - 2017 data-taking periods),
+\item \verb|HLT_tauXX_medium1_tracktwoEF| (2018 data-taking period), and
+\item a logical OR of \verb|HLT_tauXX_medium1_tracktwoEF| and \verb|HLT_tauXX_mediumRNN_tracktwoMVA| triggers (2018 data-taking, starting from Period K).
+\end{itemize}
+
+Although these triggers were pre-scaled during the data-taking\footnote{These pre-scaled single-\tauhad\ triggers are the two ``legs'' of the di-\tauhad\ trigger.}, the trigger decision is resurrected for all events in the $FR$ \ttbar\ CR when measuring the fake-rates. In all cases, fake-rates are measured as a function of the \tauhad\ $p_T$, separately for 1- and 3-prong candidates. The measured fake-rates are shown in Figure~\ref{fig:hadhadFRs}.
+
+\begin{figure}[!h]
+\centering
+\captionsetup[subfigure]{justification=centering}
+\subfloat[]{
+\includegraphics[width=6.5cm]{figures/bkg/hadhad_ttbar_fakes/FakeRate_OS_1P_FRs_200923}
+\includegraphics[width=6.5cm]{figures/bkg/hadhad_ttbar_fakes/FakeRate_OS_3P_FRs_200923}
+}
+
+\subfloat[]{
+\includegraphics[width=6.5cm]{figures/bkg/hadhad_ttbar_fakes/FakeRate_OS_1P_TrigCompFRs_200923}
+\includegraphics[width=6.5cm]{figures/bkg/hadhad_ttbar_fakes/FakeRate_OS_3P_TrigCompFRs_200923}
+}
+\caption{Fake-rates as a function of the \tauhad\ $p_T$ measured separately for 1-prong (left) and 3-prong (right) candidates. (\textbf{a}) Fake-rates accounting for the offline \tauhad-ID ($FR^\prime$, black) and fake-rates accounting for the trigger $+$ offline \tauhad-ID ($FR$), separately for HLT\_tau25 (darker blue) and HLT\_tau35 (lighter blue) triggers, in 2015 -- 2017 data. (\textbf{b}) Fake-rates corresponding to darker blue colour in the upper plots are compared to the \tauhad\ trigger configurations used to select events corresponding to the 2018 data-taking, as indicated in the legend.}
+        \label{fig:hadhadFRs}
+\end{figure}
+
+Due to the large subtraction of \ttbar\ background with two true-\tauhad\ after applying the \tauhad-ID in the $FR$ \ttbar\ CR (affecting the fake-rate numerator), the fake-rates are sensitive to the modelling of the \ttbar\ background with true-\tauhad, which is taken from simulation\footnote{Mismodelling of the \ttbar\ processes has been reported by several analyses: \href{https://indico.cern.ch/event/938202/}{link}.}. For that reason, the total \ttbar\ background is re-weighted to data prior to applying the \tauhad\ trigger and the offline \tauhad-ID in order to disentangle the two effects: the mismodelling of the \ttbar\ background and the mismodelling of the \tauhad\ trigger and the offline \tauhad-ID efficiencies for simulated fake-\tauhad. This re-weighting is described in Appendix~\ref{subsec:appendix_bkg_ttbar_reweighting}.
+
+\subsubsection{Event selection for obtaining the MC template}
+In order to obtain a prediction of the \ttbar\ background with fake-\tauhad\ in the \hadhad\ channel, fake-rates are applied per fake-\tauhad\ candidate to the simulated \ttbar\ events passing a selection described in the following. The \tauhad\ trigger requirements are removed from the object and event selections given that they are modelled by the fake-rates themselves. As already discussed, the lower cut on the \tauhad-ID RNN score is omitted.
+
+Only events with exactly one or two loose \tauhad\ candidates are selected due to the skimming applied in the ``HIGG4D3'' derivations (where at least one loose \tauhad\ is required). Events with more than two loose \tauhad\ are rejected, following the nominal selection. Events with two loose \tauhad\ are assigned to the STT category if one of the \tauhad\ has a $p_T$ greater than the corresponding offline STT $p_T$ threshold, listed in Section~\ref{subsec:selhh_hadhad}. Otherwise, the event is assigned to the DTT category if $p_T>40\text{ }(30)$~GeV for the leading (sub-leading) \tauhad. Events with one loose \tauhad\ are considered only if they have at least one additional reconstructed \tauhad. An event is assigned to the STT category if it contains a \tauhad\ candidate (no \tauhad-ID requirements taken into account) with a $p_T$ greater than the STT threshold. The event is further required to have two \tauhad\ with $p_T>\text{STT threshold }(20)$~GeV for the leading (sub-leading) candidate, where one has to pass the loose \tauhad-ID. If an event contains more \tauhad\ candidates, one such combination is chosen randomly. If the event does not contain a \tauhad\ with a $p_T$ greater than the STT threshold, it is considered for the DTT category, where two \tauhad\ with $p_T>40\text{ }(30)$~GeV for the leading (sub-leading) candidate are required and where one of these \tauhad\ is required to pass the loose offline \tauhad-ID. If an event contains more \tauhad\ candidates, one such combination is chosen randomly. After this categorisation, events are required to pass the nominal selection criteria applied in the \hadhad\ channel (for the opposite-sign 2-$b$-tag region), with the exception of the trigger and \tauhad-ID requirements, as explained above.
+
+The selection described here is designed to mimic the nominal event selection in the \hadhad\ channel, but without taking into account the \tauhad\ trigger decision and the offline \tauhad-ID, which are modelled by the fake-rates. The problem with the ``HIGG4D3'' skim is circumvented by introducing simulation-to-data scale-factors for events where both \tauhad\ are fake, as will be explained in the following.
+
+\subsubsection{Application of the fake-rates}
+Fake-rates are applied per fake-\tauhad\ in the MC template, obtained as discussed above. Events with two true-\tauhad\ are not considered since the \ttbar\ background with true \tauhad\ is estimated separately by applying the trigger and the \tauhad-ID requirements directly to simulated events.
+
+The remaining events in the template can be categorised into three groups:
+\begin{itemize}
+\item FT -- the leading (sub-leading) \tauhad\ is fake (true);
+\item TF -- the leading (sub-leading) \tauhad\ is true (fake);
+\item FF -- both \tauhad\ are fake.
+\end{itemize}
+In the first two categories, TF and FT, the true-\tauhad\ is required to pass the loose \tauhad-ID and to be trigger-matched to a resurrected \verb|HLT_tau35(25)|, if it is the leading (sub-leading) selected \tauhad. The corresponding fake-rate is applied to the fake-\tauhad. In the DTT category and for the leading \tauhad\ in the STT category, fake-rates obtained using Equation~\eqref{eq:FRDef} are used in order to model the efficiencies of the trigger and the offline \tauhad-ID. Fake-rates obtained using Equation~\eqref{eq:FRPrimeDef} are applied to the sub-leading \tauhad\ in the STT category, as they do not account for the \tauhad\ trigger, which is not required in that case.
+
+Events in the FF category, i.e. events with two fake-\tauhad, cannot be estimated by directly applying the fake-rates to both \tauhad, since one of them is already required to pass the loose \tauhad-ID, as explained above. For that reason, a separate set of scale-factors ($SF$s) are derived as ratios of the fake-rates in data to the fake-rates in simulated events. These scale-factors, $SF=FR/FR_{\mathrm{MC}}$ ($SF^{\prime} =FR^{\prime} /FR^{\prime}_{\mathrm{MC}}$), are then applied to events containing a loose and trigger-matched (loose) \tauhad\ in the FF category. If both candidates pass the loose \tauhad-ID, a random choice is made to which one the scale-factor is applied. The corresponding fake-rate is in both cases applied to the other \tauhad\ candidate. 
+
+The application of fake-rates is schematically depicted in Figure~\ref{fig:FRMethodDiagram}. The modelling of the $p_T$ of the leading and sub-leading \tauhad\ candidates, in a \ttbar-enriched validation region, is shown in Figure~\ref{fig:hadhadFRMethodTauPtModelling}. Additional modelling plots are shown in Appendix~\ref{subsec:appendix_bkg_ttbarfakes}.
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=10.0cm]{figures/bkg/hadhad_ttbar_fakes/FR_application.pdf}
+     \caption{Schematic depiction of the application of the fake-rate method in the di-Higgs \hadhad channel. Fake-rates are applied to fake-\tauhad\ based on their $p_T$, while taking into account if the selected \tauhad\ candidate would have been required to be trigger-matched in order to pass the \hadhad\ SR selection ($FR$), or not ($FR^\prime$). True-\tauhad\ corresponding to the DTT category and the leading \tauhad\ candidate in the STT category are required to be trigger-matched to HLT\_tau35(25) for the leading (sub-leading) candidate. All true-\tauhad\ are required to pass the offline loose \tauhad-ID. For the events in the FF category, the product of a fake-rate ($FR$ or $FR^\prime$) and a scale-factor ($SF$ or $SF^\prime$) is applied given that one of the fake-\tauhad\ is already required to pass the loose \tauhad-ID. Candidates to which $SF$s ($SF^{\prime}$s) are applied are required to pass the loose \tauhad-ID and to be trigger-matched (to pass the loose \tauhad-ID).}      
+       \label{fig:FRMethodDiagram}
+\end{figure}
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=6.5cm]{figures/bkg/hadhad_ttbar_fakes/HadHad_TopVR/TopVR1_2tag2pjet_0ptv_LL_OS_Tau0Pt.pdf}
+\includegraphics[width=6.5cm]{figures/bkg/hadhad_ttbar_fakes/HadHad_TopVR/TopVR1_2tag2pjet_0ptv_LL_OS_Tau1Pt.pdf}
+\caption{Pre-fit modelling of the $p_T$ of the leading (left) and sub-leading (right) \tauhad\ candidates in the di-Higgs \hadhad-channel \ttbar-enriched validation region: OS 2-$b$-tag $+$ \mbb$ >150$~GeV and $\mMMC_{\tau\tau}>150$~GeV.}
+        \label{fig:hadhadFRMethodTauPtModelling}
+\end{figure}
+
+\subsubsection{Uncertainties on \ttbar with fake-$\tau$ in the $\tauhad\tauhad$-channel}
+
+\input{sections/systs/datadriven_hadhadttbarfakes_fakerate.tex}

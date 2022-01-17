@@ -60,6 +60,18 @@ of the full simulation time is spent simulating electromag-
 netic particles. Fast sim is to remove low energy electro magnetic 
 particles from the calorimeter and replace them
 with pre-simulated showers stored in memory
+2. Regularization:
+Regularization is a technique used for tuning the
+ function by adding an additional penalty term in the error function.
+  The additional term controls the excessively fluctuating function 
+  such that the coefficients don’t take extreme values.
+   This technique of keeping a check or reducing the value of 
+   error coefficients are called shrinkage methods or weight decay in case of neural network
+2.1
+L2 regularization:
+Ridge regression adds “squared magnitude” of coefficient 
+as penalty term to the loss function. Here the highlighted part represents L2 regularization element.
+L1: adds absolute value of magnitude
 
 Reconstruction: 
     one week (due 20/10)

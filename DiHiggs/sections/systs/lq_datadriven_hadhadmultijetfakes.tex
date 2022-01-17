@@ -1,0 +1,95 @@
+The following sources of uncertainties are considered for the data-driven multi-jet estimation in the LQ $\tau_{had}\tau_{had}$ channel: %, described in Section~\ref{subsec:HadHadmultijet}:
+\begin{itemize}
+\item statistical uncertainties on the FFs.
+\item uncertainties on the difference between using FFs derived from 1+2-$b$tag inclusive region and FFs derived from 1-$b$-tag only region and TFs are used in 2-$b$-tag region as HH hadhad case.
+\item background subtraction.
+\end{itemize}
+
+Statistical uncertainties on the FFs are estimated by moving FFs by 1 up/down for statistical errors shown in ~\Cref{fig:lq_hadhad_fake_factors}.
+Comparing final yield of multijet fake events in LQ \hadhad SR, the size of this uncertainty is estimated as $\pm 6.92 \%$. The shape difference is considered.
+
+The effect of the difference of FFs derived from 1+2-b-tag inclusive region and from 1-b-tag region only with TFs are evaluated
+by comparing final yield of multijet fake events in LQ \hadhad SR estimated by these two cases. The size of this uncertainty is estimated as 
+$\pm 15.6 \%$, and the shape difference is considered.
+
+The uncertainty due to the subtraction of non-multi-jet backgrounds in the 2-tag OS Anti-ID region is split into the origin of
+the dominant backgrounds that are being subtracted: true \tauhad \ttbar, fake \tauhad \ttbar, and other (predominantely V+jets / single-top).
+
+The subtraction uncertainty of true \tauhad \ttbar is estimated by comparing the nominal prediction of \ttbar (true \tauhad) with
+the uncertainty prescriptions for the \ttbar-process by PMG in the 2-tag OS Anti-ID region. The breakdown of uncertainties is depicted in~\Cref{tab:LQ_systematics_multijet_hh_ttbar_subtraction}. The fake estimate variations are provided by varying the subtraction of 
+true \tauhad \ttbar by the total uncertainty ($\substack{+19.7 \% \\ -24.6 \%}$) in the 2-tag OS Anti-ID region when estimating the multi-jet 
+fake background. The impact on the normalization of the fake template after true \tauhad \ttbar subtraction is +0.280 -0.224.
+
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{lr}
+    \toprule
+    Source & Uncertainty \\
+    \midrule
+    ME & $\pm 9.98$ \\[0.3em]
+    PS & $\pm 12.6 \%$ \\[0.3em]
+    $\mu_\text{R}$ & $\substack{+9.92 \% \\ -9.39 \%}$ \\[0.3em]
+    $\mu_\text{F}$ & $\substack{+3.49 \% \\ -2.83 \%}$ \\[0.3em]
+    ISR & $\substack{+1.89 \% \\ -12.2 \%}$ \\[0.3em]
+    FSR & $\substack{+4.13 \% \\ -9.97 \%}$ \\
+    \midrule
+    Total & $\substack{+19.7 \% \\ -24.6 \%}$ \\
+    \bottomrule
+  \end{tabular}
+  \caption{Uncertainty on true \tauhad \ttbar in the 2-tag OS Anti-ID region.}
+  \label{tab:LQ_systematics_multijet_hh_ttbar_subtraction}
+\end{table}
+
+The subtraction uncertainty of fake \tauhad \ttbar is estimated using the dedicated scale factor measurement introduced in~\Cref{subsec:LQLepHadttbarfake}.
+%%The variance of the scale factor measurement is dominated by the leading eigenvariations due to the large correlations of the scale factors measured in the Anti-ID region.
+%%Therefore, only the leading eigenvariation for every offline \tauhad identification and trigger setup is propagated to the fake estimate.
+%%Moreover, due to the limited set of experimental uncertainties used for the scale factor measurement in the Anti-ID region,
+%%the full difference of the scale factors to 1 is taken as an additional uncertainty and propagated to the fake estimate.
+A breakdown of the normalization impact is shown in~\Cref{tab:LQ_systematics_multijet_hh_fake_ttbar_subtraction}. {\color{red} to be evaluated, depend on the anti-tau ID SF measurement.}.
+The shape impact of the individual NPs is propagated to the fit.
+
+%% \begin{table}[htbp]
+%%   \centering
+%%   \begin{tabular}{lr}
+%%     \toprule
+%%     Nuisance Parameter & Impact on multi-jet fake yield \\
+%%     \midrule
+%%     \texttt{TTBAR\_FAKESF\_ANTITAU\_OFFL\_EIGEN0} & $\pm 0.09 \%$ \\
+%%     \texttt{TTBAR\_FAKESF\_ANTITAU\_TAU25\_EIGEN0} & $\pm 3.97 \%$ \\
+%%     \texttt{TTBAR\_FAKESF\_ANTITAU\_TAU25EF\_EIGEN0} & $\pm 2.05 \%$ \\
+%%     \texttt{TTBAR\_FAKESF\_ANTITAU\_TAU25RNN\_EIGEN0} & $\pm 4.71 \%$ \\
+%%     \texttt{TTBAR\_FAKESF\_ANTITAU\_DIFF} & $\pm 2.00 \%$ \\
+%%     \midrule
+%%     Total & $\pm 6.80 \%$ \\
+%%     \bottomrule
+%%   \end{tabular}
+%%   \caption{Normalization impact of fake \tauhad subtraction uncertainties on the fake estimate.}
+%%   \label{tab:systematics_multijet_hh_fake_ttbar_subtraction}
+%% \end{table}
+
+Due to the small relative subtraction of other backgrounds, which are predominantely composed of V+jets and single-top events,
+a conservative estimate of the subtraction uncertainty is defined by varying the subtraction of these backgrounds up and down by $50\%$. 
+This has an impact of $\pm 30.6 \%$ on the final multi-jet fake estimate. The shape uncertainty of the subtraction is propagated to the fit.
+
+The uncertainty on the normalisation of the multi-jet background is summarized in~\Cref{tab:LQ_systematics_multijet_uncertainty}, and XX\% in total.
+{\color{red} to be evaluated, depend on the anti-tau ID SF measurement.}.
+
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{lr}
+    \toprule
+    Source & Uncertainty \\
+    \midrule
+    FF statistics & $\pm 6.92\%$ \\[0.3em]
+    FF region difference & $\pm 15.6 \%$ \\[0.3em]
+    true ttbar subtraction & $+28.0\%, -22.4\%$ \\[0.3em]
+    fake ttbar subtraction & $XX\%$ \\[0.3em]
+    other background subtraction & $\pm 30.6\%$ \\[0.3em]
+    \midrule
+    Total & $XX\%$ \\
+    \bottomrule
+  \end{tabular}
+  \caption{Uncertainty on multijet fake estimation uncertainty for LQ \hadhad channel.}
+  \label{tab:LQ_systematics_multijet_uncertainty}
+\end{table}
+

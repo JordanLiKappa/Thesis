@@ -1,0 +1,284 @@
+The Higgs boson ($H$) was discovered at the Large Hadron Collider (LHC) in 2012, by the ATLAS and CMS
+collaborations \cite{HIGG-2012-27,CMS-HIG-12-028}.
+All current measurements of its spin and couplings \cite{HIGG-2013-02,HIGG-2013-17,CMS-HIG-13-033,CMS-HIG-13-002,CMS-HIG-13-023}
+are so far consistent with the Standard Model (SM) predictions \cite{PhysRevLett.13.321,HIGGS1964132,PhysRevLett.13.508,PhysRev.145.1156,PhysRevLett.13.585,PhysRev.155.1554}.
+The measured mass of the Higgs boson is 125.09 $\pm$ 0.21 (stat.) $\pm$ 0.11 (syst.) $\GeV$ \cite{HIGG-2014-14}.
+
+One of the primary physics goals for the High Luminosity LHC (HL-LHC) and beyond is to measure the Higgs boson trilinear self-coupling (\hhh), which is directly related to the shape of the Higgs potential, and therefore it is essential for probing the exact nature of the Higgs mechanism and electroweak symmetry breaking. It is expected that the self-coupling of the Higgs boson can be experimentally established by measuring the Higgs boson pair production ($HH$). In the SM, pairs of Higgs bosons at the LHC are dominantly produced in gluon-gluon fusion ($gg$F) processes, namely via a loop of top quarks (“box diagram”) and the Higgs self-interaction (“triangle diagram”), as shown in Figures~\ref{fig:BoxDiagram} and \ref{fig:TriangleDiagram}, respectively.
+
+\begin{figure}[!h]
+\centering
+\captionsetup[subfigure]{justification=centering}
+\subfloat[$HH$ production via the top-quark Yukawa coupling\label{fig:BoxDiagram}]{      % first box diagram *****************************************
+\begin{tikzpicture}
+\begin{feynman}
+\vertex (a) {\(g\)};
+\vertex [right=1.5cm of a] (t1);
+\vertex [right=1.5cm of t1, large, dot, blue] (t2) {};
+\vertex [below=1.5cm of t1] (t3);
+\vertex [left=1.5cm of t3, below=of a] (b) {\(g\)};
+\vertex [right=1.5cm of t3, below=of t2, large, dot, blue] (t4) {};
+\vertex [right=1.5cm of t2] (h1) {\(H\)};
+\vertex [right=1.5cm of t4] (h2) {\(H\)};
+\diagram* {
+(t2) -- [fermion,line width=0.35mm] (t1) -- [gluon,line width=0.35mm] (a),
+(t1) -- [fermion,line width=0.35mm] (t3),
+(t3) -- [gluon,line width=0.35mm] (b),
+(t3) -- [fermion,line width=0.35mm] (t4),
+(t4) -- [fermion,line width=0.35mm] (t2),
+(t2) -- [dashed,line width=0.35mm] (h1),
+(t4) -- [dashed,line width=0.35mm] (h2),
+};
+\vertex [right=0.45cm of t2] (t2note);
+\vertex [below=0.1cm of t2note, blue] (t2note1) {\(y_{ttH}\)};
+\end{feynman}
+\end{tikzpicture} 
+%}%subfig 
+%\subfloat[]{ %      second box diagram *****************************************
+\hspace{0.2cm}
+\begin{tikzpicture}
+\begin{feynman}
+\vertex (a) {\(g\)};
+\vertex [right=1.5cm of a] (t1);
+\vertex [below=0.75cm of t1] (t1p);
+\vertex [right=1.5cm of t1, large, dot, blue] (t2) {};
+\vertex [below=1.5cm of t1] (t3);
+\vertex [above right=0.36cm of t3] (t3p);
+\vertex [left=1.5cm of t3, below=of a] (b) {\(g\)};
+\vertex [right=1.5cm of t3, below=of t2, large, dot, blue] (t4) {};
+\vertex [below=0.75cm of t2] (t5);
+\vertex [right=1.5cm of t2] (h1) {\(H\)};
+\vertex [right=1.5cm of t4] (h2) {\(H\)};
+\diagram* {
+(a) -- [gluon,line width=0.35mm] (t5),
+(t3p) -- [gluon,line width=0.35mm] (b),
+(t5) -- [fermion,line width=0.35mm] (t2),
+(t4) -- [fermion,line width=0.35mm] (t5),
+(t2) -- [dashed,line width=0.35mm] (h1),
+(t4) -- [dashed,line width=0.35mm] (h2),
+(t2) -- [fermion,line width=0.35mm, out=180, in=90] (t1p),
+(t1p) -- [fermion,line width=0.35mm, in=180, out=-90] (t4),
+%(t3p) -- [plain,line width=0.35mm, in=180, out=160] (t2),
+};
+\end{feynman}
+\end{tikzpicture} 
+}%subfig 
+%\qquad
+\hspace{0.1cm}
+\subfloat[$HH$ production via the Higgs boson self-coupling\label{fig:TriangleDiagram}]{     % self-coupling diagram *****************************************
+\hspace{0.2cm}
+\begin{tikzpicture}
+\begin{feynman}
+\vertex (a) {\(g\)};
+\vertex [below=1.5cm of a] (b) {\(g\)};
+\vertex [right=1.5cm of a] (t1);
+\vertex [right=1.5cm of b] (t2);
+\vertex [right=1.2cm of t1] (t1p);
+\vertex [below=0.75cm of t1p] (t3m);
+\vertex [right=0.01cm of t3m, large, dot, blue] (t3) {};
+\vertex [right=1.5cm of t3, large, dot, red] (h1) {};
+\vertex [right=2.65cm of t1p] (h2);
+\vertex [right=3.85cm of t2] (h3);
+\vertex [right=0.01cm of h2] (h2p) {\(H\)};
+\vertex [right=0.01cm of h3] (h3p) {\(H\)};
+\diagram* {
+(a) -- [gluon,line width=0.35mm] (t1),
+(b) -- [gluon,line width=0.35mm] (t2),
+(t1) -- [fermion,line width=0.35mm] (t2),
+(t2) -- [fermion,line width=0.35mm] (t3),
+(t3) -- [fermion,line width=0.35mm] (t1),
+(t3) -- [dashed,line width=0.35mm, edge label'=\(H\)] (h1),
+(h1) -- [dashed,line width=0.35mm] (h2),
+(h1) -- [dashed,line width=0.35mm] (h3),
+};
+\vertex [above=0.4cm of h1] (l);
+\vertex [left=-0.3cm of l, red] {\(\lambda_{HHH}\)};
+\end{feynman}
+\end{tikzpicture} \ \ \
+}%subfig 
+        \caption{Leading-order Feynman diagrams for the $gg$F pair production of Higgs bosons in the SM. The vertices represented by the blue dots correspond to top-quark Yukawa interactions ($y_{ttH}$), while the vertex represented by the red dot corresponds to the trilinear Higgs boson self-coupling (\hhh).}
+        \label{fig:HHProductionFeynmanDiagrams}
+    \end{figure}
+
+Due to the destructive interference between the box and triangle diagrams, the cross-section of the pair production of Higgs bosons in the SM is very small (31.05$^{+2.2\%}_{-5.0\%}$ (scale) $\pm$ 2.1 \% ($\alpha_{\mathrm{S}}$) $\pm$ 2.1\% (PDF) $\pm$ 2.6\% (m$_{\mathrm{top}}$)~fb at $\rts~= \SI{13} \TeV$ \cite{Grazzini:2018bsd}), about 1000 times smaller than the single Higgs boson production cross-section. Thus, the SM $HH$ production is not expected to be observed with the data so far collected by the ATLAS experiment.  However, a variety of new physics models predict enhancements to this cross-section. Modifications of the Higgs top-quark Yukawa coupling or modifications of the Higgs self-coupling, or presence of new diagrams with new couplings could enhance the non-resonant di-Higgs production cross section. Therefore, a search for Higgs pair production with current data is a probe of new physics. 
+
+Theories beyond the SM (BSM) predict heavy resonances that could decay into a pair of the SM Higgs bosons, such as a heavy spin-0 scalar $X$ in two-Higgs-doublet models (2HDM) \cite{Branco:2011iw,}, as shown in Figure~\ref{fig:ResonantggFPairProduction}. The presence of such resonances would also enhance the di-Higgs production cross section.  %and spin-2 Kaluza Klein (KK) excitations of the graviton G$^{*}_{\mathrm{KK}}$, in the bulk Randall-Sundrum (RS) model \cite{PhysRevD.76.036006,Fitzpatrick_2007}.
+
+\begin{figure}[!h]
+\centering
+\begin{tikzpicture}
+\begin{feynman}
+\vertex (a);
+\vertex [below=1.5cm of a] (b);
+\vertex [left=0.01cm of a] (ap) {\(g\)};
+\vertex [left=0.01cm of b] (bp) {\(g\)};
+\vertex [right=1.2cm of a] (t1);
+\vertex [below=0.75cm of t1] (v1x);
+\vertex [right=0.01cm of v1x, blob] (v1) {};
+\vertex [right=1.2cm of v1] (v2);
+\vertex [right=1.2cm of v2] (f1);
+\vertex [above=0.75cm of f1] (f2);
+\vertex [below=0.75cm of f1] (f3);
+\vertex [right=0.01cm of f2] (f2p) {\(H\)};
+\vertex [right=0.01cm of f3] (f3p) {\(H\)};
+\diagram* {
+(a) -- [gluon,line width=0.35mm] (v1),
+(v1) -- [gluon,line width=0.35mm] (b),
+(v1) -- [dashed,line width=0.35mm, edge label'=\(X\)] (v2),
+(v2) -- [dashed,line width=0.35mm] (f2),
+(v2) -- [dashed,line width=0.35mm] (f3),
+};
+\end{feynman}
+\end{tikzpicture}
+\caption{Feynman diagram corresponding to BSM $gg$F resonant pair production of the SM Higgs bosons. The patterned-background circle indicates an effective coupling of the hypothetical resonance $X$ to gluons.}
+\label{fig:ResonantggFPairProduction}
+\end{figure}
+
+This note describes searches for non-resonant and resonant $HH$ production in a final state with two $b$-jets and two $\tau$ leptons using 139~\ifb\ of 
+13~TeV $pp$ collision data recorded by the ATLAS experiment between 2015 and 2018. The \bbtt channel has the third largest branching fraction (7.4\%) of the experimentally feasible channels and it represents a relatively clean final state compared to the channels with larger branching fractions (\bbbb and $\bbbar\Wplus\Wminus$) due to a better separation from the multijet and \ttbar backgrounds. Since $\tau$ leptons can decay either leptonically ($\tau_{\mathrm{lep}}$: into electrons, $e$, or muons, $\mu$) or hadronically ($\tau_{\mathrm{had}}$: typically into one or three charged pions, plus some number of neutral pions), both \lephad and \hadhad decay channels are considered, where each subscript indicates the decay mode of the corresponding $\tau$ lepton. Parametric neural networks (PNN) are used to provide better separation between signal and background processes and to improve the sensitivity to the different signal models.
+
+Previously, searches for $HH$ production in the \bbtt channel were performed by the ATLAS experiment using 20.3~\ifb\ of
+8~TeV $pp$ collision data (only \lephad decay mode was considered)~\cite{HIGG-2013-33} and using 36.1~\ifb\ of 13~TeV $pp$ collision data~\cite{HIGG-2016-16}. Separate searches have been performed in the $\bbbar\Wplus\Wminus$~\cite{HIGG-2016-27},
+$\bbbar\bbbar$~\cite{EXOT-2016-31}, $\yybb$~\cite{HIGG-2016-15}, $\Wplus\Wminus\Wplus\Wminus$~\cite{HIGG-2016-24}, 
+and $\Wplus\Wminus\gamma\gamma$~\cite{HIGG-2016-20} final states using up to 36.1~\ifb\ of 13~TeV $pp$ collision data. A statistical combination of these results and those obtained for the \bbtt\ channel for the same centre-of-mass energy has been reported as well~\cite{HDBS-2018-58}.
+
+Searches for resonant Higgs boson pair production in the \bbtt channel were performed also by the CMS experiment, using 18.3~\ifb\ of 8~TeV $pp$ collision data~\cite{PhysRevD.96.072004} and using 35.9~\ifb\ of 13~TeV $pp$ collision data~\cite{Sirunyan:2017djm}.
+
+In this note, searches for pair production of scalar leptoquarks (LQs) decaying into a final state with two $b$-jets and two $\tau$ leptons (\btbt, which includes both \bbartbt and \btbbart final states) are also presented. Leptoquarks are hypothetical particles that appear in many new physics scenarios~\cite{Pati:1974yy, Georgi:1974sy, Dimopoulos:1979es, Dimopoulos:1979sp, Eichten:1979ah, Angelopoulos:1986uq, Buchmuller:1986iq}. They are colour triplet bosons that carry non-zero baryon and lepton quantum numbers, and fractional electric charges. Therefore, a LQ can directly couple to a quark and a lepton. The existence of LQs could potentially explain some of the measurements in $B$-physics that show persistent  deviations from the SM expectations, e.g. the possible lepton flavor universarity violation, which has been reported by several experiments~\cite{Lees:2013uzd, Huschle:2015rga, PhysRevLett.115.159901, Aaij:2017vbb, Aaij:2019wad}.
+
+LQs are expected to have either state of scalar or vector; however only scalar LQs are considered in this note because they are less model dependent. At the LHC, LQs can be produced in pair, or singly in association with a lepton. Diagrams for LQ production at the LHC are shown in Figure~\ref{fig:LQProductionFeynmanDiagrams}. Since pair production via gluon-gluon fusion and quark-antiquark annihilation are dominant LQ production mode in pp collisions, single LQ production is not considered in the analysis presented in this note. Pairs of LQs are mainly produced via strong interaction and almost insensitive to the Yukawa coupling strength. Scalar LQs are assumed to couple to quark-lepton pairs via Yukawa interaction, and the coupling constant can vary across the quark and lepton generations. Essentially, there are two parameters that determine the LQ couplings : the coupling parameter $\lambda$, and the mass dependent branching ratio into charged leptons $\beta$. The coupling to the charged lepton ($\tau$) is given by $\sqrt{\beta}/\lambda$, and the coupling to the neutrino by $\sqrt{1-\beta}/\lambda$.
+
+\begin{figure}[!h]
+\centering
+\captionsetup[subfigure]{justification=centering}
+%%\subfloat[$LQ$ production via the top-quark Yukawa coupling\label{fig:BoxDiagram}]{      % first box diagram *****************************************
+\begin{tikzpicture}
+\begin{feynman}
+\vertex (a) {\(g\)};
+\vertex [below=1.5cm of a] (b) {\(g\)};
+\vertex [right=1.5cm of a] (t1);
+\vertex [below=0.5cm of t1] (t1m);
+\vertex [right=1.5cm of b] (t2);
+\vertex [above=0.5cm of t2] (t2p);
+\vertex [right=3.0cm of a] (c) {\(\phi\)};
+\vertex [right=3.0cm of b] (d) {\(\overline{\phi}\)};
+\diagram* {
+(a) -- [gluon,line width=0.35mm] (t1m) -- [charged scalar,line width=0.35mm] (c),
+(b) -- [gluon,line width=0.35mm] (t2p) -- [anti charged scalar,line width=0.35mm] (d),
+(t1m) -- [anti charged scalar,line width=0.35mm] (t2p),
+};
+%% \vertex [right=0.45cm of t2] (t2note);
+%% \vertex [below=0.1cm of t2note, blue] (t2note1) {\(y_{ttH}\)};
+\end{feynman}
+\end{tikzpicture} 
+%}%subfig 
+%\subfloat[]{ %      second box diagram *****************************************
+\hspace{0.2cm}
+\begin{tikzpicture}
+\begin{feynman}
+\vertex (a) {\(g\)};
+\vertex [below=1.5cm of a] (b) {\(g\)};
+\vertex [right=1.5cm of a] (t1);
+\vertex [below=0.5cm of t1] (t1m);
+\vertex [right=1.5cm of b] (t2);
+\vertex [above=0.5cm of t2] (t2p);
+\vertex [right=3.0cm of a] (c) {\(\phi\)};
+\vertex [right=3.0cm of b] (d) {\(\overline{\phi}\)};
+\diagram* {
+(a) -- [gluon,line width=0.35mm] (t2p) -- [anti charged scalar,line width=0.35mm] (d),
+(b) -- [gluon,line width=0.35mm] (t1m) -- [charged scalar,line width=0.35mm] (c),
+(t1m) -- [anti charged scalar,line width=0.35mm] (t2p),
+};
+%% \vertex [right=0.45cm of t2] (t2note);
+%% \vertex [below=0.1cm of t2note, blue] (t2note1) {\(y_{ttH}\)};
+\end{feynman}
+\end{tikzpicture} 
+%%}%subfig 
+%\qquad
+\hspace{0.2cm}
+\begin{tikzpicture}
+\begin{feynman}
+\vertex (a) {\(g\)};
+\vertex [below=1.5cm of a] (b) {\(g\)};
+\vertex [right=1.5cm of a] (t1);
+\vertex [below=0.75cm of t1] (t);
+\vertex [right=3.0cm of a] (c) {\(\phi\)};
+\vertex [right=3.0cm of b] (d) {\(\overline{\phi}\)};
+\diagram* {
+(a) -- [gluon,line width=0.35mm] (t) -- [charged scalar,line width=0.35mm] (c),
+(b) -- [gluon,line width=0.35mm] (t) -- [anti charged scalar,line width=0.35mm] (d),
+};
+%% \vertex [right=0.45cm of t2] (t2note);
+%% \vertex [below=0.1cm of t2note, blue] (t2note1) {\(y_{ttH}\)};
+\end{feynman}
+\end{tikzpicture} 
+\hspace{0.2cm}
+\begin{tikzpicture}
+\begin{feynman}
+\vertex (a) {\(g\)};
+\vertex [below=1.5cm of a] (b) {\(g\)};
+\vertex [right=1.0cm of a] (t1);
+\vertex [below=0.75cm of t1] (t1m);
+\vertex [right=1.0cm of t1m] (t2m);
+\vertex [right=3.0cm of a] (c) {\(\phi\)};
+\vertex [right=3.0cm of b] (d) {\(\overline{\phi}\)};
+\diagram* {
+(a) -- [gluon,line width=0.35mm] (t1m),
+(b) -- [gluon,line width=0.35mm] (t1m),
+(t1m) -- [gluon,line width=0.35mm] (t2m),
+(t2m) -- [charged scalar,line width=0.35mm] (c),
+(t2m) -- [anti charged scalar,line width=0.35mm] (d),
+};
+%% \vertex [right=0.45cm of t2] (t2note);
+%% \vertex [below=0.1cm of t2note, blue] (t2note1) {\(y_{ttH}\)};
+\end{feynman}
+\end{tikzpicture} 
+%%}%subfig 
+%\qquad
+\hspace{0.2cm}
+\begin{tikzpicture}
+\begin{feynman}
+\vertex (a) {\(q\)};
+\vertex [below=1.5cm of a] (b) {\(\overline{q}\)};
+\vertex [right=1.0cm of a] (t1);
+\vertex [below=0.75cm of t1] (t1m);
+\vertex [right=1.0cm of t1m] (t2m);
+\vertex [right=3.0cm of a] (c) {\(\phi\)};
+\vertex [right=3.0cm of b] (d) {\(\overline{\phi}\)};
+\diagram* {
+(a) -- [fermion,line width=0.35mm] (t1m),
+(b) -- [anti fermion,line width=0.35mm] (t1m),
+(t1m) -- [gluon,line width=0.35mm] (t2m),
+(t2m) -- [charged scalar,line width=0.35mm] (c),
+(t2m) -- [anti charged scalar,line width=0.35mm] (d),
+};
+%% \vertex [right=0.45cm of t2] (t2note);
+%% \vertex [below=0.1cm of t2note, blue] (t2note1) {\(y_{ttH}\)};
+\end{feynman}
+\end{tikzpicture} 
+\begin{tikzpicture}
+\begin{feynman}
+\vertex (a) {\(g\)};
+\vertex [below=1.5cm of a] (b) {\(g\)};
+\vertex [right=1.5cm of a] (t1);
+\vertex [below=0.5cm of t1] (t1m);
+\vertex [right=1.5cm of b] (t2);
+\vertex [above=0.5cm of t2] (t2p);
+\vertex [right=3.0cm of a] (c) {\(\phi\)};
+\vertex [right=3.0cm of b] (d) {\(\overline{\phi}\)};
+\diagram* {
+(a) -- [gluon,line width=0.35mm] (t1m) -- [charged scalar,line width=0.35mm] (c),
+(b) -- [gluon,line width=0.35mm] (t2p) -- [anti charged scalar,line width=0.35mm] (d),
+(t1m) -- [anti fermion,line width=0.35mm, edge label'=\(l\)] (t2p),
+};
+%% \vertex [right=0.45cm of t2] (t2note);
+%% \vertex [below=0.1cm of t2note, blue] (t2note1) {\(y_{ttH}\)};
+\end{feynman}
+\end{tikzpicture} 
+\caption{Diagrams for leptoquark pair production: gluon-initiated (upper row), quark-initiated (lower-left), and diagram proportional to the square of the leptoquark-lepton-quark coupling, $\lambda^2$ (lower-right).}
+        \label{fig:LQProductionFeynmanDiagrams}
+\end{figure}
+
+The most recent ATLAS searches for pair production of scalar LQs in the final states that include a third-generation quark ($t$ or $b$) and a third-generation lepton ($\tau$ or $\nu$), which includes the \btbt final state, were performed using 36.1~\ifb\ of 13~TeV $pp$ collision data~\cite{EXOT-2017-30}. From the data, masses below 1030 GeV are excluded at 95\% confidence level for the case of $\beta$ equal to unity.
+
+This note presents searches for pair production of scalar LQs in the \btbt final state using the full Run 2 ATLAS dataset, corresponding to 139~\ifb\ of 13~TeV $pp$ collision data. Both \lephad and \hadhad decay channels are considered, and PNN is used to provide better separation between signal and background processes.

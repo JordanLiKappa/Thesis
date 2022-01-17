@@ -1,44 +1,141 @@
 \section{Trigger and event Selection}
 
+\subsection{Trigger selection}
+\label{sec:DiHiggs:trigger}
 
-
-\label{sec:DiHiggs:selection}
-
-
-
-Events in the $\tau_\text{lep}\tau_\text{had}$ categories 
+The ATLAS trigger system, as described in section~\ref{sec:ATLAS:trigger},
+consists of the hardware-based level (L1) and the software-based level (HLT)
+to select characteristic events. 
+Events in the \lephad\ channel
 are recorded using a combination of single-lepton triggers (SLTs) 
-and lepton-plus-$\tau_\text{had-vis}$ triggers (LTTs). 
-The SLTs require an electron or muon to be reconstructed 
-at the HLT with a minimum \pt\ threshold that 
-ranges from 24~GeV to 26~GeV for electrons and 
-a minimum \pt\ threshold that 
-ranges from 20~GeV to 26~GeV for muons, 
-depending on the data-taking period. 
-The LTTs require that an electron with \pt $>17$~GeV 
-or a muon with \pt$>14$~GeV in addition to 
-a $\tau_\text{had-vis}$ with \pt$>25$~GeV are reconstructed at the HLT. 
-% From the 2017 data-taking period onward, 
-% for the LTTs that rely on an electron at the HLT or 
-% a $\tau_\text{had-vis}$ with a \pt\ threshold below 35~GeV, 
-% either an additional jet with \pt $>25~\text{GeV}$ or 
-% two additional jets with \pt $>12~\text{GeV}$ are required 
-% at the Level-1 trigger to reduce the trigger rates. 
-% To ensure that the trigger reaches its efficiency plateau, 
-% the offline electrons, muons and $\tau_\text{had-vis}$ objects 
-% are required to be within $\Delta R<0.07$, $\Delta R<0.1$ 
-% and $\Delta R<0.2$ of the corresponding objects at the HLT, respectively. 
-Minimum \pt\ thresholds are applied to the offline objects, 
-which are 1~GeV above the thresholds for electrons and muons at the HLT, 
-5~GeV above the thresholds for $\tau_\text{had-vis}$ at the HLT, 
-and 80~GeV (45~GeV) for jets with 
-Level-1 trigger \pt-thresholds of 25~GeV (12~GeV). 
-Events which pass the offline SLT lepton \pt\ requirements 
-are not considered for the LTT to ensure no overlap with the SLT category. 
-These two categories are analysed separately.
+and lepton-plus-\tauhad\ triggers (LTTs). 
+The offline objects are required to pass addition 
+\pt\ cuts. For the leptons($e$ or $mu$), a threshold which is
+1~GeV higher than the HLT \pt\ threshold is applied to
+reach its efficiency plateau region. 
+For the \tauhad, the threshold is set at 5~GeV above the
+HLT \pt\ requirement for the same reason.
+The offline $e$, $mu$ and \tauhad\ must be matched to
+the corresponding trigger objects. 
+
+The priority is given to SLT events if a lepton fufils
+the offline lepton \pt\ requirements. 
+A combination of various un-prescaled 
+\footnote{The trigger rate is reduced by \textit{prescaling} which randomly 
+vetos events that pass the trigger.} 
+single electron triggers (SET) 
+and single muon triggers (MET) are used to 
+maximise the efficiency.
+As the \pt\ threshold is raised for 1~GeV for the 
+HLT \pt\ requirements,
+the single electron triggers (SET) 
+require an event with an electron with \pT > 25 or > 27~\GeV,
+whereas the single muon triggers (SMT) require an event with a 
+muon with \pT > 21 or > 27~\GeV,  depending on the data-taking period.
+
+The SLT triggers used are listed in Table~\ref{tab:SLTtriggers_lephad}. 
+In this table, the following naming conventions are used:
+the trigger names begin with HLT, followed by the 
+lepton type (e or mu for an electron or muon respectively) and the 
+HLT \pt\ threshold. 
+What comes next is the identification WP (loose, medium or tight), 
+prefixed with `lh'which stands for likelihood-based trigger. 
+The suffix of `nod0' indicates that no impact parameter cuts are
+applied. 
+For SMT, no identification is applied 
+therefore it is not specified. 
+The following is the isolation requirement, 
+specified by `i' and the working point (varloose, varmedium).
+If not specified, no isolation requirement is applied.
+Finally, the suffix which starts `L1EM' (`L1MU') indicates the 
+object is seeded with L1 electromagnetic (muonic) trigger items, 
+with \pt\ threshold specified by the number after; the `VH' stands for 
+the \pt\ threshold varies with eta to account for energy loss
+and hadronic core isolation is applied. If not specified,
+the L1 seed is using the default setting. 
 
 
+\begin{table}
+        % \centering
+  \scriptsize
+  \begin{tabular}{lll}
+  %  \toprule
+    %Trigger & Period \\
+    \midrule
+    \multicolumn{3}{c}{\textbf{Single Lepton Triggers (SLT)}} \\
+    \midrule
+    \textbf{Period} & \textbf{Single Electron Triggers (SET)} 
+    & \textbf{Single Muon Triggers (SMT)}   \\
+    \midrule 
+    \multirow{3}{*}{2015} & HLT\_e24\_lhmedium\_L1EM20VH &HLT\_mu20\_iloose\_L1MU15\\
+    & HLT\_e60\_lhmedium  & HLT\_mu50  \\
+    & HLT\_e120\_lhloose & \\
+    \midrule
+    \multirow{3}{*}{2016 \& 2017 \& 2018} & HLT\_e26\_lhtight\_nod0\_ivarloose  & HLT\_mu26\_ivarmedium \\
+    & HLT\_e60\_lhmedium\_nod0  & HLT\_mu50\\
+    & HLT\_e140\_lhloose\_nod0 \\
+ \bottomrule
+  \end{tabular}
+ \caption{SLT triggers used in the \lephad channel, along with the trigger-dependent offline \pT\ thresholds, for each year/period are shown.
+ Table reproduced from internal notes of the analysis.}
+  \label{tab:SLTtriggers_lephad}
+\end{table}
 
+
+The LTT triggers used are listed in Table~\ref{tab:SLTtriggers_lephad}. 
+For the LTT triggers, an electron (muon) is required with
+\pt\ > 18 (15)~GeV, together with 
+a \tauhad\ with \pt\ > 30~GeV or 40~GeV depending on the period.
+Jets are cut at 80~GeV (45~GeV) for Level-1 trigger \pt-thresholds of 25~GeV (12~GeV)
+(the L1 jets \pt\ requirements are explained in the following). 
+The same naming conventions are used for the LTT triggers. 
+In addition, the trigger names are expanded by the `tau' which 
+stands for \tauhad\ followed by its \pt, identification requirements
+and pre-selection settings. Again, unless specified, the default
+L1 seeds are used. For dedicated L1 seeds, the lepton (`EM' for electron
+or MU for muon) followed by \pt\ requirements and specific settings. 
+After the lepton, the number of \tauhad\ is specified by a number before 
+`TAU', followed by a number indicating the \pt\ threshold. For example, 
+`2TAU12I' stands for two \tauhad\ with \pt\ > 12, with electromagnetic
+isolation applied (`I'). Finally, the number of jets and the \pt\ requirements
+are specified in the same fashion. If unspecified, at least one jets with \pt\ > 25~GeV
+are required (the offline cut is raised to 80~GeV).
+
+\begin{table}[h]
+    \centering
+   \scriptsize
+    \begin{tabular}{l}
+    %  \toprule
+      %Trigger & Period \\
+      \midrule
+      \multicolumn{1}{c}{\textbf{Lepton Tau Triggers (LTT)}} \\
+      \midrule
+      \textbf{Electron Tau Triggers (ETT)}   \\
+      \midrule
+         HLT\_e17\_lhmedium\_nod0\_tau25\_medium1\_tracktwo \\	
+         HLT\_e17\_lhmedium\_nod0\_ivarloose\_tau25\_medium1\_tracktwo \\
+         HLT\_e17\_lhmedium\_nod0\_ivarloose\_tau25\_medium1\_tracktwo\_L1EM15VHI\_2TAU12IM\_4J12  \\
+         HLT\_e17\_lhmedium\_nod0\_ivarloose\_tau25\_medium1\_tracktwoEF \\
+         HLT\_e17\_lhmedium\_nod0\_ivarloose\_tau25\_medium1\_tracktwoEF\_L1EM15VHI\_2TAU12IM\_4J12 \\
+         HLT\_e17\_lhmedium\_nod0\_ivarloose\_tau25\_mediumRNN\_tracktwoMVA  \\
+         HLT\_e17\_lhmedium\_nod0\_ivarloose\_tau25\_mediumRNN\_tracktwoMVA\_L1EM15VHI\_2TAU12IM\_4J12 \\
+     \midrule
+     \textbf{Muon Tau Triggers (MTT)} \\
+       \midrule
+         HLT\_mu14\_tau25\_medium1\_tracktwo  \\		
+         HLT\_mu14\_ivarloose\_tau25\_medium1\_tracktwo  \\
+         HLT\_mu14\_ivarloose\_tau25\_medium1\_tracktwo\_L1MU10\_TAU12IM\_3J12   \\	
+         HLT\_mu14\_ivarloose\_tau25\_medium1\_tracktwoEF\_L1MU10\_TAU12IM\_3J12  \\
+         HLT\_mu14\_ivarloose\_tau25\_mediumRNN\_tracktwoMVA\_L1MU10\_TAU12IM\_3J12 \\	
+         HLT\_mu14\_ivarloose\_tau35\_medium1\_tracktwo   \\	
+         HLT\_mu14\_ivarloose\_tau35\_medium1\_tracktwoEF  \\
+         HLT\_mu14\_ivarloose\_tau35\_mediumRNN\_tracktwoMVA\\
+      \bottomrule
+    \end{tabular}
+    \caption{LTT triggers used in the \lephad\ channel. For different periods, 
+    a mixture of triggers from this list are used. Table reproduced from analysis internal notes.  }
+    \label{tab:LTT_trigger_names}
+  \end{table}
 
 \subsection{Event pre-selection}
 
@@ -46,34 +143,43 @@ These two categories are analysed separately.
 
 
 
-Before passing the events to the MVA algorithm, they are required to pass a loose
-pre-selection criteria. 
+Before passing the events to the MVA algorithm, 
+they are required to pass a loose pre-selection criteria to 
+select events consistent with the signal topology and to
+remove obvious background.  
+Events passing the pre-selection criteria is referred to as
+signal region (SR) events. 
 Events are required to contain exactly 
 one electron or muon, 
-an oppositely charged $\tau_\text{had-vis}$, 
+an oppositely charged \tauhad\, 
 and exactly two $b$-tagged jets.
 The selected electron (muon) must pass a 
 tight (medium) identification requirement with an efficiency of around 80\% (97\%).
 % and the (sub-)leading $b$-tagged jet is required to have \pt$>45~(20)$~GeV. 
-The invariant mass of the $\tau$-lepton pair ($m_{\tau\tau}^\text{MMC}$) 
-is estimated from the four-momenta of the electron or muon, 
-the $\tau_\text{had-vis}$ and the \met\ 
-using the Missing Mass Calculator (MMC)~\cite{Elagin:2010aw}, 
-which assumes that the \met\ is exclusively from the neutrinos 
+If more than one primary vertex is present in the events, 
+the one with the highest $(p_T^{track})^2$ is chosen.
+To reject background events from low-mass Drell-Yan events, 
+the invariant mass of the $\tau$-lepton pair ($m_{\tau\tau}^\text{MMC}$),
+is required to be above 60~GeV,
+which is estimated from the four-momenta of the electron or muon, 
+the \tauhad\ and the \met\ using the Missing Mass Calculator (MMC)~\cite{Elagin:2010aw}.
+In the calculation, the \met\ is assumed to be exclusively from the neutrinos 
 produced in the $\tau$-lepton decays. 
-To reject background events from low-mass Drell-Yan events, $m_{\tau\tau}^\text{MMC}$ is required to be above 60~GeV.
-The $b$-tagged jet pair invariant mass ($m_{bb}$) is required to be less than 150~GeV 
-to reject $t\bar t$ background events, and to allow for the definition of 
-a $t\bar t$-enriched region which is used in the estimation of $t\bar t$ backgrounds, 
+To reject the \ttbar\ events, the $b$-tagged jet pair invariant mass ($m_{bb}$) 
+is required to be less than 150~GeV. And therefore, by reversing this cut, 
+a $t\bar t$-enriched region can be defined  
+which is used in the estimation of $t\bar t$ backgrounds
 as described in Section~\ref{sec:DiHiggs:lephadfake}. 
-A $\tau_\text{had-vis}$ with $\pt>20$~GeV and 
-$\vert\eta\vert<2.3$ is required in the SLT category, 
-and a $\tau_\text{had-vis}$ with $\pt>30$~GeV, 
-or higher if required by the trigger, 
-and $\vert\eta\vert<2.3$ is required in the LTT category. 
+A \tauhad\ with $\pt>20$~GeV and 
+$\vert\eta\vert<2.3$ is required in the SLT category.
+A \tauhad\ with $\pt>30$~GeV,
+or higher if required by the by the LTT triggers (as defined in the previous
+section~\ref{sec:DiHiggs:trigger}), 
+and $\vert\eta\vert<2.3$ is required in the LTT events. 
 In both categories, the (sub-)leading $b$-tagged jet 
 must have $\tau_pt>45~(20)$~GeV, 
-in addition to any trigger-dependent requirements.
+in addition to any trigger-dependent jet requirements of LTT
+defined in the previous section.
 The full event pre-selection is summarised in Table~\ref{tab:DiHiggs:selectionsummary}. 
 
 \begin{table}[htbp]
@@ -92,8 +198,8 @@ The full event pre-selection is summarised in Table~\ref{tab:DiHiggs:selectionsu
     \multicolumn{2}{c}{$\vert\eta^e\vert<2.47$, not $1.37<\vert\eta^e\vert<1.52$}\\
     \multicolumn{2}{c}{$\vert\eta^\mu\vert<2.7$}\\
     \midrule
-    \multicolumn{2}{c}{\BF{$\tau_\text{had-vis}$ selection}}\\
-    \multicolumn{2}{c}{One loose $\tau_\text{had-vis}$}\\
+    \multicolumn{2}{c}{\BF{\tauhad\ selection}}\\
+    \multicolumn{2}{c}{One loose \tauhad}\\
     \multicolumn{2}{c}{$\vert\eta\vert<2.3$}\\
    \pt$>20~\text{GeV}$ & \pt$>30~\text{GeV}$\\
     \midrule
@@ -105,7 +211,7 @@ The full event pre-selection is summarised in Table~\ref{tab:DiHiggs:selectionsu
     \multicolumn{2}{c}{Trigger requirements passed}\\
     \multicolumn{2}{c}{Collision vertex reconstructed}\\
     \multicolumn{2}{c}{$m_{\tau\tau}^\text{MMC}>60~\text{GeV}$}\\
-    \multicolumn{2}{c}{Opposite-sign electric charges of $e/\mu/\tau_\text{had-vis}$ and $\tau_\text{had-vis}$}\\
+    \multicolumn{2}{c}{Opposite-sign electric charges of $e/\mu/\tau_\text{had-vis}$ and \tauhad}\\
     \multicolumn{2}{c}{Exactly two $b$-tagged jets}\\
     %% \multicolumn{4}{c}{$b$-tagged jet \pt$>45~(20)~\text{GeV}$}\\
    \multicolumn{2}{c}{$m_{bb}<150~\text{GeV}$}\\
@@ -121,7 +227,8 @@ The full event pre-selection is summarised in Table~\ref{tab:DiHiggs:selectionsu
    For the jet selection in the LTT channel multiple selection criteria are used.
    %  as described 
    % in Section~\ref{sec:DiHiggs:triggers}. 
-   The trigger \pt\ thresholds shown correspond to the offline requirements.}
+   The trigger \pt\ thresholds shown correspond to the offline requirements.
+   Table reproduced from Ref.~\cite{dihiggs-conf}.}
    \label{tab:DiHiggs:selectionsummary}
 \end{table}
 
@@ -166,9 +273,9 @@ non-resonant signal and three example resonances mass points.
 \large
 \caption{Cumulative $A \times \epsilon$ for simulated signal events to pass each stage of the event pre-selection in the SLT channel. 
 The efficiencies are calculated with respect to $HH\to b\bar b\tau^+\tau^-$ decays in which one $\tau$-lepton decays hadronically and one decays leptonically.
-The `Basic selection' includes selections with at least one $\tau_\text{had-vis}$ candidate and one lepton passing loose kinematic requirements.
-The `Object selections' requires exactly one $\tau_\text{had-vis}$ candidate, at least two jets with $p_\text{T}>25$ GeV and $\vert\eta\vert < 2.5$.
-The `Trigger specific offline $p_\text{T}$ cuts' are cuts placed on the $p_\text{T}$ of the reconstructed jet or $\tau_\text{had-vis}$
+The `Basic selection' includes selections with at least one \tauhad\ candidate and one lepton passing loose kinematic requirements.
+The `Object selections' requires exactly one \tauhad\ candidate, at least two jets with $p_\text{T}>25$ GeV and $\vert\eta\vert < 2.5$.
+The `Trigger specific offline $p_\text{T}$ cuts' are cuts placed on the $p_\text{T}$ of the reconstructed jet or \tauhad\
 that are geometrically matched to the HLT objects, to ensure the efficiencies of the HLT objects reach the plateau region.
 }
 \label{tab:DiHiggs:cutflowslt}
@@ -204,9 +311,9 @@ that are geometrically matched to the HLT objects, to ensure the efficiencies of
     \large
 \caption{Cumulative $A \times \epsilon$ for simulated signal events to pass each stage of the event pre-selection in the LTT channel. 
 The efficiencies are calculated with respect to $HH\to b\bar b\tau^+\tau^-$ decays in which one $\tau$-lepton decays hadronically and one decays leptonically. 
-The `Basic selection' includes selections with at least one $\tau_\text{had-vis}$ candidate and one lepton passing loose kinematic requirements.
-The `Object selections' requires exactly one $\tau_\text{had-vis}$ candidate, at least two jets with $p_\text{T}>25$ GeV and $\vert\eta\vert < 2.5$.
-The `Trigger specific offline $p_\text{T}$ cuts' are cuts placed on the $p_\text{T}$ of the reconstructed jet or $\tau_\text{had-vis}$
+The `Basic selection' includes selections with at least one \tauhad\ candidate and one lepton passing loose kinematic requirements.
+The `Object selections' requires exactly one \tauhad\ candidate, at least two jets with $p_\text{T}>25$ GeV and $\vert\eta\vert < 2.5$.
+The `Trigger specific offline $p_\text{T}$ cuts' are cuts placed on the $p_\text{T}$ of the reconstructed jet or \tauhad\
 that are geometrically matched to the HLT objects, to ensure the efficiencies of the HLT objects reach the plateau region.
 }
 \label{tab:DiHiggs:cutflowltt}
@@ -229,295 +336,244 @@ SLT, LTT and SLT LTT combined.}
 \label{fig:selection:acceptances}
 \end{figure}
 
+After the pre-selection, the event yields of the data,
+signal and background and the corresponding
+statistical error is shown in Table.~\ref{tab:tab:LepHadSLTYields} for the 
+SLT channel, and Table.~\ref{tab:LepHadLTTYields} for the LTT channel.
+The `Fake' background in the table represents the background due to a jet faking
+a \tauhad, which is estimated by a
+data-driven background described in details in section~\ref{sec:DiHiggs:lephadfake}.
+\begin{table}
+  \centering
+  \scriptsize
+  \begin{tabular}{|c|c|c|c|c|}
+    \hline
+\hline
+SampleName & Entries & Integral & Error & Error/Integ.\\
+\hline
+\multicolumn{5}{|c|}{\textbf{Signal Samples}} \\
+\hline
+ggF Non-resonant      &151522 &5.872	 & 0.018&0.3\% \\ 
+VBF Non-resonant	   	&36457  &  0.2002 &0.0013&0.6\% \\
+Resonant at $m_X$ =251	& 22541 &	 60.6 &  0.4& 0.7\% \\
+Resonant at $m_X$ =260	& 22252 &	60.9 &  0.4& 0.7\% \\
+Resonant at $m_X$ =280	& 24595 &	 67.9 &  0.4& 0.7\% \\
+Resonant at $m_X$ =300	& 18398 &	 77.2 &  0.6& 0.8\% \\
+Resonant at $m_X$ =325	& 20904 &	90.9 &  0.6& 0.7\% \\
+Resonant at $m_X$ =350	& 23593 &	 106.4 &  0.7& 0.7\% \\
+Resonant at $m_X$ =400	& 29280 &	 140  +&  0.8& 0.6\% \\
+Resonant at $m_X$ =450	& 34665 &	 175.3 &  1& 0.6\% \\
+Resonant at $m_X$ =500	& 21332 &210.7 &  1.5& 0.7\% \\
+Resonant at $m_X$ =550	& 23571 &240.9 &  1.6& 0.7\% \\
+Resonant at $m_X$ =600	& 25917 &273.9 &  1.8& 0.6\% \\
+Resonant at $m_X$ =700	& 29596 &327  +&  2& 0.6\% \\
+Resonant at $m_X$ =800	& 32606 &74.5 &  2.1& 0.6\% \\
+Resonant at $m_X$ =900	& 34392 &405.6 &  2.3& 0.6\% \\
+Resonant at $m_X$ =1000	& 35119 &425.2 &  2.3& 0.6\% \\
+Resonant at $m_X$ =1100	& 44157 &416.2 &  2& 0.5\% \\
+Resonant at $m_X$ =1200	& 32337 &386.9 &  2.4& 0.6\% \\
+Resonant at $m_X$ =1400	& 25539 &251.1 &  1.6& 0.7\% \\
+Resonant at $m_X$ =1600	& 14421 &160.6 &  1.4& 0.9\% \\
+\hline
+\multicolumn{5}{|c|}{\textbf{Background Samples}} \\
+\hline
+Fake    &         2089776         &33920        &110           &       0.3\%      \\
+ttbar     &         490058          &61620        &90           &       0.1\%      \\
+stopWt    &         25910         &3054        &20           &       0.7\%      \\
+stopt     &         5798          &596        &11           &       1.8\%      \\
+stops     &         1450          &38.8        &1.1           &       2.8\%      \\
+Zttbb     &         21473         &1426        &27           &       1.9\%      \\
+Zttbc     &         1746          &132        &10           &       7.6\%      \\
+Zttbl     &         1184          &63        &7           &       11.1\%      \\
+Zttcc     &         608         &134        &22           &       16.4\%      \\
+Zttcl     &         216         &13        &9           &       69.2\%      \\
+Zttl    &         122         &16        &6           &       37.5\%      \\
+Wtt     &         76          &5.4        &0.8           &       14.8\%      \\
+W     &         747         &75        &8           &       10.7\%      \\
+Zbb     &         17645         &796        &26           &       3.3\%      \\
+Zbc     &         1467          &75        &9           &       12.0\%      \\
+Zbl     &         1006          &39        &6           &       15.4\%      \\
+Zcc     &         278         &79        &20           &       25.3\%      \\
+Zcl     &         135         &22        &10           &       45.5\%      \\
+Zl    &         30          &4.1        &2           &       48.8\%      \\
+ZZ    &         6754          &82.8        &2           &       2.4\%      \\
+WW    &         110         &13.3        &2.1           &       15.8\%      \\
+WZ    &         1992          &58.5        &2.6           &       4.4\%      \\
+ttH     &         133199          &92.99        &0.33           &       0.4\%      \\
+VBFHtautau    &         933         &1.41        &0.05           &       3.5\%      \\
+ggFHtautau    &         2159          &17.1        &0.4           &       2.3\%      \\
+ggZHtautau    &         838         &2.87        &0.1           &       3.5\%      \\
+qqZHtautau    &         1923          &8.48        &0.21           &       2.5\%      \\
+ggZHbb    &         17317         &5.8        &0.23           &       4.0\%      \\
+qqZHbb    &         71572         &17.68        &0.11           &       0.6\%      \\
+WHtautau    &         92          &0.7        &0.08           &       11.4\%      \\
+WHbb    &         6054          &6.94        &0.14           &       2.0\%      \\
+DYtt    &         9         &2.7        &1.8           &       66.7\%      \\
+DY    &         68          &15        &4           &       26.7\%      \\
+\hline
+\hline
+total bkg  & 3054267 & 102440 & &\\
+data         & 98456     & 98456	& &\\
+ \hline
+ \hline
+    \end{tabular}
+    \caption{Pre-fit event yields in the di-Higgs $bb\lephad$ SLT signal region for the data, 
+    background and signal. Here, Zttjj represents the processes as $Z\rightarrow\tau\tau + jj$,
+    whereas Zjj represents  $Z\rightarrow ee/\mu\mu + jj$.}
+    \label{tab:LepHadSLTYields}
+\end{table}
+\begin{table}
+  \centering
+  \scriptsize
+  \begin{tabular}{|c|c|c|c|c|}
 
-\subsection{Anti--$\tau_{had}$ selection: TODO: should I put this section in here or in analysis chapter?}
-Anti--$\tau_{had}$ objects are selected only in events 
-in which there are fewer $\tau_{had}$ that pass the offline $\tau_{had}$--ID than
-required for a given channel (one for the $\tau_{lep}\tau_{had}$ 
-and two for the $\tau_{had}$$\tau_{had}$ selection). 
-In that case, additional anti--$\tau_{had}$ candidates are selected 
-so that the total number of selected $\tau_{had}$ (loose, which always has priority,
-and anti--$\tau_{had}$) corresponds to the required multiplicity in each channel.
-For channels where $\tau_{had}$--ID is applied at trigger level 
-(more details in Section~\ref{sec:event selection}), 
-only the anti--$\tau_{had}$ objects that are matched to the
-trigger $\tau_{had}$ are considered, and thus there are 
+\hline
+\hline
+SampleName & Entries & Integral & Error & Error/Integ.\\
+\hline
+\multicolumn{5}{|c|}{\textbf{Signal Samples}} \\
+\hline
+ggF Non-resonant            &35045	& 1.416  &  0.009 & 0.6\%\\	
+VBF Non-resonant	   	      &10188  & 0.0548  &  0.0006 &1.2\% \\
+Resonant at $m_X$ =251      & 6815	& 17.97  &  0.22  & 1.3\% \\
+Resonant at $m_X$ =260      & 6930	& 18.5  &  0.23  & 1.2\% \\
+Resonant at $m_X$ =280      & 8145	& 22.23  &  0.25  & 1.1\% \\
+Resonant at $m_X$ =300      & 6319 	& 26.48  &  0.34   & 	1.3\% \\
+Resonant at $m_X$ =325      & 7085 	& 30.9  &  0.4   & 	1.2\% \\
+Resonant at $m_X$ =350      & 7896 	& 35.9  &  0.4   & 	1.2\% \\
+Resonant at $m_X$ =400      & 8780 	& 42.5  &  0.5   & 	1.1\% \\
+Resonant at $m_X$ =450      & 9303 	& 47.4  &  0.5  &  	1.1\% \\
+Resonant at $m_X$ =500      & 5177 	& 51.7  &  0.7 & 	1.4\% \\
+Resonant at $m_X$ =550      & 5123 	& 53.4  &  0.8 & 	1.4\% \\
+Resonant at $m_X$ =600      & 5026 	& 53.8  &  0.8& 	1.5\% \\
+Resonant at $m_X$ =700      &	4699	& 52.8  &  0.8& 	1.5\% \\
+Resonant at $m_X$ =800      &	4534	& 52.8  &  0.8& 	1.5\% \\
+Resonant at $m_X$ =900      &	4285	& 51.6  &  0.8& 	1.6\% \\
+Resonant at $m_X$ =1000     &	3820	& 47.4  &  0.8& 	1.7\% \\
+Resonant at $m_X$ =1100     &	4436	& 42.8  &  0.7& 	1.5\% \\
+Resonant at $m_X$ =1200     &	2878	& 34  &  0.7& 	2.1\%\\	
+Resonant at $m_X$ =1400     &	2264	& 22.7  &  0.5& 	2.2\% \\
+Resonant at $m_X$ =1600     &	1412	& 16.1  &  0.4& 	2.8\% \\
+\hline
+\multicolumn{5}{|c|}{\textbf{Background Samples}} \\
+\hline
+Fake             &            41151   &        1752                  &            33              &        1.9\%  \\
+ttbar             &           32873   &         4207                  &            24              &        0.6\%  \\
+stopWt             &           1408   &          169                  &            5              &        3.0\%  \\
+stopt             &             246   &         26.1                  &            2.4              &        9.2\%  \\
+stops             &              61   &         1.69                  &            0.23              &        13.6\%  \\
+Zttbb             &            7271   &         485                  &            15              &        3.1\%  \\
+Zttbc             &             634   &         45                  &            5              &        11.1\%  \\
+Zttbl             &             406   &         27.8                  &            3.2              &        11.5\%  \\
+Zttcc             &             174   &         35                  &            9              &        25.7\%  \\
+Zttcl             &              86   &         8                  &            5              &        62.5\%  \\
+Zttl             &               57   &        11                  &            7              &        63.6\%  \\
+Wtt             &                22   &       2.7                  &            1              &        37.0\%  \\
+W             &                  16   &     1.31                  &            0.34              &        26.0\%  \\
+Zbb             &              1230   &       46                  &            5              &        10.9\%  \\
+Zbc             &                92   &       4.9                  &            1.1              &        22.4\%  \\
+Zbl             &                58   &       1.2                  &            0.9              &        75.0\%  \\
+Zcc             &                14   &       5                  &            4              &        80.0\%  \\
+Zcl             &                 5   &       0.8                  &            0.6              &        75.0\%  \\
+Zl             &                  2   &      0.041                  &            0.029              &        70.7\%  \\
+ZZ             &               1360   &      16.9                  &            0.9              &        5.3\%  \\
+WW             &                  4   &      0.39                  &            0.21              &        53.8\%  \\
+WZ             &                119   &      3.4                  &            0.5              &        14.7\%  \\
+ttH             &             12859   &       10.97                  &            0.12              &        1.1\%  \\
+VBFHtautau             &        235   &              0.368                  &            0.025              &        6.8\%  \\
+ggFHtautau             &        461   &              4.54                  &            0.24              &        5.3\%  \\
+ggZHtautau             &        218   &              0.74                  &            0.05              &        6.8\%  \\
+qqZHtautau             &        458   &              2.17                  &            0.11              &        5.1\%  \\
+ggZHbb             &           3745   &          1.46                  &            0.14              &        9.6\%  \\
+qqZHbb             &          12427   &          3.85                  &            0.05              &        1.3\%  \\
+WHtautau             &           23   &            0.17                  &            0.04              &        23.5\%  \\
+WHbb             &               82   &        0.173                  &            0.026              &        15.0\%  \\
+DYtt             &                3   &        0.26                  &            0.17              &        65.4\%  \\
+DY             &                  6   &      0.63                  &            0.31              &        49.2\%  \\
+\hline
+total bkg 	&	117806	  &	   6876.79  &  & \\		
+data		& 	6351      &    6351 	&  &   \\
+\hline
+\hline
+
+  \end{tabular}
+  \caption{Pre-fit event yields in the di-Higgs $bb\lephad$ LTT signal region for signal, data and background. Here, Zttjj represents the processes as $Z\rightarrow\tau\tau + jj$, 
+  whereas Zjj represents  $Z\rightarrow ee/\mu\mu + jj$.}
+  \label{tab:LepHadLTTYields}
+\end{table}
+
+
+\subsection{Anti--\tauhad\ selection}
+
+
+\label{sec:antitau-selection}
+In order to provide fake--\tauhad--enriched regions used for background estimation, 
+an ``anti--\tauhad'' selection is defined:
+those \tauhadvis\ objects that fail the RNN loose \tauhad--ID 
+and have an RNN score greater than 0.01 are labelled as anti--\tauhad candidates. 
+The RNN cut is used and recommended by the Fake-Tau-Task-Force~\cite{fttf-twiki}.
+The minimum RNN scre cut can make sure that 
+the jet would have some features of the true \tauhad, and that 
+the composition of the jet (either quark- or gluon-initiated) would 
+be more similar to that in the SR. 
+
+Exactly one anti--\tauhad\ object is selected when there are no \tauhad\
+passing the offline \tauhad--ID requirement. 
+This is to make sure only one \tauhad\ objects (either true \tauhad\ or
+anti--\tauhad) is selected.
+For the LTT channel where \tauhad--ID is applied at trigger level 
+(more details in Section~\ref{sec:DiHiggs:trigger}),
+only the anti--\tauhad\ object that is matched to the
+trigger \tauhad\ is considered, and thus there are 
 no multiple selection possibilities. 
-However, for channels where a $\tau_{had}$ trigger is not used, 
-an anti--$\tau_{had}$ candidate is chosen randomly when there are more reconstructed
-$\tau_{had}$ satisfying the anti--$\tau_{had}$ definition. 
-Any anti--$\tau_{had}$ objects that are not selected in this process are also not
+However, for the SLT channel where a \tauhad\ trigger is not used, 
+an anti--\tauhad\ candidate is chosen randomly 
+when there are more reconstructed
+\tauhad\ satisfying the anti--\tauhad\ definition. 
+Any anti--\tauhad\ objects that are not selected in this process are also not
 considered when performing the overlap removal of detector objects, 
 which is discussed in Section~\ref{sec:overlap}.
+Derived variables used in the analysis, such as the 
+\MET, $m^{\mathrm{MMC}}_{\tau\tau}$ and \MET$\phi$ centrality
+(more details in section~\ref{sec:DiHiggs:MVA})
+are calculated in the same way as for signal events, 
+but with the anti-\tauhad\ taking the place of the loose \tauhad\ candidate.
 
 
-\section{Multivariate signal extraction}
-\label{sec:DiHiggs:MVA}
-
-% Multivariate discriminants (MVAs) evaluated on events 
-% passing the above selections are used to extract possible signals. 
-% Parameterised neural networks (PNNs) are used 
-% in the search for resonant $HH$ production, and neural networks (NNs) 
-% are used in the search for non-resonant $HH$. 
-
-% During training, the sum of all backgrounds normalised to
-% their respective cross-sections is used. 
-% The backgrounds containing fake-$\tau_\text{had-vis}$ 
-% are modelled using MC simulation. 
-% The PNNs are parameterised in the mass of the heavy resonance, 
-% providing near-optimal sensitivity and continuity over 
-% the range of signal masses considered. 
-% The hyperparameters were optimised separately for each MVA 
-% using a random scan followed by a Bayesian optimisation procedure. 
-% % The 375~GeV resonant $HH$ signal is not used in the PNN trainings. 
-% %Additionally, the PNNs interpolate well between the mass points used for the training.% The background does not have a well defined value of the heavy resonance or LQ mass, so during training the background events are assigned a random value from the signal parameter values. Maybe mention that NNs are optimal / sufficient statistic?. , where a single binary classifier is not optimal for all signal masses. without major loss of sensitivity, allowing results to be quoted for masses other than those used during training
-The same set of MVA input variables is used for the resonant and non-resonant production modes, 
-though different input variables are used for the SLT and LTT channels. 
-These variables are listed in Table~\ref{tab:selection:mvas:HHinputs}, and are defined as follows:
-\begin{itemize}
-\item $m_{HH}$ is the invariant mass of the $HH$ system 
-as reconstructed from the $\tau$-lepton pair (calculated using the MMC) and the $b$-tagged jet pair;
-\item $\Delta R(\tau, \tau)$ is evaluated between the two $\tau_\text{had-vis}$ 
-(the electron or muon and the $\tau_\text{had-vis}$) 
-in the $\tau_\text{had}\tau_\text{had}$ category ($\tau_\text{lep}\tau_\text{had}$ categories);
-\item $\Delta R(b, b)$ is evaluated between the $b$-tagged jets;
-\item $\Delta p_\text{T}(\ell, \tau)$ is the difference 
-between the transverse momenta of the lepton and the $\tau_\text{had-vis}$;
-\item $m_\text{T}^W =\sqrt{2p_\text{T}^\ell E_\text{T}^\text{miss}(1-\cos\Delta\phi_{\ell,E_\text{T}^\text{miss}})}$ 
-is the transverse mass of the lepton and the \met;
-\item the $E_\text{T}^\text{miss}~\phi$ centrality specifies 
-the angular position of the $E_\text{T}^{\text{miss}}$ 
-relative to the $\tau_\text{had-vis}$ in the transverse plane~\cite{HIGG-2013-32} 
-and is defined as $(A+B)/\sqrt{A^2+B^2}$, 
-where $A=\sin(\phi_{E_\text{T}^\text{miss}}-\phi_{\tau_2})/\sin(\phi_{\tau_1}-\phi_{\tau_2})$,
-$B=\sin(\phi_{\tau_1}-\phi_{\mathrm{E}_\text{T}^\text{miss}})/\sin(\phi_{\tau_1}-\phi_{\tau_2})$, 
-and $\tau_1$ and $\tau_2$ represent the two $\tau_\text{had-vis}$ 
-(electron or muon and $\tau_\text{had-vis}$) in the case of 
-the $\tau_\text{had}\tau_\text{had}$ category ($\tau_\text{lep}\tau_\text{had}$ categories);
-\item $\Delta\phi(\ell\tau, bb)$ is the azimuthal angle between the $\ell+\tau_\text{had-vis}$ system and the $b$-tagged jet pair;
-\item $\Delta\phi(\ell, E_\text{T}^\text{miss})$ is the 
-azimuthal angle between the lepton and the \met\;
-\item $\Delta\phi(\ell\tau, E_\text{T}^\text{miss})$ is the 
-azimuthal angle between the electron or muon and $\tau_\text{had-vis}$ system and the \met\;
-\item $S_\text{T}$ is the total transverse energy in the event, summed over all jets, 
-$\tau_\text{had-vis}$ and leptons in the event and \pt $^\text{miss}$.%sum of hadronic energy in the event transverse to the beamline;
-\end{itemize}
-%% Signal events tend to have a lower $m_\text{T}^W$ than the $t\bar t$ process because the transverse mass of a lepton and neutrino decaying from a $W$~boson in a $t\bar t$ event tends to peak at $m_W\approx 80~\text{GeV}$.
-% The $m_{HH}$, $m_{\tau\tau}^\text{MMC}$ and $m_{bb}$ distributions are shown 
-% in Figure~\ref{fig:selection:mvas:mHHmMMCmbb}. 
-% For all categories of the non-resonant search, 
-% $m_{\tau\tau}^\text{MMC}$ and $m_{bb}$ are among 
-% the three most important MVA input variables. 
-% For the resonant search, five values of $m_X$ were tested in all categories, 
-% and $m_{HH}$ was found to be the most important MVA input variable in all cases 
-% except for at lower values of $m_X$ in the $\tau_\text{had}\tau_\text{had}$ category.
-
-\begin{table}[htbp]
-
- \centering
- \begin{tabular}{lcc}
- \toprule
- Variable  &  SLT &  LTT\\
- \midrule
- $m_{HH}$  & \ding{51} & \ding{51} \\
- $m_{\tau\tau}^\text{MMC}$  & \ding{51} & \ding{51} \\
- $m_{bb}$  & \ding{51} & \ding{51} \\
- $\Delta R(\tau, \tau)$  & \ding{51} & \ding{51} \\
- $\Delta R(b, b)$  & \ding{51} & \\
- $\Delta p_\text{T}(\ell, \tau)$  & \ding{51} & \ding{51} \\
- Sub-leading $b$-tagged jet \pt\  & \ding{51} & \\
- $m_\text{T}^W$  & \ding{51} & \\
- \pt $^\text{miss}$  & \ding{51} & \\
- $E_\text{T}^\text{miss}~\phi$ centrality  & \ding{51} & \\
- $\Delta\phi(\ell\tau, bb)$  & \ding{51} & \\
- $\Delta\phi(\ell, E_\text{T}^\text{miss})$  & & \ding{51} \\
- $\Delta\phi(\ell\tau, E_\text{T}^\text{miss})$  & & \ding{51} \\
- $S_\text{T}$  & & \ding{51} \\
- \bottomrule
- \end{tabular}
- \caption{Variables used as inputs to the MVAs in the three analysis categories. 
-The same choice of input variables is used for the resonant and non-resonant production modes. }
-\label{tab:selection:mvas:HHinputs}
-\end{table}
-% \large
-
-The non-resonant SM signal is well-defined in its kinematic properties, and so a 
-neural network trained on this signal is used.
-The resonant signal, however, is not a single signal hypothesis, 
-but rather a set of continuous signal hypotheses parameterised by 
-the mass of the heavy resonance which decays to Higgs boson pairs.
-For these cases, a standard binary classification algorithm is not optimal. 
-A set of single discriminants trained on each of the simulated signal hypotheses 
-would provide good discrimination for the simulated hypotheses, 
-but can not interpolate well between these points. 
-For this reason, and to reduce the number of algorithms that require training, 
-Parametric Neural Networks (PNNs)~\cite{Baldi:2016fzo} are used 
-for the extraction of the resonant signal. PNNs are neural networks 
-which enable optimal signal-to-background classification
-for signal spectra connected by one or more physics parameters. 
-As this problem is a smoothly-varying learning task, 
-the PNN is not just able to learn how to classify signals at the simulated signal mass training
-points, but also how to interpolate between them. 
-To check the mass resolution of the interpolation, 
-the PNN response in terms of Asimov significance as a function of the PNN mass
-parameter is shown in Figure~\ref{fig:MVA:mass-response}. 
-The minimum significance appears in the vicinity of low signal masses, reaching a 
-value of 0.7. As the signal mass increases, the `gap' becomes smaller and smaller.
-The PNN therefore covers the whole scanning mass spectrum with very high significance. 
-
-%  shows  obtained for signal samples with different masses. 
-% This is showing the mass resolution of the PNN.
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.85\linewidth]{DiHiggs/plots/mass_response.png}
-% location /hepstore/zhiyuan/Code_latest/run_Asimov/parametricnet/scripts/plots, run  python plot_mass.py to get
-\caption{
-    PNN response in terms of Asimov significance as a function of the PNN mass parameter obtained for
-signal samples with different masses. Due to a large difference in acceptance times
-efficiency of the \lephad\ channel signal region selection depending on the mass of the resonance, 
-all significances are scaled so that the maximum significance is 1 for better visibility.}
-\label{fig:MVA:mass-response}
-\end{figure}
-
-
-In both NN used for non-resonant signal and PNNs used for resonant signal,
-the three most significant and discriminating variables are
-$m_{HH}$, $m_{\tau\tau}^\text{MMC}$ and $m_{bb}$. 
-The data versus MC distributions of these three variables are shown in 
-Figure~\ref{fig:MVAvariables}. 
-The distributions of the other MVA variables are shown in Appendix~\ref{}TODO: add plots in Appendix. 
-
-% DiHiggs/plots/MVA/SLT_Final/HNone/BDTVarsPreselection/2
-
-\begin{figure}[htbp]
-\begin{subfigure}{.32\textwidth}
-\centering
-\includegraphics[width=0.85\linewidth]{DiHiggs/plots/MVA/SLT_Final/HNone/BDTVarsPreselection/2/C_2tag2pjet_0ptv_Mhh_Log.png}
-\caption{}
-\label{fig:MVAvariables:a}
-\end{subfigure}
-\begin{subfigure}{.32\textwidth}
-\centering
-\includegraphics[width=0.85\linewidth]{DiHiggs/plots/MVA/SLT_Final/HNone/BDTVarsPreselection/2/C_2tag2pjet_0ptv_mbb_Log.png}
-\caption{}
-\label{fig:MVAvariables:b}
-\end{subfigure}
-\begin{subfigure}{.32\textwidth}
-\centering
-\includegraphics[width=0.85\linewidth]{DiHiggs/plots/MVA/SLT_Final/HNone/BDTVarsPreselection/2/C_2tag2pjet_0ptv_mMMC_Log.png}
-\caption{}
-\label{fig:MVAvariables:c}
-\end{subfigure}
-\\
-\begin{subfigure}{.32\textwidth}
-\centering
-\includegraphics[width=0.85\linewidth]{DiHiggs/plots/MVA/LTT_Final/HNone/BDTVarsPreselection/2/C_2tag2pjet_0ptv_Mhh_Log.png}
-\caption{}
-\label{fig:MVAvariables:d}
-\end{subfigure}
-\begin{subfigure}{.32\textwidth}
-\centering
-\includegraphics[width=0.85\linewidth]{DiHiggs/plots/MVA/LTT_Final/HNone/BDTVarsPreselection/2/C_2tag2pjet_0ptv_mbb_Log.png}
-\caption{}
-\label{fig:MVAvariables:e}
-\end{subfigure}
-\begin{subfigure}{.32\textwidth}
-\centering
-\includegraphics[width=0.85\linewidth]{DiHiggs/plots/MVA/LTT_Final/HNone/BDTVarsPreselection/2/C_2tag2pjet_0ptv_mMMC_Log.png}
-\caption{}
-\label{fig:MVAvariables:f}
-\end{subfigure}
-% location /hepstore/zhiyuan/Code_latest/run_Asimov/parametricnet/scripts/plots, run  python plot_mass.py to get
-\caption{
-    Showing the data versus MC distributions of the three most significant and discriminating variables, 
-    $m_{HH}$, $m_{\tau\tau}^\text{MMC}$ and $m_{bb}$, after the pre-selection and before applying the fit.  
-    The top (bottom) row is showing the variables in the SLT (LTT) channel. 
-    The non-resonant Di-Higgs signal is also included in the plots, and it is 
-    scaled by a factor of 2000 (1000) for the SLT (LTT) to make it more visible. 
-    The visible discrepancy between the data and MC is mostly due to the normalisation 
-    of the \ttbar\ background is not constrained.
-    In Section~\ref{sec:fit} TODO: add reference to fit section, the method used to
-    constrain the normalisation of the \ttbar\ and the Z + heavy flavour jets background 
-    is discussed.
-    The background in pink is the 
-    data-driven fakes which will be discussed in the following section~\ref{sec:DiHiggs:lephadfake}.
-    }
-\label{fig:MVAvariables}
-\end{figure}
-
-
-
-
-
-    
-% The (P)NNs are trained using Keras~\cite{chollet2015keras} 
-% with the Tensorflow~\cite{tensorflow2015-whitepaper} backend. 
-% The PNNs used in the analyses described in this note take as an input parameter to specify which signal
-% should be targeted, along side the feature variables, the heavy resonance mass for the di-Higgs analysis.
-% During training, the PNNs are trained on all the signals simultaneously, and are provided with the
-% generator-level masses of the signals and a random mass from the distribution of simulated signal masses
-% for the background. The background events are provided with such distribution of simulated signal masses
-% because the background events do not have a well-defined value for the ``truth scalar resonance mass'' and
-% the `parameter' assigned to background events must be uninformative regarding the signal / background
-% discrimination. This is achieved by randomly assigning a ``truth scalar resonance mass'' that follows the
-% distribution seen in the signal training events. During implementation, the mass of the targeted signal
-% is given, which results in optimal discrimination for that signal hypothesis. As the ideal neural network
-% output (when trained on the binary cross entropy) is a monotonic function of the signal-to-background
-% density ratio, this means that the PNN will optimally classify the targeted signal events, as specified by the
-% physics input parameter.
-
-%% Neural network (NN) and parameterised neural network (PNN)~\cite{Baldi:2016fzo} outputs applied to events passing the above selections are used to extract possible signals for the non-resonant and resonant search, respectively. During the training of the (P)NNs, the sum of all backgrounds weighted by their cross-sections are used in the $HH$ search, and the dominant $t\bar t$ background is used in LQ search. The PNN is parameterised in the mass of the heavy resonance (LQ) for the $HH$ (LQ) search, providing near-optimal sensitivity over the range of signal masses considered, and interpolates well between the mass points used for training.% The background does not have a well defined value of the heavy resonance or LQ mass, so during training the background events are assigned a random value from the signal parameter values. Maybe mention that NNs are optimal / sufficient statistic?. , where a single binary classifier is not optimal for all signal masses. without major loss of sensitivity, allowing results to be quoted for masses other than those used during training
-
-
-
-More details on NN/PNN setting and training 
-are described in section~\ref{sec:DiHiggs:MVAtraining} TODO: add reference to 
-the MVA section. 
-% The (P)NNs use rectified linear unit and sigmoidal activation functions 
-% for the hidden and output layers, respectively, binary cross entropy as the loss function, 
-% and stochastic (mini-batch) gradient descent as the optimiser~\cite{Goodfellow-et-al-2016}. 
-% % For the PNN used in the $\tau_\text{had}\tau_\text{had}$ category, 3 layers of 128 hidden nodes, 
-% % followed by 1 hidden layer of 16 nodes are used. 
-% For the (P)NN used in the $\tau_\text{lep}\tau_\text{had}$ SLT category, 
-% 2 layers of 512 hidden nodes are used, 
-% and for the (P)NN used in the $\tau_\text{lep}\tau_\text{had}$ LTT category 
-% 3 layers of 512 (256) nodes are used. 
-% The (P)NN input variables are standardised by subtracting 
-% the median value and dividing by the interquartile range. 
-% Nesterov momentum and learning rate decay were used in the training of all (P)NNs, 
-% and in the $\tau_\text{lep}\tau_\text{had}$ categories they used an L2 regularisation term 
-% in the loss function~\cite{Goodfellow-et-al-2016}. 
-% The BDT uses 1500 trees with a maximum depth of 2 and a 
-% minimum node size of 1\% of the training events. 
-% Gradient boosting is used with a shrinkage of 0.2.% The PNN used in the $\tau_\text{had}\tau_\text{had}$ category has three hidden layers of 128 nodes followed by one of 16 nodes, and the $\tau_\text{lep}\tau_\text{had}$ (P)NNs have two hidden layers of 512 nodes in the SLT category, and three hidden layers of (256) 512 nodes in the LTT category.
-
-
-
-\subsection{$Z+\text{HF}$ control region}
+\subsection{$Z+\text{HF}$ control region event selection}
 \label{sec:selection:zcr}
 
-The normalisation of the $Z+\text{HF}$ background is determined 
-from data by fitting the $m_{\ell\ell}$ distribution in the  a dedicated control region 
-($Z+\text{HF}$ CR) in the likelihood fit. 
-This is to account for a known discrepancy in the $Z+\text{HF}$ production
-cross-section at NLO with respect to data, as provided for these processes in \textsc{Sherpa}. 
-The $Z+\text{HF}$ CR targets events containing $Z$~boson decays to electron or muon pairs 
-using triggers that require single leptons, or pairs of same-flavour leptons. 
-Exactly two oppositely-charged same-flavour leptons and exactly two $b$-tagged jets are required 
-to be reconstructed offline. The leptons are required to have \pt$>9~\text{GeV}$, 
-pass offline \pt\ thresholds based on the trigger thesholds, 
-be compatible with originating from the primary vertex, 
-and pass medium identification and loose isolation requirements. 
-Lastly, the invariant mass of the lepton pair is required to be between 75~\GeV\ 
-and 110~\GeV\ to select events originating from a $Z$~boson decay, 
-and $m_{bb}$ is required to be less than 40~\GeV\ or greater than 210~\GeV\ 
-to ensure orthogonality to other analyses containing Higgs boson decays. 
-This region also provides constraints on the normalisation of the $t\bar t$ background. 
-% Figure~\ref{fig:zcr} shows the post-fit background and data $m_{\ell\ell}$ distributions 
-% in the $Z+\text{HF}$ control region.
-% Since the branching ratios of $Z$~bosons to electrons and muons are known accurately, 
-% this production cross-section is determined simultaneously using $Z\to ee$ and $Z\to\mu\mu$ events. 
-% These triggers have lower \pt $$ (\pt\) thresholds for electrons (muons) which vary with data-taking year. The corresponding offline trigger thresholds start at 25~GeV (21~GeV) for the single electron (muon) triggers, 13~GeV and 13~GeV (19~GeV and 10~GeV) for the leading and subleading lepton respectively for the di-electron (di-muon) triggers, and electron (muon) thresholds of 18~GeV (15~GeV) or 26~GeV (9~GeV) for the electron-plus-muon triggers.
+
+The cross-section of the $Z$ boson production in association 
+with heavy flavour jets ($b$-, $c$-jets) is known to be 
+not well modelled by the \textsc{Sherpa} generator. 
+Therefore, a dedicated control region event selection is defined
+to select $Z \rightarrow \mu \mu / e e$ + heavy flavour jets events. 
+Since the production of jets is independent of the decay mode 
+of the $Z$ boson, this selection provides an orthogonal region with 
+high purity to the SR which requires two $\tau$ leptons in the final state.  
+The normalisation is extracted from this region,
+and it also provides constraints 
+on the normalisation of the $t\bar t$ background. 
+
+The event selection is described as follows:
+
+\begin{itemize}
+
+    \item Events are selected using the single-lepton and di-lepton triggers, 
+    as specified in Ref.~\cite{HDBS-2018-33}.
+    \item Exactly two leptons ($e$/$mu$) with opposite-sign charges 
+    and \pt\ $>$9~GeV are required, these leptons are also required
+    to be compatible with the primary vertex. In addtion, they are required
+    to pass the medium and loose isolation requirements.
+    \item Exactly two $b$-tagged jets (tagged with DL1r 77\% working point).
+    \item The reconstructed mass of the two leptons are required to be between 75~GeV
+    and 110~GeV (which is around $Z$ mass peak).
+    \item $m_{bb}<$40~GeV or $m_{bb}>$210~GeV (
+    to veto Higgs mass peak and to ensure orthogonality to $bb\ell\ell$ signal region).
+
+\end{itemize}
+
 
 
 % \begin{figure}[!htbp]

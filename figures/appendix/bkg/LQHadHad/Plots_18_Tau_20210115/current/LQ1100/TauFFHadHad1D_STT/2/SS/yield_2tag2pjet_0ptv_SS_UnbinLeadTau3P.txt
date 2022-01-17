@@ -1,0 +1,37 @@
+    sampleName       entries      integral         error  error/integ.
+          Fake             0             0             0             0
+       ttbarFF             0             0             0             0
+       ttbarFT             2      0.180233       0.12745       0.70714
+       ttbarTF             8      0.631402      0.230295      0.364736
+         ttbar             0             0             0             0
+      stopWtFF             0             0             0             0
+      stopWtFT             0             0             0             0
+      stopWtTF             0             0             0             0
+        stopWt             4      0.550662      0.276347      0.501844
+       stoptFF             0             0             0             0
+       stoptFT             0             0             0             0
+       stoptTF             0             0             0             0
+         stopt             0             0             0             0
+       stopsFF             0             0             0             0
+       stopsFT             0             0             0             0
+       stopsTF             0             0             0             0
+         stops             0             0             0             0
+            Zl             0             0             0             0
+           Zcl             0             0             0             0
+           Zbl             0             0             0             0
+           Zcb             0             0             0             0
+           Zbc             0             0             0             0
+           Zbb             0             0             0             0
+         Zttbb             6     0.0170685     0.0818682       4.79646
+         Zttbc             5     0.0312737      0.017252      0.551644
+         Zttbl            18   -0.00327305     0.0141367      -4.31912
+         Zttcc             3     0.0082267    0.00575362      0.699383
+         Zttcl            10      0.001132    0.00135135       1.19378
+          Zttl            25    0.00167944   0.000860245      0.512222
+           Wtt            30      0.127284     0.0731121      0.574403
+            WW             0             0             0             0
+            WZ             1     0.0533781     0.0533781             1
+            ZZ             0             0             0             0
+            ZH             0             0             0             0
+         bkg:            112       1.59907
+          data            11           5.5

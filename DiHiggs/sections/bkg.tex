@@ -1,0 +1,40 @@
+This section describes the background estimation methods used in the HH analysis. 
+
+The simulated event samples summarised in Section~\ref{sec:data_backgrounds} are used to model all background processes, except for processes with fake-\tauhad which are estimated using data-driven techniques, as discussed below. In the \lephad channel, all fake-\tauhad backgrounds from $t\bar{t}$ and multi-jet processes are estimated using an inclusive fake-factor method, described in Section~\ref{subsec:LepHadfake}. In the \hadhad channel, the multijet background is estimated using a data-driven fake-factor method as described in Section~\ref{subsec:HadHadmultijet} and the $t\bar{t}$ background with fake-\tauhad is estimated using a scale-factor method with scale-factors derived from data to correct the MC prediction as described in Section~\ref{sec:ttbarfake_hadhad_sf_method}.
+
+Separate estimation techniques are used for fake \tauhad from
+multi-jet and \ttbar processes, since a combined approach is difficult
+in the \hadhad-channel where multi-jet features two fake-\tauhad while
+typically only a single fake-\tauhad is present in \ttbar. Moreover,
+the presence of HLT \tauhad identification due to the \hadhad trigger
+selection (cf.~\Cref{sec:hadhad_trigger_selection}) and the
+requirement of at least one loose \tauhad in the derivation skim
+introduces difficulties in combined estimation procedures. The larger
+uncertainties, as compared to a combined approach, are not causing any
+degradation of the results due the statistical limitation of the Run 2
+analysis.
+
+The \ttbar with true-\tauhad and Z+HF templates are taken from the MC prediction but their normalisations are derived from data as included as freely floating parameters in the final fit, as described in Section~\ref{sec:fit}. 
+
+Events with electrons or muons that are misidentified as \tauhad\ objects, dominantly coming from the \ttbar\ production, represent a minor background in the analysis and they are estimated from simulation. This background is treated together with the \ttbar\ events containing true-\tauhad\ objects. Additional material can be found in Appendix~\ref{subsec:appendix_bkg_leptons_faking_taus}.
+
+
+\subsection{Fake-$\tau$ backgrounds in the \lephad channel}
+\label{subsec:LepHadfake}
+
+\input{sections/bkg/LepHadfakes.tex}
+
+\subsection{Multijet with fake-$\tau$ in the \hadhad channel}
+\label{subsec:HadHadmultijet}
+
+\input{sections/bkg/HadHadmultijet1D.tex}
+
+%\subsection{\ttbar with fake-\tauhad in the \hadhad channel with fake-rate method}
+%\label{subsec:ttbarfake}
+
+%\input{sections/bkg/ttbarfakes.tex}
+
+\subsection{\ttbar with fake-\tauhad in the \hadhad channel with scale-factor method}
+\label{sec:ttbarfake_hadhad_sf_method}
+
+\input{sections/bkg/ttbar_sf_method.tex}

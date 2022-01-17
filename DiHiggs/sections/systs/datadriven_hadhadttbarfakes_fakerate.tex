@@ -1,0 +1,84 @@
+The following sources of systematic uncertainties are considered when deriving
+the fake rates for the estimation of \ttbar with fake \tauhad in the
+$\tauhad\tauhad$ channel: \ttbar normalisation, \ttbar reweighting, non-closure
+in \tauhad \pT in the FR measurement region without \tauhad-identification, fake
+rate statistical uncertainty, single top and subtraction of other backgrounds. A
+summary of the uncertainty sources and their impact on the overall normalisation
+is shown in~\Cref{tab:ttbarfakes_hadhad_systnorms}. The full shape information
+of these sources is considered in the fit. In the following, the sources of
+uncertainties are discussed individually.
+
+\begin{table}[htb]
+  \centering
+  \begin{tabular}[htb]{lrrr}
+    \toprule
+    Uncertainty source & ttbarTF & ttbarFT & ttbarFF \\
+    \midrule
+    \ttbar normalisation & $\substack{+4.0 \%\\-1.1 \%}$ & $\substack{+8.7 \%\\-2.4 \%}$ & $\substack{+12.3 \% \\-3.3 \%}$ \\[0.2em]
+    \ttbar reweighting & $\pm 2 \%$ & $\pm 13.1 \%$ & $\substack{+13.2 \% \\ -12.6 \%\\}$\\[0.2em]
+    \tauhad \pT non-closure & $\pm 2.4 \%$ &  $\pm 2.8 \%$ & $\pm 5.8 \%$ \\[0.2em]
+    Statistical uncertainty & $\pm 5.6 \%$ & $\pm 8.9 \%$ & $\substack{+12.5 \% \\ -12.0 \%}$\\[0.2em]
+    Single-top subtraction & $\pm 0.3 \%$ & $\pm 1.0 \%$ & $\pm 1.2 \%$\\[0.2em]
+    Other subtraction & $\pm 0.5 \%$ & $\pm 1.3 \%$ & $\pm 1.6 \%$\\
+    \midrule
+    Total & $\substack{+7.5 \% \\ -6.5 \%}$ & $\substack{+18.4 \% \\ -16.4 \%}$ & $\substack{+22.8 \% \\ -18.7 \%}$ \\
+    \bottomrule
+  \end{tabular}
+  \caption{Impact of fake rate uncertainties on the normalisation of \ttbar with
+    fake \tauhad in the $\tauhad\tauhad$ signal region. The contributions are
+    separated in fake \tauhad from \ttbar where the subleading \tauhad (TF), the
+    leading tau (FT) and both \tauhad are faked by jets (FF).}
+  \label{tab:ttbarfakes_hadhad_systnorms}
+\end{table}
+
+The \ttbar normalisation in the phase space considered by the analysis is
+extracted during the profile likelihood fit extracting the signal. Therefore,
+the nominal prefit \ttbar normalisation (1.0) might not accurately describe the
+normalisation of the \ttbar background estimate. This will also affect the fake
+rate estimation as a considerable amount of \ttbar with true \tauhad needs to be
+subtracted when deriving the data-driven estimate of the contribution of fake
+\tauhad in the ID and No-ID region used for the fake rate determination. An
+estimate of the \ttbar normalisation for the fake rate measurement is derived in
+the fake rate CR and conservative uncertainties are applied regarding the
+subtraction of non-\ttbar backgrounds and possible missing multijet (up to 2
+\%). The extraction of the \ttbar normalisation including the associated
+uncertainties is described in~\Cref{subsec:appendix_bkg_ttbar_reweighting}.
+
+\ttbar reweighting, described in~\Cref{subsec:appendix_bkg_ttbar_reweighting},
+is applied to events used for the fake rate measurement to correct the modelling
+of \ttbar and avoid the oversubtraction of \ttbar with true \tauhad at large
+\tauhad transverse momenta leading to unphysical (negative) fake rates. The
+reweighting is derived in a region without \tauhad-identification, as a result
+no estimate of possible contamination of QCD \tauhad fakes is available. There
+are no indications for missing QCD \tauhad fakes in this region. Nevertheless,
+the differential contribution of QCD could be enhanced in some phase space
+region used for the reweighting. Moreover, it is not clear that the mismodelling
+observed in this region can be attributed to \ttbar modelling in isolation as it
+could possibly be a combination of \ttbar modelling and other effects affecting
+the modelling in this region (e.g.\ reconstruction effects for \tauhad
+candidates). Therefore, a conservative approach is taken and the full shape
+impact of the reweighting is used as an uncertainty (i.e.\ the up-variation of
+the reweighting will recover the nominal, un-reweighted distributions).
+
+After reweighting, the \tauhad \pT distribtions before \tauhad-identification in
+the \ttbar fake rate CR still show some residual non-closure (especially 1-prong
+\tauhad with \tauhad \pT in $[\SI{40}{\GeV}, \SI{55}{\GeV}]$). Closure plots
+before and after reweighting are shown
+in~\Cref{fig:ttbarReweighting_modelling_CR}. The full non-closure is applied as
+an uncertainty during the fake rate estimation. The size of the non-closure is
+depicted in~\Cref{fig:ttbarReweighting_tauPt_closure}.
+
+The statistical uncertainty of the measured fake rates is coherently varied by
+one standard deviation when estimating the contribution of fake \tauhad from
+\ttbar in the $\tauhad\tauhad$ signal region.
+
+Other backgrounds, primarily single top and V+jets, need to be subtracted for
+the measurement of the data-driven fake rates. The subtraction of these
+backgrounds is small compared to the subtraction of true \tauhad \ttbar
+therefore only normalisation uncertainties are considered. The subtraction of
+single top is varied by the single top cross section uncertainty (6\%). The
+normalisations of all other backgrounds (predominantly V+jets) are varied by
+25\%.
+
+The treatment of uncertainties for the fake scale factor method is briefly
+outlined in~\Cref{sec:ttbarfake_hadhad_sf_method}.

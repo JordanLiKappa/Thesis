@@ -1,0 +1,71 @@
+Jets are reconstructed using the \antikt algorithm~\cite{Cacciari:2008gp} with a distance parameter $R=0.4$ and the Particle-Flow (PF) algorithm~\cite{Aaboud:2017aca}.
+Jet cleaning criteria are used to remove jets arising from non-collision backgrounds (NCB) and noise in the calorimeters using the jet cleaning algorithm. Jets from pile-up are suppressed by using the jet-vertex-tagger (JVT) algorithms.
+%Jet cleaning criteria are used to remove jets arising from non-collision backgrounds (NCB) and noise in the calorimeters using the TighBad jet cleaning working point. Jets from pile-up are suppressed by using the jet-vertex-tagger (JVT) algorithms. %(JVT> 0.59 if the jet \pt is below 120 GeV).
+Jets are calibrated according to the steps described in Ref.~\cite{Aaboud:2017aca}, which include corrections to the jet energy scale (JES) and resolution (JER).
+
+All jets used in the analysis are required to have $|\eta|<2.5$ and $\pt>\SI{20}{\GeV}$.
+
+\subsubsection{$b$-tagging}
+
+Jets produced by $b$-quark hadronisation, $b$-jets, are identified using the DL1r $b$-tagging discriminant using the 77\% efficiency working point. 
+
+Studies on the $b$-tagging working point optimisation are reported in Appendix~\ref{subsec:appendix_reco_btagWP}. The 77\% efficiency WP is chosen as it shows improvement in the sensitivity over the full mass range compared to the previously used 70\% efficiency WP, while the 85\% efficiency WP shows a large improvement at high mass but a degradation of the sensitivity at low mass.
+
+The comparison between the event yields and kinematic distributions for events selected by the analysis selections with jets reconstruced using EMTopo and tagged using MV2c10 (used in the previous round of the analysis) and with jets reconstructed using Particle-Flow and tagged using DL1r is shown in Appendix~\ref{subsec:appendix_reco_jetbtag}. The switch to the new jet reconstruction and new flavour-tagging algorithm provided an improved $S/\sqrt{B}$ and did not affect the shape of the kinematic distributions.
+
+\subsubsection{$b$-jet corrections}
+The invariant mass of \bjet pairs is an important variable in the analysis, and \mbb reconstruction should be improved as much as possible.
+
+The \bjets need extra correction on top of the corrections applied to all jets (JES, GSC, and for data also in-situ), 
+in order to account for the energy carried away by muons and neutrinos from semi-leptonic decays of B-hadrons, 
+as well as to correct for missing energy of the jet due to the soft radiation (out of cone).
+Two types of corrections are applied successively to account for this:
+
+\begin{itemize}
+   \item \textbf{Muon-in-jet corrections:}
+       \begin{itemize}
+	  \item Choose medium muons with \pT $>$ 4~\GeV,
+	  \item Add the four-vector of the closest muon in $\Delta R$ within a jet to the jet four-vector.
+	  The closest muon (only one muon) to the jet is selected with the following requirement: 
+	  	\begin{itemize}
+		    \item $\Delta R(\mu, \mathrm{jet}) < \mathrm{min}(0.4,~0.04 + 10~\GeV~/~\pT^{\mu})$
+		\end{itemize}
+	  \item Subtract the four-vector of the muon energy deposited in the calorimeter.
+       \end{itemize}
+   \item \textbf{\pT-reco corrections:}
+       \begin{itemize}
+          \item After muon-in-jet corrections are applied, the jet four-vector is multiplied by a scale factor provided as a function of the jet \pT.
+          \begin{itemize}
+               \item  The scale factors are provided using all campaigns of the ttbar sample (with DSID 410470), with DL1r tagging and PFlow jets.
+               	        In order to derive the \pT-reco scale factors, the mean of the ratio of the truth jet \pT (matched to the reco jet with $\Delta R <$ 0.3) 
+                         to the reconstructed jet \pT (after muon-in-jet corrections) is computed for bins of reconstructed jet ln(\pT). 
+                         The \pT-reco corrections provided as a function of natural log of jet \pT are shown in Fig. \ref{fig:pTRecoCorr}. 
+                         Corresponding scale factor is applied to a jet given its \pT and its type (semi-leptonic or hadronic).
+                         These corrections are centrally provided for all $HH$ analyses \cite{bJetCorr} so the same corrections are applied both in \lephad and \hadhad channels.
+	\end{itemize}	
+       \end{itemize}
+\end{itemize}
+
+Fig. \ref{fig:bjetCorr} shows the \mbb distributions fitted with the Bukin function for the SLT \lephad and \hadhad channels.
+After applying all the corrections, both the \mbb mass scale (by approximately 4 GeV with respect to the Higgs pole mass) and the \mbb resolution (by approximately 16\%) are improved in the SLT \lephad channel. 
+Applying \pT-reco corrections, on top of muon-in-jet corrections improves the \mbb mass scale by 3~\GeV, and the \mbb resolution by approximately 5\% in the \hadhad channel.
+The effect of the $b$-jet corrections on the \pT of the leading and sub-leading $b$-jets in the 2-$b$-tag SR in the \hadhad channel are shown in Appendix~\ref{subsec:appendix_reco_bjetCorrections}, Figure~\ref{fig:bjetCorr_hh_Pt}.
+
+These corrections are applied only in the di-Higgs analysis for the calculation of improved \mbb and $m_{HH}$ for the signal extraction. The $HH \rightarrow bb\gamma\gamma$ analysis group studied uncertainties related to the $b$-jet corrections and found them to be negligible~\cite{ATL-COM-PHYS-2020-148}.
+
+\begin{figure}
+\centering
+\includegraphics[width=.49\textwidth]{figures/obj_reco/bjetCorr/SemileptonicCorr.pdf}
+\includegraphics[width=.49\textwidth]{figures/obj_reco/bjetCorr/HadronicCorr.pdf}
+\caption{The \pT-reco corrections provided as a function of natural log of jet \pT. They are provided for both semi-leptonic (left) and hadronic (right) jet types.}
+\label{fig:pTRecoCorr}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=.49\textwidth]{figures/obj_reco/bjetCorr/DL1r_PFlow_Fit_LepHad.pdf}
+\includegraphics[width=.49\textwidth]{figures/obj_reco/bjetCorr/DL1r_PFlow_Fit_HadHad.pdf}
+\caption{The \mbb distributions fitted with the Bukin function, after nominal (black), nominal+muon-in-jet (red) and nominal+muon-in-jet+\pT-reco corrections applied, 
+shown for the SLT \lephad channel on the left, and for the \hadhad channel on the right.}
+\label{fig:bjetCorr}
+\end{figure}

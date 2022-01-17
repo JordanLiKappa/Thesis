@@ -1,0 +1,29 @@
+The reconstruction of \tauhadvis candidates is described in detail in Ref.~\cite{Aad:2014rga}. The \tauhadvis candidates are
+seeded by jets formed using the \antikt algorithm, with a distance parameter of 0.4. A set of boosted decision trees (BDTs) is used to classify all tracks within $\Delta$R = 0.4 of the \tauhadvis axis into core and isolation tracks, depending on their \pT, the number of hits in the tracking detectors as well as their transverse and longitudinal impact parameters with respect to the tau vertex. The number of core tracks defines the number of prongs.
+
+The \tauhadvis\ reconstruction algorithm alone provides no discrimination against other particles that
+result in jet-like signatures in the detector. Therefore, dedicated algorithms are used to identify hadronic tau lepton decays. Here, a recurrent neural network (RNN) classifier is used as described in Ref.~\cite{ATL-PHYS-PUB-2019-033}. Due to the distinct signatures of 1- and 3-prong \tauhad decays, the \tauhad-identification (\tauhad-ID) is split into dedicated algorithms for 1- and 3-track \tauhadvis.
+
+Selected \tauhadvis candidates in the analysis are required to have \pT > 20 GeV, $|\eta| < 2.5$, with candidates in the barrel-endcap transition region of the calorimeter ($1.37 < |\eta| < 1.52$) vetoed due to poor detector instrumentation in this region, one or three tracks, unit charge, and to pass the ‘loose’ \tauhad-ID working point. The loose WP corresponds to 85\% efficiency for 1-prong and 75\% efficiency for 3-prong (the efficiency is flat in \pt by definition).
+
+Additional rejection of \tauhadvis candidates originating from electrons is
+provided by a BDT employing track and shower shape information. The 'loose'
+working point is used, corresponding to a selection efficiency
+of about \SI{95}{\percent} efficiency for true \tauhadvis.
+
+Studies on the comparison between the BDT (used in the previous round of the analysis) and RNN \tauhad-IDs and on the choice of the working point are reported in Appendix~\ref{subsec:appendix_reco_tauID}. The RNN tau-ID shows better performance and allows to move to a looser WP gaining increased efficiency (about 24\% on our signal) without losing jet rejection.
+%Studies on the choice of the RNN \tauhad-ID working point are reported in Appendix~\ref{subsec:appendix_reco_tauID_wp}.
+
+\subsubsection{Anti-\tauhad\ definition}
+\label{subsec:taus_antitaus}
+In order to provide fake-\tauhad-enriched regions used for background estimation, an `anti-\tauhad' selection is defined. Those \tauhadvis\ objects that fail the RNN loose \tauhad-ID and have the RNN score greater than 0.01 are labelled as anti-\tauhad\ candidates\footnote{The defined cut, RNN score $>$ 0.01, has per definition an efficiency of approximately 99\% for true-\tauhad\ in $\gamma^*\rightarrow \tau\tau$ events, which is independent of the \tauhadvis\ $p_T$ due to a flattening of the RNN score, and a fake-\tauhad\ rejection in multijet MC of about 5 (8) for 1-prong (3-prong) candidates. This only accounts for the \tauhad-ID efficiency and not for the efficiency of the \tauhad\ reconstruction and baseline selection, i.e. the track selection already rejects a large amount of fake-\tauhad\ from QCD while keeping a large fraction of real \tauhad~\cite{ATL-PHYS-PUB-2019-033}.}.
+For channels where \tauhad-ID is applied at trigger level, anti-\tauhad candidates are also required to be matched to the trigger \tauhad in the same way as is required for signal taus.
+This definition selects objects that are predominantly jets faking hadronic $\tau$ decays. The minimum RNN score requirement ensures that the jets still have some \tauhad-like properties and ensures that the composition of quark- and gluon-initiated jets is closer to that of the signal region.
+
+Studies on the choice of the minimum \tauhad-ID RNN-score threshold are reported in Appendix~\ref{subsec:appendix_reco_tauID_fakes}. The RNN score $>$ 0.01 is chosen as it is the cut used and recommended by the Fake-Tau-Task-Force and was also tested here to give an improvement in the statistical precision of the multi-jet fake-factors and of the multi-jet template compared to the "VeryLoose" working point (RNN score $>$ 0.05, with 95\% efficiency for true-\tauhad).
+
+\subsubsection{Anti-\tauhad\ selection}
+\label{subsec:taus_randomtausel}
+Anti-\tauhad\ objects are selected only in events in which there are fewer \tauhad\ that pass the offline \tauhad-ID than required for a given channel (one for the \lephad\ and two for the \hadhad\ selection). In that case, additional anti-\tauhad\ candidates are selected so that the total number of selected \tauhad\ (loose, which always has priority, and anti-\tauhad) corresponds to the required multiplicity in each channel.
+
+For channels where \tauhad-ID is applied at trigger level, only the anti-\tauhad\ objects that are matched to the trigger \tauhad\ are considered, and thus there are no multiple selection possibilities. However, for channels where a \tauhad\ trigger is not used, an anti-\tauhad\ candidate is chosen randomly when there are more reconstructed \tauhad\ satisfying the anti-\tauhad\ definition. Any anti-\tauhad\ objects that are not selected in this process are also not considered when performing the overlap removal of detector objects, which is discussed in Section~\ref{subsec:overlap}.

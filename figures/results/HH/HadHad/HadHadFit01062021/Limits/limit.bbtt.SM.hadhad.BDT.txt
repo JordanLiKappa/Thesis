@@ -1,0 +1,4 @@
+non-res    obs        -2sig      -1sig      exp        +1sig      +2sig     
+25052021PostProc.01062021_HH_13TeV_01062021_StatOnly_hadhad_SM_BDT_0
+xs [pb]        101.50      56.70      76.12     105.64     147.01     197.08
+xs/xs(SM)        3.27       1.83       2.45       3.40       4.73       6.35

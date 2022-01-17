@@ -2478,8 +2478,8 @@
     <bcf:citekey order="112">Sjostrand:2007gs</bcf:citekey>
     <bcf:citekey order="113">ATL-PHYS-PUB-2016-017</bcf:citekey>
     <bcf:citekey order="114">Ball:2012cx</bcf:citekey>
-    <bcf:citekey order="115">ATLAS-CONF-2021-030</bcf:citekey>
-    <bcf:citekey order="116">ATLAS-CONF-2021-030</bcf:citekey>
+    <bcf:citekey order="115">dihiggs-conf</bcf:citekey>
+    <bcf:citekey order="116">dihiggs-conf</bcf:citekey>
     <bcf:citekey order="117">Alioli:2010xd</bcf:citekey>
     <bcf:citekey order="118">Butterworth:2015oua</bcf:citekey>
     <bcf:citekey order="119">Sjostrand:2007gs</bcf:citekey>
@@ -2567,11 +2567,25 @@
     <bcf:citekey order="165">ATL-PHYS-PUB-2016-020</bcf:citekey>
     <bcf:citekey order="166">ERDMANN201418</bcf:citekey>
     <bcf:citekey order="167">TOPQ-2017-12</bcf:citekey>
-    <bcf:citekey order="168">ATLAS-CONF-2021-030</bcf:citekey>
+    <bcf:citekey order="168">dihiggs-conf</bcf:citekey>
     <bcf:citekey order="169">ATLAS-CONF-2021-052</bcf:citekey>
     <bcf:citekey order="170">Elagin:2010aw</bcf:citekey>
-    <bcf:citekey order="171">HIGG-2013-32</bcf:citekey>
-    <bcf:citekey order="172">Baldi:2016fzo</bcf:citekey>
+    <bcf:citekey order="171">dihiggs-conf</bcf:citekey>
+    <bcf:citekey order="172">dihiggs-conf</bcf:citekey>
+    <bcf:citekey order="173">fttf-twiki</bcf:citekey>
+    <bcf:citekey order="174">HDBS-2018-33</bcf:citekey>
+    <bcf:citekey order="175">Baldi:2016fzo</bcf:citekey>
+    <bcf:citekey order="176">HIGG-2016-16</bcf:citekey>
+    <bcf:citekey order="177">HIGG-2013-32</bcf:citekey>
+    <bcf:citekey order="178">keras</bcf:citekey>
+    <bcf:citekey order="179">tensorflow</bcf:citekey>
+    <bcf:citekey order="180">Goodfellow-et-al-2016</bcf:citekey>
+    <bcf:citekey order="181">dihiggs-conf</bcf:citekey>
+    <bcf:citekey order="182">dihiggs-conf</bcf:citekey>
+    <bcf:citekey order="183">dihiggs-conf</bcf:citekey>
+    <bcf:citekey order="184">dihiggs-conf</bcf:citekey>
+    <bcf:citekey order="185">ATLAS-CONF-2020-006</bcf:citekey>
+    <bcf:citekey order="186">Butterworth:2015oua</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

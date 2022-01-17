@@ -1,0 +1,54 @@
+The normalisation of the $t\bar{t}$ background is estimated from data through a freely-floating parameter included in the final fit. %This normalisation is determined from the low PNN region of the $\tau_{lep}\tau_{had}$ SLT signal region which is dominated by $t\bar{t}$ events.
+
+Relative acceptance uncertainties are applied on $t\bar{t}$ in the other regions included in the fit: 
+the \lephad signal region, the \hadhad signal region, and the Z+HF control region.  Relative acceptance 
+normalisation uncertainties are calculated from the single channel acceptances using 
+Equation~\ref{eq:relative_acceptance_unc} and are recorded in Table~\ref{sec:systs:tab:systematics_normalisations_ttbar_LQ}.
+
+In each signal region, additional sources of shape uncertainty are 
+considered and included where they are non-negligible. All these uncertainties are derived by 
+MC-to-MC comparison, as described in Section~\ref{sec:systematics_backgroundmodelling}, following the 
+\href{https://twiki.cern.ch/twiki/bin/view/AtlasProtected/TopMCSystematicsR21}{\underline{recommendations of the Top modelling group}}. 
+
+\begin{itemize}
+\item Uncertainties due to PDF, $\alpha_s$, FSR and scales are evaluated using internal alternative weights present in all the $t\bar{t}$ nominal samples. 
+\item Uncertainties from the parton shower, matrix element and ISR are estimated using the differences between the nominal samples and the corresponding variations samples. 
+\end{itemize}
+
+For evaluating the shape uncertainties, the differences of the variation samples and the nominal sample are compared 
+in the PNN score distributions. For both the nominal and varied samples, the same event selections and PNN classification are applied. Figure.~\ref{fig:ttbarsyst_lephad_isr_PTBB} 
+show the comparison of the variation samples and the nominal sample for each systematic source. 
+For ME and PS variations, shape difference is taken into account, while for ISR, FSR and PDF+$\alpha_s$ variations, 
+the shape difference is concluded to be negligible and is not included in the fit.
+
+\textcolor{red}{Fill parametrization in lephad with plots.}
+
+\begin{table}
+\centering
+\small
+\begin{tabular}{|c|c|c|c|}
+\hline
+Source & Size in LepHad SR & Size in HadHad SR & Size in Z+HF CR\\
+\hline
+ME &  & -0.215 & \\
+PS &  &  -0.112 & \\
+ISR &  & +0.206, -0.165 &  \\
+FSR & & +0.0307, -0.0552 & \\
+PDF+$\alpha_s$ &  &  &  \\
+Total &  &  & \\
+\hline
+\end{tabular}
+\caption{Relative acceptance normalisation uncertainties on $t\bar{t}$.}
+\label{sec:systs:tab:systematics_normalisations_ttbar_LQ}
+\end{table}
+
+
+\begin{figure}[!h]
+\centering
+\subfloat[]{\includegraphics[width=.41\textwidth]{figures/systs/LQ/ME_truth_ttbarpt.pdf}} \quad
+\subfloat[]{\includegraphics[width=.41\textwidth]{figures/systs/LQ/MEparam_PNN_900.pdf}} \quad
+\caption{Parametrization of the ME variation with truth ttbar pt. Left plot shows truth ttbar distribution and its var/nom ratio, right plot shows the original variation (dashed line) and variation parametrized by ratio of truth ttbar pt distribution (red and blue line) in the PNN distribution for a 900~\GeV resonance.}
+\label{fig:ttbarsyst_lephad_isr_PTBB}
+\end{figure}
+
+

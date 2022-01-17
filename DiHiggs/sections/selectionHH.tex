@@ -1,0 +1,129 @@
+The di-Higgs analysis is divided in two channels depending on the di-$\tau$ decay mode: \lephad and \hadhad. Triggers and event selection requirements applied in the two channels are described in the following.
+
+\subsection{Trigger}
+\label{subsec:trigger}
+\input{sections/selection/triggerHH.tex}
+
+\subsection{Event cleaning}
+\label{subsec:eventcleaning}
+\input{sections/selection/eventcleaning.tex}
+
+%\subsection{di-Higgs event selection}
+
+%\subsubsection{\lephad event selection}
+\subsection{\lephad event selection}
+\label{subsec:selhh_lephad}
+\input{sections/selection/hh_lephad.tex}
+
+%\subsubsection{\hadhad event selection}
+\subsection{\hadhad event selection}
+\label{subsec:selhh_hadhad}
+\input{sections/selection/hh_hadhad.tex}
+
+
+The event selection in the signal regions in the di-Higgs analysis, i.e. the $p_T$ requirements and the object multiplicities, are summarised in Table~\ref{tab:DiHiggsEventSelection}.
+
+\begin{table}
+\centering
+\begin{tabular}{ c |c| c |c }
+ \toprule
+  \multicolumn{2}{c}{\lephad\ channel} & \multicolumn{2}{c}{\hadhad\ channel}  \\[0.2em]
+ \toprule
+  \multicolumn{4}{c}{Trigger selection:} \\[0.5em]
+ Single-$\ell$ trigger         & $e/\mu+$\tauhad\ trigger            & Single-\tauhad\ trigger  & Di-\tauhad\ trigger  \\
+ SLT                           & LTT                                 & STT                      & DTT                  \\\cmidrule[0.2pt]{1-4}
+
+ % light-lepton selection
+ \multicolumn{4}{c}{$e/\mu$ selection:} \\ [0.5em]
+ \multicolumn{2}{c}{\small One tight $e$ or medium $\mu$} & \multicolumn{2}{c}{\small No loose $e/\mu$ with $p_T>7$~GeV}  \\[0.2em]
+ \small $p_T^{e}>25,27$ GeV    & \small 18 GeV $<p_T^e <$ SLT cut    &  &  \\
+ \small $p_T^{\mu}>21,27$ GeV  & \small 15 GeV$<p_T^{\mu}<$ SLT cut  &  &  \\\cmidrule[0.2pt]{1-4}
+
+ % tau_had selection
+ \multicolumn{4}{c}{\tauhad\ selection:} \\ [0.5em]
+ \multicolumn{2}{c}{\small One loose \tauhad\ ($|\eta|<2.3$)} & \multicolumn{2}{c}{\small Two loose \tauhad\ ($|\eta|<2.5$)}  \\[0.2em]
+ \small $p_T^{\tau}>20$ GeV    & \small $p_T^{\tau}>30$ GeV$^*$    & \small $p_T>100,140,180\text{ }(25)$~GeV & \small $p_T>40\text{ }(30)$ GeV \\\cmidrule[0.2pt]{1-4}
+
+
+ % jet selection
+ \multicolumn{4}{c}{Jet selection {\small($\geq2$ central jets)}:} \\[0.5em]
+
+ \small $p_T>45\text{ }(20)$ GeV & \small \textbf{2015 $+$ 2016:}  & \small $p_T>45\text{ }(20)$ GeV & \small \textbf{2015 $+$ 2016:}  \\
+                                 & \small $p_T>80\text{ }(20)$ GeV &                                 & \small $p_T>80\text{ }(20)$ GeV \\[0.5em]
+
+                                 & \small\textbf{2017 $+$ 2018:}   &                                 & \small \textbf{2017 $+$ 2018:}  \\
+                                 & \small\textit{``L14j12'' seed:} &                                 & \small\textit{``L14j12'' seed:} \\
+                                 & \small $p_T>45\text{ }(45)$ GeV &                                 & \small $p_T>45\text{ }(45)$ GeV \\[0.5em]
+                                 & \small\textit{``L1j25'' seed:}  &                                 & \small\textit{``L1Topo'' seed:} \\
+                                 & \small $p_T>80\text{ }(20)$ GeV &                                 & \small $p_T>80\text{ }(20)$ GeV \\
+                                 &                                 &                                 & \small and $\Delta R_{\tau\tau}<2.5$\\[0.5em]
+                                 & \small\textit{No additional jets} &                               &        \\
+                                 & \small\textit{at L1 ($\mu$ channel} &                             &        \\
+                                 & \small\textit{and $p_T^{\tauhad} >40$~GeV$^*$):} &                &        \\
+                                 & \small $p_T>45\text{ }(20)$ GeV &                                 & \small                       \\\cmidrule[0.2pt]{1-4}
+
+% \midrule
+ \multicolumn{4}{c}{Additional selection:}                                                 \\[0.5em]
+ \multicolumn{4}{c}{\small $m_{\tau\tau}^{\mathrm{MMC}}>60$~GeV}                           \\
+ \multicolumn{4}{c}{\small Opposite-sign electric charges of $e/\mu/$\tauhad\ and \tauhad} \\
+ \multicolumn{4}{c}{\small Exactly two $b$-tagged jets (77\% efficiency)}                  \\
+ \multicolumn{4}{c}{\small Leading $b$-jet $p_T>45$~GeV}                                   \\[0.5em]
+ \multicolumn{2}{c|}{\small $m_{bb}<150$~GeV}       & \multicolumn{2}{c}{}                 \\[0.2em]
+ \bottomrule
+\end{tabular}
+\caption{Summary of the signal region event selection in the di-Higgs analysis, shown separately for the four trigger categories. Three signal regions are defined: \lephad\ SLT, \lephad\ LTT and the \hadhad\ SR. In cases when several objects of the same type are required, the respective $p_T$ threshold for the leading (sub-leading) object is given outside (within) parentheses. For the SLT and STT categories, the $p_T$ requirements depend on the data-taking period, therefore several thresholds are listed, separated by commas. In the LTT and DTT trigger categories, several different L1 seeds are used for the 2017 and 2018 data-taking periods, impacting the jet selection criteria, and thus the jet $p_T$ thresholds are summarised separately for the each L1 seed.
+}
+\label{tab:DiHiggsEventSelection}
+\end{table}
+
+
+Table~\ref{tab:DiHiggsNonResAcc} summarises the acceptance times efficiency for the non-resonant SM ggF and VBF signals in the three analysis signal regions.
+
+\begin{table}
+\centering
+\begin{tabular}{| c |c| c |c |}
+\hline
+Process & LepHad SLT & LepHad LTT & HadHad\\
+\hline
+ggF SM & 4.08\% & 0.985\% & 4.08\%\\
+VBF SM & 2.50\% & 0.685\% & 2.26\%\\
+\hline
+\end{tabular}
+\caption{Acceptance times efficiency for the non-resonant SM ggF and VBF signals in the three analysis signal regions.
+}
+\label{tab:DiHiggsNonResAcc}
+\end{table}
+
+
+Figure~\ref{fig:DiHiggsResSignalAcceptance} shows the acceptance times efficiency for the resonant signals as a function of the resonance mass in the three analysis signal regions.
+
+\begin{figure}
+\centering
+\includegraphics[width=.75\textwidth]{figures/selection/AcceptanceEfficinecy_ATLASInternal_lin_smooth}
+\caption{Acceptance times efficiency for the di-Higgs resonant signals as a function of the resonance mass in the three analysis signal regions.}
+\label{fig:DiHiggsResSignalAcceptance}
+\end{figure}
+
+
+
+\FloatBarrier
+
+
+%\subsection{Leptoquark event selection}
+%\label{subsec:sellq}
+%
+%\subsubsection{\lephad event selection}
+%\label{subsec:sellq_lephad}
+%\input{sections/selection/lq_lephad.tex}
+%
+%\subsubsection{\hadhad event selection}
+%\label{subsec:sellq_hadhad}
+%\input{sections/selection/lq_hadhad.tex}
+%
+%\subsubsection{Pairing b and $\tau$s}
+%\label{subsec:btau_pairing}
+%\input{sections/selection/lq_pairing.tex}
+
+\subsection{$Z+HF$ control region event selection}
+\label{subsec:selhh_ZHFCR}
+\input{sections/selection/ZHFCR.tex}
