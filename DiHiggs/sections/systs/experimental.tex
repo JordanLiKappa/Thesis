@@ -1,199 +1,250 @@
-Experimental uncertainties are related to the detector response and the object reconstruction and identification of the various physics objects. 
+Uncertainty of measuring the luminosity 
+arises from calirating it with the van der Meer method~\cite{DAPR-2013-01}.
+The uncertainty on the full Run 2 data is $\pm$1.7\%, obtained using the
+LUCID (LUminosity measurement using a Cherenkov Integrating Detector)
+detector~\cite{ATLAS-Lumi2}.
 
-Tools provided by the ATLAS combined performance groups are used to estimate these systematic uncertainties. 
+A reweighting is applied on the MC simlulations to match 
+the pile-up condition in each data-taking period during Run 2~\cite{STDM-2015-05}. 
+The uncertainty associated with the reweighting
+is estimated by varing the reweighting factors used in the MC simulation. 
 
-A summary of the experimental systematic uncertainties taken into account in this analysis is given in Table~\ref{sec:systs:tab:systematics_experimental_list} and~\ref{sec:systs:tab:systematics_experimental_list_2}, along with the shorthand name of the uncertainty used throughout the analysis. Table~\ref{sec:systs:tab:systematics_experimental_list} describes the uncertainties related to the luminosity, leptons, \MET, triggers and pile-up effects and Table~\ref{sec:systs:tab:systematics_experimental_list_2} summarizes the jet and $b$-tagging uncertainties. 
+The uncertainties in single lepton triggers ($e$ or $mu$), 
+uncertainties due to leptons reconstruction, identification and
+isolation are estimated by varying the selection used in the
+tag-and-probe method. 
+In the tag-and-probe approach, stringent selection criterias are applied on one lepton,
+and the other lepton is used for the efficiency measurement. 
+For electrons, $Z\rightarrow e^+e^-$ events 
+are used~\cite{EGAM-2018-01} while for muons, 
+both $Z\rightarrow \mu^+\mu^-$  and $J/\psi\rightarrow \mu^+\mu^-$ events
+are used~\cite{CERN-EP-2020-199}. 
 
-These uncertainties are applied to all the MC-based processes. 
 
-Different NP reduction schemes are available for the systematics related to the jet energy resoulution and jet energy scale, b-tagging and e-gamma energy scale.  The NP reduction schemes used in this analysis are discussed in the following.
+The uncertainty on electron energy resolution is estimated by smearing the
+electron energies in MC simulations, while 
+the momentum scale and energy resolution variations are derived in 
+$Z\rightarrow \mu^+\mu^-$  and $J/\psi\rightarrow \mu^+\mu^-$ events. 
 
-For the jet uncertainties, the CategoryReduction and FullJER scheme are used to derive uncertainties affecting the jet energy scale (JES) and resolution (JER). This is the recommended set of systematic uncertainties for analyses aiming to perform combinations with other searches and it has been therefore chosen for all analyses in the di-Higgs group aiming to enter the di-Higgs (and other) combinations. It contains 30 nuisance parameters connected to the JES and 13 nuisance parameters for the JER. 
+Similarly for the \tauhad\ lepton, the tag-and-probe method is used
+to measure the reconstruction and identification efficiency scale factors,
+using $Z\rightarrow \tau^+\tau^-$ events~\cite{ATLAS-CONF-2017-029}.  
+Uncertainties are estimated in the efficiencies of the electron veto for
+\tauhad, using $Z\rightarrow e^+e^-$ events. 
 
-For the $b$-tagging uncertainties, the medium reduction scheme is used. This is the preferred reduction scheme used by Higgs and Exotics analyses so best choice for possible combinations and it has been therefore chosen for all analyses in the di-Higgs group aiming to enter the di-Higgs (and other) combinations. It contains 13 NPs (3 NPs for b-jets, 4 NPs for c-jets, 4 NPs for light-jets, 2 NPs for extrapolations).
 
-For the e-gamma uncertainties the simplified correlation model is used as this is the suggested reduction scheme for analyses which are very weakly sensitive to the energy scale of electrons and photons and it has been therefore chosen for all analyses in the di-Higgs group.
+The systematic uncertainties associated to the jet energy scale
+calibration~\cite{JETM-2018-05}, 
+as described in section~\ref{sec:jet}, are grouped into
+a reduced-size set of nuisance parameters.
+The reduced set is referred to as `CategoryReduction', 
+and is recommended set of uncertainties for analyses
+aiming to perform combinations with other searches. 
+Similarly, the jet energy resolution uncertainties~\cite{JETM-2018-05}
+are grouped in to the `FullJER' scheme for this reason.
+The jet energy resolution uncertainties therefore are 
+comprised of 30 nuisance parameters 
+and 13 nuisance parameters for the jer energy resolution uncertainties. 
+
+The uncertainty associated with the JVT algorithm (see section~\ref{sec:jet}) 
+is estimated by varying the reqirements on the algorithm output discriminant. 
+
+
+As described in section~\ref{sec:FTAG}, scale factors are measured 
+to correct the \btagging\ efficiency in MC simulations to match the one in data. 
+Uncertainties in the \btagging\ efficiency are considered
+as a function of \pt\ for b-jets and c-jets using \ttbar\ events~
+\cite{FTAG-2018-01,FTAG-paper}, 
+and as a function of pT and $\eta$ for
+light-flavour jets using di-jet events~\cite{ATLAS-CONF-2018-006}.
+The `medium reduction' scheme is used, which is
+the preferred reduction scheme used for analyses aiming for combination. 
+It contains 13 nuisance parameters, 3 for \bjets, 4 for \cjets, 
+4 for light-jets and 2 for extrapolations.
+
+
+The energy scale and resolution uncertainties mentioned above, 
+in addition to an uncertainty in the tracks matched to the primary vertex 
+but not associated to other reconstructed objects in the event, are
+propagated to the \met calculation~\cite{PERF-2016-07}.
+
 
 
 
 \begin{table}
-\centering
-\tiny
-\begin{tabular}{|c|c|}
-\hline
-NP Name & Description\\
-\hline
-\multicolumn{2}{|c|}{ Event } \\
-\hline
-ATLAS\textunderscore LUMI\textunderscore Run2 & Uncertainty on the total integrated luminosity (1.7\%)\\
-ATLAS\textunderscore PU\textunderscore PRW\textunderscore DATASF & Pile-up reweighting\\
-\hline
-\multicolumn{2}{|c|}{ electrons }\\
-\hline
-EL\textunderscore EFF\textunderscore TRIG\textunderscore TOTAL\textunderscore 1NPCOR\textunderscore PLUS\textunderscore UNCOR & electron-trigger \\
-EL\textunderscore EFF\textunderscore RECO\textunderscore TOTAL\textunderscore 1NPCOR\textunderscore PLUS\textunderscore UNCOR & electron-reconstruction\\
-EL\textunderscore EFF\textunderscore ID\textunderscore TOTAL\textunderscore 1NPCOR\textunderscore PLUS\textunderscore UNCOR & electron-identification\\
-EL\textunderscore EFF\textunderscore ISO\textunderscore TOTAL\textunderscore 1NPCOR\textunderscore PLUS\textunderscore UNCOR & electron-isolation\\
-\hline
-\multicolumn{2}{|c|}{ muons }\\
-\hline
-MUON\textunderscore EFF\textunderscore TrigStatUncertainty & mun-trigger\\
-MUON\textunderscore EFF\textunderscore TrigSystUncertainty & \\
-MUON\textunderscore EFF\textunderscore RECO\textunderscore STAT & muon-reconstruction\\
-MUON\textunderscore EFF\textunderscore RECO\textunderscore SYS & \\
-MUON\textunderscore EFF\textunderscore RECO\textunderscore STAT\textunderscore LOWPT & \\
-MUON\textunderscore EFF\textunderscore RECO\textunderscore SYS\textunderscore LOWPT & \\
-MUON\textunderscore EFF\textunderscore ISO\textunderscore STAT & muon-isolation\\
-MUON\textunderscore EFF\textunderscore ISO\textunderscore SYS & \\
-MUON\textunderscore EFF\textunderscore TTVA\textunderscore STAT & muon-TTVA\\
-MUON\textunderscore EFF\textunderscore TTVA\textunderscore SYS & \\
-MUON\textunderscore ID & muon-momentum calibration \\
-MUON\textunderscore MS & \\
-MUON\textunderscore SCALE & \\
-MUON\textunderscore SAGITTA\textunderscore RHO & \\
-MUON\textunderscore SAGITTA\textunderscore RESBIAS & \\
-\hline
-\multicolumn{2}{|c|}{ $\tau$-leptons }\\
-\hline
-TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore TRIGGER\textunderscore STATDATA161718 & $\tau$-trigger\\
-TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore TRIGGER\textunderscore STATDATA1718 & \\
-TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore TRIGGER\textunderscore STATDATA2016 & \\
-TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore TRIGGER\textunderscore STATDATA2018 & \\
-TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore TRIGGER\textunderscore STATDATA2018AFTTS1 & \\
-TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore TRIGGER\textunderscore STATMC161718 &\\
-TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore TRIGGER\textunderscore STATMC1718 & \\
-TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore TRIGGER\textunderscore STATMC2016 & \\
-TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore TRIGGER\textunderscore STATMC2018 & \\
-TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore TRIGGER\textunderscore STATMC2018AFTTS1 & \\
-TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore TRIGGER\textunderscore SYST161718 & \\
-TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore TRIGGER\textunderscore SYST1718 & \\
-TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore TRIGGER\textunderscore SYST2016 & \\
-TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore TRIGGER\textunderscore SYST2018 & \\
-TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore TRIGGER\textunderscore SYST2018AFTTS1& \\
-TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore TRIGGER\textunderscore SYSTMU161718 & \\
-TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore TRIGGER\textunderscore SYSTMU1718 & \\
-TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore TRIGGER\textunderscore SYSTMU2016 & \\
-TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore TRIGGER\textunderscore SYSTMU2018 & \\
-TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore TRIGGER\textunderscore SYSTMU2018AFTTS1& \\
-TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore RECO\textunderscore HIGHPT & $\tau$-reconstruction\\
-TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore RECO\textunderscore TOTAL & \\
-TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore RNNID\textunderscore 1PRONGSTATSYSTPT2025 & $\tau$-odentification\\
-TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore RNNID\textunderscore 1PRONGSTATSYSTPT2530 & \\
-TAUS\textunderscore TRUEHADTAU\textunderscore  EFF\textunderscore RNNID\textunderscore 1PRONGSTATSYSTPT3040 & \\
-TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore RNNID\textunderscore 1PRONGSTATSYSTPTGE40 & \\
-TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore RNNID\textunderscore 3PRONGSTATSYSTPT2025 & \\
-TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore RNNID\textunderscore 3PRONGSTATSYSTPT2530 & \\
-TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore RNNID\textunderscore 3PRONGSTATSYSTPT3040 & \\
-TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore RNNID\textunderscore 3PRONGSTATSYSTPTGE40 & \\
-TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore RNNID\textunderscore HIGHPT &\\
-TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore RNNID\textunderscore SYST &\\
-TAUS\textunderscore TRUEHADTAU\textunderscore SME\textunderscore TES\textunderscore INSITUEXP & $\tau$-energy scale\\
-TAUS\textunderscore TRUEHADTAU\textunderscore SME\textunderscore TES\textunderscore INSITUFIT &\\
-TAUS\textunderscore TRUEHADTAU\textunderscore SME\textunderscore TES\textunderscore MODEL\textunderscore CLOSURE &\\
-TAUS\textunderscore TRUEHADTAU\textunderscore SME\textunderscore TES\textunderscore PHYSICSLIST &\\
-TAUS\textunderscore TRUEELECTRON\textunderscore EFF\textunderscore ELEBDT\textunderscore STAT & $\tau$-electron veto\\
-TAUS\textunderscore TRUEELECTRON\textunderscore EFF\textunderscore ELEBDT\textunderscore SYST &\\
-TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore ELEOLR\textunderscore TOTAL &\\
-\hline
-\multicolumn{2}{|c|}{ egamma }\\
-\hline
-EG\textunderscore RESOLUTION\textunderscore ALL & egamma resolution\\
-EG\textunderscore SCALE\textunderscore ALL & egamma scale\\
-EG\textunderscore SCALE\textunderscore AF2 & \\
-\hline
-\multicolumn{2}{|c|}{ \MET }\\
-\hline
-MET\textunderscore SoftTrk\textunderscore ResoPara & \\
-MET\textunderscore SoftTrk\textunderscore ResoPerp & \\
-MET\textunderscore SoftTrk\textunderscore ScaleDown & \\
-MET\textunderscore SoftTrk\textunderscore ScaleUp & \\
-\hline
-\end{tabular}
-\caption{List of experimental systematic uncertainties.
-}
-\label{sec:systs:tab:systematics_experimental_list}
-\end{table}
-
-\begin{table}
-\centering
-\tiny
-\begin{tabular}{|c|c|}
-\hline
-NP Name & Description\\
-\hline
-\multicolumn{2}{|c|}{ Jets }\\
-\hline
-JET\textunderscore EtaIntercalibration\textunderscore Modelling & Jet energy scale (CategoryReduction)\\
-JET\textunderscore EtaIntercalibration\textunderscore TotalStat & \\
-JET\textunderscore EtaIntercalibration\textunderscore NonClosure\textunderscore highE & \\
-JET\textunderscore EtaIntercalibration\textunderscore NonClosure\textunderscore negEta & \\
-JET\textunderscore EtaIntercalibration\textunderscore NonClosure\textunderscore posEta & \\
-JET\textunderscore Pileup\textunderscore OffsetMu & \\                
-JET\textunderscore Pileup\textunderscore OffsetNPV & \\
-JET\textunderscore Pileup\textunderscore PtTerm & \\            
-JET\textunderscore Pileup\textunderscore RhoTopology & \\             
-JET\textunderscore Flavor\textunderscore Composition & \\
-JET\textunderscore Flavor\textunderscore Response & \\            
-JET\textunderscore PunchThrough\textunderscore MC16 & \\             
-JET\textunderscore PunchThrough\textunderscore AFII & \\
-JET\textunderscore EffectiveNP\textunderscore Detector1 & \\
-JET\textunderscore EffectiveNP\textunderscore Detector2 & \\
-JET\textunderscore EffectiveNP\textunderscore Mixed1 & \\
-JET\textunderscore EffectiveNP\textunderscore Mixed2 & \\
-JET\textunderscore EffectiveNP\textunderscore Mixed3 & \\
-JET\textunderscore EffectiveNP\textunderscore Modelling1 & \\
-JET\textunderscore EffectiveNP\textunderscore Modelling2 & \\
-JET\textunderscore EffectiveNP\textunderscore Modelling3 & \\
-JET\textunderscore EffectiveNP\textunderscore Modelling4 & \\
-JET\textunderscore EffectiveNP\textunderscore Statistical1 & \\
-JET\textunderscore EffectiveNP\textunderscore Statistical2 & \\
-JET\textunderscore EffectiveNP\textunderscore Statistical3 & \\
-JET\textunderscore EffectiveNP\textunderscore Statistical4 & \\
-JET\textunderscore EffectiveNP\textunderscore Statistical5 & \\
-JET\textunderscore EffectiveNP\textunderscore Statistical6 & \\
-JET\textunderscore SingleParticle\textunderscore HighPt & \\          
-JET\textunderscore RelativeNonClosure\textunderscore AFII & \\
-JET\textunderscore BJES\textunderscore Response & \\             
-JET\textunderscore EtaIntercalibration\textunderscore NonClosure\textunderscore 2018data & \\
-JET\textunderscore JER\textunderscore DataVsMC\textunderscore MC16 & Jet energy resolution (FullJer) \\
-JET\textunderscore JER\textunderscore DataVsMC\textunderscore AFI & \\I 
-JET\textunderscore JER\textunderscore EffectiveNP\textunderscore 1 & \\
-JET\textunderscore JER\textunderscore EffectiveNP\textunderscore 2 & \\   
-JET\textunderscore JER\textunderscore EffectiveNP\textunderscore 3 & \\
-JET\textunderscore JER\textunderscore EffectiveNP\textunderscore 4 & \\   
-JET\textunderscore JER\textunderscore EffectiveNP\textunderscore 5 & \\
-JET\textunderscore JER\textunderscore EffectiveNP\textunderscore 6 & \\   
-JET\textunderscore JER\textunderscore EffectiveNP\textunderscore 7 & \\
-JET\textunderscore JER\textunderscore EffectiveNP\textunderscore 8 & \\   
-JET\textunderscore JER\textunderscore EffectiveNP\textunderscore 9 & \\
-JET\textunderscore JER\textunderscore EffectiveNP\textunderscore 10 & \\  
-JET\textunderscore JER\textunderscore EffectiveNP\textunderscore 11 & \\
-JET\textunderscore JER\textunderscore EffectiveNP\textunderscore 12restTerm & \\
-JET\textunderscore JVT\textunderscore EFF & Jet vertex tagging \\
-JET\textunderscore FJVT\textunderscore EFF & Forward jet vertex tagging \\
-\hline
-\multicolumn{2}{|c|}{ $b$-tagging }\\
-\hline
-FT\textunderscore EFF\textunderscore Eigen\textunderscore B\textunderscore 0& \\
-FT\textunderscore EFF\textunderscore Eigen\textunderscore B\textunderscore 1 & \\
-FT\textunderscore EFF\textunderscore Eigen\textunderscore B\textunderscore 2 & \\
-FT\textunderscore EFF\textunderscore Eigen\textunderscore C\textunderscore 0 & \\
-FT\textunderscore EFF\textunderscore Eigen\textunderscore C\textunderscore 1 & \\
-FT\textunderscore EFF\textunderscore Eigen\textunderscore C\textunderscore 2 & \\
-FT\textunderscore EFF\textunderscore Eigen\textunderscore C\textunderscore 3 & \\
-FT\textunderscore EFF\textunderscore Eigen\textunderscore Light\textunderscore 0 & \\
-FT\textunderscore EFF\textunderscore Eigen\textunderscore Light\textunderscore 1 & \\
-FT\textunderscore EFF\textunderscore Eigen\textunderscore Light\textunderscore 2 & \\
-FT\textunderscore EFF\textunderscore Eigen\textunderscore Light\textunderscore 3 & \\
-FT\textunderscore EFF\textunderscore extrapolation & \\
-FT\textunderscore EFF\textunderscore extrapolation\textunderscore from\textunderscore charm & \\
-\hline
-\end{tabular}
-\caption{List of experimental systematic uncertainties.
-}
-\label{sec:systs:tab:systematics_experimental_list_2}
-\end{table}
-
-
-
-
+    \centering
+    \tiny
+    \begin{tabular}{|c|c|}
+    \hline
+    NP Name & Description\\
+    \hline
+    \multicolumn{2}{|c|}{ Event } \\
+    \hline
+    ATLAS\textunderscore LUMI\textunderscore Run2 & Uncertainty on the total integrated luminosity (1.7\%)\\
+    ATLAS\textunderscore PU\textunderscore PRW\textunderscore DATASF & Pile-up reweighting\\
+    \hline
+    \multicolumn{2}{|c|}{ electrons }\\
+    \hline
+    EL\textunderscore EFF\textunderscore TRIG\textunderscore TOTAL\textunderscore 1NPCOR\textunderscore PLUS\textunderscore UNCOR & electron-trigger \\
+    EL\textunderscore EFF\textunderscore RECO\textunderscore TOTAL\textunderscore 1NPCOR\textunderscore PLUS\textunderscore UNCOR & electron-reconstruction\\
+    EL\textunderscore EFF\textunderscore ID\textunderscore TOTAL\textunderscore 1NPCOR\textunderscore PLUS\textunderscore UNCOR & electron-identification\\
+    EL\textunderscore EFF\textunderscore ISO\textunderscore TOTAL\textunderscore 1NPCOR\textunderscore PLUS\textunderscore UNCOR & electron-isolation\\
+    \hline
+    \multicolumn{2}{|c|}{ muons }\\
+    \hline
+    MUON\textunderscore EFF\textunderscore TrigStatUncertainty & mun-trigger\\
+    MUON\textunderscore EFF\textunderscore TrigSystUncertainty & \\
+    MUON\textunderscore EFF\textunderscore RECO\textunderscore STAT & muon-reconstruction\\
+    MUON\textunderscore EFF\textunderscore RECO\textunderscore SYS & \\
+    MUON\textunderscore EFF\textunderscore RECO\textunderscore STAT\textunderscore LOWPT & \\
+    MUON\textunderscore EFF\textunderscore RECO\textunderscore SYS\textunderscore LOWPT & \\
+    MUON\textunderscore EFF\textunderscore ISO\textunderscore STAT & muon-isolation\\
+    MUON\textunderscore EFF\textunderscore ISO\textunderscore SYS & \\
+    MUON\textunderscore EFF\textunderscore TTVA\textunderscore STAT & muon-TTVA\\
+    MUON\textunderscore EFF\textunderscore TTVA\textunderscore SYS & \\
+    MUON\textunderscore ID & muon-momentum calibration \\
+    MUON\textunderscore MS & \\
+    MUON\textunderscore SCALE & \\
+    MUON\textunderscore SAGITTA\textunderscore RHO & \\
+    MUON\textunderscore SAGITTA\textunderscore RESBIAS & \\
+    \hline
+    \multicolumn{2}{|c|}{ $\tau$-leptons }\\
+    \hline
+    TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore TRIGGER\textunderscore STATDATA161718 & $\tau$-trigger\\
+    TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore TRIGGER\textunderscore STATDATA1718 & \\
+    TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore TRIGGER\textunderscore STATDATA2016 & \\
+    TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore TRIGGER\textunderscore STATDATA2018 & \\
+    TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore TRIGGER\textunderscore STATDATA2018AFTTS1 & \\
+    TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore TRIGGER\textunderscore STATMC161718 &\\
+    TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore TRIGGER\textunderscore STATMC1718 & \\
+    TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore TRIGGER\textunderscore STATMC2016 & \\
+    TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore TRIGGER\textunderscore STATMC2018 & \\
+    TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore TRIGGER\textunderscore STATMC2018AFTTS1 & \\
+    TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore TRIGGER\textunderscore SYST161718 & \\
+    TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore TRIGGER\textunderscore SYST1718 & \\
+    TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore TRIGGER\textunderscore SYST2016 & \\
+    TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore TRIGGER\textunderscore SYST2018 & \\
+    TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore TRIGGER\textunderscore SYST2018AFTTS1& \\
+    TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore TRIGGER\textunderscore SYSTMU161718 & \\
+    TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore TRIGGER\textunderscore SYSTMU1718 & \\
+    TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore TRIGGER\textunderscore SYSTMU2016 & \\
+    TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore TRIGGER\textunderscore SYSTMU2018 & \\
+    TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore TRIGGER\textunderscore SYSTMU2018AFTTS1& \\
+    TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore RECO\textunderscore HIGHPT & $\tau$-reconstruction\\
+    TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore RECO\textunderscore TOTAL & \\
+    TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore RNNID\textunderscore 1PRONGSTATSYSTPT2025 & $\tau$-odentification\\
+    TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore RNNID\textunderscore 1PRONGSTATSYSTPT2530 & \\
+    TAUS\textunderscore TRUEHADTAU\textunderscore  EFF\textunderscore RNNID\textunderscore 1PRONGSTATSYSTPT3040 & \\
+    TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore RNNID\textunderscore 1PRONGSTATSYSTPTGE40 & \\
+    TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore RNNID\textunderscore 3PRONGSTATSYSTPT2025 & \\
+    TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore RNNID\textunderscore 3PRONGSTATSYSTPT2530 & \\
+    TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore RNNID\textunderscore 3PRONGSTATSYSTPT3040 & \\
+    TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore RNNID\textunderscore 3PRONGSTATSYSTPTGE40 & \\
+    TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore RNNID\textunderscore HIGHPT &\\
+    TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore RNNID\textunderscore SYST &\\
+    TAUS\textunderscore TRUEHADTAU\textunderscore SME\textunderscore TES\textunderscore INSITUEXP & $\tau$-energy scale\\
+    TAUS\textunderscore TRUEHADTAU\textunderscore SME\textunderscore TES\textunderscore INSITUFIT &\\
+    TAUS\textunderscore TRUEHADTAU\textunderscore SME\textunderscore TES\textunderscore MODEL\textunderscore CLOSURE &\\
+    TAUS\textunderscore TRUEHADTAU\textunderscore SME\textunderscore TES\textunderscore PHYSICSLIST &\\
+    TAUS\textunderscore TRUEELECTRON\textunderscore EFF\textunderscore ELEBDT\textunderscore STAT & $\tau$-electron veto\\
+    TAUS\textunderscore TRUEELECTRON\textunderscore EFF\textunderscore ELEBDT\textunderscore SYST &\\
+    TAUS\textunderscore TRUEHADTAU\textunderscore EFF\textunderscore ELEOLR\textunderscore TOTAL &\\
+    \hline
+    \multicolumn{2}{|c|}{ egamma }\\
+    \hline
+    EG\textunderscore RESOLUTION\textunderscore ALL & egamma resolution\\
+    EG\textunderscore SCALE\textunderscore ALL & egamma scale\\
+    EG\textunderscore SCALE\textunderscore AF2 & \\
+    \hline
+    \multicolumn{2}{|c|}{ \MET }\\
+    \hline
+    MET\textunderscore SoftTrk\textunderscore ResoPar a & \\
+    MET\textunderscore SoftTrk\textunderscore ResoPerp & \\
+    MET\textunderscore SoftTrk\textunderscore ScaleDown & \\
+    MET\textunderscore SoftTrk\textunderscore ScaleUp & \\
+    \hline
+    \end{tabular}
+    \caption{List of experimental systematic uncertainties. Table reproduced from analysis internal notes. 
+    }
+    \label{tab:systematics_experimental_list}
+    \end{table}
+    
+    \begin{table}
+    \centering
+    \tiny
+    \begin{tabular}{|c|c|}
+    \hline
+    NP Name & Description\\
+    \hline
+    \multicolumn{2}{|c|}{ Jets }\\
+    \hline
+    JET\textunderscore EtaIntercalibration\textunderscore Modelling & Jet energy scale (CategoryReduction)\\
+    JET\textunderscore EtaIntercalibration\textunderscore TotalStat & \\
+    JET\textunderscore EtaIntercalibration\textunderscore NonClosure\textunderscore highE & \\
+    JET\textunderscore EtaIntercalibration\textunderscore NonClosure\textunderscore negEta & \\
+    JET\textunderscore EtaIntercalibration\textunderscore NonClosure\textunderscore posEta & \\
+    JET\textunderscore Pileup\textunderscore OffsetMu & \\                
+    JET\textunderscore Pileup\textunderscore OffsetNPV & \\
+    JET\textunderscore Pileup\textunderscore PtTerm & \\            
+    JET\textunderscore Pileup\textunderscore RhoTopology & \\             
+    JET\textunderscore Flavor\textunderscore Composition & \\
+    JET\textunderscore Flavor\textunderscore Response & \\            
+    JET\textunderscore PunchThrough\textunderscore MC16 & \\             
+    JET\textunderscore PunchThrough\textunderscore AFII & \\
+    JET\textunderscore EffectiveNP\textunderscore Detector1 & \\
+    JET\textunderscore EffectiveNP\textunderscore Detector2 & \\
+    JET\textunderscore EffectiveNP\textunderscore Mixed1 & \\
+    JET\textunderscore EffectiveNP\textunderscore Mixed2 & \\
+    JET\textunderscore EffectiveNP\textunderscore Mixed3 & \\
+    JET\textunderscore EffectiveNP\textunderscore Modelling1 & \\
+    JET\textunderscore EffectiveNP\textunderscore Modelling2 & \\
+    JET\textunderscore EffectiveNP\textunderscore Modelling3 & \\
+    JET\textunderscore EffectiveNP\textunderscore Modelling4 & \\
+    JET\textunderscore EffectiveNP\textunderscore Statistical1 & \\
+    JET\textunderscore EffectiveNP\textunderscore Statistical2 & \\
+    JET\textunderscore EffectiveNP\textunderscore Statistical3 & \\
+    JET\textunderscore EffectiveNP\textunderscore Statistical4 & \\
+    JET\textunderscore EffectiveNP\textunderscore Statistical5 & \\
+    JET\textunderscore EffectiveNP\textunderscore Statistical6 & \\
+    JET\textunderscore SingleParticle\textunderscore HighPt & \\          
+    JET\textunderscore RelativeNonClosure\textunderscore AFII & \\
+    JET\textunderscore BJES\textunderscore Response & \\             
+    JET\textunderscore EtaIntercalibration\textunderscore NonClosure\textunderscore 2018data & \\
+    JET\textunderscore JER\textunderscore DataVsMC\textunderscore MC16 & Jet energy resolution (FullJer) \\
+    JET\textunderscore JER\textunderscore DataVsMC\textunderscore AFI & \\I 
+    JET\textunderscore JER\textunderscore EffectiveNP\textunderscore 1 & \\
+    JET\textunderscore JER\textunderscore EffectiveNP\textunderscore 2 & \\   
+    JET\textunderscore JER\textunderscore EffectiveNP\textunderscore 3 & \\
+    JET\textunderscore JER\textunderscore EffectiveNP\textunderscore 4 & \\   
+    JET\textunderscore JER\textunderscore EffectiveNP\textunderscore 5 & \\
+    JET\textunderscore JER\textunderscore EffectiveNP\textunderscore 6 & \\   
+    JET\textunderscore JER\textunderscore EffectiveNP\textunderscore 7 & \\
+    JET\textunderscore JER\textunderscore EffectiveNP\textunderscore 8 & \\   
+    JET\textunderscore JER\textunderscore EffectiveNP\textunderscore 9 & \\
+    JET\textunderscore JER\textunderscore EffectiveNP\textunderscore 10 & \\  
+    JET\textunderscore JER\textunderscore EffectiveNP\textunderscore 11 & \\
+    JET\textunderscore JER\textunderscore EffectiveNP\textunderscore 12restTerm & \\
+    JET\textunderscore JVT\textunderscore EFF & Jet vertex tagging \\
+    JET\textunderscore FJVT\textunderscore EFF & Forward jet vertex tagging \\
+    \hline
+    \multicolumn{2}{|c|}{ $b$-tagging }\\
+    \hline
+    FT\textunderscore EFF\textunderscore Eigen\textunderscore B\textunderscore 0& \\
+    FT\textunderscore EFF\textunderscore Eigen\textunderscore B\textunderscore 1 & \\
+    FT\textunderscore EFF\textunderscore Eigen\textunderscore B\textunderscore 2 & \\
+    FT\textunderscore EFF\textunderscore Eigen\textunderscore C\textunderscore 0 & \\
+    FT\textunderscore EFF\textunderscore Eigen\textunderscore C\textunderscore 1 & \\
+    FT\textunderscore EFF\textunderscore Eigen\textunderscore C\textunderscore 2 & \\
+    FT\textunderscore EFF\textunderscore Eigen\textunderscore C\textunderscore 3 & \\
+    FT\textunderscore EFF\textunderscore Eigen\textunderscore Light\textunderscore 0 & \\
+    FT\textunderscore EFF\textunderscore Eigen\textunderscore Light\textunderscore 1 & \\
+    FT\textunderscore EFF\textunderscore Eigen\textunderscore Light\textunderscore 2 & \\
+    FT\textunderscore EFF\textunderscore Eigen\textunderscore Light\textunderscore 3 & \\
+    FT\textunderscore EFF\textunderscore extrapolation & \\
+    FT\textunderscore EFF\textunderscore extrapolation\textunderscore from\textunderscore charm & \\
+    \hline
+    \end{tabular}
+    \caption{List of experimental systematic uncertainties. Table reproduced from analysis internal notes. 
+    }
+    \label{tab:systematics_experimental_list_2}
+    \end{table}

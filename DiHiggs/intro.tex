@@ -1,46 +1,63 @@
 This chapter describes the search for Higgs boson pair production in the
-\bbtt\ channel. 
-In this channel, one Higgs boson decays to a \bquark\ pair 
+\bbtt\ channel, where one Higgs boson decays to a \bquark\ pair 
 and the other to a $\tau$-lepton pair. 
 As the two $\tau$-leptons decay either leptonically or hadronically, 
 the analysis is divided further into two sub-channels depending on
 their decay mode, 
 the $b\bar{b}\tau_{\text{lep}}^{\pm}\tau_{\text{had}}^{\mp}$ channel 
-(for simplicity, referred to as \bbttlh\ channel or the lephad channel)
+(for simplicity, referred to as \lephad channel)
 where one of the $tau$-leptons decays leptonically and the other decays
 hadronically, 
-and the \bbtthh\ channel where both of the $tau$-leptons decay hadronically. 
+and the \bbtthh\ channel (or referred to as \hadhad channel) 
+where both of the $tau$-leptons decay hadronically. 
 The decay mode of both $tau$-leptons decay
 leptonically is not considered in this analysis 
 due to its insignificant contribution. 
 In this thesis, the author will present his work 
-in the \bbttlh\ channel, and will also show the combination results with 
-the \bbtthh\ channel.
+in the \lephad channel, and will also show the combination results with 
+the \hadhad channel.
 
 
 % one of the $\tau$-leptons decay leptonically and the other decay hadronically. 
 The results of this search are interpreted in terms of resonant and 
 non-resonant production of the di-Higgs.
 For the non-resonant production, upper limits are set on the SM di-Higgs production
-cross section and the Higgs self-coupling $\lambda_{HHH}$.
-The non-resonant search is also interpreted in terms of the coupling modifiers using a
-Higgs Effective Field Theory approach (TODO: link to theory).
+cross section, and exclusion limits are set on the Higgs self-coupling $\lambda_{HHH}$.
+% The non-resonant search is also interpreted in terms of the coupling modifiers using a
+% Higgs Effective Field Theory approach (TODO: link to theory).
 For the resonant search, upper limits are set on the resonance production cross section 
 as a function of the resonance mass, 
 constraining a model with an extended Higgs sector based on two Higgs doublet (2HDM) model
 (TODO: link to theory chapter).
-The \bbttlh\ and \bbtthh\
+The \lephad and \hadhad
 combination results are published in Reference~\cite{dihiggs-conf} 
 TODO: if paper is published cite the paper
 The $\lambda_{HHH}$ result is combined with other final states of the di-Higgs production
 including \bbbb\ and \bbyy. 
-The result is published in Reference~\cite{ATLAS-CONF-2021-052} TODO: if paper is published cite the combination paper. 
+The combination result is published in Reference~\cite{ATLAS-CONF-2021-052} TODO: if paper is published cite the combination paper. 
 
-TODO: add a oveview of the strategy 
-In the following sections all the aspects of the analysis are discussed. 
-The object and event selections are discussed in Section~\ref{sec:DiHiggs:selection}.
-The multivariate analysis is described in Section~\ref{sec:DiHiggs:MVA}. 
-The background estimation is explained in Section~\ref{sec:DiHiggs:backgroundEstimation}. 
-The systematic uncertainties are described in Section~\ref{sec:DiHiggs:systematics}. 
-The statistical interpretation is described in Section~\ref{sec:DiHiggs:analysis}
-and the results are presented and discussed in Section~\ref{sec:DiHiggs:results}.
+The analysis strategy is as follows:
+first, a set of selections are applied on 
+the reconstructed physics objects and kinematics variables which
+defines the signal regions and the control region, 
+as decribed in section~\ref{sec:DiHiggs:selection};
+neural networks trained on the signal regions events are then 
+used to extract the various signals, and the output of the algorithm is used
+as the final discriminant, as described in section~\ref{sec:DiHiggs:MVA};
+the systematic uncertainties considered in this analysis is discussed in 
+section~\ref{sec:DiHiggs:systematics};
+a profile likelihood fit is then performed simultaneously on all \lephad and \hadhad
+signal regions and the control region, with all systematics uncertainties served as nuisance parameters.
+The statistical combination result of \bbtt, \bbyy and \bbbb is also studied. 
+The setup and the results are shown in section~\ref{sec:DiHiggs:results}.
+
+The author's contributions to the analyses presented in this Chapter are as follows.
+As one of the main analysers in the \lephad channel, 
+the author produced all data and MC (including all signals and background) 
+histograms with full experimental and theoretical systematics, which are the inputs to the likelihood fit. 
+The author has derived the systematics uncertainties for the following major backgrounds:
+\ttbar, \ZHF\ and single-top. The autho has also contributed to the estimation of the fake-\tauhad\
+background and its uncertainties. 
+Finally, the author implemented and validated a reweighting method in order to scan
+the non-resonant $HH$ production with in various \kl\ values, and derived the corresponding
+uncertainties. 

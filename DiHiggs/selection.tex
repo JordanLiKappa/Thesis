@@ -76,8 +76,8 @@ the L1 seed is using the default setting.
     & HLT\_e140\_lhloose\_nod0 \\
  \bottomrule
   \end{tabular}
- \caption{SLT triggers used in the \lephad channel, along with the trigger-dependent offline \pT\ thresholds, for each year/period are shown.
- Table reproduced from internal notes of the analysis.}
+ \caption{SLT triggers used in the \lephad channel, 
+ along with the trigger-dependent offline \pT\ thresholds, for each year/period are shown.}
   \label{tab:SLTtriggers_lephad}
 \end{table}
 
@@ -173,11 +173,11 @@ as described in Section~\ref{sec:DiHiggs:lephadfake}.
 A \tauhad\ with $\pt>20$~GeV and 
 $\vert\eta\vert<2.3$ is required in the SLT category.
 A \tauhad\ with $\pt>30$~GeV,
-or higher if required by the by the LTT triggers (as defined in the previous
+or higher if required by the LTT triggers (as defined in the previous
 section~\ref{sec:DiHiggs:trigger}), 
 and $\vert\eta\vert<2.3$ is required in the LTT events. 
 In both categories, the (sub-)leading $b$-tagged jet 
-must have $\tau_pt>45~(20)$~GeV, 
+must have $\pT>45~(20)$~GeV, 
 in addition to any trigger-dependent jet requirements of LTT
 defined in the previous section.
 The full event pre-selection is summarised in Table~\ref{tab:DiHiggs:selectionsummary}. 
@@ -324,7 +324,8 @@ The $A \times \epsilon$ for all resonances mass points are shown
 in Figure~\ref{fig:selection:acceptances}. 
 The decrease in $A \times \epsilon$ 
 for $m_X$ greater than about 1000~GeV is due to the Lorentz boost 
-of the Higgs bosons causing their decay products to become highly collimated more often.
+of the Higgs bosons causing their decay products to become highly collimated more often,
+and therefore harder to identify.
 
 \begin{figure}[htbp]
 \centering
@@ -338,7 +339,7 @@ SLT, LTT and SLT LTT combined.}
 
 After the pre-selection, the event yields of the data,
 signal and background and the corresponding
-statistical error is shown in Table.~\ref{tab:tab:LepHadSLTYields} for the 
+statistical error is shown in Table.~\ref{tab:LepHadSLTYields} for the 
 SLT channel, and Table.~\ref{tab:LepHadLTTYields} for the LTT channel.
 The `Fake' background in the table represents the background due to a jet faking
 a \tauhad, which is estimated by a
@@ -361,12 +362,12 @@ Resonant at $m_X$ =280	& 24595 &	 67.9 &  0.4& 0.7\% \\
 Resonant at $m_X$ =300	& 18398 &	 77.2 &  0.6& 0.8\% \\
 Resonant at $m_X$ =325	& 20904 &	90.9 &  0.6& 0.7\% \\
 Resonant at $m_X$ =350	& 23593 &	 106.4 &  0.7& 0.7\% \\
-Resonant at $m_X$ =400	& 29280 &	 140  +&  0.8& 0.6\% \\
+Resonant at $m_X$ =400	& 29280 &	 140  &  0.8& 0.6\% \\
 Resonant at $m_X$ =450	& 34665 &	 175.3 &  1& 0.6\% \\
 Resonant at $m_X$ =500	& 21332 &210.7 &  1.5& 0.7\% \\
 Resonant at $m_X$ =550	& 23571 &240.9 &  1.6& 0.7\% \\
 Resonant at $m_X$ =600	& 25917 &273.9 &  1.8& 0.6\% \\
-Resonant at $m_X$ =700	& 29596 &327  +&  2& 0.6\% \\
+Resonant at $m_X$ =700	& 29596 &327   &  2& 0.6\% \\
 Resonant at $m_X$ =800	& 32606 &74.5 &  2.1& 0.6\% \\
 Resonant at $m_X$ =900	& 34392 &405.6 &  2.3& 0.6\% \\
 Resonant at $m_X$ =1000	& 35119 &425.2 &  2.3& 0.6\% \\
@@ -377,39 +378,19 @@ Resonant at $m_X$ =1600	& 14421 &160.6 &  1.4& 0.9\% \\
 \hline
 \multicolumn{5}{|c|}{\textbf{Background Samples}} \\
 \hline
-Fake    &         2089776         &33920        &110           &       0.3\%      \\
-ttbar     &         490058          &61620        &90           &       0.1\%      \\
-stopWt    &         25910         &3054        &20           &       0.7\%      \\
-stopt     &         5798          &596        &11           &       1.8\%      \\
-stops     &         1450          &38.8        &1.1           &       2.8\%      \\
-Zttbb     &         21473         &1426        &27           &       1.9\%      \\
-Zttbc     &         1746          &132        &10           &       7.6\%      \\
-Zttbl     &         1184          &63        &7           &       11.1\%      \\
-Zttcc     &         608         &134        &22           &       16.4\%      \\
-Zttcl     &         216         &13        &9           &       69.2\%      \\
-Zttl    &         122         &16        &6           &       37.5\%      \\
-Wtt     &         76          &5.4        &0.8           &       14.8\%      \\
-W     &         747         &75        &8           &       10.7\%      \\
-Zbb     &         17645         &796        &26           &       3.3\%      \\
-Zbc     &         1467          &75        &9           &       12.0\%      \\
-Zbl     &         1006          &39        &6           &       15.4\%      \\
-Zcc     &         278         &79        &20           &       25.3\%      \\
-Zcl     &         135         &22        &10           &       45.5\%      \\
-Zl    &         30          &4.1        &2           &       48.8\%      \\
-ZZ    &         6754          &82.8        &2           &       2.4\%      \\
-WW    &         110         &13.3        &2.1           &       15.8\%      \\
-WZ    &         1992          &58.5        &2.6           &       4.4\%      \\
-ttH     &         133199          &92.99        &0.33           &       0.4\%      \\
-VBFHtautau    &         933         &1.41        &0.05           &       3.5\%      \\
-ggFHtautau    &         2159          &17.1        &0.4           &       2.3\%      \\
-ggZHtautau    &         838         &2.87        &0.1           &       3.5\%      \\
-qqZHtautau    &         1923          &8.48        &0.21           &       2.5\%      \\
-ggZHbb    &         17317         &5.8        &0.23           &       4.0\%      \\
-qqZHbb    &         71572         &17.68        &0.11           &       0.6\%      \\
-WHtautau    &         92          &0.7        &0.08           &       11.4\%      \\
-WHbb    &         6054          &6.94        &0.14           &       2.0\%      \\
-DYtt    &         9         &2.7        &1.8           &       66.7\%      \\
-DY    &         68          &15        &4           &       26.7\%      \\
+Fake              &	2089776                 &	33920   &	110	  &  0.3\% \\
+\ttbar             &	490058                 &	61620   &	90	  &  0.1\% \\
+single top              &	33158                 &	3689   &	32	  &  0.9\% \\
+ZttHF             &	23827                 &	1316   &	59	  &  4.5\% \\
+ZHF             &	19390                 &	739   &	55	  &  7.4\% \\
+ZttLF             &	1522                 &	92   &	22	  &  23.9\% \\
+ZLF             &	1171                 &	65   &	18	  &  27.6\% \\
+SM Higgs                 &	234087 &	154   &	2	  &  1.1\% \\
+diboson             &	8856                 &	155   &	7	  &  4.3\% \\
+W             &	747                 &	75   &	8	  &  10.7\% \\
+Wtt             &	76                 &	5.4	   & 0.8	  &  14.8\% \\
+DYtt              &	9                 &	2.7	   & 1.8	  &  66.7\% \\
+DY              &	68                 &	15   &	4	  &  26.7\% \\						
 \hline
 \hline
 total bkg  & 3054267 & 102440 & &\\
@@ -418,8 +399,13 @@ data         & 98456     & 98456	& &\\
  \hline
     \end{tabular}
     \caption{Pre-fit event yields in the di-Higgs $bb\lephad$ SLT signal region for the data, 
-    background and signal. Here, Zttjj represents the processes as $Z\rightarrow\tau\tau + jj$,
-    whereas Zjj represents  $Z\rightarrow ee/\mu\mu + jj$.}
+    background and signal.  Here, 
+    ZttHF (ZHF) represents the processes as $Z\rightarrow\tau\tau$
+    ($Z\rightarrow ee/\mu\mu$)  
+    in association with a pair of heavy flavour jets (\bjets\ or \cjets), 
+    while ZttLF and ZLF 
+    represents the same decay of $Z$ in association with light flavour jets.
+    Similarly for Wtt and W, DYtt and DY.}
     \label{tab:LepHadSLTYields}
 \end{table}
 \begin{table}
@@ -457,39 +443,18 @@ Resonant at $m_X$ =1600     &	1412	& 16.1  &  0.4& 	2.8\% \\
 \hline
 \multicolumn{5}{|c|}{\textbf{Background Samples}} \\
 \hline
-Fake             &            41151   &        1752                  &            33              &        1.9\%  \\
-ttbar             &           32873   &         4207                  &            24              &        0.6\%  \\
-stopWt             &           1408   &          169                  &            5              &        3.0\%  \\
-stopt             &             246   &         26.1                  &            2.4              &        9.2\%  \\
-stops             &              61   &         1.69                  &            0.23              &        13.6\%  \\
-Zttbb             &            7271   &         485                  &            15              &        3.1\%  \\
-Zttbc             &             634   &         45                  &            5              &        11.1\%  \\
-Zttbl             &             406   &         27.8                  &            3.2              &        11.5\%  \\
-Zttcc             &             174   &         35                  &            9              &        25.7\%  \\
-Zttcl             &              86   &         8                  &            5              &        62.5\%  \\
-Zttl             &               57   &        11                  &            7              &        63.6\%  \\
-Wtt             &                22   &       2.7                  &            1              &        37.0\%  \\
-W             &                  16   &     1.31                  &            0.34              &        26.0\%  \\
-Zbb             &              1230   &       46                  &            5              &        10.9\%  \\
-Zbc             &                92   &       4.9                  &            1.1              &        22.4\%  \\
-Zbl             &                58   &       1.2                  &            0.9              &        75.0\%  \\
-Zcc             &                14   &       5                  &            4              &        80.0\%  \\
-Zcl             &                 5   &       0.8                  &            0.6              &        75.0\%  \\
-Zl             &                  2   &      0.041                  &            0.029              &        70.7\%  \\
-ZZ             &               1360   &      16.9                  &            0.9              &        5.3\%  \\
-WW             &                  4   &      0.39                  &            0.21              &        53.8\%  \\
-WZ             &                119   &      3.4                  &            0.5              &        14.7\%  \\
-ttH             &             12859   &       10.97                  &            0.12              &        1.1\%  \\
-VBFHtautau             &        235   &              0.368                  &            0.025              &        6.8\%  \\
-ggFHtautau             &        461   &              4.54                  &            0.24              &        5.3\%  \\
-ggZHtautau             &        218   &              0.74                  &            0.05              &        6.8\%  \\
-qqZHtautau             &        458   &              2.17                  &            0.11              &        5.1\%  \\
-ggZHbb             &           3745   &          1.46                  &            0.14              &        9.6\%  \\
-qqZHbb             &          12427   &          3.85                  &            0.05              &        1.3\%  \\
-WHtautau             &           23   &            0.17                  &            0.04              &        23.5\%  \\
-WHbb             &               82   &        0.173                  &            0.026              &        15.0\%  \\
-DYtt             &                3   &        0.26                  &            0.17              &        65.4\%  \\
-DY             &                  6   &      0.63                  &            0.31              &        49.2\%  \\
+Fake &	41151       &	1752	&		33      &			  1.9\% \\		
+\ttbar &	32873       &	4207	&		24      &			  0.6\% \\		
+single top &	1715       &	197	&		8      &			  3.9\%	\\	
+ZttHF &	8079       &	439	&		29      &			  6.6\%	\\	
+ZHF &	1336       &	43	&		10      &			  23.2\%	\\	
+ZttLF &	549       &	47	&		15      &			  32.5\%	\\	
+ZLF &	65       &	2	&		2      &			  74.9\%	\\	
+SM Higgs       &	30508 &	24	&		1      &			  3.3\%	\\	
+Wtt &	22       &	2.7	&		1      &			  37.0\% \\		
+W &	16       &	1.31			&0.34      &			  26.0\% \\		
+DYtt &	3       &	0.26			&0.17      &			  65.4\% \\		
+DY &	6       &	0.63			&0.31      &			  49.2\% \\		
 \hline
 total bkg 	&	117806	  &	   6876.79  &  & \\		
 data		& 	6351      &    6351 	&  &   \\
@@ -497,8 +462,14 @@ data		& 	6351      &    6351 	&  &   \\
 \hline
 
   \end{tabular}
-  \caption{Pre-fit event yields in the di-Higgs $bb\lephad$ LTT signal region for signal, data and background. Here, Zttjj represents the processes as $Z\rightarrow\tau\tau + jj$, 
-  whereas Zjj represents  $Z\rightarrow ee/\mu\mu + jj$.}
+  \caption{Pre-fit event yields in the di-Higgs $bb\lephad$ 
+  LTT signal region for signal, data and background. Here, 
+  ZttHF (ZHF) represents the processes as $Z\rightarrow\tau\tau$
+  ($Z\rightarrow ee/\mu\mu$)  
+  in association with a pair of heavy flavour jets (\bjets\ or \cjets), 
+  while ZttLF and ZLF 
+  represents the same decay of $Z$ in association with light flavour jets.
+  Similarly for Wtt and W, DYtt and DY.}
   \label{tab:LepHadLTTYields}
 \end{table}
 
@@ -510,7 +481,7 @@ data		& 	6351      &    6351 	&  &   \\
 In order to provide fake--\tauhad--enriched regions used for background estimation, 
 an ``anti--\tauhad'' selection is defined:
 those \tauhadvis\ objects that fail the RNN loose \tauhad--ID 
-and have an RNN score greater than 0.01 are labelled as anti--\tauhad candidates. 
+and have an RNN score greater than 0.01 are labelled as anti--\tauhad\ candidates. 
 The RNN cut is used and recommended by the Fake-Tau-Task-Force~\cite{fttf-twiki}.
 The minimum RNN scre cut can make sure that 
 the jet would have some features of the true \tauhad, and that 
@@ -540,12 +511,13 @@ are calculated in the same way as for signal events,
 but with the anti-\tauhad\ taking the place of the loose \tauhad\ candidate.
 
 
-\subsection{$Z+\text{HF}$ control region event selection}
+\subsection{\ZHF\ control region event selection}
 \label{sec:selection:zcr}
 
 
 The cross-section of the $Z$ boson production in association 
-with heavy flavour jets ($b$-, $c$-jets) is known to be 
+with heavy flavour jets, i.e.\ $b$-, $c$-jets background (\ZHF\ background) 
+is known to be 
 not well modelled by the \textsc{Sherpa} generator. 
 Therefore, a dedicated control region event selection is defined
 to select $Z \rightarrow \mu \mu / e e$ + heavy flavour jets events. 
@@ -574,14 +546,24 @@ The event selection is described as follows:
 
 \end{itemize}
 
+The data and background $m_{\ell\ell}$ distributions are shown in Figure~\ref{fig:DiHiggs:zcr}
+before performing the likelihood fit and after in (a) and (b), respectively.
+In (b), the normalisation and shape of the backgrounds 
+and the uncertainty on the total background are shown as determined 
+from the likelihood fit to data in the non-resonant $HH$ search, as 
+described in detail in section~\ref{sec:DiHiggs:combination-bbtautau}. 
 
+\begin{figure}[htbp]
+\centering
 
-% \begin{figure}[!htbp]
-% \centering
-% %% \subfigure[]{\includegraphics[width=0.49\textwidth]{figures/auxiliary/}}
-% %% \subfigure[]{\includegraphics[width=0.95\textwidth]{figures/auxiliary/ZHF_mll.png}}
-% \subfigure[]{\includegraphics[width=0.50\textwidth]{figures/PostfitPlots/Region_BMin0_incJet1_Y2015_DZllbbCR_T2_L2_distmLL_J2_GlobalFit_conditionnal_mu0.pdf}}
-% %%% \caption{(a) Pre-fit background and data and (b) post-fit background and data $m_{\ell\ell}$ distributions in the $Z+\text{HF}$ control region. In (b), the normalisation and shape of the backgrounds and the uncertainty on the total background are shown as determined from the likelihood fit to data in the non-resonant $HH$ search. The uncertainty band includes statistical and systematics uncertainties on the total background. \TODO{change to up-to-date plots.}}
-% \caption{Post-fit background and data $m_{\ell\ell}$ distributions in the $Z+\text{HF}$ control region. The normalisation and shape of the backgrounds and the uncertainty on the total background are shown as determined from the likelihood fit to data in the non-resonant $HH$ search. The uncertainty band includes statistical and systematics uncertainties on the total background. The dashed histogram shows the total pre-fit background.}
-% \label{fig:zcr}
-% \end{figure}
+\subfloat[]{\includegraphics[width=0.45\textwidth]{DiHiggs/plots/MVA/prefit/Region_BMin0_incJet1_Y2015_DZllbbCR_T2_L2_distmLL_J2_Prefit.png}}
+\subfloat[]{\includegraphics[width=0.45\textwidth]{DiHiggs/plots/MVA/postfit/Region_BMin0_incJet1_Y2015_DZllbbCR_T2_L2_distmLL_J2_GlobalFit_conditionnal_mu0.png}}
+\caption{(a) Pre-fit background and data and (b) post-fit background and data $m_{\ell\ell}$ 
+distributions in the \ZHF\ control region. 
+The uncertainty band includes statistical 
+and systematics uncertainties on the total background.
+The  `Top-quark' background includes the \ttbar\ and the single-top background, 
+the `other' background includes $W$/$Z$ bosons + jets, and the `SM Higgs' background
+includes background in association with a single SM Higgs boson. }
+\label{fig:DiHiggs:zcr}
+\end{figure}

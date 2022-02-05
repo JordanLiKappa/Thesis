@@ -10,7 +10,7 @@ the contribution is very small).
 The \ttbar\ with true-\tauhad\ and Z+HF templates are taken from the MC prediction
 but their normalisations are derived from data 
 as included as freely floating parameters in the final fit,
-as described in Section~\ref{sec:fit}TODO: add reference to fit section. 
+as described in Section~\ref{sec:DiHiggs:results}.
 Events with electrons or muons that are misidentified as \tauhad\ objects, 
 dominantly coming from the \ttbar\ production, 
 represent a minor background in the analysis and they are estimated from simulation. 
@@ -41,25 +41,27 @@ red (blue) misidentified as a \tauhad.
 
 \subsubsection{Fake factor method}
 The fake-\tauhad\ background events
-are estimated using a data-driven method due to imperfect MC modelling of these processes:
-the `fake factor' (FF) method.
+are estimated using a data-driven method, the `fake factor' (FF) method, 
+due to imperfect MC modelling of these processes.
 In short, the FF is the ratio of 
 the number of events with fake-\tauhad\ in one region to another region.
 In this analysis, 
 the numerator of the FF is the number of fake-\tauhad\ events 
-passing the nominal Tau-ID selection (referred to as ID selection), 
+passing the nominal signal region Tau-ID selection 
+(referred to as ID selection in the following), 
 and the denominator is the number of fake-\tauhad\ events passing the
 anti-\tauhad\ selection (referred to as anti-ID selection, 
-as defined in detail in Section~\ref{sec:antitau-selection}). 
-The fake factors are calculated in different control regions, and
-then used to normalise the fake-\tauhad\ events from the 
+as defined in Section~\ref{sec:antitau-selection}). 
+The fake factors are calculated in different dedicated background enriched regions, 
+and then they are combined and used to normalise the fake-\tauhad\ events from the 
 anti-\tauhad\ selection to the signal region selection. 
 
 In formula form, the FF is given as:
 \begin{equation}
-\mathrm{FF} =  \frac{N(ID selection)}{N(anti-ID selection),} 
+\mathrm{FF} =  \frac{N(\text{ID\ selection})}{N(\text{anti-ID\ selection}),} 
 \end{equation} 
-and to obtain the estimation of the $N(ID selection)$ ($N(anti-ID selection)$),
+and to obtain the correct estimation of the 
+$N(\text{ID\ selection})$ ($N(\text{anti-ID\ selection})$),
 events with a true \tauhad\ are subtracted from the data events
 passing the ID (anti-ID) selection.
 
@@ -69,41 +71,41 @@ and for 1 and 3-prong \tauhad\ candidates.
 The FF is parameterised in bins of \pt\ of the \tauhad, while the 
 dependence on $\eta$ is also checked but no obvious trend is observed.
 For each process the $FF$ are calculated in 
-a dedicated background enriched region (FF-CR,
-not to be confused with the CR used for statistical analysis). 
+a dedicated background enriched region (referred to as FF-CR,
+not to be confused with the \ZHF\ CR used for likelihood fit). 
 The FF-CRs for each process are defined as follows:
 \begin{itemize}
 \item \ttbar\ FF-CR: same selection as the signal region selection 
 but with \mbb\ cut reversed: \mbb\ > 150 GeV.
-\item Multi-jet (QCD) FF-CR: same selection as the signal region selection lepton isolation requirements
- reversed: `tight' electrons and `medium' muons are required to fail 
- their respective `loose' isolation working points.
+\item Multi-jet (QCD) FF-CR: same selection as the signal region selection but with 
+lepton isolation requirements reversed: `tight' electrons and `medium' muons 
+are required to fail their respective `loose' isolation working points.
 \end{itemize}
 
 Individual fake factors for each process
-are then used to provide a combined fake factor. 
-The combined $FF$ is finally applied to the events passing the 
-anti-ID selection
-to estimate the fake-\tauhad\ events in the SR.
+are then used to provide a combined fake factor,
+which is then applied to the fake-\tauhad\ events 
+from the anti-ID selection
+to estimate the fake-\tauhad\ events from the ID selection.
 The FFs are derived separately for the SLT and LTT channels and
 so is the fake background estimation in the SR.
-The combined fake factor is defined as:
+The combined fake factor is calculated as:
 \begin{equation}
 FF(\mathrm{comb}) = FF(\mathrm{QCD}) \times \mathrm{r}_{\mathrm{QCD}} + FF(\ttbar) \times (1 - \mathrm{r}_{\mathrm{QCD}}),
 \end{equation} 
 where the $FF(\mathrm{QCD})$ ($FF(\ttbar)$) is the FF calculated in the QCD (\ttbar) FF-CR.
 The $\mathrm{r}_{\mathrm{QCD}}$ is
 defined as the fraction of QCD fakes
-in the total number of fake-\tauhad\ background, 
-where it is measured as a function of the \tauhad\ \pT, splitted 
+in the total number of fake-\tauhad\ background.
+It is measured as a function of the \tauhad\ \pT, splitted 
 into 1-prong and 3-prong, and into the type of light lepton ($e$ or $mu$)
 since the QCD contents are different for them. 
 The $\mathrm{r}_{\mathrm{QCD}}$ is measured for events passing the 
-anti-ID selection, and the formula form is:
+anti-ID selection as:
 \begin{equation}
 \mathrm{r}_{\mathrm{QCD}} = \frac{N(\mathrm{multi\mhyphen jet, data})} {N(\mathrm{data}) - N(\mathrm{true}~\tauhad, \mathrm{MC})}
 \end{equation} 
-and the $N(\mathrm{multi\mhyphen jet, data})$ is calculated by 
+where the $N(\mathrm{multi\mhyphen jet, data})$ is calculated by 
 subtracting all background contributions apart from multi-jet, 
 regardless of whether they contain fake or true-\tauhad\ candidates, 
 from the data in the anti-\tauhad\ selection:
@@ -120,9 +122,9 @@ where the fake factors are measured and applied can be seen in Figure~\ref{fig:C
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=.9\textwidth]{DiHiggs/plots/FF regions.png}
-\caption{Graphical representation of the Combined Fake Factor Method. 
-The fake factors are calculated independently for the \ttbar\ FF-CR and the multi-jet FF-CR, and 
-combined to the combined fake factor. 
+\caption{Graphical representation of the Fake Factor Method. 
+The FFs are calculated independently for the \ttbar\ FF-CR and the multi-jet FF-CR, and 
+the combined FF is calculated using these FFs and the $\mathrm{r}_{\mathrm{QCD}}$. 
 The direction of the arrow indicates the direction 
 of extrapolation, 
 that the FF is applied on the bottom regions to extrapolate to the top regions.}
@@ -136,9 +138,12 @@ that the FF is applied on the bottom regions to extrapolate to the top regions.}
 The determination of the combined fake factor 
 is sensitive to the modelling of simulated $t\bar{t}$ events with true-\tauhad\
 given that this is the dominant background that is subtracted from data in the derivation of
-the FFs and $\mathrm{r}_\text{QCD}$, and when obtaining the events passing the ID. 
-Additionally, the derivation of $\mathrm{r}_\text{QCD}$ is sensitive to the 
-modelling of simulated $t\bar{t}$ events with fake-\tauhad.
+the FFs and $\mathrm{r}_\text{QCD}$.
+The \ttbar\ modelling also affects the fake background estimation in the SR,
+since the FF is applied on the anti-ID events where true-\tauhad\ \ttbar\ 
+background is subtracted from.
+% Additionally, the derivation of $\mathrm{r}_\text{QCD}$ is sensitive to the 
+% modelling of simulated $t\bar{t}$ events with fake-\tauhad.
 It was observed that mismodeling in the true \ttbar\ background 
 especially in the high jet multiplicity and high top-quark \pt\ 
 can cause issues in the calculation of the fake factors, 
@@ -150,7 +155,7 @@ final state objects ($H_T$) in the event.
 
 These reweighting factors are determined bin-by-bin 
 in distribution of jet multiplicity and $H_T$,
-from another $t\bar{t}$ FF-CR ($t\bar{t}$ FF-CR2),
+from another $t\bar{t}$ FF-CR, $t\bar{t}$ FF-CR2,
 % which is about 93\% pure in the events from $t\bar{t}$ production,
 which is defined using a selection identical to the SR selection,
 but with the \ttbar\ FF-CR $m_{bb}$ requirements ($m_{bb}>150$~GeV)
@@ -163,12 +168,12 @@ The reweighting factors are shown in Appendix~\ref{sec:appendix:fakes},
 Figure~\ref{fig:ttbarReweighting_parametrisations}
 
 The reweighting method is validated in two additional validation regions.
-The reweighting only applies to the fake-background estimation process
+The reweighting only applies to the fake background estimation process
 %  FF-CRs,  and the anti-\tauhad\ regions, 
 while it's not applyied to the true \ttbar\ background in the SR, 
 as there is no significant mismodeling seen there, and
-the uncertainties due to the \ttbar\ modelling has been taken care differently 
-(more details in section~TODO: ref back to systematics section\ref{fig:}).   
+the uncertainties due to the \ttbar\ modelling has been taken care using a different approach.
+~\ref{sec:DiHiggs:ttbarsysts}.
 % it would complicate the \ttbar\ systematics uncertainties and statistical analysis.
 
 
@@ -176,18 +181,20 @@ the uncertainties due to the \ttbar\ modelling has been taken care differently
 The data and MC events in \ttbar\ FF-CR passing the anti-ID selection 
 before and after the \ttbar\ reweighting 
 are shown in Figure~\ref{fig:ttbarCR_1} and \ref{fig:ttbarCR_3}, respectively.
-The fake background is simulated by MC, and only includes 
-the contributions from the \ttbar\ fakes. 
+The fake background is simulated by MC, and it only includes 
+the contributions from the \ttbar-initiated fakes. 
 A clear mismodeling can be seen in the plots before 
 the reweighting, and it is much mitigated after the 
 reweighting process. At this stage, data and MC are 
 not expected to agree well due to the \ttbar\ fake is known to
-be poorly modelled by the MC. 
+be poorly modelled by the MC, which is also the main reason 
+for using the data-driven FF method. 
 Nevertheless, a large number of \ttbar\ fakes is observed, suggesting
 the high purity of \ttbar\ fakes in this region. 
 With true \tauhad\ contributions subtracted from the data 
 (and with true \tauhad\ \ttbar\ reweighted),  
-this region is used as the denominator of the \ttbar\ FF-CR fake factor calculation. 
+events in this region are used in \ttbar\ FF-CR fake factor calculation
+(as the denominator). 
 
 
 
@@ -202,9 +209,9 @@ this region is used as the denominator of the \ttbar\ FF-CR fake factor calculat
 for the SLT (left) and LTT channel (right) 
 with \ttbar\ un-weighted (top) 
 and with \ttbar\ re-weighted (bottom).
-The \tauhad\ in these events have 1 prong. 
-The \ttbar\ fakes is labelled as `ttbar fakes' in pink.
-Only statistical uncertainty is considered.}
+The \tauhad\ in these events has 1 prong. 
+The MC \ttbar\ fakes is labelled as `ttbar fakes' in pink.
+Only statistical uncertainty is included in the error bands.}
 \label{fig:ttbarCR_1}
 \end{figure} 
 \begin{figure}[htbp]
@@ -217,19 +224,19 @@ Only statistical uncertainty is considered.}
 for the SLT (left) and LTT channel (right) 
 with \ttbar\ un-weighted (top) 
 and with \ttbar\ re-weighted (bottom).
-The \tauhad\ in these events have 3 prongs. 
-The \ttbar\ fakes is labelled as `ttbar fakes' in pink.
-Only statistical uncertainty is considered.
+The \tauhad\ in these events has 3 prongs. 
+The MC \ttbar\ fakes is labelled as `ttbar fakes' in pink.
+Only statistical uncertainty is included in the error bands.
 }
 \label{fig:ttbarCR_3}
 \end{figure} 
 
 
-
+\newpage
 Similarly, the data and MC events in QCD FF-CR passing the anti-ID selection 
 before and after the \ttbar\ reweighting 
 \ref{fig:InvCR_1} and \ref{fig:InvCR_3}, respectively.
-Since the QCD fakes is not modelled by the MC, a large discrepancy
+As the QCD fakes is not modelled by the MC, a large discrepancy
 is shown between data and the MC distributions, which is comprised
 of the QCD fakes. 
 For consistency, the \ttbar\ reweighting is applied, 
@@ -238,7 +245,8 @@ by the QCD fakes and the \ttbar\ contributions is negligible.
 The contribution from \ttbar\ fakes is also very small, suggesting 
 the purity of QCD fakes is high in this region. 
 With true \tauhad\ contributions subtracted from data, 
-this region is used as the denominator of the QCD FF-CR fake factor calculation. 
+events in this region is used for the QCD FF-CR fake factor calculation
+(as the denominator). 
 
 \begin{figure}[htbp]
 \centering
@@ -247,9 +255,9 @@ this region is used as the denominator of the QCD FF-CR fake factor calculation.
 \caption{In the QCD FF-CR, the $\tauhad$ $p_T$ distributions are plotted 
 for the SLT (left) and LTT channel (right) 
 with \ttbar\ re-weighted.
-The \tauhad\ in these events have 1 prong. 
-The \ttbar\ fakes is labelled as `ttbar fakes' in pink.
-Only statistical uncertainty is considered.}
+The \tauhad\ in these events has 1 prong. 
+The MC \ttbar\ fakes is labelled as `ttbar fakes' in pink.
+Only statistical uncertainty is included in the error bands.}
 \label{fig:InvCR_1}
 \end{figure} 
 
@@ -260,11 +268,12 @@ Only statistical uncertainty is considered.}
 \caption{In the QCD FF-CR, the $\tauhad$ $p_T$ distributions are plotted 
 for the SLT (left) and LTT channel (right) 
 with \ttbar\ re-weighted.
-The \tauhad\ in these events have 3 prongs. 
-Only statistical uncertainty is considered.}
+The \tauhad\ in these events has 3 prongs. 
+Only statistical uncertainty is included in the error bands.}
 \label{fig:InvCR_3}
 \end{figure} 
 
+\newpage
 The calculated fake factors are shown on Figure~\ref{fig:SLT_FF} and Figure~\ref{fig:LTT_FF}, 
 for the SLT and LTT channels respectively. 
 The Fake factors obtained with reweighted and un-weighted \ttbar\ contributions are shown on the
@@ -352,8 +361,9 @@ are evaluated and propagated to the final result,
 and a conservative 30\% modelling uncertainty is assigned to simulated non-$t\bar t$ backgrounds
 which are subtracted from data.
 The uncertainties due to \ttbar\ modelling issue and its subtraction are discussed in more details
-in section~\ref{sec:DiHiggs:fakesysts}.TODO: add reference to the systematics section.
+in section~\ref{sec:DiHiggs:fakesyst}.
 
+\newpage
 \subsubsection{Fake factor method validation}
 The combined FF method is validated in
 the 0-$b$-tagged and 1-$b$-tagged regions, where the same event selection as SR 
@@ -377,7 +387,7 @@ Figure~\ref{fig:FFVRLTT} for the LTT channel.
 \includegraphics[width=.4\textwidth]{DiHiggs/plots/FF_CRs/SR_SLT_datafakes/HNone/BDTVarsHighMbb/1/C_1tag2pjet_0ptv_TauPt.png} \\
 \caption{A comparison of data and background with fakes estimated with combined FF evaluated at the 0-$b$-tagged (left) 
 and 1-$b$-tagged region (right) for the SLT channel.
-Only statistical uncertainty is considered. }
+Only statistical uncertainty is included in the error bands. }
 \label{fig:FFVRSLT}
 \end{figure}
 
@@ -388,7 +398,7 @@ Only statistical uncertainty is considered. }
 \includegraphics[width=.4\textwidth]{DiHiggs/plots/FF_CRs/SR_LTT_datafakes/HNone/BDTVarsHighMbb/1/C_1tag2pjet_0ptv_TauPt.png} \\
 \caption{A comparison of data and background with fakes estimated with combined FF evaluated at the 0-$b$-tagged (left) 
 and 1-$b$-tagged region (right) for the LTT channel.
-Only statistical uncertainty is considered.  }
+Only statistical uncertainty is included in the error bands.  }
 \label{fig:FFVRLTT}
 \end{figure}
 

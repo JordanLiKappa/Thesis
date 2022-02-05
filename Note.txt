@@ -51,6 +51,13 @@ Important points (from Nikos):
 
 DiHiggs:
 1. how to explain non res signal is normalised to the SM cross section while the resonant cross section is arbitrary?
+2. TODO: add explaination to MVA input legend 
+3. TODO: update post fit MVA output and input plots, post fit Z control region plot
+4. TODO: add klambda systematics
+5. TODO: consider remove the HEFT results
+6. TODO: add my contribution
+7. TODO: check each channel characteristics
+
 
 DiHiggs note:
 1. Fastsim: 
@@ -73,23 +80,20 @@ Ridge regression adds “squared magnitude” of coefficient
 as penalty term to the loss function. Here the highlighted part represents L2 regularization element.
 L1: adds absolute value of magnitude
 
-Reconstruction: 
-    one week (due 20/10)
-    correction: half a week 
 
-analysis: 
-    5 weeks  (due 15/12)
-    correction: one week
+3.
+fitting uncertainties:Because you are adding more information in the form of new data.  A couple of examples that might help understand:
+- Imagine you have a electron E scale uncertainty measured early in run from a partial dataset. If you then do a search with the full data and have e.g. a ZCR with a Z->ee peak this provides new/more info on the electron energy scale so can reduce the uncertainty on that
+- If you take for example a scale uncertainty from MC these come from general variations of the scale used in the generator but it might be that one of these variations doesn't describe the data you are measuring e.g. in a CR and hence the data can rule this out and reduce the uncertainty.   
+- As a final example say you do something we often do any say my QCD background is small so I slap a 100% uncertainty on it.  When you fit, depending on which regions you include, it can potentially work out that the error is actually smaller since a 100% shift is not compatible with the data
 
-
-Theory and motivation:
-    4 weeks (due 7/2, including vacations)
-    correction: one week
+Of course this comes with issues as well and you have to think about if you should be constraining the data.  Does it make sense.  For example, in the first case above if the electron E scale was already measured in the full dataset carefully by the e/gamma group it is unlikely your search  CR with the same amount of data would add info so if you heavily constrained that NP you might be concerned.  
 
 
+DiHiggs question:
+why the SLT sensivity dominates the LTT in high mass resonance, while it's comparable in the low mass?
+ltt was assigned with low lepton pt threshold, and in high mass resonances slt has high efficiency and has priority 
 
-
-
-Hi Nikos, I have another question on a comment:
-1. what do you mean by "normal jet reconstruction"?
-2. so the instrinsic difference between emtopo and pflow jet is that, the emtopo is based on clusters of EM calorimeter cells, while the pflow is based on clusters of energy-subtracted cells?
+why bbbb dominates the high energy region? 
+can I still say the data is compatible with null hypothesis given we observed an excess?
+Compatibility: what defines if two excess are compatible?

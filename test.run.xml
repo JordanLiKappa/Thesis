@@ -55,7 +55,8 @@
       <file>biblatex.def</file>
       <file>standard.bbx</file>
       <file>numeric.bbx</file>
-      <file>numeric.cbx</file>
+      <file>numeric-comp.bbx</file>
+      <file>numeric-comp.cbx</file>
       <file>biblatex.cfg</file>
       <file>english.lbx</file>
     </requires>
@@ -80,11 +81,16 @@
     </requires>
     <requires type="editable">
       <file>ANA-FTAG-2020-08-PAPER.bib</file>
+      <file>Detector/Detector.bib</file>
+      <file>Reconstruction/Reconstruction.bib</file>
+      <file>DiHiggs/DiHiggs.bib</file>
       <file>bib/ATLAS.bib</file>
+      <file>bib/DiHiggs_paper.bib</file>
       <file>bib/ATLAS-useful.bib</file>
       <file>bib/PubNotes.bib</file>
       <file>bib/ConfNotes.bib</file>
       <file>bib/ATLAS-SUSY.bib</file>
+      <file>bib/Int_note.bib</file>
     </requires>
   </external>
 </requests>

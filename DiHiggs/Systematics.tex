@@ -1,3 +1,4 @@
+\section{Systematic uncertainties}
 The systematics considered in the $HH$ analysis
 is outlined in this section. For the same reason 
 mentioned in section~\ref{sec:FTAG_systematics}, 
@@ -9,12 +10,22 @@ while the modelling systematic uncertainties account for
 theoretical uncertainties related to the limited 
 knowledge of the MC simulated processes 
 and uncertainties on data-driven backgrounds. 
+
+The experimental systematic uncertainties have been 
+briefly discussed in section~\ref{sec:FTAG_systematics},
+while many of the systematics considered there will
+be included in this analysis as well. 
+In table~\ref{tab:systematics_experimental_list} 
+and table~\ref{tab:systematics_experimental_list_2}, the full list
+of the experimental systematics are listed, 
+which will be discussed in more details in the following section.  
+
 The experimental and modelling uncertainties are derived for 
 all backgrounds and signals, manifesting the overall yields
 or the shape of the final discriminant, or both together.
 All uncertainties considered are propagated through the analysis,
 and are included in the statistical analysis fit
-discussed in section~\ref{} TODO: ref fit section.
+discussed in section~\ref{sec:DiHiggs:results}.
 
 
 \subsection{Experimental uncertainties}
@@ -30,7 +41,33 @@ discussed in section~\ref{} TODO: ref fit section.
 \input{DiHiggs/sections/systs/modelling.tex}
 
 
-% \subsection{Uncertainties on data-driven backgrounds}
-% \label{sec:systematics_datadriven}
+\subsection{Summary of Systematics Uncertainties}
 
-% \input{DiHiggs/sections/systs/datadriven.tex}
+In Figure~\ref{fig:LepHadPostfitNPRankingsSM},
+the rankings of the nuisance parameters considered in the
+combined fit of SLT and LTT (more details in the next section~\ref{sec:DiHiggs:analysis}) 
+are shown. The nuisance parameters are arranged in descending order
+of their fractional impact on the non-resonant $HH$ production signal strength $\mu$,
+$\Delta\mu/\Delta\mu_{tot}$. The $\Delta\mu/\Delta\mu_{tot}$ is represented in
+the horizontal bars in the plot with values reading on the top blue x-axis, with the 
+dashed (un-dashed) blue area representing the frational impact on $\mu$ 
+when the nuisance parameter is varied up (down) by one standard deviation (with
+this parameter fixed to the variation and fit again allowing all other nuisance parameters to 
+vary). The black round dots reading on the bottom x-axis, 
+represent the shift of the fitted value $\theta$
+from its nominal value $\theta_0$, with respect to its standard deviation $\Delta\theta$.
+The error bars corresponding to the dots are the fitted uncertainties, relative to 
+the nominal uncertainties.  The red open circle reading on the bottom x-axis
+represents the fitted value 
+of the \ttbar\ and \ZHF\ normalisation which are freely floating in the fit,
+with the error bars representing the uncertainty. 
+The statistical uncertainty is also included as nuisance parameters with Poissonian priors.
+The name `LepHad\_SLT(LTT)\_SR\_MVA\_bin\_14' represents the statistical error on 
+the $14^{th}$ bin in the SM NN score distribution.
+\begin{figure}
+\centering
+\includegraphics[width=.8\textwidth]{figures/results/HH/LepHad/pulls_SigXsecOverSM_125.pdf}
+\caption{Nuisance parameters rankings for the di-Higgs \lephad fit to data for the SM fit.
+}
+\label{fig:LepHadPostfitNPRankingsSM}
+\end{figure}

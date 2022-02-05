@@ -28,6 +28,7 @@
 \addbibresource{bib/Int_note.bib}
 \usepackage[final]{hyperref} % adds hyper links inside the generated pdf file
 \usepackage[T1]{fontenc}
+\usepackage{newtxtext,newtxmath}
 \usepackage{setspace}
 \usepackage{float}
 \usepackage{makeidx}
@@ -135,6 +136,7 @@
 \large
 \chapter{Introduction}
 \chapter{Theory and Motivation}
+\input{Theory/introduction.tex}
 \section{The Standard Model and the Higgs boson}
 \section{Beyond the Standard Model}
 \large
@@ -162,17 +164,18 @@
 
 \input{DiHiggs/selection.tex}
 \input{DiHiggs/background.tex}
+\clearpage
 \input{DiHiggs/MVA.tex}
-% \label{sec:event selection}
-
+\clearpage
 \input{DiHiggs/Systematics.tex}
 \label{sec:DiHiggs:systematics}
-\section{Statistical analysis}
-\label{sec:DiHiggs:analysis}
-due 30/11
-\section{Results}
-\label{sec:DiHiggs:results}
-due 15/12
+\clearpage
+\input{DiHiggs/result.tex}
+
+
+
+
+
 \chapter{Summary}
 \printbibliography
 \appendix
