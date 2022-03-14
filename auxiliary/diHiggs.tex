@@ -1,5 +1,5 @@
 
-\chapter{Supplementary material for $HH$ searches}
+\chapter{Supplementary material for \texorpdfstring{$HH$}{HH} searches}
 
 \section{Additional plots for fake-background estimation}
 \label{sec:appendix:fakes}
@@ -28,6 +28,49 @@
 
 \section{Additional material for MVA signal extraction}
 \label{sec:appendix:mva}
+
+To check if the neural networks are overtrained, 
+the loss functions as a function of the training epoch for 
+the NN (PNNs) are shown in Figure~\ref{fig:overtrainingtestnn} 
+(Figure~\ref{fig:overtrainingtestpnn}) for the 
+SLT and LTT channels. A stable generalisation gap is seen between 
+the training and validation, indicating that the overtraining is small.
+Further checks are done using a much simpler architecture consisting of three layers
+of 32 nodes for the LTT channel. A large gap is still seen, indicating the
+generalisation gap is due to limited data rather than effective capacity of
+the neural networks.
+Additional plots of the NN (PNNs) output distribution of the signal and summed background
+are shown in Figure~\ref{fig:overfittingtestSLT} and Figure~\ref{fig:overfittingtestLTT}
+for the SLT and LTT channel, respectively. 
+
+\begin{figure}
+  \centering
+  \subfloat[]{\includegraphics[width=.45\textwidth]{DiHiggs/plots/MVA/Validation/OvertrainingPlotNNLTT.pdf}}\quad
+  \subfloat[]{\includegraphics[width=.45\textwidth]{DiHiggs/plots/MVA/Validation/OvertrainingPlotNNSLT.pdf}}\quad
+  \caption{Non-resonant NN loss functions as a function of training epochs evaluated 
+  using the two-fold cross validation, for the (a) LTT and (b) SLT categories. 
+  Figures reproduced from analysis internal notes, study performed by Elliot Reynolds.
+  }
+  \label{fig:overtrainingtestnn}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \subfloat[]{\includegraphics[width=.45\textwidth]{DiHiggs/plots/MVA/Validation/OvertrainingPlotLTT.pdf}}\quad
+  \subfloat[]{\includegraphics[width=.45\textwidth]{DiHiggs/plots/MVA/Validation/OvertrainingPlotSLT.pdf}}\quad
+  \caption{PNN loss functions as a function of training epochs evaluated 
+  using the two-fold cross validation, for the (a) LTT and (b) SLT categories.
+  Figures reproduced from analysis internal notes, study performed by Elliot Reynolds. }
+  \label{fig:overtrainingtestpnn}
+\end{figure}
+
+
+
+
+
+
+
+
 
 The folloing figures are additional material for the MVA section.
 \begin{figure}
@@ -898,7 +941,7 @@ for the LTT channel.
 
 Figures~\ref{fig:LepHadPostfitNPRankings2HDM300SLT}-~\ref{fig:LepHadPostfitNPRankingsSMSLT} show the NP rankings for the \lephad SLT fit to data.
 Figures~\ref{fig:LepHadPostfitNPRankings2HDM300LTT}-~\ref{fig:LepHadPostfitNPRankingsSMLTT} show the NP rankings for the \lephad LTT fit to data.
-Figures~\ref{fig:LepHadPostfitNPRankings2HDM300}-~\ref{fig:LepHadPostfitNPRankingsSM} show the NP rankings for the \lephad fit to data.
+Figures~\ref{fig:LepHadPostfitNPRankings2HDM300}-~\ref{fig:LepHadPostfitNPRankingsSM-Aux} show the NP rankings for the \lephad fit to data.
 
 Figures \ref{fig:LepHadPostfitNPPulls2HDM300SLT}-~\ref{fig:LepHadPostfitNPPullsSMSLT} show the NPs for
 the \lephad SLT channel.
@@ -1011,7 +1054,7 @@ Figures \ref{fig:LepHadPostfitNPPulls2HDM300}-~\ref{fig:LepHadPostfitNPPullsSM} 
    \centering
    \includegraphics[width=.8\textwidth]{figures/results/HH/LepHad/pulls_SigXsecOverSM_125.pdf}
    \caption{NP rankings for the di-Higgs \lephad fit to data for the SM fit.}
-   \label{fig:LepHadPostfitNPRankingsSM}
+   \label{fig:LepHadPostfitNPRankingsSM-Aux}
    \end{figure}
 
 \begin{figure}

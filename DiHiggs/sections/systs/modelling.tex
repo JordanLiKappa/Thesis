@@ -1,16 +1,16 @@
-The modelling systematic uncertainties incldue the 
+The modelling systematic uncertainties include the 
 uncertainties due to theoretical cross-section calculations
 and accpetance. The former only affects the normalisation of the
 samples, and is applied on all MC backgrounds; the later
 affects both the expected event yields and the shape of
-kinematic distributions, and therefore the MVA discriminants
+kinematic distributions, and therefore the MVA discriminant output
 shapes. In order to disentangle these effects, the 
 impact from shape variation is considered 
 separately from the normalisation effect,
 as it does not change the amount of expected events.
 The shape uncertainties are derived comparing the 
-distributions of several kinematic variables or MVA output
-discriminant of the alternative samples to the ones of the nominal sample. 
+distributions of several kinematic variables or MVA 
+discriminant output of the alternative samples to the ones of the nominal sample. 
 The comparison is done by taking the normalised distributions 
 (to exclude the normalisation effects that are 
 considered separately) and calculating the ratio of 
@@ -21,7 +21,7 @@ single-top ($Wt$-channel), ttH and ZH are estimated in the SR and CR,
 using the nominal and alternative MC simulated samples. 
 The acceptance uncertainties on minor 
 backgrounds ($Z$+light flavour jets, $W$+jets, and di-boson) 
-are taken from the SM Vhbb analysis~\cite{ATLAS-CONF-2020-006}, as 
+are taken from Ref.\cite{ATLAS-CONF-2020-006}, as 
 described in Section~\ref{subsec:uncertainties_minor_bkgs}. 
 
 The normalisation acceptance uncertainties are derived comparing the 
@@ -67,11 +67,11 @@ in Appendix~\ref{sec:appendix:systs}.
 
 
 
-\subsubsection{Uncertainties on $t\bar{t}$}
+\subsubsection{Uncertainties on \texorpdfstring{$t\bar{t}$}{ttbar}}
 \label{sec:DiHiggs:ttbarsysts}
 
 The normalisation of the $t\bar{t}$ background is estimated 
-from data as included as freely floating parameter in the final fit. 
+from data as included as a freely floating parameter in the final fit. 
 This normalisation is correlated across all regions included 
 in the fit and it is determined mainly from the tails of the 
 $m_{\ell\ell}$ distribution in the \ZHF\ CR which have 
@@ -106,10 +106,10 @@ Uncertainties from the parton shower (PS),
 matrix element (ME) and ISR are estimated using 
 the differences between the nominal samples and 
 the corresponding variations samples:
-PS hadronisation algorithmic uncertainties 
+parton shower uncertainties 
 are evaluated comparing the nominal samples showered with \textsc{Pythia 8} 
 to alternative samples showered with \textsc{Herwig 7};
-uncertianty due to MEis evaluated comparing 
+uncertianty due to matrix element is evaluated comparing 
 the nominal \POWHEG+\textsc{Pythia 8} samples to 
 alternative \AMCatNLO+\textsc{Pythia 8} samples. 
 ISR up variation is evaluated by comparing the 
@@ -169,15 +169,16 @@ normalisation uncertainties on $t\bar{t}$.}
 \end{table}
 
 
-The shapes of \ttbar\ PS and ME modelling uncertainties
-are checked in the MVA input variables and output distributions 
-for the SLT and LTT channels. The shape in ME/PS is uncertainties 
+The shapes of \ttbar\ parton shower and matrix element modelling uncertainties
+are checked in the MVA discriminant input variables and output distributions 
+for the SLT and LTT channels. The shape in matrix element/parton shower uncertainties 
 is found to be 
 insignificant in the NN/PNN scores in the LTT channel and 
 therefore not considered in this analysis.
-In the SLT channel, in order to parametrise the PS/ME uncertainty in the MVA output distributions,
+In the SLT channel, in order to parametrise the parton shower/matrix element uncertainties
+in the MVA output distributions,
 two methods were studied: one using parametrisation in
-a combination of MVA input variables and one using parametrisation 
+a combination of MVA discriminant input variables and one using parametrisation 
 directly in the MVA output distributions.
 The later were adopted for the final result. Both methods
 will be discussed in the following. 
@@ -185,8 +186,8 @@ will be discussed in the following.
 
 The first method is based on parametrisation calculated as the ratio 
 of the expected events yields of the variation sample to the nominal sample 
-in bins of MVA input variables. 
-For the ME uncertainty, 
+in bins of MVA discriminant input variables. 
+For the matrix element uncertainty, 
 obvious trends are seen in $p_T$ of the 2 $b$-jets ($p_T^{bb}$) and \met. 
 In order to mimic the MVA output distribution of the varation sample, 
 the nominal sample is weighted by the parametrisation in these two distributions,
@@ -194,7 +195,7 @@ and the weighted distributions are passed to the MVA classification
 to check the shape of the output. 
 However, the parametrisation using neither the $p_T^{bb}$ nor \met\ alone recover
 the shape of the MVA output of the variation sample very well. 
-In addition, all other MVA input variables are checked for parametrisation,
+In addition, all other MVA discriminant input variables are checked for parametrisation,
 but none of them give good closure in MVA output neither. 
 % This is due to the fact that the MVA classification is based on multiple variables and
 % change in one variable is not sufficient to change the overall shape in the final classification. 
@@ -212,14 +213,14 @@ Figure~\ref{fig:ttbarsyst_lephad_amc_SLT} for the SLT channel.
 \subfloat[a]{\includegraphics[width=.49\textwidth]{figures/lephad_modelling_systs/SLT/aMCNLO/pTBB_Norm.pdf}}
 \subfloat[b]{\includegraphics[width=.49\textwidth]{figures/lephad_modelling_systs/SLT/aMCNLO/MET_Norm.pdf}}
 \caption{The shape-only parametrisation in bins of $p_T^{bb}$ (a) and in \met\ 
-for the ME uncertainty, 
+for the matrix element uncertainty, 
 derived in the SLT channel.}
 \label{fig:ttbarsyst_lephad_amc_SLT}
 \end{figure}
 
 The $p_T^{bb}$ and \met\ distributions are checked again for the 
 weighted samples as compared to the variation samples. 
-Good closure is found in both distributions and in other MVA 
+Good closure is found in both distributions and in other MVA discriminant
 input variables. 
 To check how well the weighted nominal sample can recover the MVA output distributions
 of the variation sample, the NN score distribution of the variation 
@@ -232,15 +233,15 @@ normalised to the ones of the nominal.
 \begin{figure}
 \centering
 \includegraphics[width=.49\textwidth]{ figures/lephad_modelling_systs/SLT/aMCNLO/Hist_and_ratio_SM_NN_Norm.pdf}
-\caption{SLT channel: shape-only NN score of the ME variation sample and the weighted nominal, using sequential parametrisation
+\caption{SLT channel: shape-only NN score of the matrix element variation sample and the weighted nominal, using sequential parametrisation
 in $p_T^{bb}$ and \met.
 The binning shown here is in euqal width bins of NN score. }
 \label{fig:ttbarsyst_lephad_amc_NN}
 \end{figure}
   
-The PS uncertainty is first checked with 
+The parton shower uncertainty is first checked with 
 parametrisation in single MVA variable
-but none of the MVA input alone give good closure in the MVA output distributions. 
+but none of the MVA discriminant input alone give good closure in the MVA output distributions. 
 Therefore, a similar sequential parametrisation approach is used.
 The parametrisation is done first 
 in bins of the \pt\ of the subleading jet ($p_T^{b2}$) 
@@ -253,7 +254,7 @@ Figure~\ref{fig:ttbarsyst_lephad_herwig_NN}.
 \subfloat[a]{\includegraphics[width=.49\textwidth]{figures/lephad_modelling_systs/SLT/Herwig/pTB2_Norm.pdf}}
 \subfloat[b]{\includegraphics[width=.49\textwidth]{figures/lephad_modelling_systs/SLT/Herwig/Mhh_Norm.pdf}}
 \caption{The shape-only parametrisation in bins of $p_T^{b2}$ (a)
-in $m_{HH}$ (b), for the PS uncertainty, derived in the 
+in $m_{HH}$ (b), for the parton shower uncertainty, derived in the 
 SLT channel.}
 \label{fig:ttbarsyst_lephad_herwig}
 \end{figure}
@@ -261,7 +262,7 @@ SLT channel.}
 \begin{figure}
 \centering
 \includegraphics[width=.49\textwidth]{figures/lephad_modelling_systs/SLT/Herwig/Hist_and_ratio_SM_NN_Norm.pdf}
-\caption{The shape-only NN score of the PS variation sample and the weighted nominal.
+\caption{The shape-only NN score of the parton shower variation sample and the weighted nominal.
 The binning shown here is in euqal width bins of NN score. }
 \label{fig:ttbarsyst_lephad_herwig_NN}
 \end{figure}
@@ -269,13 +270,13 @@ The binning shown here is in euqal width bins of NN score. }
 
 The sequential parametrisation method is compared with
 the second method, which is based on  
-parametrising directly in the ratio of MVA discriminants of the variation samples to the 
+parametrising directly in the ratio of MVA discriminant output of the variation samples to the 
 ones of the nominal. 
 The binning used for parametrisation is the same as the binning used in the final fit. 
 Due to the very fine binning in the high MVA output region, 
 large statistical fluctuations is observed, therefore,
 smoothing is applied on these systematics in limit setting to reduce the fluctuations effect. 
-The SM NN parametrisation for the ME and PS variation in the SLT channel is shown in 
+The SM NN parametrisation for the matrix element and parton shower variation in the SLT channel is shown in 
 Figure~\ref{fig:ttbarsyst_lephad_SLT_NN}.
 Plots for more resonant mass points can be found in Appendix~\ref{sec:appendix:systs}.
 
@@ -314,7 +315,7 @@ Appedix~\ref{sec:appendix:systs}.
 
 
 
-\subsubsection{Uncertainties on \ZHF\ background}
+\subsubsection{Uncertainties on \texorpdfstring{\ZHF}{Z+HF}\ background}
 \label{sec:DiHiggs:ZHFsysts}
 The normalisation of the \ZHF\ background is estimated 
 from data as included as freely floating parameter in 
@@ -328,7 +329,7 @@ including $Z+bb$, $Z+bc$, $Z+cc$.
 Contributions from Z + light flavour jets 
 such as $Z$+light jets($Z+l$), $Z+bl$ and $Z+cl$ are excluded. 
 
-Uncertainties due to choice of generators are evaluated
+Uncertainties due to choice of matrix element generators are evaluated
 by comparing the \textsc{Sherpa}~2.2.1 samples to the
 \MADGRAPH+\textsc{Pythia}~8 samples. 
 Uncertainties on the $Z$+jets background modelling 
@@ -341,21 +342,29 @@ leading to 7-point scale variations.
 % of the envelope with respect to the nominal, from which 
 % the envelope around the nominal can be worked out. 
 The uncertainty due to the choice of PDF set is evaluated 
-in a similar way, using the event weights included in the samples. 
-The PDF variations include 100 replicas of the nominal \texttt{NNPDF3.0} PDF set 
-as well as central values for two different PDF set, 
-\mmhtnnlo\ and \ctfourteennlo, and two \nnpdfnnlo\ $\alpha_s$ variations.  
-The NNPDF intra-PDF uncertainty is estimated as the standard deviation 
-of the set of 101 \texttt{NNPDF3.0} sets. 
-The envelope of the differences between the nominal NNPDF set 
-and the other two PDF sets is taken as an additional uncertainty. 
+by comparing the \texttt{NNPDF3.0} PDF set to two other PDF sets,
+to two \texttt{NNPDF3.0} PDF varied $\alpha_s$ values. 
+The difference between these PDF sets are covered in an envelope and 
+the envelope is taken to be the intra-PDF uncertainty. 
+The inter-PDF set uncertainty is estimated by 
+calculating the standard deviation of 101 replicas of
+\texttt{NNPDF3.0} PDF set. 
+
+% in a similar way, using the event weights included in the samples. 
+% The PDF variations include 100 replicas of the nominal \texttt{NNPDF3.0} PDF set 
+% as well as central values for two different PDF set, 
+% \mmhtnnlo\ and \ctfourteennlo, and two \nnpdfnnlo\ $\alpha_s$ variations.  
+% The NNPDF intra-PDF uncertainty is estimated as the standard deviation 
+% of the set of 101 \texttt{NNPDF3.0} sets. 
+% The envelope of the differences between the nominal NNPDF set 
+% and the other two PDF sets is taken as an additional uncertainty. 
 
 From the nominal Sherpa configuration there are two other parameters 
-that can be varied to investigate uncertainties 
+that can be varied to introduce uncertainties 
 on the modelling of the $W$/$Z$+jets process: 
-MEmatching (\textit{ckkw}), which varies the scale taken 
+matrix element matching (\textit{ckkw}), which varies the scale taken 
 for the calculation for the overlap between jets 
-from the MEand the PS. 
+from the matrix element and the parton shower. 
 The nominal value for this parameter is 20~GeV. 
 The up variation increases this to 30~GeV, 
 while the down variation decreases the nominal value to 15~GeV. 
@@ -391,22 +400,22 @@ Total & -0.081, +0.092 & -0.14, +0.15 \\
 
 
 
-For the scale variation, the ratios of the normalised MVA output distribution of the varation
-to the ones of the nominal are checked. Obvious shape is observed, and
+For the 7-point scale variation, the ratios of the normalised MVA output distributions of the varations
+to the one of the nominal are checked. Obvious shape is observed, and
 a similar parametrisation approach is used.
-All MVA input variables were considered for the parametrisation. 
+All MVA discriminant input variables were considered for the parametrisation. 
 Instead of parametrising all seven points of variation, the parametrisation is considered
 for the envelope encapsulating the maximum shift of the variation. 
 The variable to parametrise is chosen such that the 
 weighted nominal samples can best recover the envelop covering the maximum shift in the PNN scores. 
-As a result, the \ZHF\ scale variation is parametrised by the $p_T^{bb}$,
+As a result, the envelope is parametrised by the $p_T^{bb}$,
 as shown in Figure~\ref{fig:lephad_ZHF_scale_pTBB}.
 In the figure, the weighted nominal samples distributions 
 are labelled as `para:pTBB Up(Down)' and the maximum shift of the 7-point variations in the MVA
 output distributions are covered by the envelope labelled as `Envelop\_Up(Down)'. 
 
 
-\begin{figure}[!h]
+\begin{figure}[htbp]
 \centering
 \subfloat[]{\includegraphics[width=.41\textwidth]{figures/lephad_modelling_systs/SLT/ZHF_scale/Ratio_pTBB_Norm.png}}\quad
 \subfloat[]{\includegraphics[width=.41\textwidth]{figures/lephad_modelling_systs/LTT/ZHF_scale/Ratio_pTBB_Norm.png}}\quad
@@ -482,7 +491,7 @@ and take the difference from there.
 
 Shape uncertainties on the \ZHF\ background 
 are neglected in the \ZHF\ control region as they are
-found to be negligible in the $m_{ll}$ distribution included 
+found to be negligible in the $m_{\ell\ell}$ distribution included 
 in the fit for this region, as shown in 
 Appendix~\ref{sec:appendix:systs}.
 
@@ -512,14 +521,14 @@ the uncertainties are estimated by combining the
 difference between the error sets and the nominal 
 set following the recommendations in Ref.\cite{Butterworth:2015oua}.
 
-Uncertainties from the PS, ME
+Uncertainties from the parton shower, matrix element
 and single top interference are estimated using 
 the differences between the nominal samples and the corresponding 
 alternative samples.
-The PS uncertainty is evaluated comparing 
+The parton shower uncertainty is evaluated comparing 
 the AF2 nominal samples showered with \texttt{Pythia}~8 with alternative 
 AF2 samples showered with \texttt{Herwig}~7.  
-The ME uncertainty is evaluated comparing the AF2 nominal \POWHEG+\textsc{Pythia 8}
+The matrix element uncertainty is evaluated comparing the AF2 nominal \POWHEG+\textsc{Pythia 8}
 samples to the alternative AF2 \AMCatNLO+\textsc{Pythia 8} samples.  
 Uncertainty due single-top interference is evaluated comparing the full simulated nominal 
 \POWHEG+\textsc{Pythia 8} samples with diagram removal (DR) scheme to the alternative 
@@ -550,14 +559,14 @@ Total & $\pm 13.7\%$ & $\pm 21.1\%$ \\
 
   
 The shape uncertainty is derived separately for the SLT channel and the LTT channels. 
-Only normalisation acceptance uncertainty is considered for the PS and ME uncertainties 
+Only normalisation acceptance uncertainty is considered for the parton shower and matrix element uncertainties 
 as no obvious shape is observed in the NN or the PNN scores,
 as shown in Appendix~\ref{sec:appendix:systs} 
 in Figure~\ref{fig:singletopsyst_lephad_herwig_PNN_SLT},~\ref{fig:singletopsyst_lephad_aMC_PNN_SLT}
 in the SLT channel and 
 in Figure~\ref{fig:singletopsyst_lephad_herwig_PNN_LTT},~\ref{fig:singletopsyst_lephad_aMC_PNN_LTT}
 in the LTT channel
-for the PS, ME uncertainties, respectively.
+for the parton shower, matrix element uncertainties, respectively.
 
 % The FSR, scale, ISR and $\alpha_s$ uncertainties are 
 % implemented by the internal weights of the single top MC samples 
@@ -566,7 +575,7 @@ for the PS, ME uncertainties, respectively.
 For the single-top interference uncertainty, the parametrisation 
 is extracted from the ratio of the variation to the nominal fullsim samples
 in bins of $p_T^{bb}$ where it shows the most obvious trend and largest shift from unity.
-Other MVA input are also tested, but most of them either do not have an obvious shape
+Other MVA discriminant input are also tested, but most of them either do not have an obvious shape
 or the variation size is much smaller compared to the $p_T^{bb}$, and therefore cannot 
 provide sufficient closure in the MVA output distributions. 
 The parametrisation is shown in Figure~\ref{fig:singletopsyst_lephad_interference_pTBB} 
@@ -600,14 +609,13 @@ and in most of the bins, therefore the parametrisation in $p_T^{bb}$ is adopted.
 
 
 
-\subsubsection{Uncertainties on single-Higgs}
+\subsubsection{Uncertainties on single Higgs boson processes}
 \label{sec:DiHiggs:singlehiggssysts}
-
-Uncertainties on cross-section and BR are applied to all single-Higgs 
+Uncertainties on cross-section and BR are applied to all single Higgs boson 
 processes included in the analysis as backgrounds 
 (following recommendations from LHC Higgs Working Group~\cite{dihiggs-twiki}). 
 % In addition to those, a 100\% uncertainty is applied on 
-% the normalisation of the single-Higgs processes without 
+% the normalisation of the single Higgs boson processes without 
 % real $b$-quarks (ggFHtautau, VBFHtautau and WHtautau) to 
 % account for modelling of Higgs processes in association with extra 
 % heavy flavor (conservative uncertainty motivated by 
@@ -619,8 +627,9 @@ processes included in the analysis as backgrounds
 % is assigned to the ttH and ZH production modes, where the 
 % dominant heavy-flavour contribution is already accounted for in the LO process.
 
-For all single-Higgs processes, uncertainties arised from PDF, $\alpha_s$ and scales are derived using 
-internal alternative weights present in all the single-Higgs nominal samples. 
+For all single Higgs boson processes, uncertainties arised from PDF, 
+$\alpha_s$ and scales are derived using 
+internal alternative weights present in all the single Higgs boson nominal samples. 
 
 For PDF and $\alpha_s$ variations, the 
 \texttt{PDF4LHC\_NLO\_ 30} PDF set is used for evaluation.
@@ -637,16 +646,16 @@ recommendations~\cite{Butterworth:2015oua}.
 Variations of the renormalisation and factorisation scales
 are used to estimate the uncertainty due to missing higher 
 order corrections. For these scale variations, 
-the 7-point scale variations of the renormalisation ($\mu_R$) 
-and the factorisation scale ($\mu_F$) are used and they are 
+the 7-point scale variations of the renormalisation
+and the factorisation scale are used and they are 
 combined by taking an envelope of all of the variations,
 similar to the method used in section~\ref{sec:DiHiggs:ZHFsysts}.
-PS hadronisation algorithmic uncertainties 
+Parton shower uncertainties 
 are evaluated comparing samples showered with \texttt{Pythia}~8
-and \texttt{Herwig}~7 (with the ME provided by the same generator). 
+and \texttt{Herwig}~7 (with the matrix element provided by the same generator). 
 
 For the ttH process,
-the ME NLO matching uncertainty is evaluated 
+the matrix element NLO matching uncertainty is evaluated 
 comparing the nominal \POWHEG+\textsc{Pythia 8} samples 
 to alternative \AMCatNLO+\textsc{Pythia 8} samples. 
 Internal alternative weights are 
@@ -656,7 +665,7 @@ The Var3c eigenvariation of the A14 tune, representing
 the variation of the strong coupling in the initial state shower, 
 is used to evaluate the ISR uncertainty. 
 The FSR uncertainty is evaluated using variations of $\mu_R$ 
-by a factor 2 up and down around the nominal value in the PS. 
+by a factor 2 up and down around the nominal value in the parton shower. 
 
 For the ZHbb process, the
 ISR and FSR uncertainties are found to be negligible in the VHbb 
@@ -695,7 +704,7 @@ ZHtautau  & -0.022,+0.022 & -0.028,+0.028   & Scales\\
 ZHtautau  & -0.055,+0.055 & -0.15,+0.15   & PS\\
 \hline
 \end{tabular}
-\caption{Relative size of single-Higgs acceptance uncertainties in the di-Higgs analysis.
+\caption{Relative size of single Higgs boson acceptance uncertainties in the di-Higgs analysis.
 Table reproduced from analysis internal notes.}
 \label{sec:systs:tab:systematics_singleHiggs_AcceptanceNumbers}
 \end{table}
@@ -731,15 +740,15 @@ Acceptance uncertainties of 25\%, 26\% and 20\% are applied on $WW$, $WZ$ and $Z
 
 Acceptance uncertainties on the resonant and non-resonant signals 
 are evaluated by comparing the nominal signal samples to alternative 
-MC samples for PS, PDF and scale variations.
+MC samples for parton shower, PDF and scale variations.
 
-\subsubsection{Resonant signals}
+\subsubsection{Resonant di-Higgs production}
 
-The PS uncertainties for the resonant signals 
+The parton shower uncertainties for the resonant signals 
 are estimated by comparing the nominal samples showered with 
 \texttt{Herwig}~7 to alternative samples showered with \texttt{Pythia}~8 which are available 
 in full-simulation for the $m_X= 500$ GeV and the $m_X=1000$ GeV mass points. 
-The PS normalisation acceptance uncertainty is 
+The parton shower normalisation acceptance uncertainty is 
 found to be 6\% (3\%) for $m_X=500$ ($m_X=1000$)~GeV 
 in the SLT and 4\% (7\%) for $m_X= 500$ ($m_X=1000$)~GeV in the LTT. 
 Thus, a conservative 6\% (7\%) uncertainty is adopted on the 
@@ -777,7 +786,7 @@ The larger difference in acceptance times efficiency in
 LTT is originating from the \tauhad\ used in LTT triggers 
 which no dedicated recommendations for AF2 exist.
 Therefore a 3\% acceptance uncertainty is assigned to LTT of all signal
-samples simulated with AF2 (up to 1TeV mass point).
+samples simulated with AF2 (up to 1~TeV mass point).
 
 \begin{figure}
   \centering
@@ -820,9 +829,9 @@ Table reproduced from analysis internal notes.}
 
 
 
-\subsubsection{Non-resonant signal}
+\subsubsection{Non-resonant di-Higgs production}
 
-\paragraph{ggF non-resonant}
+\paragraph{ggF non-resonant di-Higgs production}
 The PS uncertainties for the ggF non-resonant signal
 are estimated by comparing the nominal samples showered with 
 \texttt{Pythia}~8 to alternative samples showered with \texttt{Herwig}~7. 
@@ -838,7 +847,7 @@ uncertainty sets which consist of 30 eigenvectors for
 all the PDFs and 1 parameter for the $\alpha_s$ variations.
 The variations are combined using the same method as mentioned in 
 section~\ref{sec:DiHiggs:singlehiggssysts} for combining the
-PDF and \alphas\ variations for single-Higgs processes.
+PDF and \alphas\ variations for single Higgs boson processes.
 The combined variations have less than 1\% shift from the nominal and
 therefore the uncertainties due to PDF and \alphas\ are neglected.
 
@@ -870,14 +879,14 @@ SM & 0.012 &  0.010 & Scales \\
 \end{table}
 
 
-\paragraph{VBF non-resonant}
+\paragraph{VBF non-resonant di-Higgs production}
 The PS uncertainties for the
 VBF signal sample is evaluated by comparing the
 \texttt{Pythia}~8 nominal sample to an alternative sample 
 showered using \texttt{Herwig}~7.
 The normalisation uncertainty is found to be be 6.3\% (2.1\%)
 for the SLT (LTT) channel.
-No significant shape impact was observed on the final discriminants.
+No significant shape impact was observed on the final discriminant output.
 
 Scale uncertainties are evaluated using the internal weights 
 of 7-point scale variations, the normalisation uncertainty are found be negligible.
@@ -897,8 +906,8 @@ The normalisation uncertainty is less than 1\% and therefore is neglected.
 
 
 
-\subsubsection{Uncertainties on $\kappa_\lambda$ scan}
-\label{subsubsec:klscan}
+\subsubsection{Uncertainties on  \texorpdfstring{$\kappa_\lambda$}{kl} scan}
+\label{sec:klscan-systs}
 As described in section~\ref{sec:DiHiggs:klscan}, the non-resonant $HH$ signal 
 assuming various \kl\ values are produced by a reweighting method. 
 The uncertainties of each sample need to be accounted for.
@@ -946,7 +955,7 @@ three considered sources of uncertainty.
 
 
 
-\begin{figure}[!htb]
+\begin{figure}[htbp]
     \begin{center}
         \includegraphics[width=.45\textwidth]{DiHiggs/plots/kl_SLT acc.png}
         \includegraphics[width=.45\textwidth]{DiHiggs/plots/kl_LTT acc.png} \\
@@ -985,7 +994,8 @@ As in the case of ggF, the acceptance uncertainties for VBF $HH$ production are 
 The QCD scale and PDF+$\alpha_s$ uncertainties for the SM and $\kappa_\lambda \in \{0, 2, 10\}$
 samples are listed in Tab.~\ref{tab:systematics_HHNonResSignalVBF_AcceptanceNumbers}.
 Additionally, the PS uncertainty is evaluated for the SM sample and at $\kappa_\lambda = 10$.
-For each of these sources of uncertainty, the largest one is used to define the respective variation for the prediction in all non-SM cases.
+For each of these sources of uncertainty, the largest one is used to define the respective
+variation for the prediction in all non-SM cases.
 
 An uncertainty on the closure of the linear combination of VBF samples is evaluated in both 
 SLT and LTT and applied on the normalisation of the VBF sample after the linear combination. 
@@ -1053,7 +1063,7 @@ for the fake background:
   difference between the fake background derived with and without the 
   \ttbar\ reweighting (more details in section~\ref{sec:DiHiggs:lephadfake}).
   An alternative approach was studied by the author, using the \ttbar\ variation samples
-  used for evaluating the PS, ME, ISR and FSR uncertainties to replace the nominal \ttbar\ 
+  used for evaluating the PS, matrix element, ISR and FSR uncertainties to replace the nominal \ttbar\ 
   samples, for deriving the FF and to be subtracted from data. The fake background derived
   using the variation samples are correlated to the corresponding ones in \ttbar\ modelling 
   uncertainties estimations. 

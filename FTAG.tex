@@ -1,12 +1,12 @@
 \label{sec:FTAG}
-\section{Calibration methods for \bjet\ and light jet}
+\section{Calibration methods for \texorpdfstring{\bjet}{b-jet} and light jet}
 \large
 MC simulations are not able to model exactly the 
 performance of the $b$-tagging algorithms in data. For this reason 
 calibration is required, i.e.\ correcting MC to recover the data 
 in terms of $b$-tagging efficiency, charm jet mis-tagging and 
 light jet mis-tagging rates~\cite{FTAG-2018-01}. The calibration is performed 
-for all supported jet collections(TODO: refer back to the object definition chapter)
+for all supported jet collections described in section~\ref{sec:jet}.
 and working points, which are cuts in the \btagging\ 
 algorithm output identifying the different tagging efficiencies 
 and corresponding light jet and \cjet rejection rate.
@@ -56,9 +56,9 @@ to im the data, and then compares the adjusted simulation to the
 ``standard'' simulation. The scale factors are then calculated using 
 the these two methods. The scale factors of the two different methods 
 are in good agreement within the systematic uncertainties. 
-%The aim of this calibration is to calibrate \bjets that have been mis-tagged as light jets of \btagging\ algorithm. As the $b$-tagging algorithm is very efficient in rejecting light jets, the light jet fraction is enriched via ``flipped'' taggers, which negates the sign of track IP parameters before $b$-tagging\cite{ATLAS-CONF-2018-006}. The calibrations of the standard and the 'flipped' tagger are assumed to be equal. The calibration is extracted using the leading $p_T$ jet of Z+jets events using a 2D fit. TODO: cite the light jet tagging Int note
+%The aim of this calibration is to calibrate \bjets that have been mis-tagged as light jets of \btagging\ algorithm. As the $b$-tagging algorithm is very efficient in rejecting light jets, the light jet fraction is enriched via ``flipped'' taggers, which negates the sign of track IP parameters before $b$-tagging\cite{ATLAS-CONF-2018-006}. The calibrations of the standard and the 'flipped' tagger are assumed to be equal. The calibration is extracted using the leading $p_T$ jet of Z+jets events using a 2D fit. 
 %light jet fractions in the $b$-like region are too low,  The Z + jets events are then selected, the secondary vertex mass is fitted to obtain flavour fractions and perform a likelihood fit to extract light jet mistag rate.
-\section{Calibration method for \cjet}
+\section{Calibration method for \texorpdfstring{\cjet}{c-jet}}
 \label{sec:Calibration method for charm jet}
 It is worth mentioning that the author's qualification task to become an ATLAS author is to 
 calibrate the rate of a charm jet being mis-identified as a \bjet\, which is a part 
@@ -419,7 +419,7 @@ assumed to be the result of the neutrino from the leptonically
 decaying $W$ boson. The transverse
 mass $m_T$ between the lepton and the \MET, is
 constrained as follows:
-\[ m_T = \sqrt{2 p_T^\ell \MET (1-\cos\Delta\phi)} > 40~\GeV,\]
+\[ m_T = \sqrt{2 p_T^\ell \MET (1-\cos\Delta\phi)} > 40~\GeV, \addtag \]
 where $\Delta\phi = \phi(\MET)-\phi(\ell)$ is the azimuthal difference between
 the lepton and \MET.
 \begin{table}[htb]
@@ -472,7 +472,7 @@ experimental uncertainties and the \ttbar\ modelling uncertainties, as described
 Section \ref{sec:FTAG_systematics}. The data/MC ratio shows good agreement 
 within the systematic uncertainties. 
 
-\subsection{Low-\pt\ selection}
+\subsection{Low-\texorpdfstring{\pt}{pT} selection}
 \label{sec:lowpT_selection}
 The author has developed an othorgonal selection to 
 extend the calibration in the low-$p_{T}$ region so that the calibration 
@@ -529,7 +529,7 @@ is shown in these distributions, and the $p_{T}$ range of the sub-leading has go
 \end{figure}
 
 
-\subsection{High-$p_T$ selection}
+\subsection{High-\texorpdfstring{\pt}{pT} selection}
 \label{high_pt_selection}
 It has been observed that in the previous calibrations that the statistics 
 are relatively low for the high-\pt\ region (e.g.\ jet $\pt\ > 100$~GeV). 
@@ -552,7 +552,7 @@ true \cjet\ from the $W$ decay, and $N_{\rm{all}}$ stands for the number of all 
 The ideal situation is the high-\pt\ selection will maximally increase the 
 statistics while mininally decreasing the \cjet\ purity, therefore a figure of merit $P^{\rm{Cut}}$
 is defined as:
-\[P^{\rm{Cut}} = \frac{\sum_i{\rm{Gain\ in\ stats}^2_i}}{\sum_i{\cjetineq \rm{purity}^2_i }}, \]
+\[P^{\rm{Cut}} = \frac{\sum_i{\rm{Gain\ in\ stats}^2_i}}{\sum_i{\cjetineq \rm{purity}^2_i }},  \addtag \]
 where i stands for the number of bins. The ``Gain in stats'' stands for increase in 
 statistics and it's summed over all bins in Figure~\ref{fig:cutvalue}.
 The \cjet\ purity and the statistical gain are calculated for 4 different cut 
@@ -683,9 +683,8 @@ can be found in Appendix \ref{sec:appendix_combined_selection}.
 The systematic uncertainties considered and propagated in this calibration 
 can be broadly categorised into experimental and modelling systematic uncertainties. 
 \subsection{Experimental uncertainties}
-TODO: refer to the analysis Part
 Experimental uncertainties are related to the detector and estimated using 
-data-driven methods or MC simulations. 
+data-driven methods or simulations. 
 The lepton energy scale and resolution are corrected to 
 provide better agreement between MC predictions and data, uncertainties 
 due the corrections are considered. Uncertainties are taken into account on the 
@@ -761,7 +760,7 @@ are shown in Table \ref{tab:modelling_syst}.
 	\end{table}
 
 
-\section{Under-estimation of $t\bar{t}$ + Heavy flavour background }
+\section{Under-estimation of \texorpdfstring{$t\bar{t}$}{ttbar} + Heavy flavour background }
 Depsite the fact that the true nature of most of the reconstructed $W$ jets are either 
 \cjets\ or light jets, there is still a very small amount of them are true \bjets. 
 
@@ -836,7 +835,7 @@ selection and the standard selection are carried out for all four
 calibrations, while the high-$p_T$ selection is only implemented 
 in the latest calibration. 
 
-\subsection{\btagging\ algorithms output distribution}
+\subsection{\texorpdfstring{\btagging}{b-tagging} algorithms output distribution}
 The distributions of the \btagging\ algorithm' output of 
 the MC and the data of the latest calibration 
 (December 2020) are shown in Figure~\ref{fig:taggers_PFlow} for the PFlow jets and 
@@ -1143,7 +1142,9 @@ the DL1 tagger.} \label{fig:Dec_eff_PFlow_DL1}
 \iffalse
 
 
-In terms of statistical gain, taking the 60\% working point scale factor with 2018 data as an example, the error is reduced as expected. In the last bin of the $p_{T}$ distribution of scale factors, the error is reduced by 55\%, which suggests the success of high-$p_{T}$ selection method. The percentage reduction of error of each bin is given in Tab.\ref{tab:limit}:
+In terms of statistical gain, taking the 60\% working point scale factor with 2018 data as an example, 
+the error is reduced as expected. In the last bin of the $p_{T}$ distribution of scale factors, the error is reduced by 55\%, 
+which suggests the success of high-$p_{T}$ selection method. The percentage reduction of error of each bin is given in Tab.\ref{tab:limit}:
 
 
  \begin{table}[ht]

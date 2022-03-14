@@ -212,7 +212,8 @@ The SM is commonly accpeted as an effective theory applicable
 up to energies not exceeding a certain scale $\Lambda$. 
 For a field theory valid above that scale, it needs to satisfy a few requirements:
 \begin{itemize}
-    \item it should have a gauge group that contains the SM $\text{SU}(3)_C \times \text{SU}(2)_L\times \text{U}(1)_Y$ group,
+    \item it should have a gauge group that contains the SM 
+    $\text{SU}(3)_C \times \text{SU}(2)_L\times \text{U}(1)_Y$ group,
     \item it should incorporate all degrees of freedom of the SM,
     \item it should reduce to the SM at low energies.
 \end{itemize}
@@ -278,6 +279,7 @@ the rest accounts for the Non-SM interactions,
 affect respectively the $ttHH$, $gHH$ and $ggHH$ vertices. 
 The Feynman diagrams for such interactions and the corresponding
 Wilson coefficients are shown in Figure~\ref{fig:BSM:HEFT_diagrams}.
+\input{Theory/plots/HEFT_diagrams.tex}
 The HEFT Lagrangian reduces to the SM Lagrangian for $c_{hhh} = c_{tth} = 1$ 
 and $c_{tthh} = c_{ggh} = c_{gghh} = 0$, when the Higgs boson self-coupling 
 and top-quark Yukawa coupling have SM values 
@@ -287,14 +289,59 @@ and none of the BSM production modes are present.
 %The three non-SM LO Feynman diagrams for $HH$ production through gluon-gluon fusion, introduced in HEFT, are described by the Feynman diagrams shown in \Fig{\ref{fig:HEFT_diagrams_o6}}.
 %The HEFT formalism allows us to make a more general measurement of the Higgs self-coupling and explore different BSM scenarios by simultaneously varying multiple Wilson coefficients \cite{Cohen:2020xca}.
 
-Higgs boson pair production is the most promising process to measure the 
-Higgs boson self-coupling because it gives access to $c_{hhh}$ at tree level.
-Furthermore the \HH process gives unique access to 
-the two other Wilson coefficients, $c_{tthh}$ and $c_{gghh}$.
-% On the contrary, single Higgs boson processes have better sensitivity to the remaining two coefficients, $c_{tth}$ and $c_{ggh}$.
-The HEFT formalism allows us to interpret general searches in different BSM scenarios 
+The di-Higgs production gives a unique access to the coefficients 
+$c_{hhh}$, $c_{tthh}$ and $c_{gghh}$ (the $c_{ggh}$ and $c_{tth}$ coefficients can be probed
+by single-Higgs boson production, with even higher sensitivity). 
+The HEFT formalism allows one to interpret general searches in different BSM scenarios 
 by simultaneously varying multiple Wilson coefficients. 
-\input{Theory/plots/HEFT_diagrams.tex}
+In section~\ref{sec:DiHiggs:results}, results one dimensional scans on
+coefficients $c_{hhh}$, $c_{tthh}$ and $c_{gghh}$ is presented, assuming that 
+all other couplings take their SM values.
+The resultsm also represent the first dedicated scan on the $c_{tthh}$ and $c_{gghh}$
+coefficients in ATLAS.
+In addition, \textit{cluster analysis}~\cite{Carvalho:2015ttv} can be used 
+to group the shapes of the $m_{HH}$ distribution that are predicted by HEFT. 
+At next-to-leading order (NLO), 7 benchmarks (BM)~\cite{Capozi:2019xsi}, 
+defined in Table~\ref{tab:bm}, describe representative shape features of the 
+HEFT BSM $m_{HH}$ distribution 
+(for example, a high peak in the low $m_{HH}$ region, double peaks, enhanced tail),
+and can be used to explore multiple BSM scenarios. 
+In section~\ref{sec:DiHiggs:results}, upper limits are set on the production cross-section
+assuming the 7 benchmarks. 
+% The characteristic shapes of the $m_{HH}$ distribution are, 
+ % a peak near the $t\bar{t}$ production threshold, or two peaks with 
+% a large (small) separation.
+
+
+% Experimental constraints on the 5 HEFT couplings can rule out the existence 
+% of individual benchmarks. However many combinations of the couplings can 
+% give rise to the distinct $m_{HH}$ shapes represented by 
+% these benchmarks and hence their study is still valuable.
+\begin{table}[tbh!]
+  \begin{center}
+    \begin{tabular}{c|c c c c c}
+      \toprule
+      Benchmark & $c_{hhh}$ & $c_{tth}$ & $c_{tthh}$ & $c_{ggh}$ & $c_{gghh}$ \\ 
+      \midrule
+      SM  & 1 & 1 & 0 & 0 & 0 \\
+      BM $1$ & $3.94$ & $0.94$ & $-1/3$ & $0.5$ & $1/3$ \\
+      BM $2$ & $6.84$ & $0.61$ & $1/3$ & $0.0$ & $-1/3$ \\
+      BM $3$ & $2.21$ & $1.05$ & $-1/3$ & $0.5$ & $0.5$ \\
+      BM $4$ & $2.79$ & $0.61$ & $1/3$ & $-0.5$ & $1/6$ \\
+      BM $5$ & $3.95$ & $1.17$ & $-1/3$ & $1/6$ & $-0.5$ \\
+      BM $6$ & $5.68$ & $0.83$ & $1/3$ & $-0.5$ & $1/3$ \\
+      BM $7$ & $-0.10$ & $0.94$ & $1$ & $1/6$ & $-1/6$ \\
+      \bottomrule
+    \end{tabular}
+  \end{center}
+  \caption{HEFT Wilson coefficient values in the SM and in seven BSM 
+  benchmark hypotheses defined in Ref~\cite{Capozi:2019xsi}.}
+  \label{tab:bm}
+
+\end{table}
+
+
+% On the contrary, single Higgs boson processes have better sensitivity to the remaining two coefficients, $c_{tth}$ and $c_{ggh}$.
 
 
 
@@ -336,41 +383,41 @@ by simultaneously varying multiple Wilson coefficients.
 % changing the cross-section of the di-Higgs production which is the main interest of 
 % this thesis. 
 
-Linking the idea to the non-resonant di-Higgs production modes as shown in Figure~\ref{fig:SM:di-Higgs-ggf},
-where the Box diagram amplitude is proportional to the square of the top
-yukawa coupling, $g_t^2 = \kappa_t^2$ and the triangle amplitude is 
-proportional to the square of $g_t g_{HHH} = \kappa_t \kappa_\lambda$,
-the destructive amplitude can be written as 
-(and if one does not consider additional anomalous couplings):
-\[
-A(\kappa_t, \kappa_\lambda)  = \kappa_t^2 B +  \kappa_\lambda^2  T,
-\addtag \]
-where A is the amplitude of the ggF $HH$ production and the 
-$B$ and $T$ are the contribution from the box and triangle diagram, respectively. 
-Due to the BSM operators, the coupling $\kappa_t$, $\kappa_\lambda$ can be rescaled.
-Taking the square of the amplitude, the cross-section is approximately:
-\[
-\sigma \sim \kappa_t^4 \left(  |B|^2 + \frac{\kappa_\lambda}{\kappa_t} (BT +TB) + (\frac{\kappa_\lambda}{\kappa_t})^2 |T|^2  \right),    
-\addtag \]
-which is a function of only the $\kappa_t$ and $\frac{\kappa_\lambda}{\kappa_t}$.
-While the cross-section is determined by both of them, if one sets the 
-$\kappa_t$ equals to 1 (which is the SM case), the kinematics is only 
-determined by the $k_\lambda$.
-An example of this dependency is shown in Figure~\ref{fig:BSM:kl_mhh}
-Using this feature, one can perform a scan of possible $k_\lambda$ values,
-excluding values of $k_\lambda$ that have incompatible kinematics with the 
-experimental data. 
-Such a scan is presented in chapter~\ref{sec:search for dihiggs},
-where the ggF and VBF di-Higgs non-resonant production process are assumed to have 
-various $k_\lambda$ values, and the kinematics distributions are compared
-with the data using Multivariate techniques for compatibility.
+% Linking the idea to the non-resonant di-Higgs production modes as shown in Figure~\ref{fig:SM:di-Higgs-ggf},
+% where the Box diagram amplitude is proportional to the square of the top
+% yukawa coupling, $g_t^2 = \kappa_t^2$ and the triangle amplitude is 
+% proportional to the square of $g_t g_{HHH} = \kappa_t \kappa_\lambda$,
+% the destructive amplitude can be written as 
+% (and if one does not consider additional anomalous couplings):
+% \[
+% A(\kappa_t, \kappa_\lambda)  = \kappa_t^2 B +  \kappa_\lambda^2  T,
+% \addtag \]
+% where A is the amplitude of the ggF $HH$ production and the 
+% $B$ and $T$ are the contribution from the box and triangle diagram, respectively. 
+% Due to the BSM operators, the coupling $\kappa_t$, $\kappa_\lambda$ can be rescaled.
+% Taking the square of the amplitude, the cross-section is approximately:
+% \[
+% \sigma \sim \kappa_t^4 \left(  |B|^2 + \frac{\kappa_\lambda}{\kappa_t} (BT +TB) + (\frac{\kappa_\lambda}{\kappa_t})^2 |T|^2  \right),    
+% \addtag \]
+% which is a function of only the $\kappa_t$ and $\frac{\kappa_\lambda}{\kappa_t}$.
+% While the cross-section is determined by both of them, if one sets the 
+% $\kappa_t$ equals to 1 (which is the SM case), the kinematics is only 
+% determined by the $k_\lambda$.
+% An example of this dependency is shown in Figure~\ref{fig:BSM:kl_mhh}
+% Using this feature, one can perform a scan of possible $k_\lambda$ values,
+% excluding values of $k_\lambda$ that have incompatible kinematics with the 
+% experimental data. 
+% Such a scan is presented in chapter~\ref{sec:search for dihiggs},
+% where the ggF and VBF di-Higgs non-resonant production process are assumed to have 
+% various $k_\lambda$ values, and the kinematics distributions are compared
+% with the data using Multivariate techniques for compatibility.
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=.41\textwidth]{theory/plots/kl_mhh.png}
-\caption{An example of mass of the di-Higgs system distribution, 
-varying for different values of $k_\lambda$ along with a typical
-background $pp \rightarrow ZH$. Image taken from Ref.\cite{kl_mhh}.
-}
-\label{fig:BSM:kl_mhh}
-\end{figure}
+% \begin{figure}[htbp]
+% \centering
+% \includegraphics[width=.41\textwidth]{theory/plots/kl_mhh.png}
+% \caption{An example of mass of the di-Higgs system distribution, 
+% varying for different values of $k_\lambda$ along with a typical
+% background $pp \rightarrow ZH$. Image taken from Ref.\cite{kl_mhh}.
+% }
+% \label{fig:BSM:kl_mhh}
+% \end{figure}

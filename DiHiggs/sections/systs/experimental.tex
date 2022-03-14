@@ -4,17 +4,21 @@ The uncertainty on the full Run 2 data is $\pm$1.7\%, obtained using the
 LUCID (LUminosity measurement using a Cherenkov Integrating Detector)
 detector~\cite{ATLAS-Lumi2}.
 
-A reweighting is applied on the MC simlulations to match 
+A reweighting is applied on the simlulations to match 
 the pile-up condition in each data-taking period during Run 2~\cite{STDM-2015-05}. 
 The uncertainty associated with the reweighting
-is estimated by varing the reweighting factors used in the MC simulation. 
+is estimated by varing the reweighting factors used in the simulation. 
 
-The uncertainties in single lepton triggers ($e$ or $mu$), 
-uncertainties due to leptons reconstruction, identification and
+The uncertainties in single lepton triggers, 
+uncertainties due to lepton reconstruction, identification and
 isolation are estimated by varying the selection used in the
-tag-and-probe method. 
-In the tag-and-probe approach, stringent selection criterias are applied on one lepton,
-and the other lepton is used for the efficiency measurement. 
+\textit{tag-and-probe} method. 
+The idea of the tag-and-probe method can be explained using a simple example,
+consider the $Z \rightarrow e^+ e^-$ events, one can apply stringent selection
+criteria on one electron (`tag'), and loosely identifying another electron 
+which is compatible with the first electron. The second electron has a very 
+high probablity to be a real electron from $Z$ decay and can then be used 
+for efficiency measurement (`probe'). 
 For electrons, $Z\rightarrow e^+e^-$ events 
 are used~\cite{EGAM-2018-01} while for muons, 
 both $Z\rightarrow \mu^+\mu^-$  and $J/\psi\rightarrow \mu^+\mu^-$ events
@@ -22,11 +26,11 @@ are used~\cite{CERN-EP-2020-199}.
 
 
 The uncertainty on electron energy resolution is estimated by smearing the
-electron energies in MC simulations, while 
+electron energies in simulations, while 
 the momentum scale and energy resolution variations are derived in 
 $Z\rightarrow \mu^+\mu^-$  and $J/\psi\rightarrow \mu^+\mu^-$ events. 
 
-Similarly for the \tauhad\ lepton, the tag-and-probe method is used
+Similarly for the \tauhad, the tag-and-probe method is used
 to measure the reconstruction and identification efficiency scale factors,
 using $Z\rightarrow \tau^+\tau^-$ events~\cite{ATLAS-CONF-2017-029}.  
 Uncertainties are estimated in the efficiencies of the electron veto for
@@ -51,7 +55,7 @@ is estimated by varying the reqirements on the algorithm output discriminant.
 
 
 As described in section~\ref{sec:FTAG}, scale factors are measured 
-to correct the \btagging\ efficiency in MC simulations to match the one in data. 
+to correct the \btagging\ efficiency in simulations to match the one in data. 
 Uncertainties in the \btagging\ efficiency are considered
 as a function of \pt\ for b-jets and c-jets using \ttbar\ events~
 \cite{FTAG-2018-01,FTAG-paper}, 

@@ -39,7 +39,7 @@ take off.
 
 
 2. TODO: Find electron identification and isolation working points for bbtautau and Ftag
-3. TODO: add reference of validation of swithcing from EMTOPO to PFLow after selection is defined
+
 4.  TODO: link the RNN 0.01 to the fake factor section
 5. think about why random tau selection is needed
 6. check the rejection rate of the BDT for reject electron faking tau
@@ -52,10 +52,7 @@ Important points (from Nikos):
 DiHiggs:
 1. how to explain non res signal is normalised to the SM cross section while the resonant cross section is arbitrary?
 2. TODO: add explaination to MVA input legend 
-3. TODO: update post fit MVA output and input plots, post fit Z control region plot
-4. TODO: add klambda systematics
 5. TODO: consider remove the HEFT results
-6. TODO: add my contribution
 7. TODO: check each channel characteristics
 
 
@@ -90,6 +87,35 @@ fitting uncertainties:Because you are adding more information in the form of new
 Of course this comes with issues as well and you have to think about if you should be constraining the data.  Does it make sense.  For example, in the first case above if the electron E scale was already measured in the full dataset carefully by the e/gamma group it is unlikely your search  CR with the same amount of data would add info so if you heavily constrained that NP you might be concerned.  
 
 
+4. renormalizastion scale and factorisation scale:
+The cross section of hard scattering depends on matrix element square of |M(ij→kX)|2 (i,j,k are the spices of parton, 
+X is the resulting hadron)
+will lead to divergences, which come in two flavours:
+   I the ultraviolet (UV) ones, which appear because of large momentum in the loops of the Feynman diagrams representing the amplitude;
+   II the infrared (IR) ones, which appear because (i) either a virtual or a real particle can reach a zero momentum, 
+   or because (ii) a massless particle radiates another massless particle.
+The UV divergences are cured by introducing the renormalisation scale μR, 
+of which the coupling constant αS becomes a function of. The IR divergences in case 
+(i) cancel out (as predicted by the Kinoshita-Lee-Nauenberg theorem) but not in case (ii): 
+they are cured by introducing the factorisation scale μF, of which the parton distribution and fragmentation functions will become a function of.
+At this point, it is very important to understand that μF and μR are spurious parameters and that physical observable should ideally not depend on them. 
+This would be true if we could sum the entire perturbation series, which is not only practically impossible but theoretically unsound. 
+But at least, the more terms of the series we compute, the less the observable depends on those scales.
+
+5. CKKW is alternative approach, aiming at an improved description of multi-jet topologies
+
+
+DiHiggs todo:
+1. check MMC, how it's done, is it described in eearlier chpater?
+2. acc * eff uncertainties?
+3. Prepare for questions in hyper parameter optimization
+4. Prepare for question on Van Der Meer method and Lucid detector
+
+
+
+
+
+
 DiHiggs question:
 why the SLT sensivity dominates the LTT in high mass resonance, while it's comparable in the low mass?
 ltt was assigned with low lepton pt threshold, and in high mass resonances slt has high efficiency and has priority 
@@ -97,3 +123,29 @@ ltt was assigned with low lepton pt threshold, and in high mass resonances slt h
 why bbbb dominates the high energy region? 
 can I still say the data is compatible with null hypothesis given we observed an excess?
 Compatibility: what defines if two excess are compatible?
+
+Theory question: 
+why vaccuum state breaks the U(1) symmetry? A: it doesn't break the symmetry in lagrangian, but the state itself
+is not invariant in U(1) transformation. 
+Why vacuum state function has one 0 and one equals v:
+you can try the algebra with non zero vev on the other one,you will see that electric charge would not be conserved
+the vacuum itself would be electrically charged
+why is the higgs mass correction proportional to squared of energy?
+Is the generic spin 0 scalar limited to type one two three 2HDM?
+
+Theory todo: 
+1. TODO: add comments on bbWW channel
+2. TODO: 2.9 Higgs boson pair production
+I think in this section you need to say why HH production is important (i.e to resolve the potential and study EWSB), linking it to the previous chapters.  
+The main message should be that while we have measure a lot about the Higgs we don't know if it really behaves like the SM mechanism with the wine-glass potential.
+3.Somewhere (maybe after the big questions) you need to explicitly 
+state that potential BSM enhancements to HH can be resonant or non-resonant 
+(+ what that means).  This would then allow you to motivate the 2HDM and EFT as 
+one example of each that are used as benchmark signals in the analysis.
+
+Overall question:
+Add a small section for ATLAS software?
+
+
+
+

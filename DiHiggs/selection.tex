@@ -10,12 +10,12 @@ Events in the \lephad\ channel
 are recorded using a combination of single-lepton triggers (SLTs) 
 and lepton-plus-\tauhad\ triggers (LTTs). 
 The offline objects are required to pass addition 
-\pt\ cuts. For the leptons($e$ or $mu$), a threshold which is
+\pt\ cuts. For the leptons($e$ or $\mu$), a threshold which is
 1~GeV higher than the HLT \pt\ threshold is applied to
-reach its efficiency plateau region. 
+reach its plateau region, where the cut efficiency is approximately constant. 
 For the \tauhad, the threshold is set at 5~GeV above the
 HLT \pt\ requirement for the same reason.
-The offline $e$, $mu$ and \tauhad\ must be matched to
+The offline $e$, $\mu$ and \tauhad\ must be matched to
 the corresponding trigger objects. 
 
 The priority is given to SLT events if a lepton fufils
@@ -144,7 +144,7 @@ are required (the offline cut is raised to 80~GeV).
 
 
 Before passing the events to the MVA algorithm, 
-they are required to pass a loose pre-selection criteria to 
+they are required to pass a loose \textit{pre-selection} criteria to 
 select events consistent with the signal topology and to
 remove obvious background.  
 Events passing the pre-selection criteria is referred to as
@@ -218,7 +218,7 @@ The full event pre-selection is summarised in Table~\ref{tab:DiHiggs:selectionsu
     \bottomrule
     \end{tabular}
     }
-    \caption{Summary of the event preselections, 
+    \caption{Summary of the event pre-selections, 
     shown separately for the SLT and LTT. 
    Thresholds on the (sub-)leading \pt\ object are given 
    outside (within) parentheses. 
@@ -233,8 +233,8 @@ The full event pre-selection is summarised in Table~\ref{tab:DiHiggs:selectionsu
 \end{table}
 
 
-The rate of events accepted by the detector is quantified by the \textit{acceptance},
-and the rate of events selected by the analysis selection is quantified by 
+The fraction of events accepted by the detector is quantified by the \textit{acceptance},
+and the fraction of events selected by the analysis selection is quantified by 
 the \textit{selection efficiency}.
 These two rates are usually multiplied together ($A \times \epsilon$) to quantify the rate of a simulated event
 accepted by the detector and the analysis selection. 
@@ -242,10 +242,10 @@ The cumulative $A \times \epsilon$ in each step of the pre-selection
 is summarised in Table~\ref{tab:DiHiggs:cutflowslt}
 and Table~\ref{tab:DiHiggs:cutflowltt}
 for the SLT and LTT channels, respectively, for the
-non-resonant signal and three example resonances mass points.  
+non-resonant signal and three example resonance mass points.  
 
 
-\begin{table}[!htbp]
+\begin{table}[htbp]
     \centering
     
     \resizebox{0.92\textwidth}{!}{
@@ -273,7 +273,7 @@ non-resonant signal and three example resonances mass points.
 \large
 \caption{Cumulative $A \times \epsilon$ for simulated signal events to pass each stage of the event pre-selection in the SLT channel. 
 The efficiencies are calculated with respect to $HH\to b\bar b\tau^+\tau^-$ decays in which one $\tau$-lepton decays hadronically and one decays leptonically.
-The `Basic selection' includes selections with at least one \tauhad\ candidate and one lepton passing loose kinematic requirements.
+The term `Basic selection' refers to selections with at least one \tauhad\ candidate and one lepton passing loose kinematic requirements.
 The `Object selections' requires exactly one \tauhad\ candidate, at least two jets with $p_\text{T}>25$ GeV and $\vert\eta\vert < 2.5$.
 The `Trigger specific offline $p_\text{T}$ cuts' are cuts placed on the $p_\text{T}$ of the reconstructed jet or \tauhad\
 that are geometrically matched to the HLT objects, to ensure the efficiencies of the HLT objects reach the plateau region.
@@ -282,7 +282,7 @@ that are geometrically matched to the HLT objects, to ensure the efficiencies of
 \end{table}
     
 
-\begin{table}[!htbp]
+\begin{table}[htbp]
     \centering
     
     \resizebox{0.92\textwidth}{!}{
@@ -311,7 +311,7 @@ that are geometrically matched to the HLT objects, to ensure the efficiencies of
     \large
 \caption{Cumulative $A \times \epsilon$ for simulated signal events to pass each stage of the event pre-selection in the LTT channel. 
 The efficiencies are calculated with respect to $HH\to b\bar b\tau^+\tau^-$ decays in which one $\tau$-lepton decays hadronically and one decays leptonically. 
-The `Basic selection' includes selections with at least one \tauhad\ candidate and one lepton passing loose kinematic requirements.
+The term `Basic selection' refers to selections with at least one \tauhad\ candidate and one lepton passing loose kinematic requirements.
 The `Object selections' requires exactly one \tauhad\ candidate, at least two jets with $p_\text{T}>25$ GeV and $\vert\eta\vert < 2.5$.
 The `Trigger specific offline $p_\text{T}$ cuts' are cuts placed on the $p_\text{T}$ of the reconstructed jet or \tauhad\
 that are geometrically matched to the HLT objects, to ensure the efficiencies of the HLT objects reach the plateau region.
@@ -320,10 +320,10 @@ that are geometrically matched to the HLT objects, to ensure the efficiencies of
 \end{table}
 
 
-The $A \times \epsilon$ for all resonances mass points are shown 
+The $A \times \epsilon$ for all resonance mass points are shown 
 in Figure~\ref{fig:selection:acceptances}. 
 The decrease in $A \times \epsilon$ 
-for $m_X$ greater than about 1000~GeV is due to the Lorentz boost 
+for $m_X$ greater than about 1000~GeV is due to the boost 
 of the Higgs bosons causing their decay products to become highly collimated more often,
 and therefore harder to identify.
 
@@ -345,10 +345,11 @@ The `Fake' background in the table represents the background due to a jet faking
 a \tauhad, which is estimated by a
 data-driven background described in details in section~\ref{sec:DiHiggs:lephadfake}.
 \begin{table}
-  \centering
-  \scriptsize
-  \begin{tabular}{|c|c|c|c|c|}
-    \hline
+\centering
+\scriptsize
+\resizebox{0.72\textwidth}{!}{
+\begin{tabular}{|c|c|c|c|c|}
+\hline
 \hline
 SampleName & Entries & Integral & Error & Error/Integ.\\
 \hline
@@ -395,23 +396,26 @@ DY              &	68                 &	15   &	4	  &  26.7\% \\
 \hline
 total bkg  & 3054267 & 102440 & &\\
 data         & 98456     & 98456	& &\\
- \hline
- \hline
-    \end{tabular}
-    \caption{Pre-fit event yields in the di-Higgs $bb\lephad$ SLT signal region for the data, 
-    background and signal.  Here, 
-    ZttHF (ZHF) represents the processes as $Z\rightarrow\tau\tau$
-    ($Z\rightarrow ee/\mu\mu$)  
-    in association with a pair of heavy flavour jets (\bjets\ or \cjets), 
-    while ZttLF and ZLF 
-    represents the same decay of $Z$ in association with light flavour jets.
-    Similarly for Wtt and W, DYtt and DY.}
-    \label{tab:LepHadSLTYields}
+\hline
+\hline
+\end{tabular}
+}
+\caption{Pre-fit event yields in the di-Higgs $bb\lephad$ SLT signal region for the data, 
+background and signal.  Here, 
+ZttHF (ZHF) represents the processes as $Z\rightarrow\tau\tau$
+($Z\rightarrow ee/\mu\mu$)  
+in association with a pair of heavy flavour jets (\bjets\ or \cjets), 
+while ZttLF and ZLF 
+represents the same decay of $Z$ in association with light flavour jets.
+Similarly for Wtt and W, DYtt and DY.}
+\label{tab:LepHadSLTYields}
 \end{table}
+
 \begin{table}
-  \centering
-  \scriptsize
-  \begin{tabular}{|c|c|c|c|c|}
+\centering
+\scriptsize
+\resizebox{0.72\textwidth}{!}{
+\begin{tabular}{|c|c|c|c|c|}
 
 \hline
 \hline
@@ -461,20 +465,21 @@ data		& 	6351      &    6351 	&  &   \\
 \hline
 \hline
 
-  \end{tabular}
-  \caption{Pre-fit event yields in the di-Higgs $bb\lephad$ 
-  LTT signal region for signal, data and background. Here, 
-  ZttHF (ZHF) represents the processes as $Z\rightarrow\tau\tau$
-  ($Z\rightarrow ee/\mu\mu$)  
-  in association with a pair of heavy flavour jets (\bjets\ or \cjets), 
-  while ZttLF and ZLF 
-  represents the same decay of $Z$ in association with light flavour jets.
-  Similarly for Wtt and W, DYtt and DY.}
-  \label{tab:LepHadLTTYields}
+\end{tabular}
+}
+\caption{Pre-fit event yields in the di-Higgs $bb\lephad$ 
+LTT signal region for signal, data and background. Here, 
+ZttHF (ZHF) represents the processes as $Z\rightarrow\tau\tau$
+($Z\rightarrow ee/\mu\mu$)  
+in association with a pair of heavy flavour jets (\bjets\ or \cjets), 
+while ZttLF and ZLF 
+represents the same decay of $Z$ in association with light flavour jets.
+Similarly for Wtt and W, DYtt and DY.}
+\label{tab:LepHadLTTYields}
 \end{table}
 
 
-\subsection{Anti--\tauhad\ selection}
+\subsection{Anti--\texorpdfstring{\tauhad}\ selection}
 
 
 \label{sec:antitau-selection}
@@ -511,12 +516,12 @@ are calculated in the same way as for signal events,
 but with the anti-\tauhad\ taking the place of the loose \tauhad\ candidate.
 
 
-\subsection{\ZHF\ control region event selection}
+\subsection{\texorpdfstring{\ZHF}\ control region event selection}
 \label{sec:selection:zcr}
 
 
-The cross-section of the $Z$ boson production in association 
-with heavy flavour jets, i.e.\ $b$-, $c$-jets background (\ZHF\ background) 
+The $Z$ boson production in association 
+with heavy flavour jets, i.e.\ $b$-, $c$-jets (\ZHF\ background) 
 is known to be 
 not well modelled by the \textsc{Sherpa} generator. 
 Therefore, a dedicated control region event selection is defined
@@ -534,15 +539,15 @@ The event selection is described as follows:
 
     \item Events are selected using the single-lepton and di-lepton triggers, 
     as specified in Ref.~\cite{HDBS-2018-33}.
-    \item Exactly two leptons ($e$/$mu$) with opposite-sign charges 
+    \item Exactly two leptons ($e$/$\mu$) with opposite-sign charges 
     and \pt\ $>$9~GeV are required, these leptons are also required
     to be compatible with the primary vertex. In addtion, they are required
     to pass the medium and loose isolation requirements.
     \item Exactly two $b$-tagged jets (tagged with DL1r 77\% working point).
     \item The reconstructed mass of the two leptons are required to be between 75~GeV
     and 110~GeV (which is around $Z$ mass peak).
-    \item $m_{bb}<$40~GeV or $m_{bb}>$210~GeV (
-    to veto Higgs mass peak and to ensure orthogonality to $bb\ell\ell$ signal region).
+    \item $m_{bb}<$40~GeV or $m_{bb}>$210~GeV 
+    (to veto Higgs mass peak and to ensure orthogonality to $bb\ell\ell$ signal region).
 
 \end{itemize}
 

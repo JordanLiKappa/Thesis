@@ -3,9 +3,7 @@
 \large
 A jet can be defined as a collimated spray 
 of stable particles arising from the fragmentation
-and hadronisation (as described in section~
- TODO: add link to theory section) 
-of a parton (quark or gluon) after a collision.
+and hadronisation of a parton (quark or gluon) after a collision.
 Jets provide a link between the observed colourless 
 stable particles and the underlying physics at the partonic
 level. A basic illustration of a collision of two protons,
@@ -88,9 +86,9 @@ The anti-$k_t$ algorithm
 sequentially combines PFlow clusters into larger clusters based on the 
 momentum-weighted distance between clusters. 
 For two clusters $i$ and $j$ the algorithm defines:
-\[  d_{i,j} = min(p_{T,i}^{2p},p_{T,j}^{2p}) \frac{\Delta R_{i,j}^2}{R^2} \]
+\[  d_{i,j} = min(p_{T,i}^{2p},p_{T,j}^{2p}) \frac{\Delta R_{i,j}^2}{R^2}   \addtag \]
 and 
-\[ d_{i,beam} = p_{T,i}^{2p} \]
+\[ d_{i,beam} = p_{T,i}^{2p}   \addtag \]
 where $p$ is a exponent parameter and the value of -1 is used
 for the anti-$k_t$ algorithm (as the name `anti' suggests),
 $\Delta R^2{i,j} = (\eta_i - \eta_j)^2 + (\phi_i - \phi_j)^2 $, 
@@ -114,10 +112,6 @@ candidate.
 % very close to each other (as a result of the $\frac{\Delta R_{i,j}^2}{R^2}$ term)
 % or cluster having large \pt\ with clusters having smaller \pt\ (as a result of
 % the $min(p_{T,i}^{2p},p_{T,j}^{2p})$ term). 
-A validation study was performed by the author to compare the 
-perfomance of EMTopo jets and PFlow jets in the content of 
-the analysis presented in this thesis, as discussed in Sec~
-TODO: add reference after selection is defined.
 \subsection{Calibration}
 The calibration of jets starts prior to the reconstruction.
 Since the energy of the calorimeter cells is measured at 
@@ -134,13 +128,13 @@ combination of MC-based methods and in-situ techniques \cite{PERF-2016-04}.
 MC-based calibrations correct the reconstructed jet four momentum 
 to that found from the simulated stable particles 
 within the jet, and in-situ techniques are used to measure 
-the difference in jet response between data and
-MC simulation, with residual corrections applied to jets in data only.
+the difference in jet response between data and simulation, 
+with residual corrections applied to jets in data only.
 The calibrations account for features of the
 detector, the jet reconstruction algorithm, jet fragmentation,
 the busy data-taking environment resulting from multiple $pp$ 
 interactions, and the difference in jet response between
-data and MC simulation.
+data and simulation.
 
 
 In order to calibrate the jet energy resolution (JER),

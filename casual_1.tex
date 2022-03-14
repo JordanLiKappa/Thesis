@@ -1,0 +1,288 @@
+\documentclass[twoside,11pt]{report}
+\usepackage{tabularx} % extra features for tabular environment
+\usepackage{amsmath} % improve math presentation
+\usepackage{graphicx, subcaption} % takes care of graphic including machinery
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\setlength{\headheight}{14.0pt}
+\usepackage[top=2.5cm, bottom=2.5cm, left=4.0cm, right=2.5cm]{geometry}
+\usepackage{mathtools}
+% \usepackage[margin=1in,letterpaper]{geometry} % decreases margins
+\usepackage{xspace}
+\usepackage{siunitx}
+\usepackage{feynman}
+\usepackage{pdflscape}
+\usepackage{pifont}
+\usepackage{booktabs}
+\usepackage{ANA-FTAG-2020-08-PAPER-defs}
+\usepackage[style=numeric-comp, sorting=none]{biblatex}
+\addbibresource{ANA-FTAG-2020-08-PAPER.bib}
+\addbibresource{Detector/Detector.bib}
+\addbibresource{Reconstruction/Reconstruction.bib}
+\addbibresource{DiHiggs/DiHiggs.bib}
+\addbibresource{bib/ATLAS.bib}
+\addbibresource{bib/CMS.bib}
+\addbibresource{bib/DiHiggs_paper.bib}
+\addbibresource{Theory/theory.bib}
+\addbibresource{bib/ATLAS-useful.bib}
+\addbibresource{bib/PubNotes.bib}
+\addbibresource{bib/ConfNotes.bib}
+\addbibresource{bib/ATLAS-SUSY.bib}
+\addbibresource{bib/Int_note.bib}
+\usepackage[final]{hyperref} % adds hyper links inside the generated pdf file
+
+
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{naturalnames}{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext,newtxmath}
+\usepackage{setspace}
+\usepackage{float}
+\usepackage{makeidx}
+\usepackage{titlesec}
+\usepackage{multirow}
+\usepackage{titling}
+\newcommand\bjetineq{\mathop{\mbox{$b$ $\rm{jet}$}}}
+\newcommand\bjetunder{\mathop{\footnotesize{\mbox{$b$ $\rm{jet}$}}}\normalsize}
+\newcommand\cjetineq{\mathop{\mbox{$c$ $\rm{jet}$}}}
+\newcommand\cjetunder{\mathop{\footnotesize{\mbox{$c$ $\rm{jet}$}}}\normalsize}
+\setcounter{secnumdepth}{4}
+\newcommand{\specialcell}[2][c]{%
+ \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+\newcommand{\changefont}{\fontsize{9}{11}\selectfont}
+\newcommand{\changefontbig}{\fontsize{12}{14}\selectfont}
+\titleclass{\subsubsubsection}{straight}[\subsection]
+
+\newcounter{subsubsubsection}[subsubsection]
+\renewcommand\thesubsubsubsection{\thesubsubsection.\arabic{subsubsubsection}}
+\renewcommand\theparagraph{\thesubsubsubsection.\arabic{paragraph}} % optional; useful if paragraphs are to be numbered
+
+\titleformat{\subsubsubsection}
+  {\normalfont\normalsize\bfseries}{\thesubsubsubsection}{1em}{}
+\titlespacing*{\subsubsubsection}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\makeatletter
+\renewcommand\paragraph{\@startsection{paragraph}{5}{\z@}%
+  {3.25ex \@plus1ex \@minus.2ex}%
+  {-1em}%
+  {\normalfont\normalsize\bfseries}}
+\renewcommand\subparagraph{\@startsection{subparagraph}{6}{\parindent}%
+  {3.25ex \@plus1ex \@minus .2ex}%
+  {-1em}%
+  {\normalfont\normalsize\bfseries}}
+\def\toclevel@subsubsubsection{4}
+\def\toclevel@paragraph{5}
+\def\toclevel@paragraph{6}
+\def\l@subsubsubsection{\@dottedtocline{4}{7em}{4em}}
+\def\l@paragraph{\@dottedtocline{5}{10em}{5em}}
+\def\l@subparagraph{\@dottedtocline{6}{14em}{6em}}
+\makeatother
+
+
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+
+\restylefloat*{figure}
+\hypersetup{
+	colorlinks=true, % false: boxed links; true: colored links
+	linkcolor=blue, % color of internal links
+	citecolor=blue, % color of links to bibliography
+	filecolor=magenta, % color of file links
+	urlcolor=blue 
+}
+
+
+\begin{document}
+
+\section{bbtautau paper}
+
+The discovery of a Higgs boson ($H$) with a mass of about 125~GeV~\cite{HIGG-2012-27,CMS-HIG-12-028} 
+has led to a comprehensive programme of measurements and searches by the ATLAS~\cite{PERF-2007-01} 
+and CMS~\cite{CMS-TDR-08-001} collaborations at the Large Hadron Collider (LHC)~\cite{Evans:2008zzb} 
+using proton--proton ($pp$) collision data. To date, all of the measured properties of the Higgs boson are found 
+to be consistent with their Standard Model (SM) 
+predictions~\cite{HIGG-2014-14,CMS-HIG-19-004,HIGG-2013-17-witherratum,HIGG-2019-01,HIGG-2017-06,CMS-HIG-18-002,HIGG-2018-57,CMS-HIG-17-031}, 
+and no unexpected particles or Higgs boson decay modes have been observed. The SM predicts 
+non-resonant $HH$ production, with approximately 90\% of the total cross-section being due 
+to the gluon--gluon fusion (ggF) process. The leading-order (LO) contributions to the ggF $HH$ production are 
+the `triangle diagram', which occurs via the Higgs boson self-coupling, and the heavy quark `box diagram', 
+which occurs via two fermion--fermion--Higgs vertices, as shown in Figure~\ref{fig:intro:triangleAndBox}(a) and 
+Figure~\ref{fig:intro:triangleAndBox}(b), respectively. 
+These diagrams interfere destructively, leading to a small SM ggF $HH$ cross-section, 
+which is predicted to be $31.1^{+2.1}_{-7.2}$~fb at next-to-next-to-leading (NNLO) order 
+in $\alpha_s$ and including an approximation of finite top-quark-mass effects, 
+for $m_H=125$~GeV and 
+$\sqrt{s}=13$~\TeV~\cite{Dawson:1998py,Borowka:2016ehy,Baglio:2018lrj,deFlorian:2013jea,Shao:2013bz,deFlorian:2015moa,Grazzini:2018bsd,Baglio:2020wgt}. The vector boson fusion (VBF) process provides a sub-leading source of $HH$ production in the SM, and has a cross-section of $1.73\pm 0.04$~fb, for $m_H=125$~GeV and $\sqrt{s}=13$~TeV~\cite{Baglio:2012np,Frederix:2014hta,Ling:2014sne,Dreyer:2018rfu,Dreyer:2018qbw}. Due to this small cross-section, an observation of SM non-resonant $HH$ production is not expected with the currently available LHC data set, though significant non-resonant and resonant enhancements to the $HH$ cross-section are predicted in many beyond-the-SM (BSM) theories.% https://twiki.cern.ch/twiki/bin/view/LHCPhysics/LHCHWGHH?redirectedfrom=LHCPhysics.LHCHXSWGHH#Latest_recommendations_for_gluon. $31.05^{+2.2\%}_{-5.0\%}\text{(scale)}\pm 3.0\%\text{(PDF}+\alpha_s\text{)}\pm 2.1\%\text{(}\alpha_s\text{)}\pm 2.6\%\text{(}m_\text{top}~\text{approx)}^{+4\%}_{-18\%}\text{(}m_\text{top}\text{)}$~fb. $1.726^{+0.03\%}_{-0.04\%}\text{(scale)}\pm 2.1\%\text{(PDF+}\alpha_s\text{)}$~fb. $1.726^{+0.03\%}_{-0.04\%}\text{(scale)}\pm 2.1\%\text{(PDF+}\alpha_s\text{)}$~fb
+Due to the diagram shown in Figure~\ref{fig:intro:triangleAndBox}(a) and its interference 
+with the diagram shown in Figure~\ref{fig:intro:triangleAndBox}(b), non-resonant $HH$ production is 
+a sensitive probe of the Higgs boson trilinear self-coupling and the shape of the Higgs field potential, 
+which have important implications for the stability of the electroweak vacuum~\cite{Branchina:2008pc,Buttazzo:2013uya}, 
+baryogenesis~\cite{Reichert:2017puo}, and inflation~\cite{Bezrukov:2007ep,Masina:2011aa}. 
+Modifications to the non-resonant $HH$ cross-section occur in BSM scenarios with new, 
+light, coloured scalars~\cite{Kribs:2012kz}, composite Higgs models~\cite{Grober:2010yv}, 
+theoretical scenarios with couplings between pairs of top-quarks and pairs of Higgs bosons~\cite{Contino:2012xk}, 
+as well as models with a modified coupling of the Higgs boson to the top-quark. 
+Previous searches for non-resonant $HH$ production by ATLAS and CMS have been performed in 
+the $b\bar b\tau^+\tau^-$~\cite{HIGG-2016-16-witherratum,CMS-HIG-17-002}, 
+$b\bar b\gamma\gamma$~\cite{HIGG-2016-15,Sirunyan:2020xok}, $b\bar bb\bar b$~\cite{EXOT-2016-31,CMS-HIG-17-017}, 
+$b\bar b\ell^+\nu\ell^-\nu$~\cite{HDBS-2018-33,CMS-HIG-17-006} decay channels, 
+by ATLAS in the $b\bar bqq\ell\nu$~\cite{HIGG-2016-27}, $WW^*\gamma\gamma$~\cite{HIGG-2016-20} 
+and $WW^*WW^*$~\cite{HIGG-2016-24} decay channels, and by CMS in the $b\bar bWW^*/b\bar bZZ^*$~\cite{CMS-HIG-17-006} 
+decay channel. In the $b\bar b\tau^+\tau^-$ decay channel, ATLAS and CMS set observed (expected) upper 
+limits on the non-resonant $HH$ production cross-section of 12.7 (14.8)~\cite{HIGG-2016-16-witherratum} 
+and 30 (25)~\cite{CMS-HIG-17-002} times the SM expectation using 36.1~\ifb\ and 35.9~\ifb\ of 
+13~TeV $pp$ collision data, respectively. Using these data sets, ATLAS and CMS performed combinations of 
+several search channels improving these observed (expected) limits to 6.9 (10)~\cite{HDBS-2018-58} 
+and 22.2 (12.8)~\cite{CMS-HIG-17-030} times the SM expectation, respectively. 
+ATLAS and CMS recently published searches for $HH$ production in the $b\bar b\gamma\gamma$ 
+decay mode using their full Run-2 $pp$ collision data sets, which set observed (expected) 
+upper limits on the SM non-resonant $HH$ cross-section of 4.1 (5.5) and 5.2 (7.7) times the SM expectation, 
+respectively~\cite{ATLAS-CONF-2021-016,CMS:2020tkr}. CMS also recently published a search for $HH$ production 
+in the $b\bar bb\bar b$ decay mode using their full Run-2 $pp$ collision data set, 
+which set an observed (expected) upper limit on the SM non-resonant $HH$ cross-section of 3.6 (7.3) times 
+the SM expectation~\cite{CMS-PAS-HIG-20-005}.% in the $b\bar b\tau^+\tau^-$~\cite{HIGG-2016-16-witherratum,CMS-HIG-17-002}, $b\bar b\gamma\gamma$~\cite{HIGG-2016-15,CMS-HIG-17-008}, $b\bar bb\bar b$~\cite{Aaboud:2018knk,Sirunyan:2018tki}, $b\bar bVV^*$~\cite{HIGG-2016-27,CMS-HIG-17-006}, $WW^*\gamma\gamma$~\cite{HIGG-2016-20}, and $VV^*VV^*$~\cite{HIGG-2016-24} decay channels.
+Various BSM scenarios predict heavy resonances that can decay to pairs of Higgs bosons. 
+These BSM resonances include heavy Higgs bosons from extended Higgs sectors such as two Higgs doublet 
+models (2HDMs)~\cite{Branco:2011iw}, the minimal supersymmetric extension of the 
+SM~\cite{HABER198575,DIMOPOULOS1981150}, twin Higgs models~\cite{Chacko:2005vw}, 
+and composite Higgs models~\cite{Grober:2010yv,Mrazek:2011iu}. Heavy resonances that decay 
+to pairs of Higgs bosons also include spin-0 radions and spin-2 gravitons from the 
+Randall--Sundrum model~\cite{Randall:1999ee,Tang:2012pv,Cheung:2000rw}, 
+and stoponium states in supersymmetric models~\cite{Kumar:2014bca}. 
+Searches for resonant $HH$ production have been performed in many final states by ATLAS and CMS, 
+and no significant excesses have been 
+observed~\cite{HIGG-2016-16-witherratum,CMS-HIG-17-002,HIGG-2016-15,CMS-HIG-17-008,ATLAS-CONF-2021-035,HIGG-2016-27,CMS-HIG-17-006,HIGG-2016-20,HIGG-2016-24,HDBS-2018-58,CMS-HIG-17-030}.% EXOT-2016-31
+This paper describes a search for non-resonant and resonant $HH$ production 
+in the final state with two jets containing $b$-hadrons ($b$-jets) and two $\tau$-leptons. 
+A sizeable fraction of all possible final states predicted by the SM, 
+$\mathcal{B}(HH\to b\bar b\tau^+\tau^-)=7.3\%$~\cite{deFlorian:2016spz}, 
+and relatively low backgrounds make this one of the most sensitive $HH$ search signatures. 
+In the search for non-resonant $HH$ production, the signal is assumed to have SM-like kinematics, 
+and the search is optimised for maximum sensitivity to the 
+cross-section rather than the Higgs boson self-coupling. 
+Additionally, only the ggF and VBF non-resonant $HH$ production modes are considered, 
+because other production modes are not expected to contribute significant 
+additional sensitivity in this search. 
+A narrow-width CP-even scalar particle ($X$) with a mass between 251 and 
+1600~GeV is used as the benchmark model for the resonant signal. 
+Decay modes in which both $\tau$-leptons decay hadronically ($\tau_\text{had}$), 
+and in which one decays hadronically and the other leptonically ($\tau_\text{lep}$), 
+are both considered; these are referred to 
+as $\tau_\text{had}\tau_\text{had}$ and $\tau_\text{lep}\tau_\text{had}$, respectively. 
+The presence of $\tau_\text{had}$ are determined by their visible decay products ($\tau_\text{had-vis}$). 
+Events are categorised based on the type of trigger that accepted the event, 
+and are required to contain two oppositely charged $\tau_\text{had-vis}$ 
+and two $b$-tagged jets in the $\tau_\text{had}\tau_\text{had}$ final state, 
+or an electron or muon and an oppositely charged $\tau_\text{had-vis}$ and 
+two $b$-tagged jets in the $\tau_\text{lep}\tau_\text{had}$ final state. 
+Signal events also contain neutrinos from the decay of $\tau$-leptons and $b$-hadrons, 
+which manifest themselves as missing momentum transverse to the beamline ($\mathbf{p}_\text{T}^\text{miss}$). 
+Backgrounds in this search include top-quark pairs ($t\bar t$), single top-quarks, 
+$W$ and $Z$~bosons in association with jets, diboson processes ($WW$,$WZ$,$ZZ$), 
+single Higgs bosons, and multi-jet production. 
+In some background events, quark- or gluon-initiated jets are misidentified as $\tau_\text{had-vis}$. 
+The selected events are tested for the presence of the signal 
+by performing profile-likelihood fits to multivariate discriminant distributions. 
+The search is performed using the Run~2 $pp$ collision data set,
+delivered between 2015 and 2018 at a centre-of-mass energy $\sqrt{s}=13$~TeV by the LHC. 
+The data were collected by the ATLAS detector~\cite{PERF-2007-01} 
+and correspond to an integrated luminosity of 139~\ifb. 
+Compared to the previous ATLAS result~\cite{HIGG-2016-16-witherratum}, 
+in addition to the greater integrated luminosity,
+this search profits from improved $\tau_\text{had-vis}$ and $b$-jet 
+reconstruction and identification, more sophisticated multivariate techniques 
+used to target the resonant signal hypotheses, and new background estimation techniques.
+In particular, the combined reconstruction and identification 
+efficiencies for $\tau_\text{had-vis}$ and $b$-jets increased by 
+around 25--38\% and 10\%, respectively.% , and single LQ production is not considered as it is expected to have a lower cross-section than LQ pair production~\cite{} % . The $HH\to b\bar b\tau^+\tau^-$ decay mode profits from a large branching fraction of 7.4\%, and relatively low backgrounds. %  Vector LQs are not considered in this paper as they are less easily probed in a model independent way~\cite{Mandal:2019gff}. Neutrinos are produced in decays of $\tau$-leptons decays are reconstructed as missing momentum transverse to the beamline ($E_\text{T}^\text{miss}$). 
+%% Events are categorised based on which trigger accepted the event, and are required to contain two $b$-jets, as well as two oppositely charged hadronic $\tau$-leptons ($\tau_\text{had-vis}$) in the $\tau_\text{had}\tau_\text{had}$ final state, or an electron or muon and an oppositely charged $\tau_\text{had-vis}$ in the $\tau_\text{lep}\tau_\text{had}$ final state. Single $b$-jet categories are also used in the LQ search. The signal in all channels is extracted from backgrounds of $t\bar t$ and single top, QCD jets, $W$ boson, $Z$ boson, and single Higgs bosons using fits to neural network--based discriminants.% categorised in the $\tau_\text{had}\tau_\text{had}$ and $\tau_\text{lep}\tau_\text{had}$ final states, and
+
+
+
+
+
+\section{klambda scan}
+This note presents a combination of searches for Higgs boson pair production using 
+126--139\ifb of 
+proton-proton collision data recorded with the ATLAS detector at a center-of-mass energy of 
+$\sqrt{s}=\SI{13}{\tev}$ at the LHC. Three searches for pairs of Higgs bosons, 
+in the $b\bar{b}\gamma\gamma$, $b\bar{b}\tau^{+}\tau^{-}$, and $b\bar{b}b\bar{b}$ 
+final states, are included in this combination. 
+The non-resonant interpretation uses results from the $b\bar{b}\gamma\gamma$ and $b\bar{b}\tau^{+}\tau^{-}$ searches, while the resonant interpretation uses results from all three searches. No statistically significant excess above the Standard Model expectation has been found. 
+Upper limits are set on the production rate of non-resonant Higgs boson pairs, at the 95\% confidence level, assuming Standard Model kinematics. The observed (expected) combined upper limit is found to be 3.1 (3.1) times the Standard Model prediction.
+%Observed (expected) upper limits of \2.0 fb (\2.2 fb) are set on the non-resonant Higgs boson pair production cross-section, at the 95\% confidence level, assuming Standard Model kinematics. The observed (expected) combined upper limit on the di-Higgs signal strength was found to be 3.1 (3.1). 
+The value of the Higgs boson trilinear self-coupling modifier 
+$\kappa_{\lambda} \equiv \lambda_{HHH}/\lambda_{\mathrm{SM}}$ is excluded outside the observed (expected) range 
+$-1.0 \le \kappa_{\lambda} \le 6.6$ ($-1.2 \le \kappa_{\lambda} \le 7.2$) 
+at 95\% confidence level. Upper limits on the production cross-section of a heavy scalar resonance decaying 
+to two Standard Model Higgs bosons are set at 95\% confidence level between 
+1.1 and 595 fb (1.2 and 392 fb) in observation (expectation), 
+depending on the resonance mass, $m_X$, within the studied mass 
+range $\SI{251}{\gev}\le m_X \le\SI{3}{\tev}$.  
+
+
+Since the discovery of the Higgs boson ($H$) at the Large Hadron Collider (LHC) in 2012~\cite{HIGG-2012-27,CMS-HIG-12-028}, a priority of the ATLAS and CMS collaborations has been to better understand its properties and couplings. The Higgs boson self-coupling is directly related to the shape of the Higgs scalar field potential, which is important for understanding the mechanism of electroweak symmetry breaking, and serves as a precision test of the electroweak theory. Higgs boson pair (\HH) production provides a direct probe of the Higgs boson self-coupling, which has a direct effect on the size of the \HH production cross-section. 
+
+In the Standard Model (SM), the gluon--gluon fusion process (ggF) 
+accounts for more than 90\% of non-resonant \HH production. It proceeds mainly through two diagrams at leading order (LO)~\cite{Glover:183945}, known as the triangle diagram and the box diagram, which are shown in Figure~\ref{fig:feyn_sm_hh}. The former is the LO diagram which is sensitive to the Higgs boson trilinear self-coupling~$\lambda_{HHH}$. These diagrams interfere destructively, leading to a small SM \HH cross-section, which is three orders of magnitude smaller than single Higgs boson production.
+The SM \HH cross-section is predicted to be $\sigma_{\textrm{ggF}}^\textrm{SM}(HH) = 31.05^{+6\%}_{-23\%} (\textrm{scale} + m_{\textrm{top}}) \pm{3.0\%} (\textrm{PDF}+\alpha_{s})$~fb~\cite{Dawson_1998,Borowka:2016ehy,Baglio_2019,de_Florian_2013,Shao_2013,deflorian2015higgs,Grazzini_2018,Baglio_2021} at next-to-next-to-leading order (NNLO) in $\alpha_s$ and including an approximation of finite top-quark-mass effects, for the Higgs boson mass $m_H=125$~GeV and $\sqrt{s}=13$~\TeV. 
+The ``$\textrm{PDF}+\alpha_{s}$'' uncertainty accounts for the effects of the strong coupling constant and parton distribution functions, the ``scale'' uncertainty is due to the finite order of quantum chromodynamics (QCD) calculations, and the  ``$m_{\textrm{top}}$'' uncertainty is related to the top-quark mass scheme.
+
+The next leading \HH production mode is Vector Boson Fusion (VBF), contributing 5\% of the SM \HH production rate. The cross-section of the VBF \HH process is evaluated at next-to-next-to-next-to-leading order (N3LO) in QCD~\cite{Baglio_2013,Frederix_2014,Liu-Sheng:2014gxa,Dreyer:2018qbw,Dreyer:2018rfu}, with a value of $\sigma_{\mathrm{VBF}}^\textrm{SM}(HH) = 1.73^{+0.03\%}_{-0.04\%}\,\text{(scale)}\,\pm 2.1\%\,(\textrm{PDF}+\alpha_{s})$~fb, for $m_H=125$~GeV and $\sqrt{s}=13$~TeV. The tree-level VBF \HH diagrams are shown in Figure~\ref{fig:feyn_sm_vbf_hh}. Figure~\ref{fig:feyn_sm_vbf_hh}(a) involves the Higgs boson self-coupling, while the other two involve solely the Higgs boson's couplings to vector bosons.
+
+
+% Resonant \HH production or an enhancement of the non-resonant \HH production rate may be observable with the full Run-2 dataset, and would point to Beyond the Standard Model (BSM) physics. 
+The non-resonant \HH production rate is very sensitive to small anomalous couplings in Beyond the Standard Model (BSM) scenarios. For example, changing the sign of the Higgs boson trilinear self-coupling with respect to the Standard Model expectation would quadruple the \HH production rate~\cite{Baglio_2013}. It is estimated that the Higgs boson trilinear self-coupling can be measured to a precision of 50\% at the HL-LHC~\cite{Cepeda:2019klc} by combining results from both ATLAS and CMS. 
+
+Pairs of Higgs bosons can also be produced via the decay of a hypothetical heavy resonance, and many BSM theories predict the existence of such heavy particles. Models that predict additional scalars include: electroweak singlet models~\cite{Hill:1987ea, Robens:2015gla}, two-Higgs-doublet models~\cite{THDM}, and models inspired by the Minimal Supersymmetric Standard Model (MSSM) such as the hMSSM~\cite{ Djouadi:2005gj, Djouadi:2013vqa, Djouadi:2013uqa, Djouadi:2015jea}. The leading order Feynman diagram corresponding to the production of a heavy scalar particle $X$ decaying to a pair of Higgs bosons is shown in Figure~\ref{fig:feyn_resonance}. Only the ggF production mode is considered in this note.
+
+
+
+% \subsection{Scope of this preliminary \HH combination}
+% This note presents a combination of searches for non-resonant and resonant Higgs boson pair production using the full Run-2 LHC dataset, corresponding to an integrated luminosity of up to \SI{139}{\ifb} of data collected at $\sqrt{s}=13$~\TeV. It includes a combination of non-resonant \HH to \bbyy and \bbtautau searches and a combination of resonant \HH to \bbbb, \bbtt and \bbyy searches. A Higgs boson mass of \SI{125.0}{\gev} is assumed.
+
+% A previous ATLAS combination of searches for non-resonant and resonant \HH pair production was performed on a partial Run-2 dataset, using up to 36.1\,fb$^{-1}$ of data~\cite{HDBS-2018-58}. It included six channels: \bbbb~\cite{EXOT-2016-31}, \bbtautau~\cite{HIGG-2016-16}, \bbyy~\cite{HIGG-2016-15}, $W^+W^-W^+W^-$~\cite{HIGG-2016-24}, \bbWW~\cite{HIGG-2016-27} and $W^+W^-\gamma\gamma$~\cite{HIGG-2016-20}.
+% % It provided limits on the \HH production cross-section $\sigma_{HH}$ for the SM case and as a function of $\kl$, and on the production cross-section of a narrow-width scalar resonance $X$ decaying to \HH.
+% The combined observed (expected) limit for non-resonant \HH production at 95\% confidence level was 6.9 (10) times the predicted Standard Model cross-section. When varying the Higgs boson trilinear self-coupling from its Standard Model value, the allowed range for the self-coupling modifier $\kl \equiv \lambda_{HHH}/\lambdaSM$ was observed (expected) to be $-5.0 \le \kl \le 12.0$ ($-5.8 \le \kl \le 12.0$). Limits were also presented on the production cross-section of a narrow-width scalar resonance $X$, in the mass range 260--\SI{3000}{\gev}, decaying to \HH.
+% CMS also published a combination of \HH searches using the partial Run-2 dataset, up to 35.9\,fb$^{-1}$ of data~\cite{CMS-HIG-17-030}. The CMS combined observed (expected) limit for non-resonant \HH production at 95\% confidence level was 22.2 (12.8) times the predicted Standard Model cross-section, and the observed (expected) allowed range for the self-coupling modifier \kl was $-11.8 \le \kl \le 18.8$ ($-7.1 \le \kl \le 13.6$). Limits on resonant \HH production, in the mass range 250--\SI{3000}{\gev}, were also presented.
+\section{Higg EFT}
+This study presents limits on Higgs Effective Field Theory (HEFT) benchmark models 
+and couplings based on the searches for $HH$ production in the \bbyy and \bbtautau final states, 
+and their combination. The searches make use of $139$ $\textrm{fb}^{-1}$ of proton-proton collision 
+data recorded with the ATLAS detector at a centre-of-mass energy of $\sqrt{s}=13$ TeV at the LHC. 
+Upper limits on the $HH$ production cross-section are set on seven HEFT benchmark models at the $95$\% confidence level, 
+with observed (expected) limits ranging from $50.2$ ($45.5$) fb to $133.6$ ($133.5$) fb. 
+Exclusion limits are also set on two beyond the Standard Model (SM) coupling parameters, 
+$c_{gghh}$ and $c_{tthh}$, described in HEFT, excluding values outside the observed (expected) 
+ranges of [$-0.3, 0.4$] ([$-0.3, 0.3$]) and [$-0.2, 0.6$] ([$-0.2, 0.6$]), respectively, at the 95\% confidence level.
+
+The Higgs Boson $(H)$, a cornerstone of the SM, was discovered by the ATLAS and CMS collaborations in 2012 \cite{HIGG-2012-27,CMS-HIG-12-028}. 
+Numerous measurements of its spin and couplings have been 
+performed \cite{HIGG-2013-17-witherratum,CMS-HIG-14-018,ATLAS-CONF-2020-027} since its discovery, 
+showing consistency with SM predictions. The Higgs boson self-coupling, $\lambda_{HHH}$, provides 
+direct access to the shape of the Higgs potential, and its measurement is a primary physics goal of 
+the LHC and its forthcoming upgrade, the High Luminosity LHC. Modifications to the Higgs boson self-coupling can 
+occur through beyond the SM (BSM) physics, which can lead to an enhancement of the rate of Higgs boson 
+pair-production and modifications of the kinematics of the process. 
+%BSM enhancements can occur through either resonant processes ($X\rightarrow HH$) or through non-resonant processes, with this document focusing on the latter. 
+\newline
+
+% Introduce HEFT
+
+%Effective Field Theories (EFT) are low energy approximations to more complicated underlying theories which describe physical phenomena occurring at a much higher energy scale and
+
+Effective Field Theories (EFT) provide a model-independent approach to parametrise the effects of 
+candidate BSM theories that reduce to the SM at low energies. Two different EFT formalisms are 
+widely described in the literature~\cite{MICCO2020100045, Grzadkowski:2010es, Cohen:2020xca}: 
+the SM EFT and the Higgs EFT (HEFT). This note focuses on the HEFT framework, where the 
+Lagrangian is organised following the guidance of chiral perturbation theory and 
+where the low-energy dynamics of electroweak symmetry breaking are described using a nonlinear 
+realization of $SU(2)\times U(1)$. In this formalism, anomalous Higgs boson couplings are 
+expected to be the dominant effects on new physics in the electroweak sector.
+Deviations from SM predictions can potentially be observed via $HH$ production using the HEFT framework.
+\newline
+
+
+
+\end{document}

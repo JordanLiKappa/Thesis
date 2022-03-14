@@ -1,0 +1,65 @@
+%\usepackage[utf8]{inputenc}
+%\usepackage{tikz}
+%\usepackage[compat=1.1.0]{tikz-feynman}
+%\usepackage{subcaption}
+%\usepackage{geometry}
+
+\definecolor{hh_pink}{HTML}{f78fa8}
+\definecolor{hh_blue}{HTML}{1e9ee6}
+\definecolor{hh_red}{HTML}{ff6900}
+\definecolor{hh_med_turq}{HTML}{36B1BF}
+\definecolor{hh_lgt_turq}{HTML}{4AD9D9}
+\definecolor{hh_whte}{HTML}{E9F1DF}
+\definecolor{hh_yllw}{HTML}{FDC536}
+%\definecolor{hh_gren}{HTML}{125125}
+\definecolor{hh_gren}{HTML}{00CC00}
+
+
+%\usepackage[EULERGREEK]{sansmath}
+%\usepackage{floatrow}
+%\DeclareFloatFont{henry}{\sffamily\sansmath}
+%\floatsetup[figure]{font=henry}
+
+\begin{figure}[tbh!]
+    \centering                      
+    \begin{subfigure}[t]{0.5\textwidth}
+        \centering
+        \begin{tikzpicture}
+            \begin{feynman}
+                \vertex(g1) at (-3.3, -1.25) {\(\mathbf{g}\)};
+                \vertex(g2) at (-3.3, 1.25) {\(\mathbf{g}\)};
+                
+                \vertex (t1) at (-1.25, -1.25);
+                \vertex (t2) at (-1.25, 1.25);
+                \vertex (t3) at (0.92, 0);
+                
+                \vertex (h1) at (2.5, 0);
+                \vertex (h2) at (3.7, 1.25) {\(\mathbf{H}\)};
+                \vertex (h3) at (3.7, -1.25) {\(\textbf{H}\)};
+
+                \diagram*{
+                    (g1) -- [hh_pink,gluon, very thick] (t1),
+                    (g2) -- [hh_pink,gluon, very thick] (t2),
+                    
+                    (t1) -- [hh_red,fermion, very thick] (t2) -- [hh_red,fermion,very thick] (t3) -- [hh_red,fermion,very thick] (t1),
+                    
+                    (t3) -- [gray,scalar,very thick, edge label'=\(\textbf{X}\)] (h1) -- [hh_blue,scalar,very thick] {(h2), (h3)}
+                    
+                };
+                
+            \end{feynman}
+
+        % \filldraw [hh_med_turq] (1.0, 0) circle (3pt);
+        % \node[hh_med_turq, scale=1.25] at (1.0, 0.6) {\(c_{tth}\)};
+        % \filldraw [hh_pink] (2.5, 0) circle (3pt);
+        % \node[hh_pink, scale=1.25] at (2.5, 0.6) {\(c_{hhh}\)};
+        
+        \end{tikzpicture}
+        %\caption{Triangle diagram with $t\bar{t}H$ and $HHH$ couplings}
+        \label{fig:SM_diagrams_test:triangle}
+        \end{subfigure}%
+
+    \caption[Feynman diagrams, gluon-gluon fusion di-Higgs production]{SM leading-order Feynman diagrams for Higgs boson pair 
+    production through resonance of a generic spin-0 scalar particle.}% In SM, $c_{tth}=c_{hhh}=1$ and $c_{tthh}=c_{ghh}=c_{gghh}=0$.}
+    \label{fig:BSM:resonant}
+\end{figure}

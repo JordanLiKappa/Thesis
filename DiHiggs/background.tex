@@ -2,10 +2,10 @@
 \label{sec:DiHiggs:backgroundEstimation}
 This section describes the background estimation methods used in the di-Higgs analysis. 
 The simulated event samples summarised in Section~\ref{sec:DiHiggs:simulation}
-are used to model all background processes, except for processes with fake-\tauhad\ 
-which are estimated using data-driven techniques, referred to fake-\tauhad\ background,
-are discussed below 
-(in particular, the lepton faking \tauhad\ background is modelled by simulation, and 
+are used to model all background processes, except for processes with a fake-\tauhad,
+referred to fake-\tauhad\ background,
+which are estimated using data-driven techniques as discussed below 
+(in particular, the lepton faking \tauhad\ background is modelled by simulation given 
 the contribution is very small). 
 The \ttbar\ with true-\tauhad\ and Z+HF templates are taken from the MC prediction
 but their normalisations are derived from data 
@@ -15,26 +15,27 @@ Events with electrons or muons that are misidentified as \tauhad\ objects,
 dominantly coming from the \ttbar\ production, 
 represent a minor background in the analysis and they are estimated from simulation. 
 
-\subsection{Fake-\tauhad\ backgrounds estimation}
+\subsection{Fake-\texorpdfstring{\tauhad}\ backgrounds estimation}
 \label{sec:DiHiggs:lephadfake}
 
 
 The fake-\tauhad\ can have different origins. 
 In Figure~\ref{fig:fakes:feynman}, two Feynman diagrams are shown
 for the two dominant processes contributing to the fake-\tauhad\ background,
-which are the \ttbar\ and multi-jet (QCD) processes. 
+which are the \ttbar\ and multi-jet (referred to as QCD) processes. 
+
 In the \ttbar\ events, the fake-\tauhad\ typically originates from quark-initiated jets from 
 top-quark decay; in multi-jet events jets initiated from both quarks and gluons can be
 misidentified as \tauhad. 
-In the following text, the fake background initiated by the \ttbar\ (multi-jet) events is referred to as
-\ttbar\ (QCD) fakes.
+In the following text, the fake background initiated by the 
+\ttbar\ (multi-jet) events is referred to as
+\ttbar\ (multi-jet) fakes.
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=.33\textwidth]{DiHiggs/plots/feynman_ttbarfakes.png} \hspace{2cm}
-\includegraphics[width=.33\textwidth]{DiHiggs/plots/feynman_QCDfakes.png}
+\includegraphics[width=.84\textwidth]{DiHiggs/plots/feynman_fakes.png} 
 \caption{
-Feynman diagrams on the left (right) for the \ttbar\ (multi-jet) with quark (gluon) circled in
-red (blue) misidentified as a \tauhad. 
+Feynman diagrams on the left (right) for the multi-jet (\ttbar) with gluon (quark) circled in
+blue (red) misidentified as a \tauhad. 
 }
 \label{fig:fakes:feynman}
 \end{figure} 
@@ -42,11 +43,11 @@ red (blue) misidentified as a \tauhad.
 \subsubsection{Fake factor method}
 The fake-\tauhad\ background events
 are estimated using a data-driven method, the `fake factor' (FF) method, 
-due to imperfect MC modelling of these processes.
-In short, the FF is the ratio of 
+due to imperfect simulation of these processes.
+In short, the fake factor is the ratio of 
 the number of events with fake-\tauhad\ in one region to another region.
 In this analysis, 
-the numerator of the FF is the number of fake-\tauhad\ events 
+the numerator of the fake factor is the number of fake-\tauhad\ events 
 passing the nominal signal region Tau-ID selection 
 (referred to as ID selection in the following), 
 and the denominator is the number of fake-\tauhad\ events passing the
@@ -56,7 +57,7 @@ The fake factors are calculated in different dedicated background enriched regio
 and then they are combined and used to normalise the fake-\tauhad\ events from the 
 anti-\tauhad\ selection to the signal region selection. 
 
-In formula form, the FF is given as:
+The fake factor is defined as:
 \begin{equation}
 \mathrm{FF} =  \frac{N(\text{ID\ selection})}{N(\text{anti-ID\ selection}),} 
 \end{equation} 
@@ -68,16 +69,16 @@ passing the ID (anti-ID) selection.
 Due to the different origins of the fake-\tauhad, the FFs are
 calculated separately for the \ttbar\ and multi-jet, 
 and for 1 and 3-prong \tauhad\ candidates.
-The FF is parameterised in bins of \pt\ of the \tauhad, while the 
+The fake factor is parameterised in bins of \pt\ of the \tauhad, while the 
 dependence on $\eta$ is also checked but no obvious trend is observed.
-For each process the $FF$ are calculated in 
+For each process the fake factors are calculated in 
 a dedicated background enriched region (referred to as FF-CR,
 not to be confused with the \ZHF\ CR used for likelihood fit). 
 The FF-CRs for each process are defined as follows:
 \begin{itemize}
 \item \ttbar\ FF-CR: same selection as the signal region selection 
 but with \mbb\ cut reversed: \mbb\ > 150 GeV.
-\item Multi-jet (QCD) FF-CR: same selection as the signal region selection but with 
+\item Multi-jet FF-CR: same selection as the signal region selection but with 
 lepton isolation requirements reversed: `tight' electrons and `medium' muons 
 are required to fail their respective `loose' isolation working points.
 \end{itemize}
@@ -87,19 +88,19 @@ are then used to provide a combined fake factor,
 which is then applied to the fake-\tauhad\ events 
 from the anti-ID selection
 to estimate the fake-\tauhad\ events from the ID selection.
-The FFs are derived separately for the SLT and LTT channels and
+The fake factors are derived separately for the SLT and LTT channels and
 so is the fake background estimation in the SR.
 The combined fake factor is calculated as:
 \begin{equation}
-FF(\mathrm{comb}) = FF(\mathrm{QCD}) \times \mathrm{r}_{\mathrm{QCD}} + FF(\ttbar) \times (1 - \mathrm{r}_{\mathrm{QCD}}),
+	\mathrm{FF}(\mathrm{comb}) = \mathrm{FF}(\mathrm{multi-jet}) \times \mathrm{r}_{\mathrm{QCD}} + \mathrm{FF}(\ttbar) \times (1 - \mathrm{r}_{\mathrm{QCD}}),
 \end{equation} 
-where the $FF(\mathrm{QCD})$ ($FF(\ttbar)$) is the FF calculated in the QCD (\ttbar) FF-CR.
+where the $\mathrm{FF}(\mathrm{multi-jet})$ ($\mathrm{FF}(\ttbar)$) is the FF calculated in the multi-jet (\ttbar) FF-CR.
 The $\mathrm{r}_{\mathrm{QCD}}$ is
-defined as the fraction of QCD fakes
+defined as the fraction of multi-jet fakes
 in the total number of fake-\tauhad\ background.
 It is measured as a function of the \tauhad\ \pT, splitted 
-into 1-prong and 3-prong, and into the type of light lepton ($e$ or $mu$)
-since the QCD contents are different for them. 
+into 1-prong and 3-prong, and into the type of light lepton ($e$ or $\mu$)
+since the electron is more easily indentified as a jet than the muon.
 The $\mathrm{r}_{\mathrm{QCD}}$ is measured for events passing the 
 anti-ID selection as:
 \begin{equation}
@@ -123,24 +124,24 @@ where the fake factors are measured and applied can be seen in Figure~\ref{fig:C
 \centering
 \includegraphics[width=.9\textwidth]{DiHiggs/plots/FF regions.png}
 \caption{Graphical representation of the Fake Factor Method. 
-The FFs are calculated independently for the \ttbar\ FF-CR and the multi-jet FF-CR, and 
-the combined FF is calculated using these FFs and the $\mathrm{r}_{\mathrm{QCD}}$. 
+The fake factors are calculated independently for the \ttbar\ FF-CR and the multi-jet FF-CR, and 
+the combined fake factor is calculated using these fake factors and the $\mathrm{r}_{\mathrm{QCD}}$. 
 The direction of the arrow indicates the direction 
 of extrapolation, 
-that the FF is applied on the bottom regions to extrapolate to the top regions.}
+that the fake factor is applied on the bottom regions to extrapolate to the top regions.}
 \label{fig:CombFFMethod}
 \end{figure}
 
 
 
-\subsubsection{\ttbar\ background reweighting}
+\subsubsection{\texorpdfstring{\ttbar}{ttbar}\ background reweighting}
 \label{sec:ttbar-reweighting}
 The determination of the combined fake factor 
 is sensitive to the modelling of simulated $t\bar{t}$ events with true-\tauhad\
 given that this is the dominant background that is subtracted from data in the derivation of
-the FFs and $\mathrm{r}_\text{QCD}$.
+the fake factors and $\mathrm{r}_\text{QCD}$.
 The \ttbar\ modelling also affects the fake background estimation in the SR,
-since the FF is applied on the anti-ID events where true-\tauhad\ \ttbar\ 
+since the fake factor is applied on the anti-ID events where true-\tauhad\ \ttbar\ 
 background is subtracted from.
 % Additionally, the derivation of $\mathrm{r}_\text{QCD}$ is sensitive to the 
 % modelling of simulated $t\bar{t}$ events with fake-\tauhad.
@@ -188,7 +189,7 @@ the reweighting, and it is much mitigated after the
 reweighting process. At this stage, data and MC are 
 not expected to agree well due to the \ttbar\ fake is known to
 be poorly modelled by the MC, which is also the main reason 
-for using the data-driven FF method. 
+for using the data-driven fake factor method. 
 Nevertheless, a large number of \ttbar\ fakes is observed, suggesting
 the high purity of \ttbar\ fakes in this region. 
 With true \tauhad\ contributions subtracted from the data 
@@ -201,10 +202,10 @@ events in this region are used in \ttbar\ FF-CR fake factor calculation
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=.45\textwidth]{DiHiggs/plots/FF_CRs/ttbarCR_SLT/HNone/BDTVarsHighMbb/2/C_2tag2pjet_0ptv_TauPt1P.png}
-\includegraphics[width=.45\textwidth]{DiHiggs/plots/FF_CRs/ttbarCR_LTT/HNone/BDTVarsHighMbb/2/C_2tag2pjet_0ptv_TauPt1P.png}\\
-\includegraphics[width=.45\textwidth]{DiHiggs/plots/FF_CRs/ttbarCR_SLT_weighted/HNone/BDTVarsHighMbb/2/C_2tag2pjet_0ptv_TauPt1P.png}
-\includegraphics[width=.45\textwidth]{DiHiggs/plots/FF_CRs/ttbarCR_LTT_weighted/HNone/BDTVarsHighMbb/2/C_2tag2pjet_0ptv_TauPt1P.png}\\
+\includegraphics[width=.48\textwidth]{DiHiggs/plots/FF_CRs/ttbarCR_SLT/HNone/BDTVarsHighMbb/2/C_2tag2pjet_0ptv_TauPt1P.png}
+\includegraphics[width=.48\textwidth]{DiHiggs/plots/FF_CRs/ttbarCR_LTT/HNone/BDTVarsHighMbb/2/C_2tag2pjet_0ptv_TauPt1P.png}\\
+\includegraphics[width=.48\textwidth]{DiHiggs/plots/FF_CRs/ttbarCR_SLT_weighted/HNone/BDTVarsHighMbb/2/C_2tag2pjet_0ptv_TauPt1P.png}
+\includegraphics[width=.48\textwidth]{DiHiggs/plots/FF_CRs/ttbarCR_LTT_weighted/HNone/BDTVarsHighMbb/2/C_2tag2pjet_0ptv_TauPt1P.png}\\
 \caption{In the \ttbar\ FF-CR, the $\tauhad$ $p_T$ distributions are plotted 
 for the SLT (left) and LTT channel (right) 
 with \ttbar\ un-weighted (top) 
@@ -216,10 +217,10 @@ Only statistical uncertainty is included in the error bands.}
 \end{figure} 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=.45\textwidth]{DiHiggs/plots/FF_CRs/ttbarCR_SLT/HNone/BDTVarsHighMbb/2/C_2tag2pjet_0ptv_TauPt3P.png}
-\includegraphics[width=.45\textwidth]{DiHiggs/plots/FF_CRs/ttbarCR_LTT/HNone/BDTVarsHighMbb/2/C_2tag2pjet_0ptv_TauPt3P.png}\\
-\includegraphics[width=.45\textwidth]{DiHiggs/plots/FF_CRs/ttbarCR_SLT_weighted/HNone/BDTVarsHighMbb/2/C_2tag2pjet_0ptv_TauPt3P.png}
-\includegraphics[width=.45\textwidth]{DiHiggs/plots/FF_CRs/ttbarCR_LTT_weighted/HNone/BDTVarsHighMbb/2/C_2tag2pjet_0ptv_TauPt3P.png}\\
+\includegraphics[width=.48\textwidth]{DiHiggs/plots/FF_CRs/ttbarCR_SLT/HNone/BDTVarsHighMbb/2/C_2tag2pjet_0ptv_TauPt3P.png}
+\includegraphics[width=.48\textwidth]{DiHiggs/plots/FF_CRs/ttbarCR_LTT/HNone/BDTVarsHighMbb/2/C_2tag2pjet_0ptv_TauPt3P.png}\\
+\includegraphics[width=.48\textwidth]{DiHiggs/plots/FF_CRs/ttbarCR_SLT_weighted/HNone/BDTVarsHighMbb/2/C_2tag2pjet_0ptv_TauPt3P.png}
+\includegraphics[width=.48\textwidth]{DiHiggs/plots/FF_CRs/ttbarCR_LTT_weighted/HNone/BDTVarsHighMbb/2/C_2tag2pjet_0ptv_TauPt3P.png}\\
 \caption{In the \ttbar\ FF-CR, the $\tauhad$ $p_T$ distributions are plotted 
 for the SLT (left) and LTT channel (right) 
 with \ttbar\ un-weighted (top) 
@@ -233,26 +234,26 @@ Only statistical uncertainty is included in the error bands.
 
 
 \newpage
-Similarly, the data and MC events in QCD FF-CR passing the anti-ID selection 
+Similarly, the data and MC events in multi-jet FF-CR passing the anti-ID selection 
 before and after the \ttbar\ reweighting 
 \ref{fig:InvCR_1} and \ref{fig:InvCR_3}, respectively.
-As the QCD fakes is not modelled by the MC, a large discrepancy
+As the multi-jet fakes is not modelled by the MC, a large discrepancy
 is shown between data and the MC distributions, which is comprised
-of the QCD fakes. 
+of the multi-jet fakes. 
 For consistency, the \ttbar\ reweighting is applied, 
 however, this region is dominated 
-by the QCD fakes and the \ttbar\ contributions is negligible. 
+by the multi-jet fakes and the \ttbar\ contributions is negligible. 
 The contribution from \ttbar\ fakes is also very small, suggesting 
-the purity of QCD fakes is high in this region. 
+the purity of multi-jet fakes is high in this region. 
 With true \tauhad\ contributions subtracted from data, 
-events in this region is used for the QCD FF-CR fake factor calculation
+events in this region is used for the multi-jet FF-CR fake factor calculation
 (as the denominator). 
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=.45\textwidth]{DiHiggs/plots/FF_CRs/InvCR_SLT/HNone/BDTVarsHighMbb/2/C_2tag2pjet_0ptv_TauPt1P.png}
-\includegraphics[width=.45\textwidth]{DiHiggs/plots/FF_CRs/InvCR_LTT/HNone/BDTVarsHighMbb/2/C_2tag2pjet_0ptv_TauPt1P.png}\\
-\caption{In the QCD FF-CR, the $\tauhad$ $p_T$ distributions are plotted 
+\includegraphics[width=.48\textwidth]{DiHiggs/plots/FF_CRs/InvCR_SLT/HNone/BDTVarsHighMbb/2/C_2tag2pjet_0ptv_TauPt1P.png}
+\includegraphics[width=.48\textwidth]{DiHiggs/plots/FF_CRs/InvCR_LTT/HNone/BDTVarsHighMbb/2/C_2tag2pjet_0ptv_TauPt1P.png}\\
+\caption{In the multi-jet FF-CR, the $\tauhad$ $p_T$ distributions are plotted 
 for the SLT (left) and LTT channel (right) 
 with \ttbar\ re-weighted.
 The \tauhad\ in these events has 1 prong. 
@@ -263,9 +264,9 @@ Only statistical uncertainty is included in the error bands.}
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=.45\textwidth]{DiHiggs/plots/FF_CRs/InvCR_SLT/HNone/BDTVarsHighMbb/2/C_2tag2pjet_0ptv_TauPt3P.png}
-\includegraphics[width=.45\textwidth]{DiHiggs/plots/FF_CRs/InvCR_LTT/HNone/BDTVarsHighMbb/2/C_2tag2pjet_0ptv_TauPt3P.png}\\
-\caption{In the QCD FF-CR, the $\tauhad$ $p_T$ distributions are plotted 
+\includegraphics[width=.48\textwidth]{DiHiggs/plots/FF_CRs/InvCR_SLT/HNone/BDTVarsHighMbb/2/C_2tag2pjet_0ptv_TauPt3P.png}
+\includegraphics[width=.48\textwidth]{DiHiggs/plots/FF_CRs/InvCR_LTT/HNone/BDTVarsHighMbb/2/C_2tag2pjet_0ptv_TauPt3P.png}\\
+\caption{In the multi-jet FF-CR, the $\tauhad$ $p_T$ distributions are plotted 
 for the SLT (left) and LTT channel (right) 
 with \ttbar\ re-weighted.
 The \tauhad\ in these events has 3 prongs. 
@@ -279,7 +280,7 @@ for the SLT and LTT channels respectively.
 The Fake factors obtained with reweighted and un-weighted \ttbar\ contributions are shown on the
 same graph. 
 The binning is optimised for the $\text{FF}_{t\bar{t}}$ and the same binning is used for the 
-$\text{FF}_\text{QCD}$. A smooth trend is observed in the $\text{FF}_{t\bar{t}}$, 
+$\text{FF}_\text{QCD}$. A smooth and obvious trend is observed in the $\text{FF}_{t\bar{t}}$, 
 but some artifacts shapes at mid and high \pt\ range are showin in the $\text{FF}_\text{QCD}$.
 This issue has no visible impact on the fakes estimation, because the 
 the \ttbar\ FF dominates over the multi-jet FF in the combined FF which can be seen 
@@ -293,12 +294,12 @@ in Figure~\ref{fig:LTT_rQCD} for the LTT category.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=.4\textwidth]{DiHiggs/plots/FF_CRs/SLTttbarCR1p.png}
-\includegraphics[width=.4\textwidth]{DiHiggs/plots/FF_CRs/SLTttbarCR3p.png} \\
-\includegraphics[width=.4\textwidth]{DiHiggs/plots/FF_CRs/SLTInvCR1p.png}
-\includegraphics[width=.4\textwidth]{DiHiggs/plots/FF_CRs/SLTInvCR3p.png}\\
+\includegraphics[width=.48\textwidth]{DiHiggs/plots/FF_CRs/SLTttbarCR1p.png}
+\includegraphics[width=.48\textwidth]{DiHiggs/plots/FF_CRs/SLTttbarCR3p.png} \\
+\includegraphics[width=.48\textwidth]{DiHiggs/plots/FF_CRs/SLTInvCR1p.png}
+\includegraphics[width=.48\textwidth]{DiHiggs/plots/FF_CRs/SLTInvCR3p.png}\\
 \caption{Fake factors 
-calculated in \ttbar\ FF-CR (top) and QCD FF-CR (bottom)
+calculated in \ttbar\ FF-CR (top) and multi-jet FF-CR (bottom)
 for 1-prong (left) and 3-prong (right) 
 \tauhad\ candidates for the SLT category.}
 \label{fig:SLT_FF}
@@ -306,12 +307,12 @@ for 1-prong (left) and 3-prong (right)
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=.4\textwidth]{DiHiggs/plots/FF_CRs/LTTttbarCR1p.png}
-\includegraphics[width=.4\textwidth]{DiHiggs/plots/FF_CRs/LTTttbarCR3p.png} \\
-\includegraphics[width=.4\textwidth]{DiHiggs/plots/FF_CRs/LTTInvCR1p.png}
-\includegraphics[width=.4\textwidth]{DiHiggs/plots/FF_CRs/LTTInvCR3p.png}\\
+\includegraphics[width=.48\textwidth]{DiHiggs/plots/FF_CRs/LTTttbarCR1p.png}
+\includegraphics[width=.48\textwidth]{DiHiggs/plots/FF_CRs/LTTttbarCR3p.png} \\
+\includegraphics[width=.48\textwidth]{DiHiggs/plots/FF_CRs/LTTInvCR1p.png}
+\includegraphics[width=.48\textwidth]{DiHiggs/plots/FF_CRs/LTTInvCR3p.png}\\
 \caption{Fake factors 
-calculated in \ttbar\ FF-CR (top) and QCD FF-CR (bottom)
+calculated in \ttbar\ FF-CR (top) and multi-jet FF-CR (bottom)
 for 1-prong (left) and 3-prong (right) 
 \tauhad\ candidates for the LTT category.}
 \label{fig:LTT_FF}
@@ -319,10 +320,10 @@ for 1-prong (left) and 3-prong (right)
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=.4\textwidth]{DiHiggs/plots/FF_CRs/SLTElecrQCD1p.png}
-\includegraphics[width=.4\textwidth]{DiHiggs/plots/FF_CRs/SLTElecrQCD3p.png} \\
-\includegraphics[width=.4\textwidth]{DiHiggs/plots/FF_CRs/SLTMuonrQCD1p.png}
-\includegraphics[width=.4\textwidth]{DiHiggs/plots/FF_CRs/SLTMuonrQCD3p.png}\\
+\includegraphics[width=.48\textwidth]{DiHiggs/plots/FF_CRs/SLTElecrQCD1p.png}
+\includegraphics[width=.48\textwidth]{DiHiggs/plots/FF_CRs/SLTElecrQCD3p.png} \\
+\includegraphics[width=.48\textwidth]{DiHiggs/plots/FF_CRs/SLTMuonrQCD1p.png}
+\includegraphics[width=.48\textwidth]{DiHiggs/plots/FF_CRs/SLTMuonrQCD3p.png}\\
 \caption{$\mathrm{r}_{\mathrm{QCD}}$ for 1-prong (left) 
 and 3-prong (right) \tauhad\ candidates with $e\tauhad$ 
  (top) and $\mu\tauhad$ (bottom) final states
@@ -332,10 +333,10 @@ for the SLT channel.}
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=.4\textwidth]{DiHiggs/plots/FF_CRs/LTTElecrQCD1p.png}
-\includegraphics[width=.4\textwidth]{DiHiggs/plots/FF_CRs/LTTElecrQCD3p.png} \\
-\includegraphics[width=.4\textwidth]{DiHiggs/plots/FF_CRs/LTTMuonrQCD1p.png}
-\includegraphics[width=.4\textwidth]{DiHiggs/plots/FF_CRs/LTTMuonrQCD3p.png}\\
+\includegraphics[width=.48\textwidth]{DiHiggs/plots/FF_CRs/LTTElecrQCD1p.png}
+\includegraphics[width=.48\textwidth]{DiHiggs/plots/FF_CRs/LTTElecrQCD3p.png} \\
+\includegraphics[width=.48\textwidth]{DiHiggs/plots/FF_CRs/LTTMuonrQCD1p.png}
+\includegraphics[width=.48\textwidth]{DiHiggs/plots/FF_CRs/LTTMuonrQCD3p.png}\\
 \caption{$\mathrm{r}_{\mathrm{QCD}}$ for 1-prong (left) 
 and 3-prong (right) \tauhad\ candidates with $e\tauhad$ 
  (top) and $\mu\tauhad$ (bottom) final states
@@ -360,7 +361,7 @@ Statistical uncertainties in $\text{FF}_{t\bar{t}}$, $\text{FF}_\text{QCD}$ and 
 are evaluated and propagated to the final result,
 and a conservative 30\% modelling uncertainty is assigned to simulated non-$t\bar t$ backgrounds
 which are subtracted from data.
-The uncertainties due to \ttbar\ modelling issue and its subtraction are discussed in more details
+The uncertainties due to \ttbar\ modelling issue and its subtraction are discussed in more detail
 in section~\ref{sec:DiHiggs:fakesyst}.
 
 \newpage
@@ -383,8 +384,8 @@ Figure~\ref{fig:FFVRLTT} for the LTT channel.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=.4\textwidth]{DiHiggs/plots/FF_CRs/SR_SLT_datafakes/HNone/BDTVarsHighMbb/0/C_0tag2pjet_0ptv_TauPt.png}
-\includegraphics[width=.4\textwidth]{DiHiggs/plots/FF_CRs/SR_SLT_datafakes/HNone/BDTVarsHighMbb/1/C_1tag2pjet_0ptv_TauPt.png} \\
+\includegraphics[width=.48\textwidth]{DiHiggs/plots/FF_CRs/SR_SLT_datafakes/HNone/BDTVarsHighMbb/0/C_0tag2pjet_0ptv_TauPt.png}
+\includegraphics[width=.48\textwidth]{DiHiggs/plots/FF_CRs/SR_SLT_datafakes/HNone/BDTVarsHighMbb/1/C_1tag2pjet_0ptv_TauPt.png} \\
 \caption{A comparison of data and background with fakes estimated with combined FF evaluated at the 0-$b$-tagged (left) 
 and 1-$b$-tagged region (right) for the SLT channel.
 Only statistical uncertainty is included in the error bands. }
@@ -394,8 +395,8 @@ Only statistical uncertainty is included in the error bands. }
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=.4\textwidth]{DiHiggs/plots/FF_CRs/SR_LTT_datafakes/HNone/BDTVarsHighMbb/0/C_0tag2pjet_0ptv_TauPt.png}
-\includegraphics[width=.4\textwidth]{DiHiggs/plots/FF_CRs/SR_LTT_datafakes/HNone/BDTVarsHighMbb/1/C_1tag2pjet_0ptv_TauPt.png} \\
+\includegraphics[width=.48\textwidth]{DiHiggs/plots/FF_CRs/SR_LTT_datafakes/HNone/BDTVarsHighMbb/0/C_0tag2pjet_0ptv_TauPt.png}
+\includegraphics[width=.48\textwidth]{DiHiggs/plots/FF_CRs/SR_LTT_datafakes/HNone/BDTVarsHighMbb/1/C_1tag2pjet_0ptv_TauPt.png} \\
 \caption{A comparison of data and background with fakes estimated with combined FF evaluated at the 0-$b$-tagged (left) 
 and 1-$b$-tagged region (right) for the LTT channel.
 Only statistical uncertainty is included in the error bands.  }

@@ -4,8 +4,9 @@
 \usepackage{graphicx, subcaption} % takes care of graphic including machinery
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\setlength{\headheight}{13.59999pt}
+\setlength{\headheight}{14.0pt}
 \usepackage[top=2.5cm, bottom=2.5cm, left=4.0cm, right=2.5cm]{geometry}
+\usepackage{mathtools}
 % \usepackage[margin=1in,letterpaper]{geometry} % decreases margins
 \usepackage{xspace}
 \usepackage{siunitx}
@@ -20,13 +21,19 @@
 \addbibresource{Reconstruction/Reconstruction.bib}
 \addbibresource{DiHiggs/DiHiggs.bib}
 \addbibresource{bib/ATLAS.bib}
+\addbibresource{bib/CMS.bib}
 \addbibresource{bib/DiHiggs_paper.bib}
+\addbibresource{Theory/theory.bib}
 \addbibresource{bib/ATLAS-useful.bib}
 \addbibresource{bib/PubNotes.bib}
 \addbibresource{bib/ConfNotes.bib}
 \addbibresource{bib/ATLAS-SUSY.bib}
 \addbibresource{bib/Int_note.bib}
 \usepackage[final]{hyperref} % adds hyper links inside the generated pdf file
+
+
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{naturalnames}{hyperref}
 \usepackage[T1]{fontenc}
 \usepackage{newtxtext,newtxmath}
 \usepackage{setspace}
@@ -35,6 +42,7 @@
 \usepackage{titlesec}
 \usepackage{multirow}
 \usepackage{titling}
+\usepackage{tikz-feynman} 
 \newcommand\bjetineq{\mathop{\mbox{$b$ $\rm{jet}$}}}
 \newcommand\bjetunder{\mathop{\footnotesize{\mbox{$b$ $\rm{jet}$}}}\normalsize}
 \newcommand\cjetineq{\mathop{\mbox{$c$ $\rm{jet}$}}}
@@ -45,6 +53,7 @@
 \newcommand{\changefont}{\fontsize{9}{11}\selectfont}
 \newcommand{\changefontbig}{\fontsize{12}{14}\selectfont}
 \titleclass{\subsubsubsection}{straight}[\subsection]
+\newcommand\addtag{\refstepcounter{equation}\tag{\theequation}}
 
 \newcounter{subsubsubsection}[subsubsection]
 \renewcommand\thesubsubsubsection{\thesubsubsection.\arabic{subsubsubsection}}
@@ -85,22 +94,10 @@
 	urlcolor=blue 
 }
 
-%++++++++++++++++++++++++++++++++++++++++
 \linespread{1.25}
 \makeindex
 
-% \pretitle{%
-% \begin{center}
-% }
-% \posttitle{
-% 	\begin{figure}[htp]
-% 		\centering
-% 		\includegraphics[width=.5\textwidth]{logo.png}
-% 		\vspace{3em}
-% 		\centering
-% 		\includegraphics[width=.45\textwidth]{ATLAS-Logo-Ref-RGB-H_1.jpg}
-% 		\end{figure}
-% 	\end{center}}
+
 
 \begin{document}
 \pagenumbering{roman}
@@ -134,51 +131,57 @@
 \fancyhead[RE]{\changefont \rightmark}
 \fancyhead[LO]{\changefontbig \textbf{\chaptername . \thechapter}}
 \large
+\raggedbottom
 \chapter{Introduction}
-\chapter{Theory and Motivation}
+\chapter{Theory and motivation}
 \input{Theory/introduction.tex}
-\section{The Standard Model and the Higgs boson}
+\section{The Standard Model of Particle Physics}
+\input{Theory/SM.tex}
 \section{Beyond the Standard Model}
-\large
-\chapter{The ATLAS experiment at the Large Hadron Collider}
-\input{Detector/LHC.tex}
-\input{Detector/ATLAS.tex}
-% \chapter{Data and Monte Carlo samples}
-\chapter{Physics Object Reconstruction}
-\input{Reconstruction/track.tex}
-\input{Reconstruction/leptons.tex}
-\input{Reconstruction/jets.tex}
-\input{Reconstruction/MET_tau.tex} 
-\chapter{Data and Monte Carlo Simulation}
-\input{DiHiggs/samples.tex}
-\chapter{Charm jet mis-tagging calibration}
-\input{FTAG.tex}
+\input{Theory/BSM.tex}
+\section{Machine learning theory} 
+\input{Theory/ML.tex}
+\section{Statistical Interpretation}
+\input{Theory/Stats.tex}
+% \chapter{The ATLAS experiment at the Large Hadron Collider}
+% \input{Detector/LHC.tex}
+% \input{Detector/ATLAS.tex}
+% % \chapter{Data and Monte Carlo samples}
+% \chapter{Physics Object Reconstruction}
+% \input{Reconstruction/track.tex}
+% \input{Reconstruction/leptons.tex}
+% \input{Reconstruction/jets.tex}
+% \input{Reconstruction/MET_tau.tex} 
+% \chapter{Data and Monte Carlo Simulation}
+% \input{DiHiggs/samples.tex}
+% \chapter{Charm jet mis-tagging calibration}
+% \input{FTAG.tex}
 
 
 
 
-\large
-\chapter{Search for Higgs boson pair production in the \bbtt\ channel}
-\label{sec:search for dihiggs}
-\input{DiHiggs/intro.tex}
+% \large
+% \chapter{Search for Higgs boson pair production in the \texorpdfstring{\bbtautau} channel}
+% \label{sec:search for dihiggs}
+% \input{DiHiggs/intro.tex}
 
-\input{DiHiggs/selection.tex}
-\input{DiHiggs/background.tex}
-\clearpage
-\input{DiHiggs/MVA.tex}
-\clearpage
-\input{DiHiggs/Systematics.tex}
-\label{sec:DiHiggs:systematics}
-\clearpage
-\input{DiHiggs/result.tex}
-
-
+% \input{DiHiggs/selection.tex}
+% \input{DiHiggs/background.tex}
+% \clearpage
+% \input{DiHiggs/MVA.tex}
+% \clearpage
+% \input{DiHiggs/Systematics.tex}
+% \label{sec:DiHiggs:systematics}
+% \clearpage
+% \input{DiHiggs/result.tex}
 
 
 
-\chapter{Summary}
+
+
+% \chapter{Summary}
 \printbibliography
-\appendix
-\include{auxiliary/FTAG.tex}
-\input{auxiliary/diHiggs.tex}
+% \appendix
+% \include{auxiliary/FTAG.tex}
+% \input{auxiliary/diHiggs.tex}
 \end{document}

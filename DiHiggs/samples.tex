@@ -2,7 +2,7 @@
 
 
 
-\section{Simulation of physics processes TODO: move this to theory section }
+\section{Simulation of physics processes}
 \label{sec:Simulation of physics processes}
 
 A precise and reliable theoretical prediction is the key
@@ -175,23 +175,6 @@ with the A14 set of tuned parameters~\cite{ATL-PHYS-PUB-2014-021,ATLAS:2012uec}
 and the \textsc{NNPDF2.3LO} PDF set.
 
 
-TODO: move this paragraph to theory 
-The cross-section of the ggF non-resonant $HH$ production is
-calculated at next-to-next-to-leading order (NNLO) FTApprox~\cite{Grazzini:2018bsd},
-taking into account the finite top-quark mass assumption. The cross-section is \linebreak
-\mbox{$31.05^{+2.2\%}_{-5.0\%}\text{(scale)}\pm 2.1\%(\alpha_\text{S})\pm 2.1\%\text{(PDF)}\pm 2.6\%(\text{m}_\text{top})$ fb}
-at $\sqrt{s}=13$ TeV and $\text{m}_{H}=125$ GeV~\cite{dihiggs-twiki}.
-The scale uncertainty is due to 
-the finite order of quantum chromodynamics (QCD) calculations,
-the $\alpha_\text{s}$ and PDF terms 
-account for the uncertainties on the strong coupling constant 
-and parton distribution functions respectively, and the 
-$m_\text{top}$ uncertainty is related to the top-quark mass scheme.
-The normalisation of this process is set to the production cross-section 
-times the \bbtautau\ branching ratio (BR), \linebreak
-\mbox{$\sigma_{ggF} \times BR_{\bbtautau}  = \SI{31.05}{fb} \times 0.0730  =  \SI{2.268}{fb}$}.  
-
-
 On the other hand, the VBF events generated using the
 \textsc{MadGraph}5\_aMC@NLO v2.7.3~\cite{Alwall:2014hca} generator at LO 
 with the \textsc{NNPDF3.0NLO}~\cite{Ball:2014uwa} PDF set.
@@ -199,18 +182,6 @@ Parton showering and hadronisation were simulated using \textsc{Pythia~8.244}
 with the A14 tune and the \textsc{NNPDF2.3LO} PDF set.
 To simulate the decays of the $b$- and $c$-hadrons,
 the \textsc{EvtGen} v1.7.0 program was used.
-
-TODO: move this paragraph to theory
-The cross-section of the VBF non-resonant $HH$ production calculated at
-next-to-next-to-next-to-leading order (N3LO) in QCD in the limit 
-in which there is no partonic exchange between the two protons~\cite{Dreyer:2018qbw} is
-$1.726^{+0.03\%}_{-0.04\%}\text{(scale)}\pm 2.1\%(\text{PDF}+\alpha_\text{S})$ fb~\cite{dihiggs-twiki}.
-This process is normalised to the cross-section times the \bbtautau\ branching ratio, \linebreak[2]
-\mbox{$\sigma_{VBF} \times BR_{\bbtautau}  = \SI{1.726}{fb} \times 0.07306  =  \SI{0.1261}{fb}$.}  
-Other non-resonant $HH$ production modes are not considered as their contributions
-to the analysis sensitivity are expected to be negligible.
-
-
 
 Finally, the resonant signal  
 of a heavy spin-0 narrow width resonance via ggF production 
@@ -223,21 +194,11 @@ using the H7.1-Default tune~\cite{Gieseke:2012ft}
 and the \textsc{NNPDF2.3LO} PDF set.
 
 
-TODO:move this paragraph to theory
-The normalisation of these resonant signal samples in the analysis is set to \linebreak[2]
-\mbox{$\sigma \times BR  = \SI{1}{pb} \times BR (bb \tau \tau)  =  0.07306 \SI{1}{pb}$.} 
-A dummy cross-section of 1 pb is chosen for these samples 
-to make combination with other decay channels easier, 
-and to ease scaling of the signal 
-for the calculation of the cross-section limits 
-(more details in Section \ref{sec:DiHiggs:results}).
-
 \subsection{Non-resonant signal reweighting and combination}
 \label{sec:DiHiggs:klscan}
 In the BSM scenarios, the non-resonant di-Higgs production is sensitive 
 to the self-coupling constant and other possible anomalous coupling,
-as described in section~\ref{sec:Theory:kl} 
-(TODO: ref back to theory section about klambda dependence).
+as described in section~\ref{sec:SM:dihiggs}.
 In this thesis, a reweighting method is used to evaluate
 the non-resonant di-Higgs production with a range of possible 
 values of self-coupling modifier, $k_\lambda$, and 7 benchmark models (BM)
@@ -269,7 +230,7 @@ Given the assumption that the kinematic of the \ggH events
 and their acceptance depend only on $m_{HH}$ variable, 
 using the weights $w(m_{HH},\kl)$ the reweighted sample describes correctly any kinematic distribution of a given target \kl value. 
 Good closure is found between the distributions obtained from \kl generated and reweighted, 
-as shown in section~\ref{sec:DiHiggs:systemmatics} TODO: add reference to systematics section.
+as shown in section~\ref{sec:klscan-systs}.
 % To evaluate the sensitivity of the analyses to \kl, 
 % the SM \ggH sample is processed through the analyses and then it is reweighted to different values of \kl. 
 % The \bbyy analysis considers only the signal yield variation 
@@ -286,7 +247,7 @@ The event distributions and the multivariate algorithm output
 for any \kl value are obtained from the linear combination 
 of the corresponding distributions 
 of the three samples at analysis level. 
-As defined in section~TODO: ref back to theory chapter,
+As defined in section~\ref{sec:SM:dihiggs},
 the full cross-section for the VBF $HH$ production involves 
 three diagrams, and expanding the absolute squared of
 the amplitude yileds six terms:
@@ -294,11 +255,11 @@ the amplitude yileds six terms:
 \sigma = \kappa^2_V \kappa^2_\lambda a_1 + \kappa_V^4 a_2
 + \kappa_{2V}^2 a_3 + \kappa_V^3 \kappa_\lambda a_4
 + \kappa_V\kappa_\lambda\kappa_{2V} a_5 
-+ \kappa_V^2 \kappa_{2V}a_6 . \]
++ \kappa_V^2 \kappa_{2V}a_6 .  \addtag \]
 In the case of \kl scan, this formula is reduced to 
 \[
 \sigma = \kappa^2_\lambda a_1 + \kappa_\lambda a_2 + a_3 .
-\]
+ \addtag \]
 Using the basis of 
 $\kl = 1,2,10$,
 the linear coefficients for combining the 
@@ -311,42 +272,42 @@ three samples defined are then given by:
     \label{eqn:vbf-linear-comb}
 \end{eqnarray}
  
-\paragraph{HEFT Benchmarks reweighting}
-The reweighting is only applied to the ggF non-resonant production. 
-A similar approach is used: for each BM, a set of weights $w(m_{HH},BM)$ is evaluated 
-by dividing the binned $m_{HH}$ distribution of the BM sample by the SM distribution;
-these weights can then be used to 
-reweight the SM non-resonant sample to any BM signals as 
-defined in section~TODO: ref back to theory chapter. 
+% \paragraph{HEFT Benchmarks reweighting}
+% The reweighting is only applied to the ggF non-resonant production. 
+% A similar approach is used: for each BM, a set of weights $w(m_{HH},BM)$ is evaluated 
+% by dividing the binned $m_{HH}$ distribution of the BM sample by the SM distribution;
+% these weights can then be used to 
+% reweight the SM non-resonant sample to any BM signals as 
+% defined in section~TODO: ref back to theory chapter. 
 
-TODO: move this paragraph and table to theory
-The assumed coulpings values and the corresponding cross-sections
-of these BMs are shown in Table~\ref{tab:HEFT values}.
-These BM points are defined to represent the different possible characteristic shapes
-in $m_{HH}$ distribution, as described in Ref.~\cite{HEFT-BM}.
-\begin{table}[tb!]
-    \begin{center}{\large    
-    \resizebox{0.6\textwidth}{!}{\begin{tabular}{llllllll}
-    \toprule
-    Benchmark & $c_t$ & $c_{hhh}$ &  $c_{tt}$ & $c_{ggh}$ & $c_{gghh}$ & Cross-sections (fb)\\
-    \midrule
-    SM  &  1  & 1 & 0 & 0 & 0 & 31.05  \\ 
-    BM1 &  0.94 &3.94 &-1/3 &0.5 &1/3 &181.40 \\
-    BM2 &  0.61 &6.84 &1/3 &0.0 &-1/3 &135.24 \\
-    BM3 &  1.05 &2.21 &-1/3 &0.5 &0.5 &108.90 \\
-    BM4 &  0.61 &2.79 &1/3 &-0.5 &1/6 &50.45 \\
-    BM5 &  1.17 &3.95 &-1/3 &1/6 &-0.5 &117.04 \\
-    BM6 &  0.83 &5.68 &1/3 &-0.5 &1/3 &144.91 \\
-    BM7 &  0.94 &-0.10 &1 &1/6 &-1/6 &97.96 \\
-    \midrule
-    \bottomrule
-    \end{tabular}}}
-    \end{center}
-    \caption
-    {The proposed coupling values and the corresponding cross-sections of each BMs. 
-    The physical meaning of each coupling is described in section~\ref{sec:Theory} TODO: add reference to theory section.
-    \label{tab:HEFT values}}
-    \end{table}
+% TODO: move this paragraph and table to theory
+% The assumed coulpings values and the corresponding cross-sections
+% of these BMs are shown in Table~\ref{tab:HEFT values}.
+% These BM points are defined to represent the different possible characteristic shapes
+% in $m_{HH}$ distribution, as described in Ref.~\cite{HEFT-BM}.
+% \begin{table}[tb!]
+%     \begin{center}{\large    
+%     \resizebox{0.6\textwidth}{!}{\begin{tabular}{llllllll}
+%     \toprule
+%     Benchmark & $c_t$ & $c_{hhh}$ &  $c_{tt}$ & $c_{ggh}$ & $c_{gghh}$ & Cross-sections (fb)\\
+%     \midrule
+%     SM  &  1  & 1 & 0 & 0 & 0 & 31.05  \\ 
+%     BM1 &  0.94 &3.94 &-1/3 &0.5 &1/3 &181.40 \\
+%     BM2 &  0.61 &6.84 &1/3 &0.0 &-1/3 &135.24 \\
+%     BM3 &  1.05 &2.21 &-1/3 &0.5 &0.5 &108.90 \\
+%     BM4 &  0.61 &2.79 &1/3 &-0.5 &1/6 &50.45 \\
+%     BM5 &  1.17 &3.95 &-1/3 &1/6 &-0.5 &117.04 \\
+%     BM6 &  0.83 &5.68 &1/3 &-0.5 &1/3 &144.91 \\
+%     BM7 &  0.94 &-0.10 &1 &1/6 &-1/6 &97.96 \\
+%     \midrule
+%     \bottomrule
+%     \end{tabular}}}
+%     \end{center}
+%     \caption
+%     {The proposed coupling values and the corresponding cross-sections of each BMs. 
+%     The physical meaning of each coupling is described in section~\ref{sec:Theory} TODO: add reference to theory section.
+%     \label{tab:HEFT values}}
+%     \end{table}
     
 
 
@@ -357,7 +318,9 @@ $HH$ searches are the \ttbar, single-top,
 boson produced in association with jets and jets faking a 
 \tauhad\ (more details in section~\ref{sec:DiHiggs:lephadfake}). 
 Minor background processes include the Drell-Yan processes, 
-processes with dibon final states and single-Higgs processes.
+processes with diboson final states and processes 
+associated with one Higgs boson 
+(as referred to as single Higgs boson processes).
 These background processes, except for the jets faking a 
 \tauhad\ background, are modelled by the full ATLAS 
 detector simulation. 
@@ -389,11 +352,10 @@ at next-to-next-to-leading order
 and next-to-next-to-leading-logarithm 
 (NNLO+NNLL)~\cite{Czakon:2011xx}.
 While for the single-top process, 
-the cross-sections of are calculated at
+the cross-sections are calculated at
 NLO~\cite{stop_sch_Xsec,stop_tch_Xsec,Kidonakis:2010ux}.
 The $t\bar{t}$-$Wt$ interference is removed
-using the diagram removal scheme~\cite{Frixione:2008yi}
-(more details in Section~\ref{} TODO: add reference to the systematics for singletop ).
+using the diagram removal scheme~\cite{Frixione:2008yi}.
 
 The production of bosons in association with jets 
 ($W/Z$+jets) are simulated by 

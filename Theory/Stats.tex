@@ -1,3 +1,4 @@
+\label{sec:stats}
 Once the experiment has been conducted and the data has been recorded, 
 physicists might be interested in asking questions such as,
 did one or did one not establish a discovery? Or,
@@ -18,14 +19,14 @@ It is common to refer to the \textit{p-value} to quantity the deviation from the
 which is defined as:
 \[
 p = \int_{x_{obs}}^\infty g(x|H_0) dx,
-\]
+\addtag \]
 where $g(x|H_0)$ is the probability density function of observing a quantity
 $x$ given the null hypothesis, and $x_{obs}$ is the observed value. The p-value derivation 
 is shown illutratively in Figure~\ref{fig:stats:pvalue}, together with $\alpha$, 
 which is defined as:
 \[
 \alpha = \int_{x_{5\sigma}}^\infty g(x|H_0) dx,  
-\]
+\addtag \]
 where $x_{5\sigma}$ is the observed value that corresponds $5\sigma$ deviation 
 from the null hypothesis. 
 One can therefore claim a discovery if the observed p-value $p < \alpha$ (equivalently, 
@@ -34,14 +35,14 @@ Another commonly used statistic jargon is the \textit{confidence level} ($CL$),
 which is defined as:
 \[
 CL   = \int_{ -\infty}^{x_{5\sigma}} g(x|H_0) dx \equiv 1- p .
-\]
+\addtag \]
 Lastly, the p-value is oftenly converted to a significance $Z$, 
 defined as the number of standard deviations above the mean of a Gaussian distribution.
 The relation between the p-value and $Z$ is given by:
 \[
 Z=\Phi^{-1} (1-p),
-\]
-where $\Phi_{-1}$ is the quantile function of the standard Gaussian distribution.
+\addtag \]
+where $\Phi^{-1}$ is the quantile function of the standard Gaussian distribution.
 The discovery of signal, as mentioned before, needs to be rejecting the background-only hypothesis
 with at least $Z \ge 5$, which corresponds to a p-value of $2.87 \times 10^{-7}$.
 In the case of setting upper limits, for excluding the signal hypothesis, p-value is by convention 
@@ -52,7 +53,7 @@ the $CL$ used for setting upper limits is calculated by the $CL_s$ method~\cite{
 where $CL_s$ is (unfortunately named $CL_s$) given by:
 \[
     CL_s   =  \frac{p_{s+b}}{1-p_b},
-\]
+\addtag \]
 where $p_{s+b}$ and $p_b$ are the confidence leveles for the signal-plus-background hypothesis
 and the background-only hypothesis, respectively. 
 The reason for using the $CL_s$ instead of the $p_{s+b}$ is that, in case of an experiment 
@@ -76,35 +77,113 @@ be excluded even with a small p-value.
 
 
 \subsection{Test statistics}
-In terms of hypothesis testing, 
-A test statistic is a quantity calculated from data,
+A \textit{test statistic} is a quantity calculated from data,
 which can be used to estimate how probable is the result 
 that we observe with respect to some null hypothesis.
+In terms of hypothesis testing, the observable $x$ is usually replaced by 
+a test statistic $t$, so that the p-value becomes
+\[
+p = \int_{t_{obs}}^\infty g(t|H_0) dt.
+\addtag \]
 Due to the Neyman-Pearson lemma~\cite{Neyman-Pearson}, the most powerful test statistic
 one can construct is given by:
 \[
-Q  = \frac{L(H_1)}{L(H_0)},
-\]
-where $L(H_1)$ and $L(H_0)$ are the likelihood of the hypothesis $H_1$ and $H_0$, respectively.
-The likelihood function is defined 
+t  = \frac{L(H_1)}{L(H_0)},
+\addtag \]
+where $L(H_1)$ and $L(H_0)$ are the likelihood fuction of the hypothesis $H_1$ and $H_0$, respectively.
+The analsysis discussed in this thesis in most of the time involves
+signal and background, distributed in some histograms $\mathbf{n}$ of $N$ bins:
+$\mathbf{n}  = (n_1, n_2, ... , n_N)$. In such case, 
+the expectation of each bin is consists of the background $b$ and the signal $s$ with some signal
+strength $\mu$:
+\[
+    E[n_i] = \mu s_i + b_i.
+\addtag \]
+In addition to the signal strength, it is common that the signal and background will depend
+on some additional parameters, as referred to \textit{nuisance parameters}, that is
+not of direct insterst of the analysis but needs to be fitted from the data. 
+Hence, the expected signal and background is determined by the 
+total signal and background and the respective probability function $f$ and 
+nuisance parameters $\theta$~\cite{Glen-Cowan}:
+\[
+s_i = s_{tot} \int_i f_s(x;\mathbf{\theta}_s ) dx,
+\addtag \]
+\[
+b_i = b_{tot} \int_i f_b(x;\mathbf{\theta}_b ) dx.
+\addtag \]
+In addition, these nuisance parameters are oftenly constrained by additional subsidiary measurements.
+Suppose the measurements are distributed in a new histogram $\mathbf{m} = (m_1, ..., m_M)$,
+and the expectation values of bin $m_i$ is given by $E[m_i] = u_i(\mathbf{\theta})$.
+
+Since in a counting experiment, the data follows a Poisson distribution, 
+the likelihood function can be written as:
+\[
+L(\mu, \mathbf{\theta}) = \prod^N_{j=1}    \frac{(\mu s_j + b_j )^{n_j}}{n_j !} e^{-(\mu s_j + b_j)}
+\prod^N_{k=1} \frac{u_k^{m_k}}{m_k!}e^{-u_k} .
+\addtag \]
+One can define a profile likelihood ratio, such that:
+\[
+\lambda (\mu)  = \frac{L(\mu, \hat{\hat{\mathbf{\theta}}})}{L(\hat{\mu}, \hat{\mathbf{\theta}})},
+\addtag \]
+where $\hat{\mathbf{\theta}}$ and $\hat{\mu}$ are the maximum likelihood estimators,
+that
+\[
+( \hat{\mathbf{\mu}}, \hat{\mathbf{\theta}} ) = argmax\ L(\mu, \theta).
+\addtag \]
+and $\hat{\hat{\mathbf{\theta}}}$ is the $\mathbf{\theta}$ that maximise $L$
+for the specific $\mu$. 
+As a result, the profile likelihood ratio has value $0 \le \lambda \le 1$, and for $\lambda$ value
+close to 1, the hypothesis is well compatibile with the observed data. 
+
+Using the profile likelihood ratio, one can define the test statistic as:
+\[
+t_\mu = -2 ln \lambda(\mu) ,
+\addtag \]
+and therefore, $t_\mu$ approaches to 0 from the positive direction, and corresponds to
+a large p-value.  
+For establishing a discovery of a positive signal, one can assume the signal 
+strength $\mu \ge 0$. If data fluctuates below the expected  background, 
+i.e.~$\hat{\mu} < 0$, it may constitute evidence against the background-only model, 
+but this does not show that the data contain signal events
+and the most physical explaination is that this is due to
+some systematic error. Therefore, for \textbf{signal discovery},
+the test statistic of the background-only null hypothesis  given by:
+\[
+  t_0 =q_0 =   \begin{cases}    
+        -2 ln \lambda(0) \quad \hat{\mu} \ge 0, \\
+        0  \qquad \qquad             \     \hat{\mu} < 0.
+    \end{cases} 
+\addtag \]
+
+Consider the opposite case, for \textbf{setting upper limits} on a signal, one needs the test
+statistic for the signal-plus-background null hypothesis with signal strength $\mu$, 
+and if data fluctuates above signal plus background, i.e.~$\hat{\mu} > \mu$, 
+the signal is not likely to be excluded and most likely is due to systematic errors. 
+Therefore:
+\[
+  t_\mu =q_\mu =   \begin{cases}
+    -2 ln \lambda(\mu) \quad \hat{\mu} \le \mu, \\
+    0  \qquad \qquad  \   \             \hat{\mu} > \mu.
+    \end{cases} 
+\addtag \]
+
+
 
 \subsection{Look elsewhere effect}
-We can specify an hypothesis with a specific Higgs mass but had we observed some possible signal
-we should take into account that this signal could be a fluctuation which could be observed anywhere in
-our sensitivity range [2]. Here we change the signal hypothesis from a Higgs with a specific mass mH to
-a Higgs with some mass in the observed region. It is not clear how to take these effects into account. One
-common way is to degrade the observed p-value by multiplying it by the size of the sensitivity region
-divided by the experimental resolution. A common claim is that the control region for discovery is so
-small that "who cares".... Another common belief is that the "look elsewhere effect" is the reason for the
-habit of defining a discovery as a 5$\sigma$ and not for example 4$\sigma$, because even if you quote 5$\sigma$ your effective
-significance is lower.
-
-The look-elsewhere effect is accounted by calculating the global significance
+\label{sec:stats:look-elsewhere}
+Suppose one specify an hypothesis with a specific Higgs mass and observed some signal at some mass range, 
+one should also take into account that this signal could be a fluctuation which could be observed anywhere in
+the sensitivity range~\cite{look-elsewhere}. This effect is referred to as \textit{look-elsewhere effect}.
+A common belief is that the such effect is the reason for the
+habit of defining a discovery as a 5~$\sigma$ and not for example 4~$\sigma$, 
+because even if one quote 5~$\sigma$ the effective significance might be lower.
+In this thesis, the look-elsewhere effect is accounted by calculating the global significance
 following Ref.\cite{global-significance}, using the up-crossing method:
 \[ p_\text{global} = p_\text{local} +  N_\text{up} e^{-1/2(Z^2_\text{local} - Z^2_\text{ref})},
-\]
+\addtag \]
 where the $p_\text{local}$ and $p_\text{global}$ are the local and global p-values, and
 $Z_\text{ref}$ is chosen for p=0.5 (corresponding to 0~$\sigma$ significance level), 
 and $N_\text{up}$ is the number of times the local p-value curve crossing the reference line (in this case,
 p=0.5) in the upwawrd direction.
-The estimated global significance is $2.1^{+0.4}_{-0.2} \sigma$.
+In this method, the p-value is degraded by adding an extra term $N_\text{up}$
+that accounts for the range of the search, and such term is penalised for large local significance. 

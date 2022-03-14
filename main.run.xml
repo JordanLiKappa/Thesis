@@ -41,7 +41,7 @@
   >
 ]>
 <requests version="1.0">
-  <internal package="biblatex" priority="9" active="1">
+  <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
       <file>main.bcf</file>
@@ -85,7 +85,9 @@
       <file>Reconstruction/Reconstruction.bib</file>
       <file>DiHiggs/DiHiggs.bib</file>
       <file>bib/ATLAS.bib</file>
+      <file>bib/CMS.bib</file>
       <file>bib/DiHiggs_paper.bib</file>
+      <file>Theory/theory.bib</file>
       <file>bib/ATLAS-useful.bib</file>
       <file>bib/PubNotes.bib</file>
       <file>bib/ConfNotes.bib</file>

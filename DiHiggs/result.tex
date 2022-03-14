@@ -23,13 +23,13 @@ These combinations results are presented in section~\ref{sec:DiHiggs:combination
 \label{sec:DiHiggs:analysis}
 
 The profile likelihood fit is first performed on the MVA output in the \lephad SLT, LTT regions, 
-together with the $m_{ll}$ distribution in the 
+together with the $m_{\ell\ell}$ distribution in the 
 \ZHF\ control region, referred to as \lephad only fit. After checking the \lephad only fit results, 
 a likelihood fit is then performed simultaneously on the MVA output in all three signal regions, the \lephad SLT, LTT
-and the \hadhad regions, together with the $m_{ll}$ distribution in the \ZHF\ control region.
+and the \hadhad regions, together with the $m_{\ell\ell}$ distribution in the \ZHF\ control region.
 As described in Section~\ref{sec:DiHiggs:MVA}, for the resonant $HH$ production, PNNs are used for 
 signal extraction, and for the non-resonant production, a neural network is used in the \lephad channel 
-(a Boosted Decision Tree, BDT is used for the non-resonant production in the \hadhad signal region).  
+(a boosted decision tree is used for the non-resonant production in the \hadhad signal region).  
 % For each tested signal hypothesis a binned profile likelihood ratio fit is performed on the MVA output distributions.
 
 The normalisation of the $t\bar{t}$ background and the normalisation of the \ZHF\ background 
@@ -38,10 +38,13 @@ Relative acceptance uncertainties between CR and SRs are applied on
 these normalisations in the signal regions included in the fit as described in Section~\ref{sec:DiHiggs:systematics}.
 
 The Parameter Of Interest (POI) is the signal strength $\mu$.  
-As described in section TODO: ref the theory section For the non-resonant SM case, the $\mu$ is relative to the ggF+VBF input signal cross-section 
-of (31.05 + 1.726 ) fb$\times \text{BR}_{HH\rightarrow bb\tau\tau}$ =  32.776 fb$\times \text{BR}_{HH\rightarrow bb\tau\tau}$,
+As described in section~\ref{sec:SM:bbtautau},
+for the non-resonant SM case, the $\mu$ is relative to the ggF+VBF input signal cross-section times 
+the \bbtautau\ channel decay branching ratio, 
+2.394~fb. 
 % Fits considering only ggF signal and neglecting VBF are also performed as a cross check where the $\mu$ is relative to the ggF input signal cross-section of 31.05 x BR. 
-and for the resonant case,  the $\mu$  is relative to the input cross-section of 1 pb$\times \text{BR}_{HH\rightarrow bb\tau\tau}$.
+For the resonant case,  the $\mu$ is relative to the input cross-section of 1~pb times the \bbtautau\ 
+branching ratio, which is $0.073~\text{pb} = 73~\text{fb} $.
 
 In the \lephad channel, the MVA outputs are binned in 1090 bins, where 990 bins with equal width are in the range from 0 to 0.99 
 and 100 bins with equal width are in the range from 0.99 to 1.
@@ -101,7 +104,7 @@ the fitting process.
 
 
 
-\subsection{\lephad channel results}
+\subsection{\texorpdfstring{\lephad}{lephad} channel results}
 \label{sec:DiHiggs:lephadonly}
 The profile likelihood fit is first performed on the two signal regions 
 in the \lephad and the \ZHF\ control region. 
@@ -243,7 +246,7 @@ To validate the background modelling, the post-fit NN/PNNs distributions are
 checked in the 1-$b$-tag where the same signal region selection is applied except for
 requiring exactly one \bjet. The background distributions are plotted against the data, as 
 shown in Figure~\ref{fig:lephadmvaCRoutputpostfit} in Appendix~\ref{sec:appendix:result}.
-In this validation region, the data is well modelled by the MC simulation within uncertainties.
+In this validation region, the data is well modelled by the simulation within uncertainties.
 
 
 \begin{figure}[htbp]
@@ -363,7 +366,7 @@ showing the agreement of the background-only hypthesis with the data as well as 
 
 
 \newpage
-\subsubsection{Limit results: \lephad only fit}
+\subsubsection{Limit results: \texorpdfstring{\lephad}{lephad} only fit}
 
 
 Table~\ref{sec:fit:tab:SMLepHadLimits} shows 
@@ -434,7 +437,6 @@ and if not specified, the limits are obtained with full systematics.
 Figures~\ref{fig:LepHadLimits} show the 95\% C.L. expected limits on 
 the resonant HH production cross-section as a function of the resonance mass from the \hadhad and \lephad channels, respectively. 
 % In the \hadhad channel an excess is observed in the resonant limits in the mass range between 900 GeV and 1100 GeV. 
-% The largest local significance is at 1 TeV and it corresponds to 2.8$\sigma$ (the local significance is 2.5$\sigma$ at 900 GeV and 1.7$\sigma$ at 1.1 TeV).
 No significant excess is observed in the \lephad channel (largest local significance at 1.1~TeV corresponding to 1.6~$\sigma$).
 
 \begin{figure}[htbp]
@@ -484,7 +486,7 @@ The observed (expected) limit on $\kl$ is
 
 \newpage
 
-\subsection{Combination results of \lephad and \hadhad}
+\subsection{Combination results of  \texorpdfstring{\lephad and \hadhad}{lephad and hadhad}}
 
 \label{sec:DiHiggs:combination-bbtautau}
 A combined fit is then performed on all three signal regions and the \ZHF\ control region.
@@ -541,13 +543,7 @@ The maximum excess is found at the 1000~GeV which has a deviation of
 of 3.1~$\sigma$. 
 The local p-values as a function of resonance mass are shown in Figure~\ref{fig:CombinedPValues}.
 The look-elsewhere effect is accounted by calculating the global significance
-following Ref.\cite{global-significance}, using the up-crossing method:
-\[ p_\text{global} = p_\text{local} +  N_\text{up} e^{-1/2(Z^2_\text{local} - Z^2_\text{ref})},
-\]
-where the $p_\text{local}$ and $p_\text{global}$ are the local and global p-values, and
-$Z_\text{ref}$ is chosen for p=0.5 (corresponding to 0~$\sigma$ significance level), 
-and $N_\text{up}$ is the number of times the local p-value curve crossing the reference line (in this case,
-p=0.5) in the upwawrd direction.
+using the up-crossing method described in section~\ref{sec:stats:look-elsewhere}.
 The estimated global significance is $2.1^{+0.4}_{-0.2} \sigma$.
 
 
@@ -591,7 +587,7 @@ The 95\% C.L.\ observed (expected) exclusion limit of $\kappa_\lambda$ is $-2.4 
 
 \newpage
 
-\subsection{Combination results with other $HH$ decay channels}
+\subsection{Combination results with other  \texorpdfstring{$HH$}{HH} decay channels}
 \label{sec:DiHiggs:combination-HH}
 To maximise the sensitivity in the $HH$ searches, 
 the \bbtt results are combined with other $HH$ decay channels results.
@@ -606,7 +602,7 @@ benefits from high selection efficiency in the more boosted events topology.
 
 
 
-\subsubsection{Combination results of \bbtt and \bbyy}
+\subsubsection{Combination results of  \texorpdfstring{\bbtt and \bbyy}{bbtt and bbyy}}
 
 The \bbtt results are combined with the results in \bbyy channel 
 in terms of upper limits on the non-resonant $HH$ production signal strength $\mu$, 
@@ -669,7 +665,7 @@ The observed (expected) combined limit on $\kappa_\lambda$ is:  [-1.0, 6.6]  ([-
 
 
 
-\subsubsection{Combination results of \bbtt, \bbyy and \bbbb}
+\subsubsection{Combination results of  \texorpdfstring{\bbtt, \bbyy and \bbbb}{bbtt, bbyy and bbbb}}
 
 % The resonant $HH$ searches target a heavy, spin-0 scalar $X$, 
 % which has a narrow-width compared to the experimental mass resolution. 

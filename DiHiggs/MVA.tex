@@ -1,24 +1,12 @@
 \newpage
-\section{Multivariate signal extraction}
+\section{Signal extraction}
 \label{sec:DiHiggs:MVA}
-The signal extraction in the $HH$ analysis is based on mulitvariate (MVA) techniques.
-As compared to the traditional cut-based approach, the MVA techniques can keep events
-which may fail the cut-based identification because it does not satisfy 
-the selection criterion for a single quantity, 
-while in the MVA selection this event can
-still satisfy the selection criteria, 
-because the MVA combines the information of all of the discriminating variables.
-In this sense, the cut-based method is similar to slicing a single hypercube for
-one (or more) quantity in the parameter space, while the MVA approach is similar to
-splitting the parameter space into a large number of hypercubes and 
-as a result, is capable of taking account of the correlations between variables.
-
-
+The signal extraction in the $HH$ analysis is based on ML algorithms.
 To extract the non-resonant $HH$ signal, a neural network is used, 
 which is trained with this signal and background defined 
 in section~\ref{sec:DiHiggs:samples}. In the training, 
 the background due to a jet faking a \tauhad\ is modelled 
-by MC simulation, in oppose to the data-driven method described
+by simulation, instead of the data-driven method described
 in section~\ref{sec:DiHiggs:backgroundEstimation}.
 The resonant signal, however, is not a single signal hypothesis, 
 but rather a set of continuous signal hypotheses parameterised by 
@@ -150,14 +138,15 @@ $m_{HH}$, $m_{\tau\tau}^\text{MMC}$ and $m_{bb}$.
 \end{figure}
 
 
-\subsection{MVA hyper parameters optimisation and trainning}
-Standardised variables are used for all NN trainings described in the following.
+\subsection{MVA hyper-parameters optimisation and trainning}
+\label{section:MVA hyper-parameters}
+The variables values are transformed using the following procedure.
 The input variables are standardised by subtracting the median and dividing by the
 interquartile range.
 During training, the sum of all backgrounds normalised to
 their respective cross-sections is used. 
 The neural networks are trained using
-Keras~\cite{keras} and Tensorflow~\cite{tensorflow}.
+Keras~\cite{keras} interfaced to Tensorflow~\cite{tensorflow}.
 The hyperparameters used for training the NN (PNN) are 
 listed in Table~\ref{tab:parameters_NN_LepHad} (\ref{tab:parameters_PNN_LepHad}).
 The rectified linear unit (ReLU) and sigmoidal activation fuunctions 
@@ -182,7 +171,7 @@ significance after an optimised cut (a cut that maximises the
 significance), and the bins after cut are required to have 
 at least 5 expected background events. 
 The metric is evaluated on the validation and testing sets,
-and the hyper parameters giving the best value are chosen. 
+and the hyper-parameters giving the best value are chosen. 
 The NN and PNN are retrained when the optimisation is done. 
 
 % The hyperparameters were optimised separately for each MVA 
@@ -263,44 +252,7 @@ During training for the NN (PNNs), the two-fold validation is used.
 The data set is partitioned into two sets depending on 
 the event numbers being even or odd, where one set is used for
 training with the other set being used for validation, vice versa.
-To check if the neural networks are overtrained, 
-the loss functions as a function of the training epoch for 
-the NN (PNNs) are shown in Figure~\ref{fig:overtrainingtestnn} 
-(Figure~\ref{fig:overtrainingtestpnn}) for the 
-SLT and LTT channels. A stable generalisation gap is seen between 
-the training and validation, indicating that the overtraining is small.
-Further checks are done using a much simpler architecture consisting of three layers
-of 32 nodes for the LTT channel. A large gap is still seen, indicating the
-generalisation gap is due to limited data rather than effective capacity of
-the neural networks.
-Additional plots of the NN (PNNs) output distribution of the signal and summed background
-can be found in Appendix~\ref{sec:appendix:mva}, 
-Figure~\ref{fig:overfittingtestSLT} and Figure~\ref{fig:overfittingtestLTT}
-for the SLT and LTT channel, respectively. 
-
-\begin{figure}
-  \centering
-  \subfloat[]{\includegraphics[width=.45\textwidth]{DiHiggs/plots/MVA/Validation/OvertrainingPlotNNLTT.pdf}}\quad
-  \subfloat[]{\includegraphics[width=.45\textwidth]{DiHiggs/plots/MVA/Validation/OvertrainingPlotNNSLT.pdf}}\quad
-  \caption{Non-resonant NN loss functions as a function of training epochs evaluated 
-  using the two-fold cross validation, for the (a) LTT and (b) SLT categories. 
-  Figures reproduced from analysis internal notes. 
-  }
-  \label{fig:overtrainingtestnn}
-\end{figure}
-
-\begin{figure}
-  \centering
-  \subfloat[]{\includegraphics[width=.45\textwidth]{DiHiggs/plots/MVA/Validation/OvertrainingPlotLTT.pdf}}\quad
-  \subfloat[]{\includegraphics[width=.45\textwidth]{DiHiggs/plots/MVA/Validation/OvertrainingPlotSLT.pdf}}\quad
-  \caption{PNN loss functions as a function of training epochs evaluated 
-  using the two-fold cross validation, for the (a) LTT and (b) SLT categories.
-  Figures reproduced from analysis internal notes. }
-  \label{fig:overtrainingtestpnn}
-\end{figure}
-
-
-
+Checks for overtraining of the NNs can be found in Appendix~\ref{sec:appendix:mva}.
 In addition, the PNNs are trained on all the signals simultaneously, 
 and are parameterised by the mass of the resonance $HH$ sample. 
 The PNNs therefore provide near-optimal sensitivity over the
@@ -311,6 +263,7 @@ generated from the signal mass parameter during training.
 In addition, the PNNs interpolate well between the mass points used for the training.
 This is checked by plotting the PNN response in terms of Asimov significance
 as a function of the PNN mass parameter, which is shown in Figure~\ref{fig:MVA:mass-response}. 
+The Asimov significance is calculated following the method described in Ref.~\cite{Glen-Cowan}.
 The PNNs show very high significance over whole scanning mass spectrum. 
 The minimum significance appears in the vicinity of low signal masses, reaching a 
 value of 0.7. 
@@ -334,8 +287,8 @@ all significances are scaled so that the maximum significance is 1 for better vi
 \subsection{MVA output distributions}
 The output distributions of the NN and the PNNs are shown in 
 Figure~\ref{fig:lephadmvaoutput}. 
-The data distributions are not blinded here as the definition of the event
-pre-selection is very loose. 
+% The data distributions are not blinded here as the definition of the event
+% pre-selection is very loose. 
 To validate the MC modelling, the pre-fit PNN score distributions are shown in 
 Figure~\ref{fig:lephadmvaCRoutput} in Appendix~\ref{sec:appendix:mva} in the 1-tag control region. 
 The binning of the MVA output discriminant is defined in sectioin~\ref{sec:DiHiggs:analysis}.
